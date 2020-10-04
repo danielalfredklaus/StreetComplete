@@ -121,4 +121,5 @@ class ShowQuestFormsActivity : AppCompatActivity(), AbstractQuestAnswerFragment.
     override fun onComposeNote(questId: Long, group: QuestGroup, questTitle: String) { onBackPressed() }
     override fun onSplitWay(osmQuestId: Long) { onBackPressed() }
     override fun onSkippedQuest(questId: Long, group: QuestGroup) { onBackPressed() }
+    override fun onHighlightSidewalkSide(questId: Long, group: QuestGroup, side: AbstractQuestAnswerFragment.Listener.SidewalkSide) { onBackPressed() }
 }

@@ -69,6 +69,7 @@ import de.westnordost.streetcomplete.quests.roof_shape.AddRoofShape
 import de.westnordost.streetcomplete.quests.segregated.AddCyclewaySegregation
 import de.westnordost.streetcomplete.quests.self_service.AddSelfServiceLaundry
 import de.westnordost.streetcomplete.quests.sidewalk.AddSidewalk
+import de.westnordost.streetcomplete.quests.smoothness.AddPathSmoothness
 import de.westnordost.streetcomplete.quests.sport.AddSport
 import de.westnordost.streetcomplete.quests.surface.*
 import de.westnordost.streetcomplete.quests.tactile_paving.AddTactilePavingBusStop
@@ -103,98 +104,99 @@ object QuestModule
 
         // ↓ 2. important data that is used by many data consumers
         AddRoadName(o, roadNameSuggestionsDao),
-        AddPlaceName(o, featureDictionaryFuture),
-        AddOneway(o, trafficFlowSegmentsApi, trafficFlowDao),
-        AddBusStopName(o),
-        AddIsBuildingUnderground(o), //to avoid asking AddHousenumber and other for underground buildings
-        AddHousenumber(o),
-        AddAddressStreet(o, roadNameSuggestionsDao),
-        MarkCompletedHighwayConstruction(o, r),
-        AddReligionToPlaceOfWorship(o), // icons on maps are different - OSM Carto, mapy.cz, OsmAnd, Sputnik etc
-        AddParkingAccess(o), //OSM Carto, mapy.cz, OSMand, Sputnik etc
-
-        // ↓ 3. useful data that is used by some data consumers
-        AddRecyclingType(o),
-        AddRecyclingContainerMaterials(o, r),
-        AddSport(o),
-        AddRoadSurface(o, r), // used by BRouter, OsmAnd, OSRM, graphhopper, HOT map style
-        AddMaxSpeed(o), // should best be after road surface because it excludes unpaved roads
-        AddMaxHeight(o), // OSRM and other routing engines
-        AddRailwayCrossingBarrier(o, r), // useful for routing
-        AddPostboxCollectionTimes(o, r),
-        AddOpeningHours(o, featureDictionaryFuture, r),
-        DetailRoadSurface(o), // used by BRouter, OsmAnd, OSRM, graphhopper
-        AddBikeParkingCapacity(o, r), // used by cycle map layer on osm.org, OsmAnd
-        AddOrchardProduce(o),
-        AddBuildingType(o), // because housenumber, building levels etc. depend on it
-        AddCycleway(o,r), // SLOW QUERY
-        AddSidewalk(o), // SLOW QUERY
-        AddProhibitedForPedestrians(o), // uses info from AddSidewalk quest, should be after it
-        AddCrossingType(o, r),
-        AddBuildingLevels(o),
-        AddBusStopShelter(o, r), // at least OsmAnd
-        AddVegetarian(o, r),
-        AddVegan(o, r),
-        AddInternetAccess(o, r), // used by OsmAnd
-        AddParkingFee(o, r), // used by OsmAnd
-        AddMotorcycleParkingCapacity(o, r),
-        AddPathSurface(o, r), // used by OSM Carto, OsmAnd
-        AddTracktype(o, r), // widely used in map rendering - OSM Carto, OsmAnd...
-        AddMaxWeight(o), // used by OSRM and other routing engines
-        AddForestLeafType(o), // used by OSM Carto
-        AddBikeParkingType(o), // used by OsmAnd
-        AddWheelchairAccessToilets(o, r), // used by wheelmap, OsmAnd, MAPS.ME
-        AddPlaygroundAccess(o), //late as in many areas all needed access=private is already mapped
-        AddWheelchairAccessBusiness(o, featureDictionaryFuture), // used by wheelmap, OsmAnd, MAPS.ME
-        AddToiletAvailability(o), //OSM Carto, shown in OsmAnd descriptions
-        AddFerryAccessPedestrian(o),
-        AddFerryAccessMotorVehicle(o),
-        AddAcceptsCash(o, featureDictionaryFuture),
-
-        // ↓ 4. definitely shown as errors in QA tools
-
-        // ↓ 5. may be shown as missing in QA tools
-        DetermineRecyclingGlass(o), // because most recycling:glass=yes is a tagging mistake
-
-        // ↓ 6. may be shown as possibly missing in QA tools
-
-        // ↓ 7. data useful for only a specific use case
-        AddWayLit(o, r), //  used by OsmAnd if "Street lighting" is enabled. (Configure map, Map rendering, Details)
-        AddToiletsFee(o), // used by OsmAnd in the object description
-        AddBabyChangingTable(o), // used by OsmAnd in the object description
-        AddBikeParkingCover(o), // used by OsmAnd in the object description
-        AddTactilePavingCrosswalk(o, r), // Paving can be completed while waiting to cross
-        AddTrafficSignalsSound(o, r), // Sound needs to be done as or after you're crossing
-        AddRoofShape(o),
-        AddWheelchairAccessPublicTransport(o, r),
-        AddWheelchairAccessOutside(o, r),
-        AddTactilePavingBusStop(o, r),
-        AddBridgeStructure(o),
-        AddReligionToWaysideShrine(o),
-        AddCyclewaySegregation(o, r),
-        MarkCompletedBuildingConstruction(o, r),
-        AddGeneralFee(o),
-        AddSelfServiceLaundry(o),
-        AddHandrail(o, r), // for accessibility of pedestrian routing
-        AddInformationToTourism(o),
-
-        // ↓ 8. defined in the wiki, but not really used by anyone yet. Just collected for
-        //      the sake of mapping it in case it makes sense later
-        AddIsDefibrillatorIndoor(o),
-        AddSummitRegister(o, r),
-        AddCyclewayPartSurface(o, r),
-        AddFootwayPartSurface(o, r),
-        AddMotorcycleParkingCover(o),
-        AddFireHydrantType(o),
-        AddParkingType(o),
-        AddPostboxRef(o),
-        AddWheelchairAccessToiletsPart(o, r),
-        AddBoardType(o),
-        AddPowerPolesMaterial(o),
-        AddCarWashType(o),
-        AddBenchStatusOnBusStop(o, r),
-        AddBenchBackrest(o),
-        AddTrafficSignalsButton(o)
+        AddPathSmoothness(o, r)
+//        AddPlaceName(o, featureDictionaryFuture),
+//        AddOneway(o, trafficFlowSegmentsApi, trafficFlowDao),
+//        AddBusStopName(o),
+//        AddIsBuildingUnderground(o), //to avoid asking AddHousenumber and other for underground buildings
+//        AddHousenumber(o),
+//        AddAddressStreet(o, roadNameSuggestionsDao),
+//        MarkCompletedHighwayConstruction(o, r),
+//        AddReligionToPlaceOfWorship(o), // icons on maps are different - OSM Carto, mapy.cz, OsmAnd, Sputnik etc
+//        AddParkingAccess(o), //OSM Carto, mapy.cz, OSMand, Sputnik etc
+//
+//        // ↓ 3. useful data that is used by some data consumers
+//        AddRecyclingType(o),
+//        AddRecyclingContainerMaterials(o, r),
+//        AddSport(o),
+//        AddRoadSurface(o, r), // used by BRouter, OsmAnd, OSRM, graphhopper, HOT map style
+//        AddMaxSpeed(o), // should best be after road surface because it excludes unpaved roads
+//        AddMaxHeight(o), // OSRM and other routing engines
+//        AddRailwayCrossingBarrier(o, r), // useful for routing
+//        AddPostboxCollectionTimes(o, r),
+//        AddOpeningHours(o, featureDictionaryFuture, r),
+//        DetailRoadSurface(o), // used by BRouter, OsmAnd, OSRM, graphhopper
+//        AddBikeParkingCapacity(o, r), // used by cycle map layer on osm.org, OsmAnd
+//        AddOrchardProduce(o),
+//        AddBuildingType(o), // because housenumber, building levels etc. depend on it
+//        AddCycleway(o,r), // SLOW QUERY
+//        AddSidewalk(o), // SLOW QUERY
+//        AddProhibitedForPedestrians(o), // uses info from AddSidewalk quest, should be after it
+//        AddCrossingType(o, r),
+//        AddBuildingLevels(o),
+//        AddBusStopShelter(o, r), // at least OsmAnd
+//        AddVegetarian(o, r),
+//        AddVegan(o, r),
+//        AddInternetAccess(o, r), // used by OsmAnd
+//        AddParkingFee(o, r), // used by OsmAnd
+//        AddMotorcycleParkingCapacity(o, r),
+//        AddPathSurface(o, r), // used by OSM Carto, OsmAnd
+//        AddTracktype(o, r), // widely used in map rendering - OSM Carto, OsmAnd...
+//        AddMaxWeight(o), // used by OSRM and other routing engines
+//        AddForestLeafType(o), // used by OSM Carto
+//        AddBikeParkingType(o), // used by OsmAnd
+//        AddWheelchairAccessToilets(o, r), // used by wheelmap, OsmAnd, MAPS.ME
+//        AddPlaygroundAccess(o), //late as in many areas all needed access=private is already mapped
+//        AddWheelchairAccessBusiness(o, featureDictionaryFuture), // used by wheelmap, OsmAnd, MAPS.ME
+//        AddToiletAvailability(o), //OSM Carto, shown in OsmAnd descriptions
+//        AddFerryAccessPedestrian(o),
+//        AddFerryAccessMotorVehicle(o),
+//        AddAcceptsCash(o, featureDictionaryFuture),
+//
+//        // ↓ 4. definitely shown as errors in QA tools
+//
+//        // ↓ 5. may be shown as missing in QA tools
+//        DetermineRecyclingGlass(o), // because most recycling:glass=yes is a tagging mistake
+//
+//        // ↓ 6. may be shown as possibly missing in QA tools
+//
+//        // ↓ 7. data useful for only a specific use case
+//        AddWayLit(o, r), //  used by OsmAnd if "Street lighting" is enabled. (Configure map, Map rendering, Details)
+//        AddToiletsFee(o), // used by OsmAnd in the object description
+//        AddBabyChangingTable(o), // used by OsmAnd in the object description
+//        AddBikeParkingCover(o), // used by OsmAnd in the object description
+//        AddTactilePavingCrosswalk(o, r), // Paving can be completed while waiting to cross
+//        AddTrafficSignalsSound(o, r), // Sound needs to be done as or after you're crossing
+//        AddRoofShape(o),
+//        AddWheelchairAccessPublicTransport(o, r),
+//        AddWheelchairAccessOutside(o, r),
+//        AddTactilePavingBusStop(o, r),
+//        AddBridgeStructure(o),
+//        AddReligionToWaysideShrine(o),
+//        AddCyclewaySegregation(o, r),
+//        MarkCompletedBuildingConstruction(o, r),
+//        AddGeneralFee(o),
+//        AddSelfServiceLaundry(o),
+//        AddHandrail(o, r), // for accessibility of pedestrian routing
+//        AddInformationToTourism(o),
+//
+//        // ↓ 8. defined in the wiki, but not really used by anyone yet. Just collected for
+//        //      the sake of mapping it in case it makes sense later
+//        AddIsDefibrillatorIndoor(o),
+//        AddSummitRegister(o, r),
+//        AddCyclewayPartSurface(o, r),
+//        AddFootwayPartSurface(o, r),
+//        AddMotorcycleParkingCover(o),
+//        AddFireHydrantType(o),
+//        AddParkingType(o),
+//        AddPostboxRef(o),
+//        AddWheelchairAccessToiletsPart(o, r),
+//        AddBoardType(o),
+//        AddPowerPolesMaterial(o),
+//        AddCarWashType(o),
+//        AddBenchStatusOnBusStop(o, r),
+//        AddBenchBackrest(o),
+//        AddTrafficSignalsButton(o)
     ))
 
     @Provides @Singleton fun osmNoteQuestType(): OsmNoteQuestType = OsmNoteQuestType()

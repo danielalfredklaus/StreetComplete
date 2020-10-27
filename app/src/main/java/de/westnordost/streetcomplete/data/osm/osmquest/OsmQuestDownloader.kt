@@ -44,6 +44,8 @@ class OsmQuestDownloader @Inject constructor(
         val time = System.currentTimeMillis()
         val success = questType.download(bbox) { element, geometry ->
             if (mayCreateQuestFrom(questType, element, geometry, truncatedBlacklistedPositions)) {
+
+                // TODO sst: is it possible to add additional elements for a quest?
                 val quest = OsmQuest(questType, element.type, element.id, geometry!!)
 
                 quests.add(quest)

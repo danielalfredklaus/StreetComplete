@@ -3,8 +3,7 @@ package de.westnordost.streetcomplete;
 import androidx.appcompat.app.AppCompatDelegate;
 
 /** Constant class to have all the identifiers for shared preferences in one place */
-public class Prefs
-{
+public class Prefs {
 	public static final String
 			OAUTH = "oauth",
 			OAUTH_ACCESS_TOKEN = "oauth.accessToken",
@@ -17,7 +16,6 @@ public class Prefs
 			THEME_SELECT = "theme.select",
 			OVERPASS_URL = "overpass_url",
 			RESURVEY_INTERVALS = "quests.resurveyIntervals";
-
 
 	public static final String
 		OSM_USER_ID = "osm.userid",
@@ -38,7 +36,8 @@ public class Prefs
 			LAST_PICKED_PREFIX = "imageListLastPicked.",
 			LAST_LOCATION_REQUEST_DENIED = "location.denied",
 			LAST_VERSION = "lastVersion",
-			HAS_SHOWN_TUTORIAL = "hasShownTutorial";
+			HAS_SHOWN_TUTORIAL = "hasShownTutorial",
+			HAS_COMPLETED_ARCORE_MEASUREMENT = "hasCompletedARCoreMeasurement";
 
 	public static final String HAS_SHOWN_UNDO_FUCKUP_WARNING = "alert.undo_fuckup_warning";
 

@@ -83,6 +83,7 @@ import de.westnordost.streetcomplete.quests.traffic_signals_button.AddTrafficSig
 import de.westnordost.streetcomplete.quests.traffic_signals_sound.AddTrafficSignalsSound
 import de.westnordost.streetcomplete.quests.way_lit.AddWayLit
 import de.westnordost.streetcomplete.quests.wheelchair_access.*
+import de.westnordost.streetcomplete.quests.width.AddWidth
 import de.westnordost.streetcomplete.settings.ResurveyIntervalsStore
 import java.util.concurrent.FutureTask
 import javax.inject.Singleton
@@ -96,7 +97,8 @@ object QuestModule
         o: OverpassMapDataAndGeometryApi,
         r: ResurveyIntervalsStore,
         roadNameSuggestionsDao: RoadNameSuggestionsDao,
-        trafficFlowSegmentsApi: TrafficFlowSegmentsApi, trafficFlowDao: WayTrafficFlowDao,
+        trafficFlowSegmentsApi: TrafficFlowSegmentsApi,
+        trafficFlowDao: WayTrafficFlowDao,
         featureDictionaryFuture: FutureTask<FeatureDictionary>
     ): QuestTypeRegistry = QuestTypeRegistry(listOf(
 
@@ -106,7 +108,8 @@ object QuestModule
         // ↓ 2. important data that is used by many data consumers
         AddRoadName(o, roadNameSuggestionsDao),
         AddIncline(o, r),
-        AddPathSmoothness(o, r)
+        AddPathSmoothness(o, r),
+        AddWidth(o, r)
 //        AddPlaceName(o, featureDictionaryFuture),
 //        AddOneway(o, trafficFlowSegmentsApi, trafficFlowDao),
 //        AddBusStopName(o),

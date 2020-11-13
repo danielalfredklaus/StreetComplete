@@ -11,7 +11,7 @@ import de.westnordost.streetcomplete.data.osm.osmquest.OsmElementQuestType
 
 class AddKerbType : OsmElementQuestType<String> {
 
-    private val footwayCrossingfilter by lazy { """
+    private val footwayCrossingWayFilter by lazy { """
         ways with highway = footway
          and footway = crossing
          and (!barrier or barrier != kerb or (barrier = kerb and (!kerb or !kerb:left or !kerb:right)))
@@ -23,7 +23,7 @@ class AddKerbType : OsmElementQuestType<String> {
     override val isSplitWayEnabled = false
 
     override fun getApplicableElements(mapData: MapDataWithGeometry): Iterable<Element> {
-        val footwayCrossingWays = mapData.ways.filter { footwayCrossingfilter.matches(it) }
+        val footwayCrossingWays = mapData.ways.filter { footwayCrossingWayFilter.matches(it) }
         val applicableNodes = mutableSetOf<Node>()
         footwayCrossingWays.forEach { way ->
             if (way.nodeIds.size < 3) {
@@ -39,7 +39,7 @@ class AddKerbType : OsmElementQuestType<String> {
                 if (currentNode != null) {
                     if (isCrossingNode(currentNode)) {
                         // Kerbs on crossing islands should be tagged as well
-                        if (isCrossingIsland(currentNode) && !kerbAlreadyTagged(currentNode)) {
+                        if (isCrossingIslandNode(currentNode) && !kerbAlreadyTagged(currentNode)) {
                             applicableNodes.add(currentNode)
                         }
 
@@ -68,7 +68,7 @@ class AddKerbType : OsmElementQuestType<String> {
         return "crossing" == node.tags["highway"]
     }
 
-    private fun isCrossingIsland(node: Node): Boolean {
+    private fun isCrossingIslandNode(node: Node): Boolean {
         return "island" == node.tags["traffic_calming"] || "yes" == node.tags["crossing:island"]
     }
 

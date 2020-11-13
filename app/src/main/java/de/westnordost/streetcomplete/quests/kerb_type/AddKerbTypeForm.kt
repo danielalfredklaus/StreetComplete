@@ -10,6 +10,7 @@ import kotlinx.android.synthetic.main.quest_kerb_type.*
 import kotlin.math.abs
 
 class AddKerbTypeForm : AbstractQuestFormAnswerFragment<String>() {
+
     override val contentLayoutResId = R.layout.quest_kerb_type
 
     private val valueItems = listOf(
@@ -19,12 +20,13 @@ class AddKerbTypeForm : AbstractQuestFormAnswerFragment<String>() {
         Item("rolled", R.drawable.kerb_rolled, R.string.quest_kerb_rolled, R.string.quest_kerb_rolled_description, null))
     private val initialValueIndex = 1
 
-    private var carouselMoved = false
+    private var pagerMoved = false
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initPager()
         initButtons()
+        checkIsFormComplete()
     }
 
     private fun initPager() {
@@ -47,7 +49,7 @@ class AddKerbTypeForm : AbstractQuestFormAnswerFragment<String>() {
             }
 
             override fun onPageSelected(position: Int) {
-                carouselMoved = true
+                pagerMoved = true
                 checkIsFormComplete()
 
                 if (pager.currentItem >= valueItems.size - 1) {
@@ -69,7 +71,6 @@ class AddKerbTypeForm : AbstractQuestFormAnswerFragment<String>() {
         })
     }
 
-
     private fun initButtons() {
         beforeButton.setOnClickListener {
             if (pager.currentItem < 1) {
@@ -86,9 +87,8 @@ class AddKerbTypeForm : AbstractQuestFormAnswerFragment<String>() {
         }
     }
 
-
     override fun onClickOk() {
-        applyAnswer("test")
+        applyAnswer(valueItems[pager.currentItem].value!!)
     }
 
     override fun isFormComplete(): Boolean {
@@ -96,6 +96,6 @@ class AddKerbTypeForm : AbstractQuestFormAnswerFragment<String>() {
     }
 
     override fun isRejectingClose(): Boolean {
-        return carouselMoved
+        return pagerMoved
     }
 }

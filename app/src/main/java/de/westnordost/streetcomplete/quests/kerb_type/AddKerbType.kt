@@ -37,9 +37,9 @@ class AddKerbType : OsmElementQuestType<String> {
                 val currentNode = mapData.getNode(nodeIdIterator.next())
 
                 if (currentNode != null) {
-                    if (isCrossingNode(currentNode)) {
+                    if (isCrossing(currentNode.tags)) {
                         // Kerbs on crossing islands should be tagged as well
-                        if (isCrossingIslandNode(currentNode) && !kerbAlreadyTagged(currentNode)) {
+                        if (isCrossingIsland(currentNode.tags) && !kerbAlreadyTagged(currentNode.tags)) {
                             applicableNodes.add(currentNode)
                         }
 
@@ -47,13 +47,13 @@ class AddKerbType : OsmElementQuestType<String> {
                         // it should be added as long as it is not a crossing node itself.
                         // If the previous node is a crossing node that is also a crossing island
                         // then it was already added.
-                        if (previousNode != null && !isCrossingNode(previousNode) && !kerbAlreadyTagged(previousNode)) {
+                        if (previousNode != null && !isCrossing(previousNode.tags) && !kerbAlreadyTagged(previousNode.tags)) {
                             applicableNodes.add(previousNode)
                         }
                     } else {
                         // After a crossing node, the next node should be added if it is not a
                         // crossing node itself and does not have the kerb tags already.
-                        if (previousNode != null && isCrossingNode(previousNode) && !kerbAlreadyTagged(previousNode)) {
+                        if (previousNode != null && isCrossing(previousNode.tags) && !kerbAlreadyTagged(previousNode.tags)) {
                             applicableNodes.add(currentNode)
                         }
                     }
@@ -64,21 +64,24 @@ class AddKerbType : OsmElementQuestType<String> {
         return applicableNodes
     }
 
-    private fun isCrossingNode(node: Node): Boolean {
-        return "crossing" == node.tags["highway"]
+    private fun isCrossing(tags: Map<String, String>): Boolean {
+        return "crossing" == tags["highway"]
     }
 
-    private fun isCrossingIslandNode(node: Node): Boolean {
-        return "island" == node.tags["traffic_calming"] || "yes" == node.tags["crossing:island"]
+    private fun isCrossingIsland(tags: Map<String, String>): Boolean {
+        return "island" == tags["traffic_calming"] || "yes" == tags["crossing:island"]
     }
 
-    private fun kerbAlreadyTagged(node: Element): Boolean {
-        return "kerb" == node.tags["barrier"] && !node.tags["kerb"].isNullOrEmpty()
+    private fun kerbAlreadyTagged(tags: Map<String, String>): Boolean {
+        return "kerb" == tags["barrier"] && !tags["kerb"].isNullOrEmpty()
     }
 
     override fun isApplicableTo(element: Element): Boolean? = null
 
-    override fun getTitle(tags: Map<String, String>) =  R.string.quest_kerb_type_title
+    override fun getTitle(tags: Map<String, String>) = when {
+        isCrossingIsland(tags) -> R.string.quest_kerb_type_traffic_island_title
+        else -> R.string.quest_kerb_type_title
+    }
 
     override fun createForm(): AddKerbTypeForm = AddKerbTypeForm()
 
@@ -87,5 +90,10 @@ class AddKerbType : OsmElementQuestType<String> {
         changes.updateWithCheckDate("kerb", answer)
         changes.deleteIfExists("kerb:left")
         changes.deleteIfExists("kerb:right")
+
+        changes.deleteIfExists("source:barrier")
+        changes.deleteIfExists("source:kerb")
+        changes.deleteIfExists("source:kerb:left")
+        changes.deleteIfExists("source:kerb:right")
     }
 }

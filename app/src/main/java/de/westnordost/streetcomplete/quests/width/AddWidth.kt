@@ -9,6 +9,7 @@ class AddWidth : OsmFilterQuestType<WidthAnswer>() {
 
     override val elementFilter = """
         ways with highway ~ path|footway
+        and (!area or area = no)
         and access !~ private|no
         and (!conveying or conveying = no) and (!indoor or indoor = no)
         and (!width or width = no)

@@ -20,10 +20,6 @@ class AddWidthForm : AbstractQuestFormAnswerWithSidewalkFragment<WidthAnswer>() 
 
     private var answer: WidthAnswer? = null
 
-    override fun shouldHandleSidewalks(): Boolean {
-        return true
-    }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         initInputFields()
@@ -36,7 +32,7 @@ class AddWidthForm : AbstractQuestFormAnswerWithSidewalkFragment<WidthAnswer>() 
             startActivityForResult(intent, REQUEST_CODE_MEASURE_DISTANCE)
         }
 
-        manualInputField.addTextChangedListener(object: TextWatcher {
+        manualInputField.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
                 // NOP
             }
@@ -62,36 +58,44 @@ class AddWidthForm : AbstractQuestFormAnswerWithSidewalkFragment<WidthAnswer>() 
         }
     }
 
-    override fun isFormComplete(): Boolean {
-        return manualInputField.text.isNotEmpty()
-    }
+    override fun shouldHandleSidewalks(): Boolean = true
+
+    override fun isFormComplete(): Boolean = manualInputField.text.isNotEmpty()
 
     override fun resetInputs() {
         manualInputField.text = null
     }
 
+    override fun getLeftSidewalkTitle(): CharSequence {
+        return super.getLeftSidewalkTitle() // TODO sst
+    }
+
+    override fun getRightSidewalkTitle(): CharSequence {
+        return super.getRightSidewalkTitle() // TODO sst
+    }
+
     override fun onClickOk() {
         val width = manualInputField.text.toString()
-        if (elementHasSidewalk) {
-                if (answer is SidewalkWidthAnswer) {
-                    if (currentSidewalkSide == SidewalkSide.LEFT) {
-                        (answer as SidewalkWidthAnswer).leftSidewalkValue = width
-                    } else {
-                        (answer as SidewalkWidthAnswer).rightSidewalkValue = width
-                    }
-                    applyAnswer(answer!!)
+        if (hasSidewalk) {
+            if (answer is SidewalkWidthAnswer) {
+                if (currentSidewalkSide == SidewalkSide.LEFT) {
+                    (answer as SidewalkWidthAnswer).leftSidewalkValue = width
                 } else {
-                    answer =
-                        if (currentSidewalkSide == SidewalkSide.LEFT)
-                            SidewalkWidthAnswer(width, null)
-                        else
-                            SidewalkWidthAnswer(null, width)
-                    if (sidewalkOnBothSides) {
-                        switchToOppositeSidewalkSide()
-                    } else {
-                        applyAnswer(answer!!)
-                    }
+                    (answer as SidewalkWidthAnswer).rightSidewalkValue = width
                 }
+                applyAnswer(answer!!)
+            } else {
+                answer =
+                    if (currentSidewalkSide == SidewalkSide.LEFT)
+                        SidewalkWidthAnswer(width, null)
+                    else
+                        SidewalkWidthAnswer(null, width)
+                if (sidewalkOnBothSides) {
+                    switchToOppositeSidewalkSide()
+                } else {
+                    applyAnswer(answer!!)
+                }
+            }
         } else {
             answer = SimpleWidthAnswer(width)
             applyAnswer(answer!!)

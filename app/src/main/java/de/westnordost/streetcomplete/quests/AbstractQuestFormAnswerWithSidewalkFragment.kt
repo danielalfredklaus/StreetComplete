@@ -16,13 +16,9 @@ abstract class AbstractQuestFormAnswerWithSidewalkFragment<T> : AbstractQuestFor
 
     private val listener: Listener? get() = parentFragment as? Listener ?: activity as? Listener
 
-    protected var elementHasSidewalk = false
+    protected var hasSidewalk = false
     protected var sidewalkOnBothSides = false
     protected var currentSidewalkSide: SidewalkSide? = null
-
-    protected open fun shouldHandleSidewalks(): Boolean {
-        return false
-    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -46,6 +42,7 @@ abstract class AbstractQuestFormAnswerWithSidewalkFragment<T> : AbstractQuestFor
             sidewalkTag.contentEquals("both") -> {
                 sidewalkOnBothSides = true
                 currentSidewalkSide = SidewalkSide.LEFT
+                titleLabel.text = getLeftSidewalkTitle()
 
                 okButton.text = resources.getText(R.string.next)
             }
@@ -60,8 +57,7 @@ abstract class AbstractQuestFormAnswerWithSidewalkFragment<T> : AbstractQuestFor
         }
 
         if (currentSidewalkSide != null) {
-            elementHasSidewalk = true
-            titleLabel.text = "test"
+            hasSidewalk = true
             listener?.onHighlightSidewalkSide(questId, questGroup, currentSidewalkSide!!)
         }
     }
@@ -85,6 +81,10 @@ abstract class AbstractQuestFormAnswerWithSidewalkFragment<T> : AbstractQuestFor
             else getRightSidewalkTitle()
         okButton.text = resources.getText(android.R.string.ok)
         resetInputs()
+    }
+
+    protected open fun shouldHandleSidewalks(): Boolean {
+        return false
     }
 
     protected open fun resetInputs() {

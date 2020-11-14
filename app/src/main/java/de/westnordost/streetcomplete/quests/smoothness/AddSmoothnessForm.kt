@@ -5,11 +5,11 @@ import android.os.Bundle
 import android.view.View
 import androidx.core.content.ContextCompat
 import de.westnordost.streetcomplete.R
-import de.westnordost.streetcomplete.quests.AbstractQuestFormAnswerFragment
+import de.westnordost.streetcomplete.quests.AbstractQuestFormAnswerWithSidewalkFragment
 import de.westnordost.streetcomplete.view.image_select.Item
 import kotlinx.android.synthetic.main.quest_smoothness.*
 
-class AddPathSmoothnessForm : AbstractQuestFormAnswerFragment<String>() {
+class AddSmoothnessForm : AbstractQuestFormAnswerWithSidewalkFragment<AbstractSmoothnessAnswer>() {
     override val contentLayoutResId = R.layout.quest_smoothness
 
     private val valueItems = listOf(
@@ -22,6 +22,8 @@ class AddPathSmoothnessForm : AbstractQuestFormAnswerFragment<String>() {
         Item("good", R.drawable.smoothness_good, R.string.quest_smoothness_good, R.string.quest_smoothness_good_description, null),
         Item("excellent", R.drawable.smoothness_excellent, R.string.quest_smoothness_excellent, R.string.quest_smoothness_excellent_description, null))
     private val initialValueIndex = 5
+
+    private var answer: AbstractSmoothnessAnswer? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -51,15 +53,54 @@ class AddPathSmoothnessForm : AbstractQuestFormAnswerFragment<String>() {
         valueExampleImage.setImageDrawable(exampleImage)
     }
 
-    override fun onClickOk() {
-        applyAnswer("test")
-    }
-
     override fun isFormComplete(): Boolean {
         return true
     }
 
     override fun isRejectingClose(): Boolean {
         return false
+    }
+
+    override fun shouldHandleSidewalks() = true
+
+    override fun resetInputs() {
+        valueSlider.value = initialValueIndex.toFloat()
+    }
+
+    override fun getLeftSidewalkTitle(): CharSequence {
+        return super.getLeftSidewalkTitle() // TODO sst
+    }
+
+    override fun getRightSidewalkTitle(): CharSequence {
+        return super.getRightSidewalkTitle() // TODO sst
+    }
+
+    override fun onClickOk() {
+        val smoothness = valueItems[valueSlider.value.toInt()].value!!
+
+        if (hasSidewalk) {
+            if (answer is SidewalkSmoothnessAnswer) {
+                if (currentSidewalkSide == Listener.SidewalkSide.LEFT) {
+                    (answer as SidewalkSmoothnessAnswer).leftSidewalkValue = SimpleSmoothnessAnswer(smoothness)
+                } else {
+                    (answer as SidewalkSmoothnessAnswer).rightSidewalkValue = SimpleSmoothnessAnswer(smoothness)
+                }
+                applyAnswer(answer!!)
+            } else {
+                answer =
+                    if (currentSidewalkSide == Listener.SidewalkSide.LEFT)
+                        SidewalkSmoothnessAnswer(SimpleSmoothnessAnswer(smoothness), null)
+                    else
+                        SidewalkSmoothnessAnswer(null, SimpleSmoothnessAnswer(smoothness))
+                if (sidewalkOnBothSides) {
+                    switchToOppositeSidewalkSide()
+                } else {
+                    applyAnswer(answer!!)
+                }
+            }
+        } else {
+            answer = SimpleSmoothnessAnswer(smoothness)
+            applyAnswer(answer!!)
+        }
     }
 }

@@ -13,8 +13,8 @@ class AddKerbType : OsmElementQuestType<String> {
 
     private val footwayCrossingWayFilter by lazy { """
         ways with highway = footway
-         and footway = crossing
-         and (!barrier or barrier != kerb or (barrier = kerb and (!kerb or !kerb:left or !kerb:right)))
+        and footway = crossing
+        and (!barrier or barrier != kerb or (barrier = kerb and (!kerb or !kerb:left or !kerb:right)))
     """.toElementFilterExpression() }
 
     override val commitMessage = "Add kerb to crossing"

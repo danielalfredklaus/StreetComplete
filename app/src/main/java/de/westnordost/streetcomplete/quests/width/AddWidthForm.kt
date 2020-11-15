@@ -11,14 +11,15 @@ import de.westnordost.streetcomplete.measurement.ARCoreMeasurementActivity
 import de.westnordost.streetcomplete.measurement.ARCoreMeasurementActivity.Companion.REQUEST_CODE_MEASURE_DISTANCE
 import de.westnordost.streetcomplete.measurement.ARCoreMeasurementActivity.Companion.RESULT_ATTRIBUTE_DISTANCE
 import de.westnordost.streetcomplete.quests.AbstractQuestAnswerFragment.Listener.SidewalkSide
-import de.westnordost.streetcomplete.quests.AbstractQuestFormAnswerWithSidewalkFragment
+import de.westnordost.streetcomplete.quests.AbstractQuestFormAnswerWithSidewalkSupportFragment
 import kotlinx.android.synthetic.main.quest_width.*
 import kotlin.math.roundToInt
 
-class AddWidthForm : AbstractQuestFormAnswerWithSidewalkFragment<WidthAnswer>() {
+class AddWidthForm : AbstractQuestFormAnswerWithSidewalkSupportFragment<AbstractWidthAnswer>() {
+
     override val contentLayoutResId = R.layout.quest_width
 
-    private var answer: WidthAnswer? = null
+    private var answer: AbstractWidthAnswer? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -58,7 +59,7 @@ class AddWidthForm : AbstractQuestFormAnswerWithSidewalkFragment<WidthAnswer>() 
         }
     }
 
-    override fun shouldHandleSidewalks(): Boolean = true
+    override fun shouldTagBySidewalkSideIfApplicable(): Boolean = true
 
     override fun isFormComplete(): Boolean = manualInputField.text.isNotEmpty()
 
@@ -66,30 +67,23 @@ class AddWidthForm : AbstractQuestFormAnswerWithSidewalkFragment<WidthAnswer>() 
         manualInputField.text = null
     }
 
-    override fun getLeftSidewalkTitle(): CharSequence {
-        return super.getLeftSidewalkTitle() // TODO sst
-    }
-
-    override fun getRightSidewalkTitle(): CharSequence {
-        return super.getRightSidewalkTitle() // TODO sst
-    }
-
     override fun onClickOk() {
+        // TODO sst: ask about unrealistic values
         val width = manualInputField.text.toString()
-        if (hasSidewalk) {
+        if (elementHasSidewalk) {
             if (answer is SidewalkWidthAnswer) {
                 if (currentSidewalkSide == SidewalkSide.LEFT) {
-                    (answer as SidewalkWidthAnswer).leftSidewalkValue = width
+                    (answer as SidewalkWidthAnswer).leftSidewalkAnswer = SimpleWidthAnswer(width)
                 } else {
-                    (answer as SidewalkWidthAnswer).rightSidewalkValue = width
+                    (answer as SidewalkWidthAnswer).rightSidewalkAnswer = SimpleWidthAnswer(width)
                 }
                 applyAnswer(answer!!)
             } else {
                 answer =
                     if (currentSidewalkSide == SidewalkSide.LEFT)
-                        SidewalkWidthAnswer(width, null)
+                        SidewalkWidthAnswer(SimpleWidthAnswer(width), null)
                     else
-                        SidewalkWidthAnswer(null, width)
+                        SidewalkWidthAnswer(null, SimpleWidthAnswer(width))
                 if (sidewalkOnBothSides) {
                     switchToOppositeSidewalkSide()
                 } else {

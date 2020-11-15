@@ -945,16 +945,37 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
     <string name="upward_slope">Upward slope</string>
     <string name="downward_slope">Downward slope</string>
 
-    <string name="measurement_instructions_width">Please measure the width of the sidewalk at its narrowest section. Please also consider permanent objects such as trash cans or street lights when you determine the narrowest point.</string>
+    <string name="quest_incline_path_title">"What's the maximum incline of this path?"</string>
+    <string name="quest_incline_street_title">"What's the maximum incline of this piece of road?"</string>
+    <string name="quest_incline_street_name_title">"What's the maximum incline of the road %s here?"</string>
     <string name="quest_incline_device_instructions_step_1">Find the steepest section.\n</string>
     <string name="quest_incline_device_instructions_step_2">Orient yourself on the street according to the arrows displayed on the map.\n</string>
     <string name="quest_incline_device_instructions_step_3">Place your phone flat on the floor with the screen facing upwards.\n</string>
     <string name="quest_incline_device_instructions_step_4">Lock/unlock the measurement by taping on the element below.</string>
-
     <string name="quest_incline_manual_instructions_step_1">Find the steepest section.\n</string>
     <string name="quest_incline_manual_instructions_step_2">Orient yourself on the street according to the arrows displayed on the map.\n</string>
     <string name="quest_incline_manual_instructions_step_3">Measure the slope with a digital level and enter the value below.</string>
 
+    <string name="quest_kerb_type_title">"What kind of curb exists at this point of the pedestrian crossing?"</string>
+    <string name="quest_kerb_type_traffic_island_title">"What kind of curb does this traffic island have?"</string>
+    <string name="quest_kerb_raised">Raised (> 3 cm)</string>
+    <string name="quest_kerb_lowered">Lowered (~ 3 cm)</string>
+    <string name="quest_kerb_flush">Flush (~ 0 cm)</string>
+    <string name="quest_kerb_rolled">Rolled</string>
+    <string name="quest_kerb_raised_description">Raised above the norm, sufficiently to prevent traversal by wheelchairs, as well as to impede bicycles.</string>
+    <string name="quest_kerb_lowered_description">Lowered curbs ensure that the crossing can be used by wheelchair users and allow access to drives.</string>
+    <string name="quest_kerb_flush_description">Similar to a lowered curb except the level transition is unlikely to be apparent to blind pedestrians.</string>
+    <string name="quest_kerb_rolled_description">Rolled kerbs still provide a gutter for water while being traversable by large wheeled vehicles, such as cars and bicycles, but not wheelchairs.</string>
+
+    <string name="quest_smoothness_path_title">"How is the smoothness quality of this path best described here?"</string>
+    <string name="quest_smoothness_cycleway_part_title">"How is the smoothness quality of the cycleway best described here?"</string>
+    <string name="quest_smoothness_footway_part_title">"How is the smoothness quality of the footway best described here?"</string>
+    <string name="quest_smoothness_street_title">"How is the smoothness quality of this piece of road best described?"</string>
+    <string name="quest_smoothness_street_sidewalk_title">"How is the smoothness quality of the highlighted sidewalk (dotted line) best described here?"</string>
+    <string name="quest_smoothness_street_name_title">"How is the smoothness quality of the road %s best described here?"</string>
+    <string name="quest_smoothness_street_name_sidewalk_title">"How is the smoothness quality of the highlighted sidewalk (dotted line) of the road %s best described here?"</string>
+    <string name="quest_smoothness_area_title">"How is the smoothness quality of this square best described?"</string>
+    <string name="quest_smoothness_area_name_title">"How is the smoothness quality on the square %s best described?"</string>
     <string name="quest_smoothness_impassable">Impassable</string>
     <string name="quest_smoothness_very_horrible">Very horrible</string>
     <string name="quest_smoothness_horrible">Horrible</string>
@@ -972,18 +993,16 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
     <string name="quest_smoothness_good_description">Suitable for racing bikes and all below</string>
     <string name="quest_smoothness_excellent_description">Suitable for roller blades, skate boards and all below</string>
 
-    <string name="quest_kerb_raised">Raised (> 3 cm)</string>
-    <string name="quest_kerb_lowered">Lowered (~ 3 cm)</string>
-    <string name="quest_kerb_flush">Flush (~ 0 cm)</string>
-    <string name="quest_kerb_rolled">Rolled</string>
-    <string name="quest_kerb_raised_description">Raised above the norm, sufficiently to prevent traversal by wheelchairs, as well as to impede bicycles.</string>
-    <string name="quest_kerb_lowered_description">Lowered curbs ensure that the crossing can be used by wheelchair users and allow access to drives.</string>
-    <string name="quest_kerb_flush_description">Similar to a lowered curb except the level transition is unlikely to be apparent to blind pedestrians.</string>
-    <string name="quest_kerb_rolled_description">Rolled kerbs still provide a gutter for water while being traversable by large wheeled vehicles, such as cars and bicycles, but not wheelchairs.</string>
+    <string name="quest_surface_street_sidewalk_title">"What's the surface of the highlighted sidewalk (dotted line) here?"</string>
+    <string name="quest_surface_street_name_sidewalk_title">"What's the surface of the highlighted sidewalk (dotted line) of the road %s here?"</string>
 
-    <string name="quest_kerb_type_title">"What kind of curb exists at this point of the pedestrian crossing?"</string>
-    <string name="quest_kerb_type_traffic_island_title">"What kind of curb does this traffic island have?"</string>
-    <string name="quest_path_smoothness_title">"How is the smoothness quality of this path best described?"</string>
-    <string name="quest_path_width_title">"What is the minimum width of this path?"</string>
-    <string name="quest_path_incline">"What is the maximum incline of this path?"</string>
+    <string name="quest_width_path_title">"What's the minimum width of this path here?"</string>
+    <string name="quest_width_cycleway_part_title">"What's the minimum width of the cycleway here?"</string>
+    <string name="quest_width_footway_part_title">"What's the minimum width of the footway here?"</string>
+    <string name="quest_width_street_title">"What's the minimum width of this piece of road?"</string>
+    <string name="quest_width_street_sidewalk_title">"What's the minimum width of the highlighted sidewalk (dotted line)?"</string>
+    <string name="quest_width_street_name_title">"What's the minimum width of the road %s here?"</string>
+    <string name="quest_width_street_name_sidewalk_title">"What's the minimum width of the highlighted sidewalk (dotted line) of the road %s here?"</string>
+    <string name="quest_width_measurement_instructions">Please measure the width of the sidewalk at its narrowest section. Please also consider permanent objects such as trash cans or street lights when you determine the narrowest point.</string>
+
 </resources>

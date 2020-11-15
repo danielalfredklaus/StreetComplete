@@ -1,58 +1,35 @@
 package de.westnordost.streetcomplete.quests.surface
 
 import de.westnordost.streetcomplete.R
-import de.westnordost.streetcomplete.data.meta.ANYTHING_UNPAVED
-import de.westnordost.streetcomplete.data.meta.updateWithCheckDate
-import de.westnordost.streetcomplete.data.osm.osmquest.OsmFilterQuestType
-import de.westnordost.streetcomplete.data.osm.changes.StringMapChangesBuilder
+import de.westnordost.streetcomplete.data.elementfilter.ElementFilterExpression
+import de.westnordost.streetcomplete.data.elementfilter.toElementFilterExpression
 
-class AddPathSurface : OsmFilterQuestType<SurfaceAnswer>() {
+class AddPathSurface : AbstractAddSurfaceQuestType() {
 
-    override val elementFilter = """
-        ways with highway ~ path|footway|cycleway|bridleway|steps
-        and segregated != yes
-        and access !~ private|no
-        and (!conveying or conveying = no)
-        and (!indoor or indoor = no)
-        and (
-          !surface
-          or surface ~ ${ANYTHING_UNPAVED.joinToString("|")} and surface older today -4 years
-          or surface older today -8 years
-          or (
-            surface ~ paved|unpaved
-            and !surface:note
-            and !note:surface
-          )
-        )
-    """
-    /* ~paved ways are less likely to change the surface type */
+    private val baseExpression by lazy {
+        """
+            ways with (
+              highway = footway
+              or (highway ~ path|cycleway|bridleway and foot != no)
+            )
+            and segregated != yes
+            and footway != crossing
+            and access !~ private|no
+            and (!conveying or conveying = no)
+            and (!indoor or indoor = no)
+            and (!area or area = no)
+        """.toElementFilterExpression()
+    }
 
-    override val commitMessage = "Add path surfaces"
-    override val wikiLink = "Key:surface"
-    override val icon = R.drawable.ic_quest_way_surface
-    override val isSplitWayEnabled = true
+    override val icon = R.drawable.ic_quest_surface_path
 
     override fun getTitle(tags: Map<String, String>) = when {
-        tags["area"] == "yes"          -> R.string.quest_streetSurface_square_title
-        tags["highway"] == "bridleway" -> R.string.quest_pathSurface_title_bridleway
-        tags["highway"] == "steps"     -> R.string.quest_pathSurface_title_steps
-        else                           -> R.string.quest_pathSurface_title
-        // rest is rather similar, can be called simply "path"
+        tags["area"] == "yes" ->        R.string.quest_streetSurface_square_title
+        else -> R.string.quest_pathSurface_title
     }
 
-    override fun createForm() = AddPathSurfaceForm()
+    override fun getBaseFilterExpression(): ElementFilterExpression = baseExpression
 
-    override fun applyAnswerTo(answer: SurfaceAnswer, changes: StringMapChangesBuilder) {
-        when(answer) {
-            is SpecificSurfaceAnswer -> {
-                changes.updateWithCheckDate("surface", answer.value)
-                changes.deleteIfExists("surface:note")
-            }
-            is GenericSurfaceAnswer -> {
-                changes.updateWithCheckDate("surface", answer.value)
-                changes.addOrModify("surface:note", answer.note)
-            }
-        }
-        changes.deleteIfExists("source:surface")
-    }
+    // The ways provided in the baseExpression should not have sidewalk tags.
+    override fun supportTaggingBySidewalkSide(): Boolean = false
 }

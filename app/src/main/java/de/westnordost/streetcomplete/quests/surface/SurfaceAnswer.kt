@@ -1,5 +1,10 @@
 package de.westnordost.streetcomplete.quests.surface
 
-sealed class SurfaceAnswer
+abstract class AbstractSurfaceAnswer
+sealed class SurfaceAnswer : AbstractSurfaceAnswer()
 data class GenericSurfaceAnswer(val value : String, val note: String) : SurfaceAnswer()
 data class SpecificSurfaceAnswer(val value: String) : SurfaceAnswer()
+data class SidewalkSurfaceAnswer(
+    var leftSidewalkAnswer: SurfaceAnswer?,
+    var rightSidewalkAnswer: SurfaceAnswer?) : AbstractSurfaceAnswer()
+

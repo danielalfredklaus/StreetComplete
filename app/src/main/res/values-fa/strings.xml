@@ -2247,7 +2247,6 @@
     <string name="resurvey_intervals_less_often">"کمتر بپرسید"</string>
     <string name="resurvey_intervals_default">"پیشفرض"</string>
     <string name="resurvey_intervals_more_often">"بیشتر اوقات بپرسید"</string>
-    <string name="quest_street_side_puzzle_select">"انتخاب کنید"</string>
     <string name="quest_accepts_cash_type_title">"آیا %1$s (%2$s) پرداخت نقدی را قبول می کند؟"</string>
     <string name="quest_busStopBench_tram_name_title">"آیا توقفگاه خودرو %s نیمکت دارد؟"</string>
     <string name="quest_busStopBench_tram_title">"آیا این توقفگاه خودرو نیمکت دارد؟"</string>
@@ -2289,4 +2288,20 @@
     <string name="achievement_outdoors_title">"در هوای آزاد"</string>
     <string name="achievement_outdoors_solved_X">"شما %d جُستار مفید برای گردشگران را پاسخ دادید"</string>
     <string name="quest_pedestrian_crossing_island">"آیا این گذرگاه عابر پیاده جزیره ای دارد؟"</string>
+    <string name="quest_generic_answer_noSign">"اینجا تابلو ندارد"</string>
+    <string name="quest_steps_ramp_separate_wheelchair">"آیا سطح شیب دار صندلی چرخدار به صورت راه جداگانه روی نقشه نمایش داده می شود؟"</string>
+    <string name="quest_steps_ramp_separate_wheelchair_confirm">"تفکیک شده"</string>
+    <string name="quest_steps_ramp_separate_wheelchair_decline">"بدون تفکیک"</string>
+    <string name="pref_title_sync2">"بارگذاری خودکار پاسخ‌ها"</string>
+    <string name="quest_surface_detailed_answer_impossible_title">"توصیف سطح"</string>
+    <string name="open_url">"بازگشایی نشانی"</string>
+    <string name="quest_buildingType_silo">"انبار غله"</string>
+    <string name="quest_buildingType_historic">"تاریخی"</string>
+    <string name="quest_buildingType_historic_description">"بنایی با ارزش تاریخی که برای هدفی ناشناخته یا نامشخص ساخته شده است"</string>
+    <string name="quest_buildingType_abandoned">"متروکه"</string>
+    <string name="quest_buildingType_abandoned_description">"ساختمان بلا استفاده که کارکرد اصلی یا هدف آن ناشناخته است"</string>
+    <string name="quest_buildingType_ruins">"خرابه"</string>
+    <string name="quest_buildingType_ruins_description">"ساختمانی متروکه ، ویران و غیرقابل شناسایی"</string>
+    <string name="quest_charging_station_capacity_title">"چند خودرو در این ایستگاه شارژ می تواند به طور همزمان شارژ شود؟"</string>
+    <string name="link_disaster_ninja_description">"نقشه ای که بلایای طبیعی اخیر را نشان می دهد و برای نقشه‌کش‌های همنوع دوست جالب است. همچنین ، بسیاری از آمارهای متنوع را برای تجزیه و تحلیل چگونگی نقشه‌کشی و به روز بودن مکان ها نشان می دهد."</string>
 </resources>

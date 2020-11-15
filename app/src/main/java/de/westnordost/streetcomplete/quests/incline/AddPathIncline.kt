@@ -13,6 +13,7 @@ class AddPathIncline : OsmFilterQuestType<String>() {
             or (highway ~ path|cycleway|bridleway and foot != no)
         )
         and footway != crossing
+        and !level
         and access !~ private|no
         and (!conveying or conveying = no)
         and (!indoor or indoor = no)

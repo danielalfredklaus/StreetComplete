@@ -13,6 +13,7 @@ class AddPathWidth : AbstractAddWidthQuestType() {
               or (highway ~ path|cycleway|bridleway and foot != no)
             )
             and footway != crossing
+            and !level
             and segregated != yes
             and access !~ private|no
             and (!conveying or conveying = no)

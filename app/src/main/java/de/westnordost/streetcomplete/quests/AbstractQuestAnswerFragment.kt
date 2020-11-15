@@ -265,7 +265,7 @@ abstract class AbstractQuestAnswerFragment<T> : AbstractBottomSheetFragment(), I
             onMapOrientation(initialMapRotation, initialMapTilt)
             startedOnce = true
         }
-        
+
         val answers = assembleOtherAnswers()
         if (answers.size == 1) {
             otherAnswersButton.setText(answers.first().titleResourceId)
@@ -351,7 +351,6 @@ abstract class AbstractQuestAnswerFragment<T> : AbstractBottomSheetFragment(), I
     }
 
     protected fun setButtonsView(resourceId: Int) {
-        otherAnswersButton.layoutParams = FlexboxLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT)
         removeButtonsView()
         activity?.layoutInflater?.inflate(resourceId, buttonPanel)
     }

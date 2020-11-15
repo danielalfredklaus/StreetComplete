@@ -19,6 +19,7 @@ import kotlin.math.atan2
 import kotlin.math.sqrt
 
 class AddInclineForm : AbstractQuestFormAnswerFragment<String>() {
+
     override val contentLayoutResId = R.layout.quest_incline
 
     private var sensorManager: SensorManager? = null
@@ -150,7 +151,6 @@ class AddInclineForm : AbstractQuestFormAnswerFragment<String>() {
     }
 
     override fun isFormComplete(): Boolean {
-        // TODO sst: ask user about unrealistic values...
         return if (deviceMeasurementActive) {
             inclineView.locked
         } else {
@@ -159,6 +159,7 @@ class AddInclineForm : AbstractQuestFormAnswerFragment<String>() {
     }
 
     override fun onClickOk() {
+        // TODO sst: ask user about unrealistic values...
         applyAnswer("test") // TODO sst: use real value
     }
 }

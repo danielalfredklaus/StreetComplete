@@ -9,55 +9,52 @@ import kotlinx.android.synthetic.main.fragment_quest_answer.*
 
 /**
  * Abstract base class for dialogs that need to handle sidewalk quests. If the the OSM element of
- * the quest is annotated with the 'sidewalk' tag, it will ask the question for both the left and
+ * the quest is annotated with the sidewalk tag, it can ask the question for both the left and
  * the right side (if they are available).
  */
-abstract class AbstractQuestFormAnswerWithSidewalkFragment<T> : AbstractQuestFormAnswerFragment<T>() {
+abstract class AbstractQuestFormAnswerWithSidewalkSupportFragment<T> : AbstractQuestFormAnswerFragment<T>() {
 
     private val listener: Listener? get() = parentFragment as? Listener ?: activity as? Listener
 
-    protected var hasSidewalk = false
+    protected var elementHasSidewalk = false
     protected var sidewalkOnBothSides = false
     protected var currentSidewalkSide: SidewalkSide? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        if (shouldHandleSidewalks()) {
+        if (shouldTagBySidewalkSideIfApplicable()) {
             handlePossibleSidewalks()
         }
     }
+
+    protected open fun shouldTagBySidewalkSideIfApplicable(): Boolean = false
 
     private fun handlePossibleSidewalks() {
         if (osmElement == null) {
             return
         }
 
-        var sidewalkTag = osmElement!!.tags["sidewalk"]
+        val sidewalkTag = osmElement!!.tags["sidewalk"]
         if (sidewalkTag == null) {
-            //return TODO sst
-            sidewalkTag = "both"
+            return
         }
 
         when {
             sidewalkTag.contentEquals("both") -> {
                 sidewalkOnBothSides = true
                 currentSidewalkSide = SidewalkSide.LEFT
-                titleLabel.text = getLeftSidewalkTitle()
-
                 okButton.text = resources.getText(R.string.next)
             }
             sidewalkTag.contentEquals("left") -> {
-                titleLabel.text = getLeftSidewalkTitle()
                 currentSidewalkSide = SidewalkSide.LEFT
             }
             sidewalkTag.contentEquals("right") -> {
-                titleLabel.text = getRightSidewalkTitle()
                 currentSidewalkSide = SidewalkSide.RIGHT
             }
         }
 
         if (currentSidewalkSide != null) {
-            hasSidewalk = true
+            elementHasSidewalk = true
             listener?.onHighlightSidewalkSide(questId, questGroup, currentSidewalkSide!!)
         }
     }
@@ -76,26 +73,11 @@ abstract class AbstractQuestFormAnswerWithSidewalkFragment<T> : AbstractQuestFor
             else SidewalkSide.LEFT
         listener?.onHighlightSidewalkSide(questId, questGroup, currentSidewalkSide!!)
 
-        titleLabel.text =
-            if (currentSidewalkSide == SidewalkSide.LEFT) getLeftSidewalkTitle()
-            else getRightSidewalkTitle()
         okButton.text = resources.getText(android.R.string.ok)
         resetInputs()
     }
 
-    protected open fun shouldHandleSidewalks(): Boolean {
-        return false
-    }
-
     protected open fun resetInputs() {
         // NOP
-    }
-
-    protected open fun getLeftSidewalkTitle(): CharSequence {
-        return titleLabel.text
-    }
-
-    protected open fun getRightSidewalkTitle(): CharSequence {
-        return titleLabel.text
     }
 }

@@ -158,7 +158,6 @@ class ShowQuestFormsActivity : AppCompatActivity(), AbstractQuestAnswerFragment.
     }
 
     override fun onHighlightSidewalkSide(questId: Long, group: QuestGroup, side: AbstractQuestAnswerFragment.Listener.SidewalkSide) {
-        popQuestForm()
-        // TODO sst
+        // NOP
     }
 }

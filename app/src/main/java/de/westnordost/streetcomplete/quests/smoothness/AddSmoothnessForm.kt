@@ -5,11 +5,12 @@ import android.os.Bundle
 import android.view.View
 import androidx.core.content.ContextCompat
 import de.westnordost.streetcomplete.R
-import de.westnordost.streetcomplete.quests.AbstractQuestFormAnswerWithSidewalkFragment
+import de.westnordost.streetcomplete.quests.AbstractQuestFormAnswerWithSidewalkSupportFragment
 import de.westnordost.streetcomplete.view.image_select.Item
 import kotlinx.android.synthetic.main.quest_smoothness.*
 
-class AddSmoothnessForm : AbstractQuestFormAnswerWithSidewalkFragment<AbstractSmoothnessAnswer>() {
+class AddSmoothnessForm : AbstractQuestFormAnswerWithSidewalkSupportFragment<AbstractSmoothnessAnswer>() {
+
     override val contentLayoutResId = R.layout.quest_smoothness
 
     private val valueItems = listOf(
@@ -53,37 +54,25 @@ class AddSmoothnessForm : AbstractQuestFormAnswerWithSidewalkFragment<AbstractSm
         valueExampleImage.setImageDrawable(exampleImage)
     }
 
-    override fun isFormComplete(): Boolean {
-        return true
-    }
+    override fun isFormComplete(): Boolean = true
 
-    override fun isRejectingClose(): Boolean {
-        return false
-    }
+    override fun isRejectingClose(): Boolean = false
 
-    override fun shouldHandleSidewalks() = true
+    override fun shouldTagBySidewalkSideIfApplicable() = true
 
     override fun resetInputs() {
         valueSlider.value = initialValueIndex.toFloat()
     }
 
-    override fun getLeftSidewalkTitle(): CharSequence {
-        return super.getLeftSidewalkTitle() // TODO sst
-    }
-
-    override fun getRightSidewalkTitle(): CharSequence {
-        return super.getRightSidewalkTitle() // TODO sst
-    }
-
     override fun onClickOk() {
         val smoothness = valueItems[valueSlider.value.toInt()].value!!
 
-        if (hasSidewalk) {
+        if (elementHasSidewalk) {
             if (answer is SidewalkSmoothnessAnswer) {
                 if (currentSidewalkSide == Listener.SidewalkSide.LEFT) {
-                    (answer as SidewalkSmoothnessAnswer).leftSidewalkValue = SimpleSmoothnessAnswer(smoothness)
+                    (answer as SidewalkSmoothnessAnswer).leftSidewalkAnswer = SimpleSmoothnessAnswer(smoothness)
                 } else {
-                    (answer as SidewalkSmoothnessAnswer).rightSidewalkValue = SimpleSmoothnessAnswer(smoothness)
+                    (answer as SidewalkSmoothnessAnswer).rightSidewalkAnswer = SimpleSmoothnessAnswer(smoothness)
                 }
                 applyAnswer(answer!!)
             } else {

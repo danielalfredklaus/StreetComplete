@@ -17,17 +17,26 @@ import de.westnordost.streetcomplete.data.elementfilter.toElementFilterExpressio
  */
 abstract class AbstractPedestrianAccessibleWayFilterQuestType<T> : OsmElementQuestType<T> {
 
+    // Filter ways that can be used by pedestrians via a sidewalk that is not mapped separately or
+    // by using the way itself (depending on the value of the highway tag). If ways are tagged with
+    // "sidewalk = yes" they are discarded, because it is unknown for which sides the user needs
+    // to answer questions. Ways that are tagged like this should first be updated with another quest.
     private val pedestrianAccessibleWayFilter by lazy {
         """
             ways with (
-                (highway !~ ${ACCEPTED_HIGHWAYS_WITHOUT_SIDEWALK_INFO.joinToString("|")} and sidewalk ~ left|right|both)
-                or (highway ~ ${ACCEPTED_HIGHWAYS_WITHOUT_SIDEWALK_INFO.joinToString("|")}))
+                (sidewalk ~ left|right|both)
+                or (highway ~ ${ASSUMED_PEDESTRIAN_ACCESSIBLE_HIGHWAYS.joinToString("|")})
+                or (highway ~ ${ASSUMED_PEDESTRIAN_ACCESSIBLE_HIGHWAYS_IF_NO_SIDEWALK.joinToString("|")} and sidewalk ~ no|none)
+            )
+            and access !~ private|no
+            and foot !~ private|no|use_sidepath
+            and sidewalk !~ separate|use_sidepath|yes
         """.toElementFilterExpression()
     }
 
     private val sidewalkAbsenceFilter by lazy {
         """
-            ways with sidewalk !~ left|right|both
+            ways with sidewalk !~ left|right|both|yes
         """.toElementFilterExpression()
     }
 
@@ -143,8 +152,12 @@ abstract class AbstractPedestrianAccessibleWayFilterQuestType<T> : OsmElementQue
     companion object {
         // For the following values of the highway tag, there needs to be no info about the
         // existence of a sidewalk in order to be applicable for a quest.
-        private val ACCEPTED_HIGHWAYS_WITHOUT_SIDEWALK_INFO = arrayOf(
-            "footway", "pedestrian", "cycleway", "living_street", "track", "bridleway"
+        private val ASSUMED_PEDESTRIAN_ACCESSIBLE_HIGHWAYS = arrayOf(
+            "footway", "pedestrian", "cycleway", "living_street", "track", "bridleway", "service"
+        )
+
+        private val ASSUMED_PEDESTRIAN_ACCESSIBLE_HIGHWAYS_IF_NO_SIDEWALK = arrayOf(
+            "residential", "road", "unclassified"
         )
     }
 }

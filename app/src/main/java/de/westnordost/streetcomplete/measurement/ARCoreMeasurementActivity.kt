@@ -3,21 +3,21 @@ package de.westnordost.streetcomplete.measurement
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.app.ActivityManager
-import android.app.AlertDialog
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.graphics.Color
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import android.view.MotionEvent
 import android.view.View
 import android.view.animation.AnimationUtils
 import android.widget.LinearLayout
 import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.ar.core.Anchor
+import com.google.ar.core.ArCoreApk
 import com.google.ar.core.HitResult
 import com.google.ar.core.Plane
 import com.google.ar.sceneform.AnchorNode
@@ -50,7 +50,8 @@ class ARCoreMeasurementActivity : AppCompatActivity(), Scene.OnUpdateListener {
     private val placedAnchors = ArrayList<Anchor>()
     private val placedAnchorNodes = ArrayList<AnchorNode>()
 
-    private var showingTutorialHint = true
+    private val hints = mutableListOf<ARCoreMeasurementHint>()
+    private var currentHintIndex = 0
 
     init {
         Injector.applicationComponent.inject(this)
@@ -58,18 +59,13 @@ class ARCoreMeasurementActivity : AppCompatActivity(), Scene.OnUpdateListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        if (!checkIsSupportedDeviceOrFinish(this)) {
-            Toast
-                .makeText(applicationContext, "Device not supported", Toast.LENGTH_LONG)
-                .show()
-        }
 
         setContentView(R.layout.activity_measurement)
         arFragment = supportFragmentManager.findFragmentById(R.id.sceneformFragment) as ArFragment?
 
         initRenderable()
         initButtons()
-        initHint()
+        initHints()
 
         arFragment!!.activity
         arFragment!!.setOnTapArPlaneListener { hitResult: HitResult, _: Plane?, _: MotionEvent? ->
@@ -93,10 +89,7 @@ class ARCoreMeasurementActivity : AppCompatActivity(), Scene.OnUpdateListener {
                 cubeRenderable!!.isShadowReceiver = false
             }
             .exceptionally {
-                val builder = AlertDialog.Builder(this)
-                builder.setMessage(it.message).setTitle("Error") // TODO sst: what to do with this?
-                val dialog = builder.create()
-                dialog.show()
+                Log.e(TAG, "Exception creating cubeRenderable", it)
                 return@exceptionally null
             }
 
@@ -110,10 +103,7 @@ class ARCoreMeasurementActivity : AppCompatActivity(), Scene.OnUpdateListener {
                 distanceCardViewRenderable!!.isShadowReceiver = false
             }
             .exceptionally {
-                val builder = AlertDialog.Builder(this)
-                builder.setMessage(it.message).setTitle("Error") // TODO sst: what to do with this?
-                val dialog = builder.create()
-                dialog.show()
+                Log.e(TAG, "Exception creating distanceCardViewRenderable", it)
                 return@exceptionally null
             }
     }
@@ -126,43 +116,77 @@ class ARCoreMeasurementActivity : AppCompatActivity(), Scene.OnUpdateListener {
             val data = Intent()
             data.putExtra(RESULT_ATTRIBUTE_DISTANCE, measureDistance())
             setResult(RESULT_OK, data)
-
             finish()
         }
     }
 
-    private fun initHint() {
+    private fun initHints() {
         var hasCompletedMeasurementAlready = prefs.getBoolean(Prefs.HAS_COMPLETED_ARCORE_MEASUREMENT, false)
         hasCompletedMeasurementAlready = false // TODO sst: remove after testing
         if (!hasCompletedMeasurementAlready) {
-            setTutorialHint()
+            hints.add(ARCoreMeasurementHint(
+                R.string.arcore_initial_instructions_title,
+                R.string.arcore_initial_instructions,
+                null))
+        }
+
+        val additionalInstructionsId = intent.getIntExtra(EXTRA_ADDITIONAL_INSTRUCTIONS_ID, 0)
+        val additionalInstructionsImageId = intent.getIntExtra(EXTRA_ADDITIONAL_INSTRUCTIONS_IMAGE_ID, 0)
+        if (additionalInstructionsId != 0) {
+            hints.add(ARCoreMeasurementHint(
+                R.string.arcore_additional_instructions_title,
+                additionalInstructionsId,
+                if (additionalInstructionsImageId != 0) additionalInstructionsImageId else null))
+        }
+
+        if (hints.isEmpty()) {
+            hintLayout.visibility = View.GONE
         } else {
-            setHintFromIntent()
+            handleHintActionButtonText()
+            setHint(0)
         }
 
         hintActionButton.setOnClickListener {
-            if (showingTutorialHint) {
-                setHintFromIntent()
+            if (currentHintIndex + 1 < hints.size) {
+                currentHintIndex++
+                setHint(currentHintIndex)
             } else {
                 val hideAnimation = AnimationUtils.loadAnimation(applicationContext, R.anim.fade_out_to_top)
                 hideAnimation.fillAfter = true
                 hintLayout.startAnimation(hideAnimation)
             }
+            handleHintBackButtonVisibility()
+            handleHintActionButtonText()
+        }
+
+        hintBackButton.setOnClickListener {
+            if (currentHintIndex > 0) {
+                currentHintIndex--
+                setHint(currentHintIndex)
+            }
+            handleHintBackButtonVisibility()
+            handleHintActionButtonText()
         }
     }
 
-    private fun setTutorialHint() {
-        hintTitleView.text = "How to Measure?" // TODO sst: load from resources.
-        hintTextView.text = "To perform a measurement, start moving the camera around and fixate two points in the environment with a simple tap."
-        hintActionButton.text = "Next"
-        showingTutorialHint = true
+    private fun handleHintBackButtonVisibility() {
+        hintBackButton.visibility = if (currentHintIndex > 0) View.VISIBLE else View.GONE
     }
 
-    private fun setHintFromIntent() {
-        hintTitleView.text = "Measurement Instructions" // TODO sst: load from resources.
-        hintTextView.text = "Please measure the width of the sidewalk at its narrowest section. Please also consider permanent objects such as trash cans or street lights when you determine the narrowest point."
-        hintActionButton.text = "Hide"
-        showingTutorialHint = false
+    private fun handleHintActionButtonText() {
+        val textId = if (currentHintIndex + 1 >= hints.size) R.string.hide else R.string.next
+        hintActionButton.text = resources.getText(textId)
+    }
+
+    private fun setHint(index: Int) {
+        hintTitleView.text = resources.getText(hints[index].titleId)
+        hintTextView.text = resources.getText(hints[index].instructionId)
+        if (hints[index].imageId != null) {
+            hintImageView.setImageResource(hints[index].imageId!!)
+            hintImageView.visibility = View.VISIBLE
+        } else {
+            hintImageView.visibility = View.GONE
+        }
     }
 
     private fun clearAllAnchors() {
@@ -285,16 +309,16 @@ class ARCoreMeasurementActivity : AppCompatActivity(), Scene.OnUpdateListener {
     }
 
     private fun measureDistance(): Float? {
-        if (placedAnchorNodes.size == 2) {
+        return if (placedAnchorNodes.size == 2) {
             val distanceMeter = calculateDistance(
                 placedAnchorNodes[0].worldPosition,
                 placedAnchorNodes[1].worldPosition
             )
             val distanceCentimeter = distanceMeter * 100
             updateDistanceCardText(distanceCentimeter)
-            return distanceMeter
+            distanceMeter
         } else {
-            return null
+            null
         }
     }
 
@@ -319,28 +343,29 @@ class ARCoreMeasurementActivity : AppCompatActivity(), Scene.OnUpdateListener {
         textView.text = distanceText
     }
 
-    private fun checkIsSupportedDeviceOrFinish(activity: Activity): Boolean {
-        val activityManager = activity.getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager
-        val openGlVersionString = activityManager.deviceConfigurationInfo.glEsVersion
-
-        if (openGlVersionString.toDouble() < MIN_OPENGL_VERSION) {
-            Log.e(TAG, "Sceneform requires OpenGL ES $MIN_OPENGL_VERSION later")
-            Toast.makeText(
-                activity,
-                "Sceneform requires OpenGL ES $MIN_OPENGL_VERSION or later",
-                Toast.LENGTH_LONG
-            ).show()
-            activity.finish()
-            return false
-        }
-        return true
-    }
-
     companion object {
         const val REQUEST_CODE_MEASURE_DISTANCE = 0
         const val RESULT_ATTRIBUTE_DISTANCE = "DISTANCE"
+        const val EXTRA_ADDITIONAL_INSTRUCTIONS_ID = "ADDITIONAL_INSTRUCTIONS_ID"
+        const val EXTRA_ADDITIONAL_INSTRUCTIONS_IMAGE_ID = "ADDITIONALINSTRUCTIONS_IMAGE_ID"
 
         private const val TAG = "ARCoreMeasurement"
         private const val MIN_OPENGL_VERSION = 3.0
+
+        fun checkIsSupportedDevice(activity: Activity, onNotSupported: Runnable) {
+            val activityManager = activity.getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager
+            val openGlVersionString = activityManager.deviceConfigurationInfo.glEsVersion
+            if (openGlVersionString.toDouble() < MIN_OPENGL_VERSION) {
+                Log.e(TAG, "Sceneform requires OpenGL ES $MIN_OPENGL_VERSION or later.")
+                onNotSupported.run()
+            }
+
+            val availability = ArCoreApk.getInstance().checkAvailability(activity.applicationContext)
+            if (availability.isTransient) {
+                Handler().postDelayed({ checkIsSupportedDevice(activity, onNotSupported) }, 200)
+            } else if (availability.isUnsupported) {
+                onNotSupported.run()
+            }
+        }
     }
 }

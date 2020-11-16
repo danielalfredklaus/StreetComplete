@@ -935,11 +935,20 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
     <string name="quest_surface_detailed_answer_impossible_title">Describe surface</string>
     <string name="open_url">Open URL</string>
 
+    <string name="back">Back</string>
+    <string name="hide">Hide</string>
     <string name="multiple_quests_available">Multiple quests available here</string>
     <string name="use_device_to_measure">Use device to measure</string>
     <string name="enter_manually">Enter manually</string>
     <string name="unit_cm">cm</string>
     <string name="value">Value</string>
+
+    <string name="camera_permission_warning">"You need to grant this app the camera permission in order to take a picture."</string>
+    <string name="instructions_image_content_description">"An image that illustrates the measurement process visually."</string>
+
+    <string name="arcore_initial_instructions_title">"How to measure?"</string>
+    <string name="arcore_initial_instructions">"Slowly move the camera to discover the surfaces and objects around you. Once an area was scanned successfully, you will see a cloud of points on the surfaces. \n\nAfterwards, fixate two points in the environment with a simple tap on the screen to measure a distance."</string>
+    <string name="arcore_additional_instructions_title">"What to measure?"</string>
 
     <string name="upward_slope">Upward slope</string>
     <string name="downward_slope">Downward slope</string>

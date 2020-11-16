@@ -4,10 +4,25 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/quest_width_measurement_instructions" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/instructions_image_content_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/example_width" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_marginTop="8dp"
         android:orientation="horizontal">
 
         <EditText
@@ -33,20 +48,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/use_device_to_measure" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/quest_width_measurement_instructions" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="8dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/example_width"
-        android:contentDescription="TODO" />
 
 </LinearLayout>

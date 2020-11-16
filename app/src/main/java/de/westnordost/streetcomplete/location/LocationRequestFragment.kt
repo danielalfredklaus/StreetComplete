@@ -107,7 +107,7 @@ class LocationRequestFragment : Fragment() {
         finish()
     }
 
-    /* Step 1: Ask for location to be turned on */
+    /* Step 2: Ask for location to be turned on */
 
     private fun requestLocationSettingsToBeOn() {
         if (LocationUtil.isLocationOn(context)) {

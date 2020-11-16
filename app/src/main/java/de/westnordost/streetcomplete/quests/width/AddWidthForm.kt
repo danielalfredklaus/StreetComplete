@@ -8,11 +8,15 @@ import android.text.TextWatcher
 import android.view.View
 import de.westnordost.streetcomplete.R
 import de.westnordost.streetcomplete.measurement.ARCoreMeasurementActivity
+import de.westnordost.streetcomplete.measurement.ARCoreMeasurementActivity.Companion.EXTRA_ADDITIONAL_INSTRUCTIONS_ID
+import de.westnordost.streetcomplete.measurement.ARCoreMeasurementActivity.Companion.EXTRA_ADDITIONAL_INSTRUCTIONS_IMAGE_ID
 import de.westnordost.streetcomplete.measurement.ARCoreMeasurementActivity.Companion.REQUEST_CODE_MEASURE_DISTANCE
 import de.westnordost.streetcomplete.measurement.ARCoreMeasurementActivity.Companion.RESULT_ATTRIBUTE_DISTANCE
+import de.westnordost.streetcomplete.measurement.ARCoreMeasurementActivity.Companion.checkIsSupportedDevice
 import de.westnordost.streetcomplete.quests.AbstractQuestAnswerFragment.Listener.SidewalkSide
 import de.westnordost.streetcomplete.quests.AbstractQuestFormAnswerWithSidewalkSupportFragment
 import kotlinx.android.synthetic.main.quest_width.*
+import kotlinx.android.synthetic.main.quest_width.manualInputField
 import kotlin.math.roundToInt
 
 class AddWidthForm : AbstractQuestFormAnswerWithSidewalkSupportFragment<AbstractWidthAnswer>() {
@@ -25,11 +29,14 @@ class AddWidthForm : AbstractQuestFormAnswerWithSidewalkSupportFragment<Abstract
         super.onViewCreated(view, savedInstanceState)
         initInputFields()
         checkIsFormComplete()
+        checkIsSupportedDevice(requireActivity()) { disableARCoreMeasurementIfNotSupported() }
     }
 
     private fun initInputFields() {
         measureButton.setOnClickListener {
             val intent = Intent(activity?.application, ARCoreMeasurementActivity::class.java)
+            intent.putExtra(EXTRA_ADDITIONAL_INSTRUCTIONS_ID, R.string.quest_width_measurement_instructions)
+            intent.putExtra(EXTRA_ADDITIONAL_INSTRUCTIONS_IMAGE_ID, R.drawable.example_width)
             startActivityForResult(intent, REQUEST_CODE_MEASURE_DISTANCE)
         }
 
@@ -46,6 +53,10 @@ class AddWidthForm : AbstractQuestFormAnswerWithSidewalkSupportFragment<Abstract
                 checkIsFormComplete()
             }
         })
+    }
+
+    private fun disableARCoreMeasurementIfNotSupported() {
+        measureButton.visibility = View.GONE
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {

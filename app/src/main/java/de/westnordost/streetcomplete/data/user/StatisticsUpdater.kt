@@ -61,6 +61,12 @@ class StatisticsUpdater @Inject constructor(
 
     fun updateFromBackend(userId: Long) {
         try {
+            // TODO sst: The SC statistics server checks the provided user agent (the app name).
+            //           Remove this condition once an adjusted statistics server is up and running
+            //           that can handle OSM changesets tagged with the new app name.
+            if (true) {
+                throw Exception("Do not download statistics until own statistics server is up and running.")
+            }
             val statistics = statisticsDownloader.download(userId)
             val backendIsStillAnalyzing = statistics.isAnalyzing
             userStore.isSynchronizingStatistics = backendIsStillAnalyzing

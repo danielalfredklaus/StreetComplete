@@ -1,10 +1,10 @@
 package de.westnordost.streetcomplete.quests.note_discussion
 
+import android.Manifest
 import android.app.Activity.RESULT_OK
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
-import android.os.Build
 import android.os.Bundle
 import android.os.Environment
 import android.provider.MediaStore
@@ -13,8 +13,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.appcompat.app.AlertDialog
+import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
-import androidx.core.net.toUri
 import androidx.core.view.isGone
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -34,8 +35,8 @@ import java.util.*
 class AttachPhotoFragment : Fragment() {
 
     val imagePaths: List<String> get() = noteImageAdapter.list
-    private var photosListView : RecyclerView? = null
-    private var hintView : TextView? = null
+    private var photosListView: RecyclerView? = null
+    private var hintView: TextView? = null
 
     private var currentImagePath: String? = null
 
@@ -44,10 +45,8 @@ class AttachPhotoFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_attach_photo, container, false)
 
-        // see #1768: Android KitKat and below do not recognize letsencrypt certificates
-        val isPreLollipop = Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP
         val hasCamera = requireActivity().packageManager.hasSystemFeature(PackageManager.FEATURE_CAMERA_ANY)
-        if (isPreLollipop || !hasCamera) {
+        if (!hasCamera) {
             view.visibility = View.GONE
         }
         photosListView = view.findViewById(R.id.gridView)
@@ -55,7 +54,7 @@ class AttachPhotoFragment : Fragment() {
         return view
     }
 
-    private fun updateHintVisibility(){
+    private fun updateHintVisibility() {
         val isImagePathsEmpty = imagePaths.isEmpty()
         photosListView?.isGone = isImagePathsEmpty
         hintView?.isGone = !isImagePathsEmpty
@@ -93,17 +92,22 @@ class AttachPhotoFragment : Fragment() {
     }
 
     private fun takePhoto() {
+        if (!requestCameraPermission()) {
+            AlertDialog.Builder(requireContext())
+                .setMessage(R.string.camera_permission_warning)
+                .setPositiveButton(R.string.retry) { _, _ -> requestCameraPermission() }
+                .setCancelable(true)
+                .show()
+            return
+        }
+
         val takePhotoIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
         activity?.packageManager?.let { packageManager ->
             if (takePhotoIntent.resolveActivity(packageManager) != null) {
                 try {
                     val photoFile = createImageFile()
-                    val photoUri = if (Build.VERSION.SDK_INT > 21) {
-                        //Use FileProvider for getting the content:// URI, see: https://developer.android.com/training/camera/photobasics.html#TaskPath
-                        FileProvider.getUriForFile(requireContext(),getString(R.string.fileprovider_authority),photoFile)
-                    } else {
-                        photoFile.toUri()
-                    }
+                    //Use FileProvider for getting the content:// URI, see: https://developer.android.com/training/camera/photobasics.html#TaskPath
+                    val photoUri = FileProvider.getUriForFile(requireContext(), getString(R.string.fileprovider_authority), photoFile)
                     currentImagePath = photoFile.path
                     takePhotoIntent.putExtra(MediaStore.EXTRA_OUTPUT, photoUri)
                     startActivityForResult(takePhotoIntent, REQUEST_TAKE_PHOTO)
@@ -118,12 +122,37 @@ class AttachPhotoFragment : Fragment() {
         }
     }
 
+    private fun requestCameraPermission(): Boolean {
+        val permissionStatus = ContextCompat.checkSelfPermission(requireContext(), Manifest.permission.CAMERA)
+        return if (permissionStatus == PackageManager.PERMISSION_GRANTED) {
+            true
+        } else {
+            requestPermissions(arrayOf(Manifest.permission.CAMERA), REQUEST_CAMERA_PERMISSION)
+            false
+        }
+    }
+
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<String>, grantResults: IntArray) {
+        if (requestCode != REQUEST_CAMERA_PERMISSION) {
+            return
+        }
+
+        if (permissions.firstOrNull() != Manifest.permission.CAMERA) {
+            return
+        }
+
+        if (grantResults.firstOrNull() == PackageManager.PERMISSION_GRANTED) {
+            takePhoto()
+        }
+    }
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         if (requestCode == REQUEST_TAKE_PHOTO) {
             if (resultCode == RESULT_OK) {
                 try {
                     val path = currentImagePath!!
-                    val bitmap = decodeScaledBitmapAndNormalize(path, ATTACH_PHOTO_MAXWIDTH, ATTACH_PHOTO_MAXHEIGHT) ?: throw IOException()
+                    val bitmap = decodeScaledBitmapAndNormalize(path, ATTACH_PHOTO_MAXWIDTH, ATTACH_PHOTO_MAXHEIGHT)
+                        ?: throw IOException()
                     val out = FileOutputStream(path)
                     bitmap.compress(Bitmap.CompressFormat.JPEG, ATTACH_PHOTO_QUALITY, out)
 
@@ -155,7 +184,7 @@ class AttachPhotoFragment : Fragment() {
         val directory = requireContext().getExternalFilesDir(Environment.DIRECTORY_PICTURES)
         val imageFileName = "photo_" + System.currentTimeMillis() + ".jpg"
         val file = File(directory, imageFileName)
-        if(!file.createNewFile()) throw IOException("Photo file with exactly the same name already exists")
+        if (!file.createNewFile()) throw IOException("Photo file with exactly the same name already exists")
         return file
     }
 
@@ -167,6 +196,7 @@ class AttachPhotoFragment : Fragment() {
 
         private const val TAG = "AttachPhotoFragment"
         private const val REQUEST_TAKE_PHOTO = 1
+        private const val REQUEST_CAMERA_PERMISSION = 100
 
         private const val PHOTO_PATHS = "photo_paths"
         private const val CURRENT_PHOTO_PATH = "current_photo_path"

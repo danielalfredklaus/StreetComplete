@@ -9,7 +9,6 @@ class AddPedestrianAccessibleStreetSurface : AbstractAddSurfaceQuestType() {
     private val baseExpression by lazy {
         """
             ways with highway ~ ${STREETS_WITH_VALUABLE_SURFACE_INFO.joinToString("|")}
-            and (access !~ private|no or (foot and foot !~ private|no))
         """.toElementFilterExpression()
     }
 

@@ -9,7 +9,6 @@ class AddPedestrianAccessibleStreetSmoothness : AbstractAddSmoothnessQuestType()
     private val baseExpression by lazy {
         """
             ways with highway ~ ${STREET_WITH_VALUABLE_SMOOTHNESS_INFO.joinToString("|")}
-            and (access !~ private|no or (foot and foot !~ private|no))
         """.toElementFilterExpression()
     }
 

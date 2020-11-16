@@ -10,7 +10,6 @@ class AddPedestrianAccessibleStreetWidth : AbstractAddWidthQuestType() {
         """
             ways with highway ~ ${STREETS_WITH_VALUABLE_WIDTH_INFO.joinToString("|")}
             and (!area or area = no)
-            and (access !~ private|no or (foot and foot !~ private|no))
         """.toElementFilterExpression()
     }
 

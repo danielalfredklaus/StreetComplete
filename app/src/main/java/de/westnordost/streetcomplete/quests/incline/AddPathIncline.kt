@@ -12,13 +12,14 @@ class AddPathIncline : OsmFilterQuestType<String>() {
             highway = footway
             or (highway ~ path|cycleway|bridleway and foot != no)
         )
+        and access !~ private|no
+        and foot !~ private|no|use_sidepath
         and footway != crossing
         and !level
-        and access !~ private|no
         and (!conveying or conveying = no)
         and (!indoor or indoor = no)
         and (!area or area = no)
-        and !incline
+        and (!incline or incline older today -8 years)
     """
 
     override val commitMessage = "Add incline info"

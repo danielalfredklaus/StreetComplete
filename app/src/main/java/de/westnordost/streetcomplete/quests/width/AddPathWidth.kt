@@ -15,7 +15,6 @@ class AddPathWidth : AbstractAddWidthQuestType() {
             and footway != crossing
             and !level
             and segregated != yes
-            and access !~ private|no
             and (!conveying or conveying = no)
             and (!indoor or indoor = no)
             and (!area or area = no)

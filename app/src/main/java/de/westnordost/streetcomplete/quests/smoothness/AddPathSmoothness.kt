@@ -15,7 +15,6 @@ class AddPathSmoothness : AbstractAddSmoothnessQuestType() {
             and segregated != yes
             and footway != crossing
             and !level
-            and access !~ private|no
             and (!conveying or conveying = no)
             and (!indoor or indoor = no)
             and (!area or area = no)

@@ -9,11 +9,15 @@ class AddPedestrianAccessibleStreetIncline : OsmFilterQuestType<String>() {
 
     override val elementFilter = """
         ways with (
-            (highway ~ ${STREETS_WITH_VALUABLE_INCLINE_INFO.joinToString("|")} and sidewalk ~ left|right|both)
-            or (highway ~ ${PEDESTRIAN_ACCESSIBLE_STREETS_WITH_VALUABLE_INCLINE_INFO.joinToString("|")}))
-        and (access !~ private|no or (foot and foot !~ private|no))
+            (highway ~ ${ASSUMED_PEDESTRIAN_INACCESSIBLE_STREETS.joinToString("|")} and sidewalk ~ left|right|both)
+            or (highway ~ ${ASSUMED_PEDESTRIAN_ACCESSIBLE_STREETS.joinToString("|")})
+            or (highway ~ ${ASSUMED_PEDESTRIAN_ACCESSIBLE_STREETS_IF_NO_SIDEWALK.joinToString("|")} and sidewalk ~ no|none)
+        )
+        and sidewalk !~ separate|use_sidepath
+        and access !~ private|no
+        and foot !~ private|no|use_sidepath
         and (!area or area = no)
-        and !incline
+        and (!incline or incline older today -8 years)
     """
 
     override val commitMessage = "Add incline info"
@@ -37,20 +41,26 @@ class AddPedestrianAccessibleStreetIncline : OsmFilterQuestType<String>() {
     }
 
     companion object {
-        private val PEDESTRIAN_ACCESSIBLE_STREETS_WITH_VALUABLE_INCLINE_INFO = arrayOf(
-            "living_street", "pedestrian"
+        // For the following values of the highway tag, there needs to be no info about the
+        // existence of a sidewalk in order to be applicable for a quest.
+        private val ASSUMED_PEDESTRIAN_ACCESSIBLE_STREETS = arrayOf(
+            "pedestrian", "living_street"
         )
 
-        private val STREETS_WITH_VALUABLE_INCLINE_INFO = arrayOf(
-            "primary", "primary_link", "secondary", "secondary_link", "tertiary", "tertiary_link",
-            "unclassified", "residential", "track", "road"
+        private val ASSUMED_PEDESTRIAN_ACCESSIBLE_STREETS_IF_NO_SIDEWALK = arrayOf(
+            "residential", "road", "unclassified"
+        )
 
-            // These roads typically do not have any sidewalks (or they are mapped separately):
+        private val ASSUMED_PEDESTRIAN_INACCESSIBLE_STREETS = arrayOf(
+            "primary", "primary_link", "secondary", "secondary_link", "tertiary", "tertiary_link",
+            "unclassified", "residential", "track",
+
+            // These roads are typically never used by pedestrians and do not have sidewalks
+            // (or they are mapped separately):
             // "trunk", "trunk_link", "motorway", "motorway_link",
 
             // This is too much, and the information value is very low:
             // "service"
         )
-
     }
 }

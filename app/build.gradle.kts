@@ -32,7 +32,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "de.westnordost.streetcomplete"
+        applicationId = "ch.uzh.ifi.accesscomplete"
         minSdkVersion(24)
         targetSdkVersion(29)
         versionCode = 2605
@@ -180,26 +180,26 @@ val bcp47ExportLanguages = setOf(
 )
 
 tasks.register<UpdatePresetsTask>("updatePresets") {
-    group = "streetcomplete"
+    group = "accesscomplete"
     languageCodes = bcp47ExportLanguages
     targetDir = "$projectDir/src/main/assets/osmfeatures"
 }
 
 tasks.register<UpdateAppTranslationsTask>("updateTranslations") {
-    group = "streetcomplete"
+    group = "accesscomplete"
     languageCodes = bcp47ExportLanguages
     apiToken = properties["POEditorAPIToken"] as String
     targetFiles = { "$projectDir/src/main/res/values-$it/strings.xml" }
 }
 
 tasks.register<UpdateAppTranslationCompletenessTask>("updateTranslationCompleteness") {
-    group = "streetcomplete"
+    group = "accesscomplete"
     apiToken = properties["POEditorAPIToken"] as String
     targetFiles = { "$projectDir/src/main/res/values-$it/translation_info.xml" }
 }
 
 tasks.register<GenerateMetadataByCountry>("generateMetadataByCountry") {
-    group = "streetcomplete"
+    group = "accesscomplete"
     sourceDir = "$rootDir/res/country_metadata"
     targetDir = "$projectDir/src/main/assets/country_metadata"
 }

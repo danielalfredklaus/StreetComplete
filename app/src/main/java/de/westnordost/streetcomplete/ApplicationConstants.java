@@ -1,9 +1,9 @@
 package de.westnordost.streetcomplete;
 
-public class ApplicationConstants
-{
+public class ApplicationConstants {
+
 	public final static String
-		NAME = "StreetComplete",
+		NAME = "AccessComplete",
 		USER_AGENT = NAME + " " + BuildConfig.VERSION_NAME,
 		QUESTTYPE_TAG_KEY = NAME + ":quest_type";
 
@@ -11,7 +11,7 @@ public class ApplicationConstants
 		MAX_DOWNLOADABLE_AREA_IN_SQKM = 12.0,
 		MIN_DOWNLOADABLE_AREA_IN_SQKM = 0.1;
 
-	public final static String DATABASE_NAME = "streetcomplete.db";
+	public final static String DATABASE_NAME = "accesscomplete.db";
 
 	public final static int QUEST_TILE_ZOOM = 16;
 

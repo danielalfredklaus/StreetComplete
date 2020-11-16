@@ -29,8 +29,7 @@ class OsmNotesDownloader @Inject constructor(
         val noteCommentUserIds = HashSet<Long>()
 
         notesApi.getAll(bbox, { note ->
-            if (note.comments.isNotEmpty()) { // exclude invalid notes (#1338)
-                // TODO sst: only include quests with app name in it...
+            if (note.comments.isNotEmpty() && note.probablyCreatedViaApp()) {
                 val quest = OsmNoteQuest(note, questType)
                 if (shouldMakeNoteClosed(userId, note)) {
                     quest.status = QuestStatus.CLOSED
@@ -88,8 +87,12 @@ private fun Note.containsCommentFromUser(userId: Long): Boolean {
 
 private fun Note.probablyCreatedByUserInApp(userId: Long): Boolean {
     val firstComment = comments.first()
-    val isViaApp = firstComment.text.contains("via " + ApplicationConstants.NAME)
-    return firstComment.isFromUser(userId) && isViaApp
+    return firstComment.isFromUser(userId) && probablyCreatedViaApp()
+}
+
+private fun Note.probablyCreatedViaApp(): Boolean {
+    val firstComment = comments.first()
+    return firstComment.text.contains("via " + ApplicationConstants.NAME)
 }
 
 private fun NoteComment.isFromUser(userId: Long): Boolean {

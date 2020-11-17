@@ -953,6 +953,9 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
     <string name="upward_slope">Upward slope</string>
     <string name="downward_slope">Downward slope</string>
 
+    <string name="quest_measure_again">Measure again</string>
+    <string name="quest_leave_not">Leave a note</string>
+
     <string name="quest_incline_path_title">"What's the maximum incline of this path?"</string>
     <string name="quest_incline_street_title">"What's the maximum incline of this piece of road?"</string>
     <string name="quest_incline_street_name_title">"What's the maximum incline of the road %s here?"</string>
@@ -963,6 +966,8 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
     <string name="quest_incline_manual_instructions_step_1">Find the steepest section.\n</string>
     <string name="quest_incline_manual_instructions_step_2">Orient yourself on the street according to the arrows displayed on the map.\n</string>
     <string name="quest_incline_manual_instructions_step_3">Measure the slope with a digital level and enter the value below.</string>
+    <string name="quest_incline_no_incline_here">No noticeable incline here</string>
+    <string name="quest_incline_implausible_value_message">An incline of %1$d %% seems very implausible for a street. Please try to measure again or leave a note instead.</string>
 
     <string name="quest_kerb_type_title">"What kind of curb exists at this point of the pedestrian crossing?"</string>
     <string name="quest_kerb_type_traffic_island_title">"What kind of curb does this traffic island have?"</string>
@@ -974,6 +979,7 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
     <string name="quest_kerb_lowered_description">Lowered curbs ensure that the crossing can be used by wheelchair users and allow access to drives.</string>
     <string name="quest_kerb_flush_description">Similar to a lowered curb except the level transition is unlikely to be apparent to blind pedestrians.</string>
     <string name="quest_kerb_rolled_description">Rolled kerbs still provide a gutter for water while being traversable by large wheeled vehicles, such as cars and bicycles, but not wheelchairs.</string>
+    <string name="quest_kerb_type_no_kerb">No curb here</string>
 
     <string name="quest_smoothness_path_title">"How is the smoothness quality of this path best described here?"</string>
     <string name="quest_smoothness_cycleway_part_title">"How is the smoothness quality of the cycleway best described here?"</string>
@@ -1012,5 +1018,7 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
     <string name="quest_width_street_name_title">"What's the minimum width of the road %s here?"</string>
     <string name="quest_width_street_name_sidewalk_title">"What's the minimum width of the highlighted sidewalk (dotted line) of the road %s here?"</string>
     <string name="quest_width_measurement_instructions">Please measure the width of the sidewalk at its narrowest section. Please also consider permanent objects such as trash cans or street lights when you determine the narrowest point.</string>
+    <string name="quest_width_implausible_value_sidewalk_message">A width of %1$s cm seems very implausible for a sidewalk. Please try to measure again or leave a note instead.</string>
+    <string name="quest_width_implausible_value_street_message">A width of %1$s cm is very implausible for a street like this. Please try to measure again or leave a note instead.</string>
 
 </resources>

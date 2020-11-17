@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
+import androidx.appcompat.app.AlertDialog
 import de.westnordost.streetcomplete.R
 import de.westnordost.streetcomplete.measurement.ARCoreMeasurementActivity
 import de.westnordost.streetcomplete.measurement.ARCoreMeasurementActivity.Companion.EXTRA_ADDITIONAL_INSTRUCTIONS_ID
@@ -15,8 +16,10 @@ import de.westnordost.streetcomplete.measurement.ARCoreMeasurementActivity.Compa
 import de.westnordost.streetcomplete.measurement.ARCoreMeasurementActivity.Companion.checkIsSupportedDevice
 import de.westnordost.streetcomplete.quests.AbstractQuestAnswerFragment.Listener.SidewalkSide
 import de.westnordost.streetcomplete.quests.AbstractQuestFormAnswerWithSidewalkSupportFragment
+import kotlinx.android.synthetic.main.quest_incline.*
 import kotlinx.android.synthetic.main.quest_width.*
 import kotlinx.android.synthetic.main.quest_width.manualInputField
+import java.lang.NumberFormatException
 import kotlin.math.roundToInt
 
 class AddWidthForm : AbstractQuestFormAnswerWithSidewalkSupportFragment<AbstractWidthAnswer>() {
@@ -46,7 +49,7 @@ class AddWidthForm : AbstractQuestFormAnswerWithSidewalkSupportFragment<Abstract
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                // TODO sst: format value here?
+                // NOP
             }
 
             override fun afterTextChanged(s: Editable?) {
@@ -79,22 +82,39 @@ class AddWidthForm : AbstractQuestFormAnswerWithSidewalkSupportFragment<Abstract
     }
 
     override fun onClickOk() {
-        // TODO sst: ask about unrealistic values
-        val width = manualInputField.text.toString()
+        val widthInMeters = parseWidthInMeters()
+        if (widthInMeters < 0.1f || widthInMeters > 10f) {
+            val messageId =
+                if (currentSidewalkSide != null)
+                    R.string.quest_width_implausible_value_sidewalk_message
+                else
+                    R.string.quest_width_implausible_value_street_message
+
+            AlertDialog.Builder(requireContext())
+                .setTitle(R.string.quest_generic_confirmation_title)
+                .setMessage(requireContext().getString(messageId, manualInputField.text))
+                .setPositiveButton(R.string.quest_leave_not) { _, _ -> composeNote() }
+                .setNegativeButton(R.string.quest_generic_confirmation_no, null)
+                .setCancelable(true)
+                .show()
+            return
+        }
+
+        val simpleWidthAnswer = SimpleWidthAnswer("%.2f".format(widthInMeters) + " m")
         if (elementHasSidewalk) {
             if (answer is SidewalkWidthAnswer) {
                 if (currentSidewalkSide == SidewalkSide.LEFT) {
-                    (answer as SidewalkWidthAnswer).leftSidewalkAnswer = SimpleWidthAnswer(width)
+                    (answer as SidewalkWidthAnswer).leftSidewalkAnswer = simpleWidthAnswer
                 } else {
-                    (answer as SidewalkWidthAnswer).rightSidewalkAnswer = SimpleWidthAnswer(width)
+                    (answer as SidewalkWidthAnswer).rightSidewalkAnswer = simpleWidthAnswer
                 }
                 applyAnswer(answer!!)
             } else {
                 answer =
                     if (currentSidewalkSide == SidewalkSide.LEFT)
-                        SidewalkWidthAnswer(SimpleWidthAnswer(width), null)
+                        SidewalkWidthAnswer(simpleWidthAnswer, null)
                     else
-                        SidewalkWidthAnswer(null, SimpleWidthAnswer(width))
+                        SidewalkWidthAnswer(null, simpleWidthAnswer)
                 if (sidewalkOnBothSides) {
                     switchToOppositeSidewalkSide()
                 } else {
@@ -102,8 +122,20 @@ class AddWidthForm : AbstractQuestFormAnswerWithSidewalkSupportFragment<Abstract
                 }
             }
         } else {
-            answer = SimpleWidthAnswer(width)
+            answer = simpleWidthAnswer
             applyAnswer(answer!!)
         }
+    }
+
+    private fun parseWidthInMeters(): Float {
+        var widthValueInCm: Int = 0
+        val input = manualInputField.text.toString()
+        try {
+            widthValueInCm = Integer.parseInt(input)
+        } catch (e: NumberFormatException) {
+            manualInputField.text = null
+        }
+
+        return widthValueInCm / 100f
     }
 }

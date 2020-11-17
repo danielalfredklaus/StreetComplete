@@ -31,7 +31,9 @@
             android:layout_height="wrap_content"
             android:hint="@string/value"
             android:importantForAutofill="no"
-            android:inputType="numberSigned"
+            android:digits="0123456789"
+            android:inputType="number"
+            android:maxLength="4"
             android:textSize="24sp" />
 
         <TextView

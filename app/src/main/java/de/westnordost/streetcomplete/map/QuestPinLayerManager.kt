@@ -97,6 +97,7 @@ class QuestPinLayerManager @Inject constructor(
         added.forEach { add(it, group) }
         removed.forEach { remove(it, group) }
         updateLayer()
+        mapFragment.requestRender()
     }
 
     private fun updateQuestsInRect(tilesRect: TilesRect) {

@@ -362,6 +362,10 @@ open class MapFragment : Fragment(),
 
     /* ------------------------------- Controlling the map -------------------------------------- */
 
+    public fun requestRender() {
+        controller?.requestRender()
+    }
+
     public fun adjustToOffsets(oldOffset: RectF, newOffset: RectF) {
         controller?.screenCenterToLatLon(oldOffset)?.let { pos ->
             controller?.updateCameraPosition {

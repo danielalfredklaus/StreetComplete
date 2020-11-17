@@ -12,10 +12,14 @@ import android.text.SpannableStringBuilder
 import android.text.TextWatcher
 import android.util.Log
 import android.view.View
+import androidx.appcompat.app.AlertDialog
 import de.westnordost.streetcomplete.R
+import de.westnordost.streetcomplete.ktx.numberOrNull
 import de.westnordost.streetcomplete.quests.AbstractQuestFormAnswerFragment
 import kotlinx.android.synthetic.main.quest_incline.*
+import java.lang.NumberFormatException
 import kotlin.math.atan2
+import kotlin.math.roundToInt
 import kotlin.math.sqrt
 
 class AddInclineForm : AbstractQuestFormAnswerFragment<String>() {
@@ -65,7 +69,6 @@ class AddInclineForm : AbstractQuestFormAnswerFragment<String>() {
         sensor = sensorManager?.getDefaultSensor(Sensor.TYPE_ROTATION_VECTOR)
         sensorEventListener = object : SensorEventListener {
             override fun onAccuracyChanged(sensor: Sensor?, accuracy: Int) {
-                // TODO sst: How to handle accuracy changes?
                 Log.i("Sensor", "" + accuracy)
             }
 
@@ -78,7 +81,7 @@ class AddInclineForm : AbstractQuestFormAnswerFragment<String>() {
                 g[2] /= norm
                 g[3] /= norm
 
-                // Set values to commonly known quaternion letter representatives
+                // Set values to quaternion letter representatives
                 val x = g[0]
                 val y = g[1]
                 val z = g[2]
@@ -116,6 +119,7 @@ class AddInclineForm : AbstractQuestFormAnswerFragment<String>() {
                 toggleMeasurementButton.text = resources.getText(R.string.use_device_to_measure)
             }
             inclineView.changeLock(false)
+            manualInputField.text = null
             checkIsFormComplete()
         }
 
@@ -131,7 +135,7 @@ class AddInclineForm : AbstractQuestFormAnswerFragment<String>() {
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                // TODO sst: format value here?
+                // NOP
             }
 
             override fun afterTextChanged(s: Editable?) {
@@ -159,7 +163,33 @@ class AddInclineForm : AbstractQuestFormAnswerFragment<String>() {
     }
 
     override fun onClickOk() {
-        // TODO sst: ask user about unrealistic values...
-        applyAnswer("test") // TODO sst: use real value
+        var inclineValue: Int? = null
+        if (deviceMeasurementActive) {
+            inclineValue = inclineView.inclineInDegrees.fromDegreesToPercentage().roundToInt()
+        } else {
+            val input = manualInputField.text.toString()
+            try {
+                inclineValue = Integer.parseInt(input)
+            } catch (e: NumberFormatException) {
+                manualInputField.text = null
+                manualInputField.numberOrNull
+            }
+        }
+
+        if (inclineValue == null) {
+            isFormComplete()
+            return
+        } else if (inclineValue > 50) {
+            AlertDialog.Builder(requireContext())
+                .setTitle(R.string.quest_generic_confirmation_title)
+                .setMessage(requireContext().getString(R.string.quest_incline_implausible_value_message, inclineValue))
+                .setPositiveButton(R.string.quest_leave_not) { _, _ -> composeNote() }
+                .setNegativeButton(R.string.quest_generic_confirmation_no, null)
+                .setCancelable(true)
+                .show()
+            return
+        }
+        val answer = if (radioDownwardSlope.isSelected) "-$inclineValue%" else "$inclineValue%"
+        applyAnswer(answer)
     }
 }

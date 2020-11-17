@@ -85,7 +85,7 @@ class InclineView @JvmOverloads constructor(context: Context, attrs: AttributeSe
         val label = when {
                 inclineInDegrees > 89.0 -> "∞ %"
                 inclineInDegrees < -89.0 -> "-∞ %"
-                else -> "%.0f".format(inclineInDegrees.fromDegreesToPercentage()) + " %"
+                else -> "%d".format(inclineInDegrees.fromDegreesToPercentage().roundToInt()) + " %"
             }
 
         canvas.drawText(

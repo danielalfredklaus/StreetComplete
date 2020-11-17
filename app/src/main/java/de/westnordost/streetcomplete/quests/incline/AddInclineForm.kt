@@ -16,6 +16,8 @@ import androidx.appcompat.app.AlertDialog
 import de.westnordost.streetcomplete.R
 import de.westnordost.streetcomplete.ktx.numberOrNull
 import de.westnordost.streetcomplete.quests.AbstractQuestFormAnswerFragment
+import de.westnordost.streetcomplete.quests.OtherAnswer
+import de.westnordost.streetcomplete.util.fromDegreesToPercentage
 import kotlinx.android.synthetic.main.quest_incline.*
 import java.lang.NumberFormatException
 import kotlin.math.atan2
@@ -30,6 +32,10 @@ class AddInclineForm : AbstractQuestFormAnswerFragment<String>() {
     private var sensor: Sensor? = null
     private var sensorEventListener: SensorEventListener? = null
     private var deviceMeasurementActive = true
+
+    override val otherAnswers = listOf(
+        OtherAnswer(R.string.quest_incline_no_incline_here) { applyAnswer("0%") }
+    )
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

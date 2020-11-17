@@ -7,4 +7,5 @@ data class SpecificSurfaceAnswer(val value: String) : SurfaceAnswer()
 data class SidewalkSurfaceAnswer(
     var leftSidewalkAnswer: SurfaceAnswer?,
     var rightSidewalkAnswer: SurfaceAnswer?) : AbstractSurfaceAnswer()
+data class SidewalkMappedSeparatelyAnswer(val value: String = "separate"): AbstractSurfaceAnswer()
 

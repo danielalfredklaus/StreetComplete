@@ -956,6 +956,8 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
     <string name="quest_measure_again">Measure again</string>
     <string name="quest_leave_not">Leave a note</string>
 
+    <string name="answer_sidewalk_is_mapped_separately">Sidewalk is displayed separately on map</string>
+
     <string name="quest_incline_path_title">"What's the maximum incline of this path?"</string>
     <string name="quest_incline_street_title">"What's the maximum incline of this piece of road?"</string>
     <string name="quest_incline_street_name_title">"What's the maximum incline of the road %s here?"</string>

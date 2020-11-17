@@ -1,5 +1,6 @@
 package de.westnordost.streetcomplete.quests
 
+import androidx.appcompat.app.AlertDialog
 import android.os.Bundle
 import android.view.View
 import android.view.animation.AnimationUtils
@@ -79,5 +80,28 @@ abstract class AbstractQuestFormAnswerWithSidewalkSupportFragment<T> : AbstractQ
 
     protected open fun resetInputs() {
         // NOP
+    }
+
+    override fun addOtherAnswersDynamically(): List<OtherAnswer> {
+        val sidewalkMappedSeparatelyAnswer = getSidewalkMappedSeparatelyAnswer()
+        if (sidewalkMappedSeparatelyAnswer != null && currentSidewalkSide == null) {
+            return emptyList()
+        }
+
+        return listOf(OtherAnswer(R.string.answer_sidewalk_is_mapped_separately) {
+            confirmSeparatelyMappedSidewalk(sidewalkMappedSeparatelyAnswer!!)
+        })
+    }
+
+    protected open fun getSidewalkMappedSeparatelyAnswer() : T? {
+        return null
+    }
+
+    protected fun confirmSeparatelyMappedSidewalk(separatelyMappedAnswer: T) {
+        AlertDialog.Builder(requireContext())
+            .setTitle(R.string.quest_generic_confirmation_title)
+            .setPositiveButton(R.string.quest_generic_confirmation_yes) { _, _ -> applyAnswer(separatelyMappedAnswer) }
+            .setNegativeButton(R.string.quest_generic_confirmation_no, null)
+            .show()
     }
 }

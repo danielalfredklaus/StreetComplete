@@ -16,7 +16,6 @@ import de.westnordost.streetcomplete.measurement.ARCoreMeasurementActivity.Compa
 import de.westnordost.streetcomplete.measurement.ARCoreMeasurementActivity.Companion.checkIsSupportedDevice
 import de.westnordost.streetcomplete.quests.AbstractQuestAnswerFragment.Listener.SidewalkSide
 import de.westnordost.streetcomplete.quests.AbstractQuestFormAnswerWithSidewalkSupportFragment
-import kotlinx.android.synthetic.main.quest_incline.*
 import kotlinx.android.synthetic.main.quest_width.*
 import kotlinx.android.synthetic.main.quest_width.manualInputField
 import java.lang.NumberFormatException
@@ -75,6 +74,10 @@ class AddWidthForm : AbstractQuestFormAnswerWithSidewalkSupportFragment<Abstract
 
     override fun shouldTagBySidewalkSideIfApplicable(): Boolean = true
 
+    override fun getSidewalkMappedSeparatelyAnswer(): SidewalkMappedSeparatelyAnswer? {
+        return SidewalkMappedSeparatelyAnswer()
+    }
+
     override fun isFormComplete(): Boolean = manualInputField.text.isNotEmpty()
 
     override fun resetInputs() {
@@ -128,7 +131,7 @@ class AddWidthForm : AbstractQuestFormAnswerWithSidewalkSupportFragment<Abstract
     }
 
     private fun parseWidthInMeters(): Float {
-        var widthValueInCm: Int = 0
+        var widthValueInCm = 0
         val input = manualInputField.text.toString()
         try {
             widthValueInCm = Integer.parseInt(input)

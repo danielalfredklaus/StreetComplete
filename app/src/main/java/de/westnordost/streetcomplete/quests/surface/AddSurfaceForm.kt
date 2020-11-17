@@ -7,8 +7,6 @@ import de.westnordost.streetcomplete.view.image_select.Item
 
 class AddSurfaceForm : AImageListQuestAnswerFragment<String, AbstractSurfaceAnswer>() {
 
-    private var answer: AbstractSurfaceAnswer? = null
-
     override val items: List<Item<String>>
         get() =
             (PAVED_SURFACES + UNPAVED_SURFACES + GROUND_SURFACES).toItems() +
@@ -18,7 +16,13 @@ class AddSurfaceForm : AImageListQuestAnswerFragment<String, AbstractSurfaceAnsw
 
     override val itemsPerRow = 3
 
+    private var answer: AbstractSurfaceAnswer? = null
+
     override fun shouldTagBySidewalkSideIfApplicable() = true
+
+    override fun getSidewalkMappedSeparatelyAnswer(): SidewalkMappedSeparatelyAnswer? {
+        return SidewalkMappedSeparatelyAnswer()
+    }
 
     override fun resetInputs() {
         imageSelector.selectedIndices.forEach {

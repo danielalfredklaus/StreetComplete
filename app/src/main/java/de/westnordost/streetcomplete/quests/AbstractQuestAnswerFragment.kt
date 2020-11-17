@@ -192,8 +192,14 @@ abstract class AbstractQuestAnswerFragment<T> : AbstractBottomSheetFragment(), I
                 }
             }
         }
+
         answers.addAll(otherAnswers)
+        answers.addAll(addOtherAnswersDynamically())
         return answers
+    }
+
+    protected open fun addOtherAnswersDynamically(): List<OtherAnswer> {
+        return emptyList()
     }
 
     private fun showOtherAnswers() {
@@ -265,7 +271,7 @@ abstract class AbstractQuestAnswerFragment<T> : AbstractBottomSheetFragment(), I
             onMapOrientation(initialMapRotation, initialMapTilt)
             startedOnce = true
         }
-        
+
         val answers = assembleOtherAnswers()
         if (answers.size == 1) {
             otherAnswersButton.setText(answers.first().titleResourceId)

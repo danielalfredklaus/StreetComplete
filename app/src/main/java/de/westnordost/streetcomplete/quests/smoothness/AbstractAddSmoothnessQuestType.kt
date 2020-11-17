@@ -1,6 +1,5 @@
 package de.westnordost.streetcomplete.quests.smoothness
 
-import de.westnordost.streetcomplete.R
 import de.westnordost.streetcomplete.data.meta.updateWithCheckDate
 import de.westnordost.streetcomplete.data.osm.changes.StringMapChangesBuilder
 import de.westnordost.streetcomplete.data.osm.osmquest.AbstractPedestrianAccessibleWayFilterQuestType
@@ -17,6 +16,10 @@ abstract class AbstractAddSmoothnessQuestType : AbstractPedestrianAccessibleWayF
 
     override fun applyAnswerTo(answer: AbstractSmoothnessAnswer, changes: StringMapChangesBuilder) {
         when (answer) {
+            is SidewalkMappedSeparatelyAnswer -> {
+                changes.updateWithCheckDate("sidewalk", answer.value)
+                changes.deleteIfExists("source:sidewalk")
+            }
             is SimpleSmoothnessAnswer -> {
                 changes.updateWithCheckDate(getOsmKey(), answer.value)
                 changes.deleteIfExists("source:${getOsmKey()}")

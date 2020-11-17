@@ -60,6 +60,10 @@ class AddSmoothnessForm : AbstractQuestFormAnswerWithSidewalkSupportFragment<Abs
 
     override fun shouldTagBySidewalkSideIfApplicable() = true
 
+    override fun getSidewalkMappedSeparatelyAnswer(): SidewalkMappedSeparatelyAnswer? {
+        return SidewalkMappedSeparatelyAnswer()
+    }
+
     override fun resetInputs() {
         valueSlider.value = initialValueIndex.toFloat()
     }

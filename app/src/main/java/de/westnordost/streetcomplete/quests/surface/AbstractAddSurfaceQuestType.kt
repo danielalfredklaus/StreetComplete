@@ -16,6 +16,10 @@ abstract class AbstractAddSurfaceQuestType : AbstractPedestrianAccessibleWayFilt
 
     override fun applyAnswerTo(answer: AbstractSurfaceAnswer, changes: StringMapChangesBuilder) {
         when (answer) {
+            is SidewalkMappedSeparatelyAnswer -> {
+                changes.updateWithCheckDate("sidewalk", answer.value)
+                changes.deleteIfExists("source:sidewalk")
+            }
             is SidewalkSurfaceAnswer -> {
                 applySurfaceAnswer(getSidewalkLeftOsmKey(), answer.leftSidewalkAnswer, changes)
                 applySurfaceAnswer(getSidewalkRightOsmKey(), answer.rightSidewalkAnswer, changes)

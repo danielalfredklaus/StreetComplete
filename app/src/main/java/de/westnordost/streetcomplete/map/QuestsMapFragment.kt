@@ -336,9 +336,9 @@ class QuestsMapFragment : LocationAwareMapFragment() {
         if (questGeometry is ElementPolylinesGeometry) {
             val sidewalkPolyline =
                 if (sidewalkSide == AbstractQuestAnswerFragment.Listener.SidewalkSide.LEFT)
-                    questGeometry.polylines.first().translateToLeft(1.0)
+                    questGeometry.polylines.first().translateToLeft(2.5)
                 else
-                    questGeometry.polylines.first().translateToRight(1.0)
+                    questGeometry.polylines.first().translateToRight(2.5)
 
             val newGeometry = ElementPolylinesGeometry(listOf(sidewalkPolyline), sidewalkPolyline.centerPointOfPolygon())
             additionalQuestHighlightingLayer?.setFeatures(newGeometry.toTangramGeometry())

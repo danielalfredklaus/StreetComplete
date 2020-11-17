@@ -32,7 +32,7 @@ class QuestDownloadNotificationController(
             createNotificationChannel()
         }
         return NotificationCompat.Builder(service, notificationChannelId)
-            .setSmallIcon(R.mipmap.ic_dl_notification)
+            .setSmallIcon(R.drawable.ic_dl_notification)
             .setContentTitle(ApplicationConstants.NAME)
             .setContentText(service.resources.getString(R.string.notification_downloading))
             .setContentIntent(pendingIntent)

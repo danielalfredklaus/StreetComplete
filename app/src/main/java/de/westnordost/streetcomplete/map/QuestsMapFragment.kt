@@ -24,7 +24,6 @@ import de.westnordost.streetcomplete.data.osm.elementgeometry.ElementGeometry
 import de.westnordost.streetcomplete.data.osm.elementgeometry.ElementPolygonsGeometry
 import de.westnordost.streetcomplete.data.osm.elementgeometry.ElementPolylinesGeometry
 import de.westnordost.streetcomplete.data.osm.osmquest.OsmElementQuestType
-import de.westnordost.streetcomplete.data.osm.osmquest.OsmQuest
 import de.westnordost.streetcomplete.data.quest.Quest
 import de.westnordost.streetcomplete.data.quest.QuestGroup
 import de.westnordost.streetcomplete.ktx.getBitmapDrawable
@@ -129,39 +128,7 @@ class QuestsMapFragment : LocationAwareMapFragment() {
                 if (pickedQuestId != null && pickedQuestGroup != null) {
                     listener?.onClickedQuest(pickedQuestGroup, pickedQuestId)
                 } else if (pickedElementId != null && pickedQuestGroup != null) {
-                    val quests = questPinLayerManager.findQuestsBelongingToOsmElementId(pickedElementId)
-                    val adapter = object : ArrayAdapter<Quest>(
-                        requireContext(),
-                        R.layout.select_quest_dialog_item,
-                        android.R.id.text1,
-                        quests) {
-
-                        override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-                            val v: View = super.getView(position, convertView, parent)
-                            val tv: TextView = v.findViewById(android.R.id.text1)
-                            tv.text = resources.getString(quests[position].type.title)
-                            tv.textSize = 16f
-
-                            val dr = ContextCompat.getDrawable(context, quests[position].type.icon)
-                            val bitmap = Bitmap.createBitmap(dr!!.intrinsicWidth, dr!!.intrinsicHeight, Bitmap.Config.ARGB_8888)
-                            val canvas = Canvas(bitmap)
-                            dr.setBounds(0, 0, canvas.width, canvas.height)
-                            dr.draw(canvas)
-
-                            val size = 40f.toPx(context)
-                            val drawable = BitmapDrawable(resources, Bitmap.createScaledBitmap(bitmap, size.toInt(), size.toInt(), true))
-
-                            tv.setCompoundDrawablesWithIntrinsicBounds(drawable, null, null, null)
-                            tv.compoundDrawablePadding = 8f.toPx(context).toInt()
-                            return v
-                        }
-                    }
-
-                    AlertDialog.Builder(requireContext())
-                        .setTitle(resources.getText(R.string.multiple_quests_available))
-                        .setAdapter(adapter) { _, item ->
-                            listener?.onClickedQuest(pickedQuestGroup, quests[item].id!!)
-                        }.show()
+                    openMultiQuestSelectionDialog(pickedElementId, pickedQuestGroup)
                 } else {
                     val pickMarkerResult = controller?.pickMarker(x,y)
                     if (pickMarkerResult == null) {
@@ -170,6 +137,42 @@ class QuestsMapFragment : LocationAwareMapFragment() {
                 }
         }
         return true
+    }
+
+    private fun openMultiQuestSelectionDialog(pickedElementId: Long, pickedQuestGroup: QuestGroup) {
+        val quests = questPinLayerManager.findQuestsBelongingToOsmElementId(pickedElementId)
+        val adapter = object : ArrayAdapter<Quest>(
+            requireContext(),
+            R.layout.select_quest_dialog_item,
+            android.R.id.text1,
+            quests) {
+
+            override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
+                val v: View = super.getView(position, convertView, parent)
+                val tv: TextView = v.findViewById(android.R.id.text1)
+                tv.text = resources.getString(quests[position].type.title)
+                tv.textSize = 16f
+
+                val dr = ContextCompat.getDrawable(context, quests[position].type.icon)
+                val bitmap = Bitmap.createBitmap(dr!!.intrinsicWidth, dr.intrinsicHeight, Bitmap.Config.ARGB_8888)
+                val canvas = Canvas(bitmap)
+                dr.setBounds(0, 0, canvas.width, canvas.height)
+                dr.draw(canvas)
+
+                val size = 40f.toPx(context)
+                val drawable = BitmapDrawable(resources, Bitmap.createScaledBitmap(bitmap, size.toInt(), size.toInt(), true))
+
+                tv.setCompoundDrawablesWithIntrinsicBounds(drawable, null, null, null)
+                tv.compoundDrawablePadding = 8f.toPx(context).toInt()
+                return v
+            }
+        }
+
+        AlertDialog.Builder(requireContext())
+            .setTitle(resources.getText(R.string.multiple_quests_available))
+            .setAdapter(adapter) { _, item ->
+                listener?.onClickedQuest(pickedQuestGroup, quests[item].id!!)
+            }.show()
     }
 
     private fun onClickedMap(x: Float, y: Float) {

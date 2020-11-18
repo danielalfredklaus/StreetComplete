@@ -2,7 +2,6 @@ package de.westnordost.streetcomplete.notifications
 
 import android.content.Intent
 import android.graphics.drawable.AnimatedVectorDrawable
-import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -82,9 +81,7 @@ class OsmUnreadMessagesFragment : DialogFragment(),
         speechbubbleContentContainer.scaleY = 0.8f
         speechbubbleContentContainer.translationY = 140f.toPx(ctx)
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            (mailOpenImageView.drawable as? AnimatedVectorDrawable)?.reset()
-        }
+        (mailOpenImageView.drawable as? AnimatedVectorDrawable)?.reset()
 
         mailContainer.rotation = -40f
         mailContainer.rotationY = -45f
@@ -100,9 +97,7 @@ class OsmUnreadMessagesFragment : DialogFragment(),
             .translationX(0f).translationY(0f)
             .withEndAction {
 
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    (mailOpenImageView.drawable as? AnimatedVectorDrawable)?.start()
-                }
+                (mailOpenImageView.drawable as? AnimatedVectorDrawable)?.start()
 
                 mailFrontImageView.animate()
                     .setDuration(100)

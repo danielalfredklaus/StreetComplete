@@ -34,9 +34,7 @@ class AchievementIconView @JvmOverloads constructor(
 
     init {
         inflate(context, R.layout.view_achievement_icon, this)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            outlineProvider = AchievementFrameOutlineProvider
-        }
+        outlineProvider = AchievementFrameOutlineProvider
     }
 }
 

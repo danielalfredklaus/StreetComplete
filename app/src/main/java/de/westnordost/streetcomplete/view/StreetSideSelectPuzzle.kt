@@ -6,11 +6,12 @@ import android.graphics.Matrix
 import android.graphics.Shader
 import android.graphics.drawable.BitmapDrawable
 import android.util.AttributeSet
-import android.view.*
+import android.view.LayoutInflater
+import android.view.View
 import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.RelativeLayout
-
+import androidx.core.content.ContextCompat
 import de.westnordost.streetcomplete.R
 import de.westnordost.streetcomplete.ktx.getBitmapDrawable
 import de.westnordost.streetcomplete.ktx.showTapHint
@@ -63,7 +64,7 @@ class StreetSideSelectPuzzle @JvmOverloads constructor(
 
     override fun setEnabled(enabled: Boolean) {
         super.setEnabled(enabled)
-        foreground = if (enabled) null else resources.getDrawable(R.drawable.background_transparent_grey)
+        foreground = if (enabled) null else ContextCompat.getDrawable(context, R.drawable.background_transparent_grey)
         leftSideContainer.isEnabled = enabled
         rightSideContainer.isEnabled = enabled
     }

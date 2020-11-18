@@ -1,13 +1,12 @@
 package de.westnordost.streetcomplete.user
 
-
-import android.os.Build
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
 import android.view.ViewGroup.LayoutParams.MATCH_PARENT
 import android.widget.FrameLayout
 import android.widget.ImageView
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import de.westnordost.streetcomplete.Injector
 import de.westnordost.streetcomplete.R
@@ -21,14 +20,17 @@ import javax.inject.Inject
 
 /** Shows the user's solved quests of each type in some kind of ball pit. Clicking on each opens
  *  a QuestTypeInfoFragment that shows the quest's details. */
-class QuestStatisticsByQuestTypeFragment : Fragment(R.layout.fragment_quest_statistics_ball_pit)
-{
-    @Inject internal lateinit var questStatisticsDao: QuestStatisticsDao
-    @Inject internal lateinit var questTypeRegistry: QuestTypeRegistry
+class QuestStatisticsByQuestTypeFragment : Fragment(R.layout.fragment_quest_statistics_ball_pit) {
+
+    @Inject
+    internal lateinit var questStatisticsDao: QuestStatisticsDao
+    @Inject
+    internal lateinit var questTypeRegistry: QuestTypeRegistry
 
     interface Listener {
         fun onClickedQuestType(questType: QuestType<*>, solvedCount: Int, questBubbleView: View)
     }
+
     private val listener: Listener? get() = parentFragment as? Listener ?: activity as? Listener
 
     init {
@@ -43,8 +45,8 @@ class QuestStatisticsByQuestTypeFragment : Fragment(R.layout.fragment_quest_stat
         lifecycle.addObserver(ballPitView)
 
         val solvedQuestsByQuestType = questStatisticsDao.getAll()
-                    .filterKeys { questTypeRegistry.getByName(it) != null }
-                    .mapKeys { questTypeRegistry.getByName(it.key)!! }
+            .filterKeys { questTypeRegistry.getByName(it) != null }
+            .mapKeys { questTypeRegistry.getByName(it.key)!! }
 
         ballPitView.setViews(solvedQuestsByQuestType.map { (questType, amount) ->
             createQuestTypeBubbleView(questType, amount) to amount
@@ -60,13 +62,10 @@ class QuestStatisticsByQuestTypeFragment : Fragment(R.layout.fragment_quest_stat
         questView.setImageResource(questType.icon)
 
         val clickableContainer = FrameLayout(ctx)
-        clickableContainer.layoutParams = ViewGroup.LayoutParams(256,256)
-        // foreground attribute only exists on FrameLayout up until KITKAT
-        clickableContainer.foreground = resources.getDrawable(R.drawable.round_pressed)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            clickableContainer.elevation = 6f.toPx(ctx)
-            clickableContainer.outlineProvider = CircularOutlineProvider
-        }
+        clickableContainer.layoutParams = ViewGroup.LayoutParams(256, 256)
+        clickableContainer.foreground = ContextCompat.getDrawable(requireContext(), R.drawable.round_pressed)
+        clickableContainer.elevation = 6f.toPx(ctx)
+        clickableContainer.outlineProvider = CircularOutlineProvider
         clickableContainer.addView(questView)
         clickableContainer.setOnClickListener { v ->
             listener?.onClickedQuestType(questType, solvedCount, v)

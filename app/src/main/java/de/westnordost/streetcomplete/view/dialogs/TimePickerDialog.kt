@@ -25,7 +25,7 @@ class TimePickerDialog(
         setView(timePicker)
         setButton(BUTTON_POSITIVE,context.getString(android.R.string.ok)) { _, _ ->
             if (Build.VERSION.SDK_INT < Build.VERSION_CODES.P || timePicker.validateInput()) {
-                callback(timePicker.currentHour, timePicker.currentMinute)
+                callback(timePicker.hour, timePicker.minute)
                 // Clearing focus forces the dialog to commit any pending
                 // changes, e.g. typed text in a NumberPicker.
                 timePicker.clearFocus()
@@ -36,19 +36,19 @@ class TimePickerDialog(
             cancel()
         }
         timePicker.setIs24HourView(is24HourView)
-        timePicker.currentHour = initialHourOfDay
-        timePicker.currentMinute = initialMinute
+        timePicker.hour = initialHourOfDay
+        timePicker.minute = initialMinute
     }
 
     fun updateTime(hourOfDay: Int, minuteOfHour: Int) {
-        timePicker.currentHour = hourOfDay
-        timePicker.currentMinute = minuteOfHour
+        timePicker.hour = hourOfDay
+        timePicker.minute = minuteOfHour
     }
 
     override fun onSaveInstanceState(): Bundle {
         val state = super.onSaveInstanceState()
-        state.putInt(HOUR, timePicker.currentHour)
-        state.putInt(MINUTE, timePicker.currentMinute)
+        state.putInt(HOUR, timePicker.hour)
+        state.putInt(MINUTE, timePicker.minute)
         state.putBoolean(IS_24_HOUR, timePicker.is24HourView)
         return state
     }
@@ -58,8 +58,8 @@ class TimePickerDialog(
         val hour = savedInstanceState.getInt(HOUR)
         val minute = savedInstanceState.getInt(MINUTE)
         timePicker.setIs24HourView(savedInstanceState.getBoolean(IS_24_HOUR))
-        timePicker.currentHour = hour
-        timePicker.currentMinute = minute
+        timePicker.hour = hour
+        timePicker.minute = minute
     }
 
     companion object {

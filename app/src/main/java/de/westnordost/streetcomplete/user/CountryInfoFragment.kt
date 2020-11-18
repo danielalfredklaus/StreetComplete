@@ -4,12 +4,12 @@ import android.animation.ObjectAnimator
 import android.animation.ValueAnimator
 import android.content.Intent
 import android.graphics.Outline
-import android.os.Build
 import android.view.View
 import android.view.ViewOutlineProvider
 import android.view.animation.AccelerateInterpolator
 import android.view.animation.DecelerateInterpolator
 import androidx.core.animation.doOnStart
+import androidx.core.content.ContextCompat
 import androidx.core.net.toUri
 import androidx.core.view.isGone
 import de.westnordost.streetcomplete.R
@@ -45,29 +45,27 @@ class CountryInfoFragment : AbstractInfoFakeDialogFragment(R.layout.fragment_cou
         revealAnim.start()
         circularRevealAnimator = revealAnim
 
-        val flag = resources.getDrawable(getFlagResId(countryCode))
+        val flag = ContextCompat.getDrawable(requireContext(), getFlagResId(countryCode))!!
         titleImageView.setImageDrawable(flag)
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            titleView.outlineProvider = object : ViewOutlineProvider() {
-                override fun getOutline(view: View, outline: Outline) {
-                    val flagAspectRatio = flag.intrinsicWidth.toFloat() / flag.intrinsicHeight.toFloat()
-                    val aspectRatio = view.width.toFloat() / view.height.toFloat()
-                    val flagWidth: Int
-                    val flagHeight: Int
-                    if (flagAspectRatio > aspectRatio) {
-                        flagWidth = view.width
-                        flagHeight = (view.width / flagAspectRatio).toInt()
-                    } else {
-                        flagWidth = (view.height * flagAspectRatio).toInt()
-                        flagHeight = view.height
-                    }
-                    val xDiff = view.width - flagWidth
-                    val yDiff = view.height - flagHeight
-                    // oval because the shadow is there during the whole animation, rect would look very odd
-                    // (an oval less so)
-                    outline.setOval(xDiff/2, yDiff/2, flagWidth + xDiff/2, flagHeight + yDiff/2)
+        titleView.outlineProvider = object : ViewOutlineProvider() {
+            override fun getOutline(view: View, outline: Outline) {
+                val flagAspectRatio = flag.intrinsicWidth.toFloat() / flag.intrinsicHeight.toFloat()
+                val aspectRatio = view.width.toFloat() / view.height.toFloat()
+                val flagWidth: Int
+                val flagHeight: Int
+                if (flagAspectRatio > aspectRatio) {
+                    flagWidth = view.width
+                    flagHeight = (view.width / flagAspectRatio).toInt()
+                } else {
+                    flagWidth = (view.height * flagAspectRatio).toInt()
+                    flagHeight = view.height
                 }
+                val xDiff = view.width - flagWidth
+                val yDiff = view.height - flagHeight
+                // oval because the shadow is there during the whole animation, rect would look very odd
+                // (an oval less so)
+                outline.setOval(xDiff/2, yDiff/2, flagWidth + xDiff/2, flagHeight + yDiff/2)
             }
         }
 

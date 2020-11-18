@@ -16,13 +16,6 @@ allprojects {
     }
 }
 
-
-tasks.register<UpdateStoreDescriptionsTask>("updateStoreDescriptions") {
-    group = "streetcomplete"
-    targetDir = "$projectDir/metadata"
-    apiToken = properties["POEditorAPIToken"] as String
-}
-
 tasks.register<SophoxCountValueByCountryTask>("updateAtmOperators") {
     group = "streetcomplete"
     targetFile = "$projectDir/res/country_metadata/atmOperators.yml"
@@ -53,7 +46,6 @@ tasks.register<SophoxCountValueByCountryTask>("updateChargingStationOperators") 
 tasks.register("updateStreetCompleteData") {
     group = "streetcomplete"
     dependsOn(
-        "updateStoreDescriptions",
         "updateChargingStationOperators",
         "updateClothesContainerOperators",
         "updateAtmOperators",

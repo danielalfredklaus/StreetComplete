@@ -5,6 +5,8 @@ import android.view.View
 import androidx.viewpager.widget.ViewPager
 import de.westnordost.streetcomplete.R
 import de.westnordost.streetcomplete.quests.AbstractQuestFormAnswerFragment
+import de.westnordost.streetcomplete.quests.OtherAnswer
+import de.westnordost.streetcomplete.quests.kerb_type.AddKerbType.Companion.NO_KERB_VALUE
 import de.westnordost.streetcomplete.view.image_select.Item
 import kotlinx.android.synthetic.main.quest_kerb_type.*
 import kotlin.math.abs
@@ -12,6 +14,10 @@ import kotlin.math.abs
 class AddKerbTypeForm : AbstractQuestFormAnswerFragment<String>() {
 
     override val contentLayoutResId = R.layout.quest_kerb_type
+
+    override val otherAnswers = listOf(
+        OtherAnswer(R.string.quest_kerb_type_no_kerb) { applyAnswer(NO_KERB_VALUE) }
+    )
 
     private val valueItems = listOf(
         Item("raised", R.drawable.kerb_raised, R.string.quest_kerb_raised, R.string.quest_kerb_raised_description, null),

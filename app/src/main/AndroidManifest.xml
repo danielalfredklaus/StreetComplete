@@ -16,7 +16,7 @@
     <uses-feature android:name="android.hardware.screen.portrait"/>
 
     <application
-        android:name=".StreetCompleteApplication"
+        android:name=".AccessCompleteApplication"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"

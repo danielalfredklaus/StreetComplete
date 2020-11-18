@@ -4,31 +4,37 @@ import android.app.Application;
 import android.content.SharedPreferences;
 import android.util.Log;
 
+import androidx.appcompat.app.AppCompatDelegate;
+
 import java.util.concurrent.FutureTask;
 
 import javax.inject.Inject;
 
-import androidx.appcompat.app.AppCompatDelegate;
 import de.westnordost.countryboundaries.CountryBoundaries;
 import de.westnordost.osmfeatures.FeatureDictionary;
 import de.westnordost.streetcomplete.data.download.tiles.DownloadedTilesDao;
 import de.westnordost.streetcomplete.settings.ResurveyIntervalsUpdater;
 import de.westnordost.streetcomplete.util.CrashReportExceptionHandler;
 
-public class StreetCompleteApplication extends Application
-{
-	@Inject FutureTask<CountryBoundaries> countryBoundariesFuture;
-	@Inject FutureTask<FeatureDictionary> featuresDictionaryFuture;
-	@Inject CrashReportExceptionHandler crashReportExceptionHandler;
-	@Inject ResurveyIntervalsUpdater resurveyIntervalsUpdater;
-	@Inject DownloadedTilesDao downloadedTilesDao;
-	@Inject SharedPreferences prefs;
+public class AccessCompleteApplication extends Application {
+
+	@Inject
+	FutureTask<CountryBoundaries> countryBoundariesFuture;
+	@Inject
+	FutureTask<FeatureDictionary> featuresDictionaryFuture;
+	@Inject
+	CrashReportExceptionHandler crashReportExceptionHandler;
+	@Inject
+	ResurveyIntervalsUpdater resurveyIntervalsUpdater;
+	@Inject
+	DownloadedTilesDao downloadedTilesDao;
+	@Inject
+	SharedPreferences prefs;
 
 	private static final String PRELOAD_TAG = "Preload";
 
 	@Override
-	public void onCreate()
-	{
+	public void onCreate() {
 		super.onCreate();
 
 		Injector.INSTANCE.initializeApplicationComponent(this);
@@ -44,19 +50,18 @@ public class StreetCompleteApplication extends Application
 		resurveyIntervalsUpdater.update();
 
 		String lastVersion = prefs.getString(Prefs.LAST_VERSION_DATA, null);
-		if (!BuildConfig.VERSION_NAME.equals(lastVersion))
-		{
+		if (!BuildConfig.VERSION_NAME.equals(lastVersion)) {
 			prefs.edit().putString(Prefs.LAST_VERSION_DATA, BuildConfig.VERSION_NAME).apply();
-			if (lastVersion != null)
-			{
+			if (lastVersion != null) {
 				onNewVersion();
 			}
 		}
 	}
 
-	/** Load some things in the background that are needed later */
-	private void preload()
-	{
+	/**
+	 * Load some things in the background that are needed later
+	 */
+	private void preload() {
 		Log.i(PRELOAD_TAG, "Preloading data");
 
 		// country boundaries are necessary latest for when a quest is opened

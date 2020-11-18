@@ -6,7 +6,7 @@
 
     <ImageButton
         android:id="@+id/beforeButton"
-        style="@style/RoundTransparentButton"
+        style="@style/RoundBackgroundColoredButton"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_gravity="center"
@@ -25,7 +25,7 @@
 
     <ImageButton
         android:id="@+id/nextButton"
-        style="@style/RoundTransparentButton"
+        style="@style/RoundBackgroundColoredButton"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_gravity="center"

@@ -11,10 +11,10 @@
      limitations under the License.
 -->
 <inset xmlns:android="http://schemas.android.com/apk/res/android"
-       android:insetLeft="@dimen/round_button_inset"
-       android:insetTop="@dimen/round_button_inset"
-       android:insetRight="@dimen/round_button_inset"
-       android:insetBottom="@dimen/round_button_inset">
+    android:insetLeft="@dimen/round_button_inset"
+    android:insetTop="@dimen/round_button_inset"
+    android:insetRight="@dimen/round_button_inset"
+    android:insetBottom="@dimen/round_button_inset">
     <ripple android:color="?android:attr/colorControlHighlight">
         <item>
             <!-- As we can't use themed ColorStateLists in L, we'll use a Drawable selector which
@@ -25,9 +25,9 @@
                         <corners android:radius="@dimen/round_button_radius" />
                         <solid android:color="?android:attr/colorButtonNormal"/>
                         <padding android:left="@dimen/round_button_padding"
-                                 android:top="@dimen/round_button_padding"
-                                 android:right="@dimen/round_button_padding"
-                                 android:bottom="@dimen/round_button_padding"/>
+                            android:top="@dimen/round_button_padding"
+                            android:right="@dimen/round_button_padding"
+                            android:bottom="@dimen/round_button_padding"/>
                     </shape>
                 </item>
                 <item>
@@ -35,9 +35,9 @@
                         <corners android:radius="@dimen/round_button_radius" />
                         <solid android:color="@color/background"/>
                         <padding android:left="@dimen/round_button_padding"
-                                 android:top="@dimen/round_button_padding"
-                                 android:right="@dimen/round_button_padding"
-                                 android:bottom="@dimen/round_button_padding"/>
+                            android:top="@dimen/round_button_padding"
+                            android:right="@dimen/round_button_padding"
+                            android:bottom="@dimen/round_button_padding"/>
                     </shape>
                 </item>
             </selector>

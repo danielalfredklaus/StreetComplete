@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/compassView"
     android:layout_width="38dp"
     android:layout_height="38dp"
@@ -29,5 +30,5 @@
     android:tint="#cc3333"
     android:id="@+id/compassNeedleView"
     android:layout_below="@+id/compassNorth"
-    />
+    tools:ignore="UseAppTint" />
 </RelativeLayout>

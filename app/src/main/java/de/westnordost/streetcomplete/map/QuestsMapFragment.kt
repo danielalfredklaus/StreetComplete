@@ -406,8 +406,8 @@ class QuestsMapFragment : LocationAwareMapFragment() {
     fun putMarkerForCurrentQuest(pos: LatLon) {
         deleteMarkerForCurrentQuest(pos)
         val marker = controller?.addMarker() ?: return
-        marker.setDrawable(R.drawable.crosshair_marker)
-        marker.setStylingFromString("{ style: 'points', color: 'red', size: 32px, order: 1, collide: false }")
+        marker.setDrawable(R.drawable.scissors_marker)
+        marker.setStylingFromString("{ style: 'points', color: '#4141ba', size: 32px, order: 1, collide: false }")
         marker.setPoint(pos)
         markerIds[pos] = marker.markerId
     }

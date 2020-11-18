@@ -1,13 +1,13 @@
 package de.westnordost.streetcomplete.data.osm.osmquest
 
+import ch.uzh.ifi.osmapi.map.MapData
+import ch.uzh.ifi.osmapi.map.getRelationComplete
+import ch.uzh.ifi.osmapi.map.getWayComplete
 import de.westnordost.osmapi.common.errors.OsmNotFoundException
-import de.westnordost.osmapi.map.MapData
 import de.westnordost.osmapi.map.data.Element
 import de.westnordost.osmapi.map.data.Node
 import de.westnordost.osmapi.map.data.Relation
 import de.westnordost.osmapi.map.data.Way
-import de.westnordost.osmapi.map.getRelationComplete
-import de.westnordost.osmapi.map.getWayComplete
 import de.westnordost.streetcomplete.data.MapDataApi
 import de.westnordost.streetcomplete.data.osm.elementgeometry.ElementGeometry
 import de.westnordost.streetcomplete.data.osm.elementgeometry.ElementGeometryCreator

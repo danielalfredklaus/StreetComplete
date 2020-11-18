@@ -1,6 +1,6 @@
 package de.westnordost.streetcomplete.data.osm.osmquest
 
-import de.westnordost.osmapi.map.MapDataWithGeometry
+import ch.uzh.ifi.osmapi.map.MapDataWithGeometry
 import de.westnordost.osmapi.map.data.Element
 import de.westnordost.osmapi.map.data.Way
 import de.westnordost.streetcomplete.data.elementfilter.ElementFilterExpression

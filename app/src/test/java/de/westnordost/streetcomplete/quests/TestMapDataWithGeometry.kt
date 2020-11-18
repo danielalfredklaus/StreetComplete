@@ -1,7 +1,7 @@
 package de.westnordost.streetcomplete.quests
 
-import de.westnordost.osmapi.map.MapDataWithGeometry
-import de.westnordost.osmapi.map.MutableMapData
+import ch.uzh.ifi.osmapi.map.MapDataWithGeometry
+import ch.uzh.ifi.osmapi.map.MutableMapData
 import de.westnordost.osmapi.map.data.BoundingBox
 import de.westnordost.osmapi.map.data.Element
 import de.westnordost.streetcomplete.data.osm.elementgeometry.ElementGeometry

@@ -1,11 +1,10 @@
 package de.westnordost.streetcomplete.data.osm.elementgeometry
 
-import de.westnordost.osmapi.map.MapData
-import de.westnordost.osmapi.map.MutableMapData
+import ch.uzh.ifi.osmapi.map.MapData
+import ch.uzh.ifi.osmapi.map.MutableMapData
 import de.westnordost.osmapi.map.data.*
-import org.junit.Test
-
 import org.junit.Assert.*
+import org.junit.Test
 
 class ElementGeometryCreatorTest {
 

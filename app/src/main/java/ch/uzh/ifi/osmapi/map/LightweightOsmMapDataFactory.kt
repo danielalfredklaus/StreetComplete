@@ -1,6 +1,7 @@
-package de.westnordost.osmapi.map
+package ch.uzh.ifi.osmapi.map
 
 import de.westnordost.osmapi.changesets.Changeset
+import de.westnordost.osmapi.map.MapDataFactory
 import de.westnordost.osmapi.map.data.*
 import java.util.*
 

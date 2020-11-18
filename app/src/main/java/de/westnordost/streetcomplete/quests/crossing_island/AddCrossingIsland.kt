@@ -1,6 +1,6 @@
 package de.westnordost.streetcomplete.quests.crossing_island
 
-import de.westnordost.osmapi.map.MapDataWithGeometry
+import ch.uzh.ifi.osmapi.map.MapDataWithGeometry
 import de.westnordost.osmapi.map.data.Element
 import de.westnordost.streetcomplete.R
 import de.westnordost.streetcomplete.data.elementfilter.toElementFilterExpression
@@ -12,7 +12,7 @@ import de.westnordost.streetcomplete.quests.YesNoQuestAnswerFragment
 class AddCrossingIsland : OsmElementQuestType<Boolean> {
 
     private val crossingFilter by lazy { """
-        nodes with 
+        nodes with
           highway = crossing
           and crossing
           and crossing != island
@@ -20,7 +20,7 @@ class AddCrossingIsland : OsmElementQuestType<Boolean> {
     """.toElementFilterExpression()}
 
     private val excludedWaysFilter by lazy { """
-        ways with 
+        ways with
           highway and access ~ private|no
           or highway and oneway and oneway != no
           or highway ~ path|footway|cycleway|pedestrian

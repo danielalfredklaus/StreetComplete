@@ -1,19 +1,19 @@
 package de.westnordost.streetcomplete.data.osm.osmquest
 
 import android.util.Log
-import de.westnordost.countryboundaries.isInAny
+import ch.uzh.ifi.countryboundaries.intersects
+import ch.uzh.ifi.countryboundaries.isInAny
+import ch.uzh.ifi.osmapi.map.MapDataWithGeometry
+import ch.uzh.ifi.osmapi.map.getRelationComplete
+import ch.uzh.ifi.osmapi.map.isRelationComplete
 import de.westnordost.countryboundaries.CountryBoundaries
-import de.westnordost.countryboundaries.intersects
 import de.westnordost.osmapi.common.errors.OsmQueryTooBigException
-import de.westnordost.osmapi.map.MapDataWithGeometry
 import de.westnordost.osmapi.map.data.BoundingBox
 import de.westnordost.osmapi.map.data.Element
 import de.westnordost.osmapi.map.data.Element.Type.*
 import de.westnordost.osmapi.map.data.LatLon
 import de.westnordost.osmapi.map.data.OsmLatLon
-import de.westnordost.osmapi.map.getRelationComplete
 import de.westnordost.osmapi.map.handler.MapDataHandler
-import de.westnordost.osmapi.map.isRelationComplete
 import de.westnordost.streetcomplete.data.MapDataApi
 import de.westnordost.streetcomplete.data.osm.elementgeometry.ElementGeometry
 import de.westnordost.streetcomplete.data.osm.elementgeometry.ElementGeometryCreator

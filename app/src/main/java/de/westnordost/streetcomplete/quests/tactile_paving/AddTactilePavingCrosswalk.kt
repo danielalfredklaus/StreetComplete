@@ -1,19 +1,19 @@
 package de.westnordost.streetcomplete.quests.tactile_paving
 
-import de.westnordost.osmapi.map.MapDataWithGeometry
+import ch.uzh.ifi.osmapi.map.MapDataWithGeometry
 import de.westnordost.osmapi.map.data.Element
 import de.westnordost.streetcomplete.R
-import de.westnordost.streetcomplete.data.meta.updateWithCheckDate
 import de.westnordost.streetcomplete.data.elementfilter.toElementFilterExpression
+import de.westnordost.streetcomplete.data.meta.updateWithCheckDate
 import de.westnordost.streetcomplete.data.osm.changes.StringMapChangesBuilder
-import de.westnordost.streetcomplete.data.quest.NoCountriesExcept
 import de.westnordost.streetcomplete.data.osm.osmquest.OsmElementQuestType
+import de.westnordost.streetcomplete.data.quest.NoCountriesExcept
 import de.westnordost.streetcomplete.ktx.toYesNo
 
 class AddTactilePavingCrosswalk : OsmElementQuestType<Boolean> {
 
     private val crossingFilter by lazy { """
-        nodes with 
+        nodes with
           (
             highway = traffic_signals and crossing = traffic_signals and foot != no
             or highway = crossing and foot != no
@@ -26,7 +26,7 @@ class AddTactilePavingCrosswalk : OsmElementQuestType<Boolean> {
     """.toElementFilterExpression() }
 
     private val excludedWaysFilter by lazy { """
-        ways with 
+        ways with
           highway = cycleway and foot !~ yes|designated
           or highway and access ~ private|no
     """.toElementFilterExpression() }

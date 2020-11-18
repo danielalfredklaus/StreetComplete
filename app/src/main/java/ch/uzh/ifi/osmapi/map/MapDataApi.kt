@@ -1,4 +1,4 @@
-package de.westnordost.osmapi.map
+package ch.uzh.ifi.osmapi.map
 
 import de.westnordost.osmapi.map.data.BoundingBox
 import de.westnordost.streetcomplete.data.MapDataApi

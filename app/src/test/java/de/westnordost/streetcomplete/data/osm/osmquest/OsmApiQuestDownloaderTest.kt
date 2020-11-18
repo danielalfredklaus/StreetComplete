@@ -1,7 +1,7 @@
 package de.westnordost.streetcomplete.data.osm.osmquest
 
+import ch.uzh.ifi.osmapi.map.MapDataWithGeometry
 import de.westnordost.countryboundaries.CountryBoundaries
-import de.westnordost.osmapi.map.MapDataWithGeometry
 import de.westnordost.osmapi.map.data.BoundingBox
 import de.westnordost.osmapi.map.data.Element
 import de.westnordost.osmapi.map.data.OsmLatLon
@@ -18,7 +18,7 @@ import de.westnordost.streetcomplete.data.quest.Countries
 import de.westnordost.streetcomplete.mock
 import de.westnordost.streetcomplete.on
 import de.westnordost.streetcomplete.quests.AbstractQuestAnswerFragment
-import org.junit.Assert.*
+import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mockito.verify

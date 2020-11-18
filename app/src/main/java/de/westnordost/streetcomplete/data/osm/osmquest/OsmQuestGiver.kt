@@ -1,12 +1,9 @@
 package de.westnordost.streetcomplete.data.osm.osmquest
 
+
 import android.util.Log
+import ch.uzh.ifi.countryboundaries.isInAny
 import de.westnordost.countryboundaries.CountryBoundaries
-import de.westnordost.countryboundaries.isInAny
-
-
-import javax.inject.Inject
-
 import de.westnordost.osmapi.map.data.Element
 import de.westnordost.osmapi.map.data.LatLon
 import de.westnordost.streetcomplete.data.osm.elementgeometry.ElementGeometry
@@ -15,6 +12,7 @@ import de.westnordost.streetcomplete.data.quest.QuestStatus
 import de.westnordost.streetcomplete.data.quest.QuestTypeRegistry
 import de.westnordost.streetcomplete.util.enclosingBoundingBox
 import java.util.concurrent.FutureTask
+import javax.inject.Inject
 
 /** Manages creating new quests and removing quests that are no longer applicable for an OSM
  * element locally  */

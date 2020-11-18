@@ -1,5 +1,6 @@
-package de.westnordost.countryboundaries
+package ch.uzh.ifi.countryboundaries
 
+import de.westnordost.countryboundaries.CountryBoundaries
 import de.westnordost.osmapi.map.data.BoundingBox
 import de.westnordost.osmapi.map.data.LatLon
 import de.westnordost.streetcomplete.data.quest.AllCountries

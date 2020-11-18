@@ -1,9 +1,9 @@
 package de.westnordost.streetcomplete.data
 
+import ch.uzh.ifi.osmapi.map.LightweightOsmMapDataFactory
 import dagger.Module
 import dagger.Provides
 import de.westnordost.osmapi.OsmConnection
-import de.westnordost.osmapi.map.LightweightOsmMapDataFactory
 import de.westnordost.streetcomplete.ApplicationConstants
 import de.westnordost.streetcomplete.data.user.OAuthStore
 import oauth.signpost.OAuthConsumer

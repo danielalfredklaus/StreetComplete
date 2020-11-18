@@ -1,20 +1,21 @@
 package de.westnordost.streetcomplete.data.osm.upload.changesets
 
 import android.content.SharedPreferences
-import de.westnordost.osmapi.map.MapDataWithGeometry
-import de.westnordost.streetcomplete.data.MapDataApi
+import ch.uzh.ifi.osmapi.map.MapDataWithGeometry
 import de.westnordost.osmapi.map.data.Element
 import de.westnordost.streetcomplete.ApplicationConstants
 import de.westnordost.streetcomplete.any
-import de.westnordost.streetcomplete.data.osm.osmquest.OsmElementQuestType
+import de.westnordost.streetcomplete.data.MapDataApi
 import de.westnordost.streetcomplete.data.osm.changes.StringMapChangesBuilder
+import de.westnordost.streetcomplete.data.osm.osmquest.OsmElementQuestType
 import de.westnordost.streetcomplete.mock
 import de.westnordost.streetcomplete.on
 import de.westnordost.streetcomplete.quests.AbstractQuestAnswerFragment
 import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
-import org.mockito.Mockito.*
+import org.mockito.Mockito.never
+import org.mockito.Mockito.verify
 import java.util.*
 
 class OpenQuestChangesetsManagerTest {

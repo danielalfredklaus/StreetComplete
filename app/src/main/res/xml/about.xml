@@ -13,17 +13,6 @@
         android:widgetLayout="@layout/widget_image_next"/>
 
     <Preference
-        android:key="donate"
-        android:title="@string/about_title_donate"
-        android:summary="@string/about_summary_donate"
-        />
-
-    <Preference
-        android:key="translate"
-        android:title="@string/about_title_translate"
-        android:widgetLayout="@layout/widget_image_open_in_browser" />
-
-    <Preference
         android:key="license"
         android:title="@string/about_title_license"
         android:summary="@string/about_summary_license"
@@ -46,13 +35,6 @@
         android:title="@string/about_category_feedback">
 
         <Preference
-            android:key="rate"
-            android:title="@string/about_title_rate"
-            android:summary="@string/about_summary_rate"
-            android:widgetLayout="@layout/widget_image_open_in_browser"
-            />
-
-        <Preference
             android:key="report_error"
             android:title="@string/about_title_report_error"
             android:summary="@string/about_summary_repository"
@@ -61,7 +43,7 @@
         <Preference
             android:key="email_feedback"
             android:title="@string/about_title_feedback"
-            android:summary="Email osm@westnordost.de"
+            android:summary="Email sven.stoll@uzh.ch"
             android:widgetLayout="@layout/widget_image_email"
             />
 

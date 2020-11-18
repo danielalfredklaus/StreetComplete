@@ -43,7 +43,7 @@ class CreditsFragment : Fragment(R.layout.fragment_credits) {
     }
 
     private fun addContributorsTo(contributors: List<String>, view: ViewGroup) {
-        val items = contributors.map { "<li>$it</li>" }.joinToString("")
+        val items = contributors.joinToString("") { "<li>$it</li>" }
         val textView = HtmlTextView(activity)
         TextViewCompat.setTextAppearance(textView, R.style.TextAppearance_Body)
         textView.setTextIsSelectable(true)

@@ -52,7 +52,6 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintVertical_chainStyle="packed"
-            android:src="@drawable/ic_quest_max_height"
             android:scaleType="fitCenter"
             android:elevation="24dp"/>
 

@@ -5,9 +5,6 @@ import dagger.Provides
 import de.westnordost.osmfeatures.FeatureDictionary
 import de.westnordost.streetcomplete.data.osmnotes.notequests.OsmNoteQuestType
 import de.westnordost.streetcomplete.data.quest.QuestTypeRegistry
-import de.westnordost.streetcomplete.quests.road_name.data.RoadNameSuggestionsDao
-import de.westnordost.streetcomplete.quests.oneway_suspects.data.TrafficFlowSegmentsApi
-import de.westnordost.streetcomplete.quests.oneway_suspects.data.WayTrafficFlowDao
 import de.westnordost.streetcomplete.quests.incline.AddPathIncline
 import de.westnordost.streetcomplete.quests.incline.AddPedestrianAccessibleStreetIncline
 import de.westnordost.streetcomplete.quests.kerb_type.AddKerbType
@@ -15,7 +12,10 @@ import de.westnordost.streetcomplete.quests.smoothness.AddCyclewayPartSmoothness
 import de.westnordost.streetcomplete.quests.smoothness.AddFootwayPartSmoothness
 import de.westnordost.streetcomplete.quests.smoothness.AddPathSmoothness
 import de.westnordost.streetcomplete.quests.smoothness.AddPedestrianAccessibleStreetSmoothness
-import de.westnordost.streetcomplete.quests.surface.*
+import de.westnordost.streetcomplete.quests.surface.AddCyclewayPartSurface
+import de.westnordost.streetcomplete.quests.surface.AddFootwayPartSurface
+import de.westnordost.streetcomplete.quests.surface.AddPathSurface
+import de.westnordost.streetcomplete.quests.surface.AddPedestrianAccessibleStreetSurface
 import de.westnordost.streetcomplete.quests.width.AddCyclewayPartWidth
 import de.westnordost.streetcomplete.quests.width.AddFootwayPartWidth
 import de.westnordost.streetcomplete.quests.width.AddPathWidth
@@ -30,9 +30,6 @@ object QuestModule {
     @Singleton
     fun questTypeRegistry(
         osmNoteQuestType: OsmNoteQuestType,
-        roadNameSuggestionsDao: RoadNameSuggestionsDao,
-        trafficFlowSegmentsApi: TrafficFlowSegmentsApi,
-        trafficFlowDao: WayTrafficFlowDao,
         featureDictionaryFuture: FutureTask<FeatureDictionary>
     ): QuestTypeRegistry = QuestTypeRegistry(listOf(
 

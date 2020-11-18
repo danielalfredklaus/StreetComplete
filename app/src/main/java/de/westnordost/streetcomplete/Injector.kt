@@ -10,7 +10,6 @@ import de.westnordost.streetcomplete.data.user.UserModule
 import de.westnordost.streetcomplete.data.user.achievements.AchievementsModule
 import de.westnordost.streetcomplete.map.MapModule
 import de.westnordost.streetcomplete.quests.QuestModule
-import de.westnordost.streetcomplete.quests.oneway_suspects.data.TrafficFlowSegmentsModule
 
 object Injector {
 
@@ -27,7 +26,6 @@ object Injector {
             .osmApiModule(OsmApiModule)
             .osmNotesModule(OsmNotesModule)
             .questModule(QuestModule)
-            .trafficFlowSegmentsModule(TrafficFlowSegmentsModule)
             .uploadModule(UploadModule)
             .userModule(UserModule)
             .mapModule(MapModule)

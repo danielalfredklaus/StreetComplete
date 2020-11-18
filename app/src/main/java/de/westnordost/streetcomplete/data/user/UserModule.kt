@@ -12,6 +12,7 @@ import javax.inject.Provider
 
 @Module
 object UserModule {
+    // TODO sst: change values...
     private const val STATISTICS_BACKEND_URL = "https://www.westnordost.de/streetcomplete/statistics/"
     private const val BASE_OAUTH_URL = "https://www.openstreetmap.org/oauth/"
     private const val CONSUMER_KEY = "L3JyJMjVk6g5atwACVySRWgmnrkBAH7u0U18ALO7"

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import androidx.appcompat.app.AlertDialog
+import androidx.core.content.ContextCompat
 import de.westnordost.streetcomplete.R
 import de.westnordost.streetcomplete.quests.AbstractQuestAnswerFragment
 import de.westnordost.streetcomplete.quests.OtherAnswer
@@ -41,7 +42,7 @@ class AddProhibitedForPedestriansForm : AbstractQuestAnswerFragment<ProhibitedFo
             // this is necessary because the inflated image view uses the activity context rather than
             // the fragment / layout inflater context' resources to access it's drawable
             val img = view.findViewById<ImageView>(R.id.livingStreetImage)
-            img.setImageDrawable(resources.getDrawable(R.drawable.ic_living_street))
+            img.setImageDrawable(ContextCompat.getDrawable(requireContext(), R.drawable.ic_living_street))
             AlertDialog.Builder(it)
                 .setView(view)
                 .setTitle(R.string.quest_maxspeed_answer_living_street_confirmation_title)

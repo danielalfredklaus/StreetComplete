@@ -40,51 +40,6 @@
         <item name="android:letterSpacing" tools:targetApi="lollipop">-0.01</item>
     </style>
 
-    <!-- +++++++++++++++++++++++++++++ Opening hours input +++++++++++++++++++++++++++++++++++++ -->
-
-    <style name="TimesField">
-        <item name="android:focusable">true</item>
-        <item name="android:clickable">true</item>
-        <item name="android:background">?android:attr/selectableItemBackground</item>
-        <item name="android:textColor">?android:attr/textColorPrimary</item>
-        <item name="android:textSize">18sp</item>
-        <item name="android:paddingStart">8dp</item>
-        <item name="android:paddingEnd">8dp</item>
-        <item name="android:paddingTop">6dp</item>
-        <item name="android:paddingBottom">6dp</item>
-    </style>
-
-    <style name="OpeningHoursButton" parent="Widget.AppCompat.Button.Borderless">
-        <item name="android:paddingStart">8dp</item>
-        <item name="android:paddingEnd">8dp</item>
-        <item name="android:paddingTop">6dp</item>
-        <item name="android:paddingBottom">6dp</item>
-    </style>
-
-    <!-- ++++++++++++++++++++++++++++++ Address edit texts +++++++++++++++++++++++++++++++++++++ -->
-
-    <style name="HousenumberEditText">
-        <item name="android:textColor">#fff</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textSize">40dp</item>
-        <item name="android:inputType">number</item>
-        <item name="android:gravity">center</item>
-        <item name="android:maxLines">1</item>
-        <item name="android:minHeight">86dp</item>
-        <item name="android:background">@drawable/background_housenumber_frame</item>
-    </style>
-
-    <style name="BlocknumberEditText">
-        <item name="android:textColor">#fff</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textSize">40dp</item>
-        <item name="android:gravity">center</item>
-        <item name="android:inputType">number</item>
-        <item name="android:padding">4dp</item>
-        <item name="android:maxLines">1</item>
-        <item name="android:background">@null</item>
-    </style>
-
     <!-- ++++++++++++++++++++++++++++++++ FAB-like buttons +++++++++++++++++++++++++++++++++++++ -->
 
     <style name="RoundWhiteButton">

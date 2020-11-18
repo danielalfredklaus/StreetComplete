@@ -8,9 +8,8 @@ import android.graphics.PointF
 import android.graphics.Rect
 import android.graphics.RectF
 import android.location.Location
-import android.location.LocationManager
 import android.net.ConnectivityManager
-import android.os.Build
+import android.net.NetworkCapabilities
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -82,12 +81,18 @@ class MainFragment : Fragment(R.layout.fragment_main),
     VisibleQuestListener,
     CoroutineScope by CoroutineScope(Dispatchers.Main) {
 
-    @Inject internal lateinit var questController: QuestController
-    @Inject internal lateinit var questDownloadController: QuestDownloadController
-    @Inject internal lateinit var isSurveyChecker: QuestSourceIsSurveyChecker
-    @Inject internal lateinit var visibleQuestsSource: VisibleQuestsSource
-    @Inject internal lateinit var soundFx: SoundFx
-    @Inject internal lateinit var prefs: SharedPreferences
+    @Inject
+    internal lateinit var questController: QuestController
+    @Inject
+    internal lateinit var questDownloadController: QuestDownloadController
+    @Inject
+    internal lateinit var isSurveyChecker: QuestSourceIsSurveyChecker
+    @Inject
+    internal lateinit var visibleQuestsSource: VisibleQuestsSource
+    @Inject
+    internal lateinit var soundFx: SoundFx
+    @Inject
+    internal lateinit var prefs: SharedPreferences
 
     private val random = Random()
 
@@ -110,6 +115,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
         fun onQuestSolved(quest: Quest?, source: String?)
         fun onCreatedNote(screenPosition: Point)
     }
+
     private val listener: Listener? get() = parentFragment as? Listener ?: activity as? Listener
 
     /* +++++++++++++++++++++++++++++++++++++++ CALLBACKS ++++++++++++++++++++++++++++++++++++++++ */
@@ -136,7 +142,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
     override fun onAttach(context: Context) {
         super.onAttach(context)
 
-        locationManager = FineLocationManager(context.getSystemService<LocationManager>()!!, this::onLocationChanged)
+        locationManager = FineLocationManager(context.getSystemService()!!, this::onLocationChanged)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -156,24 +162,22 @@ class MainFragment : Fragment(R.layout.fragment_main),
     }
 
     private fun setupFittingToSystemWindowInsets() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            view?.setOnApplyWindowInsetsListener { _, insets ->
-                mapControls.updateLayoutParams<ViewGroup.MarginLayoutParams> {
-                    setMargins(
-                        insets.systemWindowInsetLeft,
-                        insets.systemWindowInsetTop,
-                        insets.systemWindowInsetRight,
-                        insets.systemWindowInsetBottom
-                    )
-                }
-                windowInsets = Rect(
+        view?.setOnApplyWindowInsetsListener { _, insets ->
+            mapControls.updateLayoutParams<ViewGroup.MarginLayoutParams> {
+                setMargins(
                     insets.systemWindowInsetLeft,
                     insets.systemWindowInsetTop,
                     insets.systemWindowInsetRight,
                     insets.systemWindowInsetBottom
                 )
-                insets
             }
+            windowInsets = Rect(
+                insets.systemWindowInsetLeft,
+                insets.systemWindowInsetTop,
+                insets.systemWindowInsetRight,
+                insets.systemWindowInsetBottom
+            )
+            insets
         }
     }
 
@@ -275,7 +279,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
         setIsFollowingPosition(false)
     }
 
-    override fun onMapDidChange(position: LatLon, rotation: Float, tilt: Float, zoom: Float) { }
+    override fun onMapDidChange(position: LatLon, rotation: Float, tilt: Float, zoom: Float) {}
 
     override fun onLongPress(x: Float, y: Float) {
         val point = PointF(x, y)
@@ -419,7 +423,8 @@ class MainFragment : Fragment(R.layout.fragment_main),
 
     /* ---------------------------------- VisibleQuestListener ---------------------------------- */
 
-    @AnyThread override fun onUpdatedVisibleQuests(
+    @AnyThread
+    override fun onUpdatedVisibleQuests(
         added: Collection<Quest>,
         removed: Collection<Long>,
         group: QuestGroup
@@ -506,7 +511,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
         val margin = 0.025f // About 4%
         // 2PI radians = full circle of rotation = also north
         val isNorthUp = mapFragment.cameraPosition?.rotation?.let {
-            it <= margin || 2f*PI.toFloat()-it <= margin
+            it <= margin || 2f * PI.toFloat() - it <= margin
         } ?: false
         // Camera cannot rotate upside down => full circle check not needed
         val isFlat = mapFragment.cameraPosition?.tilt?.let { it <= margin } ?: false
@@ -558,7 +563,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
         val popupMenu = PopupMenu(requireContext(), contextMenuView)
         popupMenu.inflate(R.menu.menu_map_context)
         popupMenu.setOnMenuItemClickListener { item ->
-            when(item.itemId) {
+            when (item.itemId) {
                 R.id.action_create_note -> onClickCreateNote(position)
                 R.id.action_open_location -> onClickOpenLocationInOtherApp(position)
             }
@@ -610,9 +615,15 @@ class MainFragment : Fragment(R.layout.fragment_main),
     }
 
     private fun isConnected(): Boolean {
-        val connectivityManager = context?.getSystemService<ConnectivityManager>()
-        val activeNetworkInfo = connectivityManager?.activeNetworkInfo
-        return activeNetworkInfo != null && activeNetworkInfo.isConnected
+        val connectivityManager = context?.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+        val network = connectivityManager.activeNetwork ?: return false
+        val capabilities = connectivityManager.getNetworkCapabilities(network) ?: return false
+        return when {
+            capabilities.hasTransport(NetworkCapabilities.TRANSPORT_WIFI) -> true
+            capabilities.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) -> true
+            capabilities.hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET) -> true
+            else -> false
+        }
     }
 
     private fun downloadDisplayedArea() {
@@ -642,14 +653,14 @@ class MainFragment : Fragment(R.layout.fragment_main),
         }
     }
 
-    private fun downloadAreaConfirmed(bbox: BoundingBox) {
-        var bbox = bbox
+    private fun downloadAreaConfirmed(bbox0: BoundingBox) {
+        var bbox = bbox0
         val areaInSqKm = bbox.area() / 1000000
         // below a certain threshold, it does not make sense to download, so let's enlarge it
         if (areaInSqKm < ApplicationConstants.MIN_DOWNLOADABLE_AREA_IN_SQKM) {
             val cameraPosition = mapFragment?.cameraPosition
             if (cameraPosition != null) {
-                val radius = sqrt( 1000000 * ApplicationConstants.MIN_DOWNLOADABLE_AREA_IN_SQKM / PI)
+                val radius = sqrt(1000000 * ApplicationConstants.MIN_DOWNLOADABLE_AREA_IN_SQKM / PI)
                 bbox = cameraPosition.position.enclosingBoundingBox(radius)
             }
         }
@@ -702,7 +713,8 @@ class MainFragment : Fragment(R.layout.fragment_main),
 
     //region Bottom Sheet - Controlling and managing the bottom sheet contents
 
-    @UiThread private fun closeBottomSheet() {
+    @UiThread
+    private fun closeBottomSheet() {
         hideKeyboard()
         childFragmentManager.popBackStackImmediate(BOTTOM_SHEET, POP_BACK_STACK_INCLUSIVE)
         unfreezeMap()
@@ -723,7 +735,8 @@ class MainFragment : Fragment(R.layout.fragment_main),
         }
     }
 
-    @UiThread private fun showQuestDetails(quest: Quest, group: QuestGroup) {
+    @UiThread
+    private fun showQuestDetails(quest: Quest, group: QuestGroup) {
         val mapFragment = mapFragment ?: return
         if (isQuestDetailsCurrentlyDisplayedFor(quest.id!!, group)) return
         if (bottomSheetFragment != null) {
@@ -831,8 +844,9 @@ class MainFragment : Fragment(R.layout.fragment_main),
         flingQuestMarkerTo(img, answerTarget) { root.removeView(img) }
     }
 
-    private val isAutosync: Boolean get() =
-        Prefs.Autosync.valueOf(prefs.getString(Prefs.AUTOSYNC, "ON")!!) == Prefs.Autosync.ON
+    private val isAutosync: Boolean
+        get() =
+            Prefs.Autosync.valueOf(prefs.getString(Prefs.AUTOSYNC, "ON")!!) == Prefs.Autosync.ON
 
     private fun flingQuestMarkerTo(quest: View, target: View, onFinished: () -> Unit) {
         val targetPos = target.getLocationInWindow().toPointF()

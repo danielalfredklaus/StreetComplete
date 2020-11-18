@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.SharedPreferences
 import android.graphics.Bitmap
 import android.graphics.Canvas
+import androidx.core.content.ContextCompat
 import androidx.core.content.edit
 import com.mapzen.tangram.SceneUpdate
 import de.westnordost.streetcomplete.BuildConfig
@@ -48,7 +49,7 @@ import kotlin.math.sqrt
         questIconResIds.add(R.drawable.ic_multi_quest_9_and_more)
 
         val spriteSheetEntries: MutableList<String> = ArrayList(questIconResIds.size)
-        val questPin = context.resources.getDrawable(R.drawable.quest_pin)
+        val questPin = ContextCompat.getDrawable(context, R.drawable.quest_pin)!!
         val iconSize = questPin.intrinsicWidth
         val questIconSize = 2 * iconSize / 3
         val questIconOffsetX = 56 * iconSize / 192
@@ -63,7 +64,7 @@ import kotlin.math.sqrt
             val y = i / sheetSideLength * iconSize
             questPin.setBounds(x, y, x + iconSize, y + iconSize)
             questPin.draw(canvas)
-            val questIcon = context.resources.getDrawable(questIconResId)
+            val questIcon = ContextCompat.getDrawable(context, questIconResId)!!
             val questX = x + questIconOffsetX
             val questY = y + questIconOffsetY
             questIcon.setBounds(questX, questY, questX + questIconSize, questY + questIconSize)

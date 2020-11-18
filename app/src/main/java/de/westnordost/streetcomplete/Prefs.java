@@ -6,14 +6,12 @@ import androidx.appcompat.app.AppCompatDelegate;
 public class Prefs {
 
 	public static final String
-			OAUTH = "oauth",
 			OAUTH_ACCESS_TOKEN = "oauth.accessToken",
 			OAUTH_ACCESS_TOKEN_SECRET = "oauth.accessTokenSecret",
 			MAP_TILECACHE_IN_MB = "map.tilecache",
 			SHOW_NOTES_NOT_PHRASED_AS_QUESTIONS = "display.nonQuestionNotes",
 			AUTOSYNC = "autosync",
 			KEEP_SCREEN_ON = "display.keepScreenOn",
-			UNGLUE_HINT_TIMES_SHOWN = "unglueHint.shown",
 			THEME_SELECT = "theme.select",
 			RESURVEY_INTERVALS = "quests.resurveyIntervals";
 
@@ -29,7 +27,6 @@ public class Prefs {
 	// not shown anywhere directly
 	public static final String
 			QUEST_ORDER = "quests.order",
-			QUEST_INVALIDATION = "quests.invalidation",
 			LAST_SOLVED_QUEST_TIME = "changesets.lastQuestSolvedTime",
 			MAP_LATITUDE = "map.latitude",
 			MAP_LONGITUDE = "map.longitude",
@@ -39,8 +36,6 @@ public class Prefs {
 			LAST_VERSION_DATA = "lastVersion_data",
 			HAS_SHOWN_TUTORIAL = "hasShownTutorial",
 			HAS_COMPLETED_ARCORE_MEASUREMENT = "hasCompletedARCoreMeasurement";
-
-	public static final String HAS_SHOWN_UNDO_FUCKUP_WARNING = "alert.undo_fuckup_warning";
 
 	public static final String QUEST_SPRITES_VERSION = "TangramQuestSpriteSheet.version";
 	public static final String QUEST_SPRITES = "TangramQuestSpriteSheet.questSprites";
@@ -54,7 +49,7 @@ public class Prefs {
 	{
 		LIGHT(AppCompatDelegate.MODE_NIGHT_NO),
 		DARK(AppCompatDelegate.MODE_NIGHT_YES),
-		AUTO(AppCompatDelegate.MODE_NIGHT_AUTO),
+		AUTO(AppCompatDelegate.MODE_NIGHT_AUTO_BATTERY),
 		SYSTEM(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
 
 		public final int appCompatNightMode;

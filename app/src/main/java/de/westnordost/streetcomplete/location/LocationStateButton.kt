@@ -26,7 +26,7 @@ class LocationStateButton @JvmOverloads constructor(
     get() = _state ?: LocationState.DENIED
     set(value) { _state = value }
 
-    // this is necessary because state is accessed before it is initialized (in contructor of super)
+    // this is necessary because state is accessed before it is initialized (in constructor of super)
     private var _state: LocationState? = null
     set(value) {
         if (field != value) {

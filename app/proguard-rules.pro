@@ -32,11 +32,11 @@
 }
 
 # CountryInfo filled via reflection
--keep class de.westnordost.accesscomplete.data.meta.CountryInfo { *; }
+-keep class ch.uzh.ifi.accesscomplete.data.meta.CountryInfo { *; }
 
 # just leave my stuff alone
--keep class de.westnordost.* { *; }
--keep class de.westnordost.** { *; }
+-keep class ch.uzh.ifi.* { *; }
+-keep class ch.uzh.ifi.** { *; }
 
 # see https://github.com/westnordost/StreetComplete/issues/2003
 -keepclassmembers class * implements android.os.Parcelable {

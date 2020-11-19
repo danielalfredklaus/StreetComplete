@@ -40,7 +40,7 @@
                 tools:src="@drawable/ic_cycleway_track"
                 tools:rotation="180"/>
 
-            <de.westnordost.accesscomplete.view.VerticalLabelView
+            <ch.uzh.ifi.accesscomplete.view.VerticalLabelView
                 android:id="@+id/leftSideTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
                 tools:ignore="RtlHardcoded"
                 tools:src="@drawable/ic_cycleway_sidewalk"/>
 
-            <de.westnordost.accesscomplete.view.VerticalLabelView
+            <ch.uzh.ifi.accesscomplete.view.VerticalLabelView
                 android:id="@+id/rightSideTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

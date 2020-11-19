@@ -31,7 +31,7 @@
         android:paddingEnd="14dp"
         >
 
-        <de.westnordost.accesscomplete.view.AutoCorrectAbbreviationsEditText
+        <ch.uzh.ifi.accesscomplete.view.AutoCorrectAbbreviationsEditText
             android:id="@+id/autoCorrectInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

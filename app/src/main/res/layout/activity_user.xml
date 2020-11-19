@@ -16,14 +16,14 @@
         android:layout_alignParentBottom="true"/>
 
     <fragment
-        android:name="de.westnordost.accesscomplete.user.AchievementInfoFragment"
+        android:name="ch.uzh.ifi.accesscomplete.user.AchievementInfoFragment"
         android:id="@+id/achievementDetailsFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:visibility="gone" />
 
     <fragment
-        android:name="de.westnordost.accesscomplete.user.QuestTypeInfoFragment"
+        android:name="ch.uzh.ifi.accesscomplete.user.QuestTypeInfoFragment"
         android:id="@+id/questTypeDetailsFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -31,7 +31,7 @@
         />
 
     <fragment
-        android:name="de.westnordost.accesscomplete.user.CountryInfoFragment"
+        android:name="ch.uzh.ifi.accesscomplete.user.CountryInfoFragment"
         android:id="@+id/countryDetailsFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

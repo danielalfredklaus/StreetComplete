@@ -79,7 +79,7 @@
             android:title="@string/pref_title_quests_restore_hidden"
             />
 
-        <de.westnordost.accesscomplete.settings.NumberPickerPreference
+        <ch.uzh.ifi.accesscomplete.settings.NumberPickerPreference
             android:key="map.tilecache"
             android:title="@string/pref_title_map_cache"
             android:summary="@string/pref_tilecache_size_summary"

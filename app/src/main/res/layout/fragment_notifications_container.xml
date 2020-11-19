@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/achievement_info_fragment"
-        android:name="de.westnordost.accesscomplete.user.AchievementInfoFragment"
+        android:name="ch.uzh.ifi.accesscomplete.user.AchievementInfoFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:visibility="gone"/>

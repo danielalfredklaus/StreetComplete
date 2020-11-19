@@ -1,10 +1,10 @@
 package ch.uzh.ifi.countryboundaries
 
-import de.westnordost.accesscomplete.data.quest.AllCountries
-import de.westnordost.accesscomplete.data.quest.AllCountriesExcept
-import de.westnordost.accesscomplete.data.quest.Countries
-import de.westnordost.accesscomplete.data.quest.NoCountriesExcept
-import de.westnordost.accesscomplete.ktx.containsAny
+import ch.uzh.ifi.accesscomplete.data.quest.AllCountries
+import ch.uzh.ifi.accesscomplete.data.quest.AllCountriesExcept
+import ch.uzh.ifi.accesscomplete.data.quest.Countries
+import ch.uzh.ifi.accesscomplete.data.quest.NoCountriesExcept
+import ch.uzh.ifi.accesscomplete.ktx.containsAny
 import de.westnordost.countryboundaries.CountryBoundaries
 import de.westnordost.osmapi.map.data.BoundingBox
 import de.westnordost.osmapi.map.data.LatLon

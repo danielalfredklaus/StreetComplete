@@ -1,8 +1,8 @@
 package ch.uzh.ifi.osmapi.map
 
-import de.westnordost.accesscomplete.data.osm.elementgeometry.ElementGeometry
-import de.westnordost.accesscomplete.data.osm.elementgeometry.ElementPointGeometry
-import de.westnordost.accesscomplete.util.MultiIterable
+import ch.uzh.ifi.accesscomplete.data.osm.elementgeometry.ElementGeometry
+import ch.uzh.ifi.accesscomplete.data.osm.elementgeometry.ElementPointGeometry
+import ch.uzh.ifi.accesscomplete.util.MultiIterable
 import de.westnordost.osmapi.map.data.*
 import de.westnordost.osmapi.map.handler.MapDataHandler
 

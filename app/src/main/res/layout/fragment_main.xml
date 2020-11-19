@@ -7,7 +7,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/mapFragment"
-        android:name="de.westnordost.streetcomplete.map.QuestsMapFragment"
+        android:name="de.westnordost.accesscomplete.map.QuestsMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
@@ -17,7 +17,7 @@
         android:layout_height="match_parent"
         tools:ignore="RtlHardcoded">
 
-        <de.westnordost.streetcomplete.map.PointerPinView
+        <de.westnordost.accesscomplete.map.PointerPinView
             android:id="@+id/locationPointerPin"
             android:layout_width="48dp"
             android:layout_height="48dp"
@@ -27,7 +27,7 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/answers_counter_fragment"
-            android:name="de.westnordost.streetcomplete.controls.AnswersCounterFragment"
+            android:name="de.westnordost.accesscomplete.controls.AnswersCounterFragment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:layout="@layout/fragment_answers_counter"
@@ -37,7 +37,7 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/upload_button_fragment"
-            android:name="de.westnordost.streetcomplete.controls.UploadButtonFragment"
+            android:name="de.westnordost.accesscomplete.controls.UploadButtonFragment"
             android:layout_width="@dimen/map_button_size"
             android:layout_height="@dimen/map_button_size"
             tools:layout="@layout/fragment_upload_button"
@@ -56,7 +56,7 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/notification_button_fragment"
-            android:name="de.westnordost.streetcomplete.controls.NotificationButtonFragment"
+            android:name="de.westnordost.accesscomplete.controls.NotificationButtonFragment"
             android:layout_width="@dimen/map_button_size"
             android:layout_height="@dimen/map_button_size"
             tools:layout="@layout/fragment_notification_button"
@@ -127,7 +127,7 @@
                 android:src="@drawable/ic_zoom_minus_black_24dp"
                 android:contentDescription="@string/map_btn_zoom_out"/>
 
-            <de.westnordost.streetcomplete.location.LocationStateButton
+            <de.westnordost.accesscomplete.location.LocationStateButton
                 android:id="@+id/gpsTrackingButton"
                 android:layout_width="@dimen/map_button_size"
                 android:layout_height="@dimen/map_button_size"
@@ -152,7 +152,7 @@
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/undo_button_fragment"
-                android:name="de.westnordost.streetcomplete.controls.UndoButtonFragment"
+                android:name="de.westnordost.accesscomplete.controls.UndoButtonFragment"
                 android:layout_width="@dimen/map_button_size"
                 android:layout_height="@dimen/map_button_size"
                 tools:layout="@layout/fragment_undo_button"
@@ -162,7 +162,7 @@
 
         <androidx.fragment.app.FragmentContainerView
             android:id="@+id/quest_download_progress_fragment"
-            android:name="de.westnordost.streetcomplete.controls.DownloadProgressFragment"
+            android:name="de.westnordost.accesscomplete.controls.DownloadProgressFragment"
             android:layout_width="80dp"
             android:layout_height="80dp"
             tools:layout="@layout/fragment_download_progress"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="de.westnordost.streetcomplete"
+    package="de.westnordost.accesscomplete"
     android:installLocation="auto">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -16,7 +16,7 @@
     <uses-feature android:name="android.hardware.screen.portrait"/>
 
     <application
-        android:name=".AccessCompleteApplication"
+        android:name="de.westnordost.accesscomplete.AccessCompleteApplication"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -25,7 +25,7 @@
         tools:replace="android:allowBackup">
         <activity
             android:windowSoftInputMode="adjustResize"
-            android:name="de.westnordost.streetcomplete.MainActivity"
+            android:name="de.westnordost.accesscomplete.MainActivity"
             android:label="@string/app_name"
             android:configChanges="orientation|screenSize">
             <intent-filter>
@@ -40,28 +40,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".settings.SettingsActivity"
+            android:name="de.westnordost.accesscomplete.settings.SettingsActivity"
             android:label="@string/action_settings"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="de.westnordost.accesscomplete.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MANAGE_NETWORK_USAGE" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".FragmentContainerActivity"/>
-        <activity android:name=".about.AboutActivity"/>
-        <activity android:name=".settings.ShowQuestFormsActivity"
+        <activity android:name="de.westnordost.accesscomplete.FragmentContainerActivity"/>
+        <activity android:name="de.westnordost.accesscomplete.about.AboutActivity"/>
+        <activity android:name="de.westnordost.accesscomplete.settings.ShowQuestFormsActivity"
             android:configChanges="orientation|screenSize|uiMode"/>
         <activity
-            android:name=".user.UserActivity"
+            android:name="de.westnordost.accesscomplete.user.UserActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
         <activity
-            android:name=".measurement.ARCoreMeasurementActivity"
+            android:name="de.westnordost.accesscomplete.measurement.ARCoreMeasurementActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity" />
-        <service android:name=".data.download.QuestDownloadService" />
-        <service android:name=".data.upload.UploadService" />
+        <service android:name="de.westnordost.accesscomplete.data.download.QuestDownloadService" />
+        <service android:name="de.westnordost.accesscomplete.data.upload.UploadService" />
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="@string/fileprovider_authority"

@@ -42,7 +42,7 @@
             android:elevation="0dp"
             card_view:cardCornerRadius="4dp">
 
-            <de.westnordost.streetcomplete.quests.incline.InclineView
+            <de.westnordost.accesscomplete.quests.incline.InclineView
                 android:id="@+id/inclineView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"

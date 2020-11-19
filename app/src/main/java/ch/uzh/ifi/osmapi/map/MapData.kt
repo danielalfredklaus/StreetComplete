@@ -1,10 +1,10 @@
 package ch.uzh.ifi.osmapi.map
 
+import de.westnordost.accesscomplete.data.osm.elementgeometry.ElementGeometry
+import de.westnordost.accesscomplete.data.osm.elementgeometry.ElementPointGeometry
+import de.westnordost.accesscomplete.util.MultiIterable
 import de.westnordost.osmapi.map.data.*
 import de.westnordost.osmapi.map.handler.MapDataHandler
-import de.westnordost.streetcomplete.data.osm.elementgeometry.ElementGeometry
-import de.westnordost.streetcomplete.data.osm.elementgeometry.ElementPointGeometry
-import de.westnordost.streetcomplete.util.MultiIterable
 
 interface MapDataWithGeometry : MapData {
     fun getNodeGeometry(id: Long): ElementPointGeometry?

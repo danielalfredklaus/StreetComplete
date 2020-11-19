@@ -8,7 +8,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/questStatisticsFragmentContainer"
-        android:name="de.westnordost.streetcomplete.user.QuestStatisticsByQuestTypeFragment"
+        android:name="de.westnordost.accesscomplete.user.QuestStatisticsByQuestTypeFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 

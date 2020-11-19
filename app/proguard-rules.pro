@@ -32,7 +32,7 @@
 }
 
 # CountryInfo filled via reflection
--keep class de.westnordost.streetcomplete.data.meta.CountryInfo { *; }
+-keep class de.westnordost.accesscomplete.data.meta.CountryInfo { *; }
 
 # just leave my stuff alone
 -keep class de.westnordost.* { *; }

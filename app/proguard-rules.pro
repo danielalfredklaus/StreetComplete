@@ -22,6 +22,8 @@
 -keep class * implements java.io.Serializable { *; }
 -keep class com.esotericsoftware.kryo.** { *; }
 -keep class com.esotericsoftware.kryo.* { *; }
+-keep class org.objenesis.* { *; }
+-keep class org.objenesis.** { *; }
 
 # Lifecycle
 -keep public class androidx.lifecycle.* {

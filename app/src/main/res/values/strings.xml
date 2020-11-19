@@ -395,7 +395,7 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
 
     <string name="notifications">Notifications</string>
     <string name="jump_to_current_location">Jump to current location</string>
-    <string name="compass_description">Compass: Tap to orient map to north or toggle 3D view if it is already faced north</string>
+    <string name="compass_description">Compass: Tap to orient map to north or toggle 3D view if it is already faced north.</string>
     <string name="back">Back</string>
     <string name="hide">Hide</string>
     <string name="multiple_quests_available">Multiple quests available here</string>
@@ -408,7 +408,7 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
     <string name="instructions_image_content_description">"An image that illustrates the measurement process visually."</string>
 
     <string name="arcore_initial_instructions_title">"How to measure?"</string>
-    <string name="arcore_initial_instructions">"Slowly move the camera to discover the surfaces and objects around you. Once an area was scanned successfully, you will see a cloud of points on the surfaces. \n\nAfterwards, fixate two points in the environment with a simple tap on the screen to measure a distance."</string>
+    <string name="arcore_initial_instructions">Slowly move the camera to discover the surfaces and objects around you. Once an area was scanned successfully, you will see a cloud of points on the surfaces.   Afterwards, fixate two points in the environment with a simple tap on the screen to measure a distance.</string>
     <string name="arcore_additional_instructions_title">"What to measure?"</string>
 
     <string name="upward_slope">Upward slope</string>
@@ -420,14 +420,14 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
 
     <string name="quest_incline_path_title">"What's the maximum incline of this path?"</string>
     <string name="quest_incline_street_title">"What's the maximum incline of this piece of road?"</string>
-    <string name="quest_incline_street_name_title">"What's the maximum incline of the road %s here?"</string>
+    <string name="quest_incline_street_name_title">What\'s the maximum incline of the road %s in this segment?</string>
     <string name="quest_incline_device_instructions_step_1">Find the steepest section.\n</string>
     <string name="quest_incline_device_instructions_step_2">Orient yourself on the street according to the arrows displayed on the map.\n</string>
     <string name="quest_incline_device_instructions_step_3">Place your phone flat on the floor with the screen facing upwards.\n</string>
-    <string name="quest_incline_device_instructions_step_4">Lock/unlock the measurement by taping on the element below.</string>
+    <string name="quest_incline_device_instructions_step_4">Lock/unlock the measurement by taping on it</string>
     <string name="quest_incline_manual_instructions_step_1">Find the steepest section.\n</string>
     <string name="quest_incline_manual_instructions_step_2">Orient yourself on the street according to the arrows displayed on the map.\n</string>
-    <string name="quest_incline_manual_instructions_step_3">Measure the slope with a digital level and enter the value below.</string>
+    <string name="quest_incline_manual_instructions_step_3">Measure the slope with a (digital) level and enter the value below.</string>
     <string name="quest_incline_no_incline_here">No noticeable incline here</string>
     <string name="quest_incline_implausible_value_message">An incline of %1$d %% seems very implausible for a street. Please try to measure again or leave a note instead.</string>
 
@@ -437,7 +437,7 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
     <string name="quest_kerb_lowered">Lowered (~ 3 cm)</string>
     <string name="quest_kerb_flush">Flush (~ 0 cm)</string>
     <string name="quest_kerb_rolled">Rolled</string>
-    <string name="quest_kerb_raised_description">Raised above the norm, sufficiently to prevent traversal by wheelchairs, as well as to impede bicycles.</string>
+    <string name="quest_kerb_raised_description">Raised sufficiently to prevent traversal by wheelchairs, as well as to impede bicycles.</string>
     <string name="quest_kerb_lowered_description">Lowered curbs ensure that the crossing can be used by wheelchair users and allow access to drives.</string>
     <string name="quest_kerb_flush_description">Similar to a lowered curb except the level transition is unlikely to be apparent to blind pedestrians.</string>
     <string name="quest_kerb_rolled_description">Rolled kerbs still provide a gutter for water while being traversable by large wheeled vehicles, such as cars and bicycles, but not wheelchairs.</string>

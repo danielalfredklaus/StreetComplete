@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ AccessComplete, an easy to use editor of accessibility related
   ~ OpenStreetMap data for Android.  This program is a fork of
   ~ StreetComplete (https://github.com/westnordost/StreetComplete).
@@ -21,24 +20,23 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
     android:clipChildren="false"
-    android:clipToPadding="false">
+    android:clipToPadding="false"
+    android:orientation="vertical">
 
     <LinearLayout
         android:id="@+id/commentView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="4dp"
         android:clipChildren="false"
-        android:clipToPadding="false">
+        android:clipToPadding="false"
+        android:orientation="horizontal">
 
         <ch.uzh.ifi.accesscomplete.view.CircularMaskFrameLayout
             android:id="@+id/commentAvatarImageContainer"
@@ -48,11 +46,12 @@
 
             <ImageView
                 android:id="@+id/commentAvatarImage"
-                tools:src="@drawable/ic_osm_anon_avatar"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
+                android:contentDescription="@null"
+                android:background="@drawable/background_avatar"
                 android:scaleType="fitCenter"
-                android:background="@drawable/background_avatar"/>
+                tools:src="@drawable/ic_osm_anon_avatar" />
 
         </ch.uzh.ifi.accesscomplete.view.CircularMaskFrameLayout>
 
@@ -60,38 +59,38 @@
             android:id="@+id/commentBubble"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:elevation="@dimen/speech_bubble_elevation"
-            android:background="@drawable/speech_bubble_start">
+            android:background="@drawable/speech_bubble_start"
+            android:elevation="@dimen/speech_bubble_elevation">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
+                android:divider="@drawable/space_4dp"
                 android:orientation="vertical"
-                android:showDividers="middle"
-                android:divider="@drawable/space_4dp">
+                android:paddingStart="16dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="10dp"
+                android:showDividers="middle">
 
                 <TextView
                     android:id="@+id/commentText"
+                    style="@style/NoteDiscussion.Comment"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    style="@style/NoteDiscussion.Comment"
-                    tools:text="Welcome to OpenStreetMap, the project that creates and distributes free geographic data for the world."/>
+                    tools:text="Welcome to OpenStreetMap, the project that creates and distributes free geographic data for the world." />
 
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:background="@color/divider"/>
+                    android:background="@color/divider" />
 
                 <TextView
                     android:id="@+id/commentInfoText"
+                    style="@style/NoteDiscussion.Info"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    style="@style/NoteDiscussion.Info"
-                    tools:text="-- wurzel, 20. Apr. 2018"/>
+                    tools:text="-- wurzel, 20. Apr. 2018" />
 
             </LinearLayout>
 
@@ -101,17 +100,17 @@
 
     <TextView
         android:id="@+id/commentStatusText"
+        style="@style/NoteDiscussion.Status"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/speech_bubble_none"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="4dp"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
+        android:background="@drawable/speech_bubble_none"
         android:elevation="@dimen/speech_bubble_elevation"
-        style="@style/NoteDiscussion.Status"
-        tools:text="Closed by wurzel, 20. Apr. 2018"/>
+        android:paddingStart="16dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="10dp"
+        tools:text="Closed by wurzel, 20. Apr. 2018" />
 
 </LinearLayout>

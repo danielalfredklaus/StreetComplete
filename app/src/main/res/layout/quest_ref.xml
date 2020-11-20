@@ -31,4 +31,4 @@
     android:layout_height="wrap_content"
     android:gravity="center"
     android:importantForAutofill="no"
-    tools:ignore="LabelFor" />
+    tools:ignore="LabelFor,TextFields" />

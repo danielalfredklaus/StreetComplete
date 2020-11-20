@@ -60,7 +60,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="It could look like this:"
+            android:text="@string/could_look_like_this"
             android:textStyle="bold" />
 
         <ImageView
@@ -69,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="start"
             android:layout_marginTop="4dp"
-            android:contentDescription="TODO"
+            android:contentDescription="@string/example_image"
             android:scaleType="fitStart"/>
     </LinearLayout>
 

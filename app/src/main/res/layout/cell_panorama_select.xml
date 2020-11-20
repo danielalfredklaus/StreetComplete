@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ AccessComplete, an easy to use editor of accessibility related
   ~ OpenStreetMap data for Android.  This program is a fork of
   ~ StreetComplete (https://github.com/westnordost/StreetComplete).
@@ -22,48 +21,50 @@
   -->
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="2dp"
-    android:background="?android:attr/selectableItemBackground">
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="2dp">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scaleType="centerCrop"
         android:adjustViewBounds="true"
-        tools:src="@drawable/panorama_surface_unpaved"/>
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/panorama_surface_unpaved" />
 
     <View
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView"
-        android:layout_alignEnd="@+id/imageView"
         android:layout_alignStart="@+id/imageView"
         android:layout_alignTop="@+id/imageView"
-        android:background="@drawable/image_select_cell"
-        />
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView"
+        android:background="@drawable/image_select_cell" />
 
     <TextView
         android:id="@+id/textView"
+        style="@style/ImageSelectLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:text="@string/quest_surface_value_unpaved"
         android:layout_alignBottom="@+id/imageView"
         android:layout_centerHorizontal="true"
-        style="@style/ImageSelectLabel"
-        android:paddingBottom="8dp"/>
+        android:paddingBottom="8dp"
+        tools:ignore="RelativeOverlap"
+        tools:text="@string/quest_surface_value_unpaved" />
 
     <ImageView
         android:id="@+id/dropDownArrowImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_arrow_right_white_96dp"
-        android:layout_centerVertical="true"
         android:layout_alignParentEnd="true"
-        app:elevation="8dp"/>
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/expand"
+        android:src="@drawable/ic_arrow_right_white_96dp"
+        app:elevation="8dp" />
 
 </RelativeLayout>

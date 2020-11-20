@@ -51,14 +51,16 @@
                 android:paddingRight="16dp"
                 android:src="@drawable/quest_pin"
                 android:layout_gravity="right"
-                tools:ignore="RtlSymmetry"/>
+                tools:ignore="RtlSymmetry"
+                android:contentDescription="@null"/>
 
             <ImageView
                 android:layout_width="42dp"
                 android:layout_height="42dp"
                 android:layout_marginTop="7dp"
                 android:layout_centerHorizontal="true"
-                android:src="@drawable/ic_quest_create_note" />
+                android:src="@drawable/ic_quest_create_note"
+                android:contentDescription="@string/note_marker"/>
 
         </RelativeLayout>
 

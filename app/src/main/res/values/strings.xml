@@ -232,6 +232,7 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
     <string name="credits_main_contributors_title">Main contributors</string>
     <string name="credits_author_title">Author and maintainer</string>
     <string name="credits_and_more">and more…</string>
+    <string name="living_street_sign">Living street sign</string>
     <string name="quest_maxspeed_answer_living_street">It is a living street</string>
     <string name="quest_maxspeed_answer_living_street_confirmation_title">So, there is a sign like this?</string>
     <string name="quest_crossing_type_title">What kind of crossing is this?</string>
@@ -419,10 +420,18 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
 
     <string name="notifications">Notifications</string>
     <string name="jump_to_current_location">Jump to current location</string>
+    <string name="email">Email</string>
     <string name="compass">Compass</string>
     <string name="compass_description">Compass: Tap to orient map to north or toggle 3D view if it is already faced north.</string>
+    <string name="could_look_like_this">Could look like this:</string>
+    <string name="example_image">Example image</string>
+    <string name="attached_image">Attached image</string>
+    <string name="delete">Delete</string>
     <string name="back">Back</string>
     <string name="hide">Hide</string>
+    <string name="expand">Expand</string>
+    <string name="left_side">Left side</string>
+    <string name="right_side">Right side</string>
     <string name="multiple_quests_available">Multiple quests available here</string>
     <string name="use_device_to_measure">Use device to measure</string>
     <string name="enter_manually">Enter manually</string>
@@ -439,6 +448,7 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
     <string name="upward_slope">Upward slope</string>
     <string name="downward_slope">Downward slope</string>
 
+    <string name="note_marker">Marks where the note will be created</string>
     <string name="quest_leave_not">Leave a note</string>
 
     <string name="answer_sidewalk_is_mapped_separately">Sidewalk is displayed separately on map</string>

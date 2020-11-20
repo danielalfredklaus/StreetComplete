@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ AccessComplete, an easy to use editor of accessibility related
   ~ OpenStreetMap data for Android.  This program is a fork of
   ~ StreetComplete (https://github.com/westnordost/StreetComplete).
@@ -22,34 +21,33 @@
   -->
 
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     tools:parentTag="android.widget.FrameLayout">
 
     <RelativeLayout
         android:id="@+id/rotateContainer"
-        android:background="#3666"
         android:layout_width="280dp"
         android:layout_height="280dp"
         android:layout_gravity="center"
-        tools:rotation="0"
-        >
+        android:background="#3666"
+        tools:rotation="0">
 
         <View
             android:id="@+id/strut"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_centerHorizontal="true"/>
+            android:layout_centerHorizontal="true" />
 
         <RelativeLayout
             android:id="@+id/leftSideContainer"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:clickable="true"
-            android:focusable="true"
-            android:layout_alignParentLeft="true"
-            android:layout_toLeftOf="@+id/strut"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/strut"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
             tools:ignore="RtlHardcoded">
 
             <ImageView
@@ -57,36 +55,37 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_alignParentLeft="true"
+                android:contentDescription="@string/left_side"
                 android:scaleType="fitXY"
                 tools:ignore="RtlHardcoded"
-                tools:src="@drawable/ic_cycleway_track"
-                tools:rotation="180"/>
+                tools:rotation="180"
+                tools:src="@drawable/ic_cycleway_track" />
 
             <ch.uzh.ifi.accesscomplete.view.VerticalLabelView
                 android:id="@+id/leftSideTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
-                android:textSize="10sp"
                 android:textColor="#404040"
+                android:textSize="10sp"
                 app:orientationRight="true"
-                tools:text="Sidewalk"
-                tools:ignore="SmallSp" />
+                tools:ignore="SmallSp"
+                tools:text="Sidewalk" />
 
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/rightSideContainer"
-            android:foreground="?android:attr/selectableItemBackground"
-            android:clickable="true"
-            android:focusable="true"
-            android:layout_alignParentRight="true"
-            android:layout_toRightOf="@+id/strut"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/strut"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
             tools:ignore="RtlHardcoded">
 
             <ImageView
@@ -94,21 +93,22 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_alignParentLeft="true"
+                android:contentDescription="@string/right_side"
                 android:scaleType="fitXY"
                 tools:ignore="RtlHardcoded"
-                tools:src="@drawable/ic_cycleway_sidewalk"/>
+                tools:src="@drawable/ic_cycleway_sidewalk" />
 
             <ch.uzh.ifi.accesscomplete.view.VerticalLabelView
                 android:id="@+id/rightSideTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
-                android:textSize="10sp"
-                android:textColor="#404040"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
-                tools:text="Sidewalk"
-                tools:ignore="SmallSp"/>
+                android:textColor="#404040"
+                android:textSize="10sp"
+                tools:ignore="SmallSp"
+                tools:text="Sidewalk" />
 
         </RelativeLayout>
 

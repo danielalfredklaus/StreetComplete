@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ AccessComplete, an easy to use editor of accessibility related
   ~ OpenStreetMap data for Android.  This program is a fork of
   ~ StreetComplete (https://github.com/westnordost/StreetComplete).
@@ -21,8 +20,7 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
@@ -30,62 +28,62 @@
     <TextView
         android:id="@+id/languageButton"
         style="@style/Base.Widget.AppCompat.Button.Borderless"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
-        android:textAllCaps="false"
-        android:layout_width="50dp"
         android:fontFamily="monospace"
         android:gravity="center"
         android:textAlignment="center"
-        tools:text="de"
-        android:layout_height="wrap_content"/>
+        android:textAllCaps="false"
+        tools:text="de" />
 
     <me.grantland.widget.AutofitLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minHeight="48dp"
-        android:layout_toEndOf="@id/languageButton"
-        android:layout_toStartOf="@+id/nameSuggestionsButton"
         android:layout_centerVertical="true"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
+        android:layout_toStartOf="@+id/nameSuggestionsButton"
+        android:layout_toEndOf="@id/languageButton"
+        android:minHeight="48dp"
         android:paddingStart="14dp"
+        android:paddingTop="10dp"
         android:paddingEnd="14dp"
-        >
+        android:paddingBottom="10dp">
 
         <ch.uzh.ifi.accesscomplete.view.AutoCorrectAbbreviationsEditText
             android:id="@+id/autoCorrectInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:textSize="32dp"
-            android:textAlignment="center"
-            android:maxLines="1"
-            android:textColor="#ffffff"
             android:background="#000000ff"
-            tools:text="Sesame Street"
-            tools:ignore="RtlCompat,SpUsage" />
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="32dp"
+            tools:ignore="RtlCompat,SpUsage"
+            tools:text="Sesame Street" />
 
     </me.grantland.widget.AutofitLayout>
 
     <ImageView
         android:id="@+id/nameSuggestionsButton"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_arrow_drop_down_white_24dp"
-        android:layout_toStartOf="@+id/deleteButton"
         android:layout_centerVertical="true"
         android:layout_marginEnd="14dp"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"/>
+        android:layout_toStartOf="@+id/deleteButton"
+        android:src="@drawable/ic_arrow_drop_down_white_24dp" />
 
     <ImageView
         android:id="@+id/deleteButton"
-        android:src="@drawable/ic_close_24dp"
+        style="@style/Base.Widget.AppCompat.Button.Borderless"
         android:layout_width="44dp"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
         android:layout_alignParentEnd="true"
-        style="@style/Base.Widget.AppCompat.Button.Borderless"
-        tools:ignore="HardcodedText"/>
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/delete"
+        android:src="@drawable/ic_close_24dp"
+        tools:ignore="HardcodedText" />
 
 </RelativeLayout>

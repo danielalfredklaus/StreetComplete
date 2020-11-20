@@ -30,4 +30,5 @@
     android:padding="2dp"
     android:background="@drawable/background_quest_icon"
     android:elevation="12dp"
-    tools:src="@drawable/ic_quest_street"/>
+    tools:src="@drawable/ic_quest_street"
+    android:contentDescription="@null"/>

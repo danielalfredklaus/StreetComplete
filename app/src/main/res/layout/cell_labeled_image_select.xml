@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ AccessComplete, an easy to use editor of accessibility related
   ~ OpenStreetMap data for Android.  This program is a fork of
   ~ StreetComplete (https://github.com/westnordost/StreetComplete).
@@ -22,12 +21,11 @@
   -->
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:padding="2dp"
-                android:background="?android:attr/selectableItemBackground"
-    >
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="2dp">
 
     <ImageView
         android:id="@+id/imageView"
@@ -35,32 +33,32 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@null"
         android:scaleType="fitCenter"
-        tools:src="@drawable/surface_asphalt"
-        android:adjustViewBounds="true"/>
+        tools:src="@drawable/surface_asphalt" />
 
     <View
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView"
-        android:layout_alignEnd="@+id/imageView"
         android:layout_alignStart="@+id/imageView"
         android:layout_alignTop="@+id/imageView"
-        android:background="@drawable/image_select_cell"
-        />
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView"
+        android:background="@drawable/image_select_cell" />
 
     <TextView
         android:id="@+id/textView"
+        style="@style/ImageSelectLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/imageView"
         android:layout_alignEnd="@+id/imageView"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        style="@style/ImageSelectLabel"
-        tools:text="@string/quest_surface_value_asphalt"
+        android:labelFor="@id/imageView"
         android:padding="8dp"
-        />
-
+        tools:ignore="LabelFor"
+        tools:text="@string/quest_surface_value_asphalt" />
 
 </RelativeLayout>

@@ -18,6 +18,7 @@
 -dontwarn sun.nio.ch.**
 -dontwarn sun.misc.**
 -dontwarn java.lang.invoke.SerializedLambda
+
 # let's just keep everything
 -keep class * implements java.io.Serializable { *; }
 -keep class com.esotericsoftware.kryo.** { *; }

@@ -22,43 +22,12 @@ achievements graphics/
 
 app icon/
     feature_graphic.xcf         parts taken from https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_-_Westend.JPG
-    launcher_foreground.svg     modified from quest icons/wheelchair.svg by Tobias Zwick: CC-BY-SA 4.0
+    launcher_foreground.svg     modified by Sven Stoll from "quest icons/wheelchair.svg" by Tobias Zwick: CC-BY-SA 4.0
 
-cycleway graphics/
-    bus_lane.svg
-    bus_lane_l.svg
-    lane.svg
-    lane_belgium.svg
-    lane_dual.svg
-    lane_dual_belgium.svg
-    lane_dual_italy.svg
-    lane_dual_l.svg
-    lane_dual_switzerland.svg
-    lane_italy.svg
-    lane_l.svg
-    lane_switzerland.svg
-    none.svg
-    pictograms.svg
-    pictograms_l.svg
-    shared_lane.svg
-    shared_lane_l.svg
-    shared_lane_switzerland.svg
-    sidewalk.svg
-    sidewalk_explicit.svg
-    sidewalk_explicit_l.svg
-    suggestion_lane.svg
-    suggestion_lane_belgium.svg
-    track.svg
-    track_dual.svg
-    track_dual_l.svg
-    track_l.svg
-    unknown.svg
-    unknown_l.svg
+examples/
+    example_incline             Sven Stoll, License: CC-BY-SA 4.0
+    example_width.svg           Sven Stoll, License: CC-BY-SA 4.0
 
-cycleway segregation icons/
-    not_segregated.svg
-    segregated_l.svg
-    segregated_r.svg
 link graphics/
     link_neis_one.svg
 
@@ -73,10 +42,13 @@ quest icons/
     bicycleway_surface.svg
     bicycleway_width.svg
     blind.svg
-    blind_bus.svg                    parts taken from Twemoji: U+1F68D
+    blind_bus.svg                       parts taken from Twemoji: U+1F68D
     blind_pedestrian_crossing.svg
     blind_traffic_lights.svg
     blind_traffic_lights_sound.svg
+    footway_surface
+    incline                             modified by Sven Stoll from "quest icons/street.svg" by Tobias Zwick: CC-BY-SA 4.0
+    kerb.svg                            Sven Stoll, License: CC-BY-SA 4.0
     mail.svg
     no_pedestrians.svg
     note_create.svg
@@ -84,11 +56,11 @@ quest icons/
     path_segregation.svg
     pedestrian.svg
     pedestrian_crossing.svg
-    pedestrian_crossing_island.svg   (c) 2020 Kai Michael Poppe and Tobias Zwick
+    pedestrian_crossing_island.svg      (c) 2020 Kai Michael Poppe and Tobias Zwick
     quest.svg
     road_construction.svg
-    roof_shape.svg
     sidewalk.svg
+    smoothness                          modified by Sven Stoll from "quest icons/street.svg" by Tobias Zwick: CC-BY-SA 4.0
     steps.svg
     steps_ramp.svg
     steps_handrail.svg

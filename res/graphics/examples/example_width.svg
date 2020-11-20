@@ -1,0 +1,54 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    preserveAspectRatio="xMidYMid meet" viewBox="0 0 600 75" width="600" height="75">
+    <defs>
+        <path d="M0 0.64L600 0.64L600 74.32L0 74.32L0 0.64Z" id="a3XghyZgqf"></path>
+        <path
+            d="M307.15 18.02L301 4.35L294.85 18.02L298.85 18.02L298.85 36.72L294.85 36.72L301 50.39L307.15 36.72L303.15 36.72L303.15 18.02L307.15 18.02Z"
+            id="a1J7qYzR6g"></path>
+        <path d="M0 72L600 72L600 75L0 75L0 72Z" id="g8QwuX7y0p"></path>
+        <path d="M0 0L600 0L600 3L0 3L0 0Z" id="e3tl5b80RM"></path>
+        <path
+            d="M308.52 50.31C309.34 50.31 310 50.97 310 51.79C310 55.49 310 65.13 310 68.83C310 69.65 309.34 70.31 308.52 70.31C304.82 70.31 295.18 70.31 291.48 70.31C290.66 70.31 290 69.65 290 68.83C290 65.13 290 55.49 290 51.79C290 50.97 290.66 50.31 291.48 50.31C295.18 50.31 304.82 50.31 308.52 50.31Z"
+            id="baSsP3QvA"></path>
+        <clipPath id="clipc2YUEPL79">
+            <use xlink:href="#baSsP3QvA" opacity="1"></use>
+        </clipPath>
+        <path
+            d="M306.15 16.9L300 3.05L293.85 16.9L297.85 16.9L297.85 35.85L293.85 35.85L300 49.7L306.15 35.85L302.15 35.85L302.15 16.9L306.15 16.9Z"
+            id="fwNoKp8h"></path>
+    </defs>
+    <g>
+        <g>
+            <g>
+                <use xlink:href="#a3XghyZgqf" opacity="1" fill="#aaa7a7" fill-opacity="1"></use>
+            </g>
+            <g>
+                <use xlink:href="#a1J7qYzR6g" opacity="1" fill="#000000" fill-opacity="1"></use>
+                <g>
+                    <use xlink:href="#a1J7qYzR6g" opacity="1" fill-opacity="0" stroke="#7ed484"
+                        stroke-width="0" stroke-opacity="1"></use>
+                </g>
+            </g>
+            <g>
+                <use xlink:href="#g8QwuX7y0p" opacity="1" fill="#666666" fill-opacity="1"></use>
+            </g>
+            <g>
+                <use xlink:href="#e3tl5b80RM" opacity="1" fill="#666666" fill-opacity="1"></use>
+            </g>
+            <g>
+                <use xlink:href="#baSsP3QvA" opacity="1" fill="#ffffff" fill-opacity="1"></use>
+                <g clip-path="url(#clipc2YUEPL79)">
+                    <use xlink:href="#baSsP3QvA" opacity="1" fill-opacity="0" stroke="#4b4b4b"
+                        stroke-width="4" stroke-opacity="1"></use>
+                </g>
+            </g>
+            <g>
+                <use xlink:href="#fwNoKp8h" opacity="1" fill="#ff6600" fill-opacity="1"></use>
+                <g>
+                    <use xlink:href="#fwNoKp8h" opacity="1" fill-opacity="0" stroke="#7ed484"
+                        stroke-width="0" stroke-opacity="1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

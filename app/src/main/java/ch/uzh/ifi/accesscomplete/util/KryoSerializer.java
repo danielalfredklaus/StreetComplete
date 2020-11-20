@@ -46,7 +46,6 @@ import ch.uzh.ifi.accesscomplete.data.osm.changes.StringMapEntryDelete;
 import ch.uzh.ifi.accesscomplete.data.osm.changes.StringMapEntryModify;
 import ch.uzh.ifi.accesscomplete.data.osm.splitway.SplitAtLinePosition;
 import ch.uzh.ifi.accesscomplete.data.osm.splitway.SplitAtPoint;
-import ch.uzh.ifi.accesscomplete.quests.LocalizedName;
 
 @Singleton
 public class KryoSerializer implements Serializer {
@@ -69,12 +68,10 @@ public class KryoSerializer implements Serializer {
 					Date.class,
 					User.class,
 					boolean[].class,
-					LocalizedName.class,
 					OsmLatLon.class,
 					SplitAtPoint.class,
 					SplitAtLinePosition.class,
 			};
-
 
 	private static final ThreadLocal<Kryo> kryo = new ThreadLocal<Kryo>() {
 		@Override

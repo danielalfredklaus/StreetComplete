@@ -82,12 +82,10 @@ object QuestModule {
         AddPedestrianAccessibleStreetIncline(),
 
         // Original StreetComplete quests that are interesting from an accessibility point of view:
-//        AddCycleway(), // for any cyclist routers (and cyclist maps)
 //        AddSidewalk(), // for any pedestrian routers
 //        MarkCompletedHighwayConstruction(),
 //        AddProhibitedForPedestrians(), // uses info from AddSidewalk quest, should be after it
 //        AddStepsRamp(),
-//        AddCyclewaySegregation(),
 //        AddWheelchairAccessBusiness(featureDictionaryFuture), // used by wheelmap, OsmAnd, MAPS.ME
 //        AddWheelchairAccessToilets(), // used by wheelmap, OsmAnd, MAPS.ME
 //        AddWheelchairAccessToiletsPart(),

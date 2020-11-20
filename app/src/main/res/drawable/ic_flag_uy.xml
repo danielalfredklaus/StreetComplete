@@ -1,3 +1,25 @@
+<!--
+  ~ AccessComplete, an easy to use editor of accessibility related
+  ~ OpenStreetMap data for Android.  This program is a fork of
+  ~ StreetComplete (https://github.com/westnordost/StreetComplete).
+  ~
+  ~ Copyright (C) 2016-2020 Tobias Zwick and contributors (StreetComplete authors)
+  ~ Copyright (C) 2020 Sven Stoll (AccessComplete author)
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
 <vector android:height="160dp" android:viewportHeight="630"
     android:viewportWidth="945" android:width="240dp" xmlns:android="http://schemas.android.com/apk/res/android">
     <path android:fillColor="#fff" android:pathData="m0,0h945v630h-945z"/>
@@ -11,7 +33,7 @@
     <path android:fillColor="#7b3f00"
         android:pathData="M159.783,214.724C146.763,236.197 144.548,252.711 142.647,265.48 141.694,271.865 140.839,277.341 138.657,282.025 137.226,285.142 135.08,287.876 132.392,290.007 156.521,278.527 134.284,258.648 178.668,226.527ZM192.329,213.849C198.306,238.239 208.417,251.483 216.102,261.855 219.943,267.044 223.21,271.521 224.98,276.376 226.171,279.592 226.587,283.043 226.193,286.45 235.138,261.272 205.357,262.939 214.028,208.841ZM214.724,190.217C236.197,203.237 252.711,205.452 265.479,207.353 271.864,208.306 277.34,209.161 282.024,211.343 285.141,212.774 287.876,214.92 290.006,217.608 278.527,193.479 258.648,215.716 226.526,171.332ZM213.848,157.671C238.239,151.694 251.482,141.583 261.855,133.898 267.044,130.057 271.52,126.79 276.376,125.02 279.591,123.829 283.043,123.413 286.449,123.807 261.271,114.862 262.938,144.643 208.84,135.972ZM190.216,135.276C203.236,113.803 205.451,97.289 207.352,84.521 208.305,78.136 209.16,72.66 211.342,67.976 212.773,64.859 214.92,62.124 217.607,59.994 193.479,71.473 215.715,91.352 171.331,123.474ZM157.67,136.152C151.693,111.761 141.582,98.518 133.897,88.145 130.056,82.956 126.789,78.48 125.02,73.624 123.828,70.409 123.412,66.957 123.806,63.551 114.862,88.729 144.642,87.062 135.971,141.16ZM135.276,159.784C113.803,146.764 97.289,144.549 84.52,142.648 78.135,141.695 72.659,140.84 67.975,138.658 64.858,137.227 62.124,135.08 59.993,132.393 71.473,156.521 91.352,134.285 123.473,178.669ZM136.151,192.33C111.761,198.307 98.517,208.418 88.145,216.103 82.956,219.944 78.479,223.211 73.624,224.98 70.408,226.172 66.957,226.588 63.55,226.194 88.728,235.138 87.061,205.358 141.159,214.029Z"
         android:strokeColor="#7b3f00" android:strokeLineCap="square" android:strokeWidth="1.05070865"/>
-    <path 
+    <path
         android:pathData="M158.793,214.127C132.526,257.42 149.753,281.225 126.38,292.379M191.206,214.127C203.246,263.314 232.259,267.965 223.62,292.379M214.126,191.207C257.419,217.474 281.224,200.247 292.379,223.62M214.126,158.794C263.313,146.754 267.964,117.741 292.379,126.38M191.206,135.874C217.473,92.581 200.247,68.776 223.62,57.621M158.793,135.874C146.754,86.687 117.74,82.036 126.38,57.621M135.873,158.794C92.58,132.527 68.775,149.753 57.621,126.38M135.873,191.207C86.687,203.246 82.035,232.26 57.621,223.62"
         android:strokeColor="#7b3f00" android:strokeWidth="2.30929136"/>
     <path android:fillColor="#fcd116"

@@ -1,3 +1,25 @@
+<!--
+  ~ AccessComplete, an easy to use editor of accessibility related
+  ~ OpenStreetMap data for Android.  This program is a fork of
+  ~ StreetComplete (https://github.com/westnordost/StreetComplete).
+  ~
+  ~ Copyright (C) 2016-2020 Tobias Zwick and contributors (StreetComplete authors)
+  ~ Copyright (C) 2020 Sven Stoll (AccessComplete author)
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:aapt="http://schemas.android.com/aapt"
     android:width="290dp"
@@ -11,7 +33,7 @@
       android:fillType="nonZero"
       android:strokeLineCap="round">
     <aapt:attr name="android:fillColor">
-      <gradient 
+      <gradient
           android:startY="144.84363"
           android:startX="-4.0119E-6"
           android:endY="144.84363"
@@ -136,7 +158,7 @@
       android:fillType="evenOdd"
       android:strokeLineCap="round">
     <aapt:attr name="android:fillColor">
-      <gradient 
+      <gradient
           android:startY="48.12604"
           android:startX="141.98311"
           android:endY="142.79034"
@@ -165,7 +187,7 @@
       android:fillType="evenOdd"
       android:strokeLineCap="round">
     <aapt:attr name="android:fillColor">
-      <gradient 
+      <gradient
           android:startY="114.244385"
           android:startX="202.56825"
           android:endY="169.743"
@@ -211,7 +233,7 @@
       android:fillType="evenOdd"
       android:strokeLineCap="round">
     <aapt:attr name="android:fillColor">
-      <gradient 
+      <gradient
           android:startY="24.099993"
           android:startX="139.72984"
           android:endY="41.43289"
@@ -245,7 +267,7 @@
       android:fillType="evenOdd"
       android:strokeLineCap="round">
     <aapt:attr name="android:fillColor">
-      <gradient 
+      <gradient
           android:startY="24.099993"
           android:endY="41.432972"
           android:startX="229.07426"

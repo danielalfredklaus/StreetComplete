@@ -1,3 +1,25 @@
+<!--
+  ~ AccessComplete, an easy to use editor of accessibility related
+  ~ OpenStreetMap data for Android.  This program is a fork of
+  ~ StreetComplete (https://github.com/westnordost/StreetComplete).
+  ~
+  ~ Copyright (C) 2016-2020 Tobias Zwick and contributors (StreetComplete authors)
+  ~ Copyright (C) 2020 Sven Stoll (AccessComplete author)
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+  -->
+
 <vector android:height="256dp" android:viewportHeight="64"
     android:viewportWidth="64" android:width="256dp" xmlns:android="http://schemas.android.com/apk/res/android">
     <path android:fillColor="#666" android:pathData="m34,19h-4c-0.5922,-3.2596 3.9754,-3.6312 3.935,-6.0951 -0.0734,-0.9014 -0.6641,-1.1186 -1.3673,-1.2108 -1.3053,0.1077 -1.7281,1.1897 -1.8474,2.2023l-4.0498,-0.501c0.3481,-3.4373 2.3296,-5.3954 5.3296,-5.3954 4,0 6,2 6,5s-3.9818,3.1536 -4,6zM30,21h4v3h-4z"/>

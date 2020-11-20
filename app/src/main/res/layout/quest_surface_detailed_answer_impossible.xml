@@ -35,7 +35,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/quest_surface_detailed_answer_impossible_description"/>
+        android:text="@string/quest_surface_detailed_answer_impossible_description"
+        android:labelFor="@id/explanationInput"/>
 
     <EditText
         android:id="@+id/explanationInput"
@@ -47,5 +48,5 @@
         tools:text="Surface is a mosaic of paving stones, wood and metal."
         android:maxLength="255"
         android:scrollHorizontally="false"
-        />
+        android:importantForAutofill="no" />
 </LinearLayout>

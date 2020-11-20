@@ -39,6 +39,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/create_new_note_hint"
+        android:labelFor="@id/noteInput"
         />
 
     <EditText
@@ -50,7 +51,7 @@
         android:layout_marginTop="8dp"
         android:minLines="3"
         android:background="@drawable/background_edittext_outline"
-        />
+        android:importantForAutofill="no" />
 
     <FrameLayout
         android:id="@+id/attachPhotoFragment"

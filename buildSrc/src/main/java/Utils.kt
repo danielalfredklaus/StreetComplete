@@ -20,10 +20,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import java.io.StringWriter
 import java.util.*
-
-
 
 // Java (and thus also Android) uses some old iso (language) codes. F.e. id -> in etc.
 // so the localized files also need to use the old iso codes

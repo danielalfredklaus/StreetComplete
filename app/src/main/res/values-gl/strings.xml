@@ -66,7 +66,7 @@
     <string name="map_attribution_osm">"© contribuíntes do OpenStreetMap"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_otherAnswers">"Outras respostas..."</string>
+    <string name="quest_generic_otherAnswers">"Outras respostas…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_notApplicable">"Non sabería dicirche…"</string>
@@ -166,7 +166,7 @@
     <string name="confirmation_cancel_prev_download_title">"Desexas dete-la procura actual e comezar a procurar tarefas neste lugar?"</string>
 
     <!-- Fuzzy -->
-    <string name="notification_downloading">"Estanse a procurar tarefas..."</string>
+    <string name="notification_downloading">"Estanse a procurar tarefas…"</string>
 
     <!-- Fuzzy -->
     <string name="turn_on_location_request">"A ubicación non está activada. Desexas ir ós axustes para activala agora?"</string>
@@ -252,7 +252,7 @@
     <string name="quest_roofShape_select_one">"Escolle unha forma:"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_roofShape_show_more">"Amosar máis..."</string>
+    <string name="quest_roofShape_show_more">"Amosar máis…"</string>
 
     <!-- it is used in generic list, not only for roof shape but rename would break translations -->
     <!-- Fuzzy -->
@@ -613,7 +613,7 @@ Pero lembra que sempre podes descarregar aplicacións de teclado diferentes dend
     <string name="credits_author_title">"Autor e responsábel principal"</string>
 
     <!-- Fuzzy -->
-    <string name="credits_and_more">"e máis..."</string>
+    <string name="credits_and_more">"e máis…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxspeed_answer_living_street">"É unha rúa peonil"</string>
@@ -1393,7 +1393,7 @@ Pero lembra que sempre podes descarregar aplicacións de teclado diferentes dend
     <string name="quest_surface_cycleway_title">"Cal é a superficie da senda ciclista aquí?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_answer_differs_along_the_way">"Difire ó longo do camiño..."</string>
+    <string name="quest_generic_answer_differs_along_the_way">"Difire ó longo do camiño…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_split_way_description">"Se cres que a vía ten distintos atributos en diferentes treitos, o primeiro paso é dividir a vía. Despois diso podes engadir diferentes atributos segundo o treito dividido que desexes.
@@ -1559,7 +1559,7 @@ Dividila agora?"</string>
 
     <!-- Fuzzy -->
     <string name="tutorial_intro">"O StreetComplete fai máis doada a contribución ó OpenStreetMap.
-Procura de xeito automático os detalles que fallan na túa veciñanza: carrís bici, enderezos, horarios de apertura e moito máis..."</string>
+Procura de xeito automático os detalles que fallan na túa veciñanza: carrís bici, enderezos, horarios de apertura e moito máis…"</string>
 
     <!-- Fuzzy -->
     <string name="tutorial_solving_quests">"Unha vez atopados, os detalles que fallan aparecerán no teu mapa coma tarefas.

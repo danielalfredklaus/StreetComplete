@@ -80,10 +80,10 @@ class GroupedImageSelectAdapter<T>(val gridLayoutManager: GridLayoutManager) :
 
     private fun toggle(index: Int) {
         val prevSelectedItem = selectedItem
-        if (selectedItem == null || prevSelectedItem !== _items[index]) {
-            selectedItem = _items[index]
+        selectedItem = if (selectedItem == null || prevSelectedItem !== _items[index]) {
+            _items[index]
         } else {
-            selectedItem = null
+            null
         }
 
         val selectedItem = selectedItem

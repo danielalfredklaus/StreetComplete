@@ -94,7 +94,7 @@ abstract class AbstractCreateNoteFragment : AbstractBottomSheetFragment() {
         noteText.isNotEmpty() || attachPhotoFragment?.imagePaths?.isNotEmpty() == true
 
     private fun updateDoneButtonEnablement() {
-        doneButton.isEnabled = !noteText.isEmpty()
+        doneButton.isEnabled = noteText.isNotEmpty()
     }
 
     protected abstract fun onComposedNote(text: String, imagePaths: List<String>?)

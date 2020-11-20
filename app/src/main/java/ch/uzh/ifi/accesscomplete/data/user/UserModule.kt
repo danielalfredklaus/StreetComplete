@@ -30,7 +30,6 @@ import oauth.signpost.OAuthProvider
 import oauth.signpost.basic.DefaultOAuthConsumer
 import oauth.signpost.basic.DefaultOAuthProvider
 import javax.inject.Named
-import javax.inject.Provider
 
 @Module
 object UserModule {
@@ -45,11 +44,9 @@ object UserModule {
 	@Provides fun statisticsDownloader(): StatisticsDownloader =
         StatisticsDownloader(STATISTICS_BACKEND_URL)
 
-    @Provides fun oAuthStore(prefs: SharedPreferences): OAuthStore = OAuthStore(
-        prefs, Provider { defaultOAuthConsumer() }
-    )
+    @Provides fun oAuthStore(prefs: SharedPreferences): OAuthStore = OAuthStore(prefs) { defaultOAuthConsumer() }
 
-	@Provides fun oAuthProvider(): OAuthProvider = DefaultOAuthProvider(
+    @Provides fun oAuthProvider(): OAuthProvider = DefaultOAuthProvider(
         BASE_OAUTH_URL + "request_token",
         BASE_OAUTH_URL + "access_token",
         BASE_OAUTH_URL + "authorize"

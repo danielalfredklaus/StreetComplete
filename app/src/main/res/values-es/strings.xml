@@ -612,7 +612,7 @@ Pero recuerda que siempre puedes descargar aplicaciones de teclado alternativas 
     <string name="credits_author_title">"Autor y encargado principal"</string>
 
     <!-- Fuzzy -->
-    <string name="credits_and_more">"y más..."</string>
+    <string name="credits_and_more">"y más…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxspeed_answer_living_street">"Es una calle peatonal"</string>
@@ -1394,7 +1394,7 @@ Pero recuerda que siempre puedes descargar aplicaciones de teclado alternativas 
     <string name="quest_surface_cycleway_title">"¿Cuál es la superficie de la vía ciclista?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_answer_differs_along_the_way">"Difiere a lo largo de la vía..."</string>
+    <string name="quest_generic_answer_differs_along_the_way">"Difiere a lo largo de la vía…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_split_way_description">"Si difiere a lo largo de la vía, el primer paso es dividir la vía. Tras eso, el objetivo puede ser respondido para cada parte por separado. ¿Dividirlas ahora?"</string>
@@ -1825,7 +1825,7 @@ Finalmente, recuerda permanecer seguro: Sé consciente de tu alrededor y no entr
 %s"</string>
 
     <!-- Fuzzy -->
-    <string name="user_profile_days_active">"Dias activo"</string>
+    <string name="user_profile_days_active">"Días activo"</string>
 
     <!-- Fuzzy -->
     <string name="user_profile_achievement_levels">"Logro niveles"</string>

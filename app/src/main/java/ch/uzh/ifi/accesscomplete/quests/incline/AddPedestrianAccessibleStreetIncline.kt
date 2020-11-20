@@ -20,7 +20,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package ch.uzh.ifi.accesscomplete.quests.incline;
+package ch.uzh.ifi.accesscomplete.quests.incline
 
 import ch.uzh.ifi.accesscomplete.R
 import ch.uzh.ifi.accesscomplete.data.meta.updateWithCheckDate

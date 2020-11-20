@@ -35,6 +35,7 @@ import android.view.animation.AccelerateDecelerateInterpolator
 import android.view.animation.AccelerateInterpolator
 import android.view.animation.DecelerateInterpolator
 import android.view.animation.OvershootInterpolator
+import androidx.core.content.ContextCompat
 import androidx.core.net.toUri
 import androidx.core.view.isGone
 import androidx.fragment.app.Fragment
@@ -136,7 +137,7 @@ class AchievementInfoFragment : Fragment(R.layout.fragment_achievement_info) {
     /* ----------------------------------- Animating in and out --------------------------------- */
 
     private fun bind(achievement: Achievement, level: Int, showLinks: Boolean) {
-        achievementIconView.icon = resources.getDrawable(achievement.icon)
+        achievementIconView.icon = ContextCompat.getDrawable(requireContext(), achievement.icon)
         achievementIconView.level = level
         achievementTitleText.setText(achievement.title)
 

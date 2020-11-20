@@ -123,7 +123,7 @@
                     android:maxLines="1"
                     android:textAlignment="gravity"
                     android:textAppearance="@style/TextAppearance.Title"
-                    android:textSize="48dp"
+                    android:textSize="48sp"
                     tools:text="1021" />
 
             </LinearLayout>

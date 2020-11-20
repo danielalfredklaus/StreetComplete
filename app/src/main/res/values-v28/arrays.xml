@@ -21,15 +21,15 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<resources>
-    <string-array name="pref_entries_theme_select" translatable="false">
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string-array name="pref_entries_theme_select" translatable="false" tools:ignore="InconsistentArrays">
         <item>@string/theme_automatic</item>
         <item>@string/theme_light</item>
         <item>@string/theme_dark</item>
         <item>@string/theme_system_default</item>
     </string-array>
 
-    <string-array name="pref_entryvalues_theme_select" translatable="false">
+    <string-array name="pref_entryvalues_theme_select" translatable="false" tools:ignore="InconsistentArrays">
         <item>AUTO</item>
         <item>LIGHT</item>
         <item>DARK</item>

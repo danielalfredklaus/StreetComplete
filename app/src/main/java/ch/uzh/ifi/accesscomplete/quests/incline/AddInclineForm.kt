@@ -20,7 +20,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package ch.uzh.ifi.accesscomplete.quests.incline;
+package ch.uzh.ifi.accesscomplete.quests.incline
 
 import android.content.Context
 import android.hardware.Sensor

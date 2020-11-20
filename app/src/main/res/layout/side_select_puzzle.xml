@@ -73,7 +73,8 @@
                 android:textSize="10sp"
                 android:textColor="#404040"
                 app:orientationRight="true"
-                tools:text="Sidewalk"/>
+                tools:text="Sidewalk"
+                tools:ignore="SmallSp" />
 
         </RelativeLayout>
 
@@ -106,7 +107,8 @@
                 android:textColor="#404040"
                 android:paddingLeft="8dp"
                 android:paddingRight="8dp"
-                tools:text="Sidewalk"/>
+                tools:text="Sidewalk"
+                tools:ignore="SmallSp"/>
 
         </RelativeLayout>
 

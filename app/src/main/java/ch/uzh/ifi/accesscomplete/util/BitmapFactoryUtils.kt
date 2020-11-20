@@ -50,7 +50,6 @@ fun decodeScaledBitmapAndNormalize(imagePath: String, desiredMaxWidth: Int, desi
     // Decode with inSampleSize
     val options = BitmapFactory.Options().also {
         it.inJustDecodeBounds = false
-        it.inDither = false
         it.inSampleSize = inSampleSize
         it.inScaled = false
         it.inPreferredConfig = Bitmap.Config.ARGB_8888

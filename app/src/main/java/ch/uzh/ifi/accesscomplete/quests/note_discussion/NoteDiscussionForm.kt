@@ -121,7 +121,7 @@ class NoteDiscussionForm : AbstractQuestAnswerFragment<NoteAnswer>() {
 
     override fun isRejectingClose(): Boolean {
         val f = attachPhotoFragment
-        val hasPhotos = f != null && !f.imagePaths.isEmpty()
+        val hasPhotos = f != null && f.imagePaths.isNotEmpty()
         return hasPhotos || noteText.isNotEmpty()
     }
 

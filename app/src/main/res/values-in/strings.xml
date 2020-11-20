@@ -60,8 +60,8 @@
 
     <!-- Fuzzy -->
     <string name="map_attribution_osm">"© Kontributor OpenStreetMap"</string>
-    <string name="quest_generic_otherAnswers">"Jawaban lainnya..."</string>
-    <string name="quest_generic_answer_notApplicable">"Susah bilangnya..."</string>
+    <string name="quest_generic_otherAnswers">"Jawaban lainnya…"</string>
+    <string name="quest_generic_answer_notApplicable">"Susah bilangnya…"</string>
     <string name="quest_generic_confirmation_title">"Apa kamu yakin?"</string>
     <string name="quest_generic_confirmation_yes">"Ya, saya yakin"</string>
     <string name="quest_generic_confirmation_no">"Saya akan periksa"</string>
@@ -110,7 +110,7 @@
     <string name="confirmation_cancel_prev_download_title">"Hentikan pencarian sekarang dan pindai di sini saja?"</string>
 
     <!-- Fuzzy -->
-    <string name="notification_downloading">"Memindai pencarian..."</string>
+    <string name="notification_downloading">"Memindai pencarian…"</string>
     <string name="turn_on_location_request">"Lokasi nonaktif. Buka pengaturan untuk mengaktifkan?"</string>
 
     <!-- Fuzzy -->
@@ -164,7 +164,7 @@
     <!-- Fuzzy -->
     <string name="about_summary_privacy_statement">"dan penggunaan data"</string>
     <string name="quest_roofShape_select_one">"Pilih satu:"</string>
-    <string name="quest_roofShape_show_more">"Tampilkan lebih banyak..."</string>
+    <string name="quest_roofShape_show_more">"Tampilkan lebih banyak…"</string>
 
     <!-- it is used in generic list, not only for roof shape but rename would break translations -->
 
@@ -306,7 +306,7 @@ Kalau tidak, kamu bisa mengunduh keyboard lain di app store. Keyboard populer ya
     <string name="credits_author_title">"Pencipta dan pemelihara"</string>
 
     <!-- Fuzzy -->
-    <string name="credits_and_more">"dan lainnya..."</string>
+    <string name="credits_and_more">"dan lainnya…"</string>
     <string name="quest_maxspeed_answer_living_street">"Adalah jalan hidup"</string>
     <string name="quest_maxspeed_answer_living_street_confirmation_title">"Jadi, ada rambu seperti ini?"</string>
 
@@ -498,7 +498,7 @@ Sebagian berarti kursi roda dapat masuk dan menggunakannya, tapi tidak ada pegan
     <string name="quest_leave_new_note_photos_are_useful">"Menambah foto dapat menambah guna catatan."</string>
     <string name="create_new_note_hint">"Sebaiknya tulis catatan dengan bahasa lokal atau inggris."</string>
     <string name="quest_surface_cycleway_title">"Apa permukaan di jalan sepeda ini?"</string>
-    <string name="quest_generic_answer_differs_along_the_way">"Berbeda sepanjang jalan..."</string>
+    <string name="quest_generic_answer_differs_along_the_way">"Berbeda sepanjang jalan…"</string>
     <string name="quest_split_way_description">"Jika berbeda, langkah pertama adalah membagi jalannya. Kemudian, pencarian bisa dijawab secara terpisah.
 Pisah sekarang?"</string>
     <string name="quest_split_way_tutorial">"Sentuh pada titik jalan di mana jawabannya beda. Harap agar seakurat mungkin, kamu bisa memperbesar."</string>
@@ -526,7 +526,7 @@ Pisah sekarang?"</string>
     <string name="letsgo">"Ayo!"</string>
     <string name="tutorial_welcome_to_osm">"Selamat datang di OpenStreetMap"</string>
     <string name="tutorial_welcome_to_osm_subtitle">"wiki peta dunia bebas"</string>
-    <string name="tutorial_intro">"StreetComplete membuat kontribusi ke OpenStreetMap menjadi mudah. Aplikasi ini secara otomatis mencari detail data yang kurang di daerah sekitar: lajur sepeda, nomor rumah, jam buka dan banyak lagi..."</string>
+    <string name="tutorial_intro">"StreetComplete membuat kontribusi ke OpenStreetMap menjadi mudah. Aplikasi ini secara otomatis mencari detail data yang kurang di daerah sekitar: lajur sepeda, nomor rumah, jam buka dan banyak lagi…"</string>
     <string name="tutorial_solving_quests">"Setelah ditemukan, detail yang kurang akan muncul di petamu sebagai pencarian (quests).
 
 Kamu dapat menyelesaikannya langsung dan login nanti untuk mengunggah jawabanmu. "</string>

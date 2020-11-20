@@ -484,7 +484,7 @@ Sinon, vous pouvez télécharger un autre clavier dans le magasin d'applications
     <string name="credits_author_title">"Auteur et mainteneur"</string>
 
     <!-- Fuzzy -->
-    <string name="credits_and_more">"et plus encore..."</string>
+    <string name="credits_and_more">"et plus encore…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxspeed_answer_living_street">"C’est une zone résidentielle"</string>
@@ -1288,7 +1288,7 @@ Sinon, vous pouvez télécharger un autre clavier dans le magasin d'applications
     <string name="quest_surface_cycleway_title">"Quel est le revêtement de la piste cyclable ici ?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_answer_differs_along_the_way">"Varie en cours de route..."</string>
+    <string name="quest_generic_answer_differs_along_the_way">"Varie en cours de route…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_split_way_description">"S'il varie en cours de route, la première étape consiste à découper la piste en plusieurs tronçons. Ensuite, il est possible de répondre à la quête séparément pour chaque tronçon.
@@ -1457,7 +1457,7 @@ Découper maintenant ?"</string>
 
     <!-- "StreetComplete permet de contribuer facilement à OpenStreetMap." ? -->
     <!-- Fuzzy -->
-    <string name="tutorial_intro">"StreetComplete permet de contribuer facilement à OpenStreetMap. L'application recherche automatiquement les détails manquants autour de vous : pistes cyclables, numéros de rue, horaires d'ouverture et plus encore..."</string>
+    <string name="tutorial_intro">"StreetComplete permet de contribuer facilement à OpenStreetMap. L'application recherche automatiquement les détails manquants autour de vous : pistes cyclables, numéros de rue, horaires d'ouverture et plus encore…"</string>
 
     <!-- Fuzzy -->
     <string name="tutorial_solving_quests">"Une fois trouvés, ces détails manquants apparaîtront sur la carte comme des quêtes.
@@ -1795,5 +1795,5 @@ Enfin, n'oubliez pas de rester prudent : soyez attentifs à votre environnement 
     <string name="open_url">"Ouvrir l'URL"</string>
 
     <!-- Fuzzy -->
-    <string name="link_disaster_ninja_description">"Carte montrant les catastrophes naturelles récentes, d'intérêt pour les cartographes humanitaires, ainsi que plusieurs statistiques intéressantes pour analyser l'état de la cartographie (récence, avancement, ...)"</string>
+    <string name="link_disaster_ninja_description">"Carte montrant les catastrophes naturelles récentes, d'intérêt pour les cartographes humanitaires, ainsi que plusieurs statistiques intéressantes pour analyser l'état de la cartographie (récence, avancement, …)"</string>
 </resources>

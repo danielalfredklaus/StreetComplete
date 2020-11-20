@@ -32,7 +32,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:clickable="true"
-        android:layout_centerInParent="true">
+        android:layout_centerInParent="true"
+        android:focusable="true">
 
         <ImageView
             android:id="@+id/mailOpenImageView"
@@ -41,7 +42,8 @@
             android:src="@drawable/ic_animated_open_mail"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent"
+            android:contentDescription="@null"/>
 
         <RelativeLayout
             android:id="@+id/speechbubbleContentContainer"

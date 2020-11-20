@@ -378,7 +378,7 @@ suspend fun MapView.initMap(
     glViewHolderFactory: GLViewHolderFactory = GLSurfaceViewHolderFactory()) =
 
     suspendCoroutine<KtMapController?> { cont ->
-        getMapAsync(MapView.MapReadyCallback { mapController ->
+        getMapAsync({ mapController ->
             cont.resume(mapController?.let {
                 KtMapController(it, context.contentResolver)
             })

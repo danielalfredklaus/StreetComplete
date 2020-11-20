@@ -21,7 +21,7 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string-array name="pref_entries_autosync">
         <item>@string/autosync_on</item>
         <item>@string/autosync_only_on_wifi</item>
@@ -46,13 +46,13 @@
         <item>MORE_OFTEN</item>
     </string-array>
 
-    <string-array name="pref_entries_theme_select" translatable="false">
+    <string-array name="pref_entries_theme_select" translatable="false" tools:ignore="InconsistentArrays">
         <item>@string/theme_automatic</item>
         <item>@string/theme_light</item>
         <item>@string/theme_dark</item>
     </string-array>
 
-    <string-array name="pref_entryvalues_theme_select" translatable="false">
+    <string-array name="pref_entryvalues_theme_select" translatable="false" tools:ignore="InconsistentArrays">
         <item>AUTO</item>
         <item>LIGHT</item>
         <item>DARK</item>

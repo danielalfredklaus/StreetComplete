@@ -66,7 +66,7 @@
     <string name="map_attribution_osm">"© OpenStreetMap laguntzaileak"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_otherAnswers">"Beste erantzun bat..."</string>
+    <string name="quest_generic_otherAnswers">"Beste erantzun bat…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_notApplicable">"Ez dakit…"</string>
@@ -252,7 +252,7 @@
     <string name="quest_roofShape_select_one">"hautatu bat:"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_roofShape_show_more">"Erakutsi gehiago..."</string>
+    <string name="quest_roofShape_show_more">"Erakutsi gehiago…"</string>
 
     <!-- it is used in generic list, not only for roof shape but rename would break translations -->
     <!-- Fuzzy -->
@@ -613,7 +613,7 @@ Bestela beste teklatu bat instalatu dezakezu. Hainbat hizkuntza onartzen dituzte
     <string name="credits_author_title">"Egile eta mantentzailea"</string>
 
     <!-- Fuzzy -->
-    <string name="credits_and_more">"eta gehiago..."</string>
+    <string name="credits_and_more">"eta gehiago…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxspeed_answer_living_street">"Bizitegi-kalea"</string>
@@ -1554,7 +1554,7 @@ Bestela beste teklatu bat instalatu dezakezu. Hainbat hizkuntza onartzen dituzte
     <string name="tutorial_welcome_to_osm_subtitle">"munduko wiki mapa librea"</string>
 
     <!-- Fuzzy -->
-    <string name="tutorial_intro">"StreetComplete-k erraz jartzen dizu OpenStreetMap hobetzea. Automatikoki bilatzen ditu zure inguruan falta diren xehetasunak: bidegorriak, etxeen zenbakiak, irekiera orduak eta askoz gehiago..."</string>
+    <string name="tutorial_intro">"StreetComplete-k erraz jartzen dizu OpenStreetMap hobetzea. Automatikoki bilatzen ditu zure inguruan falta diren xehetasunak: bidegorriak, etxeen zenbakiak, irekiera orduak eta askoz gehiago…"</string>
 
     <!-- Fuzzy -->
     <string name="tutorial_solving_quests">"Behin aurkituta, falta diren xehetasunak zure mapan agertuko dira erronka gisa.

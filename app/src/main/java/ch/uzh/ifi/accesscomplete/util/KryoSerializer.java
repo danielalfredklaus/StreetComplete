@@ -50,9 +50,10 @@ import ch.uzh.ifi.accesscomplete.quests.LocalizedName;
 
 @Singleton
 public class KryoSerializer implements Serializer {
+
 	// NEVER CHANGE THE ORDER OF THIS LIST. ALWAYS APPEND NEW CLASSES AT THE BOTTOM
 	// IF CLASSES ARE DELETED, INSERT A PLACEHOLDER (i.e. Object.class) THERE
-	private static final Class[] registeredClasses =
+	private static final Class<?>[] registeredClasses =
 			{
 					HashMap.class,
 					ArrayList.class,
@@ -85,7 +86,7 @@ public class KryoSerializer implements Serializer {
 	 		   it is better) */
 			kryo.setRegistrationRequired(true);
 			kryo.setInstantiatorStrategy(new Kryo.DefaultInstantiatorStrategy(new StdInstantiatorStrategy()));
-			for (Class reg : registeredClasses) {
+			for (Class<?> reg : registeredClasses) {
 				kryo.register(reg);
 			}
 			return kryo;

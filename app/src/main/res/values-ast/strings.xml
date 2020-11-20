@@ -166,7 +166,7 @@
     <string name="confirmation_cancel_prev_download_title">"¿Quies encaboxar la descarga y entamar a buscar xeres nesti llugar?"</string>
 
     <!-- Fuzzy -->
-    <string name="notification_downloading">"Buscando xeres..."</string>
+    <string name="notification_downloading">"Buscando xeres…"</string>
 
     <!-- Fuzzy -->
     <string name="turn_on_location_request">"L'allugamientu ta apagáu. ¿Quies abrir la configuración p'activalu?"</string>
@@ -252,7 +252,7 @@
     <string name="quest_roofShape_select_one">"Seleiciona una:"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_roofShape_show_more">"Ver más..."</string>
+    <string name="quest_roofShape_show_more">"Ver más…"</string>
 
     <!-- it is used in generic list, not only for roof shape but rename would break translations -->
     <!-- Fuzzy -->
@@ -612,7 +612,7 @@ Pero recuerda que siempre puedes descargar aplicaciones de tecláu alternatives 
     <string name="credits_author_title">"Autor y encargáu principal"</string>
 
     <!-- Fuzzy -->
-    <string name="credits_and_more">"y más..."</string>
+    <string name="credits_and_more">"y más…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxspeed_answer_living_street">"Ye una cai peatonal"</string>

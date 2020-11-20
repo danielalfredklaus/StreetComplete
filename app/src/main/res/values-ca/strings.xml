@@ -612,7 +612,7 @@ En cas contrari, podeu baixar un altre teclat a la botiga d'aplicacions. Els tec
     <string name="credits_author_title">"Autor i mantenidor"</string>
 
     <!-- Fuzzy -->
-    <string name="credits_and_more">"i més..."</string>
+    <string name="credits_and_more">"i més…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxspeed_answer_living_street">"És una via residencial"</string>
@@ -1393,7 +1393,7 @@ En cas contrari, podeu baixar un altre teclat a la botiga d'aplicacions. Els tec
     <string name="quest_surface_cycleway_title">"Quin tipus de superfície té el carril bici aquí?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_answer_differs_along_the_way">"Canvia al llarg de la via..."</string>
+    <string name="quest_generic_answer_differs_along_the_way">"Canvia al llarg de la via…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_split_way_description">"Si varia al llarg de la via, el primer pas és dividir la via. Després de fer-ho, es pot respondre la missió per a cada tram separadament. Voleu dividir-la ara?"</string>

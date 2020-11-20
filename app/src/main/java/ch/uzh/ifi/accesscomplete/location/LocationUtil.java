@@ -31,12 +31,11 @@ import android.provider.Settings;
 import androidx.core.content.ContextCompat;
 
 public class LocationUtil {
+
 	public static boolean isLocationOn(Context context) {
 		if (!hasLocationPermission(context)) return false;
 
-		String locationProviders;
 		try {
-
 			int locationMode = Settings.Secure.getInt(context.getContentResolver(), Settings.Secure.LOCATION_MODE);
 			return locationMode != Settings.Secure.LOCATION_MODE_OFF;
 
@@ -47,8 +46,8 @@ public class LocationUtil {
 	}
 
 	public static boolean hasLocationPermission(Context context) {
-		return ContextCompat.checkSelfPermission(context,
-				Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED;
+		return ContextCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION)
+				== PackageManager.PERMISSION_GRANTED;
 	}
 
 	public static IntentFilter createLocationAvailabilityIntentFilter() {
@@ -57,5 +56,4 @@ public class LocationUtil {
 
 	// because LocationManager.MODE_CHANGED is not defined before KitKat
 	private static final String MODE_CHANGED = "android.location.MODE_CHANGED";
-
 }

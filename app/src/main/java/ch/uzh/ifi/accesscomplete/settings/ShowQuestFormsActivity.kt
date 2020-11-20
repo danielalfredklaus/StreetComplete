@@ -35,7 +35,6 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import de.westnordost.osmapi.map.data.LatLon
 import de.westnordost.osmapi.map.data.OsmLatLon
-import de.westnordost.osmapi.map.data.OsmNode
 import de.westnordost.osmapi.map.data.OsmWay
 import ch.uzh.ifi.accesscomplete.Injector
 import ch.uzh.ifi.accesscomplete.Prefs
@@ -123,8 +122,6 @@ class ShowQuestFormsActivity : AppCompatActivity(), AbstractQuestAnswerFragment.
         val centerLng = Double.fromBits(prefs.getLong(Prefs.MAP_LONGITUDE, (0.0 + longitudeDelta/2).toBits()))
         val centerPos = OsmLatLon(centerLat, centerLng)
         val tags =  mapOf("highway" to "cycleway", "building" to "residential", "name" to "<object name>", "opening_hours" to "Mo-Fr 08:00-12:00,13:00-17:30; Sa 08:00-12:00")
-        val firstNode = OsmNode(1, 1, firstPos, tags)
-        val secondNode = OsmNode(2, 1, secondPos, tags)
         val element = OsmWay(1, 1, mutableListOf(1, 2), tags)
         val elementGeometry = ElementPolylinesGeometry(listOf(listOf(firstPos, secondPos)), centerPos)
 

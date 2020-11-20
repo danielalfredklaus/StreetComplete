@@ -612,7 +612,7 @@ Caso contrário, pode baixar outro teclado na loja de aplicativos. Alguns dos te
     <string name="credits_author_title">"Autor e Mantedor"</string>
 
     <!-- Fuzzy -->
-    <string name="credits_and_more">"e mais..."</string>
+    <string name="credits_and_more">"e mais…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxspeed_answer_living_street">"É uma rua compartilhada"</string>
@@ -1513,10 +1513,10 @@ Dividir agora?"</string>
     <string name="osm_profile">"Perfil OSM"</string>
     <string name="next">"Próximo"</string>
     <string name="letsgo">"Vamos lá!"</string>
-    <string name="tutorial_welcome_to_osm">"Bem vindo ao OpenStreetMap"</string>
+    <string name="tutorial_welcome_to_osm">"Bem-vindo ao OpenStreetMap"</string>
     <string name="tutorial_welcome_to_osm_subtitle">"o mapa mundial livre"</string>
     <string name="tutorial_intro">"O StreetComplete facilita a contribuição para o OpenStreetMap.
- Ele procura automaticamente detalhes ausentes em sua vizinhança: ciclovias, números de casas, horário de funcionamento e muito mais..."</string>
+ Ele procura automaticamente detalhes ausentes em sua vizinhança: ciclovias, números de casas, horário de funcionamento e muito mais…"</string>
     <string name="tutorial_solving_quests">"Uma vez encontrados, os detalhes ausentes aparecerão no seu mapa como missões.
 
  Você pode começar a resolvê-los imediatamente e depois fazer login para publicar suas respostas."</string>

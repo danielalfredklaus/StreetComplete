@@ -25,6 +25,7 @@ package ch.uzh.ifi.accesscomplete.controls
 import android.os.Handler
 import android.os.Looper
 import android.view.View
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import ch.uzh.ifi.accesscomplete.Injector
 import ch.uzh.ifi.accesscomplete.R
@@ -60,7 +61,9 @@ class DownloadProgressFragment : Fragment(R.layout.fragment_download_progress),
 
         override fun onStarted(item: DownloadItem) {
             startedButNoQuestsYet = false
-            launch(Dispatchers.Main) { progressView.enqueueIcon(resources.getDrawable(item.iconResId)) }
+            launch(Dispatchers.Main) {
+                progressView.enqueueIcon(ContextCompat.getDrawable(requireContext(), item.iconResId)!!)
+            }
         }
 
         override fun onFinished(item: DownloadItem) {
@@ -125,7 +128,7 @@ class DownloadProgressFragment : Fragment(R.layout.fragment_download_progress),
             showProgressView()
             val item = downloadProgressSource.currentDownloadItem
             if (item != null) {
-                progressView.setIcon(resources.getDrawable(item.iconResId))
+                progressView.setIcon(ContextCompat.getDrawable(requireContext(), item.iconResId)!!)
             }
         } else {
             hideProgressView()

@@ -41,7 +41,7 @@ class SphericalEarthMathTest {
         checkHamburgTo(52.4, 13.4, 259, 117, 120)
     }
 
-    @Test fun `distance to Lübeck`() {
+    @Test fun `distance to Luebeck`() {
         checkHamburgTo(53.85, 10.68, 59, 49, 49)
     }
 

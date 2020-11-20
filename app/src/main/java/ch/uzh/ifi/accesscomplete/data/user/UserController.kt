@@ -73,7 +73,7 @@ import javax.inject.Singleton
 
     fun updateUser() = launch(Dispatchers.IO) {
         try {
-            val userDetails = userApi.getMine()
+            val userDetails = userApi.mine
 
             userStore.setDetails(userDetails)
             val profileImageUrl = userDetails.profileImageUrl

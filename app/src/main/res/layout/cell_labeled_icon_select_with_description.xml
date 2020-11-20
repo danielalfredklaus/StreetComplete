@@ -51,15 +51,13 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/ImageSelectTitle"
-            tools:text="@string/quest_buildingType_apartments" />
+            style="@style/ImageSelectTitle" />
 
         <TextView
             android:id="@+id/descriptionView"
             style="@style/ImageSelectDescription"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="@string/quest_buildingType_apartments_description" />
+            android:layout_height="wrap_content" />
 
     </LinearLayout>
 

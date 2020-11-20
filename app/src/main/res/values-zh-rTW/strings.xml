@@ -1385,7 +1385,7 @@
     <string name="quest_surface_cycleway_title">"單車道的路面材質？"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_answer_differs_along_the_way">"整條路不大一樣..."</string>
+    <string name="quest_generic_answer_differs_along_the_way">"整條路不大一樣…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_split_way_description">"如果沿路都不同的話，第一步是先分割路徑"</string>
@@ -1434,7 +1434,7 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_street_side_puzzle_tutorial">"插圖中的道路與大頭針位置處的地圖相同方式旋轉..."</string>
+    <string name="quest_street_side_puzzle_tutorial">"插圖中的道路與大頭針位置處的地圖相同方式旋轉…"</string>
 
     <!-- Fuzzy -->
 
@@ -1490,7 +1490,7 @@
     <string name="tutorial_welcome_to_osm">"歡迎來到開放街圖"</string>
     <string name="tutorial_welcome_to_osm_subtitle">"自由的 wiki 世界地圖"</string>
     <string name="tutorial_intro">"StreetComplete讓貢獻開放街圖更為簡易。
-它會自動找到附近遺失的細節：自行車道、房屋門牌和營業時間等更多..."</string>
+它會自動找到附近遺失的細節：自行車道、房屋門牌和營業時間等更多…"</string>
     <string name="tutorial_solving_quests">"當找到後，遺失的細節將會以任務的形式出現在你的地圖上。
 
 你可以立刻開始解決它並在稍後登入之後發佈您的解答。"</string>

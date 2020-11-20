@@ -612,7 +612,7 @@ Annars kan du ladda ner ett annat tangentbord i appbutiken. Populära tangentbor
     <string name="credits_author_title">"Författare och underhållare"</string>
 
     <!-- Fuzzy -->
-    <string name="credits_and_more">"och mer..."</string>
+    <string name="credits_and_more">"och mer…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxspeed_answer_living_street">"Det är gångfartsområde"</string>

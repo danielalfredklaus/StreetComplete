@@ -90,14 +90,14 @@ class BooleanExpressionBuilder<I : Matcher<T>, T> {
 
         if (allOf != null) {
             val nodeParent = node.parent
-            if (nodeParent is AnyOf) {
-                node = nodeParent
+            node = if (nodeParent is AnyOf) {
+                nodeParent
             } else  {
                 nodeParent?.removeChild(allOf)
                 val anyOf = AnyOf<I, T>()
                 anyOf.addChild(allOf)
                 nodeParent?.addChild(anyOf)
-                node = anyOf
+                anyOf
             }
         }
         else if (group != null) {

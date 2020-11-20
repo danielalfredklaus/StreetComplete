@@ -30,40 +30,40 @@ import org.junit.Test
 class OpenChangesetsDaoTest : ApplicationDbTestCase() {
     private lateinit var dao: OpenChangesetsDao
 
-    private val Q = "Hurzipurz"
-    private val P = "Brasliweks"
-    private val SOURCE = "test"
+    private val q = "Hurzipurz"
+    private val p = "Brasliweks"
+    private val source = "test"
 
     @Before fun createDao() {
         dao = OpenChangesetsDao(dbHelper, OpenChangesetMapping())
     }
 
     @Test fun deleteNonExistent() {
-        assertFalse(dao.delete(Q, SOURCE))
+        assertFalse(dao.delete(q, source))
     }
 
     @Test fun createDelete() {
-        dao.put(OpenChangeset(Q, SOURCE, 1))
-        assertTrue(dao.delete(Q, SOURCE))
-        assertNull(dao.get(Q, SOURCE))
+        dao.put(OpenChangeset(q, source, 1))
+        assertTrue(dao.delete(q, source))
+        assertNull(dao.get(q, source))
     }
 
     @Test fun getNull() {
-        assertNull(dao.get(Q, SOURCE))
+        assertNull(dao.get(q, source))
     }
 
     @Test fun insertChangesetId() {
-        dao.put(OpenChangeset(Q, SOURCE, 12))
-        val info = dao.get(Q, SOURCE)!!
+        dao.put(OpenChangeset(q, source, 12))
+        val info = dao.get(q, source)!!
         assertEquals(12, info.changesetId)
-        assertEquals(Q, info.questType)
-        assertEquals(SOURCE, info.source)
+        assertEquals(q, info.questType)
+        assertEquals(source, info.source)
     }
 
     @Test fun replaceChangesetId() {
-        dao.put(OpenChangeset(Q, SOURCE, 12))
-        dao.put(OpenChangeset(Q, SOURCE, 6497))
-        assertEquals(6497, dao.get(Q, SOURCE)!!.changesetId)
+        dao.put(OpenChangeset(q, source, 12))
+        dao.put(OpenChangeset(q, source, 6497))
+        assertEquals(6497, dao.get(q, source)!!.changesetId)
     }
 
     @Test fun getNone() {
@@ -71,8 +71,8 @@ class OpenChangesetsDaoTest : ApplicationDbTestCase() {
     }
 
     @Test fun insertTwo() {
-        dao.put(OpenChangeset(Q, SOURCE, 1))
-        dao.put(OpenChangeset(P, SOURCE, 2))
+        dao.put(OpenChangeset(q, source, 1))
+        dao.put(OpenChangeset(p, source, 2))
         assertEquals(2, dao.getAll().size)
     }
 }

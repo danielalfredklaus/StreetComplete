@@ -66,7 +66,7 @@
     <string name="map_attribution_osm">"© Prispievatelia OpenStreetMap"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_otherAnswers">"Ostatné odpovede..."</string>
+    <string name="quest_generic_otherAnswers">"Ostatné odpovede…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_notApplicable">"Nedá sa povedať…"</string>
@@ -252,7 +252,7 @@
     <string name="quest_roofShape_select_one">"Vyberte jeden:"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_roofShape_show_more">"Zobraziť viac..."</string>
+    <string name="quest_roofShape_show_more">"Zobraziť viac…"</string>
 
     <!-- it is used in generic list, not only for roof shape but rename would break translations -->
     <!-- Fuzzy -->
@@ -612,7 +612,7 @@ Inak si môžete stiahnuť inú klávesnicu z obchodu z aplikáciami. Medzi popu
     <string name="credits_author_title">"Autor a udržiavateľ"</string>
 
     <!-- Fuzzy -->
-    <string name="credits_and_more">"a ďalší ..."</string>
+    <string name="credits_and_more">"a ďalší …"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxspeed_answer_living_street">"Je to obytná zóna"</string>

@@ -43,7 +43,6 @@ import ch.uzh.ifi.accesscomplete.map.MapModule
 import ch.uzh.ifi.accesscomplete.map.QuestsMapFragment
 import ch.uzh.ifi.accesscomplete.measurement.ARCoreMeasurementActivity
 import ch.uzh.ifi.accesscomplete.notifications.OsmUnreadMessagesFragment
-import ch.uzh.ifi.accesscomplete.quests.AAddLocalizedNameForm
 import ch.uzh.ifi.accesscomplete.quests.AbstractQuestAnswerFragment
 import ch.uzh.ifi.accesscomplete.quests.QuestModule
 import ch.uzh.ifi.accesscomplete.quests.SplitWayFragment
@@ -82,7 +81,6 @@ interface ApplicationComponent {
     fun inject(settingsActivity: SettingsActivity)
     fun inject(OAuthFragment: OAuthFragment)
     fun inject(questStatisticsFragment: QuestStatisticsFragment)
-    fun inject(fields: AAddLocalizedNameForm.InjectedFields)
     fun inject(fields: AbstractQuestAnswerFragment.InjectedFields)
     fun inject(questsMapFragment: QuestsMapFragment)
     fun inject(questSelectionFragment: QuestSelectionFragment)

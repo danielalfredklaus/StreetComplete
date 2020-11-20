@@ -35,35 +35,30 @@ import javax.inject.Inject;
 
 import ch.uzh.ifi.accesscomplete.R;
 
-public class AbbreviationsByLocale
-{
+public class AbbreviationsByLocale {
 	private final Context applicationContext;
 
-	private final Map<String,Abbreviations> byLanguageAbbreviations = new HashMap<>();
+	private final Map<String, Abbreviations> byLanguageAbbreviations = new HashMap<>();
 
-	@Inject public AbbreviationsByLocale(Context applicationContext)
-	{
+	@Inject
+	public AbbreviationsByLocale(Context applicationContext) {
 		this.applicationContext = applicationContext;
 	}
 
-	public Abbreviations get(Locale locale)
-	{
+	public Abbreviations get(Locale locale) {
 		String code = locale.toString();
-		if(!byLanguageAbbreviations.containsKey(code))
-		{
+		if (!byLanguageAbbreviations.containsKey(code)) {
 			byLanguageAbbreviations.put(code, load(locale));
 		}
 		return byLanguageAbbreviations.get(code);
 	}
 
-	private Abbreviations load(Locale locale)
-	{
+	private Abbreviations load(Locale locale) {
 		InputStream is = getResources(locale).openRawResource(R.raw.abbreviations);
 		return new Abbreviations(is, locale);
 	}
 
-	private Resources getResources(Locale locale)
-	{
+	private Resources getResources(Locale locale) {
 		Configuration configuration = new Configuration(applicationContext.getResources().getConfiguration());
 		configuration.setLocale(locale);
 		return applicationContext.createConfigurationContext(configuration).getResources();

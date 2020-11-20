@@ -66,7 +66,7 @@
     <string name="map_attribution_osm">"© OpenStreetMap-bijdragers"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_otherAnswers">"Andere antwoorden..."</string>
+    <string name="quest_generic_otherAnswers">"Andere antwoorden…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_notApplicable">"Weet ik niet…"</string>
@@ -888,7 +888,7 @@ Anders kan je een ander toetsenbord downloaden in de App Store. Populaire toetse
     <string name="quest_wheelchairAccess_toilets_name_title">"Zijn de toiletten %s toegankelijk voor rolstoelen?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_wheelchairAccess_description_toilets">"Een rolstoel-pictogram zoals deze kan zichtbaar zijn als de toiletten toegankelijk zijn voor rolstoelgebruikers. Gedeeltelijk betekent dat een rolstoel naar binnen kan en het toilet kan gebruiken, maar dat er geen extra aanpassingen zijn (zoals een rail, verlaagde wastafel, ...)"</string>
+    <string name="quest_wheelchairAccess_description_toilets">"Een rolstoel-pictogram zoals deze kan zichtbaar zijn als de toiletten toegankelijk zijn voor rolstoelgebruikers. Gedeeltelijk betekent dat een rolstoel naar binnen kan en het toilet kan gebruiken, maar dat er geen extra aanpassingen zijn (zoals een rail, verlaagde wastafel, …)"</string>
 
     <!-- Fuzzy -->
     <string name="map_btn_create_note">"Maak een nieuwe notitie"</string>
@@ -1823,7 +1823,7 @@ Tenslotte, zorg altijd voor je eigen veiligheid. Wees bewust van je omgeving en 
 
     <!-- what type of Notice Board is meant? a sign board, a pin-up board, a bill board? -->
     <string name="quest_sidewalk_separately_mapped">"Ja, afzonderlijk op de kaart aangegeven."</string>
-    <string name="quest_surface_detailed_answer_impossible_confirmation">"Weet u zeker dat het onmogelijk is om de bedekking te specificeren? Let op de antwoordoptie \"Verschilt onderweg\" waarmee u de weg kunt splitsen waar de bedekking verandert. Gebruik a.u.b. \"Weet ik niet...\" als er één bedekking is maar die is niet beschikbaar als antwoord."</string>
+    <string name="quest_surface_detailed_answer_impossible_confirmation">"Weet u zeker dat het onmogelijk is om de bedekking te specificeren? Let op de antwoordoptie \"Verschilt onderweg\" waarmee u de weg kunt splitsen waar de bedekking verandert. Gebruik a.u.b. \"Weet ik niet…\" als er één bedekking is maar die is niet beschikbaar als antwoord."</string>
     <string name="quest_surface_detailed_answer_impossible_description">"Geef hier in het kort de aard van de bedekking aan, bijvoorbeeld \"zanderig met geplaveide plekken\". De tekstlengte is hoogstens 255 tekens."</string>
     <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
     <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>

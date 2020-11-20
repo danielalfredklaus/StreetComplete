@@ -28,8 +28,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 
-public class CountryInfo implements Serializable, Cloneable
-{
+public class CountryInfo implements Serializable, Cloneable {
+
 	public static final long serialVersionUID = 1L;
 
 	// this value is not defined in the yaml file but it is the ISO language code part of the file name!
@@ -74,108 +74,88 @@ public class CountryInfo implements Serializable, Cloneable
 		return atmOperators;
 	}
 
-	public List<String> getLengthUnits()
-	{
+	public List<String> getLengthUnits() {
 		return lengthUnits;
 	}
 
-	public List<String> getSpeedUnits()
-	{
+	public List<String> getSpeedUnits() {
 		return speedUnits;
 	}
 
-	public List<String> getWeightLimitUnits()
-	{
+	public List<String> getWeightLimitUnits() {
 		return weightLimitUnits;
 	}
 
-	public List<String> getPopularSports()
-	{
-		if(popularSports == null) return new ArrayList<>(1);
+	public List<String> getPopularSports() {
+		if (popularSports == null) return new ArrayList<>(1);
 		return Collections.unmodifiableList(popularSports);
 	}
 
-	public List<String> getPopularReligions()
-	{
-		if(popularReligions == null) return new ArrayList<>(1);
+	public List<String> getPopularReligions() {
+		if (popularReligions == null) return new ArrayList<>(1);
 		return Collections.unmodifiableList(popularReligions);
 	}
 
-	public String getFirstDayOfWorkweek()
-	{
+	public String getFirstDayOfWorkweek() {
 		return firstDayOfWorkweek;
 	}
 
-	public Integer getRegularShoppingDays()
-	{
+	public Integer getRegularShoppingDays() {
 		return regularShoppingDays;
 	}
 
-	public Integer getWorkweekDays()
-	{
+	public Integer getWorkweekDays() {
 		return workweekDays;
 	}
 
-	public boolean isSlowZoneKnown()
-	{
+	public boolean isSlowZoneKnown() {
 		return isSlowZoneKnown;
 	}
 
-	public String getAdditionalValidHousenumberRegex()
-	{
+	public String getAdditionalValidHousenumberRegex() {
 		return additionalValidHousenumberRegex;
 	}
 
-	public List<String> getOfficialLanguages()
-	{
-		if(officialLanguages == null) return new ArrayList<>(1);
+	public List<String> getOfficialLanguages() {
+		if (officialLanguages == null) return new ArrayList<>(1);
 		return Collections.unmodifiableList(officialLanguages);
 	}
 
-	public List<String> getAdditionalStreetsignLanguages()
-	{
-		if(additionalStreetsignLanguages == null) return new ArrayList<>(1);
+	public List<String> getAdditionalStreetsignLanguages() {
+		if (additionalStreetsignLanguages == null) return new ArrayList<>(1);
 		return Collections.unmodifiableList(additionalStreetsignLanguages);
 	}
 
-	public String getCountryCode()
-	{
+	public String getCountryCode() {
 		return countryCode;
 	}
 
-	public Locale getLocale()
-	{
+	public Locale getLocale() {
 		List<String> languages = getOfficialLanguages();
-		if (!languages.isEmpty())
-		{
+		if (!languages.isEmpty()) {
 			return new Locale(languages.get(0), countryCode);
 		}
 		return Locale.getDefault();
 	}
 
-	public boolean isLivingStreetKnown()
-	{
+	public boolean isLivingStreetKnown() {
 		return isLivingStreetKnown;
 	}
 
-	public List<String> getOrchardProduces()
-	{
-		if(orchardProduces == null) return new ArrayList<>(1);
+	public List<String> getOrchardProduces() {
+		if (orchardProduces == null) return new ArrayList<>(1);
 		return Collections.unmodifiableList(orchardProduces);
 	}
 
-	public boolean isAdvisorySpeedLimitKnown()
-	{
+	public boolean isAdvisorySpeedLimitKnown() {
 		return isAdvisorySpeedLimitKnown;
 	}
 
-	public boolean isLeftHandTraffic()
-	{
+	public boolean isLeftHandTraffic() {
 		return isLeftHandTraffic;
 	}
 
-	public Integer getMobileCountryCode()
-	{
+	public Integer getMobileCountryCode() {
 		return mobileCountryCode;
 	}
 }

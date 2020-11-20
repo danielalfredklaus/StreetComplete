@@ -48,7 +48,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         style="@style/ImageSelectLabel"
-        tools:text="@string/quest_sport_archery"
         android:maxLines="3"
         android:padding="8dp"
         />

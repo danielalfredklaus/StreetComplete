@@ -24,6 +24,7 @@ package ch.uzh.ifi.accesscomplete.quests.traffic_signals_vibrate
 
 import android.os.Bundle
 import android.view.View
+import androidx.core.content.ContextCompat
 import ch.uzh.ifi.accesscomplete.R
 import ch.uzh.ifi.accesscomplete.quests.AYesNoQuestAnswerFragment
 import kotlinx.android.synthetic.main.quest_traffic_lights_vibration.*
@@ -37,7 +38,8 @@ class AddTrafficSignalsVibrationForm : AYesNoQuestAnswerFragment<Boolean>() {
 
         // this is necessary because the inflated image view uses the activity context rather than
         // the fragment / layout inflater context' resources to access it's drawable
-        buttonIllustrationImageView.setImageDrawable(resources.getDrawable(R.drawable.vibrating_button_illustration))
+        buttonIllustrationImageView.setImageDrawable(
+            ContextCompat.getDrawable(requireContext(), R.drawable.vibrating_button_illustration))
     }
 
     override fun onClick(answer: Boolean) { applyAnswer(answer) }

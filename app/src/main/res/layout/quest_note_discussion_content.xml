@@ -23,6 +23,7 @@
 
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
@@ -37,7 +38,8 @@
         android:minLines="3"
         android:maxLines="12"
         android:background="@drawable/background_edittext_outline"
-        />
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor" />
 
     <FrameLayout
         android:id="@+id/attachPhotoFragment"

@@ -247,7 +247,7 @@
     <string name="quest_roofShape_select_one">"Selezionane una:"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_roofShape_show_more">"Mostrane altre..."</string>
+    <string name="quest_roofShape_show_more">"Mostrane altre…"</string>
 
     <!-- it is used in generic list, not only for roof shape but rename would break translations -->
     <!-- Fuzzy -->
@@ -607,7 +607,7 @@ Altrimenti, è possibile scaricare un'altra tastiera nell'archivio di app. Le ta
     <string name="credits_author_title">"Autore e manutentore"</string>
 
     <!-- Fuzzy -->
-    <string name="credits_and_more">"e tanti altri..."</string>
+    <string name="credits_and_more">"e tanti altri…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxspeed_answer_living_street">"È una via ad uso sociale (living street)"</string>
@@ -1390,7 +1390,7 @@ Altrimenti, è possibile scaricare un'altra tastiera nell'archivio di app. Le ta
     <string name="quest_surface_cycleway_title">"Qual è la superficie di questa pista ciclabile?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_answer_differs_along_the_way">"Cambia lungo il tragitto..."</string>
+    <string name="quest_generic_answer_differs_along_the_way">"Cambia lungo il tragitto…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_split_way_description">"Se cambia lungo il tragitto la prima cosa da fare è suddividere il percorso. Dopo di che sarà possibile rispondere separatamente per ogni tratto.
@@ -1555,7 +1555,7 @@ Suddividere?"</string>
     <string name="tutorial_welcome_to_osm_subtitle">"la wiki mappa libera del mondo"</string>
 
     <!-- Fuzzy -->
-    <string name="tutorial_intro">"StrettComplete rende semplice contribuire a OpenStreetMap. Cerca automaticamente per dettagli mancanti nelle tue vicinanze: corsie ciclabili, numeri civici, orari di apertura e molto altro..."</string>
+    <string name="tutorial_intro">"StrettComplete rende semplice contribuire a OpenStreetMap. Cerca automaticamente per dettagli mancanti nelle tue vicinanze: corsie ciclabili, numeri civici, orari di apertura e molto altro…"</string>
 
     <!-- Fuzzy -->
     <string name="tutorial_solving_quests">"Una volta trovati, i dettagli mancanti appariranno sulla mappa come compiti.

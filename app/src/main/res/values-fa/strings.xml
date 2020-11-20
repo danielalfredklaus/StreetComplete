@@ -36,7 +36,7 @@
     <string name="pref_title_map_cache">"مقدار حافظه پنهان"</string>
     <string name="map_btn_gps_tracking">"من را دنبال کن"</string>
     <string name="map_attribution_osm">"© همکاران OpenStreetMap"</string>
-    <string name="quest_generic_otherAnswers">"دیگر پاسخ‌ها ..."</string>
+    <string name="quest_generic_otherAnswers">"دیگر پاسخ‌ها …"</string>
     <string name="quest_generic_answer_notApplicable">"نمی‌توان اظهار نظر کرد…"</string>
     <string name="quest_generic_confirmation_title">"شما مطمئن هستید؟"</string>
     <string name="quest_generic_confirmation_yes">"بله مطمئنم"</string>
@@ -115,7 +115,7 @@
     <string name="confirmation_cancel_prev_download_title">"درعوض، جستجوی فعلی را لغو کنید و اینجا را جستجو کنید"</string>
 
     <!-- Fuzzy -->
-    <string name="notification_downloading">"جستجو برای جُستارها..."</string>
+    <string name="notification_downloading">"جستجو برای جُستارها…"</string>
 
     <!-- Fuzzy -->
     <string name="turn_on_location_request">"موقعیت مکانی خاموش است. آیا منوی تنظیمات را برای روشن کردن آن باز می‌کنید؟"</string>
@@ -201,7 +201,7 @@
     <string name="quest_roofShape_select_one">"یکی را انتخاب کنید:"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_roofShape_show_more">"نمایش بیشتر..."</string>
+    <string name="quest_roofShape_show_more">"نمایش بیشتر…"</string>
 
     <!-- it is used in generic list, not only for roof shape but rename would break translations -->
     <!-- Fuzzy -->
@@ -561,7 +561,7 @@
     <string name="credits_author_title">"نویسنده و ویراستار"</string>
 
     <!-- Fuzzy -->
-    <string name="credits_and_more">"و بیشتر ..."</string>
+    <string name="credits_and_more">"و بیشتر …"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxspeed_answer_living_street">"این یک خیابان محل سکونت است"</string>
@@ -1343,7 +1343,7 @@
     <string name="quest_surface_cycleway_title">"سطح مسیر دوچرخه ‌سواری از چه جنسی است؟"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_answer_differs_along_the_way">"تناقض در طول مسیر..."</string>
+    <string name="quest_generic_answer_differs_along_the_way">"تناقض در طول مسیر…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_split_way_description">"اگر در طول راه تناقض وجود داشته باشد، اولین گام تفکیک راه است. پس از آن می‌توان برای هر قسمت تفکیک شده به طور جداگانه پاسخ جُستار را ارائه نمود.  اکنون تفکیک کنید؟"</string>
@@ -1508,7 +1508,7 @@
 
     <!-- Fuzzy -->
     <string name="tutorial_intro">"StreetComplete همکاری در OpenStreetMap را آسان می کند.
-به طور خودکار به دنبال جزئیات گمشده در پیرامون شما می باشد: خطوط دوچرخه، شماره خانه، ساعات کار و موارد دیگر ..."</string>
+به طور خودکار به دنبال جزئیات گمشده در پیرامون شما می باشد: خطوط دوچرخه، شماره خانه، ساعات کار و موارد دیگر …"</string>
 
     <!-- Fuzzy -->
     <string name="tutorial_solving_quests">"پس از کاوش جزئیات گمشده به عنوان جُستار در نقشه شما ظاهر می شود.

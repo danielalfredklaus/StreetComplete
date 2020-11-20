@@ -33,7 +33,6 @@ import android.view.View
 import androidx.annotation.Keep
 import androidx.appcompat.widget.AppCompatImageButton
 import ch.uzh.ifi.accesscomplete.R
-import java.util.*
 
 /**
  * An image button which shows the current location state
@@ -72,10 +71,10 @@ class LocationStateButton @JvmOverloads constructor(
             return LocationState.SEARCHING
         if (a.getBoolean(R.styleable.LocationStateButton_state_enabled,false))
             return LocationState.ENABLED
-        if (a.getBoolean(R.styleable.LocationStateButton_state_allowed,false))
-            return LocationState.ALLOWED
+        return if (a.getBoolean(R.styleable.LocationStateButton_state_allowed,false))
+            LocationState.ALLOWED
         else
-            return LocationState.DENIED
+            LocationState.DENIED
     }
 
     override fun drawableStateChanged() {
@@ -94,7 +93,7 @@ class LocationStateButton @JvmOverloads constructor(
         val additionalLength = STATES.size + 1
         val drawableState = super.onCreateDrawableState(extraSpace + additionalLength)
         val arrPos = state.ordinal
-        val additionalArray = Arrays.copyOf(Arrays.copyOf(STATES, arrPos), additionalLength)
+        val additionalArray = STATES.copyOf(arrPos).copyOf(additionalLength)
         View.mergeDrawableStates(drawableState, additionalArray)
         return drawableState
     }

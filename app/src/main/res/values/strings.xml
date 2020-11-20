@@ -419,6 +419,7 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
 
     <string name="notifications">Notifications</string>
     <string name="jump_to_current_location">Jump to current location</string>
+    <string name="compass">Compass</string>
     <string name="compass_description">Compass: Tap to orient map to north or toggle 3D view if it is already faced north.</string>
     <string name="back">Back</string>
     <string name="hide">Hide</string>

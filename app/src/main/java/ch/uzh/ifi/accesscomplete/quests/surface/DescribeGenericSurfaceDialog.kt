@@ -34,7 +34,7 @@ class DescribeGenericSurfaceDialog(
     onSurfaceDescribed: (txt: String) -> Unit
 ) : AlertDialog(context, R.style.Theme_Bubble_Dialog) {
     val view = LayoutInflater.from(context).inflate(R.layout.quest_surface_detailed_answer_impossible, null)
-    val explanationInput = view.findViewById<EditText>(R.id.explanationInput);
+    val explanationInput = view.findViewById<EditText>(R.id.explanationInput)
     init {
         setTitle(context.resources.getString(R.string.quest_surface_detailed_answer_impossible_title))
 

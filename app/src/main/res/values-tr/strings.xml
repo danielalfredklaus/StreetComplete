@@ -592,7 +592,7 @@ Bahsedildiği gibi, uygulama OSM altyapısıyla doğrudan iletişim kuruyor. Bun
     <string name="credits_author_title">"Hazırlayan ve Sürdüren"</string>
 
     <!-- Fuzzy -->
-    <string name="credits_and_more">"ve dahası..."</string>
+    <string name="credits_and_more">"ve dahası…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxspeed_answer_living_street">"Bu yaşayan bir sokak"</string>

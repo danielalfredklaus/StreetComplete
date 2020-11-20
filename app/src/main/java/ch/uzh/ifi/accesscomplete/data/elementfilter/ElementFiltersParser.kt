@@ -164,12 +164,11 @@ private fun StringWithCursor.parseTags(): BooleanExpression<ElementFilter, Eleme
             throw ParseException("Expected a whitespace or bracket after the tag", cursorPos)
         }
 
-        if (nextIsAndAdvance(OR)) {
-            builder.addOr()
-        } else if (nextIsAndAdvance(AND)) {
-            builder.addAnd()
-        } else
-            throw ParseException("Expected end of string, 'and' or 'or'", cursorPos)
+        when {
+            nextIsAndAdvance(OR) -> builder.addOr()
+            nextIsAndAdvance(AND) -> builder.addAnd()
+            else -> throw ParseException("Expected end of string, 'and' or 'or'", cursorPos)
+        }
 
     } while (true)
 
@@ -204,10 +203,10 @@ private fun StringWithCursor.parseBrackets(bracket: Char, expr: BooleanExpressio
 private fun StringWithCursor.parseTag(): ElementFilter {
     if (nextIsAndAdvance('!')) {
         expectAnyNumberOfSpaces()
-        if (nextIsAndAdvance('~')) {
-            return NotHasKeyLike(parseKey())
+        return if (nextIsAndAdvance('~')) {
+            NotHasKeyLike(parseKey())
         } else {
-            return NotHasKey(parseKey())
+            NotHasKey(parseKey())
         }
     }
 

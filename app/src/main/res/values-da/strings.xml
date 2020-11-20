@@ -617,7 +617,7 @@ Ellers kan du downloade et andet keyboard i Forretning. Populære keyboards der 
     <string name="credits_author_title">"Udvikler og vedligeholder"</string>
 
     <!-- Fuzzy -->
-    <string name="credits_and_more">"og mere ..."</string>
+    <string name="credits_and_more">"og mere …"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxspeed_answer_living_street">"Det er en beboelsesvej"</string>
@@ -1397,7 +1397,7 @@ Delvist betyder at kørestolsbrugeren kan bruge toilettet men der mangler håndt
     <string name="quest_surface_cycleway_title">"Hvad er belægningen på denne cykelsti?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_answer_differs_along_the_way">"Afviger undervejs ..."</string>
+    <string name="quest_generic_answer_differs_along_the_way">"Afviger undervejs …"</string>
 
     <!-- Fuzzy -->
     <string name="quest_split_way_description">"Hvis det adskiller sig undervejs, er det første trin at opdele vejen. Derefter kan opgaven besvares for hver del separat.
@@ -1512,7 +1512,7 @@ Del det nu?"</string>
     <string name="next">"Næste"</string>
     <string name="tutorial_welcome_to_osm">"Velkommen til OpenStreetMap"</string>
     <string name="tutorial_welcome_to_osm_subtitle">"Det gratis wiki verdenskort"</string>
-    <string name="tutorial_intro">"StreetComplete gør det nemt at bidrage til OpenStreetMap. Den leder automatisk efter detajer i dit område: cykelstier, åbningstider, gadebelysning og meget mere..."</string>
+    <string name="tutorial_intro">"StreetComplete gør det nemt at bidrage til OpenStreetMap. Den leder automatisk efter detajer i dit område: cykelstier, åbningstider, gadebelysning og meget mere…"</string>
     <string name="achievements_empty">"Du har ingen medaljer endnu"</string>
     <string name="quests_empty">"Du har ikke indsendt nogle svar endnu"</string>
     <string name="unsynced_quests_description">"plus %d ændringer der endnu ikke er indsendt."</string>

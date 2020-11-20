@@ -66,7 +66,7 @@
     <string name="map_attribution_osm">"© přispěvatelé OpenStreetMap"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_otherAnswers">"Další odpovědi..."</string>
+    <string name="quest_generic_otherAnswers">"Další odpovědi…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_notApplicable">"Nedá se to určit…"</string>
@@ -167,7 +167,7 @@
     <string name="confirmation_cancel_prev_download_title">"Zrušit aktuální vyhledávání a hledat místo toho zde?"</string>
 
     <!-- Fuzzy -->
-    <string name="notification_downloading">"Vyhledávám úkoly..."</string>
+    <string name="notification_downloading">"Vyhledávám úkoly…"</string>
 
     <!-- Fuzzy -->
     <string name="turn_on_location_request">"Určování polohy je vypnuté. Chcete přejít na nastavení, abyste ho mohli zapnout?"</string>
@@ -255,7 +255,7 @@
     <string name="quest_roofShape_select_one">"Vyberte jeden:"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_roofShape_show_more">"Zobrazit více..."</string>
+    <string name="quest_roofShape_show_more">"Zobrazit více…"</string>
 
     <!-- it is used in generic list, not only for roof shape but rename would break translations -->
     <!-- Fuzzy -->
@@ -1400,7 +1400,7 @@ Mezi populární klávesnice, které podporují spoustu jazyků patří Google G
     <string name="quest_surface_cycleway_title">"Jaký je povrch této cyklostezky?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_answer_differs_along_the_way">"V různých částech různý..."</string>
+    <string name="quest_generic_answer_differs_along_the_way">"V různých částech různý…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_split_way_description">"Pokud má cesta v různých částech různý povrch, je dobré ji nejdříve rozdělit a pak odpovědět na samostatné úkoly v každé její části.
@@ -1565,7 +1565,7 @@ Chcete cestu rozdělit?"</string>
     <string name="tutorial_welcome_to_osm_subtitle">"svobodné wiki mapy světa"</string>
 
     <!-- Fuzzy -->
-    <string name="tutorial_intro">"StreetComplete umožňuje jednoduché přispívání do OpenStreetMap tak, že automaticky vyhledává chybějící údaje ve vašem okolí: cyklostezky, popisná čísla domů, otevírací hodiny a další..."</string>
+    <string name="tutorial_intro">"StreetComplete umožňuje jednoduché přispívání do OpenStreetMap tak, že automaticky vyhledává chybějící údaje ve vašem okolí: cyklostezky, popisná čísla domů, otevírací hodiny a další…"</string>
 
     <!-- Fuzzy -->
     <string name="tutorial_solving_quests">"Jakmile je nalezne, budou tyto chybějící údaje na vaší mapě zobrazeny jako úkoly.
@@ -1847,7 +1847,7 @@ It is not big issue, but it would be nice to have it correctly. -->
     <string name="privacy_html_tileserver2">"&lt;p&gt;Pro zobrazení mapy musí být staženy vektorové dlaždice z %1$s. Pro další informace se podívejte na jejich &lt;a href=\"%2$s\"&gt;prohlášení o ochraně soukromí&lt;/a&gt; .&lt;/p&gt;
 "</string>
     <string name="quest_sidewalk_separately_mapped">"Ano, zobrazen(á) samostatně na mapě"</string>
-    <string name="quest_surface_detailed_answer_impossible_confirmation">"Jste si jisti, že nelze specifikovat povrch? Všimněte si odpovědi „V různých částech různý...“, pomocí které lze rozdělit cestu tam, kde se mění povrch. Odpověď „Nedá se to určit“ použijte tam, kde se jeden povrch, ale není mezi odpověďmi."</string>
+    <string name="quest_surface_detailed_answer_impossible_confirmation">"Jste si jisti, že nelze specifikovat povrch? Všimněte si odpovědi „V různých částech různý…“, pomocí které lze rozdělit cestu tam, kde se mění povrch. Odpověď „Nedá se to určit“ použijte tam, kde se jeden povrch, ale není mezi odpověďmi."</string>
     <string name="quest_surface_detailed_answer_impossible_description">"Prosím v krátkosti specifikujte zdejší povrch, např. „Písečný se záplatami dlažebních kostek“. Maximální délka textu je 255 znaků."</string>
     <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
     <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>

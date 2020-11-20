@@ -22,6 +22,7 @@
 
 package ch.uzh.ifi.accesscomplete.settings
 
+import android.annotation.SuppressLint
 import android.graphics.Bitmap
 import android.os.Bundle
 import android.util.Log
@@ -94,6 +95,7 @@ class OAuthFragment : Fragment(R.layout.fragment_oauth),
         launch { continueAuthentication() }
     }
 
+    @SuppressLint("SetJavaScriptEnabled")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         webView.settings.userAgentString = ApplicationConstants.USER_AGENT

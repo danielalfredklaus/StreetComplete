@@ -49,7 +49,8 @@
         android:layout_height="wrap_content"
         android:padding="8dp"
         android:layout_centerVertical="true"
-        android:src="@drawable/ic_star_white_shadow_32dp"/>
+        android:src="@drawable/ic_star_white_shadow_32dp"
+        android:contentDescription="@null"/>
 
     <TextView
         android:id="@+id/textView"

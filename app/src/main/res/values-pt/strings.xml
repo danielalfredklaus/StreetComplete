@@ -66,7 +66,7 @@
     <string name="map_attribution_osm">"© Contribuidores do OpenStreetMap"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_otherAnswers">"Outras respostas..."</string>
+    <string name="quest_generic_otherAnswers">"Outras respostas…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_notApplicable">"Não sei…"</string>
@@ -253,7 +253,7 @@
     <string name="quest_roofShape_select_one">"Selecionar uma opção:"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_roofShape_show_more">"Mostrar mais..."</string>
+    <string name="quest_roofShape_show_more">"Mostrar mais…"</string>
 
     <!-- it is used in generic list, not only for roof shape but rename would break translations -->
     <!-- Fuzzy -->
@@ -613,7 +613,7 @@ Caso contrário, pode descarregar outro teclado na loja de apps. Alguns dos tecl
     <string name="credits_author_title">"Autoria e manutenção"</string>
 
     <!-- Fuzzy -->
-    <string name="credits_and_more">"e mais..."</string>
+    <string name="credits_and_more">"e mais…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxspeed_answer_living_street">"É uma zona de coexistência"</string>
@@ -1394,7 +1394,7 @@ Caso contrário, pode descarregar outro teclado na loja de apps. Alguns dos tecl
     <string name="quest_surface_cycleway_title">"Qual o tipo de superfície desta ciclo via?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_answer_differs_along_the_way">"Varia ao longo do trajecto..."</string>
+    <string name="quest_generic_answer_differs_along_the_way">"Varia ao longo do trajecto…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_split_way_tutorial">"Toque na via para dividir no ponto onde a resposta é diferente. Tente ser o mais preciso possível, pode fazer zoom como habitualmente"</string>

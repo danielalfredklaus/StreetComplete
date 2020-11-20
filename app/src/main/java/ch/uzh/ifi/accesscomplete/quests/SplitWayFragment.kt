@@ -135,7 +135,7 @@ class SplitWayFragment : Fragment(R.layout.fragment_split_way),
     }
 
     private fun setupFittingToSystemWindowInsets() {
-        view?.setOnApplyWindowInsetsListener { v: View, insets: WindowInsets ->
+        view?.setOnApplyWindowInsetsListener { _, insets: WindowInsets ->
 
             bottomSheetContainer.updateLayoutParams<ViewGroup.MarginLayoutParams> {
                 setMargins(

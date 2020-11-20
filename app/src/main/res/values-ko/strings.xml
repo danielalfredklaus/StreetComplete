@@ -66,7 +66,7 @@
     <string name="map_attribution_osm">"© OpenStreetMap 기여자"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_otherAnswers">"다른 답변..."</string>
+    <string name="quest_generic_otherAnswers">"다른 답변…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_notApplicable">"답할 수 없음…"</string>
@@ -166,7 +166,7 @@
     <string name="confirmation_cancel_prev_download_title">"지금 하는 검색을 멈추고 대신 여기를 스캔하시겠습니까?"</string>
 
     <!-- Fuzzy -->
-    <string name="notification_downloading">"퀘스트를 찾는 중..."</string>
+    <string name="notification_downloading">"퀘스트를 찾는 중…"</string>
 
     <!-- Fuzzy -->
     <string name="turn_on_location_request">"위치 탐색이 꺼져 있습니다. 설정 화면을 여시겠습니까?"</string>
@@ -252,7 +252,7 @@
     <string name="quest_roofShape_select_one">"한 개만 선택하세요"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_roofShape_show_more">"더 보기..."</string>
+    <string name="quest_roofShape_show_more">"더 보기…"</string>
 
     <!-- it is used in generic list, not only for roof shape but rename would break translations -->
     <!-- Fuzzy -->
@@ -610,7 +610,7 @@ StreetComplete는 GPS 위치 정보를 다른 사람과 공유하지 않습니�
     <string name="credits_author_title">"제작자·유지보수자"</string>
 
     <!-- Fuzzy -->
-    <string name="credits_and_more">"기타 등등..."</string>
+    <string name="credits_and_more">"기타 등등…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxspeed_answer_living_street">"주택가 거리입니다"</string>
@@ -1388,7 +1388,7 @@ StreetComplete는 GPS 위치 정보를 다른 사람과 공유하지 않습니�
     <string name="quest_surface_cycleway_title">"이 자전거 도로의 포장재가 무엇입니까?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_answer_differs_along_the_way">"각 부분마다 다릅니다..."</string>
+    <string name="quest_generic_answer_differs_along_the_way">"각 부분마다 다릅니다…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_split_way_description">"구간마다 특성이 다르다면, 먼저 길을 분할하세요. 그런 다음, 각 부분을 터치해 질문에 답을 하세요. 이 길을 분할하시겠습니까?"</string>
@@ -1505,7 +1505,7 @@ StreetComplete는 GPS 위치 정보를 다른 사람과 공유하지 않습니�
     <string name="tutorial_welcome_to_osm">"오픈스트리트맵에 오신 것을 환영합니다"</string>
     <string name="tutorial_welcome_to_osm_subtitle">"자유로운 위키형 세계 지도"</string>
     <string name="tutorial_intro">"StreetComplete를 이용하면 손쉽게 오픈스트리트맵에 기여할 수 있습니다.
-StreetComplete는 여러분 주변의 지도에 없는 데이터가 있는지 찾습니다. 자전거 도로, 건물 번호, 개점 시간 등등..."</string>
+StreetComplete는 여러분 주변의 지도에 없는 데이터가 있는지 찾습니다. 자전거 도로, 건물 번호, 개점 시간 등등…"</string>
     <string name="tutorial_solving_quests">"탐색이 끝나면, 지도에 채워넣어야 할 데이터가 퀘스트의 형태로 지도에 표시됩니다.
 
 여기서 바로 퀘스트를 해결할 수도 있고, 먼저 로그인한 다음에 퀘스트를 해결할 수도 있습니다."</string>

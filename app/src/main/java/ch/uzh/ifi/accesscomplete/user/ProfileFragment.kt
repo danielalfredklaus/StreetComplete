@@ -22,6 +22,7 @@
 
 package ch.uzh.ifi.accesscomplete.user
 
+import android.annotation.SuppressLint
 import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
@@ -29,6 +30,7 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.view.View
+import androidx.core.content.ContextCompat
 import androidx.core.net.toUri
 import androidx.core.view.isGone
 import androidx.fragment.app.Fragment
@@ -81,7 +83,7 @@ class ProfileFragment : Fragment(R.layout.fragment_profile),
 
     override fun onAttach(context: Context) {
         super.onAttach(context)
-        anonAvatar = resources.getDrawable(R.drawable.ic_osm_anon_avatar).createBitmap()
+        anonAvatar = ContextCompat.getDrawable(requireContext(), R.drawable.ic_osm_anon_avatar)!!.createBitmap()
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -155,12 +157,14 @@ class ProfileFragment : Fragment(R.layout.fragment_profile),
         daysActiveText.text = daysActive.toString()
     }
 
+    @SuppressLint("SetTextI18n")
     private fun updateGlobalRankText() {
         val rank = userStore.rank
         globalRankContainer.isGone = rank <= 0 || questStatisticsDao.getTotalAmount() <= 100
         globalRankText.text = "#$rank"
     }
 
+    @SuppressLint("SetTextI18n")
     private suspend fun updateLocalRankText() {
         val statistics = withContext(Dispatchers.IO) {
             countryStatisticsDao.getCountryWithBiggestSolvedCount()

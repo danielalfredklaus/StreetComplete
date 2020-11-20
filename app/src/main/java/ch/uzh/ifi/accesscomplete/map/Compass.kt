@@ -20,6 +20,8 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+@file:Suppress("LocalVariableName", "LocalVariableName", "LocalVariableName", "LocalVariableName", "LocalVariableName", "LocalVariableName", "LocalVariableName", "LocalVariableName", "LocalVariableName", "LocalVariableName", "LocalVariableName", "LocalVariableName", "LocalVariableName", "LocalVariableName", "LocalVariableName", "LocalVariableName", "LocalVariableName", "LocalVariableName", "LocalVariableName", "LocalVariableName", "LocalVariableName", "LocalVariableName", "LocalVariableName")
+
 package ch.uzh.ifi.accesscomplete.map
 
 import android.hardware.*
@@ -93,7 +95,7 @@ class Compass(
         accelerometer?.let { sensorManager.registerListener(this, it, SensorManager.SENSOR_DELAY_UI, sensorHandler) }
         magnetometer?.let { sensorManager.registerListener(this, it, SensorManager.SENSOR_DELAY_UI, sensorHandler) }
 
-        dispatcherThread = Thread(Runnable { dispatchLoop() }, "Compass Dispatcher Thread")
+        dispatcherThread = Thread({ dispatchLoop() }, "Compass Dispatcher Thread")
         dispatcherThread?.start()
     }
 
@@ -120,13 +122,13 @@ class Compass(
         val grav = gravity ?: return
         val geomag = geomagnetic ?: return
 
-        var R = FloatArray(9)
-        val I = FloatArray(9)
-        val success = SensorManager.getRotationMatrix(R, I, grav, geomag)
+        var r = FloatArray(9)
+        val i = FloatArray(9)
+        val success = SensorManager.getRotationMatrix(r, i, grav, geomag)
         if (success) {
-            R = remapToDisplayRotation(R)
+            r = remapToDisplayRotation(r)
             val orientation = FloatArray(3)
-            SensorManager.getOrientation(R, orientation)
+            SensorManager.getOrientation(r, orientation)
             val azimut = orientation[0] - declination
             val pitch = orientation[1]
             val roll = orientation[2]

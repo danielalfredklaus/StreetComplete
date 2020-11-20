@@ -66,7 +66,7 @@
     <string name="map_attribution_osm">"Συνεισφέροντες στο © OpenStreetMap"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_otherAnswers">"Άλλες απαντήσεις..."</string>
+    <string name="quest_generic_otherAnswers">"Άλλες απαντήσεις…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_notApplicable">"Δεν μπορώ να πω…"</string>
@@ -166,7 +166,7 @@
     <string name="confirmation_cancel_prev_download_title">"Σταμάτημα της τρέχουσας αναζήτησης και αντ' αυτού σάρωση εδώ;"</string>
 
     <!-- Fuzzy -->
-    <string name="notification_downloading">"Σάρωση για αναζητήσεις..."</string>
+    <string name="notification_downloading">"Σάρωση για αναζητήσεις…"</string>
 
     <!-- Fuzzy -->
     <string name="turn_on_location_request">"Η τοποθεσία είναι κλειστή. Άνοιγμα των Ρυθμίσεων για ενεργοποίηση τώρα;"</string>
@@ -252,7 +252,7 @@
     <string name="quest_roofShape_select_one">"Επιλέξτε ένα:"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_roofShape_show_more">"Δείξε περισσότερα..."</string>
+    <string name="quest_roofShape_show_more">"Δείξε περισσότερα…"</string>
 
     <!-- it is used in generic list, not only for roof shape but rename would break translations -->
     <!-- Fuzzy -->
@@ -612,7 +612,7 @@
     <string name="credits_author_title">"Δημιουργός και Προγραμματιστής"</string>
 
     <!-- Fuzzy -->
-    <string name="credits_and_more">"και άλλα..."</string>
+    <string name="credits_and_more">"και άλλα…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxspeed_answer_living_street">"Είναι δρόμος κατοίκων"</string>
@@ -1388,7 +1388,7 @@
     <string name="quest_surface_cycleway_title">"Ποια είναι η επιφάνεια του ποδηλατόδρομου εδώ;"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_answer_differs_along_the_way">"Διαφορές κατά μήκος του δρόμου..."</string>
+    <string name="quest_generic_answer_differs_along_the_way">"Διαφορές κατά μήκος του δρόμου…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_split_way_description">"Αν υπάρχουν διαφορές κατά μήκος της διαδρομής, το πρώτο βήμα είναι να την χωρίσουμε. Μετά από αυτό, η αναζήτηση μπορεί να απαντηθεί ξεχωριστά για κάθε διαχωρισμένο τμήμα. Διαχωρισμός τώρα;"</string>

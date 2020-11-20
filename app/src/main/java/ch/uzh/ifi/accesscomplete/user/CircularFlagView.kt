@@ -29,6 +29,7 @@ import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import android.view.View
 import android.view.ViewOutlineProvider
+import androidx.core.content.ContextCompat
 import ch.uzh.ifi.accesscomplete.R
 import ch.uzh.ifi.accesscomplete.ktx.getYamlObject
 import java.util.*
@@ -106,7 +107,7 @@ class CircularFlagView @JvmOverloads constructor(
             if (resId == 0) {
                 drawable = null
             } else {
-                val d = resources.getDrawable(resId)
+                val d = ContextCompat.getDrawable(context, resId)!!
                 val alignment = get(resources, countryCode)
                 boundsOffset = if (alignment != null) {
                     getBoundsOffset(d, alignment)

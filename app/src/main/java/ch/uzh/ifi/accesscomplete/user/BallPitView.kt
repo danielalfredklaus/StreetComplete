@@ -111,7 +111,7 @@ class BallPitView @JvmOverloads constructor(
         bubbleBodyDef.type = BodyType.DYNAMIC
         bubbleBodyDef.fixedRotation = false
 
-        sensorManager = context.getSystemService<SensorManager>()!!
+        sensorManager = context.getSystemService()!!
         accelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
     }
 

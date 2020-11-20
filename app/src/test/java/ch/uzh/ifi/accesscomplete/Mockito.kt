@@ -27,8 +27,8 @@ import org.mockito.Mockito
 import org.mockito.stubbing.OngoingStubbing
 import org.mockito.stubbing.Stubber
 
-fun <T> eq(obj: T): T = Mockito.eq<T>(obj)
-fun <T> any(): T = Mockito.any<T>()
+fun <T> eq(obj: T): T = Mockito.eq(obj)
+fun <T> any(): T = Mockito.any()
 fun <T> capture(argumentCaptor: ArgumentCaptor<T>): T = argumentCaptor.capture()
 inline fun <reified T : Any> argumentCaptor(): ArgumentCaptor<T> =
     ArgumentCaptor.forClass(T::class.java)

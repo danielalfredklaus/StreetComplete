@@ -66,7 +66,7 @@
     <string name="map_attribution_osm">"© OpenStreetMap talkininkai"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_otherAnswers">"Kiti atsakymai..."</string>
+    <string name="quest_generic_otherAnswers">"Kiti atsakymai…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_notApplicable">"Negaliu pasakyti…"</string>
@@ -252,7 +252,7 @@
     <string name="quest_roofShape_select_one">"Parinkite vieną:"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_roofShape_show_more">"Rodyti daugiau..."</string>
+    <string name="quest_roofShape_show_more">"Rodyti daugiau…"</string>
 
     <!-- it is used in generic list, not only for roof shape but rename would break translations -->
     <!-- Fuzzy -->
@@ -613,7 +613,7 @@ Priešingu atveju galite atsisiųsti kitą klaviatūrą programėlių parduotuv�
     <string name="credits_author_title">"Autorius ir prižiūrėtojas"</string>
 
     <!-- Fuzzy -->
-    <string name="credits_and_more">"ir daugiau ..."</string>
+    <string name="credits_and_more">"ir daugiau …"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxspeed_answer_living_street">"Tai gyvenamoji zona"</string>
@@ -1393,7 +1393,7 @@ Dalinai reiškia, kad vežimėlis gali įvažiuoti ir naudotis tualetu, bet nėr
     <string name="quest_surface_cycleway_title">"Kokia čia yra dviračių tako danga?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_answer_differs_along_the_way">"Skirtingose vietose skirtinga..."</string>
+    <string name="quest_generic_answer_differs_along_the_way">"Skirtingose vietose skirtinga…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_split_way_description">"Jei skirtingose vietose skirtinga, pirmas žingsnis yra padalinti kelią. Po to bus galima atsakyti į užduotį kiekvienai daliai atskirai. Padalinti dabar?"</string>

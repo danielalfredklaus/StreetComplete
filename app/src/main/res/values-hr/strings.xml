@@ -36,10 +36,10 @@
     <string name="pref_title_map_cache">"Veličina predmemorije za kartu"</string>
     <string name="map_btn_gps_tracking">"Prati me"</string>
     <string name="map_attribution_osm">"© OpenStreetMap suradnici"</string>
-    <string name="quest_generic_otherAnswers">"Ostali odgovori..."</string>
+    <string name="quest_generic_otherAnswers">"Ostali odgovori…"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_answer_notApplicable">"Ne mogu reći..."</string>
+    <string name="quest_generic_answer_notApplicable">"Ne mogu reći…"</string>
     <string name="quest_generic_confirmation_title">"Jeste li sigurni?"</string>
     <string name="quest_generic_confirmation_yes">"Da, siguran sam"</string>
     <string name="quest_generic_confirmation_no">"Provjeriti ću"</string>
@@ -84,7 +84,7 @@
     <string name="confirmation_cancel_prev_download_title">"Zaustavi trenutnu pretragu i pokreni novu ovdje?"</string>
 
     <!-- Fuzzy -->
-    <string name="notification_downloading">"Tražim zadatke..."</string>
+    <string name="notification_downloading">"Tražim zadatke…"</string>
 
     <!-- Fuzzy -->
     <string name="turn_on_location_request">"Lokacija je isključena. Da otvorim Postavke kako biste je sada uključili?"</string>
@@ -120,7 +120,7 @@
 
     <!-- Fuzzy -->
     <string name="quest_roofShape_select_one">"Odaberite jedno:"</string>
-    <string name="quest_roofShape_show_more">"Prikaži više..."</string>
+    <string name="quest_roofShape_show_more">"Prikaži više…"</string>
 
     <!-- it is used in generic list, not only for roof shape but rename would break translations -->
     <string name="map_btn_zoom_out">"Udalji"</string>
@@ -279,7 +279,7 @@ U suprotnom možete preuzeti drugu tipkovnicu u trgovini aplikacija. Popularne t
     <string name="credits_translations_title">"Prijevodi"</string>
     <string name="credits_contributors_title">"Suradnici koda"</string>
     <string name="credits_author_title">"Autor i održavatelj"</string>
-    <string name="credits_and_more">"i drugi..."</string>
+    <string name="credits_and_more">"i drugi…"</string>
     <string name="quest_maxspeed_answer_living_street">"To je područje smirenog prometa"</string>
     <string name="quest_maxspeed_answer_living_street_confirmation_title">"Dakle, postoji znak poput ovog?"</string>
 
@@ -557,7 +557,7 @@ U suprotnom možete preuzeti drugu tipkovnicu u trgovini aplikacija. Popularne t
     <string name="quest_surface_cycleway_title">"Kakvu površinu ima ovaj dio biciklističke staze?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_answer_differs_along_the_way">"Razlikuje se putem..."</string>
+    <string name="quest_generic_answer_differs_along_the_way">"Razlikuje se putem…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_split_way_description">"Ako se razlikuje putem, prvi korak je razdvajanje puta. Nakon toga, na zadatak se može odgovoriti za svaki podijeljeni dio zasebno.
@@ -609,7 +609,7 @@ Razdvojiti put sada?"</string>
     <string name="tutorial_welcome_to_osm">"Dobrodošli u OpenStreetMap"</string>
     <string name="tutorial_welcome_to_osm_subtitle">"slobodna wiki karta svijeta"</string>
     <string name="tutorial_intro">"StreetComplete olakšava doprinos OpenStreetMapu.
-Automatski traži nedostajuće detalje u vašoj blizini: biciklističke staze, kućne brojeve, radno vrijeme i još mnogo toga ..."</string>
+Automatski traži nedostajuće detalje u vašoj blizini: biciklističke staze, kućne brojeve, radno vrijeme i još mnogo toga …"</string>
     <string name="tutorial_solving_quests">"Jednom pronađeni, nedostajući detalji pojaviti će se na vašoj karti kao zadaci.
 
 Možete ih početi rješavati odmah, a kasnije se prijaviti da biste objavili svoje odgovore."</string>

@@ -71,7 +71,7 @@ class AddSurfaceForm : AImageListQuestAnswerFragment<String, AbstractSurfaceAnsw
         addOrApplyAnswer(SpecificSurfaceAnswer(value))
     }
 
-    protected fun addOrApplyAnswer(surfaceAnswer: SurfaceAnswer) {
+    private fun addOrApplyAnswer(surfaceAnswer: SurfaceAnswer) {
         if (elementHasSidewalk) {
             if (answer is SidewalkSurfaceAnswer) {
                 if (currentSidewalkSide == Listener.SidewalkSide.LEFT) {

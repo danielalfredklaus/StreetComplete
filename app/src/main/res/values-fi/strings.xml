@@ -64,7 +64,7 @@
 
     <!-- Fuzzy -->
     <string name="map_attribution_osm">"© OpenStreetMap tekijät"</string>
-    <string name="quest_generic_otherAnswers">"Muut vastaukset..."</string>
+    <string name="quest_generic_otherAnswers">"Muut vastaukset…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_notApplicable">"Ei tietoa…"</string>
@@ -196,7 +196,7 @@
 
     <!-- Fuzzy -->
     <string name="quest_roofShape_select_one">"Valitse yksi:"</string>
-    <string name="quest_roofShape_show_more">"Näytä lisää..."</string>
+    <string name="quest_roofShape_show_more">"Näytä lisää…"</string>
 
     <!-- it is used in generic list, not only for roof shape but rename would break translations -->
 
@@ -472,7 +472,7 @@ Muutoin, voit ladata toisen näppäimistön sovelluskaupasta. Suosittuja näppä
     <string name="credits_author_title">"Tekijä ja ylläpitäjä"</string>
 
     <!-- Fuzzy -->
-    <string name="credits_and_more">"ja lisää ..."</string>
+    <string name="credits_and_more">"ja lisää …"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxspeed_answer_living_street">"Se on pihakatu"</string>

@@ -1668,7 +1668,7 @@
     <string name="link_pic4review_description">"Вносите вклад в OSM, просматривая фотографии из вашего города"</string>
 
     <!-- Fuzzy -->
-    <string name="link_wiki_description">"Эта вики -- ваш портал во всё, что связано с OpenStreetMap"</string>
+    <string name="link_wiki_description">"Эта вики — ваш портал во всё, что связано с OpenStreetMap"</string>
 
     <!-- Fuzzy -->
     <string name="link_learnosm_description">"Вы новичок в OpenStreetMap? Эта инструкция для вас"</string>

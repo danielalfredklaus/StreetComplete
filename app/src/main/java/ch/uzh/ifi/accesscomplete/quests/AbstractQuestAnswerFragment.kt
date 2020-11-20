@@ -275,10 +275,10 @@ abstract class AbstractQuestAnswerFragment<T> : AbstractBottomSheetFragment(), I
                 .parseAsHtml()
         }
         if (conscriptionNumber != null) {
-            if (streetNumber != null) {
-                return resources.getString(R.string.at_conscription_and_street_number, conscriptionNumber, streetNumber)
+            return if (streetNumber != null) {
+                resources.getString(R.string.at_conscription_and_street_number, conscriptionNumber, streetNumber)
             } else {
-                return resources.getString(R.string.at_conscription_number, conscriptionNumber)
+                resources.getString(R.string.at_conscription_number, conscriptionNumber)
             }
         }
         if (houseNumber != null) {

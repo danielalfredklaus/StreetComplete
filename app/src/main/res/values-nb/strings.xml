@@ -234,7 +234,7 @@
     <string name="quest_roofShape_select_one">"Velg en:"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_roofShape_show_more">"Vis mer..."</string>
+    <string name="quest_roofShape_show_more">"Vis mer…"</string>
 
     <!-- it is used in generic list, not only for roof shape but rename would break translations -->
     <!-- Fuzzy -->
@@ -598,7 +598,7 @@ Hvis ikke kan du laste ned et tastatur med støtte for flere språk som for ekse
     <string name="credits_author_title">"Opphavsmann og vedlikeholder"</string>
 
     <!-- Fuzzy -->
-    <string name="credits_and_more">"og mer..."</string>
+    <string name="credits_and_more">"og mer…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxspeed_answer_living_street">"Er det et gatetun?"</string>
@@ -1375,7 +1375,7 @@ Hvis ikke kan du laste ned et tastatur med støtte for flere språk som for ekse
     <string name="quest_surface_cycleway_title">"Hvordan er overflaten på sykkelstien her?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_generic_answer_differs_along_the_way">"Varierer..."</string>
+    <string name="quest_generic_answer_differs_along_the_way">"Varierer…"</string>
 
     <!-- Fuzzy -->
     <string name="quest_split_way_description">"Hvis det endrer seg langs veien er første steg å dele opp veien der endringene skjer slik at oppdraget kan besvares for hvert veistrekk. Vil du dele opp nå?"</string>
@@ -1413,7 +1413,7 @@ Hvis ikke kan du laste ned et tastatur med støtte for flere språk som for ekse
     <string name="tutorial_welcome_to_osm_subtitle">"det frie dugnadskartet"</string>
     <string name="tutorial_intro">"StreetComplete gjør det svært enkelt å bidra til OpenStreetMap.
 Appen ser automatisk etter ting i nærheten som ikke er registrert
-på kartet - sykkelveier, husnummer, åpningstider og mye annet..."</string>
+på kartet - sykkelveier, husnummer, åpningstider og mye annet…"</string>
     <string name="tutorial_solving_quests">"Dette blir vist på kartet som oppdrag til deg.
 
 Du kan løse noen oppdrag med en gang, for senere og logge inn og sende inn informasjonen du registerer."</string>

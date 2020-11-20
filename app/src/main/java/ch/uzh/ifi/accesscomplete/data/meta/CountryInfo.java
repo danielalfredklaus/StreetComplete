@@ -47,7 +47,6 @@ public class CountryInfo implements Serializable, Cloneable {
 	Boolean isLeftHandTraffic;
 	Integer mobileCountryCode;
 
-
 	public List<String> getLengthUnits() {
 		return lengthUnits;
 	}

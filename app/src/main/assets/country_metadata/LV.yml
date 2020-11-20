@@ -1,9 +1,5 @@
 # Do not edit. Source files are in /res/country_metadata
-atmOperators: [Swedbank, Citadele, SEB, DNB, Luminor, Nordea, DnB Nord, SEB banka, PrivatBank, DnB, Hipotēku banka,
-   DNB nord, '"AS ""SEB banka"""', SEB Unibanka, Krājbanka, DNB banka, BlueOrange]
-chargingStationOperators: [CSDD, Elektrum]
 isLivingStreetKnown: true
 isSlowZoneKnown: true
 mobileCountryCode: 247
 officialLanguages: [lv]
-orchardProduces: [apple, tomato, strawberry, pear, cranberry, blueberry, raspberry, plum, cherry]

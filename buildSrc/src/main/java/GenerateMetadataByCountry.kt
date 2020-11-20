@@ -32,13 +32,13 @@ import java.io.File
 import java.io.StringWriter
 
 /** generate [country code].yml files from [property].yml files, for example
- *  popularSports.yml:
- *  DE: [soccer, tennis]
+ *  speedUnits.yml:
+ *  DE: [miles per hour]
  *
  *  becomes
  *
  *  DE.yml:
- *  popularSports: [soccer, tennis]  */
+ *  speedUnits: [miles per hour] */
 open class GenerateMetadataByCountry : DefaultTask() {
 
     @get:Input var sourceDir: String? = null

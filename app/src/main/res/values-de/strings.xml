@@ -22,6 +22,9 @@
   -->
 
 <resources>
+    <string name="about_summary_authors">"© 2020 Sven Stoll, AccessComplete (basiert auf StreetComplete v26.2)
+
+© 2016–2020 Tobias Zwick und Mitwirkende, StreetComplete v26.2"</string>
     <string name="action_settings">"Einstellungen"</string>
     <string name="oauth_communication_error">"Autorisierungsserver kann nicht erreicht werden"</string>
     <string name="retry">"Erneut versuchen"</string>
@@ -63,7 +66,6 @@
     <string name="turn_on_location_request">"Standort ist aus. Jetzt in die Einstellungen gehen, um ihn anzuschalten?"</string>
     <string name="no_location_permission_warning">"Dein Standort wird benötigt, um nach Aufgaben in deiner Nähe zu suchen."</string>
     <string name="about_title_authors">"Autoren"</string>
-    <string name="about_summary_authors">"© 2016–2020 Tobias Zwick und Mitwirkende"</string>
     <string name="about_title_repository">"Quellcode-Repository"</string>
     <string name="about_summary_repository">"auf GitHub"</string>
     <string name="about_title_report_error">"Fehler melden"</string>
@@ -394,7 +396,7 @@ Zu guter Letzt, vergiss nicht, dich nicht in Gefahr zu begeben: Achte auf deine 
     <string name="quest_smoothness_horrible">Schrecklich</string>
     <string name="quest_smoothness_very_horrible">Sehr schrecklich</string>
     <string name="quest_kerb_raised">Erhöht (> 3cm)</string>
-    <string name="quest_kerb_lowered">Abgesenkt (~ 3cm)</string>
+    <string name="quest_kerb_lowered">Abgesenkt / leicht erhöht (~ 3cm)</string>
     <string name="quest_kerb_type_title">Welche Art von Bordstein existiert an diesem Fussgängerübergang?</string>
     <string name="notifications">Benachrichtigungen</string>
     <string name="jump_to_current_location">Zum aktuellen Standort springen</string>
@@ -469,4 +471,5 @@ Zu guter Letzt, vergiss nicht, dich nicht in Gefahr zu begeben: Achte auf deine 
     <string name="right_side">Rechte Seite</string>
     <string name="note_marker">Markiert, wo die Notiz erstellt wird</string>
     <string name="could_look_like_this">Könnte etwa so aussehen:</string>
+    <string name="quest_smoothness_value_relates_to_wheeled_vehicles">"Die Antwort bezieht sich auf die Benutzbarkeit des Abschnitts für Radfahrzeuge basierend auf der Oberflächengleichmäßigkeit (und unabhängig von der vorhanden Breite). "</string>
 </resources>

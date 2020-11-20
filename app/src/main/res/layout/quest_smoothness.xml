@@ -21,9 +21,16 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/quest_smoothness_value_relates_to_wheeled_vehicles" />
 
     <com.google.android.material.slider.Slider
         android:id="@+id/valueSlider"
@@ -46,13 +53,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:text="Name" />
 
         <TextView
             android:id="@+id/valueDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp" />
+            android:layout_marginTop="4dp"
+            tools:text="Description" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -68,7 +77,8 @@
             android:layout_gravity="start"
             android:layout_marginTop="4dp"
             android:contentDescription="@string/example_image"
-            android:scaleType="fitStart" />
+            android:scaleType="fitStart"
+            tools:src="@drawable/smoothness_excellent" />
     </LinearLayout>
 
 </LinearLayout>

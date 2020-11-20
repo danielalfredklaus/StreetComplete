@@ -143,7 +143,6 @@
     <string name="about_title_authors">"作者"</string>
 
     <!-- Fuzzy -->
-    <string name="about_summary_authors">"© 2016–2020 Tobias Zwick 和貢獻者們"</string>
 
     <!-- Fuzzy -->
     <string name="about_title_repository">"原始碼倉儲"</string>

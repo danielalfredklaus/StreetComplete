@@ -57,8 +57,8 @@ android {
         applicationId = "ch.uzh.ifi.accesscomplete"
         minSdkVersion(24)
         targetSdkVersion(29)
-        versionCode = 2605
-        versionName = "26.2"
+        versionCode = 1
+        versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -83,7 +83,6 @@ android {
         isAbortOnError = false
     }
 }
-
 
 
 val keystorePropertiesFile = rootProject.file("keystore.properties")

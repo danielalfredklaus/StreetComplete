@@ -143,9 +143,6 @@
     <string name="about_title_authors">"Auteurs"</string>
 
     <!-- Fuzzy -->
-    <string name="about_summary_authors">"© 2016–2020 Tobias Zwick en medewerkenden"</string>
-
-    <!-- Fuzzy -->
     <string name="about_title_repository">"Broncode-repo"</string>
 
     <!-- Fuzzy -->

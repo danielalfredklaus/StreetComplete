@@ -90,15 +90,12 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_description">"come riportato sul cartello, le abbreviazioni vanno scritte per esteso:"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_description">"Se il nome può essere scritto senza un'abbreviazione, allora dovrebbe essere scritto per intero. Molte abbreviazioni comuni vengono automaticamente rese per esteso durante la digitazione."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_positive">"Nessuna abbreviazione"</string>
 
     <!-- Fuzzy -->
 
@@ -542,7 +539,6 @@ Tuttavia, prima di caricare le modifiche, l’app fa una verifica su un &lt;a hr
     <string name="quest_wheelchairAccess_limited_description_public_transport">"\"Parzialmente\" significa che esiste almeno un gradino di accesso."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_title_name">"Il nome %s contiene un'abbreviazione?"</string>
 
     <!-- Fuzzy -->
 
@@ -557,29 +553,20 @@ Tuttavia, prima di caricare le modifiche, l’app fa una verifica su un &lt;a hr
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_simple">"%1$s - %2$s"</string>
-
-    <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_native">"%1$s - %2$s (%3$s)"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_title">"Layout della tastiera mancante?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_settings">"Apri le impostazioni"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_store">"Apri lo store"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_description">"Se si utilizza una tastiera predefinita, le probabilità sono che è possibile abilitare semplicemente il layout della tastiera per la lingua necessaria nelle impostazioni del metodo di immissione.
-
-Altrimenti, è possibile scaricare un'altra tastiera nell'archivio di app. Le tastiere popolari che supportano molte lingue sono Google Gboard, SwiftKey Keyboard e Multiling O Keyboard"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_nolanguage">"(non specificato)"</string>
+
+    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
 
@@ -805,7 +792,6 @@ Altrimenti, è possibile scaricare un'altra tastiera nell'archivio di app. Le ta
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cycleway_value_sidewalk_allowed">"nessuna, ma i ciclisti possono utilizzare il marciapiede"</string>
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Avanzate"</string>
@@ -1227,16 +1213,13 @@ Altrimenti, è possibile scaricare un'altra tastiera nell'archivio di app. Le ta
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_title">"Come sono disposte  le corsie pedonali e ciclabili?"</string>
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"Per caricare manualmente le tue modifiche, usa il pulsante simile a questo nella barra degli strumenti."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_separated">"Separati tra loro"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_mixed">"Ciclisti e pedoni condividono lo stesso spazio"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxheight_title">"Qual è il limite di altezza qui?"</string>
@@ -1635,7 +1618,6 @@ Infine, ricorda la sicurezza: stai attento dell'ambiente circostante e non entra
     <string name="link_category_goodies_description">"Cose interessanti legate alla mappa da provare"</string>
 
     <!-- Fuzzy -->
-    <string name="link_cyclosm_description">"Una mappa per ciclisti"</string>
 
     <!-- Fuzzy -->
     <string name="link_wheelmap_description">"Una mappa per trovare luoghi accessibili in sedia a rotelle"</string>
@@ -1834,10 +1816,6 @@ riconoscimento"</string>
     <string name="quest_sidewalk_separately_mapped">"Sì, mostrata separatamente sulla mappa"</string>
     <string name="quest_surface_detailed_answer_impossible_confirmation">"Sei sicuro che è impossibile specificare la superficie? Ricorda che c'è l'opzione \"Cambia lungo la via\" che ti permette di tagliare la via dove la superficie cambia. Usa \"Non so\" se c'è una singola superficie ma nessuna risposta adatta."</string>
     <string name="quest_surface_detailed_answer_impossible_description">"Specifica brevemente il tipo di superficie qui, per esempio \"sabbioso con zone in ciottolato\". La lunghezza del testo è limitata a 255 caratteri."</string>
-    <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
-    <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>
-    <string name="quest_streetName_menuItem_international">"Internazionale"</string>
-    <string name="quest_streetName_menuItem_romanized">"alfabeto latino"</string>
     <string name="quest_oneway_tutorial">"La strada nell'illustrazione è ruotata come sulla mappa alla posizione della puntina. Attento alla direzione indicata. "</string>
     <string name="at_housename">"Nome della casa %s:"</string>
     <string name="at_conscription_and_street_number">"Numero di coscrizione %1$s, orientamento dei numero %2$s:"</string>

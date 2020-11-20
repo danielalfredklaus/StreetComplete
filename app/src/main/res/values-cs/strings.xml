@@ -96,15 +96,12 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_description">"Přesně tak, jak je napsáno na ceduli se jménem, zkratky se vypisují celým slovem:"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_description">"Pokud jde jméno zapsat bez zkratek, tak by se měly rozepsat. Pár obvyklých zkratek se během jejich psaní automaticky rozepisuje, ale ne všechny."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_positive">"Žádná zkratka"</string>
 
     <!-- Fuzzy -->
 
@@ -550,7 +547,6 @@ Nicméně před nahráním vašich změn aplikace zkontroluje pomocí &lt;a href
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Částečně znamená, že tu není víc než jeden schod bránící v přístupu."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_title_name">"Je v názvu %s zkratka?"</string>
 
     <!-- Fuzzy -->
 
@@ -565,30 +561,20 @@ Nicméně před nahráním vašich změn aplikace zkontroluje pomocí &lt;a href
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_simple">"%1$s – %2$s"</string>
-
-    <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_native">"%1$s – %2$s (%3$s)"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_title">"Chybí vám na klávesnici znaky?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_settings">"Otevřít nastavení"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_store">"Otevřít Google Play obchod"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_description">"Pokud používáte výchozí klávesnici, je možné, že bude stačit v nastavení pouze povolit znakovou sadu jazyka, který potřebujete pro psaní.
-
-Jinak také můžete stáhnout v obchodě s aplikacemi jinou klávesnici.
-Mezi populární klávesnice, které podporují spoustu jazyků patří Google Gboard, SwiftKey Keyboard a Multiling O Keyboard."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_nolanguage">"(neurčeno)"</string>
+
+    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
 
@@ -814,7 +800,6 @@ Mezi populární klávesnice, které podporují spoustu jazyků patří Google G
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cycleway_value_sidewalk_allowed">"Není, ale cyklisté můžou používat chodník"</string>
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Pokročilé"</string>
@@ -1236,16 +1221,13 @@ Mezi populární klávesnice, které podporují spoustu jazyků patří Google G
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_title">"Jakým způsobem je na tomto chodníku začleněna cyklostezka?"</string>
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"Pro nahrání Vašich změn ručně použijte tlačítko v nabídce, které vypada takto:"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_separated">"Cyklostezka je oddělena od části pro chodce"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_mixed">"Cyklisté a chodci sdílejí stejný prostor"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxheight_title">"Jaké je zde výškové omezení?"</string>
@@ -1645,7 +1627,6 @@ A nakonec, nezapomeňte na bezpečnost - všímejte si vašeho okolí a nevstupu
     <string name="link_category_goodies_description">"Zajímavé funkce související s mapou, které můžete zkusit"</string>
 
     <!-- Fuzzy -->
-    <string name="link_cyclosm_description">"Mapa pro cyklisty"</string>
 
     <!-- Fuzzy -->
     <string name="link_wheelmap_description">"Mapa pro nalezení míst s bezbariérovým přístupem"</string>
@@ -1849,10 +1830,6 @@ It is not big issue, but it would be nice to have it correctly. -->
     <string name="quest_sidewalk_separately_mapped">"Ano, zobrazen(á) samostatně na mapě"</string>
     <string name="quest_surface_detailed_answer_impossible_confirmation">"Jste si jisti, že nelze specifikovat povrch? Všimněte si odpovědi „V různých částech různý…“, pomocí které lze rozdělit cestu tam, kde se mění povrch. Odpověď „Nedá se to určit“ použijte tam, kde se jeden povrch, ale není mezi odpověďmi."</string>
     <string name="quest_surface_detailed_answer_impossible_description">"Prosím v krátkosti specifikujte zdejší povrch, např. „Písečný se záplatami dlažebních kostek“. Maximální délka textu je 255 znaků."</string>
-    <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
-    <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>
-    <string name="quest_streetName_menuItem_international">"mezinárodní"</string>
-    <string name="quest_streetName_menuItem_romanized">"latinkou"</string>
     <string name="quest_oneway_tutorial">"Cesta na ilustraci je otočená stejně jako na mapě v místě špendlíku. Všimněte si uvedeného směru. "</string>
     <string name="at_housename">"Jméno budovy %s:"</string>
     <string name="at_conscription_and_street_number">"Číslo popisné %1$s, orientační číslo %2$s:"</string>

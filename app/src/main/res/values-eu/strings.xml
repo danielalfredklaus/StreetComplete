@@ -95,15 +95,12 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_description">"Kaleko errotuluan agertu bezala, laburdurak hedatuta:"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_description">"Izena laburdura gabe adierazi badaiteke, orduan hedatu behar da. Ohiko laburdurak automatikoki hedatuko dira idatzi ahala, baina ez denak."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_positive">"Laburdurarik ez"</string>
 
     <!-- Fuzzy -->
 
@@ -547,7 +544,6 @@ Hala ere, zure aldaketak igo aurretik, aplikazioak nire zerbitzariko &lt;a href=
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Partzialak esan nahi du ez dagoela eskailera-urrats bat baino gehiago sartzeko."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_title_name">"%s izenak laburdurarik al du?"</string>
 
     <!-- Fuzzy -->
 
@@ -562,30 +558,21 @@ Hala ere, zure aldaketak igo aurretik, aplikazioak nire zerbitzariko &lt;a href=
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_simple">"%1$s - %2$s"</string>
-
-    <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_native">"%1$s - %2$s (%3$s)"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_title">"Teklatu-diseinua falta zaizu?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_settings">"Ireki ezarpenak"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_store">"Bisitatu denda"</string>
+
+    <!-- Fuzzy -->
 
     <!-- Only closed and privative keyboards mentioned? :( -->
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_description">"Lehenetsitako teklatu bat erabiltzen baduzu litekeena sarrera metodoen ezarpenetan gaitu dezakezu behar duzun hizkuntzaren teklatu-diseinua.
-
-Bestela beste teklatu bat instalatu dezakezu. Hainbat hizkuntza onartzen dituzte AnySoft Keyboard, Google Gboard, Swiftkey Keyboard edo Multiling O Keyboard."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_nolanguage">"(zehaztu gabe)"</string>
 
     <!-- Fuzzy -->
 
@@ -810,7 +797,6 @@ Bestela beste teklatu bat instalatu dezakezu. Hainbat hizkuntza onartzen dituzte
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cycleway_value_sidewalk_allowed">"bat ere ez, baina bizikletek espalioan ibiltzeko baimena dute"</string>
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Aurreratua"</string>
@@ -1230,16 +1216,13 @@ Bestela beste teklatu bat instalatu dezakezu. Hainbat hizkuntza onartzen dituzte
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_title">"Nola dago oinezkoen eta ziklisten bidea antolatuta hemen?"</string>
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"Zure aldaketak eskuz igotzeko, tresna-barran dagoen botoia sakatu, itxura hau duena"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_separated">"Bata besteaz banatuta"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_mixed">"Ziklistek eta oinezkoek espazio bera partekatzen dute"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxheight_title">"Zein da altuera-muga hemen?"</string>
@@ -1634,7 +1617,6 @@ Bukatzeko, tentuz ibili: Adi zure inguruneari eta ez sartu jabetza pribatuko ere
     <string name="link_category_goodies_description">"Mapekin zerikusia duten gauzak, zuk probatzeko"</string>
 
     <!-- Fuzzy -->
-    <string name="link_cyclosm_description">"Txirrindularientzako mapa"</string>
 
     <!-- Fuzzy -->
     <string name="link_wheelmap_description">"Gurpildun aulkiarentzat irisgarriak diren tokiak aurkitzeko mapa"</string>
@@ -1798,10 +1780,6 @@ aktibo"</string>
 mailak"</string>
     <string name="quest_sidewalk_separately_mapped">"Bai, mapan aparte erakutsita"</string>
     <string name="quest_surface_detailed_answer_impossible_description">"Mesedez, azaldu laburki nolako gainazala dagoen hemen, adibidez \"hondarra, harrikoxkor zatiekin\". Testuaren luzeera gehienez 255 karakterekoa da."</string>
-    <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
-    <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>
-    <string name="quest_streetName_menuItem_international">"internazionala"</string>
-    <string name="quest_streetName_menuItem_romanized">"latindar alfabetoan"</string>
     <string name="at_housename">"Etxearen izena %s:"</string>
     <string name="at_conscription_and_street_number">"Konskripzio zenbakia %1$s, orientazio zenbakia %2$s:"</string>
 

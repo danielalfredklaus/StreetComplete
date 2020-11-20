@@ -95,15 +95,12 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_description">"com està escrita en el senyal del carrer, les abreviatures s'expandeixen:"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_description">"Si el nom es pot escriure sense cap abreviatures, aleshores s'expandirà. Moltes abreviatures comuns s'expandeixen automàticament en escriure, però potser no totes."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_positive">"Sense abreviatures"</string>
 
     <!-- Fuzzy -->
 
@@ -547,7 +544,6 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Parcialment significa que no hi ha més d'un esglaó per accedir-hi."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_title_name">"Abreviatura amb el nom %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -562,29 +558,20 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_simple">"%1$s - %2$s"</string>
-
-    <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_native">"%1$s - %2$s (%3$s)"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_title">"Hi falta la configuració del teclat?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_settings">"Configuració oberta"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_store">"Botiga oberta"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_description">"Si utilitzeu un teclat per defecte, és probable que simplement activeu la configuració del teclat per a l'idioma que necessiteu a la configuració del mètode d'entrada.
-
-En cas contrari, podeu baixar un altre teclat a la botiga d'aplicacions. Els teclats populars que suporten molts idiomes són el teclat Google Gboard, SwiftKey Keyboard i Multiling O Keyboard."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_nolanguage">"(sense especificar)"</string>
+
+    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
 
@@ -809,7 +796,6 @@ En cas contrari, podeu baixar un altre teclat a la botiga d'aplicacions. Els tec
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cycleway_value_sidewalk_allowed">"Cap, però els ciclistes són permesos damunt la vorera"</string>
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Avançat"</string>
@@ -1230,16 +1216,13 @@ En cas contrari, podeu baixar un altre teclat a la botiga d'aplicacions. Els tec
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_title">"Com estan separats el carril bici i la vorera?"</string>
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"Per pujar els teus canvis manualment, usa el botó a la barra d'eines que és així."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_separated">"Segregat l'un de l'altre"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_mixed">"Ciclistes i vianants ocupen el mateix espai"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxheight_title">"Quin és el límit d'alçada aquí?"</string>
@@ -1550,7 +1533,6 @@ En cas contrari, podeu baixar un altre teclat a la botiga d'aplicacions. Els tec
 
     <!-- Fuzzy -->
     <string name="link_category_maps_title">"Mapes"</string>
-    <string name="link_cyclosm_description">"Un mapa per a ciclistes"</string>
     <string name="link_wheelmap_description">"Un mapa per a trobar llocs accessibles amb cadira de rodes"</string>
     <string name="link_vespucci_description">"Editor avançat de l'OSM per a l'Android"</string>
     <string name="link_opnvkarte_description">"Un mapa de rutes i parades de transport públic"</string>
@@ -1570,8 +1552,6 @@ En cas contrari, podeu baixar un altre teclat a la botiga d'aplicacions. Els tec
     <string name="user_statistics_filter_by_quest_type">"per tipus de missió"</string>
     <string name="user_profile_global_rank">"Global"</string>
     <string name="user_profile_days_active">"Dies actiu"</string>
-    <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
-    <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>
     <string name="at_housename">"Nom de la casa %s:"</string>
     <string name="at_conscription_and_street_number">"Número de circumscripció %1$s, nombre d'orientació %2$s:"</string>
 

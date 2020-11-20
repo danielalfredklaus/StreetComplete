@@ -95,15 +95,12 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_description">"തെരുവ് ചിഹ്നത്തിൽ എഴുതിയിരിക്കുന്നതുപോലെ, ചുരുക്കരൂപങ്ങൾ വികസിപ്പിച്ചു കൊണ്ട്"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_description">"ഒരു ചുരുക്കെഴുത്ത് ഇല്ലാതെ പേര് സ്പെല്ലിംഗ് ആണെങ്കിൽ, അത് വിപുലമാക്കണം. എല്ലാം ഇല്ലെങ്കിലും നിങ്ങൾ സാധാരണ ടൈപ്പ് ചെയ്യുമ്പോൾ തന്നെ പല ചുരുക്കെഴുത്തും വികസിപ്പിക്കുന്നു."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_positive">"ചുരുക്കെഴുത്ത് ഇല്ല"</string>
 
     <!-- Fuzzy -->
 
@@ -541,7 +538,6 @@
     <string name="quest_wheelchairAccess_limited_description_public_transport">"ഭാഗികമായി അർത്ഥമാക്കുന്നത് ഇവിടെ ഒന്നിൽ കൂടുതൽ ചവിട്ടുപടികൾ ഇല്ല എന്നാണ്."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_title_name">"%s എന്ന ഈ സ്ഥലത്തിൻ്റെ ചുരുക്കപ്പേര് എന്താണ്?"</string>
 
     <!-- Fuzzy -->
 
@@ -554,27 +550,20 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_simple">"%1$s – %2$s"</string>
-
-    <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_native">"%1$s – %2$s (%3$s)"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_title">"കീബോർഡ് ലേഔട്ട് കാണുന്നില്ലെ?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_settings">"സജ്ജീകരണങ്ങൾ തുറക്കുക"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_store">"ആപ്പ് സ്റ്റോർ സന്ദർശിക്കുക"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_description">"നിങ്ങൾ ഒരു ഡിഫാൾട്ട് കീബോർഡ് ഉപയോഗിക്കുകയാണെങ്കിൽ, ഇൻപുട്ട് രീതി ക്രമീകരണങ്ങളിൽ നിങ്ങൾക്ക് ആവശ്യമുള്ള ഭാഷയ്ക്കായി കീബോർഡ് ലേഔട്ട് പ്രവർത്തനക്ഷമമാക്കാനുള്ള അവസരമുണ്ട്. അല്ലെങ്കിൽ, മറ്റ് കീബോഡ് ആപ്പ് സ്റ്റോറിൽ നിന്ന് ഡൗൺലോ‍ഡ് ചെയ്യാം.  ഗൂഗിൾ ജിബോർഡ്, സ്വിഫ്റ്റ്കീ ബോർഡ്, മൾട്ടി ഒ കീബോർഡ് എന്നിവ പ്രശസ്തമായ ബഹുഭാഷാ കീബോർഡുകളാണ്."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_nolanguage">"(വ്യക്തമാക്കാത്ത)"</string>
+
+    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
 
@@ -799,7 +788,6 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cycleway_value_sidewalk_allowed">"പറ്റില്ല, പക്ഷേ സൈക്കിൾ സവാരിക്കാർക്ക് പാർശ്വഭാഗത്ത്‌ കൂടെ നീങ്ങാം"</string>
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"ഉയർന്ന വിഭാഗം"</string>
@@ -1215,16 +1203,13 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_title">"ഇവിടെ എങ്ങനെയാണ്‌ നടപ്പാതയും സൈക്കിൾ‌പാതയും സ്ഥാപിച്ചിരിക്കുന്നത്?"</string>
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"നിങ്ങളുടെ നൽകിയ മാറ്റങ്ങൾ സ്വമേധയാ അപ്‌ലോഡു ചെയ്യാൻ, ഇതുപോലുള്ള ടൂൾബാറിലെ ബട്ടൺ ഉപയോഗിക്കുക."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_separated">"പരസ്പരം വേർതിരിച്ചിരിക്കുന്നു"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_mixed">"സൈക്കിൾ യാത്രക്കാരും കാൽനടയാത്രക്കാരും ഒരേ പാത പങ്കിടുന്നു"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxheight_title">"ഇവിടെ ഉയര പരിധി എത്രയാണ്?"</string>
@@ -1481,7 +1466,6 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
     <string name="at_housename">"വീട്ടുപേര് %s:"</string>
     <string name="at_conscription_and_street_number">"നിർബന്ധിത നമ്പർ %1$s, ക്രമീകരണ നമ്പർ %2$s:"</string>
 

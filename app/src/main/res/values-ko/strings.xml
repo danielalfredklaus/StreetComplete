@@ -95,15 +95,12 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_description">"도로명 표지판에 표기된 명칭 그대로 입력해야 합니다."</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_description">"만약 이름에 약어가 없다면 넣어 줘야 합니다. 일반적인 약어 대부분은 당신이 입력할 때 자동으로 추가되지만, 항상 그렇지는 않습니다."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_positive">"약어 없음"</string>
 
     <!-- Fuzzy -->
 
@@ -545,7 +542,6 @@ StreetComplete는 GPS 위치 정보를 다른 사람과 공유하지 않습니�
     <string name="quest_wheelchairAccess_limited_description_public_transport">"이곳에 접근할 때 계단 하나만 있다는 것을 (부분적으로) 의미합니다."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_title_name">"이름 %s의 축약형이 무엇입니까?"</string>
 
     <!-- Fuzzy -->
 
@@ -560,29 +556,20 @@ StreetComplete는 GPS 위치 정보를 다른 사람과 공유하지 않습니�
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_simple">"%1$s - %2$s"</string>
-
-    <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_native">"%1$s - %2$s (%3$s)"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_title">"키보드 레이아웃이 없습니까?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_settings">"설정 열기"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_store">"앱 스토어로 이동"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_description">"기본 키보드를 사용하고 있다면, 키보드 설정에서 원하는 언어의 키보드를 간단하게 활성화할 수 있습니다.
-
-기본 키보드를 사용하고 있지 않다면, 앱 스토어에서 많은 언어를 지원하는 키보드를 다운로드하세요. 대표적으로 구글 지보드, SwiftKey Keyboard, Multiling O Keyboard가 있습니다."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_nolanguage">"(미지정)"</string>
+
+    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
 
@@ -807,7 +794,6 @@ StreetComplete는 GPS 위치 정보를 다른 사람과 공유하지 않습니�
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cycleway_value_sidewalk_allowed">"없지만 인도를 이용할 수 있음"</string>
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"상세"</string>
@@ -1225,16 +1211,13 @@ StreetComplete는 GPS 위치 정보를 다른 사람과 공유하지 않습니�
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_title">"인도와 자전거 도로가 여기에 어떻게 놓여 있습니까?"</string>
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"변경한 내용을 수동으로 업로드하려면 툴바에서 이렇게 생긴 버튼을 사용하세요."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_separated">"서로 분리됨"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_mixed">"자전거와 사람이 같은 공간을 공유함"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxheight_title">"여기의 높이 제한은 얼마입니까?"</string>
@@ -1535,7 +1518,6 @@ StreetComplete는 여러분 주변의 지도에 없는 데이터가 있는지 �
     <string name="link_category_showcase_description">"오픈스트리트맵 기반 서비스와 앱"</string>
     <string name="link_category_goodies_title">"기타 사이트"</string>
     <string name="link_category_goodies_description">"한번쯤 다뤄 볼 만한 흥미로운 지도 관련 사이트"</string>
-    <string name="link_cyclosm_description">"자전거 이용자들을 위한 지도"</string>
     <string name="link_wheelmap_description">"휠체어가 접근할 수 있는 곳을 찾는 지도"</string>
     <string name="link_touch_mapper_description">"점자 지도를 손쉽게 만들 수 있습니다"</string>
     <string name="link_mapy_tactile_description">"시각 장애인들을 위한 다양한 배율의 점자 지도"</string>
@@ -1593,10 +1575,6 @@ StreetComplete는 여러분 주변의 지도에 없는 데이터가 있는지 �
     <string name="quest_sidewalk_separately_mapped">"네, 지도에서 분리되어 보입니다"</string>
     <string name="quest_surface_detailed_answer_impossible_confirmation">"\"각 부분마다 다릅니다\"를 선택하면 선을 포장재가 바뀌는 곳을 기준으로 자를 수 있습니다. \"답할 수 없음\"은 도로의 포장재가 답변 목록에 없을 때 선택합니다."</string>
     <string name="quest_surface_detailed_answer_impossible_description">"포장재의 특성을 간략하게(ex. \"조약돌 사이사이에 모래가 들어가 있음\") 적어 주세요. 최대 255자까지 적을 수 있습니다."</string>
-    <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
-    <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>
-    <string name="quest_streetName_menuItem_international">"국제 명칭"</string>
-    <string name="quest_streetName_menuItem_romanized">"라틴 문자로 쓰여 있음"</string>
     <string name="quest_oneway_tutorial">"아래 그림의 도로는 지도에서 핀이 가리키는 위치의 도로와 같은 방향으로 돌아가 있습니다. 화살표의 방향을 참고하세요. "</string>
     <string name="at_housename">"건물 명칭 %s:"</string>
     <string name="at_conscription_and_street_number">"징병 번호 %1$s, 방위각 %2$s:"</string>

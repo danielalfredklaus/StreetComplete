@@ -85,15 +85,12 @@
     <string name="quest_leave_new_note_no">"Ei, piilota"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_description">"kuten kirjoitettu tienviitassa, lyhennykset laajennettuna:"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_description">"Jos nimi pystytään sanomaan ilman lyhennystä, se myös kirjoitetaan ilman. Monet yleiset lyhenteet laajennetaan automaattisesti kirjoitettaessa, muttei kaikkia."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_positive">"Ei lyhennettä"</string>
 
     <!-- Fuzzy -->
 
@@ -419,7 +416,6 @@ Kuten mainittu, sovellus on suoraan yhteydessä OSM järjestelmään. Joka tapau
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Osittain tarkoittaa että paikassa on vain yksi askelma päästäksesi sisälle."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_title_name">"Lyhenne nimessä %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -432,27 +428,18 @@ Kuten mainittu, sovellus on suoraan yhteydessä OSM järjestelmään. Joka tapau
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_simple">"%1$s - %2$s"</string>
-
-    <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_native">"%1$s - %2$s (%3$s)"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_title">"Näppäimistöasettelu puuttuu?"</string>
-    <string name="quest_streetName_cantType_open_settings">"Avaa asetukset"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_store">"Avaa sovelluskauppa"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_description">"Jos käytät vakionäppäimistöä, on mahdollista että voit kytkeä tarvitsemasi kielen syöttömenetelmän asetuksista.
-
-Muutoin, voit ladata toisen näppäimistön sovelluskaupasta. Suosittuja näppäimistöjä jotka tukevat lukuisia kieliä ovat Google Gboard, SwiftKey Keyboard ja Multiling O Keyboard."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_nolanguage">"(määrittämätön)"</string>
+
+    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
 
@@ -665,7 +652,6 @@ Muutoin, voit ladata toisen näppäimistön sovelluskaupasta. Suosittuja näppä
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cycleway_value_sidewalk_allowed">"ei mitään, mutta pyöräilijät sallitaan jalkakäytävällä"</string>
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Edistyneet"</string>
@@ -1083,16 +1069,13 @@ Muutoin, voit ladata toisen näppäimistön sovelluskaupasta. Suosittuja näppä
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_title">"Miten kevyenliikenteenväylä on jaettu jalankulkijoille ja pyöräilijöille?"</string>
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"Tallentaaksesi muutoksesi manuaalisesti, käytä seuraavan näköistä nappia työkalurivillä."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_separated">"Rinnakkain erillään toisista"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_mixed">"Yhdistetty pyörätie ja jalkakäytävä"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxheight_title">"Mikä on suurin sallittu korkeus täällä?"</string>
@@ -1488,7 +1471,6 @@ Lopulta, muista turvallisuus: huomio ympäristösi ja elä mene yksityisalueille
     <string name="link_category_goodies_description">"Mielenkiintoisia kattoihin liittyviä asioita kokeiltavaksesi"</string>
 
     <!-- Fuzzy -->
-    <string name="link_cyclosm_description">"Kartta pyöräilijöille"</string>
 
     <!-- Fuzzy -->
     <string name="link_wheelmap_description">"Kartta löytääksesi pyörätuoleille soveltuvat paikat"</string>
@@ -1684,10 +1666,6 @@ päiviä"</string>
     <string name="quest_sidewalk_separately_mapped">"Kyllä, näytetään erikseen kartalla."</string>
     <string name="quest_surface_detailed_answer_impossible_confirmation">"Oletko varma, ettei pintaa pysty määrittelemään tarkemmin? Huomioi, että \"eroaa pitkin matkaa\" mahdollistaa tien katkaiseminen sieltä, missä pinta vaihtuu. Paina \"en osaa sanoa\", jos kyseessä on yksi pintamateriaali, mutta vaihtoehtoa ei ole valittavissa."</string>
     <string name="quest_surface_detailed_answer_impossible_description">"Määritä tässä lyhyesti pintamateriaali, esimerkiksi \"hiekkainen sisältäen mukulakiviä\".  Tekstin pituus on rajoitettu 255 merkkiin."</string>
-    <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
-    <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>
-    <string name="quest_streetName_menuItem_international">"kansainvälinen"</string>
-    <string name="quest_streetName_menuItem_romanized">"Latinalaisin aakosin"</string>
     <string name="quest_oneway_tutorial">"Kuvassa olevaa tietä kierretään samalla tavalla kuin kartalla on sijainnissa.  Huomaa ilmoitettu suunta."</string>
     <string name="at_housename">"Talon nimi %s:"</string>
     <string name="at_conscription_and_street_number">"Rekisterinumero %1$s, suuntausnumero %2$s:"</string>

@@ -95,15 +95,12 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_description">"Digitar tal qual a placa da rua. As abreviaturas são expandidas automaticamente."</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_description">"Se o nome puder ser pronunciado sem abreviatura, então deve ser expandido. As abreviaturas mais comuns são expandidas automaticamente, mas nem todas."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_positive">"Sem abreviatura"</string>
 
     <!-- Fuzzy -->
 
@@ -548,7 +545,6 @@ Contudo, antes enviar as suas alterações, a aplicação confirma com &lt;a hre
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Parcialmente significa que não existe mais do que um degrau para aceder ao local."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_title_name">"Abreviatura no nome %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -563,29 +559,20 @@ Contudo, antes enviar as suas alterações, a aplicação confirma com &lt;a hre
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_simple">"%1$s - %2$s"</string>
-
-    <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_native">"%1$s - %2$s (%3$s)"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_title">"Falta o layout do teclado?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_settings">"Abrir definições"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_store">"Visitar a loja"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_description">"Se utiliza um teclado padrão, é provável que tenha de configurar o layout do teclado, nas opções de métodos de entrada, para o idioma que necessita.
-
-Caso contrário, pode descarregar outro teclado na loja de apps. Alguns dos teclados mais populares e que suportam vários idiomas são o Google Gboard, SwiftKey Keyboard e Multiling O Keyboard."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_nolanguage">"(não especificado)"</string>
+
+    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
 
@@ -811,7 +798,6 @@ Caso contrário, pode descarregar outro teclado na loja de apps. Alguns dos tecl
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cycleway_value_sidewalk_allowed">"nenhuma faixa, mas é permitido aos ciclistas utilizarem o passeio"</string>
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Avançado"</string>
@@ -1230,17 +1216,14 @@ Caso contrário, pode descarregar outro teclado na loja de apps. Alguns dos tecl
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_title">"Esta ciclovia e via pedonal são separadas?"</string>
 
     <!-- Rui, justifique esta tradução. Não é o que é solicitado para traduzir de todo. -->
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"Para enviar as suas alterações para o OpenStreetMap de forma manual, toque no botão com este ícone na barra de ferramentas superior. O número que aparece ao lado do ícone é o número de alterações por enviar."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_separated">"Sim, são separadas"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_mixed">"Não, é uma faixa comum"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxheight_title">"Qual o limite de altura aqui?"</string>
@@ -1425,8 +1408,6 @@ Caso contrário, pode descarregar outro teclado na loja de apps. Alguns dos tecl
 
     <!-- Fuzzy -->
     <string name="quest_handrail_title">"Estas escadas têm corrimão?"</string>
-    <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
-    <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>
     <string name="at_housename">"Nome do edifício %s:"</string>
     <string name="at_conscription_and_street_number">"Número matricial %1$s, número de orientação %2$s:"</string>
 

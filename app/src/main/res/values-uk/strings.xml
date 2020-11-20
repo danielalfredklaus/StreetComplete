@@ -95,15 +95,12 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_description">"як на табличці з назвою (без скорочень):"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_description">"Якщо назву можна записати без скорочення, робіть саме так. Багато загальних скорочень розгортаються під час набору, але не всі."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_positive">"Не скорочення"</string>
 
     <!-- Fuzzy -->
 
@@ -549,7 +546,6 @@
     <string name="quest_wheelchairAccess_limited_description_public_transport">"«Частково» значить, що для доступу треба зробити не більше кроку."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_title_name">"Скорочення в назві %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -564,29 +560,20 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_simple">"%1$s - %2$s"</string>
-
-    <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_native">"%1$s - %2$s (%3$s)"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_title">"Відсутня розкладка клавіатури?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_settings">"Відкрити налаштування"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_store">"Перейти в магазин"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_description">"Якщо у вас стандартна клавіатура, скоріш за все, ви можете просто ввімкнути потрібну розкладку у налаштуваннях.
-
-Інакше, ви можете завантажити іншу клавіатуру в магазині додатків. Популярні клавіатури, що підтримують багато мов: Google Gboard, SwiftKey Keyboard та Multiling O Keyboard."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_nolanguage">"(не вказано)"</string>
+
+    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
 
@@ -811,7 +798,6 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cycleway_value_sidewalk_allowed">"ні, але велорух дозволений на тротуарі"</string>
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Розширені"</string>
@@ -1210,7 +1196,6 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_title">"Як тут розміщені пішохідна та велодоріжки?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxheight_title">"Який тут ліміт висоти?"</string>
@@ -1250,8 +1235,6 @@
     <string name="theme_light">"Світла"</string>
     <string name="theme_dark">"Темна"</string>
     <string name="theme_system_default">"Системна"</string>
-    <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
-    <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>
     <string name="at_housename">"Назва дому %s:"</string>
     <string name="at_conscription_and_street_number">"Наскрізна нумерація %1$s, Номер орієнтації %2$s:"</string>
 

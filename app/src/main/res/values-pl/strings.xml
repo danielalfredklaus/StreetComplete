@@ -77,15 +77,12 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_description">"Tak jak napisane na znaku (skróty są rozwijane):"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_description">"Jeśli się da, nazwa powinna być podana w całości, bez skrótów. Wiele powszechnych skrótów jest rozwijanych automatycznie podczas pisania, ale nie wszystkie."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_positive">"Nie ma skrótów"</string>
 
     <!-- Fuzzy -->
 
@@ -531,7 +528,6 @@ Niemniej przed każdym wysłaniem zmian aplikacja sprawdza &lt;a href=\"https://
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Częściowo oznacza, że trzeba pokonać co najwyżej jeden stopień, aby wejść."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_title_name">"Są skróty w nazwie  %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -546,29 +542,20 @@ Niemniej przed każdym wysłaniem zmian aplikacja sprawdza &lt;a href=\"https://
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_simple">"%1$s - %2$s"</string>
-
-    <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_native">"%1$s - %2$s (%3$s)"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_title">"Brakuje układu klawiatury?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_settings">"Otwórz ustawienia"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_store">"Odwiedź sklep"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_description">"Jeśli używasz domyślnego układu klawiatury, to być może jesteś w stanie włączyć układ dla wymaganego języka w ustawieniach klawiatury.
-
-W przeciwnym wypadku możesz ściągnąć dodatkowe aplikacje klawiatury ze sklepu z aplikacjami. Popularne klawiatury, które wspierają wiele języków, to Google Gboard, SwiftKey Keyboard oraz Multiling O Keyboard."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_nolanguage">"(nieokreślony)"</string>
+
+    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
 
@@ -791,7 +778,6 @@ W przeciwnym wypadku możesz ściągnąć dodatkowe aplikacje klawiatury ze skle
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cycleway_value_sidewalk_allowed">"brak, ale rowerzyści mogą poruszać się po chodniku"</string>
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Zaawansowane"</string>
@@ -1213,16 +1199,13 @@ Oznacza to, że osoba na wózku jest w stanie z niej skorzystać, ale nie ma por
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_title">"Jaki jest tutaj układ chodnika i ścieżki rowerowej?"</string>
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"Aby wysłać Twoje zmiany ręcznie użyj przycisku w pasku narzędzi, który tak wygląda."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_separated">"Ruch jest rozdzielony od siebie"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_mixed">"Rowerzyści i piesi korzystają ze wspólnej przestrzeni"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxheight_title">"Jakie jest tutaj ograniczenie wysokości?"</string>
@@ -1620,7 +1603,6 @@ Na koniec: pamiętaj o bezpieczeństwie! Uważaj na otoczenie i nie wchodź na t
     <string name="link_category_goodies_description">"Ciekawe rzeczy związane z mapami"</string>
 
     <!-- Fuzzy -->
-    <string name="link_cyclosm_description">"Mapa dla rowerzystów"</string>
 
     <!-- Fuzzy -->
     <string name="link_wheelmap_description">"Mapa miejsc przyjaznych dla niepełnosprawnych"</string>
@@ -1813,10 +1795,6 @@ Na koniec: pamiętaj o bezpieczeństwie! Uważaj na otoczenie i nie wchodź na t
     <string name="quest_sidewalk_separately_mapped">"Tak, pokazany osobno na mapie"</string>
     <string name="quest_surface_detailed_answer_impossible_confirmation">"Czy jesteś pewien że nie jest możliwe podanie nawierzchni? Zauważ że jest opcja \"Zmienia się\" która pozwala na podzielenie na odcinki z różną nawierzchnią. Wybierz \"Odpowiedź niemozliwa\" jeśli jest jedna nawierzchnia która nie jest możliwa do wybrania jako odpowiedź."</string>
     <string name="quest_surface_detailed_answer_impossible_description">"Proszę krótko opisz nawierzchnię, na przykład \"piaszczysta z fragmentami kocich łbów\" (jeśli możesz, możesz użyć angielskiego, np \"sandy with patches of cobblestone\"). Długość tekstu ograniczona jest do 255 znaków."</string>
-    <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
-    <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>
-    <string name="quest_streetName_menuItem_international">"międzynarodowa"</string>
-    <string name="quest_streetName_menuItem_romanized">"w piśmie łacińskim"</string>
     <string name="quest_oneway_tutorial">"Droga na ilustracji jest obrócona w ten sam sposób jak odcinek na mapie pod znaczkiem zadania. Zwróć uwagę na zaznaczony kierunek. "</string>
     <string name="at_housename">"Nazwa budynku %s:"</string>
     <string name="at_conscription_and_street_number">"Numer konskrypcyjny %1$s, numer orientacyjny %2$s:"</string>

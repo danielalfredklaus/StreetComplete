@@ -51,11 +51,8 @@
     <string name="quest_leave_new_note_no">"Ne, samo sakrij"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_description">"onako kako je napisano na uličnom znaku (proširite skraćenice):"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_description">"Ako naziv može biti napisan bez skraćenica, onda bi trebao biti proširen. Neke uobičajene kratice automatski se proširuju dok tipkate, ali vjerojatno ne sve."</string>
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_positive">"Bez kratice"</string>
 
     <!-- Fuzzy -->
     <string name="quest_noteDiscussion_title">"Možete li išta doprinijeti ovoj bilješci?"</string>
@@ -246,30 +243,20 @@ Međutim, prije slanja promjena, aplikacija provjerava &lt;a href=\"https://www.
     <string name="quest_wheelchairAccess_location_name_title">"Je li lokacija %s pristupačna za invalidska kolica?"</string>
     <string name="quest_wheelchairAccess_limited_description_business">"\"Djelomično\" znači da nema više od jedne stepenice za pristup, i da je većina prostorija pristupačna za invalidska kolica."</string>
     <string name="quest_wheelchairAccess_limited_description_public_transport">"\"Djelomično\" znači da nema više od jedne stepenice za pristup."</string>
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_title_name">"Kratica u nazivu %s?"</string>
-
-    <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_simple">"%1$s – %2$s"</string>
-
-    <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_native">"%1$s – %2$s (%3$s)"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_title">"Nedostaje li vam raspored tipkovnice?"</string>
-    <string name="quest_streetName_cantType_open_settings">"Otvori postavke"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_store">"Posjetite trgovinu aplikacija"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_description">"Ako koristite predodređenu tipkovnicu, vjerojatno možete jednostavno omogućiti raspored tipkovnice za jezik koji vam je potreban u postavkama načina unosa.
-
-U suprotnom možete preuzeti drugu tipkovnicu u trgovini aplikacija. Popularne tipkovnice koje podržavaju mnoge jezike su Google Gboard, SwiftKey Keyboard i Multiling O Keyboard."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_nolanguage">"(neodređeno)"</string>
+
+    <!-- Fuzzy -->
+
+    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
 
@@ -318,7 +305,6 @@ U suprotnom možete preuzeti drugu tipkovnicu u trgovini aplikacija. Popularne t
 
     <!-- Fuzzy -->
     <string name="quest_leave_new_note_create_image_error">"Nije moguće stvoriti datoteku fotografije"</string>
-    <string name="quest_cycleway_value_sidewalk_allowed">"ne postoji, ali biciklisti smiju na nogostup"</string>
     <string name="pref_category_advanced">"Napredno"</string>
     <string name="pref_title_quests">"Odabir zadataka"</string>
     <string name="quest_enabled">"Omogućeno"</string>
@@ -476,10 +462,7 @@ U suprotnom možete preuzeti drugu tipkovnicu u trgovini aplikacija. Popularne t
     <string name="notification_channel_download">"Preuzmi"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_title">"Kako su ovdje postavljene pješačka i biciklistička staza?"</string>
     <string name="dialog_tutorial_upload">"Da biste ručno poslali odgovore, upotrijebite gumb na alatnoj traci koji izgleda ovako."</string>
-    <string name="quest_segregated_separated">"Razdvojeni jedni od drugih"</string>
-    <string name="quest_segregated_mixed">"Biciklisti i pješaci dijele stazu"</string>
     <string name="quest_maxheight_title">"Koje je ovdje visinsko ograničenje?
 "</string>
 
@@ -651,7 +634,6 @@ Konačno, ne zaboravite paziti na sigurnost: budite svjesni svoje okoline i ne u
     <!-- Fuzzy -->
     <string name="link_category_goodies_title">"Zanimljivosti"</string>
     <string name="link_category_goodies_description">"Interesantne stvari povezane s kartama koje možete isprobati"</string>
-    <string name="link_cyclosm_description">"Karta za bicikliste"</string>
     <string name="link_wheelmap_description">"Karta za pronalaženje mjesta pristupačnih invalidskim kolicima"</string>
     <string name="link_touch_mapper_description">"Lagano izradite taktilne karte za bilo koju adresu"</string>
 
@@ -757,14 +739,10 @@ Konačno, ne zaboravite paziti na sigurnost: budite svjesni svoje okoline i ne u
     <string name="quest_surface_detailed_answer_impossible_description">"Molimo ukratko opišite vrstu površine ovdje, na primjer \"pjeskovita s kaldrmom mjestimice\". Duljina teksta ograničena je na 255 znakova."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_international">"međunarodna"</string>
-    <string name="quest_streetName_menuItem_romanized">"na latinici"</string>
 
     <!-- Fuzzy -->
     <string name="quest_oneway_tutorial">"Cesta na ilustraciji rotirana je isto kao na karti na mjestu pribadače. Obratite pažnju na naznačeni smjer."</string>

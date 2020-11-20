@@ -95,15 +95,12 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_description">"som skriven på gateskiltet, med forkortingar skrivne heilt ut:"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_description">"Viss du kan skriva gatenamnet utan forkortingar, bør du gjera dette. Mange vanlege forkortingar vert automatisk utvida, men det gjeld ikkje alle."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_positive">"Inga forkorting"</string>
 
     <!-- Fuzzy -->
 
@@ -548,7 +545,6 @@ Alt du som bidreg med vert lagt direkte til kartet; det finst ikkje nokon tredje
     <string name="quest_wheelchairAccess_limited_description_public_transport">"«Delvis» vil seia at det ikkje er meir enn eitt trappetrinn ved inngangen."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_title_name">"Er det ei forkorting i namnet %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -563,29 +559,20 @@ Alt du som bidreg med vert lagt direkte til kartet; det finst ikkje nokon tredje
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_simple">"%1$s – %2$s"</string>
-
-    <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_native">"%1$s – %2$s (%3$s)"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_title">"Manglar tastaturoppsett?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_settings">"Opna innstillingar"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_store">"Opna appbutikk"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_description">"Viss du brukar standard­tastaturet, kan du truleg slå på tastatur­støtte for språket du treng i tastatur­innstillingane.
-
-Elles kan du lasta ned eit anna tastatur i appbutikken. Mykje brukte tastatur som støttar mange språk er «Google Gboard», «SwiftKey Keyboard» og «Multiling O Keyboard»."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_nolanguage">"(ikkje valt)"</string>
+
+    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
 
@@ -810,7 +797,6 @@ Elles kan du lasta ned eit anna tastatur i appbutikken. Mykje brukte tastatur so
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cycleway_value_sidewalk_allowed">"ingen, men syklistar kan bruka fortauet"</string>
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Avansert"</string>
@@ -1229,16 +1215,13 @@ Elles kan du lasta ned eit anna tastatur i appbutikken. Mykje brukte tastatur so
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_title">"Korleis er gang- og sykkelvegen utforma her?"</string>
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"For å lasta opp endringane manuelt kan du bruka verktøylinje­knappen som ser slik ut."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_separated">"Syklistar og fotgjengarar har kvar sitt felt"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_mixed">"Syklistar og fotgjengarar deler same felt"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxheight_title">"Kva er høgdegrensa her?"</string>
@@ -1635,7 +1618,6 @@ Og hugs å halda deg trygg: Pass på kor du set foten, og gå aldri inn på priv
     <string name="link_category_goodies_description">"Interessante kartrelaterte ting du kan sjå nærare på"</string>
 
     <!-- Fuzzy -->
-    <string name="link_cyclosm_description">"Eit kart for syklistar"</string>
 
     <!-- Fuzzy -->
     <string name="link_wheelmap_description">"Eit kart for å finna stadar som er tilgjengelege med rullestol"</string>
@@ -1803,8 +1785,6 @@ Og hugs å halda deg trygg: Pass på kor du set foten, og gå aldri inn på priv
 
     <!-- Fuzzy -->
     <string name="stats_are_syncing">"Synkroniserer statistikken. Kom tilbake seinare."</string>
-    <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
-    <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>
     <string name="at_housename">"Husnamn %s:"</string>
     <string name="at_conscription_and_street_number">"Konskripsjonsnummer %1$s, Orienteringsnummer %2$s:"</string>
 

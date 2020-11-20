@@ -95,15 +95,12 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_description">"όπως γράφεται στην πινακίδα του δρόμου, οι συντομογραφίες επεκτείνονται:"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_description">"Εάν το όνομα μπορεί να συλλαβιστεί χωρίς σύντμηση, τότε θα πρέπει να επεκταθεί. Πολλές κοινές συντμήσεις επεκτείνονται αυτόματα ενώ πληκτρολογείτε, αλλά πιθανώς δεν είναι όλες."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_positive">"Χωρίς συντομογραφία"</string>
 
     <!-- Fuzzy -->
 
@@ -547,7 +544,6 @@
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Εν μέρει σημαίνει ότι δεν υπάρχει παρά ένα μόνο βήμα για την πρόσβαση εκεί."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_title_name">"Σύντμηση στο όνομα %s;"</string>
 
     <!-- Fuzzy -->
 
@@ -562,29 +558,20 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_simple">"%1$s - %2$s"</string>
-
-    <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_native">"%1$s - %2$s (%3$s)"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_title">"Λείπει η διάταξη πληκτρολογίου;"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_settings">"Άνοιγμα ρυθμίσεων"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_store">"Επισκεφθείτε το app store"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_description">"Εάν χρησιμοποιείτε ένα προεπιλεγμένο πληκτρολόγιο, είναι πιθανό ότι απλά μπορείτε να ενεργοποιήσετε τη διάταξη πληκτρολογίου για τη γλώσσα που χρειάζεστε στις ρυθμίσεις μεθόδου εισαγωγής.
-
-Διαφορετικά, μπορείτε να κατεβάσετε ένα άλλο πληκτρολόγιο στο κατάστημα εφαρμογών. Τα δημοφιλή πληκτρολόγια που υποστηρίζουν πολλές γλώσσες είναι το Google Gboard, το SwiftKey Keyboard και το Multiling O Keyboard."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_nolanguage">"(απροσδιόριστο)"</string>
+
+    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
 
@@ -809,7 +796,6 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cycleway_value_sidewalk_allowed">"κανείς, αλλά οι ποδηλάτες επιτρέπονται στο πεζοδρόμιο"</string>
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Προχωρημένο"</string>
@@ -1229,16 +1215,13 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_title">"Πώς είναι στρωμένος ο πεζόδρομος και ο ποδηλατόδρομος εδώ;"</string>
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"Για να ανεβάσετε τις αλλαγές σας χειροκίνητα, χρησιμοποιήστε το κουμπί στη γραμμή εργαλείων που μοιάζει με αυτό."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_separated">"Διαχωρίζονται το ένα από το άλλο"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_mixed">"Οι ποδηλάτες και οι πεζοί μοιράζονται τον ίδιο χώρο"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxheight_title">"Ποιό είναι το όριο του ύψους εδώ;"</string>
@@ -1535,7 +1518,6 @@
     <string name="link_category_showcase_description">"Υπηρεσίες και εφαρμογές που βασίζονται στο OpenStreetMap"</string>
     <string name="link_category_goodies_title">"Καλούδια"</string>
     <string name="link_category_goodies_description">"Ενδιαφέροντα σχετικά με το χάρτη πράγματα που μπορείτε να δοκιμάσετε"</string>
-    <string name="link_cyclosm_description">"Ένας χάρτης για ποδηλάτες"</string>
     <string name="link_wheelmap_description">"Ένας χάρτης για την εύρεση θέσεων προσβάσιμων από αναπηρικά αμαξίδια"</string>
     <string name="link_touch_mapper_description">"Δημιουργήστε απτούς χάρτες εύκολα για οποιαδήποτε διεύθυνση"</string>
     <string name="link_mapy_tactile_description">"Απτικοί χάρτες για άτομα με προβλήματα όρασης σε διάφορες κλίμακες"</string>
@@ -1589,10 +1571,6 @@
     <string name="quest_sidewalk_separately_mapped">"Ναι, εμφανίζεται ξεχωριστά στο χάρτη"</string>
     <string name="quest_surface_detailed_answer_impossible_confirmation">"Είστε βέβαιοι ότι είναι αδύνατο να προσδιορίσετε την επιφάνεια; Σημειώστε την επιλογή απάντησης \"Διαφέρει μέσα στη διαδρομή\" που σας επιτρέπει να κόψετε τον δρόμο με τον οποίο αλλάζει η επιφάνεια. Χρησιμοποιήστε το \"Δεν μπορώ να πω\" εάν υπάρχει μία μόνο επιφάνεια, αλλά δεν είναι διαθέσιμη ως απάντηση."</string>
     <string name="quest_surface_detailed_answer_impossible_description">"Προσδιορίστε εν συντομία τη φύση της επιφάνειας εδώ, για παράδειγμα \"αμμώδης με μπαλώματα σε πλακόστρωτο\". Το μήκος του κειμένου περιορίζεται σε 255 χαρακτήρες."</string>
-    <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
-    <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>
-    <string name="quest_streetName_menuItem_international">"διεθνές"</string>
-    <string name="quest_streetName_menuItem_romanized">"σε λατινική γραφή"</string>
     <string name="quest_oneway_tutorial">"Ο δρόμος στην εικόνα περιστρέφεται όπως και στον χάρτη στη θέση του πείρου. Σημειώστε την υποδεικνυόμενη κατεύθυνση."</string>
     <string name="at_housename">"Όνομα οικίας %s:"</string>
     <string name="at_conscription_and_street_number">"Αριθμός συνταγογράφησης %1$s, Αριθμός προσανατολισμού %2$s:"</string>

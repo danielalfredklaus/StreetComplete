@@ -95,15 +95,12 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_description">"kaip parašyta ant gatvės ženklo, sutrumpinimai išplėsti:"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_description">"Jei pavadinimas gali būti parašytas be sutrumpinimo, tai jis taip ir turi būti parašytas (išskyrus „g.“ gatvei)."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_positive">"Nėra sutrumpinimo"</string>
 
     <!-- Fuzzy -->
 
@@ -548,7 +545,6 @@ Kaip minėta anksčiau, aplikacija tiesiogiai bendrauja su OSM infrastruktūra. 
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Dalinai reiškia, kad yra ne daugiau vieno laiptelio įeinant."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_title_name">"Sutrumpinimas pavadinime %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -563,29 +559,20 @@ Kaip minėta anksčiau, aplikacija tiesiogiai bendrauja su OSM infrastruktūra. 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_simple">"%1$s - %2$s"</string>
-
-    <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_native">"%1$s - %2$s (%3$s)"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_title">"Nėra klaviatūros išdėstymo?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_settings">"Atverti nustatymus"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_store">"Atverti parduotuvę"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_description">"Jei naudojate standartinę klaviatūrą, tikėtina, kad galite tiesiog įjungti jums reikiamos kalbos išdėstymą įvesties metodo nustatymuose.
-
-Priešingu atveju galite atsisiųsti kitą klaviatūrą programėlių parduotuvėje. Populiarios daug kalbų palaikančios klaviatūros yra Google Gboard, SwiftKey Keyboard ir Multiling O Keyboard."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_nolanguage">"(nenurodyta)"</string>
+
+    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
 
@@ -810,7 +797,6 @@ Priešingu atveju galite atsisiųsti kitą klaviatūrą programėlių parduotuv�
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cycleway_value_sidewalk_allowed">"nėra, bet dviratininkai gali važiuoti šaligatviu"</string>
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Išmanesni"</string>
@@ -1230,16 +1216,13 @@ Dalinai reiškia, kad vežimėlis gali įvažiuoti ir naudotis tualetu, bet nėr
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_title">"Kaip čia išdėstyti pėsčiųjų ir dviračių takai?"</string>
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"Kad įkeltumėte pakeitimus rankiniu būdu, naudokite įrankinės mygtuką, atrodantį štai taip."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_separated">"Atskirti vienas nuo kito"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_mixed">"Dviratininkai ir pėstieji dalinasi ta pačia erdve."</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxheight_title">"Koks čia yra aukščio apribojimas?"</string>
@@ -1628,7 +1611,6 @@ Galų gale visada būkite atidūs: stebėkite aplinką ir neikite į privačias 
     <string name="link_category_goodies_description">"Įdomūs su žemėlapiais susiję dalykai, kuriuos verta pabandyti"</string>
 
     <!-- Fuzzy -->
-    <string name="link_cyclosm_description">"Žemėlapis dviratininkams"</string>
 
     <!-- Fuzzy -->
     <string name="link_wheelmap_description">"Žemėlapis vietų, prieinamų su vežimėliu, paieškai"</string>
@@ -1794,8 +1776,6 @@ Galų gale visada būkite atidūs: stebėkite aplinką ir neikite į privačias 
 
     <!-- Fuzzy -->
     <string name="stats_are_syncing">"Jūsų statistika vis dar atnaujinama. Grįžkite čia vėliau."</string>
-    <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
-    <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>
     <string name="at_housename">"Namo pavadinimas %s:"</string>
     <string name="at_conscription_and_street_number">"Užsakymo numeris %1$s, orientacijos numeris %2$s:"</string>
 

@@ -91,13 +91,10 @@
     <string name="quest_leave_new_note_no">"No, just hide"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_description">"as written on the street sign, abbreviations are expanded:"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_description">"If the name can be spelled without an abbreviation, then it should be expanded. Many common abbreviations are expanded automatically while you type, but probably not all."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_positive">"No abbreviation"</string>
 
     <!-- Fuzzy -->
     <string name="quest_noteDiscussion_title">"Can you contribute anything to this note?"</string>
@@ -394,30 +391,20 @@
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Partially means that there is no more than a single step to access it."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_title_name">"Abbreviation in the name %s?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_simple">"%1$s – %2$s"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_native">"%1$s – %2$s (%3$s)"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_title">"Missing keyboard layout?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_settings">"Open settings"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_store">"Visit app store"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_description">"If you use a default keyboard, chances are that you can simply enable the keyboard layout for the language you need in the input method settings.
-
-Otherwise, you can download another keyboard in the app store. Popular keyboards that support many languages are Google Gboard, SwiftKey Keyboard and Multiling O Keyboard."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_nolanguage">"(unspecified)"</string>
 
     <!-- Fuzzy -->
     <string name="credits_contributors">"See the &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;complete list on GitHub&lt;/a&gt;."</string>
@@ -478,7 +465,6 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
     <string name="quest_leave_new_note_create_image_error">"Unable to create file for photo"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_cycleway_value_sidewalk_allowed">"none, but cyclists are allowed on pavement"</string>
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Advanced"</string>
@@ -592,13 +578,11 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
     <string name="notification_channel_download">"Download"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_title">"How are the footway and cycleway laid out here?"</string>
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"To upload your changes manually, use the button in the toolbar that looks like this."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_separated">"Segregated from one another"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxheight_title">"What is the height limit here?"</string>
@@ -695,10 +679,6 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
     <string name="title_whats_new">"What's New?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
-    <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>
-    <string name="quest_streetName_menuItem_international">"international"</string>
-    <string name="quest_streetName_menuItem_romanized">"in Latin script"</string>
     <string name="at_housename">"house name %s:"</string>
     <string name="at_conscription_and_street_number">"Conscription number %1$s, orientation number %2$s:"</string>
 

@@ -95,15 +95,12 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_description">"как написано на дорожных знаках, сокращения должны быть раскрыты:"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_description">"Если название может быть написано без сокращений, так и следует его писать. Многие распространённые сокращения уже раскрываются в процессе ввода, но не все."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_positive">"Нет сокращений"</string>
 
     <!-- Fuzzy -->
 
@@ -548,7 +545,6 @@
     <string name="quest_wheelchairAccess_limited_description_public_transport">"«Частично» значит, что нужно преодолеть не более одной ступеньки."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_title_name">"В названии %s есть сокращение?"</string>
 
     <!-- Fuzzy -->
 
@@ -563,29 +559,20 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_simple">"%1$s - %2$s"</string>
-
-    <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_native">"%1$s - %2$s (%3$s)"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_title">"Нет нужной раскладки?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_settings">"Открыть настройки"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_store">"Открыть магазин приложений"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_description">"Если у вас клавиатура по умолчанию, скорее всего, нужно лишь добавить раскладку клавиатуры для нужного языка в настройках ввода.
-
-В противном случае можно загрузить другую клавиатуру. Популярные клавиатуры, которые поддерживают многоязычность: Google Gboard, SwiftKey Keyboard и Multiling O Keyboard."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_nolanguage">"(не указано)"</string>
+
+    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
 
@@ -813,7 +800,6 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cycleway_value_sidewalk_allowed">"нет, но знаки разрешают движение велосипедистов по тротуару"</string>
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Расширенные"</string>
@@ -1228,16 +1214,13 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_title">"Как здесь расположены пешеходная и велосипедная дорожки?"</string>
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"Чтобы отправить правки вручную, используйте кнопку на панели инструментов, которая выглядит так."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_separated">"Отделены друг от друга"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_mixed">"Велосипедисты и пешеходы движутся по одной дороге"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxheight_title">"Какой здесь ограничение по высоте?"</string>
@@ -1634,7 +1617,6 @@
     <string name="link_category_goodies_description">"Интересные штуки про карты, которые вы можете попробовать"</string>
 
     <!-- Fuzzy -->
-    <string name="link_cyclosm_description">"Карта для велосипедистов"</string>
 
     <!-- Fuzzy -->
     <string name="link_wheelmap_description">"Карта мест, доступных на инвалидной коляске"</string>
@@ -1805,10 +1787,6 @@
     <string name="privacy_html_tileserver2">"&lt;p&gt;Для отображения карты, векторные тайлы из  %1$s. Прочтите  &lt;a href=\"%2$s\"&gt;политику конфиденциальности &lt;/a&gt;  для большей информации &lt;/p&gt;"</string>
     <string name="quest_sidewalk_separately_mapped">"Да, отображены раздельно на карте"</string>
     <string name="quest_surface_detailed_answer_impossible_description">"Пожалуйста, кратко укажите здесь характер поверхности, например, «песчаный с вкраплениями булыжника». Длина текста ограничена 255 символами."</string>
-    <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
-    <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>
-    <string name="quest_streetName_menuItem_international">"международное"</string>
-    <string name="quest_streetName_menuItem_romanized">"Латиницей"</string>
     <string name="at_housename">"Название дома %s:"</string>
     <string name="at_conscription_and_street_number">"Сквозная нумерация %1$s, Ориентировочный номер %2$s:"</string>
 

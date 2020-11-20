@@ -58,15 +58,12 @@
     <string name="quest_leave_new_note_no">"Non, seulement cacher"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_description">"Tel qu’écrit sur le panneau (les abréviations sont automatiquement développées) :"</string>
 
     <!-- "Also, note that there may not be extra street signs for side streets that belong to a bigger street."
 That is not very clear to me. Any further explanations? -->
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_description">"Si vous pouvez écrire le nom sans abréviation, faites-le. De nombreuses abréviations courantes sont automatiquement développées pendant que vous les tapez, mais probablement pas toutes."</string>
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_positive">"Pas d’abréviation"</string>
 
     <!-- Fuzzy -->
 
@@ -418,7 +415,6 @@ en:cement = fr:ciment = de:Zement -->
 
     <!-- Abréviation *dans* le nom ? -->
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_title_name">"Abréviation dans le nom %s ?"</string>
 
     <!-- Fuzzy -->
 
@@ -433,29 +429,20 @@ en:cement = fr:ciment = de:Zement -->
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_simple">"%1$s – %2$s"</string>
-
-    <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_native">"%1$s – %2$s (%3$s)"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_title">"Disposition du clavier manquante ?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_settings">"Ouvrir les paramètres"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_store">"Visitez le magasin d'applications"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_description">"Si vous utilisez un clavier par défaut, il y a de fortes chances que vous puissiez activer simplement la disposition du clavier pour la langue dont vous avez besoin dans les paramètres de langue et de saisie de votre téléphone.
-
-Sinon, vous pouvez télécharger un autre clavier dans le magasin d'applications. Les claviers les plus populaires qui prennent en charge de nombreuses langues sont Google Gboard (propriétaire), SwiftKey Keyboard (propriétaire) ou AnySoftKeyboard (libre)."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_nolanguage">"(non spécifié)"</string>
+
+    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
 
@@ -685,7 +672,6 @@ Sinon, vous pouvez télécharger un autre clavier dans le magasin d'applications
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cycleway_value_sidewalk_allowed">"aucune, mais les cyclistes sont admis sur le trottoir"</string>
 
     <!-- Does it mean "Advanced preferences" ? -->
     <!-- Fuzzy -->
@@ -1121,16 +1107,13 @@ Sinon, vous pouvez télécharger un autre clavier dans le magasin d'applications
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_title">"Comment sont aménagées les voies piétonnes et cyclables ici ?"</string>
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"Pour téléverser vos modifications manuellement, utilisez le bouton de la barre d'outils qui ressemble à ceci."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_separated">"Séparés l’un de l’autre"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_mixed">"Cyclistes et piétons partagent le même espace"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxheight_title">"Quelle est la limite de hauteur à cet endroit ?"</string>
@@ -1537,7 +1520,6 @@ Enfin, n'oubliez pas de rester prudent : soyez attentifs à votre environnement 
     <string name="link_category_goodies_description">"Trucs intéressants à tester autour des cartes"</string>
 
     <!-- Fuzzy -->
-    <string name="link_cyclosm_description">"Une carte pour les cyclistes"</string>
 
     <!-- Fuzzy -->
     <string name="link_wheelmap_description">"Une carte pour trouver les endroits accessibles aux personnes en fauteuil roulant"</string>
@@ -1736,10 +1718,6 @@ Enfin, n'oubliez pas de rester prudent : soyez attentifs à votre environnement 
     <string name="quest_sidewalk_separately_mapped">"Oui, affiché séparément sur la carte"</string>
     <string name="quest_surface_detailed_answer_impossible_confirmation">"Etes-vous sûr qu'il est impossible de préciser la surface ? Notez la réponse possible \"Change en cours de route\", qui vous permet de couper la voie à l'en,droit où la surface change. Veuillez utiliser \"Ne peux pas répondre\" s'il s'agit d'une surface unique non listée."</string>
     <string name="quest_surface_detailed_answer_impossible_description">"Décrivez brièvement la nature du revêtement ici, par exemple \"sableux avec îlots pavés\". La longueur du texte est limitée à 255 caractères."</string>
-    <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
-    <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>
-    <string name="quest_streetName_menuItem_international">"international"</string>
-    <string name="quest_streetName_menuItem_romanized">"en écriture Latine"</string>
     <string name="quest_oneway_tutorial">"La route en illustration est pivotée dans la même direction qu'indiquée sur la carte. La direction est indiquée. "</string>
     <string name="at_housename">"Nom de la maison %s:"</string>
     <string name="at_conscription_and_street_number">"Numéro de conscription %1$s, numéro d’orientation %2$s:"</string>

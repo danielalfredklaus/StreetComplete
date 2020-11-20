@@ -95,15 +95,12 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_description">"tal y como se lee en el letrero de calle, las abreviaturas se amplían:"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_description">"Si el nombre se puede decir sin abreviarlo tienes que escribirlo entero. Muchas abreviaturas comunes se expanden automáticamente al escribir, pero puede que no todas."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_positive">"Sin abreviaturas"</string>
 
     <!-- Fuzzy -->
 
@@ -547,7 +544,6 @@ Continuando con lo de antes, la aplicación se comunica directamente con la infr
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Parcialmente significa que no hay más de un peldaño en todo el recorrido."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_title_name">"¿%s contiene alguna abreviatura?"</string>
 
     <!-- Fuzzy -->
 
@@ -562,29 +558,20 @@ Continuando con lo de antes, la aplicación se comunica directamente con la infr
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_simple">"%1$s - %2$s"</string>
-
-    <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_native">"%1$s - %2$s (%3$s)"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_title">"¿No tienes el idioma del teclado adecuado?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_settings">"Abrir ajustes"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_store">"Abrir tienda"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_description">"Si utilizas el teclado estándar es posible que puedas cambiar el idioma en sus ajustes de entrada, échale un vistazo.
-
-Pero recuerda que siempre puedes descargar aplicaciones de teclado alternativas desde la tienda que sean más completas, aplicaciones del estilo a «Google Gboard», «SwiftKey» o el teclado «Multiling O»."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_nolanguage">"(sin especificar)"</string>
+
+    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
 
@@ -809,7 +796,6 @@ Pero recuerda que siempre puedes descargar aplicaciones de teclado alternativas 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cycleway_value_sidewalk_allowed">"no hay nada, pero los ciclistas pueden ir por la acera"</string>
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Avanzado"</string>
@@ -1229,16 +1215,13 @@ Pero recuerda que siempre puedes descargar aplicaciones de teclado alternativas 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_title">"¿Como están dispuestos aquí el camino y el carril bici?"</string>
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"Para subir los cambios manualmente usa el este botón en la barra de herramientas."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_separated">"Separado uno del otro"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_mixed">"Ciclistas y peatones comparten el mismo espacio"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxheight_title">"¿Cuál es el límite de altura aquí?"</string>
@@ -1636,7 +1619,6 @@ Finalmente, recuerda permanecer seguro: Sé consciente de tu alrededor y no entr
     <string name="link_category_goodies_description">"Cosas interesantes relacionadas con el mapa para que pruebes"</string>
 
     <!-- Fuzzy -->
-    <string name="link_cyclosm_description">"Un mapa para ciclistas"</string>
 
     <!-- Fuzzy -->
     <string name="link_wheelmap_description">"Un mapa para encontrar lugares accesibles para silla de ruedas"</string>
@@ -1833,10 +1815,6 @@ Finalmente, recuerda permanecer seguro: Sé consciente de tu alrededor y no entr
     <string name="quest_sidewalk_separately_mapped">"Sí, se muestra por separado en el mapa"</string>
     <string name="quest_surface_detailed_answer_impossible_confirmation">"¿Estás seguro que es imposible especificar la superficie? Ten en cuenta que la respuesta \"difiere a lo largo del camino\" te permite cortar el camino por donde la superficie cambia. Por favor, usa \"No lo puedo decir\" si hay una única superficie pero no está disponible como respuesta."</string>
     <string name="quest_surface_detailed_answer_impossible_description">"Por favor, especifica brevemente la naturaleza de la superficie, por ejemplo \"arenoso con trozos de adoquines\". La longitud del texto está limitada a 255 caracteres."</string>
-    <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
-    <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>
-    <string name="quest_streetName_menuItem_international">"internacional"</string>
-    <string name="quest_streetName_menuItem_romanized">"en escritura Latina"</string>
     <string name="quest_oneway_tutorial">"La carretera de la ilustración está girada al igual que la localización de la chincheta en el mapa. Tenga en cuenta la dirección indicada. "</string>
     <string name="at_housename">"Nombre de la casa %s:"</string>
     <string name="at_conscription_and_street_number">"Número de «conscripción» %1$s, número de «orientación» %2$s:"</string>

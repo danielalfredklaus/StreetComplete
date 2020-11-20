@@ -77,15 +77,12 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_description">"som skrevet på gateskiltet, forkortelser blir skrevet fullt ut:"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_description">"Hvis navnet kan staves uten forkortelser bør det skrives fullt ut. Mange vanlige forkortelser blir automatisk skrevet fullt ut mens du skriver, men sannsynligvis ikke alle."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_positive">"Ingen forkortelse"</string>
 
     <!-- Fuzzy -->
 
@@ -533,7 +530,6 @@ Men før appen laster opp endringen dine sjekker den via &lt;a href=\"https://ww
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Delvis betyr at det ikke er mer enn ett trappetrinn inn til stedet."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_title_name">"Forkortelse i navnet %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -548,29 +544,20 @@ Men før appen laster opp endringen dine sjekker den via &lt;a href=\"https://ww
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_simple">"%1$s – %2$s"</string>
-
-    <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_native">"%1$s – %2$s (%3$s)"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_title">"Mangler tastaturoppsett?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_settings">"Åpne innstillinger"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_store">"Åpne appbutikk"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_description">"Hvis du bruker et standardtastatur kan du trolig enkelt aktivere et tastaturoppsett for språket du trenger i innstillinger for inndatametode.
-
-Hvis ikke kan du laste ned et tastatur med støtte for flere språk som for eksempel Google Gboard, Swiftkey Keyboard og Multiling O Keyboard."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_nolanguage">"(ikke valgt)"</string>
+
+    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
 
@@ -795,7 +782,6 @@ Hvis ikke kan du laste ned et tastatur med støtte for flere språk som for ekse
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cycleway_value_sidewalk_allowed">"ingen, men syklister er tillatt på fortauet"</string>
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Avansert"</string>
@@ -1212,16 +1198,13 @@ Hvis ikke kan du laste ned et tastatur med støtte for flere språk som for ekse
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_title">"Hvordan er gang- og sykkelveien organisert her?"</string>
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"For å laste opp endringene dine manuelt, bruk knappen i verktøylinja som ser slik ut."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_separated">"Adskilt fra hverandre"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_mixed">"Syklister og fotgjengere deler arealet"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxheight_title">"Hva er høydegrensen her?"</string>
@@ -1444,7 +1427,6 @@ Og husk å ta vare på egen sikkerhet: Pass på hvor du setter foten, og gå ald
     <string name="link_category_showcase_description">"Tjenester og apper bygget på OpenStreetMap"</string>
     <string name="link_category_goodies_title">"Godbiter"</string>
     <string name="link_category_goodies_description">"Interessante kart-relaterte ting du kan teste ut"</string>
-    <string name="link_cyclosm_description">"For syklister"</string>
     <string name="link_wheelmap_description">"For å finne steder som er tilgjengelige med rullestol"</string>
     <string name="link_touch_mapper_description">"Lag taktile kart"</string>
     <string name="link_mapy_tactile_description">"Taktile kart i ulike skalaer - for brukere med synshemning"</string>
@@ -1495,9 +1477,6 @@ plassering"</string>
     <string name="user_profile_days_active">"Dager
 aktiv"</string>
     <string name="quest_sidewalk_separately_mapped">"Ja, vist separat på et kart"</string>
-    <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
-    <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>
-    <string name="quest_streetName_menuItem_international">"internasjonal"</string>
     <string name="at_housename">"Husnavn %s:"</string>
     <string name="at_conscription_and_street_number">"Konskripsjonsnummer %1$s, Orienteringsnummer %2$s:"</string>
 

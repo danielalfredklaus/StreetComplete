@@ -95,15 +95,12 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_description">"som det står på vägskylten, skriv gärna ut förkortningar:"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_description">"Om namnet kan skrivas utan förkortningen, ska det skrivas så. Många vanliga förkortningar skrivs ut automatiskt medan du skriver, men troligen inte alla."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_positive">"Ingen förkortning"</string>
 
     <!-- Fuzzy -->
 
@@ -547,7 +544,6 @@ Som nämnts kommunicerar appen direkt med OSM-Infrastruktur. Men innan du skicka
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Delvis innebär att det inte finns mer än ett enda steg för att komma åt det."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_title_name">"Är det en förkortning i namnet %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -562,29 +558,20 @@ Som nämnts kommunicerar appen direkt med OSM-Infrastruktur. Men innan du skicka
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_simple">"%1$s - %2$s"</string>
-
-    <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_native">"%1$s - %2$s (%3$s)"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_title">"Saknas tangentbordslayout?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_settings">"Öppna inställningar"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_store">"Öppna appbutik"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_description">"Om du använder ett standardtangentbord är chansen att du enkelt kan aktivera tangentbordslayouten för det språk du behöver i inställningarna.
-
-Annars kan du ladda ner ett annat tangentbord i appbutiken. Populära tangentbord som stöder många språk är Google Gboard, SwiftKey Keyboard och Multiling O Keyboard."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_nolanguage">"(ospecificerad)"</string>
+
+    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
 
@@ -809,7 +796,6 @@ Annars kan du ladda ner ett annat tangentbord i appbutiken. Populära tangentbor
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cycleway_value_sidewalk_allowed">"ingen, men cyklister är tillåtna på trottoaren"</string>
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Avancerat"</string>
@@ -1230,16 +1216,13 @@ Annars kan du ladda ner ett annat tangentbord i appbutiken. Populära tangentbor
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_title">"Hur är gångbanan och cykelvägen utformade här?"</string>
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"För att ladda upp ändringarna manuellt, klicka på knappen som ser ut så här"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_separated">"Separerade från varandra"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_mixed">"Cyklister och gångtrafikanter delar bana"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxheight_title">"Vad är maxhöjden här?"</string>
@@ -1641,7 +1624,6 @@ Slutligen, kom ihåg att vara säker: var medveten om din omgivning och gå inte
     <string name="link_category_goodies_description">"Intressanta kartrelaterade saker för dig att prova"</string>
 
     <!-- Fuzzy -->
-    <string name="link_cyclosm_description">"En karta för cyklister"</string>
 
     <!-- Fuzzy -->
     <string name="link_wheelmap_description">"En karta för att hitta rullstolsanpassade platser"</string>
@@ -1824,10 +1806,6 @@ nivåer"</string>
     <string name="quest_sidewalk_separately_mapped">"Ja, visas separat på kartan"</string>
     <string name="quest_surface_detailed_answer_impossible_confirmation">"Är du säker på att det är omöjligt att specificera ytan? Notera svaralternativet \"Skiljer sig längs vägen\" som gör att du kan klippa ut hur ytan förändras. Använd \"Kan inte säga\" om det finns en enda yta men den är inte tillgänglig som svar."</string>
     <string name="quest_surface_detailed_answer_impossible_description">"Vänligen ange kort ytan här, till exempel \"sandig med stigar av kullersten\". Textens längd är begränsad till 255 tecken."</string>
-    <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
-    <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>
-    <string name="quest_streetName_menuItem_international">"internationell"</string>
-    <string name="quest_streetName_menuItem_romanized">"i latinskript"</string>
     <string name="quest_oneway_tutorial">"Vägen i illustrationen roteras på samma sätt som på kartan på stiftets plats. Notera den angivna riktningen. "</string>
     <string name="at_housename">"Husnamn %s:"</string>
     <string name="at_conscription_and_street_number">"Konskriptionsnummer %1$s, Orienteringsnummer %2$s:"</string>

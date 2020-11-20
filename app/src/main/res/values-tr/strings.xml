@@ -95,15 +95,12 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_description">"sokak tabelasında yazıldığı gibi, kısaltmalar genişletildi:"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_description">"Ad, kısaltma olmadan hecelenebilirse, genişletilmelidir.  Çoğu yaygın kısaltma, siz yazarken otomatik olarak genişletilir, ancak muhtemelen hepsi değil."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_positive">"Kısaltma yok"</string>
 
     <!-- Fuzzy -->
 
@@ -527,7 +524,6 @@ Bahsedildiği gibi, uygulama OSM altyapısıyla doğrudan iletişim kuruyor. Bun
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Kısmen, erişmek için tek bir adımdan daha fazlası olmadığı anlamına gelir."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_title_name">"%s isminin kısaltması nedir?"</string>
 
     <!-- Fuzzy -->
 
@@ -542,29 +538,20 @@ Bahsedildiği gibi, uygulama OSM altyapısıyla doğrudan iletişim kuruyor. Bun
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_simple">"%1$s - %2$s"</string>
-
-    <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_native">"%1$s - %2$s (%3$s)"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_title">"Klavye düzeni eksik mi?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_settings">"Ayarları Aç"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_store">"Mağazayı Aç"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_description">"Varsayılan klavye kullanıyorsanız, giriş yöntemi ayarlarında ihtiyacınız olan dil için klavye düzenini kolayca etkinleştirebilme ihtimaliniz vardır.
-
- Aksi takdirde, başka bir klavyeyi uygulama mağazasından indirebilirsiniz.  Birçok dili destekleyen popüler klavyeler Google Gboard, SwiftKey ve Anysoft Klavye'dir."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_nolanguage">"(belirtilmemiş)"</string>
+
+    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
 
@@ -785,7 +772,6 @@ Bahsedildiği gibi, uygulama OSM altyapısıyla doğrudan iletişim kuruyor. Bun
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cycleway_value_sidewalk_allowed">"Yok, ama bisikletliler kaldırımda sürebilir"</string>
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Gelişmiş"</string>
@@ -1138,14 +1124,11 @@ Bahsedildiği gibi, uygulama OSM altyapısıyla doğrudan iletişim kuruyor. Bun
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_title">"Yaya kaldirimi ve bisiklet nasil ayrilmaktadir?"</string>
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"Değişikliklerinizi manuel olarak yüklemek için, bunun gibi görünen araç çubuğundaki düğmeyi kullanın."</string>
-    <string name="quest_segregated_separated">"Birbirinden ayrı"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_mixed">"Bisikletçiler ve yayalar aynı alanı paylaşıyor"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxheight_title">"Burada yükseklik sınırı nedir?"</string>
@@ -1334,8 +1317,6 @@ Bahsedildiği gibi, uygulama OSM altyapısıyla doğrudan iletişim kuruyor. Bun
     <string name="next">"İleri"</string>
     <string name="tutorial_welcome_to_osm">"OpenStreetMap'e hoşgeldin"</string>
     <string name="tutorial_welcome_to_osm_subtitle">"özgür dünya haritası wikisi."</string>
-    <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
-    <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>
     <string name="at_housename">"Ev ismi %s:"</string>
     <string name="at_conscription_and_street_number">"Kapı numarası %1$s, Oryantasyon numarası %2$s:"</string>
 

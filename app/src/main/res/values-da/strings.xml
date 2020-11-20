@@ -96,15 +96,12 @@
 
     <!-- I'm unsure what this means, "abbreviations *will be* expanded" or "expand abbrevations"? (currently translated to "will be" -->
     <!-- Fuzzy -->
-    <string name="quest_streetName_description">"som skrevet på vejskiltet, forkortelser bliver udvidet:"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_description">"Hvis navnet kan skrives uden en forkortelse bør den det. Mange typiske forkortelser er udvidede automatisk mens to skriver, men ikke alle."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_positive">"Ingen forkortelse"</string>
 
     <!-- Fuzzy -->
 
@@ -551,7 +548,6 @@ Før ændringer sendes tjekker appen dog en &lt;a href=\"https://www.westnordost
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Delvist betyder at der ikke er mere end et enkelt trin for at tilgå det."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_title_name">"Forkortelse i navnet %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -566,30 +562,21 @@ Før ændringer sendes tjekker appen dog en &lt;a href=\"https://www.westnordost
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_simple">"%1$s - %2$s"</string>
-
-    <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_native">"%1$s - %2$s (%3$s)"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_title">"Mangler tastaturlayout?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_settings">"Åben indstillinger"</string>
+
+    <!-- Fuzzy -->
 
     <!-- Is this litterally used for open stores (versus closed?) or is it something special? -->
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_store">"Besøg app store"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_description">"Hvis du bruger et standard tastatur kan du sandsynligvis bare sætte layoutet til det sprog du har brug for i input indstillinger.
-
-Ellers kan du downloade et andet keyboard i Forretning. Populære keyboards der understøtter mange sprog er Google Gboard, SwiftKey Keyboard og Miltiling O Keyboard."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_nolanguage">"(uspecificeret)"</string>
 
     <!-- Fuzzy -->
 
@@ -814,7 +801,6 @@ Ellers kan du downloade et andet keyboard i Forretning. Populære keyboards der 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cycleway_value_sidewalk_allowed">"ingen, men cyklister er tilladt på fortov"</string>
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Avanceret"</string>
@@ -1234,16 +1220,13 @@ Delvist betyder at kørestolsbrugeren kan bruge toilettet men der mangler håndt
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_title">"Hvordan er gangsti og cykelsti blevet anlagt her?"</string>
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"Hvis du vil uploade dine ændringer manuelt, skal du bruge knappen i den værktøjslinje, der ser sådan ud."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_separated">"Adskilt fra hinanden"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_mixed">"Cyklister og fodgængere deler det samme vejsegment"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxheight_title">"Hvad er max højde her?"</string>
@@ -1525,7 +1508,6 @@ Del det nu?"</string>
     <string name="link_category_maps_title">"Kort"</string>
     <string name="link_category_maps_description">"OpenStreetMap-baserede kort"</string>
     <string name="link_category_showcase_description">"OpenStreetMap-baserede services og applikationer"</string>
-    <string name="link_cyclosm_description">"Et kort for cyklister"</string>
     <string name="link_wheelmap_description">"Et kort over steder, der er tilgængelige for kørestole"</string>
     <string name="link_touch_mapper_description">"Lav taktile landkort overalt i verden"</string>
     <string name="link_vespucci_description">"Advanceret OSM editor til Android"</string>
@@ -1542,9 +1524,6 @@ Del det nu?"</string>
     <string name="user_profile_days_active">"Dage
 aktiv"</string>
     <string name="quest_sidewalk_separately_mapped">"Ja, vist seperat på kortet"</string>
-    <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
-    <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>
-    <string name="quest_streetName_menuItem_international">"international"</string>
     <string name="at_housename">"Husnavn %s:"</string>
     <string name="at_conscription_and_street_number">"Beskrivendenummer %1$s, retningsnummer %2$s:"</string>
 

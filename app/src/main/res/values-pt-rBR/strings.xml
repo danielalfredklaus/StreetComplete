@@ -95,15 +95,12 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_description">"como escrito na placa, abreviaturas são expandidas:"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_description">"Se o nome pode ser escrito sem uma abreviação, então ele deve ser expandido. Muitas abreviaturas comuns são expandidas automaticamente enquanto você digita, mas provavelmente não todas."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_positive">"Sem abreviação"</string>
 
     <!-- Fuzzy -->
 
@@ -547,7 +544,6 @@ Como mencionado, o aplicativo se comunica diretamente com a infraestrutura do OS
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Parcial significa que não mais que uma etapa a necessária para acessar."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_nameWithAbbreviations_confirmation_title_name">"Abreviação no nome %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -562,29 +558,20 @@ Como mencionado, o aplicativo se comunica diretamente com a infraestrutura do OS
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_simple">"%1$s – %2$s"</string>
-
-    <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_language_native">"%1$s – %2$s (%3$s)"</string>
 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_title">"Falta o layout do teclado?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_settings">"Abrir opções"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_open_store">"Visitar a loja de aplicativos"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_cantType_description">"Se usa o teclado padrão, é provável que simplesmente tenha de configurar o layout do teclado, nas opções de métodos de entrada, para o idioma que necessita.
-
-Caso contrário, pode baixar outro teclado na loja de aplicativos. Alguns dos teclados mais populares e que suportam vários idiomas são o Google Gboard, SwiftKey Keyboard e Multiling O Keyboard."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetName_menuItem_nolanguage">"(não especificado)"</string>
+
+    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
 
@@ -809,7 +796,6 @@ Caso contrário, pode baixar outro teclado na loja de aplicativos. Alguns dos te
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cycleway_value_sidewalk_allowed">"Nenhuma, mas ciclistas permitidos na calçada"</string>
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Avançado"</string>
@@ -1231,16 +1217,13 @@ Is "Altar" really fitting here? It is about a building type after all. -->
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_title">"Como estão alocados os caminhos de pedestre e ciclovia aqui?"</string>
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"Para enviar suas alterações manualmente, use o botão da barra de ferramentas que se parece com isso."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_separated">"Segregados"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_segregated_mixed">"Ciclistas e pedestres compartilham o mesmo espaço"</string>
 
     <!-- Fuzzy -->
     <string name="quest_maxheight_title">"Qual o limite de altura aqui?"</string>
@@ -1548,7 +1531,6 @@ Dividir agora?"</string>
     <string name="link_category_showcase_description">"Serviços e aplicativos baseados no OpenStreetMap"</string>
     <string name="link_category_goodies_title">"Guloseimas"</string>
     <string name="link_category_goodies_description">"Coisas interessantes relacionadas ao mapa para você experimentar"</string>
-    <string name="link_cyclosm_description">"Um mapa para ciclistas"</string>
     <string name="link_wheelmap_description">"Um mapa para encontrar lugares acessíveis a cadeiras de rodas"</string>
     <string name="link_touch_mapper_description">"Crie mapas táteis facilmente para qualquer endereço"</string>
     <string name="link_mapy_tactile_description">"Mapas táteis para deficientes visuais em várias escalas"</string>
@@ -1602,10 +1584,6 @@ Dividir agora?"</string>
     <string name="quest_sidewalk_separately_mapped">"Sim, exibido separadamente no mapa"</string>
     <string name="quest_surface_detailed_answer_impossible_confirmation">"Tem certeza de que é impossível especificar a superfície? Observe a opção de resposta \"Difere ao longo do caminho\", que permite cortar o caminho onde a superfície muda. Use \"Não posso dizer\" se houver uma única superfície, mas não estiver disponível como uma resposta."</string>
     <string name="quest_surface_detailed_answer_impossible_description">"Por favor, especifique resumidamente a natureza da superfície aqui, por exemplo \"areia com manchas de paralelepípedos\". O comprimento do texto é limitado a 255 caracteres."</string>
-    <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
-    <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>
-    <string name="quest_streetName_menuItem_international">"internacional"</string>
-    <string name="quest_streetName_menuItem_romanized">"em escrita latina"</string>
     <string name="quest_oneway_tutorial">"A estrada na ilustração é girada da mesma forma que no mapa no local do alfinete. Observe a direção indicada."</string>
     <string name="at_housename">"Nome da casa %s:"</string>
     <string name="at_conscription_and_street_number">"Número da conscription %1$s, número de orientação %2$s:"</string>

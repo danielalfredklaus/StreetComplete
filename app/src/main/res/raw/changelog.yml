@@ -1,6 +1,6 @@
 v1.0: |
   <h3>First release after forking StreetComplete v26.2
-  <p>This is the first version of AccessComplete, a fork of the awesome StreetComplete project. The fork was created to focus on providing quests which generate accessibility data on OSM. Therefore, most of the original StreetComplete quests have been removed in AccessComplete. The following quest types have been added or reworked:</p>
+  <p>This is the first version of AccessComplete, a fork of the awesome StreetComplete project. This fork was created to focus on quests that generate accessibility data on OSM. Therefore, most of the original StreetComplete quests have been removed in AccessComplete. In the future, a reporting mode for accessibility issues might be added which is another major reason for creating this fork.</p>
   <p>The following quest types have been added or reworked:</p>
   <ul>
     <li>Added: Measuring the width of footway or cycleway parts, paths, and other pedestrian accessible ways (with the possibility to use the device's AR capabilities to determine the distance between two points)</li>

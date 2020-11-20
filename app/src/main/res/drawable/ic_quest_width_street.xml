@@ -3,7 +3,6 @@
   ~ OpenStreetMap data for Android.  This program is a fork of
   ~ StreetComplete (https://github.com/westnordost/StreetComplete).
   ~
-  ~ Copyright (C) 2016-2020 Tobias Zwick and contributors (StreetComplete authors)
   ~ Copyright (C) 2020 Sven Stoll (AccessComplete author)
   ~
   ~ This program is free software: you can redistribute it and/or modify
@@ -94,6 +93,5 @@
             android:strokeWidth="7"
             android:strokeLineJoin="round"/>
     </group>
-
 
 </vector>

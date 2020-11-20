@@ -60,7 +60,7 @@ class AddProhibitedForPedestriansForm : AbstractQuestAnswerFragment<ProhibitedFo
 
     private fun confirmLivingStreet() {
         activity?.let {
-            val view = layoutInflater.inflate(R.layout.quest_maxspeed_living_street_confirmation, null, false)
+            val view = layoutInflater.inflate(R.layout.living_street_confirmation, null, false)
             // this is necessary because the inflated image view uses the activity context rather than
             // the fragment / layout inflater context' resources to access it's drawable
             val img = view.findViewById<ImageView>(R.id.livingStreetImage)

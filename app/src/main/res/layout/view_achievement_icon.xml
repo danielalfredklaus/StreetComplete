@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ AccessComplete, an easy to use editor of accessibility related
   ~ OpenStreetMap data for Android.  This program is a fork of
   ~ StreetComplete (https://github.com/westnordost/StreetComplete).
@@ -21,8 +20,7 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<merge
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout"
@@ -34,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/achievement_frame"
-        android:contentDescription="@null"/>
+        android:contentDescription="@null" />
 
     <ImageView
         android:id="@+id/iconView"
@@ -49,14 +47,14 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:src="@drawable/ic_achievement_first_edit"/>
+        tools:src="@drawable/ic_achievement_first_edit" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/levelGuideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.04"/>
+        app:layout_constraintGuide_percent="0.04" />
 
     <TextView
         android:id="@+id/levelText"
@@ -70,6 +68,6 @@
         app:layout_constraintRight_toRightOf="parent"
         tools:text="8"
         android:textColor="#fff"
-        android:elevation="24dp"/>
+        android:elevation="24dp" />
 
 </merge>

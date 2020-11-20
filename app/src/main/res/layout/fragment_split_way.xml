@@ -32,7 +32,7 @@
         android:alpha="0"
         android:rotation="-45"
         android:src="@drawable/scissors_animation"
-        android:contentDescription="@null"/>
+        android:contentDescription="@null" />
 
     <ch.uzh.ifi.accesscomplete.view.SlidingRelativeLayout
         android:id="@+id/bottomSheetContainer"

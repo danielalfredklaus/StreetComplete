@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ AccessComplete, an easy to use editor of accessibility related
   ~ OpenStreetMap data for Android.  This program is a fork of
   ~ StreetComplete (https://github.com/westnordost/StreetComplete).
@@ -29,14 +28,13 @@
     android:divider="@drawable/space_8dp"
     android:showDividers="middle"
     android:paddingLeft="@dimen/dialog_horizontal_margin"
-    android:paddingRight="@dimen/dialog_horizontal_margin"
-    >
+    android:paddingRight="@dimen/dialog_horizontal_margin">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/quest_surface_detailed_answer_impossible_description"
-        android:labelFor="@id/explanationInput"/>
+        android:labelFor="@id/explanationInput" />
 
     <EditText
         android:id="@+id/explanationInput"

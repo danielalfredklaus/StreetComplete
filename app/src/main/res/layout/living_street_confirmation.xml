@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ AccessComplete, an easy to use editor of accessibility related
   ~ OpenStreetMap data for Android.  This program is a fork of
   ~ StreetComplete (https://github.com/westnordost/StreetComplete).
@@ -21,13 +20,18 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<AutoCompleteTextView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/nameInput"
-    android:textSize="32sp"
-    android:completionThreshold="3"
-    tools:text="Sparkasse Mittelholstein"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:ignore="LabelFor" />
+    android:gravity="center"
+    android:padding="@dimen/dialog_horizontal_margin">
+
+    <ImageView
+        android:id="@+id/livingStreetImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_living_street"
+        android:contentDescription="@string/living_street_sign" />
+
+</LinearLayout>

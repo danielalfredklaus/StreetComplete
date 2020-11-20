@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ AccessComplete, an easy to use editor of accessibility related
   ~ OpenStreetMap data for Android.  This program is a fork of
   ~ StreetComplete (https://github.com/westnordost/StreetComplete).
@@ -21,8 +20,7 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<LinearLayout
-    android:layout_height="wrap_content"
+<LinearLayout android:layout_height="wrap_content"
     android:layout_width="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
@@ -32,15 +30,14 @@
         android:id="@+id/descriptionLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:text="@string/create_new_note_description"/>
+        tools:text="@string/create_new_note_description" />
 
     <TextView
         android:id="@+id/hintLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/create_new_note_hint"
-        android:labelFor="@id/noteInput"
-        />
+        android:labelFor="@id/noteInput" />
 
     <EditText
         android:id="@+id/noteInput"
@@ -57,6 +54,6 @@
         android:id="@+id/attachPhotoFragment"
         android:layout_marginTop="8dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

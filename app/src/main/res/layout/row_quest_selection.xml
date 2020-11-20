@@ -54,7 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="@android:style/TextAppearance.Theme.Dialog"
-            tools:text="@string/quest_streetLanes_title" />
+            tools:text="@string/quest_crossing_type_title" />
 
         <TextView
             android:id="@+id/countryDisabledText"
@@ -81,6 +81,5 @@
             android:layout_gravity="center" />
 
     </FrameLayout>
-
 
 </RelativeLayout>

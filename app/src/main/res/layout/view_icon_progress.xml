@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ AccessComplete, an easy to use editor of accessibility related
   ~ OpenStreetMap data for Android.  This program is a fork of
   ~ StreetComplete (https://github.com/westnordost/StreetComplete).
@@ -21,8 +20,7 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<merge
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:parentTag="android.widget.RelativeLayout"
     tools:background="#f0f"
@@ -36,7 +34,7 @@
         android:layout_centerInParent="true"
         android:padding="8dp"
         android:contentDescription="@null"
-        tools:src="@drawable/ic_quest_street"/>
+        tools:src="@drawable/ic_quest_street" />
 
     <ProgressBar
         android:id="@+id/progressView"
@@ -44,7 +42,7 @@
         android:layout_height="match_parent"
         android:indeterminate="true"
         android:alpha="0"
-        tools:alpha="1"/>
+        tools:alpha="1" />
 
     <ImageView
         android:id="@+id/checkmarkView"
@@ -55,6 +53,6 @@
         android:alpha="0"
         android:contentDescription="@null"
         tools:alpha="1"
-        tools:src="@drawable/ic_checkmark_circle"/>
+        tools:src="@drawable/ic_checkmark_circle" />
 
 </merge>

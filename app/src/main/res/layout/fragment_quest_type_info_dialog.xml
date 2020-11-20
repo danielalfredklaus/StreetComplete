@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ AccessComplete, an easy to use editor of accessibility related
   ~ OpenStreetMap data for Android.  This program is a fork of
   ~ StreetComplete (https://github.com/westnordost/StreetComplete).
@@ -21,8 +20,7 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
@@ -37,8 +35,7 @@
         android:id="@+id/dialogBackground"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/dialog_shadow"
-        />
+        android:background="@color/dialog_shadow" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/dialogContainer"
@@ -62,7 +59,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="@id/spacer"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:background="@drawable/speech_bubble_none"/>
+            android:background="@drawable/speech_bubble_none" />
 
         <ImageView
             android:id="@+id/titleView"
@@ -76,7 +73,7 @@
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintVertical_chainStyle="packed"
             android:scaleType="fitCenter"
-            android:elevation="24dp"/>
+            android:elevation="24dp" />
 
         <LinearLayout
             android:id="@+id/dialogContentContainer"
@@ -113,7 +110,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:contentDescription="@null"
-                    android:src="@drawable/ic_star_48dp"/>
+                    android:src="@drawable/ic_star_48dp" />
 
                 <TextView
                     android:id="@+id/solvedQuestsText"
@@ -136,7 +133,7 @@
                 app:icon="@drawable/ic_open_in_browser_primary_24dp"
                 android:drawablePadding="8dp"
                 android:text="@string/user_statistics_quest_wiki_link"
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
 
         </LinearLayout>
 
@@ -147,8 +144,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginTop="@dimen/quest_statistics_quest_type_icon_offset"
-            />
+            android:layout_marginTop="@dimen/quest_statistics_quest_type_icon_offset" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

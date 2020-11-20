@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ AccessComplete, an easy to use editor of accessibility related
   ~ OpenStreetMap data for Android.  This program is a fork of
   ~ StreetComplete (https://github.com/westnordost/StreetComplete).
@@ -21,13 +20,11 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<ch.uzh.ifi.accesscomplete.view.SlidingRelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ch.uzh.ifi.accesscomplete.view.SlidingRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="@dimen/quest_form_width"
     android:layout_height="match_parent"
-    android:id="@+id/bottomSheetContainer"
-    >
+    android:id="@+id/bottomSheetContainer">
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -73,13 +70,13 @@
                         android:id="@+id/locationLabel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:visibility="gone"/>
+                        android:visibility="gone" />
 
                     <TextView
                         android:id="@+id/titleLabel"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textAppearance="@style/TextAppearance.Title"/>
+                        android:textAppearance="@style/TextAppearance.Title" />
 
                 </LinearLayout>
 
@@ -88,11 +85,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:scaleType="center"
-                    android:src = "@drawable/ic_close_24dp"
+                    android:src="@drawable/ic_close_24dp"
                     android:background="?android:attr/actionBarItemBackground"
                     android:visibility="gone"
                     android:contentDescription="@string/close"
-                    android:padding="16dp"/>
+                    android:padding="16dp" />
 
             </LinearLayout>
 
@@ -143,7 +140,7 @@
                                     android:paddingStart="@dimen/quest_form_horizontal_padding"
                                     android:paddingEnd="@dimen/quest_form_horizontal_padding"
                                     android:paddingTop="@dimen/quest_form_vertical_padding"
-                                    android:paddingBottom="@dimen/quest_form_vertical_padding"/>
+                                    android:paddingBottom="@dimen/quest_form_vertical_padding" />
 
                                 <com.google.android.flexbox.FlexboxLayout
                                     android:id="@+id/buttonPanel"
@@ -159,15 +156,14 @@
                                     android:paddingStart="8dp"
                                     android:paddingEnd="8dp"
                                     app:dividerDrawableVertical="@drawable/button_bar_divider_with_vertical_padding"
-                                    app:dividerDrawableHorizontal="@drawable/button_bar_divider_with_horizontal_padding"
-                                    >
+                                    app:dividerDrawableHorizontal="@drawable/button_bar_divider_with_horizontal_padding">
 
                                     <Button
                                         android:id="@+id/otherAnswersButton"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
                                         android:text="@string/quest_generic_otherAnswers"
-                                        style="@style/BottomSheetButtonBarItem"/>
+                                        style="@style/BottomSheetButtonBarItem" />
 
                                 </com.google.android.flexbox.FlexboxLayout>
 
@@ -197,7 +193,7 @@
         android:visibility="gone"
         android:scaleX="0.5"
         android:scaleY="0.5"
-        android:alpha="0"/>
+        android:alpha="0" />
 
 </ch.uzh.ifi.accesscomplete.view.SlidingRelativeLayout>
 

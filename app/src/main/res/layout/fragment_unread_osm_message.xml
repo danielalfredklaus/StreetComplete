@@ -43,7 +43,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            android:contentDescription="@null"/>
+            android:contentDescription="@null" />
 
         <RelativeLayout
             android:id="@+id/speechbubbleContentContainer"
@@ -72,7 +72,7 @@
                 style="@style/TextAppearance.Body"
                 android:gravity="center"
                 android:textAlignment="center"
-                android:text="@string/unread_messages_message"/>
+                android:text="@string/unread_messages_message" />
 
             <Button
                 android:id="@+id/readMailButton"
@@ -83,7 +83,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_below="@id/unreadMessagesTextView"
                 style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-                android:text="@string/unread_messages_button"/>
+                android:text="@string/unread_messages_button" />
 
         </RelativeLayout>
 
@@ -97,7 +97,7 @@
             app:layout_constraintEnd_toEndOf="@id/mailOpenImageView"
             app:layout_constraintStart_toStartOf="@id/mailOpenImageView"
             app:layout_constraintTop_toTopOf="@id/mailOpenImageView"
-            android:alpha="0"/>
+            android:alpha="0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

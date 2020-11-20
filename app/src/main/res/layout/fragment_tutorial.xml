@@ -38,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             app:layout_constraintGuide_percent="0.40"
-            android:orientation="horizontal"/>
+            android:orientation="horizontal" />
 
         <ImageView
             android:id="@+id/mapImageView"
@@ -47,7 +47,7 @@
             android:src="@drawable/logo_osm_map"
             app:layout_constraintBottom_toTopOf="@id/tutorialTextContainer"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintEnd_toEndOf="parent" />
 
         <ImageView
             android:id="@+id/mapLightingImageView"
@@ -57,7 +57,7 @@
             app:layout_constraintTop_toTopOf="@id/mapImageView"
             app:layout_constraintStart_toStartOf="@id/mapImageView"
             app:layout_constraintEnd_toEndOf="@id/mapImageView"
-            app:layout_constraintBottom_toBottomOf="@id/mapImageView"/>
+            app:layout_constraintBottom_toBottomOf="@id/mapImageView" />
 
         <ch.uzh.ifi.accesscomplete.location.LocationStateButton
             android:id="@+id/tutorialGpsButton"
@@ -72,7 +72,7 @@
             app:layout_constraintLeft_toRightOf="@id/mapImageView"
             app:layout_constraintBottom_toBottomOf="@id/mapImageView"
             android:alpha="0"
-            tools:alpha="1"/>
+            tools:alpha="1" />
 
         <RelativeLayout
             android:id="@+id/questPin3"
@@ -93,7 +93,7 @@
                 android:paddingRight="16dp"
                 android:src="@drawable/quest_pin"
                 android:layout_gravity="right"
-                tools:ignore="RtlHardcoded,RtlSymmetry"/>
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
 
             <ImageView
                 android:layout_width="42dp"
@@ -123,7 +123,7 @@
                 android:paddingRight="16dp"
                 android:src="@drawable/quest_pin"
                 android:layout_gravity="right"
-                tools:ignore="RtlHardcoded,RtlSymmetry"/>
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
 
             <ImageView
                 android:layout_width="42dp"
@@ -153,7 +153,7 @@
                 android:paddingRight="16dp"
                 android:src="@drawable/quest_pin"
                 android:layout_gravity="right"
-                tools:ignore="RtlHardcoded,RtlSymmetry"/>
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
 
             <ImageView
                 android:layout_width="42dp"
@@ -173,7 +173,7 @@
             app:layout_constraintStart_toStartOf="@id/mapImageView"
             app:layout_constraintEnd_toEndOf="@id/mapImageView"
             app:layout_constraintBottom_toBottomOf="@id/mapImageView"
-            android:alpha="0"/>
+            android:alpha="0" />
 
         <FrameLayout
             android:id="@+id/tutorialTextContainer"
@@ -208,7 +208,7 @@
                         android:layout_centerHorizontal="true"
                         android:gravity="center"
                         android:textAppearance="@style/TextAppearance.Headline"
-                        android:text="@string/tutorial_welcome_to_osm"/>
+                        android:text="@string/tutorial_welcome_to_osm" />
 
                     <TextView
                         android:id="@+id/subtitleTextView"
@@ -218,7 +218,7 @@
                         android:gravity="center"
                         android:layout_below="@id/titleTextView"
                         android:textAppearance="@style/TextAppearance.Subhead"
-                        android:text="@string/tutorial_welcome_to_osm_subtitle"/>
+                        android:text="@string/tutorial_welcome_to_osm_subtitle" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -227,7 +227,7 @@
                         android:layout_marginTop="24dp"
                         android:gravity="center"
                         android:textAppearance="@style/TextAppearance.BigBody"
-                        android:text="@string/tutorial_intro"/>
+                        android:text="@string/tutorial_intro" />
 
                 </RelativeLayout>
 
@@ -253,7 +253,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:textAppearance="@style/TextAppearance.BigBody"
-                        android:text="@string/tutorial_solving_quests"/>
+                        android:text="@string/tutorial_solving_quests" />
 
                 </FrameLayout>
 
@@ -280,7 +280,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center"
                         android:textAppearance="@style/TextAppearance.BigBody"
-                        android:text="@string/tutorial_stay_safe"/>
+                        android:text="@string/tutorial_stay_safe" />
 
                     <TextView
                         android:id="@+id/happyMappingTextView"
@@ -291,7 +291,7 @@
                         android:layout_marginTop="24dp"
                         android:gravity="center"
                         android:textAppearance="@style/TextAppearance.Headline"
-                        android:text="@string/tutorial_happy_mapping"/>
+                        android:text="@string/tutorial_happy_mapping" />
 
                 </RelativeLayout>
 
@@ -324,19 +324,19 @@
                     android:id="@+id/dot1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/indicator_dot_selected"/>
+                    android:src="@drawable/indicator_dot_selected" />
 
                 <ImageView
                     android:id="@+id/dot2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/indicator_dot_default"/>
+                    android:src="@drawable/indicator_dot_default" />
 
                 <ImageView
                     android:id="@+id/dot3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/indicator_dot_default"/>
+                    android:src="@drawable/indicator_dot_default" />
 
             </LinearLayout>
 
@@ -349,7 +349,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/dotsContainer"
                 android:layout_marginTop="16dp"
-                android:layout_marginStart="16dp"/>
+                android:layout_marginStart="16dp" />
 
             <Button
                 android:id="@+id/nextButton"
@@ -378,7 +378,7 @@
             android:scaleX="1"
             android:scaleY="1"
             app:layout_constraintRight_toRightOf="@id/mapImageView"
-            app:layout_constraintBottom_toBottomOf="@id/mapImageView"/>
+            app:layout_constraintBottom_toBottomOf="@id/mapImageView" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

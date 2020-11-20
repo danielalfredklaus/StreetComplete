@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ AccessComplete, an easy to use editor of accessibility related
   ~ OpenStreetMap data for Android.  This program is a fork of
   ~ StreetComplete (https://github.com/westnordost/StreetComplete).
@@ -70,7 +69,7 @@
             android:layout_gravity="start"
             android:layout_marginTop="4dp"
             android:contentDescription="@string/example_image"
-            android:scaleType="fitStart"/>
+            android:scaleType="fitStart" />
     </LinearLayout>
 
 </LinearLayout>

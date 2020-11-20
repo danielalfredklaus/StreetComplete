@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ AccessComplete, an easy to use editor of accessibility related
   ~ OpenStreetMap data for Android.  This program is a fork of
   ~ StreetComplete (https://github.com/westnordost/StreetComplete).
@@ -21,8 +20,7 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<ImageButton
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ImageButton xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/undoButton"
     android:layout_width="@dimen/map_button_size"
     android:layout_height="@dimen/map_button_size"

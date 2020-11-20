@@ -25,17 +25,18 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <include layout="@layout/toolbar"
+    <include
+        layout="@layout/toolbar"
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_below="@id/toolbar"
-        android:layout_alignParentBottom="true"/>
+        android:layout_alignParentBottom="true" />
 
     <fragment
         android:name="ch.uzh.ifi.accesscomplete.user.AchievementInfoFragment"
@@ -49,15 +50,13 @@
         android:id="@+id/questTypeDetailsFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:visibility="gone"
-        />
+        tools:visibility="gone" />
 
     <fragment
         android:name="ch.uzh.ifi.accesscomplete.user.CountryInfoFragment"
         android:id="@+id/countryDetailsFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:visibility="gone"
-        />
+        tools:visibility="gone" />
 
 </RelativeLayout>

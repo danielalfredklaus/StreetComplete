@@ -20,32 +20,30 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MainActivity"
-    >
+    tools:context=".MainActivity">
 
     <fragment
         android:id="@+id/map_fragment"
         android:name="ch.uzh.ifi.accesscomplete.map.MainFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
     <FrameLayout
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
     <fragment
         android:id="@+id/notifications_container_fragment"
         android:name="ch.uzh.ifi.accesscomplete.notifications.NotificationsContainerFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:visibility="gone"/>
+        tools:visibility="gone" />
 
- </RelativeLayout >
+</RelativeLayout>

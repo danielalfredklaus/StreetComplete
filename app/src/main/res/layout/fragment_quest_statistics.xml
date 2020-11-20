@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ AccessComplete, an easy to use editor of accessibility related
   ~ OpenStreetMap data for Android.  This program is a fork of
   ~ StreetComplete (https://github.com/westnordost/StreetComplete).
@@ -21,8 +20,7 @@
   ~ along with this program.  If not, see <http://www.gnu.org/licenses/>.
   -->
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
@@ -32,7 +30,7 @@
         android:id="@+id/questStatisticsFragmentContainer"
         android:name="de.westnordost.accesscomplete.user.QuestStatisticsByQuestTypeFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
     <TextView
         android:id="@+id/emptyText"
@@ -47,7 +45,7 @@
         android:textAppearance="@style/TextAppearance.Title"
         android:textColor="@color/hint_text"
         android:gravity="center"
-        android:text="@string/quests_empty"/>
+        android:text="@string/quests_empty" />
 
     <com.google.android.material.button.MaterialButtonToggleGroup
         android:id="@+id/selectorButton"
@@ -68,15 +66,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/user_statistics_filter_by_quest_type"
-            style="?attr/materialButtonOutlinedStyle"
-            />
+            style="?attr/materialButtonOutlinedStyle" />
+
         <com.google.android.material.button.MaterialButton
             android:id="@+id/byCountryButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/user_statistics_filter_by_country"
-            style="?attr/materialButtonOutlinedStyle"
-            />
+            style="?attr/materialButtonOutlinedStyle" />
 
     </com.google.android.material.button.MaterialButtonToggleGroup>
 

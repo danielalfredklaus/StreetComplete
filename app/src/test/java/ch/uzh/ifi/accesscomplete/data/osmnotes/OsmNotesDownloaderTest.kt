@@ -23,6 +23,7 @@
 package ch.uzh.ifi.accesscomplete.data.osmnotes
 
 import android.content.SharedPreferences
+import ch.uzh.ifi.accesscomplete.ApplicationConstants
 import ch.uzh.ifi.accesscomplete.data.NotesApi
 import de.westnordost.osmapi.common.Handler
 import de.westnordost.osmapi.map.data.BoundingBox
@@ -61,7 +62,7 @@ class OsmNotesDownloaderTest {
             NoteComment().apply {
                 date = Date()
                 action = NoteComment.Action.COMMENTED
-                text = "abc AccessComplete"
+                text = "abc"
                 user = User(54, "Blibu")
             },
             NoteComment().apply {
@@ -89,7 +90,7 @@ private fun createANote(id: Long): Note {
     val comment = NoteComment()
     comment.date = Date()
     comment.action = NoteComment.Action.OPENED
-    comment.text = "hurp durp"
+    comment.text = "hurp durp via " + ApplicationConstants.NAME
     note.comments.add(comment)
     return note
 }

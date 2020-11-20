@@ -458,4 +458,15 @@ Zu guter Letzt, vergiss nicht, dich nicht in Gefahr zu begeben: Achte auf deine 
     <string name="quest_smoothness_horrible_description">Geeignet für schwere Geländefahrzeuge und alle darunter liegenden</string>
     <string name="quest_smoothness_very_horrible_description">Geeignet für Traktoren, Quads, Mountainbikes und alle Arten von Offroad-Fahrzeugen</string>
     <string name="quest_kerb_flush_description">Zwischen der Bordsteinkante und der Straße besteht kein Höhenunterschied.</string>
+    <string name="living_street_sign">Schild einer Spielstraße</string>
+    <string name="email">Email</string>
+    <string name="compass">Kompass</string>
+    <string name="example_image">Bildbeispiel</string>
+    <string name="attached_image">Angehängtes Bild</string>
+    <string name="delete">Löschen</string>
+    <string name="expand">Aufklappen</string>
+    <string name="left_side">Linke Seite</string>
+    <string name="right_side">Rechte Seite</string>
+    <string name="note_marker">Markiert, wo die Notiz erstellt wird</string>
+    <string name="could_look_like_this">Könnte etwa so aussehen:</string>
 </resources>

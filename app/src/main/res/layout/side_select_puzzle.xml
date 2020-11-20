@@ -59,7 +59,7 @@
                 android:scaleType="fitXY"
                 tools:ignore="RtlHardcoded"
                 tools:rotation="180"
-                tools:src="@drawable/ic_cycleway_track" />
+                tools:src="@drawable/ic_sidewalk_yes" />
 
             <ch.uzh.ifi.accesscomplete.view.VerticalLabelView
                 android:id="@+id/leftSideTextView"
@@ -96,7 +96,7 @@
                 android:contentDescription="@string/right_side"
                 android:scaleType="fitXY"
                 tools:ignore="RtlHardcoded"
-                tools:src="@drawable/ic_cycleway_sidewalk" />
+                tools:src="@drawable/ic_sidewalk_no" />
 
             <ch.uzh.ifi.accesscomplete.view.VerticalLabelView
                 android:id="@+id/rightSideTextView"

@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="6dp"
         android:scaleType="fitCenter"
-        tools:src="@drawable/ic_path_segregated_no" />
+        tools:src="@drawable/ic_quest_street" />
 
     <TextView
         android:id="@+id/textView"
@@ -45,6 +45,6 @@
         android:layout_toEndOf="@id/imageView"
         android:layout_centerVertical="true"
         style="@style/ImageSelectDescription"
-        tools:text="@string/quest_segregated_mixed" />
+        tools:text="@string/example_image" />
 
 </RelativeLayout>

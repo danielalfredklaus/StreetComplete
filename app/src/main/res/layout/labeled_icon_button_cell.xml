@@ -38,7 +38,7 @@
         android:background="#3666"
         android:contentDescription="@null"
         android:scaleType="fitCenter"
-        tools:src="@drawable/ic_cycleway_lane" />
+        tools:src="@drawable/ic_quest_street" />
 
     <TextView
         android:id="@+id/textView"
@@ -53,6 +53,6 @@
         android:maxLines="4"
         android:padding="4dp"
         tools:ignore="LabelFor"
-        tools:text="@string/quest_cycleway_value_sidewalk_allowed" />
+        tools:text="@string/example_image" />
 
 </RelativeLayout>

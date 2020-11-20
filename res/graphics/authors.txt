@@ -116,7 +116,5 @@ tutorial graphics/
                                                   (c) 2011 Ken Vermette, License: CC-BY.SA 3.0
 
 create_note_black_24dp.svg
-
 mail.svg
-
 osm_anon_avatar.svg

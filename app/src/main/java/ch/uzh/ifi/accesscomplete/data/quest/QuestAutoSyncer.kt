@@ -210,5 +210,4 @@ import javax.inject.Singleton
     companion object {
         private const val TAG = "QuestAutoSyncer"
     }
-
 }

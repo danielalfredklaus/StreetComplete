@@ -51,10 +51,6 @@
     <string name="quest_leave_new_note_no">"Ne, samo sakrij"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_noteDiscussion_title">"Možete li išta doprinijeti ovoj bilješci?"</string>
     <string name="quest_noteDiscussion_no">"Ne, sakrij"</string>
 
@@ -119,7 +115,6 @@
     <string name="quest_roofShape_select_one">"Odaberite jedno:"</string>
     <string name="quest_roofShape_show_more">"Prikaži više…"</string>
 
-    <!-- it is used in generic list, not only for roof shape but rename would break translations -->
     <string name="map_btn_zoom_out">"Udalji"</string>
     <string name="map_btn_zoom_in">"Približi"</string>
     <string name="privacy_html">"&lt;p&gt;Ah, netko kome je stalo do privatnosti, lijepo! Mislim da za vas imam samo dobre vijesti:&lt;/p&gt;
@@ -197,17 +192,7 @@ Međutim, prije slanja promjena, aplikacija provjerava &lt;a href=\"https://www.
     <string name="quest_generic_hasFeature_no">"Ne"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_select_hint">"Odaberite:"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_tactilePaving_title_bus">"Ima li ova autobusna stanica trake vodilje za slijepe?"</string>
@@ -223,14 +208,8 @@ Međutim, prije slanja promjena, aplikacija provjerava &lt;a href=\"https://www.
     <string name="quest_surface_street_name_title">"Kakvu površinu cesta %s ima ovdje?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_name_title">"Je li %s pristupačan za invalidska kolica?"</string>
     <string name="quest_wheelchairAccess_limited">"Djelomično"</string>
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_bus_station_title">"Je li ova autobusna stanica pristupačna za invalidska kolica?"</string>
@@ -243,22 +222,6 @@ Međutim, prije slanja promjena, aplikacija provjerava &lt;a href=\"https://www.
     <string name="quest_wheelchairAccess_location_name_title">"Je li lokacija %s pristupačna za invalidska kolica?"</string>
     <string name="quest_wheelchairAccess_limited_description_business">"\"Djelomično\" znači da nema više od jedne stepenice za pristup, i da je većina prostorija pristupačna za invalidska kolica."</string>
     <string name="quest_wheelchairAccess_limited_description_public_transport">"\"Djelomično\" znači da nema više od jedne stepenice za pristup."</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="credits_contributors">"Pogledajte &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;cjelovit popis na GitHubu&lt;/a&gt;."</string>
@@ -285,23 +248,9 @@ Međutim, prije slanja promjena, aplikacija provjerava &lt;a href=\"https://www.
     <string name="undo_confirm_title">"Poništi zadnji odgovor?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="about_category_feedback">"Povratne informacije"</string>
     <string name="quest_leave_new_note_photo">"Dodaj sliku"</string>
     <string name="quest_leave_new_note_photo_delete_title">"Želite li obrisati ovu sliku?"</string>
-
-    <!-- is this for cycleway=shared_lane + cycleway:lane=pictogram ? (AKA "sharrow" ?) -->
 
     <!-- Fuzzy -->
     <string name="quest_leave_new_note_create_image_error">"Nije moguće stvoriti datoteku fotografije"</string>
@@ -310,28 +259,15 @@ Međutim, prije slanja promjena, aplikacija provjerava &lt;a href=\"https://www.
     <string name="quest_enabled">"Omogućeno"</string>
     <string name="quest_type">"Vrsta zadatka"</string>
 
-    <!-- In what context is this "Reset"? -->
     <!-- Fuzzy -->
     <string name="action_reset">"Vrati u početno stanje"</string>
     <string name="reorder_quest_priority_hint">"Dugo pritisnite i pomaknite zadatak da biste izmijenili njegov prioritet za prikaz na karti."</string>
     <string name="undo_confirm_positive">"Poništi"</string>
     <string name="undo_confirm_negative">"Odustani"</string>
 
-    <!-- in what contexts is this used? -->
-
     <!-- Fuzzy -->
     <string name="enable_quest_confirmation_title">"Omogućiti ovu vrstu zadataka?"</string>
     <string name="default_disabled_msg_go_inside">"Ova vrsta zadatka je inicijalno onemogućena jer biste vjerojatno morali ući unutra da biste mogli odgovoriti na zadatak ove vrste."</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toilets_title">"Je li ovaj toalet pristupačan za invalidska kolica?"</string>
@@ -355,43 +291,11 @@ Međutim, prije slanja promjena, aplikacija provjerava &lt;a href=\"https://www.
     <string name="quest_surface_value_metal">"Metal"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_surface_value_unhewn_cobblestone">"Kaldrma"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_square_title">"Kakvu površinu ima ovaj trg?"</string>
     <string name="quest_surface_square_name_title">"Kakvu površinu trg %s ima ovdje?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_construction_road_title">"Je li ova cesta dovršena?"</string>
@@ -401,10 +305,6 @@ Međutim, prije slanja promjena, aplikacija provjerava &lt;a href=\"https://www.
     <string name="questList_disabled_in_country">"Nikad se ne pokazuje u %s"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_surface_path_title">"Kakvu je površina staze ovdje?"</string>
 
     <!-- Fuzzy -->
@@ -412,51 +312,10 @@ Međutim, prije slanja promjena, aplikacija provjerava &lt;a href=\"https://www.
     <string name="quest_generic_item_confirmation">"Jeste li sigurni da to ne možete preciznije odrediti?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="pref_quests_reset">"Želite li vratiti u početno stanje poredak i status omogućenosti svih vrsta zadataka?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_item_invalid_value">"Molim, odabirete precizniju vrijednost."</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- What does this even mean? it is extra confusing because it has TWO questions, ("Is this correct?" and "is it not just part of a building?") and you can only provide one answer -->
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="notification_channel_download">"Preuzmi"</string>
@@ -473,7 +332,6 @@ Međutim, prije slanja promjena, aplikacija provjerava &lt;a href=\"https://www.
     <string name="quest_noteDiscussion_closed2">"Zatvorio %1$s, %2$s
 "</string>
 
-    <!-- context/example please? what are %1$s, %2$s replaced with? -->
     <!-- Fuzzy -->
     <string name="quest_noteDiscussion_reopen2">"Ponovo otvorio korisnik %1$s, %2$s"</string>
 
@@ -493,13 +351,8 @@ Međutim, prije slanja promjena, aplikacija provjerava &lt;a href=\"https://www.
     <!-- Fuzzy -->
     <string name="restore_hidden_success">"Vraćeno je %d skrivenih zadataka"</string>
 
-    <!-- caution: This is not necessarily the floor and level=0 is not necessarily at street level
-    as it may follow the numbering scheme of the building operator. Try to use a generic wording
-    that does not carry an implicit meaning of where it is located in respect to the ground floor.
-    The context is usually shopping centres, train stations or airport terminals -->
     <string name="on_level">"na katu %s:"</string>
 
-    <!-- as in: "Where is the metro station?" - "It is underground" -->
     <!-- Fuzzy -->
     <string name="underground">"ispod površine:"</string>
     <string name="quest_sidewalk_value_yes">"Ima nogostup"</string>
@@ -530,8 +383,6 @@ Međutim, prije slanja promjena, aplikacija provjerava &lt;a href=\"https://www.
 
     <!-- Fuzzy -->
     <string name="quest_leave_new_note_photos_are_useful">"Dodavanjem fotografije bilješka će biti puno korisnija."</string>
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="create_new_note_hint">"Bilješku najbolje napišite na lokalnom jeziku, ili na engleskom ako ne pričate lokalni jezik."</string>
@@ -567,14 +418,6 @@ Razdvojiti put sada?"</string>
 
     <!-- Fuzzy -->
     <string name="confirmation_cancel_prev_download_cancel">"Nastavi s trenutnom potragom"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="user_profile">"Moj profil"</string>
@@ -653,13 +496,7 @@ Konačno, ne zaboravite paziti na sigurnost: budite svjesni svoje okoline i ne u
     <string name="link_welcome_mat_description">"Opće informacije o OpenStreetMap-u i kako kao organizacija raditi s OSM-om"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="link_openrouteservice_wheelchair_description">"Navigacija korak po korak za invalidska kolica"</string>
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="link_myosmatic_description">"Generirajte karte grada za ispis u nekoliko jednostavnih koraka, po želji s katalogom ulica"</string>
@@ -723,26 +560,12 @@ Konačno, ne zaboravite paziti na sigurnost: budite svjesni svoje okoline i ne u
     <string name="user_profile_achievement_levels">"Razine postignuća"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="privacy_html_tileserver2">"&lt;p&gt;Da bi se prikazala karta, vektori se dohvaćaju sa %1$s. Pogledajte njihovu &lt;a href=\"%2$s\"&gt;izjavu o privatnosti&lt;/a&gt; za više informacija.&lt;/p&gt;"</string>
     <string name="quest_sidewalk_separately_mapped">"Da, prikazan odvojeno na karti"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_surface_detailed_answer_impossible_confirmation">"Jeste li sigurni da je nemoguće odrediti površinu? Obratite pažnju na odgovor \"Razlikuje se putem\" koji vam omogućuje da označite mjesto na kojem se površina mijenja. Molimo da koristite \"Ne mogu reći\" ako postoji jedna površina, ali ona nije dostupna kao odgovor."</string>
     <string name="quest_surface_detailed_answer_impossible_description">"Molimo ukratko opišite vrstu površine ovdje, na primjer \"pjeskovita s kaldrmom mjestimice\". Duljina teksta ograničena je na 255 znakova."</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_oneway_tutorial">"Cesta na ilustraciji rotirana je isto kao na karti na mjestu pribadače. Obratite pažnju na naznačeni smjer."</string>
@@ -752,17 +575,11 @@ Konačno, ne zaboravite paziti na sigurnost: budite svjesni svoje okoline i ne u
     <string name="at_housenumber">"kućni broj %s:"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_name_type_title">"Je li %1$s (%2$s) pristupačan za invalidska kolica?"</string>
     <string name="pref_title_resurvey_intervals">"Interval ponavljanja istraživanja"</string>
     <string name="resurvey_intervals_less_often">"Pitaj rjeđe"</string>
     <string name="resurvey_intervals_default">"Uobičajeno"</string>
     <string name="resurvey_intervals_more_often">"Pitaj češće"</string>
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_steps_incline_title">"Koji smjer vodi prema gore za ove stepenice?"</string>
@@ -774,16 +591,6 @@ Konačno, ne zaboravite paziti na sigurnost: budite svjesni svoje okoline i ne u
 
     <!-- Fuzzy -->
     <string name="quest_traffic_signals_vibrate_description">"Savjet: Često se radi o vibrirajućem gumbu ili rotirajućem konusu na donjoj strani kućišta gumba na semaforu."</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_steps_ramp_title">"Imaju li ove stepenice rampu? Koje vrste?"</string>
@@ -799,10 +606,6 @@ Konačno, ne zaboravite paziti na sigurnost: budite svjesni svoje okoline i ne u
 
     <!-- Fuzzy -->
     <string name="quest_steps_ramp_wheelchair">"Rampa za invalidska kolica"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="achievement_rare_title">"Potraga za blagom"</string>
@@ -822,10 +625,6 @@ Konačno, ne zaboravite paziti na sigurnost: budite svjesni svoje okoline i ne u
     <string name="pref_title_sync2">"Automatski šalji odgovore"</string>
     <string name="quest_surface_detailed_answer_impossible_title">"Opišite površinu"</string>
     <string name="open_url">"Otvori poveznicu"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="link_disaster_ninja_description">"Karta koja prikazuje nedavne prirodne katastrofe, zanimljiva za kartografe humanitarnih organizacija. Također, prikazuje mnoštvo zanimljivih statističkih podataka za analizu koliko su dobro kartirana i ažurirana mjesta."</string>

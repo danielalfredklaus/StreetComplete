@@ -36,8 +36,6 @@
     <string name="oauth_failed_permissions">"L'autorització ha fallat: es llisten tots els permisos que cal autoritzar"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="pref_category_communication">"Comunicació"</string>
 
     <!-- Fuzzy -->
@@ -81,8 +79,6 @@
     <string name="quest_generic_confirmation_no">"Ho comprovaré"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_leave_new_note_title">"Voleu deixar una nota?"</string>
 
     <!-- Fuzzy -->
@@ -91,34 +87,6 @@
 
     <!-- Fuzzy -->
     <string name="quest_leave_new_note_no">"No, només amaga-la"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_noteDiscussion_title">"Podeu contribuir en aquesta nota?"</string>
@@ -200,8 +168,6 @@
     <string name="confirmation_authorize_now">"Cal que doneu autorització amb el vostre compte d'usuari OSM per a poder publicar qualsevol de les respostes. Voleu autoritzar-lo ara?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="version_banned_message">"Aquesta versió de l'StreetComplet és massa antiga. Actualitzeu-la!"</string>
 
     <!-- Fuzzy -->
@@ -214,36 +180,10 @@
     <string name="later">"Després"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="about_title_privacy_statement">"Declaració de privadesa"</string>
 
     <!-- Fuzzy -->
     <string name="about_summary_privacy_statement">"i ús de dades"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_roofShape_select_one">"Selecciona'n un:"</string>
@@ -337,42 +277,15 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
     <!-- Fuzzy -->
     <string name="quest_surface_value_wood">"Fusta"</string>
 
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_sidewalk_title">"Aquest carrer té vorera?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_streetLanes_title">"Quants carrils té aquesta via?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_address_title">"Quin número de portal té aquest edifici?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="crash_message">"Voleu enviar l'informe d'error al desenvolupador?"</string>
@@ -402,59 +315,7 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
     <string name="quest_generic_hasFeature_no">"No"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_select_hint">"Trieu:"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_tactilePaving_title_bus">"Aquesta parada d'autobús té paviment tàctil?"</string>
@@ -472,46 +333,16 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
     <string name="quest_source_dialog_note">"Només hauríeu d'entrar la informació recollida en expedició de camp"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="dialog_session_dont_show_again">"No ho mostris més durant aquesta sessió"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_street_name_title">"Quin tipus de superfície té la carretera %s aquí?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_name_title">"Es pot accedir a %s amb cadira de rodes?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited">"Parcialment"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_bus_station_title">"Aquesta estació de bus és accessible amb cadira de rodes?"</string>
@@ -544,46 +375,6 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Parcialment significa que no hi ha més d'un esglaó per accedir-hi."</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="credits_contributors">"Vegeu la &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;llista completa de col·laboradors a GitHub&lt;/a&gt;."</string>
 
     <!-- Fuzzy -->
@@ -608,98 +399,6 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
     <string name="quest_maxspeed_answer_living_street_confirmation_title">"Per tant, hi ha un senyal com aquest?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="cannot_find_bbox_or_reduce_tilt">"No pot escannejar aquí. Prova a zoom en més llunyà o inlcina el mapa menys."</string>
 
     <!-- Fuzzy -->
@@ -722,52 +421,6 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
     <string name="undo_confirm_title">"Voleu desfer la darrera resposta?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="about_category_feedback">"Comentaris"</string>
 
     <!-- Fuzzy -->
@@ -777,25 +430,7 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
     <string name="quest_leave_new_note_photo_delete_title">"Voleu eliminar aquesta foto?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_leave_new_note_create_image_error">"Incapaç de crear arxiu fotografic"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Avançat"</string>
@@ -822,48 +457,10 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
     <string name="undo_confirm_negative">"Cancel·lar"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="enable_quest_confirmation_title">"Voleu habilitar aquest tipus de cerca?"</string>
 
     <!-- Fuzzy -->
     <string name="default_disabled_msg_go_inside">"Aquest tipus de cerca està desactivat de manera predeterminada, ja que probablement hauràs d'ingressar al lloc per poder respondre una pregunta d'aquest tipus."</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toilets_title">"Aquests serveis són accessibles amb cadira de rodes?"</string>
@@ -903,116 +500,13 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
     <string name="quest_surface_value_metal">"Metall"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_surface_value_unhewn_cobblestone">"Llamborda irregular"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_surface_square_title">"Quin tipus de superfície té aquesta plaça?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_square_name_title">"Quin tipus de superfície té la plaça %s aquí?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- What does this string mean? -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_construction_road_title">"Aquesta carretera està finalitzada?"</string>
@@ -1027,15 +521,7 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
     <string name="quest_construction_generic_title">"Aquesta via està finalitzada?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="questList_disabled_in_country">"Mai es mostra a %s"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_surface_path_title">"Quina superfície té aquest camí aquí?"</string>
@@ -1047,195 +533,19 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
     <string name="quest_generic_item_confirmation">"Esteu segur que no podeu determinar-ho de forma més concreta?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="pref_quests_reset">"Voleu restablir la selecció i ordre de les missions als valors predeterminats?"</string>
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_generic_item_invalid_value">"Seleccioneu un valor més específic"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="notification_channel_download">"Baixar"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"Per pujar els teus canvis manualment, usa el botó a la barra d'eines que és així."</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_maxheight_title">"Quin és el límit d'alçada aquí?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_noteDiscussion_comment2">"— %1$s, %2$s"</string>
@@ -1256,26 +566,6 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
     <string name="action_deselect_all">"Deseleccionar tot"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_outside">"Parcialment significa que no hi ha més que un esglaó per accedir-hi."</string>
 
     <!-- Fuzzy -->
@@ -1283,12 +573,6 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
 
     <!-- Fuzzy -->
     <string name="quest_traffic_signals_button_title">"Aquest semàfor té botó per a demanar llum verda?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="pref_title_quests_restore_hidden">"Restaura les missions ocultes"</string>
@@ -1303,7 +587,6 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
     <!-- Fuzzy -->
     <string name="on_level">"en el nivell %s:"</string>
 
-    <!-- as in: "Where is the metro station?" - "It is underground" -->
     <!-- Fuzzy -->
     <string name="underground">"subterrani:"</string>
 
@@ -1320,8 +603,6 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
     <string name="quest_accessible_for_pedestrians_separate_sidewalk_explanation">"Aquest carrer es va etiquetar sense vorera en cap costat. En cas que hi hagi una vorera, però es mostri com a una via separada, respongueu «vorera»"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="pref_title_theme_select">"Seleccioneu un tema"</string>
     <string name="theme_automatic">"Automàtic"</string>
 
@@ -1335,42 +616,16 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
     <string name="theme_system_default">"Predeterminat del sistema"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="action_open_location">"Obre la ubicació en una altra aplicació"</string>
 
     <!-- Fuzzy -->
     <string name="map_application_missing">"No hi ha cap altra aplicació de mapes instal·lada"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_leave_new_note_photos_are_useful">"Afegir una foto farà la nota molt més útil."</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="create_new_note_hint">"Millor que escriviu la nota en la llengua local o en anglès."</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_surface_cycleway_title">"Quin tipus de superfície té el carril bici aquí?"</string>
@@ -1403,68 +658,10 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
     <string name="quest_tactilePaving_title_name_tram">"Aquesta parada de tramvia %s té paviment tàctil?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_handrail_title">"Les escales tenen barana?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="about_summary_current_version">"Versió actual: %s"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="about_title_changelog">"Historial de la versió"</string>
@@ -1473,42 +670,10 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
     <string name="title_whats_new">"Què hi ha de nou?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="confirmation_cancel_prev_download_confirmed">"Escanegeu aquí"</string>
 
     <!-- Fuzzy -->
     <string name="confirmation_cancel_prev_download_cancel">"Continua amb l'escaneig actual"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="user_profile">"El meu perfil"</string>

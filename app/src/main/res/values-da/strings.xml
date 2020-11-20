@@ -36,8 +36,6 @@
     <string name="oauth_failed_permissions">"Login afbrudt: alle de beskrevne tilladelser skal gives"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="pref_category_communication">"Kommunikation"</string>
 
     <!-- Fuzzy -->
@@ -81,8 +79,6 @@
     <string name="quest_generic_confirmation_no">"Det vil jeg undersøge"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_leave_new_note_title">"Efterlad note i stedet?"</string>
 
     <!-- Fuzzy -->
@@ -91,35 +87,6 @@
 
     <!-- Fuzzy -->
     <string name="quest_leave_new_note_no">"Nej, bare skjul det"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- I'm unsure what this means, "abbreviations *will be* expanded" or "expand abbrevations"? (currently translated to "will be" -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_noteDiscussion_title">"Kan du tilføje noget til den her note?"</string>
@@ -201,8 +168,6 @@
     <string name="confirmation_authorize_now">"Du er nød til at autentificere med din OSM konto for at publicere dine svar. Autentificer nu?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="version_banned_message">"Denne version af StreetComplete er for gammel! Opdater venligst!"</string>
 
     <!-- Fuzzy -->
@@ -215,45 +180,16 @@
     <string name="later">"Senere"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="about_title_privacy_statement">"Privatlivspolitik"</string>
 
     <!-- Fuzzy -->
     <string name="about_summary_privacy_statement">"og dataforbrug"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_roofShape_select_one">"Vælg en:"</string>
 
     <!-- Fuzzy -->
     <string name="quest_roofShape_show_more">"Vis mere…"</string>
-
-    <!-- it is used in generic list, not only for roof shape but rename would break translations -->
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="map_btn_zoom_out">"Zoom out"</string>
@@ -310,7 +246,6 @@ Før ændringer sendes tjekker appen dog en &lt;a href=\"https://www.westnordost
     <!-- Fuzzy -->
     <string name="quest_surface_value_concrete">"Beton"</string>
 
-    <!-- The danish osm wikipage for surface descripes this as close to ground/unpaved, and instead uses surface:earth for dirt it appears http://wiki.openstreetmap.org/wiki/Da:Key:surface -->
     <!-- Fuzzy -->
     <string name="quest_surface_value_dirt">"Jord"</string>
 
@@ -341,41 +276,13 @@ Før ændringer sendes tjekker appen dog en &lt;a href=\"https://www.westnordost
     <string name="quest_surface_value_wood">"Træ"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_sidewalk_title">"Er der et fortov på denne vej?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_streetLanes_title">"Hvor mange spor har denne vej?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_address_title">"Hvilket husnummer er der på denne bygning?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="crash_message">"Vil du sende en fejlrapport til udvikleren?"</string>
@@ -405,57 +312,7 @@ Før ændringer sendes tjekker appen dog en &lt;a href=\"https://www.westnordost
     <string name="quest_generic_hasFeature_no">"Nej"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_select_hint">"Vælg:"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
 
@@ -476,46 +333,16 @@ Før ændringer sendes tjekker appen dog en &lt;a href=\"https://www.westnordost
     <string name="quest_source_dialog_note">"Udelukkende information som blev fundet ved en undersøgelse bør indtastes."</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="dialog_session_dont_show_again">"Vis ikke igen for denne session"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_street_name_title">"Hvad overflade har vejen %s her?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_name_title">"Er %s kørestolsvenlig?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited">"Delvist"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_bus_station_title">"Er dette busstoppested kørestolsvenligt?"</string>
@@ -549,45 +376,7 @@ Før ændringer sendes tjekker appen dog en &lt;a href=\"https://www.westnordost
 
     <!-- Fuzzy -->
 
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
     <!-- Is this litterally used for open stores (versus closed?) or is it something special? -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
     <!-- Fuzzy -->
     <string name="credits_contributors">"Se &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;den fulde liste på GitHub&lt;/a&gt;."</string>
 
@@ -613,98 +402,6 @@ Før ændringer sendes tjekker appen dog en &lt;a href=\"https://www.westnordost
     <string name="quest_maxspeed_answer_living_street_confirmation_title">"Så der er et skilt som dette?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="cannot_find_bbox_or_reduce_tilt">"Kan ikke skanne her. Prøv at zoome yderligere ind eller vip kortet mindre."</string>
 
     <!-- Fuzzy -->
@@ -727,52 +424,6 @@ Før ændringer sendes tjekker appen dog en &lt;a href=\"https://www.westnordost
     <string name="undo_confirm_title">"Fortryd følgende sidste svar?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="about_category_feedback">"Feedback"</string>
 
     <!-- Fuzzy -->
@@ -782,25 +433,7 @@ Før ændringer sendes tjekker appen dog en &lt;a href=\"https://www.westnordost
     <string name="quest_leave_new_note_photo_delete_title">"Ønsker du at slette dette billede?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_leave_new_note_create_image_error">"Kunne ikke oprette fil til foto"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Avanceret"</string>
@@ -827,48 +460,10 @@ Før ændringer sendes tjekker appen dog en &lt;a href=\"https://www.westnordost
     <string name="undo_confirm_negative">"Annuller"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="enable_quest_confirmation_title">"Aktiver denne opgavetype?"</string>
 
     <!-- Fuzzy -->
     <string name="default_disabled_msg_go_inside">"Denne opgavetype er normalt deaktiveret, da du sandsynligvis skal ind i stedet for at kunne svare på denne opgavetype."</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toilets_title">"Er dette toilet tilgængeligt for kørestolsbrugere?"</string>
@@ -908,113 +503,13 @@ Delvist betyder at kørestolsbrugeren kan bruge toilettet men der mangler håndt
     <string name="quest_surface_value_metal">"Metal"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_surface_value_unhewn_cobblestone">"Pigsten"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_surface_square_title">"Hvilket overflade har denne plads?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_square_name_title">"Hvilken overflade har %s her?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_construction_road_title">"Er denne vej færdiglavet?"</string>
@@ -1029,15 +524,7 @@ Delvist betyder at kørestolsbrugeren kan bruge toilettet men der mangler håndt
     <string name="quest_construction_generic_title">"Er denne vej færdiglavet?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="questList_disabled_in_country">"Aldrig vist i %s"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_surface_path_title">"Hvilket overflade har denne sti her?"</string>
@@ -1049,197 +536,19 @@ Delvist betyder at kørestolsbrugeren kan bruge toilettet men der mangler håndt
     <string name="quest_generic_item_confirmation">"Er du sikker på at du ikke kan bestemme den mere specifikt?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="pref_quests_reset">"Nulstil både opgaver indstillinger og rækkefølge til standard?"</string>
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_generic_item_invalid_value">"Vælg venligt en mere specifik værdi."</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="notification_channel_download">"Download"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"Hvis du vil uploade dine ændringer manuelt, skal du bruge knappen i den værktøjslinje, der ser sådan ud."</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_maxheight_title">"Hvad er max højde her?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_noteDiscussion_comment2">"— %1$s, %2$s"</string>
@@ -1260,26 +569,6 @@ Delvist betyder at kørestolsbrugeren kan bruge toilettet men der mangler håndt
     <string name="action_deselect_all">"Fravælg alle"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_outside">"Delvist betyder, at der ikke er mere end et enkelt trin for at få adgang til det."</string>
 
     <!-- Fuzzy -->
@@ -1289,25 +578,14 @@ Delvist betyder at kørestolsbrugeren kan bruge toilettet men der mangler håndt
     <string name="quest_traffic_signals_button_title">"Har disse lyskryds en knap til at fodgængere kan få gå-signal?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="pref_title_quests_restore_hidden">"Gendan skjulte gæster"</string>
 
     <!-- Fuzzy -->
     <string name="restore_hidden_success">"Gendannet %d skjulte gæster"</string>
 
-    <!-- caution: This is not necessarily the floor and level=0 is not necessarily at street level
-    as it may follow the numbering scheme of the building operator. Try to use a generic wording
-    that does not carry an implicit meaning of where it is located in respect to the ground floor.
-    The context is usually shopping centres, train stations or airport terminals -->
     <!-- Fuzzy -->
     <string name="on_level">"på etage %s:"</string>
 
-    <!-- as in: "Where is the metro station?" - "It is underground" -->
     <!-- Fuzzy -->
     <string name="underground">"underjordisk:"</string>
 
@@ -1324,8 +602,6 @@ Delvist betyder at kørestolsbrugeren kan bruge toilettet men der mangler håndt
     <string name="quest_accessible_for_pedestrians_separate_sidewalk_explanation">"Denne gade blev tagget som om den ikke havde nogen fortov på hver side. I tilfælde af, at der trods alt er et fortov, men det vises som en separat vej, skal du svare \"fortov\"."</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="pref_title_theme_select">"Vælg tema"</string>
     <string name="theme_automatic">"Auto"</string>
 
@@ -1339,42 +615,16 @@ Delvist betyder at kørestolsbrugeren kan bruge toilettet men der mangler håndt
     <string name="theme_system_default">"Systemstandard"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="action_open_location">"Åben denne lokation i en anden app"</string>
 
     <!-- Fuzzy -->
     <string name="map_application_missing">"Intet andet kortprogram er installeret"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_leave_new_note_photos_are_useful">"Tilføjelse af et foto vil gøre denne note ekstra værdifuld."</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="create_new_note_hint">"Det er bedst at skrive en note på det lokale sprog ellers skriv noten på engelsk."</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_surface_cycleway_title">"Hvad er belægningen på denne cykelsti?"</string>
@@ -1408,82 +658,16 @@ Del det nu?"</string>
     <string name="quest_tactilePaving_title_name_tram">"Har dette vognstopsted %s med taktile brolægninger?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_handrail_title">"Har denne trappe et gelænder?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="about_summary_current_version">"Nuværende version:  %s"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="about_title_changelog">"Versionshistorie"</string>
 
     <!-- Fuzzy -->
     <string name="title_whats_new">"Hvad er nyt?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="confirmation_cancel_prev_download_confirmed">"Skan her i stedet"</string>

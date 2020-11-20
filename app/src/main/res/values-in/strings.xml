@@ -36,8 +36,6 @@
     <string name="oauth_failed_permissions">"Otorisasi gagal: Semua izin yang terdaftar harus diaktifkan"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="pref_category_communication">"Komunikasi"</string>
 
     <!-- Fuzzy -->
@@ -142,8 +140,6 @@
     <string name="confirmation_authorize_now">"Kamu perlu memberi otorisasi akun OSMmu untuk mengunggah jawaban. Otorisasi sekarang?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="version_banned_message">"Versi StreetComplete terlalu tua. Silahkan perbarui!"</string>
 
     <!-- Fuzzy -->
@@ -162,8 +158,6 @@
     <string name="about_summary_privacy_statement">"dan penggunaan data"</string>
     <string name="quest_roofShape_select_one">"Pilih satu:"</string>
     <string name="quest_roofShape_show_more">"Tampilkan lebih banyak…"</string>
-
-    <!-- it is used in generic list, not only for roof shape but rename would break translations -->
 
     <!-- Fuzzy -->
     <string name="map_btn_zoom_out">"Perkecil"</string>
@@ -225,8 +219,6 @@ Tetapi, sebelum mengunggah perubahan, aplikasi mengecek &lt;a href=\"https://www
     <string name="quest_address_title">"Nomor berapa bangunan ini?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="crash_message">"Maukah kamu mengirim laporan galat ke pengembang?"</string>
 
     <!-- Fuzzy -->
@@ -272,10 +264,6 @@ Tetapi, sebelum mengunggah perubahan, aplikasi mengecek &lt;a href=\"https://www
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Sebagian berarti tidak ada lebih dari satu anak tangga untuk mengakses"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="credits_contributors">"Lihat &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;daftar lengkap di Github&lt;/a&gt;."</string>
 
     <!-- Fuzzy -->
@@ -296,66 +284,6 @@ Tetapi, sebelum mengunggah perubahan, aplikasi mengecek &lt;a href=\"https://www
     <string name="quest_maxspeed_answer_living_street_confirmation_title">"Jadi, ada rambu seperti ini?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="cannot_find_bbox_or_reduce_tilt">"Tidak dapat memindai di sini. Coba perbesar peta atau kurangi kemiringannya."</string>
     <string name="quest_crossing_type_title">"Apakah tipe penyeberangan ini?"</string>
     <string name="quest_crossing_type_signals">"Penyeberangan dengan lampu lalu lintas"</string>
@@ -368,16 +296,6 @@ Tetapi, sebelum mengunggah perubahan, aplikasi mengecek &lt;a href=\"https://www
 
     <!-- Fuzzy -->
     <string name="undo_confirm_title">"Urungkan jawaban terakhir?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="about_category_feedback">"Umpan balik"</string>
@@ -448,21 +366,14 @@ Sebagian berarti kursi roda dapat masuk dan menggunakannya, tapi tidak ada pegan
     <string name="quest_traffic_signals_button_title">"Apa lampu merah di sini punya tombol untuk menyeberang?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="pref_title_quests_restore_hidden">"Pulihkan pencarian yang tersembunyi"</string>
 
     <!-- Fuzzy -->
     <string name="restore_hidden_success">"%d pencarian tersembunyi dipulihkan"</string>
 
-    <!-- caution: This is not necessarily the floor and level=0 is not necessarily at street level
-    as it may follow the numbering scheme of the building operator. Try to use a generic wording
-    that does not carry an implicit meaning of where it is located in respect to the ground floor.
-    The context is usually shopping centres, train stations or airport terminals -->
     <!-- Fuzzy -->
     <string name="on_level">"Pada lantai %s:"</string>
 
-    <!-- as in: "Where is the metro station?" - "It is underground" -->
     <!-- Fuzzy -->
     <string name="underground">"bawah tanah:"</string>
     <string name="quest_sidewalk_value_yes">"trotoar"</string>
@@ -592,8 +503,6 @@ Lanjutkan untuk membuka achievement lebih banyak yang berisi link ke OSM dan apl
 
     <!-- Fuzzy -->
     <string name="achievement_pedestrian_solved_X">"Kamu menyelesaikan %d pencarian yang menarik untuk pejalan kaki!"</string>
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="unread_messages_message">"Kamu memiliki %d pesan tak terbaca di inbox"</string>

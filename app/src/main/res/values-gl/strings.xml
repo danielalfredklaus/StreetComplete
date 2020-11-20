@@ -36,8 +36,6 @@
     <string name="oauth_failed_permissions">"A autorización fallou: tes que fornecer tódolos permisos"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="pref_category_communication">"Conexión"</string>
 
     <!-- Fuzzy -->
@@ -81,8 +79,6 @@
     <string name="quest_generic_confirmation_no">"Revisareino"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_leave_new_note_title">"No canto disto deixar unha nota?"</string>
 
     <!-- Fuzzy -->
@@ -91,34 +87,6 @@
 
     <!-- Fuzzy -->
     <string name="quest_leave_new_note_no">"Non, agóchate"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_noteDiscussion_title">"Podes engadir información útil na nota?"</string>
@@ -200,8 +168,6 @@
     <string name="confirmation_authorize_now">"Precisas iniciar sesión ca túa conta do usuario do OSM para envia-las túas respostas. Desexas facelo agora?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="version_banned_message">"Esta versión do StreetComplete é moi vella. Por favor actualizaa!"</string>
 
     <!-- Fuzzy -->
@@ -214,45 +180,16 @@
     <string name="later">"Despois"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="about_title_privacy_statement">"Declaración da privacidade"</string>
 
     <!-- Fuzzy -->
     <string name="about_summary_privacy_statement">"e emprego dos datos"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_roofShape_select_one">"Escolle unha forma:"</string>
 
     <!-- Fuzzy -->
     <string name="quest_roofShape_show_more">"Amosar máis…"</string>
-
-    <!-- it is used in generic list, not only for roof shape but rename would break translations -->
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="map_btn_zoom_out">"Afastar"</string>
@@ -339,41 +276,13 @@ Porén, antes de subir calquera mudanza á aplicación pescuda se a versión act
     <string name="quest_surface_value_wood">"Madeira"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_sidewalk_title">"Esta rúa ten beirarrúa?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_streetLanes_title">"Cantas faixas ou carrís ten esta estrada?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_address_title">"Cal é o número da porta deste edificio?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="crash_message">"Desexas informar do problema ó desenvolvedor?"</string>
@@ -403,59 +312,7 @@ Porén, antes de subir calquera mudanza á aplicación pescuda se a versión act
     <string name="quest_generic_hasFeature_no">"Non"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_select_hint">"Escolle unha opción:"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_tactilePaving_title_bus">"A paraxe do bus ten pavimento táctil?"</string>
@@ -473,46 +330,16 @@ Porén, antes de subir calquera mudanza á aplicación pescuda se a versión act
     <string name="quest_source_dialog_note">"Só deberías engadir información que coñezas de primeira man."</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="dialog_session_dont_show_again">"Non amosar máis nesta sesión"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_street_name_title">"Que tipo de superficie ten a vía %s?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_name_title">"Podes acceder cara a %s nunha cadeira de rodas?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited">"De xeito parcial"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_bus_station_title">"Podes acceder á estación dos buses nunha cadeira de rodas?"</string>
@@ -545,46 +372,6 @@ Porén, antes de subir calquera mudanza á aplicación pescuda se a versión act
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Significa de xeito parcial que non hai máis dun chanzo en todo o percorrido."</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="credits_contributors">"Bótalle unha ollada á &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;listaxe enteira dos contribuíntes no GitHub&lt;/a&gt;."</string>
 
     <!-- Fuzzy -->
@@ -609,98 +396,6 @@ Porén, antes de subir calquera mudanza á aplicación pescuda se a versión act
     <string name="quest_maxspeed_answer_living_street_confirmation_title">"Hai un sinal coma este?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="cannot_find_bbox_or_reduce_tilt">"Achega o mapa un chisco máis para procurar tarefas."</string>
 
     <!-- Fuzzy -->
@@ -723,52 +418,6 @@ Porén, antes de subir calquera mudanza á aplicación pescuda se a versión act
     <string name="undo_confirm_title">"Desexas desface-la última pregunta respostada?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="about_category_feedback">"Suxestións"</string>
 
     <!-- Fuzzy -->
@@ -778,25 +427,7 @@ Porén, antes de subir calquera mudanza á aplicación pescuda se a versión act
     <string name="quest_leave_new_note_photo_delete_title">"Desexas elimina-la imaxe?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_leave_new_note_create_image_error">"Non foi posíbel crea-lo ficheiro da imaxe"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Avanzado"</string>
@@ -823,48 +454,10 @@ Porén, antes de subir calquera mudanza á aplicación pescuda se a versión act
     <string name="undo_confirm_negative">"Desbotar"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="enable_quest_confirmation_title">"Desexas activar este tipo de tarefa?"</string>
 
     <!-- Fuzzy -->
     <string name="default_disabled_msg_go_inside">"Este tipo de tarefa está desactivada de xeito predeterminado porque o lóxico é que teñas que entrar dentro para respostala."</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toilets_title">"Os servizos son accesíbeis para persoas nunha cadeira de rodas?"</string>
@@ -904,115 +497,13 @@ Porén, antes de subir calquera mudanza á aplicación pescuda se a versión act
     <string name="quest_surface_value_metal">"Metal"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_surface_value_unhewn_cobblestone">"Empedrado irregular (natural)"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_surface_square_title">"Que tipo de superficie ten esta praza?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_square_name_title">"Que tipo de superficie ten a praza «%s»?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_construction_road_title">"Esta estrada está rematada?"</string>
@@ -1027,15 +518,7 @@ Porén, antes de subir calquera mudanza á aplicación pescuda se a versión act
     <string name="quest_construction_generic_title">"Esta vía está rematada?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="questList_disabled_in_country">"Nunca se amosa en %s"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_surface_path_title">"De que tipo de material é este camiño?"</string>
@@ -1047,195 +530,19 @@ Porén, antes de subir calquera mudanza á aplicación pescuda se a versión act
     <string name="quest_generic_item_confirmation">"Estás na certeza de que non podes determinalo máis específicamente?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="pref_quests_reset">"Restabelece-la activación de procuras e a orde predeterminada?"</string>
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_generic_item_invalid_value">"Por favor, escolle un valor máis preciso."</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="notification_channel_download">"Descarregar"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"Para subi-las mudanzas de xeito manual, emprega o botón na barra das ferramentas semellante a este."</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_maxheight_title">"Cal é o límite da altura aquí?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_noteDiscussion_comment2">"— %1$s, %2$s"</string>
@@ -1256,26 +563,6 @@ Porén, antes de subir calquera mudanza á aplicación pescuda se a versión act
     <string name="action_deselect_all">"Deseleccionar todo"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_outside">"Significa que de xeito parcial non hai máis que un só chanzo para entrar."</string>
 
     <!-- Fuzzy -->
@@ -1285,25 +572,14 @@ Porén, antes de subir calquera mudanza á aplicación pescuda se a versión act
     <string name="quest_traffic_signals_button_title">"Estes semáforos teñen un botón para solicitar luz verde?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="pref_title_quests_restore_hidden">"Restaurar as tarefas agochadas"</string>
 
     <!-- Fuzzy -->
     <string name="restore_hidden_success">"Restauráronse %d tarefas agochadas"</string>
 
-    <!-- caution: This is not necessarily the floor and level=0 is not necessarily at street level
-    as it may follow the numbering scheme of the building operator. Try to use a generic wording
-    that does not carry an implicit meaning of where it is located in respect to the ground floor.
-    The context is usually shopping centres, train stations or airport terminals -->
     <!-- Fuzzy -->
     <string name="on_level">"no nivel %s:"</string>
 
-    <!-- as in: "Where is the metro station?" - "It is underground" -->
     <!-- Fuzzy -->
     <string name="underground">"subterráneo:"</string>
 
@@ -1320,8 +596,6 @@ Porén, antes de subir calquera mudanza á aplicación pescuda se a versión act
     <string name="quest_accessible_for_pedestrians_separate_sidewalk_explanation">"Esta rúa foi etiquetada como que non ten beirarrúa en ámbalas dúas beiras. No caso de que ó final haxa beirarrúa, póñense de xeito separado en cada beira, escóllese \"sidewalk\" (beirarrúa)."</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="pref_title_theme_select">"Escolle a aparencia"</string>
     <string name="theme_automatic">"Automático"</string>
 
@@ -1335,42 +609,16 @@ Porén, antes de subir calquera mudanza á aplicación pescuda se a versión act
     <string name="theme_system_default">"Predeterminado"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="action_open_location">"Abrir localización noutra aplicación"</string>
 
     <!-- Fuzzy -->
     <string name="map_application_missing">"Ningunha outra aplicación de mapas instalada"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_leave_new_note_photos_are_useful">"Engadir unha imaxe fará que a nota sexa moito máis útil."</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="create_new_note_hint">"Mellor escribir a nota na lingua falada de xeito local ou tamén en inglés."</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_surface_cycleway_title">"Cal é a superficie da senda ciclista aquí?"</string>
@@ -1404,71 +652,13 @@ Dividila agora?"</string>
     <string name="quest_tactilePaving_title_name_tram">"A paraxe do tranvía %s ten pavemento táctil?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_handrail_title">"Estas escadas teñen pasamáns?"</string>
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="about_summary_current_version">"Versión actual: %s"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_street_side_puzzle_tutorial">"A estrada da ilustración é rotada do mesmo xeito que no mapa na localización do marcador."</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="about_title_changelog">"Histórico de versións"</string>
@@ -1477,44 +667,10 @@ Dividila agora?"</string>
     <string name="title_whats_new">"Que hai novo?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="confirmation_cancel_prev_download_confirmed">"Escanear aquí"</string>
 
     <!-- Fuzzy -->
     <string name="confirmation_cancel_prev_download_cancel">"Continuar escaneo actual"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="user_profile">"O meu perfil"</string>
@@ -1622,13 +778,7 @@ Finalmente, lembra estar seguro: atento á túa contorna e non entres a unha pro
     <string name="link_category_goodies_description">"Cousas interesantes relacionadas co mapa para que probes"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="link_wheelmap_description">"Un mapa para atopar lugares accesíbeis para cadeiras de rodas"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="link_touch_mapper_description">"Crea mapas táctiles doadamente para calquera enderezo"</string>
@@ -1667,25 +817,13 @@ Finalmente, lembra estar seguro: atento á túa contorna e non entres a unha pro
     <string name="link_welcome_mat_description">"Información xeral sobre o OpenStreetMap e como traballar co OSM coma organización"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="link_openrouteservice_wheelchair_description">"Navegación paso a paso para usuarios de cadeiras de rodas"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="link_myosmatic_description">"Xera mapas de cidades imprimíbeis nuns sinxelos pasos, de xeito opcional cun directorio de rúas"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="link_show_me_the_way_description">"Ollar as edicións do OSM en tempo real"</string>
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="link_openrouteservice_description">"Enrutamento para unha variedade de vehículos e a pé, cada un con preferencias.  Tamén pode amosar isocronas (área accesíbel en X minutos dende un punto de partida)."</string>
@@ -1694,15 +832,7 @@ Finalmente, lembra estar seguro: atento á túa contorna e non entres a unha pro
     <string name="link_osm_haiku_description">"Empregando datos do OSM para xerar un haiku (un xeito de poesía xaponesa)"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="link_weeklyosm_description">"O blogue de novas semanal sobre o que está a acontecer no mundo do OpenStreetMap"</string>
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="achievement_first_edit_title">"Primeira tarefa resolta"</string>
@@ -1723,22 +853,10 @@ Finalmente, lembra estar seguro: atento á túa contorna e non entres a unha pro
     <string name="achievement_regular_description">"Contribuíches %d días ó OSM con esta aplicación! Os contribuíntes regulares son a columna vertebral do OSM, grazas pola túa dedicación! ❤"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="achievement_wheelchair_title">"Mobilidade"</string>
 
     <!-- Fuzzy -->
     <string name="achievement_wheelchair_solved_X">"Resolviches %d tarefas que axudan ós usuarios de cadeiras de rodas a moverse pola cidade!"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="achievement_blind_title">"Sexto sentido"</string>
@@ -1751,14 +869,6 @@ Finalmente, lembra estar seguro: atento á túa contorna e non entres a unha pro
 
     <!-- Fuzzy -->
     <string name="achievement_pedestrian_solved_X">"Resolviches %d tarefas que son interesantes para as persoas que van a pé!"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="unread_messages_message">"Tes %d mensaxes non lidas na caixa de entrada"</string>

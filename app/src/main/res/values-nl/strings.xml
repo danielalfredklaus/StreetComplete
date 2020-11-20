@@ -36,8 +36,6 @@
     <string name="oauth_failed_permissions">"Autorisatie mislukt: Alle genoemde rechten moeten worden toegekend"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="pref_category_communication">"Communicatie"</string>
 
     <!-- Fuzzy -->
@@ -81,8 +79,6 @@
     <string name="quest_generic_confirmation_no">"Zal ik nagaan"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_leave_new_note_title">"Maak in plaats hiervan een opmerking"</string>
 
     <!-- Fuzzy -->
@@ -91,34 +87,6 @@
 
     <!-- Fuzzy -->
     <string name="quest_leave_new_note_no">"Nee, verberg deze vraag gewoon"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_noteDiscussion_title">"Kan je iets bijdragen aan deze opmerking?"</string>
@@ -200,8 +168,6 @@
     <string name="confirmation_authorize_now">"Je moet inloggen met je OSM gebruikers account om je antwoorden te kunnnen verwerken, nu inloggen?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="version_banned_message">"Deze versie van StreetComplete is te oud. Update alstublieft naar een nieuwere versie."</string>
 
     <!-- Fuzzy -->
@@ -214,45 +180,16 @@
     <string name="later">"Later"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="about_title_privacy_statement">"Privacyverklaring"</string>
 
     <!-- Fuzzy -->
     <string name="about_summary_privacy_statement">"en datagebruik"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_roofShape_select_one">"Selecteer er één:"</string>
 
     <!-- Fuzzy -->
     <string name="quest_roofShape_show_more">"Toon meer…"</string>
-
-    <!-- it is used in generic list, not only for roof shape but rename would break translations -->
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="map_btn_zoom_out">"Uitzoomen"</string>
@@ -339,41 +276,13 @@ Voor het uploaden van jouw wijzigingen zal de app een &lt;a href=\"https://www.w
     <string name="quest_surface_value_wood">"Hout"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_sidewalk_title">"Heeft deze straat een trottoir?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_streetLanes_title">"Hoeveel banen heeft deze weg?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_address_title">"Wat is het huisnummer van dit gebouw?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="crash_message">"Zou je het foutenrapport naar de ontwikkelaar willen verzenden?"</string>
@@ -403,59 +312,7 @@ Voor het uploaden van jouw wijzigingen zal de app een &lt;a href=\"https://www.w
     <string name="quest_generic_hasFeature_no">"Nee"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_select_hint">"Selecteer:"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_tactilePaving_title_bus">"Heeft deze bushalte blindengeleide tegels?"</string>
@@ -473,46 +330,16 @@ Voor het uploaden van jouw wijzigingen zal de app een &lt;a href=\"https://www.w
     <string name="quest_source_dialog_note">"Alleen antwoorden die tijdens veldwerk zijn gevonden mogen worden ingevoerd."</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="dialog_session_dont_show_again">"Toon dit niet meer voor deze sessie."</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_street_name_title">"Welk wegdek heeft de weg %s hier?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_name_title">"Is %s toegankelijk voor rolstoelen?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited">"Gedeeltelijk"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_bus_station_title">"Is dit busstation toegankelijk voor rolstoelen?"</string>
@@ -546,46 +373,6 @@ Voor het uploaden van jouw wijzigingen zal de app een &lt;a href=\"https://www.w
     <string name="quest_wheelchairAccess_limited_description_public_transport">"\"Gedeeltelijk\" betekent dat er hoogstens één opstap is om naar binnen te gaan."</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="credits_contributors">"Zie de &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt; complete lijst op GitHub&lt;/a&gt;."</string>
 
     <!-- Fuzzy -->
@@ -610,98 +397,6 @@ Voor het uploaden van jouw wijzigingen zal de app een &lt;a href=\"https://www.w
     <string name="quest_maxspeed_answer_living_street_confirmation_title">"Dus, is er zo'n bord?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="cannot_find_bbox_or_reduce_tilt">"Niet mogelijk hier te scannen. Probeer meer in te zoomen, of tilt de kaart minder."</string>
 
     <!-- Fuzzy -->
@@ -724,52 +419,6 @@ Voor het uploaden van jouw wijzigingen zal de app een &lt;a href=\"https://www.w
     <string name="undo_confirm_title">"Maak het vorige antwoord ongedaan"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="about_category_feedback">"Feedback"</string>
 
     <!-- Fuzzy -->
@@ -779,25 +428,7 @@ Voor het uploaden van jouw wijzigingen zal de app een &lt;a href=\"https://www.w
     <string name="quest_leave_new_note_photo_delete_title">"Wil je deze foto verwijderen?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_leave_new_note_create_image_error">"niet mogelijk om een bestand voor de foto te maken"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Geavanceerde instellingen"</string>
@@ -824,48 +455,10 @@ Voor het uploaden van jouw wijzigingen zal de app een &lt;a href=\"https://www.w
     <string name="undo_confirm_negative">"Annuleren"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="enable_quest_confirmation_title">"Dit soort vraag aanzetten?"</string>
 
     <!-- Fuzzy -->
     <string name="default_disabled_msg_go_inside">"Dit type vraag is standaard uitgeschakeld omdat je voor het antwoord waarschijnlijk de locatie moet binnengaan. "</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toilets_title">"Zijn deze toiletten toegankelijk voor rolstoelen?"</string>
@@ -904,117 +497,13 @@ Voor het uploaden van jouw wijzigingen zal de app een &lt;a href=\"https://www.w
     <string name="quest_surface_value_metal">"Metaal"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- In Belgium, we have a official cyclelane (with lines of ~1m) which are reserved for  cyclists; and 'suggestion strips' which would translate to 'shared_lane'. Which one is the case here? -->
-    <!-- Fuzzy -->
-
-    <!-- What is meant with this? Can you link an image? -->
-    <!-- Fuzzy -->
     <string name="quest_surface_value_unhewn_cobblestone">"Ongehouwen kasseien"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_surface_square_title">"Welke ondergrond heeft dit plein?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_square_name_title">"Welke ondergrond heeft het plein %s hier?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_construction_road_title">"Is deze weg voltooid?"</string>
@@ -1029,15 +518,7 @@ Voor het uploaden van jouw wijzigingen zal de app een &lt;a href=\"https://www.w
     <string name="quest_construction_generic_title">"Is deze weg voltooid?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="questList_disabled_in_country">"Nooit getoond in %s"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_surface_path_title">"Welke bedekking heeft dit pad?"</string>
@@ -1049,195 +530,19 @@ Voor het uploaden van jouw wijzigingen zal de app een &lt;a href=\"https://www.w
     <string name="quest_generic_item_confirmation">"Ben je er zeker van dat je dit niet specifieker kunt benoemen?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="pref_quests_reset">"Zeker dat je zowel keuze van vragen én de volgorde terug wilt instellen?"</string>
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_generic_item_invalid_value">"Gelieve iets specifieker te selecteren?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="notification_channel_download">"Download"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"Gebruik de knop in de werkbalk die er zo uitziet om je wijzigingen handmatig te uploaden."</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_maxheight_title">"Wat is hier de maximum hoogte?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_noteDiscussion_comment2">"— %1$s, %2$s"</string>
@@ -1258,26 +563,6 @@ Voor het uploaden van jouw wijzigingen zal de app een &lt;a href=\"https://www.w
     <string name="action_deselect_all">"Deselecteer alles"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_outside">"Gedeeltelijk betekent dat er niet meer dan één trede is om binnen te komen."</string>
 
     <!-- Fuzzy -->
@@ -1285,12 +570,6 @@ Voor het uploaden van jouw wijzigingen zal de app een &lt;a href=\"https://www.w
 
     <!-- Fuzzy -->
     <string name="quest_traffic_signals_button_title">"Hebben deze verkeerslichten een knop om groen licht te krijgen?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="pref_title_quests_restore_hidden">"Herstel verborgen vragen"</string>
@@ -1322,8 +601,6 @@ Voor het uploaden van jouw wijzigingen zal de app een &lt;a href=\"https://www.w
     <string name="quest_accessible_for_pedestrians_separate_sidewalk_explanation">"Deze straat is beschreven als zijnde zonder trottoir aan beide zijden. In het geval dat er wel een trottoir is maar het is beschreven als een gescheiden weg, graag \"trottoir\" antwoorden."</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="pref_title_theme_select">"Selecteer thema"</string>
     <string name="theme_automatic">"Auto"</string>
 
@@ -1337,42 +614,16 @@ Voor het uploaden van jouw wijzigingen zal de app een &lt;a href=\"https://www.w
     <string name="theme_system_default">"Standaardinstelling"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="action_open_location">"Open de locatie in een andere App"</string>
 
     <!-- Fuzzy -->
     <string name="map_application_missing">"Geen andere map applicatie geïnstalleerd"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_leave_new_note_photos_are_useful">"Het toevoegen van een foto maakt de notitie duidelijker."</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="create_new_note_hint">"Het beste is de notitie in de lokaal gesproken taal of anders in het Engels te schrijven."</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_surface_cycleway_title">"Welke bedekking heeft het fietspad hier?"</string>
@@ -1405,71 +656,13 @@ Voor het uploaden van jouw wijzigingen zal de app een &lt;a href=\"https://www.w
     <string name="quest_tactilePaving_title_name_tram">"Heeft de tramhalte %s blindengeleide tegels?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_handrail_title">"Heeft deze trap een leuning?"</string>
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="about_summary_current_version">"Huidige versie: %s"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_street_side_puzzle_tutorial">"De weg zoals getoond loopt in dezelfde richting als op de kaart op de plaats van het merkteken."</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="about_title_changelog">"Versiegeschiedenis"</string>
@@ -1478,46 +671,10 @@ Voor het uploaden van jouw wijzigingen zal de app een &lt;a href=\"https://www.w
     <string name="title_whats_new">"Wat is er nieuw?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- need some background info to make a correct translation -->
-    <!-- Fuzzy -->
     <string name="confirmation_cancel_prev_download_confirmed">"Scan hier"</string>
 
-    <!-- need some background info to make a correct translation -->
     <!-- Fuzzy -->
     <string name="confirmation_cancel_prev_download_cancel">"Ga door met scannen"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="user_profile">"Mijn profiel"</string>
@@ -1624,13 +781,7 @@ Tenslotte, zorg altijd voor je eigen veiligheid. Wees bewust van je omgeving en 
     <string name="link_category_goodies_description">"Interessante kaartgerelateerde dingen die je kunt uitproberen"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="link_wheelmap_description">"Een kaart voor het vinden van roelstoeltoegankelijke plaatsen"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="link_touch_mapper_description">"Maak voelbare kaarten voor ieder adres"</string>
@@ -1669,25 +820,13 @@ Tenslotte, zorg altijd voor je eigen veiligheid. Wees bewust van je omgeving en 
     <string name="link_welcome_mat_description">"Algemene informatie over OpenStreetMap en hoe u als organisatie met OSM kunt werken"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="link_openrouteservice_wheelchair_description">"Stap voor stap navigatie voor rolstoelgebruikers"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="link_myosmatic_description">"Genereer te printen kaarten in een paar eenvoudige stappen, optioneel met een stratengids."</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="link_show_me_the_way_description">"Bekijk OSM wijzigingen real time"</string>
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="link_openrouteservice_description">"Routebepaling voor verschillende voertuigen en te voet, elk met voorkeuren. Kan ook isochronen tonen (bereikbaar gebied in X minuten vanaf een startpunt)."</string>
@@ -1696,15 +835,7 @@ Tenslotte, zorg altijd voor je eigen veiligheid. Wees bewust van je omgeving en 
     <string name="link_osm_haiku_description">"OSM-gegevens gebruiken om een haiku te genereren (een vorm van Japanse poëzie)"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="link_weeklyosm_description">"De wekelijkse nieuwsblog over wat er in de OpenStreetMap-wereld gebeurt"</string>
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="achievement_first_edit_title">"Eerste vraag opgelost"</string>
@@ -1725,22 +856,10 @@ Tenslotte, zorg altijd voor je eigen veiligheid. Wees bewust van je omgeving en 
     <string name="achievement_regular_description">"Je hebt %d dagen bijgedragen aan OSM met deze app! Vaste bijdragers zijn de ruggengraat van OSM, bedankt voor uw toewijding! ❤"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="achievement_wheelchair_title">"Mobiliteit"</string>
 
     <!-- Fuzzy -->
     <string name="achievement_wheelchair_solved_X">"Je hebt %d vragen opgelost waarmee rolstoelgebruikers de stad kunnen verkennen!"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="achievement_blind_title">"Zesde zintuig"</string>
@@ -1753,14 +872,6 @@ Tenslotte, zorg altijd voor je eigen veiligheid. Wees bewust van je omgeving en 
 
     <!-- Fuzzy -->
     <string name="achievement_pedestrian_solved_X">"Je hebt %d vragen opgelost die interessant zijn voor mensen te voet!"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="unread_messages_message">"Je hebt %d ongelezen berichten in je inbox"</string>
@@ -1780,7 +891,6 @@ Tenslotte, zorg altijd voor je eigen veiligheid. Wees bewust van je omgeving en 
     <!-- Fuzzy -->
     <string name="confirmation_authorize_now_note2">"Je kunt dit ook later op het profielscherm doen"</string>
 
-    <!-- Can i think with Art, contributors about those whom made the illustrations? -->
     <!-- Fuzzy -->
     <string name="credits_art_contributors_title">"Grafische bijdragers"</string>
 
@@ -1802,7 +912,6 @@ Tenslotte, zorg altijd voor je eigen veiligheid. Wees bewust van je omgeving en 
     <string name="user_profile_achievement_levels">"Voltooiingsniveaus"</string>
     <string name="privacy_html_tileserver2">"&lt;p&gt; Om de kaart weer te geven, worden vectortegels opgehaald uit %1$s. Zie hun &lt;a href=\"%2$s\"&gt; privacy-verklaring &lt;/a&gt; voor meer informatie. &lt;/p&gt;"</string>
 
-    <!-- what type of Notice Board is meant? a sign board, a pin-up board, a bill board? -->
     <string name="quest_sidewalk_separately_mapped">"Ja, afzonderlijk op de kaart aangegeven."</string>
     <string name="quest_surface_detailed_answer_impossible_confirmation">"Weet u zeker dat het onmogelijk is om de bedekking te specificeren? Let op de antwoordoptie \"Verschilt onderweg\" waarmee u de weg kunt splitsen waar de bedekking verandert. Gebruik a.u.b. \"Weet ik niet…\" als er één bedekking is maar die is niet beschikbaar als antwoord."</string>
     <string name="quest_surface_detailed_answer_impossible_description">"Geef hier in het kort de aard van de bedekking aan, bijvoorbeeld \"zanderig met geplaveide plekken\". De tekstlengte is hoogstens 255 tekens."</string>
@@ -1832,7 +941,6 @@ Tenslotte, zorg altijd voor je eigen veiligheid. Wees bewust van je omgeving en 
     <string name="achievement_rare_title">"Op jacht naar de schat"</string>
     <string name="achievement_rare_solved_X">"Je hebt %d vragen gevonden en beantwoordt die zelden opgelost worden, gefelciteerd!"</string>
 
-    <!-- What are outdoor-people? Hikers? -->
     <string name="quest_pedestrian_crossing_island">"Heeft deze oversteekplaats een vluchtheuvel?"</string>
     <string name="quest_steps_ramp_separate_wheelchair">"Is de rolstoelhelling apart aangegeven op de kaart?"</string>
     <string name="quest_steps_ramp_separate_wheelchair_confirm">"apart"</string>

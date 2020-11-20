@@ -36,18 +36,15 @@
     <string name="pref_summaryOn_show_notes_not_phrased_as_questions">"Montrer également les notes qui ne ressemblent pas à des questions"</string>
     <string name="pref_summaryOff_show_notes_not_phrased_as_questions">"Ignorer les notes qui ne ressemblent pas à des questions"</string>
 
-    <!-- "de la cache" or "du cache" ? -->
     <string name="pref_title_map_cache">"Taille du cache de la carte"</string>
     <string name="map_btn_gps_tracking">"Me suivre"</string>
     <string name="map_attribution_osm">"© Contributeurs OpenStreetMap"</string>
     <string name="quest_generic_otherAnswers">"Autres réponses…"</string>
     <string name="quest_generic_answer_notApplicable">"Ne sait pas…"</string>
 
-    <!-- je me suis permis d'éviter de sous-entendre que l'utilisateur est un homme ou une femme, ce qui évite la forme un peu étrange avec le point médian -->
     <!-- Fuzzy -->
     <string name="quest_generic_confirmation_title">"Confirmez-vous ?"</string>
 
-    <!-- cf commentaire sur "Are you sure?" -->
     <string name="quest_generic_confirmation_yes">"Oui, je confirme"</string>
     <string name="quest_generic_confirmation_no">"Je vais vérifier"</string>
     <string name="quest_leave_new_note_title">"Laisser une note à la place ?"</string>
@@ -58,22 +55,6 @@
     <string name="quest_leave_new_note_no">"Non, seulement cacher"</string>
 
     <!-- Fuzzy -->
-
-    <!-- "Also, note that there may not be extra street signs for side streets that belong to a bigger street."
-That is not very clear to me. Any further explanations? -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_noteDiscussion_title">"Pouvez-vous contribuer à cette note ?"</string>
 
     <!-- Fuzzy -->
@@ -82,7 +63,6 @@ That is not very clear to me. Any further explanations? -->
     <!-- Fuzzy -->
     <string name="quest_noteDiscussion_anonymous">"Anonyme"</string>
 
-    <!-- In the context of this sentence, maybe prefer the verb "Abandonner" instead of "Rejeter" because it's an idea to give up an input -->
     <!-- Fuzzy -->
     <string name="confirmation_discard_title">"Abandonner cette saisie ?"</string>
 
@@ -122,7 +102,6 @@ That is not very clear to me. Any further explanations? -->
     <string name="about_summary_license">"Licence publique générale GNU"</string>
     <string name="offline">"Vous êtes hors ligne"</string>
 
-    <!-- téléverser est horrible. On tend à préférer uploader et c'est souvent le mot choisi dans les GUI, que se soit dans Transmission ou dans LibreOffice -->
     <!-- Fuzzy -->
     <string name="confirmation_authorize_now">"Vous devez autoriser la publication de vos réponses avec votre compte d'utilisateur OSM. Autoriser maintenant ?"</string>
     <string name="version_banned_message">"Cette version de StreetComplete est trop vielle. Veuillez la mettre à jour !"</string>
@@ -133,35 +112,10 @@ That is not very clear to me. Any further explanations? -->
     <string name="later">"Plus tard"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="about_title_privacy_statement">"Déclaration sur la protection de la vie privée"</string>
 
     <!-- Fuzzy -->
     <string name="about_summary_privacy_statement">"et sur l'utilisation des données"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Attention : un édifice est généralement un bâtiment aux proportions importantes (ex. édifice public ou religieux). Le terme bâtiment est plus générique. -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
 
@@ -171,11 +125,9 @@ That is not very clear to me. Any further explanations? -->
     <!-- Fuzzy -->
     <string name="quest_roofShape_show_more">"Montrer d’avantage…"</string>
 
-    <!-- it is used in generic list, not only for roof shape but rename would break translations -->
     <string name="map_btn_zoom_out">"Zoom arrière"</string>
     <string name="map_btn_zoom_in">"Zoom avant"</string>
 
-    <!-- Google translated. -->
     <!-- Fuzzy -->
     <string name="privacy_html">"&lt;p&gt;Ah, quelqu'un qui se soucie de la vie privée, chouette ! Je pense que je n'ai que de bonnes nouvelles pour vous :&lt;/p&gt;
 &lt;p&gt;&lt;b&gt;Contributions directes&lt;/b&gt;&lt;/p&gt;
@@ -200,14 +152,12 @@ Toutefois, avant de télécharger vos modifications, l'application vérifie, à 
     <!-- Fuzzy -->
     <string name="autosync_on">"Activé"</string>
 
-    <!-- "sur wifi" or "en wifi" ? -->
     <!-- Fuzzy -->
     <string name="autosync_only_on_wifi">"Seulement en Wi-Fi"</string>
 
     <!-- Fuzzy -->
     <string name="autosync_off">"Désactivé"</string>
 
-    <!-- Plus simple et plus court : "Quel est le revêtement de cette rue ?" -->
     <!-- Fuzzy -->
     <string name="quest_surface_street_title">"Quel est le revêtement de ce tronçon ?"</string>
 
@@ -242,42 +192,20 @@ en:cement = fr:ciment = de:Zement -->
     <string name="quest_surface_value_pebblestone">"Galets"</string>
     <string name="quest_surface_value_sand">"Sable"</string>
 
-    <!-- Sett is what you'd probably colloquially call cobblestone. See https://en.wikipedia.org/wiki/Sett_(paving)... Paved with quarried regular shaped rocks. Cobblestone pavement is pavement made from small, naturally rounded rock. -->
     <!-- Fuzzy -->
     <string name="quest_surface_value_sett">"Pavés taillés"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_wood">"Bois"</string>
 
-    <!-- I think "Place(EN)" means "lieu", an area, instead of "place(FR)", a square -->
-    <!-- Fuzzy -->
-
     <!-- Fuzzy -->
     <string name="quest_sidewalk_title">"Cette rue a-t-elle un trottoir ?"</string>
-
-    <!-- Le terme de "voie" est à préférer en tant que dénomination générique. -->
-    <!-- Fuzzy -->
-
-    <!-- Plus simple et plus court : Quel est le revêtement de cette piste cyclable ? -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_streetLanes_title">"Combien de voies de circulation cette route compte-t-elle ?"</string>
 
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
     <!-- "édifice" or "bâtiment" ? -->
     <string name="quest_address_title">"Quel est le numéro de ce bâtiment ?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="crash_message">"Pourriez-vous envoyer le rapport d'erreur au développeur ?"</string>
@@ -295,41 +223,7 @@ en:cement = fr:ciment = de:Zement -->
     <string name="quest_generic_hasFeature_no">"Non"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_select_hint">"Choisissez :"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
 
@@ -345,29 +239,8 @@ en:cement = fr:ciment = de:Zement -->
     <string name="quest_source_dialog_note">"Seules les informations relevées sur place peuvent être saisies."</string>
     <string name="dialog_session_dont_show_again">"Ne plus afficher pour cette session"</string>
 
-    <!-- Je remets "revêtement" car la "surface d'une route" ça ne veut rien dire. -->
     <!-- Fuzzy -->
     <string name="quest_surface_street_name_title">"Quel est le revêtement de la voie %s à cet endroit ?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_name_title">"Est-ce que %s est accessible aux personnes en fauteuil roulant ?"</string>
@@ -376,14 +249,8 @@ en:cement = fr:ciment = de:Zement -->
     <string name="quest_wheelchairAccess_limited">"En partie"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Bus station = gare routière -->
-    <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_bus_station_title">"Cette gare routière est-elle accessible aux personnes en fauteuil roulant ?"</string>
 
-    <!-- J'ai un doute "subway entrance" designe-t-il l'entrée ou la station ? Une station peut avoir plusieurs entrées... -->
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_subway_entrance_title">"Cette bouche de métro est-elle accessible aux personnes en fauteuil roulant ?"</string>
 
@@ -393,11 +260,9 @@ en:cement = fr:ciment = de:Zement -->
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_location_title">"Ce lieu est-il accessible aux personnes en fauteuil roulant ?"</string>
 
-    <!-- Bus station = gare routière -->
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_bus_station_name_title">"La gare routière %s est-elle accessible aux personnes en fauteuil roulant ?"</string>
 
-    <!-- Voir https://wiki.openstreetmap.org/wiki/FR:Tag:railway%3Dsubway_entrance -->
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_subway_entrance_name_title">"La bouche de métro %s est-elle accessible aux personnes en fauteuil roulant ?"</string>
 
@@ -412,48 +277,6 @@ en:cement = fr:ciment = de:Zement -->
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"\"En partie\" signifie qu'il n'y a qu'une seule marche pour y accéder."</string>
-
-    <!-- Abréviation *dans* le nom ? -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- https://wiki.openstreetmap.org/wiki/FR:Tag:emergency%3Dfire_hydrant -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="credits_contributors">"Voir la &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;liste complète sur GitHub&lt;/a&gt;."</string>
@@ -480,99 +303,6 @@ en:cement = fr:ciment = de:Zement -->
     <string name="quest_maxspeed_answer_living_street_confirmation_title">"Alors, y a-t-il un panneau comme celui-ci ?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Palmiers à huile n'est pas le "produit". -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="cannot_find_bbox_or_reduce_tilt">"Impossible de rechercher ici. Essayez de zoomer ou de moins incliner la carte."</string>
 
     <!-- Fuzzy -->
@@ -588,59 +318,11 @@ en:cement = fr:ciment = de:Zement -->
     <string name="quest_crossing_type_unmarked">"Passage piéton sans marquage"</string>
     <string name="compass_north_one_letter">"N"</string>
 
-    <!-- "Confirmer" (EN:Confirm)? Even if it is a general word, have you an example please? -->
     <!-- Fuzzy -->
     <string name="action_undo">"Confirmer"</string>
 
     <!-- Fuzzy -->
     <string name="undo_confirm_title">"Annuler la dernière réponse ?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- For the record https://wiki.openstreetmap.org/wiki/Simple_3D_buildings#Roof -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="about_category_feedback">"Commentaire"</string>
@@ -652,28 +334,8 @@ en:cement = fr:ciment = de:Zement -->
     <string name="quest_leave_new_note_photo_delete_title">"Voulez-vous supprimer cette photo ?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Attention à bien le différencier de "cycle track". -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_leave_new_note_create_image_error">"Impossible de créer un fichier pour cette photo"</string>
 
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Does it mean "Advanced preferences" ? -->
     <!-- Fuzzy -->
     <string name="pref_category_advanced">"Avancée"</string>
 
@@ -695,53 +357,14 @@ en:cement = fr:ciment = de:Zement -->
     <!-- Fuzzy -->
     <string name="undo_confirm_positive">"Annuler"</string>
 
-    <!-- Attention à le différencier de undo_confirm_positive (cf. https://github.com/westnordost/StreetComplete/issues/617) -->
     <!-- Fuzzy -->
     <string name="undo_confirm_negative">"Ne pas annuler"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="enable_quest_confirmation_title">"Activer ce type de quête ?"</string>
 
     <!-- Fuzzy -->
     <string name="default_disabled_msg_go_inside">"Ce type de quête est désactivé par défaut, car vous devrez probablement entrer dans le lieu pour pouvoir répondre à ce type de quête."</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toilets_title">"Ces toilettes sont-elles accessibles aux personnes en fauteuil roulant ?"</string>
@@ -781,118 +404,13 @@ en:cement = fr:ciment = de:Zement -->
     <string name="quest_surface_value_metal">"Métal"</string>
 
     <!-- Fuzzy -->
-
-    <!-- ou « type de structure » ? -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_surface_value_unhewn_cobblestone">"Pavés grossiers"</string>
-
-    <!-- Un peu long. -->
-    <!-- Fuzzy -->
-
-    <!-- Traduction non littérale. Il faudrait connaître le contexte. -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_surface_square_title">"Quel est le revêtement de cette place ?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_square_name_title">"Quel est le revêtement de la place %s ?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_construction_road_title">"Cette route est-elle complète ?"</string>
@@ -907,15 +425,7 @@ en:cement = fr:ciment = de:Zement -->
     <string name="quest_construction_generic_title">"Cette voie est-elle complète ?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="questList_disabled_in_country">"Ne jamais afficher en %s"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_surface_path_title">"Quel revêtement ce chemin a-t-il ?"</string>
@@ -927,206 +437,19 @@ en:cement = fr:ciment = de:Zement -->
     <string name="quest_generic_item_confirmation">"Êtes-vous sûr que vous ne pouvez pas le déterminer plus précisément ?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="pref_quests_reset">"Réinitialiser les types quêtes à afficher et leur ordre d’affichage ?"</string>
-
-    <!-- To keep the idea, why not "Quelle était la fonction principale de ce bâtiment ?"? -->
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_generic_item_invalid_value">"Sélectionnez une valeur plus précise."</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- C'est la traduction dans https://wiki.openstreetmap.org/wiki/Key:building , mais un peu long peut-être. -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Voir https://wiki.openstreetmap.org/wiki/FR:Tag:amenity%3Dkindergarten -->
-    <!-- Fuzzy -->
-
-    <!-- Voir https://wiki.openstreetmap.org/wiki/FR:Tag:amenity%3Dschool -->
-    <!-- Fuzzy -->
-
-    <!-- "college" is a false friend. I'm not sure it is properly translatable in french. -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- To which osm key does this refer to? -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- What is the difference with "farmhouse"? OSM wiki refers to farm as a farmhouse. -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Bâtiment militaire ? -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Verbe "Télécharger" ou nom "Téléchargement" ? -->
     <string name="notification_channel_download">"Téléchargement"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="dialog_tutorial_upload">"Pour téléverser vos modifications manuellement, utilisez le bouton de la barre d'outils qui ressemble à ceci."</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_maxheight_title">"Quelle est la limite de hauteur à cet endroit ?"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_noteDiscussion_comment2">"— %1$s, %2$s"</string>
@@ -1147,27 +470,6 @@ en:cement = fr:ciment = de:Zement -->
     <string name="action_deselect_all">"Désélectionner tout"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- En ce qui concerne les tracktypes, j'ai essayé d'harmoniser et de coller le plus possible à https://wiki.openstreetmap.org/wiki/FR:Key:tracktype -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_outside">"\"En partie\" signifie qu'il n'y a qu'une seule marche pour y accéder."</string>
 
     <!-- Fuzzy -->
@@ -1177,25 +479,14 @@ en:cement = fr:ciment = de:Zement -->
     <string name="quest_traffic_signals_button_title">"Ces feux tricolores ont-ils un bouton pour demander le feu vert pour piétons ?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="pref_title_quests_restore_hidden">"Rétablir les quêtes cachées"</string>
 
     <!-- Fuzzy -->
     <string name="restore_hidden_success">"%d quêtes cachées ont été rétablies"</string>
 
-    <!-- caution: This is not necessarily the floor and level=0 is not necessarily at street level
-    as it may follow the numbering scheme of the building operator. Try to use a generic wording
-    that does not carry an implicit meaning of where it is located in respect to the ground floor.
-    The context is usually shopping centres, train stations or airport terminals -->
     <!-- Fuzzy -->
     <string name="on_level">"à l'étage %s :"</string>
 
-    <!-- as in: "Where is the metro station?" - "It is underground" -->
     <!-- Fuzzy -->
     <string name="underground">"en sous-sol :"</string>
 
@@ -1212,8 +503,6 @@ en:cement = fr:ciment = de:Zement -->
     <string name="quest_accessible_for_pedestrians_separate_sidewalk_explanation">"Cette rue a été marquée comme n'ayant pas de trottoirs sur aucun de ses cotés. Dans le cas où il y aurait un trottoir mais qu’il est indiqué sur la carte comme étant une voie séparée, veuillez répondre « trottoir »."</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="pref_title_theme_select">"Sélectionner un thème"</string>
     <string name="theme_automatic">"Automatique"</string>
 
@@ -1227,45 +516,16 @@ en:cement = fr:ciment = de:Zement -->
     <string name="theme_system_default">"Thème du système"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="action_open_location">"Afficher la position dans une autre application"</string>
 
     <!-- Fuzzy -->
     <string name="map_application_missing">"Aucune autre application de cartographie n'est installée"</string>
 
     <!-- Fuzzy -->
-
-    <!-- I'm not sure about my translation. -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Dans tous les cas il s'agit de passagers, le but est de savoir s'ils sont à pied ou en voiture... -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_leave_new_note_photos_are_useful">"L'ajout d'une photo rendra la note beaucoup plus pratique."</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="create_new_note_hint">"Il est préférable d’écrire la note dans la langue parlée localement ou en anglais."</string>
-
-    <!-- Fuzzy -->
-
-    <!-- I don't find a way to get the context of this, it may also be translated in "épineux". -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_surface_cycleway_title">"Quel est le revêtement de la piste cyclable ici ?"</string>
@@ -1280,14 +540,12 @@ Découper maintenant ?"</string>
     <!-- Fuzzy -->
     <string name="quest_split_way_tutorial">"Appuyez sur le chemin pour le découper au(x) point(s) où la réponse diffère. Essayez d'être aussi précis que possible, vous pouvez zoomer comme d'habitude."</string>
 
-    <!-- "zoomer davantage" est un pléonasme -->
     <!-- Fuzzy -->
     <string name="quest_split_way_too_imprecise">"Veuillez zoomer"</string>
 
     <!-- Fuzzy -->
     <string name="quest_split_way_many_splits_confirmation_description">"Il y a eu plusieurs découpages. Vous pouvez toujours redécouper le chemin ultérieurement."</string>
 
-    <!-- Je pense que le terme "surface" est trop ambigu : je trouve que "revêtement" est mieux. -->
     <!-- Fuzzy -->
     <string name="quest_surface_footway_title">"Quel est le revêtement du chemin piéton ici ?"</string>
 
@@ -1301,71 +559,13 @@ Découper maintenant ?"</string>
     <string name="quest_tactilePaving_title_name_tram">"L’arrêt de tramway %s a-t-il un revêtement podotactile ?"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_handrail_title">"Ces marches ont-elles une main courante ?"</string>
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="about_summary_current_version">"Version actuelle: %s"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_street_side_puzzle_tutorial">"La route de l'illustration est tournée de la même façon que sur la carte, à l'emplacement de la punaise."</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="about_title_changelog">"Historique des versions"</string>
@@ -1373,46 +573,11 @@ Découper maintenant ?"</string>
     <!-- Fuzzy -->
     <string name="title_whats_new">"Quoi de neuf ?"</string>
 
-    <!-- Ou "Évaluez..." -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
     <!-- Fuzzy -->
     <string name="confirmation_cancel_prev_download_confirmed">"Rechercher des quêtes plutôt ici"</string>
 
     <!-- Fuzzy -->
     <string name="confirmation_cancel_prev_download_cancel">"Continuer la recherche actuelle"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="user_profile">"Mon profil"</string>
@@ -1438,7 +603,6 @@ Découper maintenant ?"</string>
     <!-- Fuzzy -->
     <string name="tutorial_welcome_to_osm_subtitle">"la carte mondiale gratuite et collaborative"</string>
 
-    <!-- "StreetComplete permet de contribuer facilement à OpenStreetMap." ? -->
     <!-- Fuzzy -->
     <string name="tutorial_intro">"StreetComplete permet de contribuer facilement à OpenStreetMap. L'application recherche automatiquement les détails manquants autour de vous : pistes cyclables, numéros de rue, horaires d'ouverture et plus encore…"</string>
 
@@ -1520,13 +684,7 @@ Enfin, n'oubliez pas de rester prudent : soyez attentifs à votre environnement 
     <string name="link_category_goodies_description">"Trucs intéressants à tester autour des cartes"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="link_wheelmap_description">"Une carte pour trouver les endroits accessibles aux personnes en fauteuil roulant"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="link_touch_mapper_description">"Créer facilement des cartes tactiles pour n'importe qu'elle adresse"</string>
@@ -1565,25 +723,13 @@ Enfin, n'oubliez pas de rester prudent : soyez attentifs à votre environnement 
     <string name="link_welcome_mat_description">"Informations générales sur OpenStreetMap et sur la façon de travailler avec OSM en tant qu'organisation"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="link_openrouteservice_wheelchair_description">"Assistant de navigation pour personnes à en fauteuil roulant"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="link_myosmatic_description">"Génère des plans de ville imprimables en quelques étapes simples, éventuellement avec un index des rues"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="link_show_me_the_way_description">"Visualisez les modifications d'OSM en temps réel"</string>
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="link_openrouteservice_description">"Calcul d'itinéraires pour différents types de véhicules et à pied, chacun ayant ses options. Peut également indiquer les isochrones (zone accessible en X minutes à partir d'un point de départ donné)."</string>
@@ -1592,16 +738,7 @@ Enfin, n'oubliez pas de rester prudent : soyez attentifs à votre environnement 
     <string name="link_osm_haiku_description">"Utilisation des données de d'OSM pour générer des haïku (une forme de poésie japonaise)"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="link_weeklyosm_description">"Blog de nouvelles hebdomadaires sur ce qui se passe dans la communauté d'OpenStreetMap"</string>
-
-    <!-- Je n'arrive pas à trouver le terme français pour figure-ground (dit aussi schwarzplan)... C'est ça https://i.pinimg.com/originals/fb/26/e7/fb26e75ec1d0e544d47c32ff540d7e49.jpg -->
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="achievement_first_edit_title">"Prem's ! Première quête résolue"</string>
@@ -1615,7 +752,6 @@ Enfin, n'oubliez pas de rester prudent : soyez attentifs à votre environnement 
     <!-- Fuzzy -->
     <string name="achievement_surveyor_solved_X">"Vous avez résolu %d quêtes ! Continuez pour débloquer d'autres succès en lien avec OSM et d'autres projets et applications de cartographie !"</string>
 
-    <!-- Habitué ? -->
     <!-- Fuzzy -->
     <string name="achievement_regular_title">"Habitué"</string>
 
@@ -1623,25 +759,10 @@ Enfin, n'oubliez pas de rester prudent : soyez attentifs à votre environnement 
     <string name="achievement_regular_description">"Vous avez contribué %d jours avec StreetComplete ! Les contributeurs réguliers sont les pierres angulaires d'OSM. Merci de votre implication ! ❤"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Généralement, j'ai remplacé "utiles" par "qui aideront" que je trouve plus sympathique... -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="achievement_wheelchair_title">"Accessibilité"</string>
 
-    <!-- J'ai bêtement remplacé plusieurs fois "personnes à mobilité réduite" par "usagers en fauteuil roulant". Mais ta traduction est sans doute meilleure... -->
     <!-- Fuzzy -->
     <string name="achievement_wheelchair_solved_X">"Vous avez résolu %d quêtes utiles pour les personnes à mobilité réduite !"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- À mon avis, "navigation system" comprend à la fois les navigateurs satellitaires et les systèmes de calcul d'itinéraire. Du coup, j'ai pensé que "système de navigation" était plus approprié. -->
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="achievement_blind_title">"Sixième sens"</string>
@@ -1654,15 +775,6 @@ Enfin, n'oubliez pas de rester prudent : soyez attentifs à votre environnement 
 
     <!-- Fuzzy -->
     <string name="achievement_pedestrian_solved_X">"Vous avez résolu %d quêtes utiles pour les piétons !"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- What does it mean "putting the street in OpenStreetMap!" ? Is it an expression ? -->
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="unread_messages_message">"Vous avez %d messages non-lus dans votre boîte de réception"</string>
@@ -1701,17 +813,10 @@ Enfin, n'oubliez pas de rester prudent : soyez attentifs à votre environnement 
     <string name="user_statistics_filter_by_quest_type">"par type de quête"</string>
     <string name="user_profile_global_rank">"Classement global"</string>
 
-    <!-- Entre parenthèses pour éviter les problèmes comme :
-"en France"
-"aux États-Unis" -->
     <!-- Fuzzy -->
     <string name="user_profile_local_rank">"Classement (%s)"</string>
     <string name="user_profile_days_active">"jours d'activité"</string>
     <string name="user_profile_achievement_levels">"Niveaux d'accomplissement"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="privacy_html_tileserver2">"&lt;p&gt;Les tuiles vectorielles utilisées pour afficher la carte sont récupérées depuis %1$s. Lisez leur &lt;a href=\"%2$s\"&gt;politique de confidentialité&lt;/a&gt; pour plus d'information."</string>
@@ -1730,24 +835,6 @@ Enfin, n'oubliez pas de rester prudent : soyez attentifs à votre environnement 
     <string name="resurvey_intervals_less_often">"Demander moins souvent"</string>
     <string name="resurvey_intervals_default">"Défaut"</string>
     <string name="resurvey_intervals_more_often">"Demander plus souvent"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="quest_steps_incline_title">"Dans quel sens cet escalier monte-t-il ?"</string>

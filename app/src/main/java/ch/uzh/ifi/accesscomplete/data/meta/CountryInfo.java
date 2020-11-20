@@ -38,41 +38,15 @@ public class CountryInfo implements Serializable, Cloneable {
 
 	List<String> lengthUnits;
 	List<String> speedUnits;
-	List<String> weightLimitUnits;
-	List<String> popularSports;
-	List<String> popularReligions;
 	String firstDayOfWorkweek;
-	Integer regularShoppingDays;
 	Integer workweekDays;
-	String additionalValidHousenumberRegex;
 	List<String> officialLanguages;
-	List<String> additionalStreetsignLanguages;
 	Boolean isSlowZoneKnown;
 	Boolean isLivingStreetKnown;
-	List<String> orchardProduces;
 	Boolean isAdvisorySpeedLimitKnown;
 	Boolean isLeftHandTraffic;
 	Integer mobileCountryCode;
-	List<String> chargingStationOperators;
-	List<String> clothesContainerOperators;
-	List<String> atmOperators;
-	Boolean isUsuallyAnyGlassRecycleableInContainers;
 
-	public Boolean isUsuallyAnyGlassRecycleableInContainers() {
-		return isUsuallyAnyGlassRecycleableInContainers;
-	}
-
-	public List<String> getChargingStationOperators() {
-		return chargingStationOperators;
-	}
-
-	public List<String> getClothesContainerOperators() {
-		return clothesContainerOperators;
-	}
-
-	public List<String> getAtmOperators() {
-		return atmOperators;
-	}
 
 	public List<String> getLengthUnits() {
 		return lengthUnits;
@@ -82,26 +56,9 @@ public class CountryInfo implements Serializable, Cloneable {
 		return speedUnits;
 	}
 
-	public List<String> getWeightLimitUnits() {
-		return weightLimitUnits;
-	}
-
-	public List<String> getPopularSports() {
-		if (popularSports == null) return new ArrayList<>(1);
-		return Collections.unmodifiableList(popularSports);
-	}
-
-	public List<String> getPopularReligions() {
-		if (popularReligions == null) return new ArrayList<>(1);
-		return Collections.unmodifiableList(popularReligions);
-	}
 
 	public String getFirstDayOfWorkweek() {
 		return firstDayOfWorkweek;
-	}
-
-	public Integer getRegularShoppingDays() {
-		return regularShoppingDays;
 	}
 
 	public Integer getWorkweekDays() {
@@ -112,18 +69,9 @@ public class CountryInfo implements Serializable, Cloneable {
 		return isSlowZoneKnown;
 	}
 
-	public String getAdditionalValidHousenumberRegex() {
-		return additionalValidHousenumberRegex;
-	}
-
 	public List<String> getOfficialLanguages() {
 		if (officialLanguages == null) return new ArrayList<>(1);
 		return Collections.unmodifiableList(officialLanguages);
-	}
-
-	public List<String> getAdditionalStreetsignLanguages() {
-		if (additionalStreetsignLanguages == null) return new ArrayList<>(1);
-		return Collections.unmodifiableList(additionalStreetsignLanguages);
 	}
 
 	public String getCountryCode() {
@@ -140,11 +88,6 @@ public class CountryInfo implements Serializable, Cloneable {
 
 	public boolean isLivingStreetKnown() {
 		return isLivingStreetKnown;
-	}
-
-	public List<String> getOrchardProduces() {
-		if (orchardProduces == null) return new ArrayList<>(1);
-		return Collections.unmodifiableList(orchardProduces);
 	}
 
 	public boolean isAdvisorySpeedLimitKnown() {

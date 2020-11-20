@@ -272,7 +272,7 @@
     <string name="autosync_off">"Κλειστό"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"Τι επιφάνεια έχει αυτό το κομμάτι του δρόμου;"</string>
+    <string name="quest_surface_street_title">"Τι επιφάνεια έχει αυτό το κομμάτι του δρόμου;"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"Στρωμένος (γενικά)"</string>
@@ -458,7 +458,7 @@
     <string name="dialog_session_dont_show_again">"Να μην εμφανιστεί ξανά για αυτή την σύνοδο"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"Τι επιφάνεια έχει ο δρόμος %s εδώ;"</string>
+    <string name="quest_surface_street_name_title">"Τι επιφάνεια έχει ο δρόμος %s εδώ;"</string>
 
     <!-- Fuzzy -->
 
@@ -962,10 +962,10 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"Τι επιφάνεια έχει αυτή η πλατεία;"</string>
+    <string name="quest_surface_square_title">"Τι επιφάνεια έχει αυτή η πλατεία;"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"Τι επιφάνεια έχει αυτή η πλατεία %s εδώ;"</string>
+    <string name="quest_surface_square_name_title">"Τι επιφάνεια έχει αυτή η πλατεία %s εδώ;"</string>
 
     <!-- Fuzzy -->
 
@@ -1029,7 +1029,7 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"Τι επιφάνεια έχει αυτό το μονοπάτι εδώ;"</string>
+    <string name="quest_surface_path_title">"Τι επιφάνεια έχει αυτό το μονοπάτι εδώ;"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Επιλέξτε το πιο συγκεκριμένο που ταιριάζει:"</string>
@@ -1363,7 +1363,7 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"Ποια είναι η επιφάνεια του ποδηλατόδρομου εδώ;"</string>
+    <string name="quest_surface_cycleway_title">"Ποια είναι η επιφάνεια του ποδηλατόδρομου εδώ;"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"Διαφορές κατά μήκος του δρόμου..."</string>
@@ -1382,7 +1382,7 @@
     <string name="quest_split_way_many_splits_confirmation_description">"Αυτά είναι μερικά χωρίσματα. Μπορείτε πάντα να χωρίσετε περαιτέρω το δρόμο αργότερα."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"Ποια είναι η επιφάνεια του πεζόδρομου εδώ;"</string>
+    <string name="quest_surface_footway_title">"Ποια είναι η επιφάνεια του πεζόδρομου εδώ;"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"Είναι προσβάσιμη η τουαλέτα σε %s αναπηρικό αμαξίδιο;"</string>

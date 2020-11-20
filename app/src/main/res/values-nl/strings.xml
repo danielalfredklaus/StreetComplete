@@ -272,7 +272,7 @@ Voor het uploaden van jouw wijzigingen zal de app een &lt;a href=\"https://www.w
     <string name="autosync_off">"Uit"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"Welke wegbeddeking heeft dit stuk weg?"</string>
+    <string name="quest_surface_street_title">"Welke wegbeddeking heeft dit stuk weg?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"Verhard (algemeen)"</string>
@@ -459,7 +459,7 @@ Voor het uploaden van jouw wijzigingen zal de app een &lt;a href=\"https://www.w
     <string name="dialog_session_dont_show_again">"Toon dit niet meer voor deze sessie."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"Welk wegdek heeft de weg %s hier?"</string>
+    <string name="quest_surface_street_name_title">"Welk wegdek heeft de weg %s hier?"</string>
 
     <!-- Fuzzy -->
 
@@ -965,10 +965,10 @@ Anders kan je een ander toetsenbord downloaden in de App Store. Populaire toetse
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"Welke ondergrond heeft dit plein?"</string>
+    <string name="quest_surface_square_title">"Welke ondergrond heeft dit plein?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"Welke ondergrond heeft het plein %s hier?"</string>
+    <string name="quest_surface_square_name_title">"Welke ondergrond heeft het plein %s hier?"</string>
 
     <!-- Fuzzy -->
 
@@ -1032,7 +1032,7 @@ Anders kan je een ander toetsenbord downloaden in de App Store. Populaire toetse
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"Welke bedekking heeft dit pad?"</string>
+    <string name="quest_surface_path_title">"Welke bedekking heeft dit pad?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Selecteer het meest specifieke dat past:"</string>
@@ -1371,7 +1371,7 @@ Anders kan je een ander toetsenbord downloaden in de App Store. Populaire toetse
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"Welke bedekking heeft het fietspad hier?"</string>
+    <string name="quest_surface_cycleway_title">"Welke bedekking heeft het fietspad hier?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"Verschilt onderweg"</string>
@@ -1389,7 +1389,7 @@ Anders kan je een ander toetsenbord downloaden in de App Store. Populaire toetse
     <string name="quest_split_way_many_splits_confirmation_description">"Dat zijn een aardig aantal splitsingen. Je kan de weg later altijd verder splitsen."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"Welke bedekking heeft dit voetpad hier?"</string>
+    <string name="quest_surface_footway_title">"Welke bedekking heeft dit voetpad hier?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"Is het toilet op %s toegankelijk voor rolstoelen?"</string>

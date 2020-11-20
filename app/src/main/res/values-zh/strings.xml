@@ -272,7 +272,7 @@ OpenStreetMap 不接受匿名编辑，您需要登录您的 OpenStreetMap 帐号
     <string name="autosync_off">"禁用"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"这段道路的路面材料是？"</string>
+    <string name="quest_surface_street_title">"这段道路的路面材料是？"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"经过铺砌的路面（粗略答案）"</string>
@@ -458,7 +458,7 @@ OpenStreetMap 不接受匿名编辑，您需要登录您的 OpenStreetMap 帐号
     <string name="dialog_session_dont_show_again">"本次任务中不再显示"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"道路 %s 的铺面为何？"</string>
+    <string name="quest_surface_street_name_title">"道路 %s 的铺面为何？"</string>
 
     <!-- Fuzzy -->
 
@@ -960,10 +960,10 @@ OpenStreetMap 不接受匿名编辑，您需要登录您的 OpenStreetMap 帐号
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"广场的地面是什么材质的？"</string>
+    <string name="quest_surface_square_title">"广场的地面是什么材质的？"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"%s 广场的地面是什么材质的？"</string>
+    <string name="quest_surface_square_name_title">"%s 广场的地面是什么材质的？"</string>
 
     <!-- Fuzzy -->
 
@@ -1027,7 +1027,7 @@ OpenStreetMap 不接受匿名编辑，您需要登录您的 OpenStreetMap 帐号
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"这条小路的路面是什么材质的？"</string>
+    <string name="quest_surface_path_title">"这条小路的路面是什么材质的？"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"选择最适当的选项："</string>
@@ -1329,10 +1329,10 @@ OpenStreetMap 不接受匿名编辑，您需要登录您的 OpenStreetMap 帐号
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"这条自行车道的路面是什么材质的？"</string>
+    <string name="quest_surface_cycleway_title">"这条自行车道的路面是什么材质的？"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"这条步行道的路面是什么材质的？"</string>
+    <string name="quest_surface_footway_title">"这条步行道的路面是什么材质的？"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"%s 的卫生间是否可以轮椅无障碍通行？"</string>

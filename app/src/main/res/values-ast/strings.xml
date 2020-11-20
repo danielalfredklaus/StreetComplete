@@ -272,7 +272,7 @@ Sicasí, primero de facer cualesquier cambéu l'aplicación comprueba si la vers
     <string name="autosync_off">"Desactivada"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"¿Qué superficie tien esti tramu de carretera?"</string>
+    <string name="quest_surface_street_title">"¿Qué superficie tien esti tramu de carretera?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"Pavimentao (xenérico)"</string>
@@ -458,7 +458,7 @@ Sicasí, primero de facer cualesquier cambéu l'aplicación comprueba si la vers
     <string name="dialog_session_dont_show_again">"Nun volver amosar nesta sesión"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"¿Qué superficie tien equí la carretera %s?"</string>
+    <string name="quest_surface_street_name_title">"¿Qué superficie tien equí la carretera %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -960,10 +960,10 @@ Pero recuerda que siempre puedes descargar aplicaciones de tecláu alternatives 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"¿Qué tipu de superficie tien esta plaza?"</string>
+    <string name="quest_surface_square_title">"¿Qué tipu de superficie tien esta plaza?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"¿Qué tipu de superficie tien la plaza «%s»?"</string>
+    <string name="quest_surface_square_name_title">"¿Qué tipu de superficie tien la plaza «%s»?"</string>
 
     <!-- Fuzzy -->
 
@@ -1027,7 +1027,7 @@ Pero recuerda que siempre puedes descargar aplicaciones de tecláu alternatives 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"¿Que tipu de superficie tien esti camín?"</string>
+    <string name="quest_surface_path_title">"¿Que tipu de superficie tien esti camín?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Seleiciona'l que más s'afaye:"</string>
@@ -1290,4 +1290,19 @@ Pero recuerda que siempre puedes descargar aplicaciones de tecláu alternatives 
     <string name="at_conscription_number">"Númberu de «conscripción» %s:"</string>
     <string name="quest_wheelchairAccess_name_type_title">"¿%1$s (%2$s) ye accesible con siella de ruedes?"</string>
     <string name="quest_traffic_signals_sound_title">"¿Tien señales sonores pa persones con discapacidá visual?"</string>
+    <string name="quest_surface_street_sidewalk_title">Welche Oberfläche hat der Bürgersteig in diesem Abschnitt (gestrichelte Linie)?</string>
+    <string name="quest_surface_street_name_sidewalk_title">Welche Oberfläche hat der Bürgersteig der Strasse %s in diesem Abschnitt (gestrichelte Linie)?</string>
+    <string name="quest_kerb_flush_description">Ein Bordstein ohne Höhenunterschied zur Strasse</string>
+    <string name="quest_width_cycleway_part_title">Was ist die minimale Breite des Fahrradwegs in diesem Abschnitt?</string>
+    <string name="quest_width_footway_part_title">Was ist die minimale Breite des Fussgängerwegs in diesem Abschnitt?</string>
+    <string name="quest_width_street_title">Was ist die minimale Breite dieses Strassenabschnitts?</string>
+    <string name="quest_width_street_sidewalk_title">Was ist die minimale Breite des Bürgersteigs in diesem Abschnitt (gestrichelte Linie)?</string>
+    <string name="quest_width_street_name_sidewalk_title">Was ist die minimale Breite des Bürgersteigs der Strasse %s in diesem Abschnitt (gestrichelte Linie)?</string>
+    <string name="quest_smoothness_very_horrible_description">"Geeignet für Traktoren, Quads, Mountainbikes und alle Arten von Offroad-Fahrzeugen "</string>
+    <string name="quest_smoothness_horrible_description">Geeignet für schwere Geländefahrzeuge und alle darunter liegenden</string>
+    <string name="quest_smoothness_very_bad_description">Geeignet für Fahrzeuge mit großer Bodenfreiheit, leichte Geländefahrzeuge und alle darunter liegenden</string>
+    <string name="quest_smoothness_bad_description">"Geeignet für Trekking-Fahrräder, normale Autos, Rikschas und alle darunter liegenden "</string>
+    <string name="quest_smoothness_intermediate_description">Geeignet für Stadträder, Sportwagen, Rollstühle, Roller und alle darunter liegenden</string>
+    <string name="quest_smoothness_good_description">Geeignet für Rennräder und alle darunter liegenden</string>
+    <string name="quest_smoothness_excellent_description">Geeignet für Rollschuhe, Skateboards und alle darunter liegenden</string>
 </resources>

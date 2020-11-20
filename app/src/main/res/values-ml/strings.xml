@@ -272,7 +272,7 @@
     <string name="autosync_off">"ഓഫ്"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"ഈ റോഡിൻറെ പ്രതലം എന്താണ് "</string>
+    <string name="quest_surface_street_title">"ഈ റോഡിൻറെ പ്രതലം എന്താണ് "</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"ടാർ റോഡ്"</string>
@@ -455,7 +455,7 @@
     <string name="dialog_session_dont_show_again">"ഈ സെഷനായി വീണ്ടും കാണിക്കരുത്"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"ഈ %s റോഡ് എന്ത് പ്രതലം ആണ്?"</string>
+    <string name="quest_surface_street_name_title">"ഈ %s റോഡ് എന്ത് പ്രതലം ആണ്?"</string>
 
     <!-- Fuzzy -->
 
@@ -948,10 +948,10 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"ഈ ചത്വരത്തിൻ്റെ പ്രതലം എന്താണ്?"</string>
+    <string name="quest_surface_square_title">"ഈ ചത്വരത്തിൻ്റെ പ്രതലം എന്താണ്?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"%s എന്ന ഇടത്തെ ചത്വരത്തിൻ്റെ പ്രതലം എന്താണ്?"</string>
+    <string name="quest_surface_square_name_title">"%s എന്ന ഇടത്തെ ചത്വരത്തിൻ്റെ പ്രതലം എന്താണ്?"</string>
 
     <!-- Fuzzy -->
 
@@ -1015,7 +1015,7 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"ഈ പാതയ്ക്ക് ഇവിടെ ഏത് പ്രതലമാണ്?"</string>
+    <string name="quest_surface_path_title">"ഈ പാതയ്ക്ക് ഇവിടെ ഏത് പ്രതലമാണ്?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"ഏറ്റവും യോജിക്കുന്ന ഒന്ന് തിരഞ്ഞെടുക്കുക"</string>
@@ -1353,7 +1353,7 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"സൈക്കിൾ പാതയുടെ പ്രതലം എന്താണ്?"</string>
+    <string name="quest_surface_cycleway_title">"സൈക്കിൾ പാതയുടെ പ്രതലം എന്താണ്?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"ഉടനീളം വ്യത്യസ്തമാണ്."</string>
@@ -1371,7 +1371,7 @@
     <string name="quest_split_way_many_splits_confirmation_description">"ഇത് കുറച്ച് വിഭജനങ്ങളാണ്. നിങ്ങൾക്ക്  പിന്നീട് വഴി വേർപെടുത്താൻ കഴിയും."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"ഇവിടുത്തെ നടപ്പാതയുടെ പ്രതലം എന്താണ്?"</string>
+    <string name="quest_surface_footway_title">"ഇവിടുത്തെ നടപ്പാതയുടെ പ്രതലം എന്താണ്?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"ഈ %s റെസ്റ്റ്റൂമിൽ വീൽചെയർ കടക്കുമോ?"</string>

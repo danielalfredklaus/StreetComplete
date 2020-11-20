@@ -24,8 +24,8 @@ class AddPathSurface : AbstractAddSurfaceQuestType() {
     override val icon = R.drawable.ic_quest_surface_path
 
     override fun getTitle(tags: Map<String, String>) = when {
-        tags["area"] == "yes" ->        R.string.quest_streetSurface_square_title
-        else -> R.string.quest_pathSurface_title
+        tags["area"] == "yes" ->        R.string.quest_surface_square_title
+        else -> R.string.quest_surface_path_title
     }
 
     override fun getBaseFilterExpression(): ElementFilterExpression = baseExpression

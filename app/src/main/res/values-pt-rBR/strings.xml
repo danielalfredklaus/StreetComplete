@@ -272,7 +272,7 @@ Como mencionado, o aplicativo se comunica diretamente com a infraestrutura do OS
     <string name="autosync_off">"Desligado"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"Que tipo de pavimento tem esse trecho de rua?"</string>
+    <string name="quest_surface_street_title">"Que tipo de pavimento tem esse trecho de rua?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"Pavimentado (genérico)"</string>
@@ -458,7 +458,7 @@ Como mencionado, o aplicativo se comunica diretamente com a infraestrutura do OS
     <string name="dialog_session_dont_show_again">"Não mostrar de novo nesta sessão"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"Que tipo de pavimento a estrada %s tem aqui?"</string>
+    <string name="quest_surface_street_name_title">"Que tipo de pavimento a estrada %s tem aqui?"</string>
 
     <!-- Fuzzy -->
 
@@ -961,10 +961,10 @@ Parcialmente significa que um cadeirante pode entrar e usar o banheiro, mas barr
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"Que tipo de pavimento tem essa quadra?"</string>
+    <string name="quest_surface_square_title">"Que tipo de pavimento tem essa quadra?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"Que tipo de pavimento tem a quadra %s aqui?"</string>
+    <string name="quest_surface_square_name_title">"Que tipo de pavimento tem a quadra %s aqui?"</string>
 
     <!-- Fuzzy -->
 
@@ -1028,7 +1028,7 @@ Parcialmente significa que um cadeirante pode entrar e usar o banheiro, mas barr
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"Que tipo de pavimento tem esse caminho aqui?"</string>
+    <string name="quest_surface_path_title">"Que tipo de pavimento tem esse caminho aqui?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Selecione o mais específico:"</string>
@@ -1369,7 +1369,7 @@ Is "Altar" really fitting here? It is about a building type after all. -->
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"Que tipo de pavimento tem a ciclovia aqui?"</string>
+    <string name="quest_surface_cycleway_title">"Que tipo de pavimento tem a ciclovia aqui?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"Difere ao longo do caminho…"</string>
@@ -1388,7 +1388,7 @@ Dividir agora?"</string>
     <string name="quest_split_way_many_splits_confirmation_description">"Parecem muitas divisões.  Você pode dividir mais depois se precisar."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"Que tipo de pavimento tem o caminho de pedestre aqui?"</string>
+    <string name="quest_surface_footway_title">"Que tipo de pavimento tem o caminho de pedestre aqui?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"O banheiro em %s é acessível para cadeirantes?"</string>

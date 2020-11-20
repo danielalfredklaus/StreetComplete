@@ -273,7 +273,7 @@
     <string name="autosync_off">"Вимкнена"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"Яке покриття має ця ділянка дороги?"</string>
+    <string name="quest_surface_street_title">"Яке покриття має ця ділянка дороги?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"З покриттям (загальне)"</string>
@@ -460,7 +460,7 @@
     <string name="dialog_session_dont_show_again">"Не показувати впродовж цієї сесії"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"Яке покриття має дорога %s тут?"</string>
+    <string name="quest_surface_street_name_title">"Яке покриття має дорога %s тут?"</string>
 
     <!-- Fuzzy -->
 
@@ -962,10 +962,10 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"Яке покриття в цього скверу?"</string>
+    <string name="quest_surface_square_title">"Яке покриття в цього скверу?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"Яке покриття тут має сквер %s?"</string>
+    <string name="quest_surface_square_name_title">"Яке покриття тут має сквер %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -1029,7 +1029,7 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"Яке покриття в цієї доріжки?"</string>
+    <string name="quest_surface_path_title">"Яке покриття в цієї доріжки?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Виберіть те, що підходить найбільше:"</string>

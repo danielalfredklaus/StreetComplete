@@ -272,7 +272,7 @@
     <string name="autosync_off">"關"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"此道路路段的鋪面材質是？"</string>
+    <string name="quest_surface_street_title">"此道路路段的鋪面材質是？"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"鋪面(一般)"</string>
@@ -458,7 +458,7 @@
     <string name="dialog_session_dont_show_again">"這次不再顯示"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"道路 %s 的鋪面為何？"</string>
+    <string name="quest_surface_street_name_title">"道路 %s 的鋪面為何？"</string>
 
     <!-- Fuzzy -->
 
@@ -960,10 +960,10 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"廣場的舖面是什麼材質？"</string>
+    <string name="quest_surface_square_title">"廣場的舖面是什麼材質？"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"廣場 %s 的舖面是什麼材質？"</string>
+    <string name="quest_surface_square_name_title">"廣場 %s 的舖面是什麼材質？"</string>
 
     <!-- Fuzzy -->
 
@@ -1027,7 +1027,7 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"這條路徑表面是什麼材質呢？"</string>
+    <string name="quest_surface_path_title">"這條路徑表面是什麼材質呢？"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"選擇最適當的選項："</string>
@@ -1360,7 +1360,7 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"單車道的路面材質？"</string>
+    <string name="quest_surface_cycleway_title">"單車道的路面材質？"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"整條路不大一樣..."</string>
@@ -1378,7 +1378,7 @@
     <string name="quest_split_way_many_splits_confirmation_description">"有可分割多個地方，你總是可以稍後再度分割路徑。"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"人行步道的鋪面材質是什麼？"</string>
+    <string name="quest_surface_footway_title">"人行步道的鋪面材質是什麼？"</string>
     <string name="quest_wheelchairAccess_toiletsPart_title">"在 %s 的廁所能通行輪椅嗎？"</string>
 
     <!-- Fuzzy -->

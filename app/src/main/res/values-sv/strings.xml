@@ -272,7 +272,7 @@ Som nämnts kommunicerar appen direkt med OSM-Infrastruktur. Men innan du skicka
     <string name="autosync_off">"Av"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"Vad har den här delen av vägen för underlag?"</string>
+    <string name="quest_surface_street_title">"Vad har den här delen av vägen för underlag?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"Belagd (generisk)"</string>
@@ -458,7 +458,7 @@ Som nämnts kommunicerar appen direkt med OSM-Infrastruktur. Men innan du skicka
     <string name="dialog_session_dont_show_again">"Visa inte igen under den här sessionen."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"Vad har %s för underlag här?"</string>
+    <string name="quest_surface_street_name_title">"Vad har %s för underlag här?"</string>
 
     <!-- Fuzzy -->
 
@@ -962,10 +962,10 @@ Annars kan du ladda ner ett annat tangentbord i appbutiken. Populära tangentbor
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"Vilket underlag har det här torget?"</string>
+    <string name="quest_surface_square_title">"Vilket underlag har det här torget?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"Vilket underlag har torget %s här?"</string>
+    <string name="quest_surface_square_name_title">"Vilket underlag har torget %s här?"</string>
 
     <!-- Fuzzy -->
 
@@ -1029,7 +1029,7 @@ Annars kan du ladda ner ett annat tangentbord i appbutiken. Populära tangentbor
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"Vilket underlag har den här vägen här?"</string>
+    <string name="quest_surface_path_title">"Vilket underlag har den här vägen här?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Välj det mest detaljerade svaret som passar:"</string>
@@ -1368,7 +1368,7 @@ Annars kan du ladda ner ett annat tangentbord i appbutiken. Populära tangentbor
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"Vad är ytan på cykelvägen här?"</string>
+    <string name="quest_surface_cycleway_title">"Vad är ytan på cykelvägen här?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"Skiljer sig längs vägen…"</string>
@@ -1387,7 +1387,7 @@ Dela den nu?"</string>
     <string name="quest_split_way_many_splits_confirmation_description">"Det här är en hel del delningar. Du kan alltid dela upp vägen senare."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"Vad är ytan på gångvägen här?"</string>
+    <string name="quest_surface_footway_title">"Vad är ytan på gångvägen här?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"Är toaletten på %s tillgänglig med rullstol?"</string>

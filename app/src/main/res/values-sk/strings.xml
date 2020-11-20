@@ -272,7 +272,7 @@ Ako už bolo spomenuté, aplikácia priamo komunikuje s OSM infraštruktúrou. P
     <string name="autosync_off">"Vypnuté"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"Aký povrch má tento kus cesty?"</string>
+    <string name="quest_surface_street_title">"Aký povrch má tento kus cesty?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"Spevnená (bližšie neurčené)"</string>
@@ -458,7 +458,7 @@ Ako už bolo spomenuté, aplikácia priamo komunikuje s OSM infraštruktúrou. P
     <string name="dialog_session_dont_show_again">"Nezobrazovať znova pre túto reláciu"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"Aký povrch má v tomto mieste cesta %s?"</string>
+    <string name="quest_surface_street_name_title">"Aký povrch má v tomto mieste cesta %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -960,10 +960,10 @@ Inak si môžete stiahnuť inú klávesnicu z obchodu z aplikáciami. Medzi popu
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"Aký povrch má toto námestie?"</string>
+    <string name="quest_surface_square_title">"Aký povrch má toto námestie?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"Aký povrch má námestie %s na tomto mieste?"</string>
+    <string name="quest_surface_square_name_title">"Aký povrch má námestie %s na tomto mieste?"</string>
 
     <!-- Fuzzy -->
 
@@ -1027,7 +1027,7 @@ Inak si môžete stiahnuť inú klávesnicu z obchodu z aplikáciami. Medzi popu
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"Aký povrch má táto cesta na tomto mieste?"</string>
+    <string name="quest_surface_path_title">"Aký povrch má táto cesta na tomto mieste?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Vyberte čo najpresnejšiu možnosť, ktorá vyhovuje:"</string>
@@ -1281,7 +1281,7 @@ Inak si môžete stiahnuť inú klávesnicu z obchodu z aplikáciami. Medzi popu
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"Aký povrch má táto cyklotrasa?"</string>
+    <string name="quest_surface_cycleway_title">"Aký povrch má táto cyklotrasa?"</string>
     <string name="quest_wheelchairAccess_toiletsPart_title">"Sú záchody v %s dostupné pre vozičkárov?"</string>
     <string name="quest_streetName_menuItem_language_with_script_simple">"%1$s – %2$s, %3$s"</string>
     <string name="quest_streetName_menuItem_language_with_script_native">"%1$s – %2$s (%3$s), %4$s"</string>

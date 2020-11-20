@@ -8,7 +8,6 @@ import ch.uzh.ifi.accesscomplete.data.quest.QuestTypeRegistry
 import ch.uzh.ifi.accesscomplete.quests.incline.AddPathIncline
 import ch.uzh.ifi.accesscomplete.quests.incline.AddPedestrianAccessibleStreetIncline
 import ch.uzh.ifi.accesscomplete.quests.kerb_type.AddKerbType
-import ch.uzh.ifi.accesscomplete.quests.smoothness.AddCyclewayPartSmoothness
 import ch.uzh.ifi.accesscomplete.quests.smoothness.AddFootwayPartSmoothness
 import ch.uzh.ifi.accesscomplete.quests.smoothness.AddPathSmoothness
 import ch.uzh.ifi.accesscomplete.quests.smoothness.AddPedestrianAccessibleStreetSmoothness
@@ -49,7 +48,6 @@ object QuestModule {
         AddPathSmoothness(),
         AddPedestrianAccessibleStreetSmoothness(),
         AddFootwayPartSmoothness(),
-        AddCyclewayPartSmoothness(),
 
         // Width
         AddPathWidth(),
@@ -61,6 +59,7 @@ object QuestModule {
         AddPathIncline(),
         AddPedestrianAccessibleStreetIncline(),
 
+        // Original StreetComplete quests that are interesting from an accessibility point of view:
 //        AddCycleway(), // for any cyclist routers (and cyclist maps)
 //        AddSidewalk(), // for any pedestrian routers
 //        MarkCompletedHighwayConstruction(),

@@ -272,7 +272,7 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
     <string name="autosync_off">"Desactivat"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"Quin tipus de superfície té aquesta via?"</string>
+    <string name="quest_surface_street_title">"Quin tipus de superfície té aquesta via?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"Pavimentat (genèric)"</string>
@@ -458,7 +458,7 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
     <string name="dialog_session_dont_show_again">"No ho mostris més durant aquesta sessió"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"Quin tipus de superfície té la carretera %s aquí?"</string>
+    <string name="quest_surface_street_name_title">"Quin tipus de superfície té la carretera %s aquí?"</string>
 
     <!-- Fuzzy -->
 
@@ -962,10 +962,10 @@ En cas contrari, podeu baixar un altre teclat a la botiga d'aplicacions. Els tec
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"Quin tipus de superfície té aquesta plaça?"</string>
+    <string name="quest_surface_square_title">"Quin tipus de superfície té aquesta plaça?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"Quin tipus de superfície té la plaça %s aquí?"</string>
+    <string name="quest_surface_square_name_title">"Quin tipus de superfície té la plaça %s aquí?"</string>
 
     <!-- Fuzzy -->
 
@@ -1030,7 +1030,7 @@ En cas contrari, podeu baixar un altre teclat a la botiga d'aplicacions. Els tec
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"Quina superfície té aquest camí aquí?"</string>
+    <string name="quest_surface_path_title">"Quina superfície té aquest camí aquí?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Indiqueu-ne el més específic que hi encaixi:"</string>
@@ -1368,7 +1368,7 @@ En cas contrari, podeu baixar un altre teclat a la botiga d'aplicacions. Els tec
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"Quin tipus de superfície té el carril bici aquí?"</string>
+    <string name="quest_surface_cycleway_title">"Quin tipus de superfície té el carril bici aquí?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"Canvia al llarg de la via..."</string>
@@ -1386,7 +1386,7 @@ En cas contrari, podeu baixar un altre teclat a la botiga d'aplicacions. Els tec
     <string name="quest_split_way_many_splits_confirmation_description">"Ja hi ha unes quantes divisions. Sempre podeu afegir-ne més endavant."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"Quin tipus de superfície té el camí de vianants aquí?"</string>
+    <string name="quest_surface_footway_title">"Quin tipus de superfície té el camí de vianants aquí?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"Els serveis de %s són accessibles amb cadira de rodes?"</string>

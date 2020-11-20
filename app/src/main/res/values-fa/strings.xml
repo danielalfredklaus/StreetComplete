@@ -221,7 +221,7 @@
     <string name="autosync_off">"خاموش"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"جنس سطح این مسیر چیست؟"</string>
+    <string name="quest_surface_street_title">"جنس سطح این مسیر چیست؟"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"روسازی‌شده (کلی)"</string>
@@ -407,7 +407,7 @@
     <string name="dialog_session_dont_show_again">"دوباره این نشست را نشان ندهید"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"جنس سطح مسیر %s چگونه است؟"</string>
+    <string name="quest_surface_street_name_title">"جنس سطح مسیر %s چگونه است؟"</string>
 
     <!-- Fuzzy -->
 
@@ -913,10 +913,10 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"جنس سطح این میدان چیست؟"</string>
+    <string name="quest_surface_square_title">"جنس سطح این میدان چیست؟"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"این میدان دارای کدام‌یک از این سطوح %s می‌باشد؟"</string>
+    <string name="quest_surface_square_name_title">"این میدان دارای کدام‌یک از این سطوح %s می‌باشد؟"</string>
 
     <!-- Fuzzy -->
 
@@ -980,7 +980,7 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"سطح این مسیر از چه نوعی است؟"</string>
+    <string name="quest_surface_path_title">"سطح این مسیر از چه نوعی است؟"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"یکی از بارزترین موارد را انتخاب کنید:"</string>
@@ -1318,7 +1318,7 @@
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"سطح مسیر دوچرخه ‌سواری از چه جنسی است؟"</string>
+    <string name="quest_surface_cycleway_title">"سطح مسیر دوچرخه ‌سواری از چه جنسی است؟"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"تناقض در طول مسیر..."</string>
@@ -1336,7 +1336,7 @@
     <string name="quest_split_way_many_splits_confirmation_description">"این راه‌ها به چند بخش تفکیک شده است. همیشه بعداً هم می‌توانید راه را تفکیک کنید."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"سطح این پیاده‌راه از چه جنسی است؟"</string>
+    <string name="quest_surface_footway_title">"سطح این پیاده‌راه از چه جنسی است؟"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"آیا دستشویی با صندلی چرخدار %s قابل دسترسی است؟"</string>

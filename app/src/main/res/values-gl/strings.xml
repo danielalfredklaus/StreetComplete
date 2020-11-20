@@ -273,7 +273,7 @@ Porén, antes de subir calquera mudanza á aplicación pescuda se a versión act
     <string name="autosync_off">"Desactivada"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"Que tipo de superficie ten este treito de estrada?"</string>
+    <string name="quest_surface_street_title">"Que tipo de superficie ten este treito de estrada?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"Pavimentado (xenérico)"</string>
@@ -459,7 +459,7 @@ Porén, antes de subir calquera mudanza á aplicación pescuda se a versión act
     <string name="dialog_session_dont_show_again">"Non amosar máis nesta sesión"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"Que tipo de superficie ten a vía %s?"</string>
+    <string name="quest_surface_street_name_title">"Que tipo de superficie ten a vía %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -963,10 +963,10 @@ Pero lembra que sempre podes descarregar aplicacións de teclado diferentes dend
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"Que tipo de superficie ten esta praza?"</string>
+    <string name="quest_surface_square_title">"Que tipo de superficie ten esta praza?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"Que tipo de superficie ten a praza «%s»?"</string>
+    <string name="quest_surface_square_name_title">"Que tipo de superficie ten a praza «%s»?"</string>
 
     <!-- Fuzzy -->
 
@@ -1030,7 +1030,7 @@ Pero lembra que sempre podes descarregar aplicacións de teclado diferentes dend
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"De que tipo de material é este camiño?"</string>
+    <string name="quest_surface_path_title">"De que tipo de material é este camiño?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Escolle o máis preciso que encaixe"</string>
@@ -1368,7 +1368,7 @@ Pero lembra que sempre podes descarregar aplicacións de teclado diferentes dend
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"Cal é a superficie da senda ciclista aquí?"</string>
+    <string name="quest_surface_cycleway_title">"Cal é a superficie da senda ciclista aquí?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"Difire ó longo do camiño..."</string>
@@ -1387,7 +1387,7 @@ Dividila agora?"</string>
     <string name="quest_split_way_many_splits_confirmation_description">"Estas son divisións dabondo. Sempre pode dividirse a vía aínda máis despois."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"Cal é a superficie da senda peonil aquí?"</string>
+    <string name="quest_surface_footway_title">"Cal é a superficie da senda peonil aquí?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"É o baño de %s accesíbel para cadeiras de rodas?"</string>

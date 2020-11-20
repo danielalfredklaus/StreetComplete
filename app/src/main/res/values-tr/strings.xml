@@ -266,7 +266,7 @@ Bahsedildiği gibi, uygulama OSM altyapısıyla doğrudan iletişim kuruyor. Bun
     <string name="autosync_off">"Kapalı"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"Bu yol hangi yüzeye sahip?"</string>
+    <string name="quest_surface_street_title">"Bu yol hangi yüzeye sahip?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"Asfalt (genel)"</string>
@@ -442,7 +442,7 @@ Bahsedildiği gibi, uygulama OSM altyapısıyla doğrudan iletişim kuruyor. Bun
     <string name="dialog_session_dont_show_again">"Bu oturum için tekrar gösterme"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"%s yolunun yüzeyi nedir?"</string>
+    <string name="quest_surface_street_name_title">"%s yolunun yüzeyi nedir?"</string>
 
     <!-- Fuzzy -->
 
@@ -928,7 +928,7 @@ Bahsedildiği gibi, uygulama OSM altyapısıyla doğrudan iletişim kuruyor. Bun
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"Bu meydanın yüzeyi nedir?"</string>
+    <string name="quest_surface_square_title">"Bu meydanın yüzeyi nedir?"</string>
 
     <!-- Fuzzy -->
 
@@ -981,7 +981,7 @@ Bahsedildiği gibi, uygulama OSM altyapısıyla doğrudan iletişim kuruyor. Bun
     <string name="questList_disabled_in_country">"Asla %s olarak gösterme"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"Bu yolun buradaki yüzeyi nasıl?"</string>
+    <string name="quest_surface_path_title">"Bu yolun buradaki yüzeyi nasıl?"</string>
     <string name="quest_select_hint_most_specific">"En uygun olanı seçin:"</string>
     <string name="quest_generic_item_confirmation">"Daha spesifik olarak belirleyemediğinizden emin misiniz?"</string>
 
@@ -1242,7 +1242,7 @@ Bahsedildiği gibi, uygulama OSM altyapısıyla doğrudan iletişim kuruyor. Bun
 
     <!-- Fuzzy -->
     <string name="quest_split_way_too_imprecise">"Lütfen daha fazla yakınlaştırın"</string>
-    <string name="quest_footwayPartSurface_title">"Buradaki patikanın yüzeyi nedir?"</string>
+    <string name="quest_surface_footway_title">"Buradaki patikanın yüzeyi nedir?"</string>
     <string name="quest_tactilePaving_title_tram">"Bu tramvay durağında kabartmalı/hisli kaldırımlar var mı?"</string>
 
     <!-- Fuzzy -->

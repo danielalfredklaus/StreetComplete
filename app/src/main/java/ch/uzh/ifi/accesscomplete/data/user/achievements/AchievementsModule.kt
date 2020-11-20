@@ -8,17 +8,23 @@ import javax.inject.Named
 @Module
 object AchievementsModule {
 
-    @Provides @Named("Links") fun links(): List<Link> = links
-    @Provides @Named("Achievements") fun achievements(): List<Achievement> = achievements
-    @Provides @Named("QuestAliases") fun questAliases(): List<Pair<String, String>> = questAliases
+    @Provides
+    @Named("Links")
+    fun links(): List<Link> = links
+    @Provides
+    @Named("Achievements")
+    fun achievements(): List<Achievement> = achievements
+    @Provides
+    @Named("QuestAliases")
+    fun questAliases(): List<Pair<String, String>> = questAliases
 
     // list of quest synonyms (this alternate name is mentioned to aid searching for this code)
     private val questAliases = listOf(
-        "AddAccessibleForPedestrians"        to "AddProhibitedForPedestrians",
+        "AddAccessibleForPedestrians" to "AddProhibitedForPedestrians",
         "AddWheelChairAccessPublicTransport" to "AddWheelchairAccessPublicTransport",
-        "AddWheelChairAccessToilets"         to "AddWheelchairAccessToilets",
-        "AddSidewalks"                       to "AddSidewalk",
-        "AddTrafficSignalsBlindFeatures"     to "AddTrafficSignalsVibration",
+        "AddWheelChairAccessToilets" to "AddWheelchairAccessToilets",
+        "AddSidewalks" to "AddSidewalk",
+        "AddTrafficSignalsBlindFeatures" to "AddTrafficSignalsVibration",
     )
 
     private val links = listOf(
@@ -219,7 +225,7 @@ object AchievementsModule {
             R.string.achievement_surveyor_solved_X,
             TotalSolvedQuests,
             // levels: 10, 30, 60, 100, 150, 210, 280, 360, 450, 550, 660, 780, 910, 1050, ...
-            { lvl -> (lvl + 1)*10 },
+            { lvl -> (lvl + 1) * 10 },
             mapOf(
                 /* Achievements rewarded for general activity should first cover introduction to OSM
                    and then most of all goodies and general (OSM) showcases */
@@ -271,7 +277,7 @@ object AchievementsModule {
                 "AddWheelchairAccessOutside",
             )),
             // levels: 3, 9, 18, 30, 45, 63, ...
-            { lvl -> (lvl + 1)*3 },
+            { lvl -> (lvl + 1) * 3 },
             mapOf()
         ),
 
@@ -295,13 +301,11 @@ object AchievementsModule {
                 )
             ),
             // levels: 10, 30, 60, 100, 150, 210, 280, 360, 450, 550, 660, 780, 910, 1050, ...
-            { lvl -> (lvl + 1)*10 },
+            { lvl -> (lvl + 1) * 10 },
             mapOf(
                 1 to links("öpnvkarte")
             )
         ),
-
-
 
         Achievement(
             "blind",
@@ -318,7 +322,7 @@ object AchievementsModule {
                 )
             ),
             // levels: 10, 30, 60, 100, 150, 210, 280, 360, 450, 550, 660, 780, 910, 1050, ...
-            { lvl -> (lvl + 1)*10 },
+            { lvl -> (lvl + 1) * 10 },
             mapOf(
                 1 to links("touch_mapper"),
                 2 to links("mapy_tactile")
@@ -332,6 +336,20 @@ object AchievementsModule {
             R.string.achievement_wheelchair_solved_X,
             SolvedQuestsOfTypes(
                 listOf(
+                    "AddKerbType",
+                    "AddPathIncline",
+                    "AddPedestrianAccessibleStreetIncline",
+                    "AddCyclewayPartWidth",
+                    "AddFootwayPartWidth",
+                    "AddPathWidth",
+                    "AddPedestrianAccessibleStreetWidth",
+                    "AddCyclewayPartSurface",
+                    "AddFootwayPartSurface",
+                    "AddPathSurface",
+                    "AddPedestrianAccessibleStreetSurface",
+                    "AddPathSmoothness",
+                    "AddPedestrianAccessibleStreetSmoothness",
+                    "AddFootwayPartSmoothness",
                     "AddWheelchairAccessBusiness",
                     "AddWheelchairAccessOutside",
                     "AddWheelchairAccessPublicTransport",
@@ -344,7 +362,7 @@ object AchievementsModule {
                 )
             ),
             // levels: 10, 30, 60, 100, 150, 210, 280, 360, 450, 550, 660, 780, 910, 1050, ...
-            { lvl -> (lvl + 1)*10 },
+            { lvl -> (lvl + 1) * 10 },
             mapOf(
                 1 to links("wheelmap"),
                 2 to links("openrouteservice-wheelchair")

@@ -184,7 +184,7 @@ Tetapi, sebelum mengunggah perubahan, aplikasi mengecek &lt;a href=\"https://www
     <string name="autosync_off">"Mati"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"Permukaan jalan ini terbuat dari apa?"</string>
+    <string name="quest_surface_street_title">"Permukaan jalan ini terbuat dari apa?"</string>
     <string name="quest_surface_value_paved">"Diturap (umum)"</string>
     <string name="quest_surface_value_unpaved">"Tidak diturap (umum)"</string>
     <string name="quest_surface_value_ground">"Tanah (umum)"</string>
@@ -238,7 +238,7 @@ Tetapi, sebelum mengunggah perubahan, aplikasi mengecek &lt;a href=\"https://www
 
     <!-- Fuzzy -->
     <string name="dialog_session_dont_show_again">"Jangan tampilkan lagi untuk sesi ini"</string>
-    <string name="quest_streetSurface_name_title">"Apa permukaan yang ada di jalan %s ini?"</string>
+    <string name="quest_surface_street_name_title">"Apa permukaan yang ada di jalan %s ini?"</string>
     <string name="quest_wheelchairAccess_name_title">"Apakah %s ramah kursi roda?"</string>
     <string name="quest_wheelchairAccess_limited">"Sebagian"</string>
     <string name="quest_wheelchairAccess_bus_station_title">"Apakah stasiun bus ini ramah kursi roda?"</string>
@@ -414,14 +414,14 @@ Sebagian berarti kursi roda dapat masuk dan menggunakannya, tapi tidak ada pegan
     <string name="quest_generic_looks_like_this">"Biasanya terlihat seperti ini:"</string>
     <string name="quest_surface_value_metal">"Logam"</string>
     <string name="quest_surface_value_unhewn_cobblestone">"Berangkal tidak mulus"</string>
-    <string name="quest_streetSurface_square_title">"Apakah permukaan dari alun-alun ini?"</string>
-    <string name="quest_streetSurface_square_name_title">"Apa permukaan dari alun-alun %s ini?"</string>
+    <string name="quest_surface_square_title">"Apakah permukaan dari alun-alun ini?"</string>
+    <string name="quest_surface_square_name_title">"Apa permukaan dari alun-alun %s ini?"</string>
     <string name="quest_construction_road_title">"Apakah jalan ini selesai?"</string>
     <string name="quest_construction_cycleway_title">"Apakah jalan sepeda ini selesai?"</string>
     <string name="quest_construction_footway_title">"Apakah jalan kaki ini selesai?"</string>
     <string name="quest_construction_generic_title">"Apakah jalan ini selesai?"</string>
     <string name="questList_disabled_in_country">"Tidak pernah terlihat di %s"</string>
-    <string name="quest_pathSurface_title">"Permukaan apa yang ada di jalan kecil ini?"</string>
+    <string name="quest_surface_path_title">"Permukaan apa yang ada di jalan kecil ini?"</string>
     <string name="quest_select_hint_most_specific">"Pilih yang paling spesifik dan mendekati:"</string>
     <string name="quest_generic_item_confirmation">"Apa kamu yakin tidak bisa menentukan yang lebih spesifik?"</string>
 
@@ -475,14 +475,14 @@ Sebagian berarti kursi roda dapat masuk dan menggunakannya, tapi tidak ada pegan
     <string name="map_application_missing">"Tidak ada aplikasi peta lain terinstal"</string>
     <string name="quest_leave_new_note_photos_are_useful">"Menambah foto dapat menambah guna catatan."</string>
     <string name="create_new_note_hint">"Sebaiknya tulis catatan dengan bahasa lokal atau inggris."</string>
-    <string name="quest_cyclewayPartSurface_title">"Apa permukaan di jalan sepeda ini?"</string>
+    <string name="quest_surface_cycleway_title">"Apa permukaan di jalan sepeda ini?"</string>
     <string name="quest_generic_answer_differs_along_the_way">"Berbeda sepanjang jalan..."</string>
     <string name="quest_split_way_description">"Jika berbeda, langkah pertama adalah membagi jalannya. Kemudian, pencarian bisa dijawab secara terpisah.
 Pisah sekarang?"</string>
     <string name="quest_split_way_tutorial">"Sentuh pada titik jalan di mana jawabannya beda. Harap agar seakurat mungkin, kamu bisa memperbesar."</string>
     <string name="quest_split_way_too_imprecise">"Harap perbesar lagi"</string>
     <string name="quest_split_way_many_splits_confirmation_description">"Pembagian sudah cukup banyak. Kamu bisa membaginya lagi nanti."</string>
-    <string name="quest_footwayPartSurface_title">"Apa permukaan jalan kaki di sini?"</string>
+    <string name="quest_surface_footway_title">"Apa permukaan jalan kaki di sini?"</string>
     <string name="quest_wheelchairAccess_toiletsPart_title">"Apa kamar kecil di %s ramah kursi roda?"</string>
     <string name="quest_tactilePaving_title_tram">"Apa perhentian mobil ini memiliki ubin pemandu?"</string>
     <string name="quest_tactilePaving_title_name_tram">"Apa perhentian mobil %s memiliki ubin pemandu?"</string>

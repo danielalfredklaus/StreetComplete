@@ -253,7 +253,7 @@
     <string name="autosync_off">"Off"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"What surface does this piece of road have?"</string>
+    <string name="quest_surface_street_title">"What surface does this piece of road have?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"Paved (generic)"</string>
@@ -440,7 +440,7 @@
     <string name="dialog_session_dont_show_again">"Don’t show again for this session"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"What surface does the road %s have here?"</string>
+    <string name="quest_surface_street_name_title">"What surface does the road %s have here?"</string>
 
     <!-- Fuzzy -->
 
@@ -942,10 +942,10 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"What surface does this square have?"</string>
+    <string name="quest_surface_square_title">"What surface does this square have?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"What surface does the square %s have here?"</string>
+    <string name="quest_surface_square_name_title">"What surface does the square %s have here?"</string>
 
     <!-- Fuzzy -->
 
@@ -1009,7 +1009,7 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"What surface does this path have here?"</string>
+    <string name="quest_surface_path_title">"What surface does this path have here?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Select the most specific one that fits:"</string>
@@ -1293,7 +1293,7 @@ https://github.com/westnordost/StreetComplete/pull/1653 -->
     <string name="quest_split_way_too_imprecise">"Please zoom in further"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"What's the surface of the footway here?"</string>
+    <string name="quest_surface_footway_title">"What's the surface of the footway here?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"Is the toilet at %s wheelchair accessible?"</string>

@@ -258,7 +258,7 @@ Men før appen laster opp endringen dine sjekker den via &lt;a href=\"https://ww
     <string name="autosync_off">"Av"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"Hva slags overflate har dette veistykket?"</string>
+    <string name="quest_surface_street_title">"Hva slags overflate har dette veistykket?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"Belagt (generelt)"</string>
@@ -444,7 +444,7 @@ Men før appen laster opp endringen dine sjekker den via &lt;a href=\"https://ww
     <string name="dialog_session_dont_show_again">"Ikke vis flere ganger i denne økta"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"Hva slags overflate har veien %s her?"</string>
+    <string name="quest_surface_street_name_title">"Hva slags overflate har veien %s her?"</string>
 
     <!-- Fuzzy -->
 
@@ -945,10 +945,10 @@ Hvis ikke kan du laste ned et tastatur med støtte for flere språk som for ekse
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"Hva slags materiale er brukt på denne plassen?"</string>
+    <string name="quest_surface_square_title">"Hva slags materiale er brukt på denne plassen?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"Hva slags materiale er brukt på plassen %s?"</string>
+    <string name="quest_surface_square_name_title">"Hva slags materiale er brukt på plassen %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -1012,7 +1012,7 @@ Hvis ikke kan du laste ned et tastatur med støtte for flere språk som for ekse
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"Hva slags overflate har denne stien?"</string>
+    <string name="quest_surface_path_title">"Hva slags overflate har denne stien?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Velg det mest spesifikke som passer:"</string>
@@ -1350,7 +1350,7 @@ Hvis ikke kan du laste ned et tastatur med støtte for flere språk som for ekse
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"Hvordan er overflaten på sykkelstien her?"</string>
+    <string name="quest_surface_cycleway_title">"Hvordan er overflaten på sykkelstien her?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"Varierer..."</string>
@@ -1368,7 +1368,7 @@ Hvis ikke kan du laste ned et tastatur med støtte for flere språk som for ekse
     <string name="quest_split_way_many_splits_confirmation_description">"Dette er ganske mange oppdelinger. Du kan alltids dele opp ytterligere senere."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"Hva slags overflate har gangstien her?"</string>
+    <string name="quest_surface_footway_title">"Hva slags overflate har gangstien her?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"Er toalettet på %s tilgjengelig med rullestol?"</string>

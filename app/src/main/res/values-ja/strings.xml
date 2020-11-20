@@ -274,7 +274,7 @@ OpenStreetMap を匿名で編集することはできないため、変更は OS
     <string name="autosync_off">"オフ"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"この路面はどんな表面ですか?"</string>
+    <string name="quest_surface_street_title">"この路面はどんな表面ですか?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"舗装 (全般)"</string>
@@ -460,7 +460,7 @@ OpenStreetMap を匿名で編集することはできないため、変更は OS
     <string name="dialog_session_dont_show_again">"このセッションを今後表示しない"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"道路 %s はどのような路面ですか?"</string>
+    <string name="quest_surface_street_name_title">"道路 %s はどのような路面ですか?"</string>
 
     <!-- Fuzzy -->
 
@@ -962,10 +962,10 @@ OpenStreetMap を匿名で編集することはできないため、変更は OS
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"この広場の路面は何ですか?"</string>
+    <string name="quest_surface_square_title">"この広場の路面は何ですか?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"広場 %s の路面は何ですか?"</string>
+    <string name="quest_surface_square_name_title">"広場 %s の路面は何ですか?"</string>
 
     <!-- Fuzzy -->
 
@@ -1009,7 +1009,7 @@ OpenStreetMap を匿名で編集することはできないため、変更は OS
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"この小道はどんな表面ですか?"</string>
+    <string name="quest_surface_path_title">"この小道はどんな表面ですか?"</string>
     <string name="quest_generic_item_invalid_value">"より具体的な値を選択してください。"</string>
     <string name="notification_channel_download">"ダウンロード"</string>
     <string name="quest_segregated_title">"歩道と自転車道はどのように割り当てられていますか?"</string>
@@ -1040,7 +1040,7 @@ OpenStreetMap を匿名で編集することはできないため、変更は OS
     <string name="quest_leave_new_note_photos_are_useful">"写真を追加するとノートがより役に立ちます。"</string>
     <string name="create_new_note_hint">"ノートは現地で話されている言語で書くのが最善ですが、そうでなければ英語で書いてください。"</string>
     <string name="quest_split_way_too_imprecise">"拡大してください"</string>
-    <string name="quest_footwayPartSurface_title">"この歩道の路面は何ですか?"</string>
+    <string name="quest_surface_footway_title">"この歩道の路面は何ですか?"</string>
     <string name="about_summary_current_version">"現在のバージョン: %s"</string>
     <string name="about_title_changelog">"バージョン履歴"</string>
     <string name="title_whats_new">"新着情報"</string>

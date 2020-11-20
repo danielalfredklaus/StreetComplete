@@ -19,7 +19,7 @@ class AddCyclewayPartSurface : AbstractAddSurfaceQuestType() {
 
     override val icon = R.drawable.ic_quest_surface_cycleway
 
-    override fun getTitle(tags: Map<String, String>) = R.string.quest_cyclewayPartSurface_title
+    override fun getTitle(tags: Map<String, String>) = R.string.quest_surface_cycleway_title
 
     override fun getOsmKey(): String = "cycleway:surface"
 

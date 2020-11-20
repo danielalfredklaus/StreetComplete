@@ -272,7 +272,7 @@ Continuando con lo de antes, la aplicación se comunica directamente con la infr
     <string name="autosync_off">"Desactivada"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"¿Qué tipo de superficie tiene este tramo de carretera?"</string>
+    <string name="quest_surface_street_title">"¿Qué tipo de superficie tiene este tramo de carretera?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"Pavimentado (genérico)"</string>
@@ -458,7 +458,7 @@ Continuando con lo de antes, la aplicación se comunica directamente con la infr
     <string name="dialog_session_dont_show_again">"No volver a mostrar en esta sesión"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"¿Qué tipo de superficie tiene la vía %s?"</string>
+    <string name="quest_surface_street_name_title">"¿Qué tipo de superficie tiene la vía %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -962,10 +962,10 @@ Pero recuerda que siempre puedes descargar aplicaciones de teclado alternativas 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"¿Qué tipo de superficie tiene esta plaza?"</string>
+    <string name="quest_surface_square_title">"¿Qué tipo de superficie tiene esta plaza?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"¿Qué tipo de superficie tiene la plaza «%s»?"</string>
+    <string name="quest_surface_square_name_title">"¿Qué tipo de superficie tiene la plaza «%s»?"</string>
 
     <!-- Fuzzy -->
 
@@ -1029,7 +1029,7 @@ Pero recuerda que siempre puedes descargar aplicaciones de teclado alternativas 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"¿Que tipo de material tiene este camino?"</string>
+    <string name="quest_surface_path_title">"¿Que tipo de material tiene este camino?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Selecciona el mas especifico que encaje"</string>
@@ -1369,7 +1369,7 @@ Pero recuerda que siempre puedes descargar aplicaciones de teclado alternativas 
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"¿Cuál es la superficie de la vía ciclista?"</string>
+    <string name="quest_surface_cycleway_title">"¿Cuál es la superficie de la vía ciclista?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"Difiere a lo largo de la vía..."</string>
@@ -1387,7 +1387,7 @@ Pero recuerda que siempre puedes descargar aplicaciones de teclado alternativas 
     <string name="quest_split_way_many_splits_confirmation_description">"Estas son un buen número de divisiones. Puedes siempre dividir aún más la vía más adelante."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"¿Cuál es la superficie de la acera aquí?"</string>
+    <string name="quest_surface_footway_title">"¿Cuál es la superficie de la acera aquí?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"¿Es el servicio accesible para %s sillas de ruedas?"</string>

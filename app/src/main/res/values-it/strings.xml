@@ -267,7 +267,7 @@ Tuttavia, prima di caricare le modifiche, l’app fa una verifica su un &lt;a hr
     <string name="autosync_off">"Disattivata"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"Che superficie ha questa tratto di strada?"</string>
+    <string name="quest_surface_street_title">"Che superficie ha questa tratto di strada?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"Pavimentato (generico)"</string>
@@ -453,7 +453,7 @@ Tuttavia, prima di caricare le modifiche, l’app fa una verifica su un &lt;a hr
     <string name="dialog_session_dont_show_again">"Non mostrarlo più per questa sessione"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"Che tipo di pavimentazione ha la strada %s in questo punto?"</string>
+    <string name="quest_surface_street_name_title">"Che tipo di pavimentazione ha la strada %s in questo punto?"</string>
 
     <!-- Fuzzy -->
 
@@ -960,10 +960,10 @@ Altrimenti, è possibile scaricare un'altra tastiera nell'archivio di app. Le ta
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"Che tipo di pavimentazione ha questa piazza?"</string>
+    <string name="quest_surface_square_title">"Che tipo di pavimentazione ha questa piazza?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"Che tipo di pavimentazione ha la piazza %s?"</string>
+    <string name="quest_surface_square_name_title">"Che tipo di pavimentazione ha la piazza %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -1027,7 +1027,7 @@ Altrimenti, è possibile scaricare un'altra tastiera nell'archivio di app. Le ta
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"Che tipo di pavimentazione ha questo sentiero?"</string>
+    <string name="quest_surface_path_title">"Che tipo di pavimentazione ha questo sentiero?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Scegli quello che è più pertinente:"</string>
@@ -1365,7 +1365,7 @@ Altrimenti, è possibile scaricare un'altra tastiera nell'archivio di app. Le ta
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"Qual è la superficie di questa pista ciclabile?"</string>
+    <string name="quest_surface_cycleway_title">"Qual è la superficie di questa pista ciclabile?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"Cambia lungo il tragitto..."</string>
@@ -1384,7 +1384,7 @@ Suddividere?"</string>
     <string name="quest_split_way_many_splits_confirmation_description">"Queste sono parecchie divisioni. Puoi dividere ancora la strada più tardi."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"Qual è la superficie di questo passaggio pedonale?"</string>
+    <string name="quest_surface_footway_title">"Qual è la superficie di questo passaggio pedonale?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"I servizi igienici in %s sono accessibili con la sedia a rotelle?"</string>

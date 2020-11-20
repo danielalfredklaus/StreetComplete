@@ -275,7 +275,7 @@ Nicméně před nahráním vašich změn aplikace zkontroluje pomocí &lt;a href
     <string name="autosync_off">"Vypnuto"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"Jaký povrch má tato část cesty?"</string>
+    <string name="quest_surface_street_title">"Jaký povrch má tato část cesty?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"Zpevněný (blíže neurčeno)"</string>
@@ -461,7 +461,7 @@ Nicméně před nahráním vašich změn aplikace zkontroluje pomocí &lt;a href
     <string name="dialog_session_dont_show_again">"V této relaci znovu nezobrazovat"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"Jaký povrch má cesta %s v této části?"</string>
+    <string name="quest_surface_street_name_title">"Jaký povrch má cesta %s v této části?"</string>
 
     <!-- Fuzzy -->
 
@@ -968,10 +968,10 @@ Mezi populární klávesnice, které podporují spoustu jazyků patří Google G
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"Jaký povrch má toto náměstí?"</string>
+    <string name="quest_surface_square_title">"Jaký povrch má toto náměstí?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"Jaký povrch tu má náměstí %s?"</string>
+    <string name="quest_surface_square_name_title">"Jaký povrch tu má náměstí %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -1034,7 +1034,7 @@ Mezi populární klávesnice, které podporují spoustu jazyků patří Google G
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"Jaký povrch má stezka v této části?"</string>
+    <string name="quest_surface_path_title">"Jaký povrch má stezka v této části?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Vyberte nejvíce odpovídající možnost:"</string>
@@ -1375,7 +1375,7 @@ Mezi populární klávesnice, které podporují spoustu jazyků patří Google G
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"Jaký je povrch této cyklostezky?"</string>
+    <string name="quest_surface_cycleway_title">"Jaký je povrch této cyklostezky?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"V různých částech různý..."</string>
@@ -1394,7 +1394,7 @@ Chcete cestu rozdělit?"</string>
     <string name="quest_split_way_many_splits_confirmation_description">"Tohle je docela dost rozdělení. Cestu můžete vždycky rozdělit později."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"Jaký je povrch této stezky pro chodce/chodníku?"</string>
+    <string name="quest_surface_footway_title">"Jaký je povrch této stezky pro chodce/chodníku?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"Je toaleta v %s přístupná pro vozíčkáře?"</string>

@@ -272,7 +272,7 @@ Hala ere, zure aldaketak igo aurretik, aplikazioak nire zerbitzariko &lt;a href=
     <string name="autosync_off">"Ez"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"Zein da kale honen zoladura?"</string>
+    <string name="quest_surface_street_title">"Zein da kale honen zoladura?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"Zoladura (generikoa)"</string>
@@ -458,7 +458,7 @@ Hala ere, zure aldaketak igo aurretik, aplikazioak nire zerbitzariko &lt;a href=
     <string name="dialog_session_dont_show_again">"Ez erakutsi berriro saio honetan"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"Zein da %s kalearen azalera hemen?"</string>
+    <string name="quest_surface_street_name_title">"Zein da %s kalearen azalera hemen?"</string>
 
     <!-- Fuzzy -->
 
@@ -963,10 +963,10 @@ Bestela beste teklatu bat instalatu dezakezu. Hainbat hizkuntza onartzen dituzte
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"Zein da enparantza honen zoladura?"</string>
+    <string name="quest_surface_square_title">"Zein da enparantza honen zoladura?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"Zein da %s enparantzaren azalera hemen?"</string>
+    <string name="quest_surface_square_name_title">"Zein da %s enparantzaren azalera hemen?"</string>
 
     <!-- Fuzzy -->
 
@@ -1030,7 +1030,7 @@ Bestela beste teklatu bat instalatu dezakezu. Hainbat hizkuntza onartzen dituzte
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"Zein da bide honen zoladura hemen?"</string>
+    <string name="quest_surface_path_title">"Zein da bide honen zoladura hemen?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Hautatu bat datorren aukera zehatzena:"</string>
@@ -1368,7 +1368,7 @@ Bestela beste teklatu bat instalatu dezakezu. Hainbat hizkuntza onartzen dituzte
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"Zein da bidegorri honen zoladura hemen?"</string>
+    <string name="quest_surface_cycleway_title">"Zein da bidegorri honen zoladura hemen?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"Bidean zehar aldatzen da…"</string>
@@ -1386,7 +1386,7 @@ Bestela beste teklatu bat instalatu dezakezu. Hainbat hizkuntza onartzen dituzte
     <string name="quest_split_way_many_splits_confirmation_description">"Hauek zati askotxo dira. Bidea gero ere gehiago zatitu dezakezu."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"Zein da espaloiaren zoladura hemen?"</string>
+    <string name="quest_surface_footway_title">"Zein da espaloiaren zoladura hemen?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"%s(e)ko komuna gurpil-aukientzat irisgarria da?"</string>

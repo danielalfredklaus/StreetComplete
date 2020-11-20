@@ -190,7 +190,7 @@ Toutefois, avant de télécharger vos modifications, l'application vérifie, à 
 
     <!-- Plus simple et plus court : "Quel est le revêtement de cette rue ?" -->
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"Quel est le revêtement de ce tronçon ?"</string>
+    <string name="quest_surface_street_title">"Quel est le revêtement de ce tronçon ?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"Avec revêtement (générique)"</string>
@@ -328,7 +328,7 @@ en:cement = fr:ciment = de:Zement -->
 
     <!-- Je remets "revêtement" car la "surface d'une route" ça ne veut rien dire. -->
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"Quel est le revêtement de la voie %s à cet endroit ?"</string>
+    <string name="quest_surface_street_name_title">"Quel est le revêtement de la voie %s à cet endroit ?"</string>
 
     <!-- Fuzzy -->
 
@@ -843,10 +843,10 @@ Sinon, vous pouvez télécharger un autre clavier dans le magasin d'applications
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"Quel est le revêtement de cette place ?"</string>
+    <string name="quest_surface_square_title">"Quel est le revêtement de cette place ?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"Quel est le revêtement de la place %s ?"</string>
+    <string name="quest_surface_square_name_title">"Quel est le revêtement de la place %s ?"</string>
 
     <!-- Fuzzy -->
 
@@ -910,7 +910,7 @@ Sinon, vous pouvez télécharger un autre clavier dans le magasin d'applications
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"Quel revêtement ce chemin a-t-il ?"</string>
+    <string name="quest_surface_path_title">"Quel revêtement ce chemin a-t-il ?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Sélectionnez celui qui convient le mieux :"</string>
@@ -1263,7 +1263,7 @@ Sinon, vous pouvez télécharger un autre clavier dans le magasin d'applications
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"Quel est le revêtement de la piste cyclable ici ?"</string>
+    <string name="quest_surface_cycleway_title">"Quel est le revêtement de la piste cyclable ici ?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"Varie en cours de route..."</string>
@@ -1284,7 +1284,7 @@ Découper maintenant ?"</string>
 
     <!-- Je pense que le terme "surface" est trop ambigu : je trouve que "revêtement" est mieux. -->
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"Quel est le revêtement du chemin piéton ici ?"</string>
+    <string name="quest_surface_footway_title">"Quel est le revêtement du chemin piéton ici ?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"Les toilettes de %s sont-elles accessibles aux personnes en fauteuil roulant ?"</string>

@@ -21,15 +21,15 @@ class AddPedestrianAccessibleStreetSurface : AbstractAddSurfaceQuestType() {
 
         return if (hasName) {
             when {
-                isSquare -> R.string.quest_streetSurface_square_name_title
+                isSquare -> R.string.quest_surface_square_name_title
                 hasSidewalk -> R.string.quest_surface_street_name_sidewalk_title
-                else -> R.string.quest_streetSurface_name_title
+                else -> R.string.quest_surface_street_name_title
             }
         } else {
             when {
-                isSquare -> R.string.quest_streetSurface_square_title
+                isSquare -> R.string.quest_surface_square_title
                 hasSidewalk -> R.string.quest_surface_street_sidewalk_title
-                else -> R.string.quest_streetSurface_title
+                else -> R.string.quest_surface_street_title
             }
         }
     }

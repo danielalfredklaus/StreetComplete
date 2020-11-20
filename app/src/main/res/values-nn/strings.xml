@@ -273,7 +273,7 @@ Alt du som bidreg med vert lagt direkte til kartet; det finst ikkje nokon tredje
     <string name="autosync_off">"Av"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"Kva vegdekke har denne vegstrekninga?"</string>
+    <string name="quest_surface_street_title">"Kva vegdekke har denne vegstrekninga?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"Fast dekke (generelt)"</string>
@@ -459,7 +459,7 @@ Alt du som bidreg med vert lagt direkte til kartet; det finst ikkje nokon tredje
     <string name="dialog_session_dont_show_again">"Vis ikkje fleire gongar i denne økta"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"Kva vegdekke har vegen %s her?"</string>
+    <string name="quest_surface_street_name_title">"Kva vegdekke har vegen %s her?"</string>
 
     <!-- Fuzzy -->
 
@@ -962,10 +962,10 @@ Elles kan du lasta ned eit anna tastatur i appbutikken. Mykje brukte tastatur so
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"Kva materiale er brukt på denne plassen?"</string>
+    <string name="quest_surface_square_title">"Kva materiale er brukt på denne plassen?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"Kva materiale er brukt på plassen %s her?"</string>
+    <string name="quest_surface_square_name_title">"Kva materiale er brukt på plassen %s her?"</string>
 
     <!-- Fuzzy -->
 
@@ -1029,7 +1029,7 @@ Elles kan du lasta ned eit anna tastatur i appbutikken. Mykje brukte tastatur so
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"Kva vegdekke har denne stien her?"</string>
+    <string name="quest_surface_path_title">"Kva vegdekke har denne stien her?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Vel det mest spesifikke som passar:"</string>
@@ -1367,7 +1367,7 @@ Elles kan du lasta ned eit anna tastatur i appbutikken. Mykje brukte tastatur so
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"Kva vegdekke har sykkelvegen her?"</string>
+    <string name="quest_surface_cycleway_title">"Kva vegdekke har sykkelvegen her?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"Forskjellig på ulike delar av vegen …"</string>
@@ -1386,7 +1386,7 @@ Vil du dela opp vegen no?"</string>
     <string name="quest_split_way_many_splits_confirmation_description">"Du har no ganske mange vegstykke. Du kan alltids dela vegen meir seinare."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"Kva vegdekke har gangvegen her?"</string>
+    <string name="quest_surface_footway_title">"Kva vegdekke har gangvegen her?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"Er toalettet til %s tilgjengeleg med rullestol?"</string>

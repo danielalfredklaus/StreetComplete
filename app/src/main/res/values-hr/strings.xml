@@ -125,7 +125,7 @@ Međutim, prije slanja promjena, aplikacija provjerava &lt;a href=\"https://www.
     <string name="autosync_on">"Uključena"</string>
     <string name="autosync_only_on_wifi">"Samo na Wi-Fi"</string>
     <string name="autosync_off">"Isključena"</string>
-    <string name="quest_streetSurface_title">"Kakvu površinu ima ovaj dio ceste?"</string>
+    <string name="quest_surface_street_title">"Kakvu površinu ima ovaj dio ceste?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"Popločano (općenito)"</string>
@@ -201,7 +201,7 @@ Međutim, prije slanja promjena, aplikacija provjerava &lt;a href=\"https://www.
 
     <!-- Fuzzy -->
     <string name="dialog_session_dont_show_again">"Ne prikazuj ponovo u ovoj sesiji"</string>
-    <string name="quest_streetSurface_name_title">"Kakvu površinu cesta %s ima ovdje?"</string>
+    <string name="quest_surface_street_name_title">"Kakvu površinu cesta %s ima ovdje?"</string>
 
     <!-- Fuzzy -->
 
@@ -364,8 +364,8 @@ U suprotnom možete preuzeti drugu tipkovnicu u trgovini aplikacija. Popularne t
     <string name="quest_surface_value_unhewn_cobblestone">"Kaldrma"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"Kakvu površinu ima ovaj trg?"</string>
-    <string name="quest_streetSurface_square_name_title">"Kakvu površinu trg %s ima ovdje?"</string>
+    <string name="quest_surface_square_title">"Kakvu površinu ima ovaj trg?"</string>
+    <string name="quest_surface_square_name_title">"Kakvu površinu trg %s ima ovdje?"</string>
 
     <!-- Fuzzy -->
 
@@ -397,7 +397,7 @@ U suprotnom možete preuzeti drugu tipkovnicu u trgovini aplikacija. Popularne t
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"Kakvu je površina staze ovdje?"</string>
+    <string name="quest_surface_path_title">"Kakvu je površina staze ovdje?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Odaberite najprecizniji odgovor:"</string>
@@ -532,7 +532,7 @@ U suprotnom možete preuzeti drugu tipkovnicu u trgovini aplikacija. Popularne t
     <string name="create_new_note_hint">"Bilješku najbolje napišite na lokalnom jeziku, ili na engleskom ako ne pričate lokalni jezik."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"Kakvu površinu ima ovaj dio biciklističke staze?"</string>
+    <string name="quest_surface_cycleway_title">"Kakvu površinu ima ovaj dio biciklističke staze?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"Razlikuje se putem..."</string>
@@ -545,7 +545,7 @@ Razdvojiti put sada?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_split_way_many_splits_confirmation_description">"To je poprilično podjela. Uvijek možete kasnije dodatno razdvojiti put."</string>
-    <string name="quest_footwayPartSurface_title">"Kakva je ovdje površina nogostupa?"</string>
+    <string name="quest_surface_footway_title">"Kakva je ovdje površina nogostupa?"</string>
     <string name="quest_wheelchairAccess_toiletsPart_title">"Je li toalet u %s pristupačan za invalidska kolica?"</string>
     <string name="quest_tactilePaving_title_tram">"Ima li ova tramvajska stanica trake vodilje za slijepe?"</string>
     <string name="quest_tactilePaving_title_name_tram">"Ima li tramvajska stanica %s trake vodilje za slijepe?"</string>

@@ -273,7 +273,7 @@ Før ændringer sendes tjekker appen dog en &lt;a href=\"https://www.westnordost
     <string name="autosync_off">"Fra"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"Hvilken overflade har denne del af vejen?"</string>
+    <string name="quest_surface_street_title">"Hvilken overflade har denne del af vejen?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"Belægning (generisk)"</string>
@@ -462,7 +462,7 @@ Før ændringer sendes tjekker appen dog en &lt;a href=\"https://www.westnordost
     <string name="dialog_session_dont_show_again">"Vis ikke igen for denne session"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"Hvad overflade har vejen %s her?"</string>
+    <string name="quest_surface_street_name_title">"Hvad overflade har vejen %s her?"</string>
 
     <!-- Fuzzy -->
 
@@ -965,10 +965,10 @@ Delvist betyder at kørestolsbrugeren kan bruge toilettet men der mangler håndt
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"Hvilket overflade har denne plads?"</string>
+    <string name="quest_surface_square_title">"Hvilket overflade har denne plads?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"Hvilken overflade har %s her?"</string>
+    <string name="quest_surface_square_name_title">"Hvilken overflade har %s her?"</string>
 
     <!-- Fuzzy -->
 
@@ -1032,7 +1032,7 @@ Delvist betyder at kørestolsbrugeren kan bruge toilettet men der mangler håndt
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"Hvilket overflade har denne sti her?"</string>
+    <string name="quest_surface_path_title">"Hvilket overflade har denne sti her?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Vælg den mest specifikke der passer:"</string>
@@ -1372,7 +1372,7 @@ Delvist betyder at kørestolsbrugeren kan bruge toilettet men der mangler håndt
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"Hvad er belægningen på denne cykelsti?"</string>
+    <string name="quest_surface_cycleway_title">"Hvad er belægningen på denne cykelsti?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"Afviger undervejs ..."</string>
@@ -1391,7 +1391,7 @@ Del det nu?"</string>
     <string name="quest_split_way_many_splits_confirmation_description">"Dette er en hel del opdelinger. Du kan altid opdele vejen senere."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"Hvilken belægning er der på denne gangsti?"</string>
+    <string name="quest_surface_footway_title">"Hvilken belægning er der på denne gangsti?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"Er dette toilet %s kørestolsvenligt?"</string>

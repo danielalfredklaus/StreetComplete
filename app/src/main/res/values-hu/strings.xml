@@ -266,7 +266,7 @@ A módosításaid feltöltése előtt azonban az alkalmazás először leellenő
     <string name="autosync_off">"Ki"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"Milyen a burkolata ennek az útszakasznak?"</string>
+    <string name="quest_surface_street_title">"Milyen a burkolata ennek az útszakasznak?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"Burkolt"</string>
@@ -449,7 +449,7 @@ A módosításaid feltöltése előtt azonban az alkalmazás először leellenő
     <string name="dialog_session_dont_show_again">"Ne mutasd többször ebben a munkamenetben"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"Milyen a burkolata itt ennek az útnak: %s?"</string>
+    <string name="quest_surface_street_name_title">"Milyen a burkolata itt ennek az útnak: %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -945,10 +945,10 @@ A „részben” azt jelenti, hogy kerekesszékkel ugyan be lehet menni és lehe
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"Milyen a burkolata ennek a térnek?"</string>
+    <string name="quest_surface_square_title">"Milyen a burkolata ennek a térnek?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"Milyen a burkolata ennek a térnek: %s?"</string>
+    <string name="quest_surface_square_name_title">"Milyen a burkolata ennek a térnek: %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -1008,7 +1008,7 @@ A „részben” azt jelenti, hogy kerekesszékkel ugyan be lehet menni és lehe
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"Milyen a burkolata ennek a gyalogútnak?"</string>
+    <string name="quest_surface_path_title">"Milyen a burkolata ennek a gyalogútnak?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Válaszd ki a leginkább rá jellemzőt:"</string>
@@ -1344,7 +1344,7 @@ A „részben” azt jelenti, hogy kerekesszékkel ugyan be lehet menni és lehe
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"Milyen a burkolata itt a kerékpárútnak?"</string>
+    <string name="quest_surface_cycleway_title">"Milyen a burkolata itt a kerékpárútnak?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"Az út mentén változik…"</string>
@@ -1362,7 +1362,7 @@ A „részben” azt jelenti, hogy kerekesszékkel ugyan be lehet menni és lehe
     <string name="quest_split_way_many_splits_confirmation_description">"Ez jó pár új darab. Később is ugyanúgy tovább oszthatod az utat."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"Mi a járda anyaga?"</string>
+    <string name="quest_surface_footway_title">"Mi a járda anyaga?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"Az itt levő wc: %s kerekesszékkel is használható?"</string>

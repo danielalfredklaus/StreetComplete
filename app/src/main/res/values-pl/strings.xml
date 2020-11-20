@@ -256,7 +256,7 @@ Niemniej przed każdym wysłaniem zmian aplikacja sprawdza &lt;a href=\"https://
     <string name="autosync_off">"Wyłącz"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"Jaką nawierzchnię ma ten fragment drogi?"</string>
+    <string name="quest_surface_street_title">"Jaką nawierzchnię ma ten fragment drogi?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"utwardzona (ogólnie)"</string>
@@ -442,7 +442,7 @@ Niemniej przed każdym wysłaniem zmian aplikacja sprawdza &lt;a href=\"https://
     <string name="dialog_session_dont_show_again">"Nie pokazuj więcej w tej sesji"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"Jaką nawierzchnię ma droga %s?"</string>
+    <string name="quest_surface_street_name_title">"Jaką nawierzchnię ma droga %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -944,10 +944,10 @@ Oznacza to, że osoba na wózku jest w stanie z niej skorzystać, ale nie ma por
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"Jaką nawierzchnię ma ten plac?"</string>
+    <string name="quest_surface_square_title">"Jaką nawierzchnię ma ten plac?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"Jaką nawierzchnię ma tutaj plac %s?"</string>
+    <string name="quest_surface_square_name_title">"Jaką nawierzchnię ma tutaj plac %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -1011,7 +1011,7 @@ Oznacza to, że osoba na wózku jest w stanie z niej skorzystać, ale nie ma por
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"Jaką nawierzchnię ma ten fragment ścieżki?"</string>
+    <string name="quest_surface_path_title">"Jaką nawierzchnię ma ten fragment ścieżki?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Wybierz najbardziej szczegółowy który pasuje:"</string>
@@ -1351,7 +1351,7 @@ Oznacza to, że osoba na wózku jest w stanie z niej skorzystać, ale nie ma por
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"Jaka jest nawierzchnia części będącej drogą dla rowerów?"</string>
+    <string name="quest_surface_cycleway_title">"Jaka jest nawierzchnia części będącej drogą dla rowerów?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"Zmienia się..."</string>
@@ -1368,7 +1368,7 @@ Podzielić?"</string>
     <string name="quest_split_way_many_splits_confirmation_description">"To jest sporo podziałów! Zawsze możesz podzielić linię bardziej przy odpowiadaniu na poszczególne zadania."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"Jak jest nawierzchnia części będącej chodnikiem dla pieszych?"</string>
+    <string name="quest_surface_footway_title">"Jak jest nawierzchnia części będącej chodnikiem dla pieszych?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"Czy toalety w %s jest dostępna dla osób na wózku inwalidzkim?"</string>

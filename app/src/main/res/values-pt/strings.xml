@@ -273,7 +273,7 @@ Contudo, antes enviar as suas alterações, a aplicação confirma com &lt;a hre
     <string name="autosync_off">"Desligada"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"Que tipo de pavimento tem este trecho de estrada?"</string>
+    <string name="quest_surface_street_title">"Que tipo de pavimento tem este trecho de estrada?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"Pavimentado (genérico)"</string>
@@ -459,7 +459,7 @@ Contudo, antes enviar as suas alterações, a aplicação confirma com &lt;a hre
     <string name="dialog_session_dont_show_again">"Não mostrar mais nesta sessão"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"Que tipo de pavimento tem a estrada %s?"</string>
+    <string name="quest_surface_street_name_title">"Que tipo de pavimento tem a estrada %s?"</string>
 
     <!-- Fuzzy -->
 
@@ -963,10 +963,10 @@ Caso contrário, pode descarregar outro teclado na loja de apps. Alguns dos tecl
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"Qual o tipo de pavimento desta praça?"</string>
+    <string name="quest_surface_square_title">"Qual o tipo de pavimento desta praça?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"Qual é o tipo de pavimento da praça \"%s\"?"</string>
+    <string name="quest_surface_square_name_title">"Qual é o tipo de pavimento da praça \"%s\"?"</string>
 
     <!-- Fuzzy -->
 
@@ -1030,7 +1030,7 @@ Caso contrário, pode descarregar outro teclado na loja de apps. Alguns dos tecl
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"Que tipo de superfície tem este trilho/caminho?"</string>
+    <string name="quest_surface_path_title">"Que tipo de superfície tem este trilho/caminho?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Selecionar o que mais se ajusta:"</string>
@@ -1369,7 +1369,7 @@ Caso contrário, pode descarregar outro teclado na loja de apps. Alguns dos tecl
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"Qual o tipo de superfície desta ciclo via?"</string>
+    <string name="quest_surface_cycleway_title">"Qual o tipo de superfície desta ciclo via?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"Varia ao longo do trajecto..."</string>
@@ -1384,7 +1384,7 @@ Caso contrário, pode descarregar outro teclado na loja de apps. Alguns dos tecl
     <string name="quest_split_way_many_splits_confirmation_description">"Há uma série de divisões. Pode sempre dividir a via mais tarde."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"Qual o tipo de superfície deste caminho?"</string>
+    <string name="quest_surface_footway_title">"Qual o tipo de superfície deste caminho?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"A casa de banho em %s é acessível por cadeira de rodas?"</string>

@@ -270,7 +270,7 @@ StreetComplete는 GPS 위치 정보를 다른 사람과 공유하지 않습니�
     <string name="autosync_off">"끄기"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"이 도로 조각의 포장재는 무엇입니까?"</string>
+    <string name="quest_surface_street_title">"이 도로 조각의 포장재는 무엇입니까?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"포장(전체적으로)"</string>
@@ -456,7 +456,7 @@ StreetComplete는 GPS 위치 정보를 다른 사람과 공유하지 않습니�
     <string name="dialog_session_dont_show_again">"다시 켤 때까지 다시 보지 않기"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"%s의 포장재는 무엇입니까?"</string>
+    <string name="quest_surface_street_name_title">"%s의 포장재는 무엇입니까?"</string>
 
     <!-- Fuzzy -->
 
@@ -958,10 +958,10 @@ StreetComplete는 GPS 위치 정보를 다른 사람과 공유하지 않습니�
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"이 광장의 포장재는 무엇입니까?"</string>
+    <string name="quest_surface_square_title">"이 광장의 포장재는 무엇입니까?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"사각형 %s의 포장재는 무엇입니까?"</string>
+    <string name="quest_surface_square_name_title">"사각형 %s의 포장재는 무엇입니까?"</string>
 
     <!-- Fuzzy -->
 
@@ -1025,7 +1025,7 @@ StreetComplete는 GPS 위치 정보를 다른 사람과 공유하지 않습니�
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"이 길의 포장재는 무엇입니까?"</string>
+    <string name="quest_surface_path_title">"이 길의 포장재는 무엇입니까?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"가장 맞는 답변을 선택해 주세요."</string>
@@ -1363,7 +1363,7 @@ StreetComplete는 GPS 위치 정보를 다른 사람과 공유하지 않습니�
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"이 자전거 도로의 포장재가 무엇입니까?"</string>
+    <string name="quest_surface_cycleway_title">"이 자전거 도로의 포장재가 무엇입니까?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"각 부분마다 다릅니다..."</string>
@@ -1381,7 +1381,7 @@ StreetComplete는 GPS 위치 정보를 다른 사람과 공유하지 않습니�
     <string name="quest_split_way_many_splits_confirmation_description">"이미 분할된 길입니다. 더 분할하려면 시간이 지나야 합니다."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"이 보도의 포장재가 무엇입니까?"</string>
+    <string name="quest_surface_footway_title">"이 보도의 포장재가 무엇입니까?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"%s의 화장실에 휠체어가 들어갈 수 있습니까?"</string>

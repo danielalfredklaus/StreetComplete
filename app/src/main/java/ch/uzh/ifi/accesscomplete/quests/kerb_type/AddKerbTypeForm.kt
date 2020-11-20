@@ -22,8 +22,7 @@ class AddKerbTypeForm : AbstractQuestFormAnswerFragment<String>() {
     private val valueItems = listOf(
         Item("raised", R.drawable.kerb_raised, R.string.quest_kerb_raised, R.string.quest_kerb_raised_description, null),
         Item("lowered", R.drawable.kerb_lowered, R.string.quest_kerb_lowered, R.string.quest_kerb_lowered_description, null),
-        Item("flush", R.drawable.kerb_flush, R.string.quest_kerb_flush, R.string.quest_kerb_flush_description, null),
-        Item("rolled", R.drawable.kerb_rolled, R.string.quest_kerb_rolled, R.string.quest_kerb_rolled_description, null))
+        Item("flush", R.drawable.kerb_flush, R.string.quest_kerb_flush, R.string.quest_kerb_flush_description, null))
     private val initialValueIndex = 1
 
     private var pagerMoved = false

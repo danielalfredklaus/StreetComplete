@@ -273,7 +273,7 @@ Kaip minėta anksčiau, aplikacija tiesiogiai bendrauja su OSM infrastruktūra. 
     <string name="autosync_off">"Išjungta"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"Kokia yra šio kelio danga?"</string>
+    <string name="quest_surface_street_title">"Kokia yra šio kelio danga?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"Grįsta (bendra)"</string>
@@ -459,7 +459,7 @@ Kaip minėta anksčiau, aplikacija tiesiogiai bendrauja su OSM infrastruktūra. 
     <string name="dialog_session_dont_show_again">"Daugiau nerodyti šioje sesijoje"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"Kokia yra kelio %s danga šioje vietoje?"</string>
+    <string name="quest_surface_street_name_title">"Kokia yra kelio %s danga šioje vietoje?"</string>
 
     <!-- Fuzzy -->
 
@@ -963,10 +963,10 @@ Dalinai reiškia, kad vežimėlis gali įvažiuoti ir naudotis tualetu, bet nėr
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"Koks yra šios aikštės paviršius?"</string>
+    <string name="quest_surface_square_title">"Koks yra šios aikštės paviršius?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"Koks yra aikštės „%s“ pavadinimas?"</string>
+    <string name="quest_surface_square_name_title">"Koks yra aikštės „%s“ pavadinimas?"</string>
 
     <!-- Fuzzy -->
 
@@ -1030,7 +1030,7 @@ Dalinai reiškia, kad vežimėlis gali įvažiuoti ir naudotis tualetu, bet nėr
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"Kokia čia yra šio tako danga?"</string>
+    <string name="quest_surface_path_title">"Kokia čia yra šio tako danga?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Parinkite tiksliausiai tinkančią:"</string>
@@ -1368,7 +1368,7 @@ Dalinai reiškia, kad vežimėlis gali įvažiuoti ir naudotis tualetu, bet nėr
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"Kokia čia yra dviračių tako danga?"</string>
+    <string name="quest_surface_cycleway_title">"Kokia čia yra dviračių tako danga?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"Skirtingose vietose skirtinga..."</string>
@@ -1386,7 +1386,7 @@ Dalinai reiškia, kad vežimėlis gali įvažiuoti ir naudotis tualetu, bet nėr
     <string name="quest_split_way_many_splits_confirmation_description">"Čia jau yra pakankamai padalinimų. Visada kelią galite dar dalinti vėliau."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"Koks šioje vietoje pėsčiųjų tako paviršius?"</string>
+    <string name="quest_surface_footway_title">"Koks šioje vietoje pėsčiųjų tako paviršius?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"Ar poilsio kambarys %s prieinamas neįgaliųjų vežimėliu?"</string>

@@ -209,7 +209,7 @@ Kuten mainittu, sovellus on suoraan yhteydessä OSM järjestelmään. Joka tapau
     <string name="autosync_off">"Pois päältä"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_title">"Mikä päällyste tässä tiessä on?"</string>
+    <string name="quest_surface_street_title">"Mikä päällyste tässä tiessä on?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_surface_value_paved">"Päällystetty (yleinen)"</string>
@@ -338,7 +338,7 @@ Kuten mainittu, sovellus on suoraan yhteydessä OSM järjestelmään. Joka tapau
     <string name="dialog_session_dont_show_again">"Älä enää näytä tälle istunnolle."</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_name_title">"Mikä päällyste tässä %s tiessä on?"</string>
+    <string name="quest_surface_street_name_title">"Mikä päällyste tässä %s tiessä on?"</string>
 
     <!-- Fuzzy -->
 
@@ -816,10 +816,10 @@ Muutoin, voit ladata toisen näppäimistön sovelluskaupasta. Suosittuja näppä
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_title">"Mikä päällyste tällä aukiolla on?"</string>
+    <string name="quest_surface_square_title">"Mikä päällyste tällä aukiolla on?"</string>
 
     <!-- Fuzzy -->
-    <string name="quest_streetSurface_square_name_title">"Mikä päällyste aukiolla %s on?"</string>
+    <string name="quest_surface_square_name_title">"Mikä päällyste aukiolla %s on?"</string>
 
     <!-- Fuzzy -->
 
@@ -883,7 +883,7 @@ Muutoin, voit ladata toisen näppäimistön sovelluskaupasta. Suosittuja näppä
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_pathSurface_title">"Mikä päällyste tällä polulla on?"</string>
+    <string name="quest_surface_path_title">"Mikä päällyste tällä polulla on?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_select_hint_most_specific">"Valitse tarkin sopiva vaihtoehto näistä:"</string>
@@ -1221,7 +1221,7 @@ Muutoin, voit ladata toisen näppäimistön sovelluskaupasta. Suosittuja näppä
     <!-- Fuzzy -->
 
     <!-- Fuzzy -->
-    <string name="quest_cyclewayPartSurface_title">"Mikä päällyste on tällä pyörätiellä?"</string>
+    <string name="quest_surface_cycleway_title">"Mikä päällyste on tällä pyörätiellä?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_generic_answer_differs_along_the_way">"Eroaa pitkin matkaa.."</string>
@@ -1240,7 +1240,7 @@ Jaetaanko nyt?"</string>
     <string name="quest_split_way_many_splits_confirmation_description">"Täällä on muutamia jakoja. Voit jakaa tien myös myöhemmin osiin. "</string>
 
     <!-- Fuzzy -->
-    <string name="quest_footwayPartSurface_title">"Mikä päällyste on tällä jalkakäytävällä?"</string>
+    <string name="quest_surface_footway_title">"Mikä päällyste on tällä jalkakäytävällä?"</string>
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_toiletsPart_title">"Onko tämän %s WC pyörätuolilla saavutettavissa?"</string>

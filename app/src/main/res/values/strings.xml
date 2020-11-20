@@ -123,11 +123,13 @@ However, before uploading your changes, the app checks with a &lt;a href=\"https
     <string name="autosync_on">"On"</string>
     <string name="autosync_only_on_wifi">"Only on Wi-Fi"</string>
     <string name="autosync_off">"Off"</string>
-    <string name="quest_pathSurface_title">"What surface does this path have here?"</string>
-    <string name="quest_streetSurface_title">"What surface does this piece of road have?"</string>
-    <string name="quest_streetSurface_name_title">"What surface does the road %s have here?"</string>
-    <string name="quest_streetSurface_square_title">"What surface does this square have?"</string>
-    <string name="quest_streetSurface_square_name_title">"What surface does the square %s have here?"</string>
+    <string name="quest_surface_street_sidewalk_title">What\'s the surface of the highlighted sidewalk (dotted line)?</string>
+    <string name="quest_surface_street_name_sidewalk_title">"What's the surface of the highlighted sidewalk of the road %s (dotted line)?"</string>
+    <string name="quest_surface_path_title">"What surface does this path have in this segment?"</string>
+    <string name="quest_surface_street_title">"What surface does this piece of road have?"</string>
+    <string name="quest_surface_street_name_title">"What surface does the road %s have in this segment?"</string>
+    <string name="quest_surface_square_title">"What surface does this square have?"</string>
+    <string name="quest_surface_square_name_title">"What surface does the square %s have in this segment?"</string>
     <string name="quest_select_hint_most_specific">"Select the most specific one that fits:"</string>
     <string name="quest_surface_value_paved">"Paved (generic)"</string>
     <string name="quest_surface_value_unpaved">"Unpaved (generic)"</string>
@@ -256,7 +258,7 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
 
 
     <string name="notification_channel_download">"Download"</string>
-    <string name="quest_segregated_title">How are the footway and cycleway laid out here?</string>
+    <string name="quest_segregated_title">How are the footway and cycleway laid out in this segment?</string>
     <string name="dialog_tutorial_upload">To upload your changes manually, use the button in the toolbar that looks like this.</string>
     <string name="quest_segregated_separated">Segregated from one another</string>
     <string name="quest_segregated_mixed">Cyclists and pedestrians share the same space</string>
@@ -276,7 +278,7 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
     <string name="underground">underground:</string>
     <string name="quest_sidewalk_value_yes">sidewalk</string>
     <string name="quest_sidewalk_value_no">no sidewalk</string>
-    <string name="quest_accessible_for_pedestrians_title_prohibited">Are pedestrians prohibited from walking on this road here?</string>
+    <string name="quest_accessible_for_pedestrians_title_prohibited">Are pedestrians prohibited from walking on this road in this segment?</string>
     <string name="pref_title_theme_select">Select theme</string>
     <string name="theme_automatic">Auto</string>
     <string name="theme_light">Light</string>
@@ -286,8 +288,8 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
     <string name="action_open_location">Open location in another app</string>
     <string name="map_application_missing">No other map application installed</string>
     <string name="create_new_note_hint">Best write the note in the locally spoken language or otherwise in English.</string>
-    <string name="quest_cyclewayPartSurface_title">What\'s the surface of the cycleway here?</string>
-    <string name="quest_footwayPartSurface_title">What\'s the surface of the footway here?</string>
+    <string name="quest_surface_cycleway_title">What\'s the surface of the cycleway in this segment?</string>
+    <string name="quest_surface_footway_title">What\'s the surface of the footway in this segment?</string>
     <string name="quest_generic_answer_differs_along_the_way">"Differs along the way…"</string>
     <string name="quest_split_way_description">If it differs along the way, the first step is to split up the way. After that, the quest can be answered for each split part separately.\nSplit it now?</string>
     <string name="quest_split_way_tutorial">Tap on the way to split it at the point(s) where the answer differs. Try to be as precise as possible, you can zoom in as usual.</string>
@@ -428,7 +430,7 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
     <string name="quest_incline_manual_instructions_step_1">Find the steepest section.\n</string>
     <string name="quest_incline_manual_instructions_step_2">Orient yourself on the street according to the arrows displayed on the map.\n</string>
     <string name="quest_incline_manual_instructions_step_3">Measure the slope with a (digital) level and enter the value below.</string>
-    <string name="quest_incline_no_incline_here">No noticeable incline here</string>
+    <string name="quest_incline_no_incline_here">No noticeable incline</string>
     <string name="quest_incline_implausible_value_message">An incline of %1$d %% seems very implausible for a street. Please try to measure again or leave a note instead.</string>
 
     <string name="quest_kerb_type_title">"What kind of curb exists at this point of the pedestrian crossing?"</string>
@@ -436,20 +438,17 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
     <string name="quest_kerb_raised">Raised (> 3 cm)</string>
     <string name="quest_kerb_lowered">Lowered (~ 3 cm)</string>
     <string name="quest_kerb_flush">Flush (~ 0 cm)</string>
-    <string name="quest_kerb_rolled">Rolled</string>
     <string name="quest_kerb_raised_description">Raised sufficiently to prevent traversal by wheelchairs, as well as to impede bicycles.</string>
-    <string name="quest_kerb_lowered_description">Lowered curbs ensure that the crossing can be used by wheelchair users and allow access to drives.</string>
+    <string name="quest_kerb_lowered_description">Lowered or slightly raised kerb that the crossing can be used by wheelchair users and allow access to drives.</string>
     <string name="quest_kerb_flush_description">Similar to a lowered curb except the level transition is unlikely to be apparent to blind pedestrians.</string>
-    <string name="quest_kerb_rolled_description">Rolled kerbs still provide a gutter for water while being traversable by large wheeled vehicles, such as cars and bicycles, but not wheelchairs.</string>
     <string name="quest_kerb_type_no_kerb">No curb here</string>
 
-    <string name="quest_smoothness_path_title">"How is the smoothness quality of this path best described here?"</string>
-    <string name="quest_smoothness_cycleway_part_title">"How is the smoothness quality of the cycleway best described here?"</string>
-    <string name="quest_smoothness_footway_part_title">"How is the smoothness quality of the footway best described here?"</string>
+    <string name="quest_smoothness_path_title">"How is the smoothness quality of this path best described in this segment?"</string>
+    <string name="quest_smoothness_footway_part_title">"How is the smoothness quality of the footway best described in this segment?"</string>
     <string name="quest_smoothness_street_title">"How is the smoothness quality of this piece of road best described?"</string>
-    <string name="quest_smoothness_street_sidewalk_title">"How is the smoothness quality of the highlighted sidewalk (dotted line) best described here?"</string>
-    <string name="quest_smoothness_street_name_title">"How is the smoothness quality of the road %s best described here?"</string>
-    <string name="quest_smoothness_street_name_sidewalk_title">"How is the smoothness quality of the highlighted sidewalk (dotted line) of the road %s best described here?"</string>
+    <string name="quest_smoothness_street_sidewalk_title">"How is the smoothness quality of the highlighted sidewalk best described (dotted line)?"</string>
+    <string name="quest_smoothness_street_name_title">"How is the smoothness quality of the road %s best described in this segment?"</string>
+    <string name="quest_smoothness_street_name_sidewalk_title">"How is the smoothness quality of the highlighted sidewalk of the road %s best described (dotted line)?"</string>
     <string name="quest_smoothness_area_title">"How is the smoothness quality of this square best described?"</string>
     <string name="quest_smoothness_area_name_title">"How is the smoothness quality on the square %s best described?"</string>
     <string name="quest_smoothness_impassable">Impassable</string>
@@ -461,7 +460,7 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
     <string name="quest_smoothness_good">Good</string>
     <string name="quest_smoothness_excellent">Excellent</string>
     <string name="quest_smoothness_impassable_description">Not suitable for any wheeled vehicle</string>
-    <string name="quest_smoothness_very_horrible_description">Suitable for tractors, ATVs, tanks, trials, mountain bikes and all kind of off-highway vehicles</string>
+    <string name="quest_smoothness_very_horrible_description">Suitable for tractors, ATVs, mountain bikes and all kind of off-highway vehicles</string>
     <string name="quest_smoothness_horrible_description">Suitable for heavy-duty off road vehicles and all below</string>
     <string name="quest_smoothness_very_bad_description">Suitable for cars with high clearance, light-duty off road vehicles and all below</string>
     <string name="quest_smoothness_bad_description">Suitable for trekking bikes, normal cars, Rickshaws and all below </string>
@@ -469,17 +468,14 @@ Otherwise, you can download another keyboard in the app store. Popular keyboards
     <string name="quest_smoothness_good_description">Suitable for racing bikes and all below</string>
     <string name="quest_smoothness_excellent_description">Suitable for roller blades, skate boards and all below</string>
 
-    <string name="quest_surface_street_sidewalk_title">"What's the surface of the highlighted sidewalk (dotted line) here?"</string>
-    <string name="quest_surface_street_name_sidewalk_title">"What's the surface of the highlighted sidewalk (dotted line) of the road %s here?"</string>
-
-    <string name="quest_width_path_title">"What's the minimum width of this path here?"</string>
-    <string name="quest_width_cycleway_part_title">"What's the minimum width of the cycleway here?"</string>
-    <string name="quest_width_footway_part_title">"What's the minimum width of the footway here?"</string>
+    <string name="quest_width_path_title">"What's the minimum width of the path in this segment?"</string>
+    <string name="quest_width_cycleway_part_title">"What's the minimum width of the cycleway in this segment?"</string>
+    <string name="quest_width_footway_part_title">"What's the minimum width of the footway in this segment?"</string>
     <string name="quest_width_street_title">"What's the minimum width of this piece of road?"</string>
     <string name="quest_width_street_sidewalk_title">"What's the minimum width of the highlighted sidewalk (dotted line)?"</string>
-    <string name="quest_width_street_name_title">"What's the minimum width of the road %s here?"</string>
-    <string name="quest_width_street_name_sidewalk_title">"What's the minimum width of the highlighted sidewalk (dotted line) of the road %s here?"</string>
-    <string name="quest_width_measurement_instructions">Please measure the width of the sidewalk at its narrowest section. Please also consider permanent objects such as trash cans or street lights when you determine the narrowest point.</string>
+    <string name="quest_width_street_name_title">"What's the minimum width of the road %s in this segment?"</string>
+    <string name="quest_width_street_name_sidewalk_title">"What's the minimum width of the highlighted sidewalk of the road %s (dotted line)?"</string>
+    <string name="quest_width_measurement_instructions">Please measure the width of the sidewalk at its narrowest section. Also consider permanent objects such as trash cans or street lights when you determine the narrowest point.</string>
     <string name="quest_width_implausible_value_sidewalk_message">A width of %1$s cm seems very implausible for a sidewalk. Please try to measure again or leave a note instead.</string>
     <string name="quest_width_implausible_value_street_message">A width of %1$s cm is very implausible for a street like this. Please try to measure again or leave a note instead.</string>
 

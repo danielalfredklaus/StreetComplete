@@ -1,11 +1,11 @@
 v1.0: |
   <h3>First release after forking StreetComplete v26.2
-  <p> This is the first version of AccessComplete, a fork of the awesome StreetComplete project. The fork was created to focus on providing quests which generate accessibility data on OSM. Therefore, most of the original StreetComplete quests have been removed in AccessComplete. The following quest types have been added or reworked:</p>
-
+  <p>This is the first version of AccessComplete, a fork of the awesome StreetComplete project. The fork was created to focus on providing quests which generate accessibility data on OSM. Therefore, most of the original StreetComplete quests have been removed in AccessComplete. The following quest types have been added or reworked:</p>
+  <p>The following quest types have been added or reworked:</p>
   <ul>
-  <li>Measure the width of footway or cycleway parts, paths, and other pedestrian accessible ways (possibility to use the device's AR capabilities to determine the distance between two points)</li>
-  <li>Measure the incline of pedestrian accessible paths and streets (possibility to use the device as a measurement instrument)</li>
-  <li>Determine the smoothness of footway parts, paths, and other pedestrian accessible ways</li>
-  <li>Determine the curb types of footway crossings</li>
-  <li>Reworked the surface quests so that they apply to footway or cycleway parts, paths and pedestrian accessible streets</li>
+    <li>Added: Measuring the width of footway or cycleway parts, paths, and other pedestrian accessible ways (with the possibility to use the device's AR capabilities to determine the distance between two points)</li>
+    <li>Added: Measuring the incline of pedestrian accessible paths and streets (with the possibility to use the device as a measurement instrument)</li>
+    <li>Added: Determining the smoothness of footway parts, paths, and other pedestrian accessible ways</li>
+    <li>Added: Determining the curb types of footway crossings</li>
+    <li>Reworked: The surface quests now only apply to footway or cycleway parts, paths and pedestrian accessible streets</li>
   </ul>

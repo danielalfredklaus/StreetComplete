@@ -48,13 +48,11 @@
                 android:text="@string/credits_author_title"
                 android:textAppearance="@style/TextAppearance.Title" />
 
-            <TextView
+            <LinearLayout
+                android:id="@+id/authors"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAppearance="@style/TextAppearance.Body"
-                android:textStyle="bold"
-                android:textIsSelectable="true"
-                android:text="Tobias Zwick" />
+                android:orientation="vertical" />
 
         </LinearLayout>
 

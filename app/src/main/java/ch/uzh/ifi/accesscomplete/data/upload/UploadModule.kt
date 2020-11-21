@@ -30,6 +30,7 @@ import ch.uzh.ifi.accesscomplete.ApplicationConstants
 object UploadModule {
     @Provides fun checkVersionIsBanned(): VersionIsBannedChecker =
         VersionIsBannedChecker(
+            // TODO sst: change URL
             "https://www.westnordost.de/streetcomplete/banned_versions.txt",
             ApplicationConstants.USER_AGENT
         )

@@ -40,6 +40,7 @@ import org.sufficientlysecure.htmltextview.HtmlTextView
 class CreditsFragment : Fragment(R.layout.fragment_credits) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        addContributorsTo(readAuthors(), authors)
         addContributorsTo(readMainContributors(), mainCredits)
         addContributorsTo(readProjectsContributors(), projectsCredits)
         addContributorsTo(readCodeContributors(), codeCredits)
@@ -72,6 +73,8 @@ class CreditsFragment : Fragment(R.layout.fragment_credits) {
         textView.setHtml("<ul>$items</ul>")
         view.addView(textView, LinearLayout.LayoutParams(WRAP_CONTENT, WRAP_CONTENT))
     }
+
+    private fun readAuthors() = resources.getYamlObject<List<String>>(R.raw.credit_authors)
 
     private fun readMainContributors() = resources.getYamlObject<List<String>>(R.raw.credits_main)
 

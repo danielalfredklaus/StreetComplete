@@ -402,7 +402,6 @@ Partially means that a wheelchair can enter and use the restroom, but no handrai
     <string name="email">Email</string>
     <string name="compass">Compass</string>
     <string name="compass_description">Compass: Tap to orient map to north or toggle 3D view if it is already faced north.</string>
-    <string name="could_look_like_this">It could look like this:</string>
     <string name="example_image">Example image</string>
     <string name="attached_image">Attached image</string>
     <string name="delete">Delete</string>
@@ -473,7 +472,7 @@ Partially means that a wheelchair can enter and use the restroom, but no handrai
     <string name="quest_smoothness_excellent">Excellent</string>
     <string name="quest_smoothness_impassable_description">Not suitable for any wheeled vehicle</string>
     <string name="quest_smoothness_very_horrible_description">Suitable for tractors, ATVs, mountain bikes and all kind of off-highway vehicles</string>
-    <string name="quest_smoothness_horrible_description">Suitable for heavy-duty off road vehicles and all below</string>
+    <string name="quest_smoothness_horrible_description">Suitable for heavy-duty off-road vehicles and all below</string>
     <string name="quest_smoothness_very_bad_description">Suitable for cars with high clearance, light-duty off road vehicles and all below</string>
     <string name="quest_smoothness_bad_description">Suitable for trekking bikes, normal cars, Rickshaws and all below </string>
     <string name="quest_smoothness_intermediate_description">Suitable for city bikes, sport cars, wheel chairs, scooters and all below</string>

@@ -60,21 +60,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
             android:minLines="2"
             tools:text="Description" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="@string/could_look_like_this" />
 
         <ImageView
             android:id="@+id/valueExampleImage"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
-            android:layout_marginTop="4dp"
             android:contentDescription="@string/example_image"
             android:scaleType="centerCrop"
             tools:src="@drawable/smoothness_excellent" />

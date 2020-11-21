@@ -402,7 +402,7 @@ Partially means that a wheelchair can enter and use the restroom, but no handrai
     <string name="email">Email</string>
     <string name="compass">Compass</string>
     <string name="compass_description">Compass: Tap to orient map to north or toggle 3D view if it is already faced north.</string>
-    <string name="could_look_like_this">Could look like this:</string>
+    <string name="could_look_like_this">It could look like this:</string>
     <string name="example_image">Example image</string>
     <string name="attached_image">Attached image</string>
     <string name="delete">Delete</string>
@@ -451,18 +451,18 @@ Partially means that a wheelchair can enter and use the restroom, but no handrai
     <string name="quest_kerb_lowered">Lowered (~ 3 cm)</string>
     <string name="quest_kerb_flush">Flush (~ 0 cm)</string>
     <string name="quest_kerb_raised_description">Raised sufficiently to prevent traversal by wheelchairs, as well as to impede bicycles.</string>
-    <string name="quest_kerb_lowered_description">Lowered or slightly raised kerb that the crossing can be used by wheelchair users and allow access to drives.</string>
-    <string name="quest_kerb_flush_description">Similar to a lowered curb except the level transition is unlikely to be apparent to blind pedestrians.</string>
+    <string name="quest_kerb_lowered_description">The curb is lowered or only slightly raised.</string>
+    <string name="quest_kerb_flush_description">There is no difference in height between the curb and the street.</string>
     <string name="quest_kerb_type_no_kerb">No curb here</string>
 
-    <string name="quest_smoothness_path_title">"How is the smoothness quality of this path best described in this segment?"</string>
-    <string name="quest_smoothness_footway_part_title">"How is the smoothness quality of the footway best described in this segment?"</string>
-    <string name="quest_smoothness_street_title">"How is the smoothness quality of this piece of road best described?"</string>
-    <string name="quest_smoothness_street_sidewalk_title">"How is the smoothness quality of the highlighted sidewalk best described (dotted line)?"</string>
-    <string name="quest_smoothness_street_name_title">"How is the smoothness quality of the road %s best described in this segment?"</string>
-    <string name="quest_smoothness_street_name_sidewalk_title">"How is the smoothness quality of the highlighted sidewalk of the road %s best described (dotted line)?"</string>
-    <string name="quest_smoothness_area_title">"How is the smoothness quality of this square best described?"</string>
-    <string name="quest_smoothness_area_name_title">"How is the smoothness quality on the square %s best described?"</string>
+    <string name="quest_smoothness_path_title">"How is the smoothness of the path best described in this segment?"</string>
+    <string name="quest_smoothness_footway_part_title">"How is the smoothness of the footway best described in this segment?"</string>
+    <string name="quest_smoothness_street_title">"How is the smoothness of this piece of road best described?"</string>
+    <string name="quest_smoothness_street_sidewalk_title">"How is the smoothness of the highlighted sidewalk best described (dotted line)?"</string>
+    <string name="quest_smoothness_street_name_title">"How is the smoothness of the road %s best described in this segment?"</string>
+    <string name="quest_smoothness_street_name_sidewalk_title">"How is the smoothness of the highlighted sidewalk of the road %s best described (dotted line)?"</string>
+    <string name="quest_smoothness_area_title">"How is the smoothness of this square best described?"</string>
+    <string name="quest_smoothness_area_name_title">"How is the smoothness on the square %s best described?"</string>
     <string name="quest_smoothness_impassable">Impassable</string>
     <string name="quest_smoothness_very_horrible">Very horrible</string>
     <string name="quest_smoothness_horrible">Horrible</string>
@@ -490,6 +490,6 @@ Partially means that a wheelchair can enter and use the restroom, but no handrai
     <string name="quest_width_measurement_instructions">Please measure the width of the sidewalk at its narrowest section. Also consider permanent objects such as trash cans or street lights when you determine the narrowest point.</string>
     <string name="quest_width_implausible_value_sidewalk_message">A width of %1$s cm seems very implausible for a sidewalk. Please try to measure again or leave a note instead.</string>
     <string name="quest_width_implausible_value_street_message">A width of %1$s cm is very implausible for a street like this. Please try to measure again or leave a note instead.</string>
-    <string name="quest_smoothness_value_relates_to_wheeled_vehicles">The answer refers to the usability of the section for wheeled vehicles based on the surface regularity (and independent of the available width).</string>
+    <string name="quest_smoothness_value_relates_to_wheeled_vehicles">The answer refers to the fact whether the surface allows the usage of certain types of wheeled vehicles (without considering the available width).</string>
 
 </resources>

@@ -22,6 +22,7 @@
 package ch.uzh.ifi.accesscomplete.quests.kerb_type
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
 import androidx.viewpager.widget.ViewPager
 import ch.uzh.ifi.accesscomplete.R
@@ -31,6 +32,7 @@ import ch.uzh.ifi.accesscomplete.quests.kerb_type.AddKerbType.Companion.NO_KERB_
 import ch.uzh.ifi.accesscomplete.view.image_select.Item
 import kotlinx.android.synthetic.main.quest_kerb_type.*
 import kotlin.math.abs
+
 
 class AddKerbTypeForm : AbstractQuestFormAnswerFragment<String>() {
 

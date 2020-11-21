@@ -29,7 +29,6 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:text="@string/quest_smoothness_value_relates_to_wheeled_vehicles" />
 
     <com.google.android.material.slider.Slider
@@ -45,15 +44,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="12dp"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/valueName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="24sp"
             android:textStyle="bold"
+            android:textColor="@color/text"
             tools:text="Name" />
 
         <TextView
@@ -61,14 +60,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
+            android:minLines="2"
             tools:text="Description" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="@string/could_look_like_this"
-            android:textStyle="bold" />
+            android:text="@string/could_look_like_this" />
 
         <ImageView
             android:id="@+id/valueExampleImage"
@@ -77,7 +76,7 @@
             android:layout_gravity="start"
             android:layout_marginTop="4dp"
             android:contentDescription="@string/example_image"
-            android:scaleType="fitStart"
+            android:scaleType="centerCrop"
             tools:src="@drawable/smoothness_excellent" />
     </LinearLayout>
 

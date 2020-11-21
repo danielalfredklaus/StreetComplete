@@ -471,5 +471,5 @@ Zu guter Letzt, vergiss nicht, dich nicht in Gefahr zu begeben: Achte auf deine 
     <string name="right_side">Rechte Seite</string>
     <string name="note_marker">Markiert, wo die Notiz erstellt wird</string>
     <string name="could_look_like_this">Könnte etwa so aussehen:</string>
-    <string name="quest_smoothness_value_relates_to_wheeled_vehicles">"Die Antwort bezieht sich auf die Benutzbarkeit des Abschnitts für Radfahrzeuge basierend auf der Oberflächengleichmäßigkeit (und unabhängig von der vorhanden Breite). "</string>
+    <string name="quest_smoothness_value_relates_to_wheeled_vehicles">"Die Antwort bezieht sich darauf, ob die Oberfläche das Benutzen bestimmter Arten von Radfahrzeugen zulässt (unabhängig von der verfügbaren Breite). "</string>
 </resources>

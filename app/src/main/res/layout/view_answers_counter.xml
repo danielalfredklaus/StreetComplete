@@ -22,7 +22,6 @@
 
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:parentTag="android.widget.RelativeLayout"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -40,7 +39,8 @@
         android:layout_alignTop="@id/iconView"
         android:layout_alignBottom="@id/iconView"
         android:visibility="invisible"
-        tools:visibility="visible" />
+        tools:visibility="visible"
+        android:importantForAccessibility="no"/>
 
     <ImageView
         android:id="@+id/iconView"
@@ -49,7 +49,7 @@
         android:padding="8dp"
         android:layout_centerVertical="true"
         android:src="@drawable/ic_star_white_shadow_32dp"
-        android:contentDescription="@null" />
+        android:importantForAccessibility="no"/>
 
     <TextView
         android:id="@+id/textView"
@@ -70,6 +70,7 @@
         android:shadowRadius="8"
         android:shadowDy="2"
         tools:text="1583"
-        tools:ignore="RtlHardcoded" />
+        tools:ignore="RtlHardcoded"
+        android:importantForAccessibility="no"/>
 
 </merge>

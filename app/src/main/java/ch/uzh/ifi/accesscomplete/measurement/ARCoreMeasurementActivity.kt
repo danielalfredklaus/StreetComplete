@@ -3,7 +3,6 @@
  * OpenStreetMap data for Android.  This program is a fork of
  * StreetComplete (https://github.com/westnordost/StreetComplete).
  *
- * Copyright (C) 2016-2020 Tobias Zwick and contributors (StreetComplete authors)
  * Copyright (C) 2020 Sven Stoll (AccessComplete author)
  *
  * This program is free software: you can redistribute it and/or modify
@@ -34,7 +33,6 @@ import android.os.Handler
 import android.util.Log
 import android.view.MotionEvent
 import android.view.View
-import android.view.animation.AnimationUtils
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -54,6 +52,7 @@ import com.google.ar.sceneform.ux.TransformableNode
 import ch.uzh.ifi.accesscomplete.Injector
 import ch.uzh.ifi.accesscomplete.Prefs
 import ch.uzh.ifi.accesscomplete.R
+import ch.uzh.ifi.accesscomplete.ktx.toDp
 import kotlinx.android.synthetic.main.activity_measurement.*
 import javax.inject.Inject
 import kotlin.math.pow
@@ -89,7 +88,6 @@ class ARCoreMeasurementActivity : AppCompatActivity(), Scene.OnUpdateListener {
         initButtons()
         initHints()
 
-        arFragment!!.activity
         arFragment!!.setOnTapArPlaneListener { hitResult: HitResult, _: Plane?, _: MotionEvent? ->
             if (cubeRenderable == null || distanceCardViewRenderable == null) {
                 return@setOnTapArPlaneListener
@@ -173,9 +171,13 @@ class ARCoreMeasurementActivity : AppCompatActivity(), Scene.OnUpdateListener {
                 currentHintIndex++
                 setHint(currentHintIndex)
             } else {
-                val hideAnimation = AnimationUtils.loadAnimation(applicationContext, R.anim.fade_out_to_top)
-                hideAnimation.fillAfter = true
-                hintLayout.startAnimation(hideAnimation)
+                hintLayout.animate()
+                    .setDuration(200)
+                    .y(-10f)
+                    .alpha(0f)
+                    .translationY(100f.toDp(applicationContext))
+                    .withEndAction { hintLayout.visibility = View.GONE }
+                    .start()
             }
             handleHintBackButtonVisibility()
             handleHintActionButtonText()

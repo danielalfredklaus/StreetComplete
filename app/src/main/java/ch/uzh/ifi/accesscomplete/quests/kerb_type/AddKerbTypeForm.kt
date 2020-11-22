@@ -22,17 +22,17 @@
 package ch.uzh.ifi.accesscomplete.quests.kerb_type
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
+import android.view.accessibility.AccessibilityEvent
 import androidx.viewpager.widget.ViewPager
 import ch.uzh.ifi.accesscomplete.R
 import ch.uzh.ifi.accesscomplete.quests.AbstractQuestFormAnswerFragment
 import ch.uzh.ifi.accesscomplete.quests.OtherAnswer
 import ch.uzh.ifi.accesscomplete.quests.kerb_type.AddKerbType.Companion.NO_KERB_VALUE
 import ch.uzh.ifi.accesscomplete.view.image_select.Item
+import kotlinx.android.synthetic.main.kerb_type_pager_item.*
 import kotlinx.android.synthetic.main.quest_kerb_type.*
 import kotlin.math.abs
-
 
 class AddKerbTypeForm : AbstractQuestFormAnswerFragment<String>() {
 
@@ -91,6 +91,8 @@ class AddKerbTypeForm : AbstractQuestFormAnswerFragment<String>() {
                 } else {
                     beforeButton.visibility = View.VISIBLE
                 }
+
+                itemTitle.sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_FOCUSED)
             }
 
             override fun onPageScrollStateChanged(state: Int) {

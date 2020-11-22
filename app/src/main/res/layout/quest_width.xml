@@ -49,11 +49,13 @@
             android:id="@+id/manualInputField"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:hint="@string/value"
-            android:importantForAutofill="no"
             android:digits="0123456789"
+            android:hint="@string/value"
+            android:imeOptions="actionDone"
+            android:importantForAutofill="no"
             android:inputType="number"
             android:maxLength="4"
+            android:maxLines="1"
             android:textSize="24sp" />
 
         <TextView
@@ -61,6 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
             android:text="@string/unit_cm"
+            android:contentDescription="@string/unit_centimeters"
             android:textSize="24sp" />
 
     </LinearLayout>

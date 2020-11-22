@@ -33,6 +33,7 @@ import android.text.SpannableStringBuilder
 import android.text.TextWatcher
 import android.util.Log
 import android.view.View
+import android.view.accessibility.AccessibilityEvent
 import androidx.appcompat.app.AlertDialog
 import ch.uzh.ifi.accesscomplete.R
 import ch.uzh.ifi.accesscomplete.ktx.numberOrNull
@@ -140,10 +141,12 @@ class AddInclineForm : AbstractQuestFormAnswerFragment<String>() {
                 deviceMeasurementLayout.visibility = View.VISIBLE
                 manualInputLayout.visibility = View.GONE
                 toggleMeasurementButton.text = resources.getText(R.string.enter_manually)
+                deviceMeasurementInstructions.sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_FOCUSED)
             } else {
                 deviceMeasurementLayout.visibility = View.GONE
                 manualInputLayout.visibility = View.VISIBLE
                 toggleMeasurementButton.text = resources.getText(R.string.use_device_to_measure)
+                manualMeasurementInstructions.sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_FOCUSED)
             }
             inclineView.changeLock(false)
             manualInputField.text = null

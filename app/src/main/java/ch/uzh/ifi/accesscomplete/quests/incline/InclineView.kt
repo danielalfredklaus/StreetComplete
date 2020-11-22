@@ -29,14 +29,16 @@ import android.graphics.Typeface
 import android.graphics.drawable.Drawable
 import android.util.AttributeSet
 import android.view.View
+import android.view.accessibility.AccessibilityEvent
+import android.view.accessibility.AccessibilityManager
 import androidx.annotation.ColorInt
 import androidx.core.content.ContextCompat
 import ch.uzh.ifi.accesscomplete.R
 import ch.uzh.ifi.accesscomplete.ktx.toPx
+import ch.uzh.ifi.accesscomplete.util.checkIfTalkBackIsActive
 import ch.uzh.ifi.accesscomplete.util.fromDegreesToPercentage
 import kotlin.math.abs
 import kotlin.math.roundToInt
-
 
 class InclineView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0)
     : View(context, attrs, defStyleAttr) {
@@ -101,10 +103,11 @@ class InclineView @JvmOverloads constructor(context: Context, attrs: AttributeSe
     }
 
     private fun drawInclineInPercentageLabel(canvas: Canvas) {
+        val inclineValueFormatted = formatInclineInDegrees()
         val label = when {
                 inclineInDegrees > 89.0 -> "∞ %"
                 inclineInDegrees < -89.0 -> "-∞ %"
-                else -> "%d".format(inclineInDegrees.fromDegreesToPercentage().roundToInt()) + " %"
+                else -> "$inclineValueFormatted %"
             }
 
         canvas.drawText(
@@ -112,6 +115,12 @@ class InclineView @JvmOverloads constructor(context: Context, attrs: AttributeSe
             width / 2f,
             ((height / 2) - ((textPaint.descent() + textPaint.ascent()) / 2)),
             textPaint)
+
+        contentDescription = context.getString(R.string.incline_view_content_description, inclineValueFormatted)
+    }
+
+    private fun formatInclineInDegrees(): String {
+        return "%d".format(inclineInDegrees.fromDegreesToPercentage().roundToInt())
     }
 
     private fun drawLockIcon(canvas: Canvas) {
@@ -144,6 +153,29 @@ class InclineView @JvmOverloads constructor(context: Context, attrs: AttributeSe
         listeners.forEach {
             it.onLockChanged(locked)
         }
+
+        sendAccessibilityAnnouncementAfterLockAction()
+    }
+
+    private fun sendAccessibilityAnnouncementAfterLockAction() {
+        if (!isShown || !checkIfTalkBackIsActive(context)) {
+            return
+        }
+
+        val accessibilityManager = context.getSystemService(Context.ACCESSIBILITY_SERVICE) as AccessibilityManager
+        val inclineValueFormatted = formatInclineInDegrees()
+        val announcement = AccessibilityEvent.obtain(AccessibilityEvent.TYPE_ANNOUNCEMENT)
+
+        val textId =
+            if (locked) R.string.incline_view_measurement_locked_announcement
+            else R.string.incline_view_measurement_unlocked_announcement
+
+        announcement.text.add(resources.getString(textId, inclineValueFormatted))
+        announcement.contentDescription = null
+        announcement.className = javaClass.name
+        announcement.packageName = context.packageName
+        dispatchPopulateAccessibilityEvent(announcement)
+        accessibilityManager.sendAccessibilityEvent(announcement)
     }
 
     fun addListener(listener: Listener) {

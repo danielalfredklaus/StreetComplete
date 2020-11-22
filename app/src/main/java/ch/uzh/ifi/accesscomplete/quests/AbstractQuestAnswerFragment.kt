@@ -33,6 +33,7 @@ import android.view.Menu
 import android.view.View
 import android.view.ViewGroup
 import android.view.ViewGroup.LayoutParams.WRAP_CONTENT
+import android.view.accessibility.AccessibilityEvent
 import android.widget.Button
 import android.widget.PopupMenu
 import androidx.annotation.AnyThread
@@ -175,6 +176,7 @@ abstract class AbstractQuestAnswerFragment<T> : AbstractBottomSheetFragment(), I
         super.onViewCreated(view, savedInstanceState)
 
         titleLabel.text = resources.getHtmlQuestTitle(questType, osmElement, featureDictionaryFuture)
+        titleLabel.sendAccessibilityEvent(AccessibilityEvent.TYPE_VIEW_FOCUSED)
 
         val levelLabelText = getLocationLabelText()
         locationLabel.isGone = levelLabelText == null

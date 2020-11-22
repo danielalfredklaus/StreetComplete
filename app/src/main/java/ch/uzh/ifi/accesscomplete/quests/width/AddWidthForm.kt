@@ -37,6 +37,7 @@ import ch.uzh.ifi.accesscomplete.measurement.ARCoreMeasurementActivity.Companion
 import ch.uzh.ifi.accesscomplete.measurement.ARCoreMeasurementActivity.Companion.checkIsSupportedDevice
 import ch.uzh.ifi.accesscomplete.quests.AbstractQuestAnswerFragment.Listener.SidewalkSide
 import ch.uzh.ifi.accesscomplete.quests.AbstractQuestFormAnswerWithSidewalkSupportFragment
+import ch.uzh.ifi.accesscomplete.util.checkIfTalkBackIsActive
 import kotlinx.android.synthetic.main.quest_width.*
 import kotlinx.android.synthetic.main.quest_width.manualInputField
 import java.lang.NumberFormatException
@@ -56,11 +57,17 @@ class AddWidthForm : AbstractQuestFormAnswerWithSidewalkSupportFragment<Abstract
     }
 
     private fun initInputFields() {
-        measureButton.setOnClickListener {
-            val intent = Intent(activity?.application, ARCoreMeasurementActivity::class.java)
-            intent.putExtra(EXTRA_ADDITIONAL_INSTRUCTIONS_ID, R.string.quest_width_measurement_instructions)
-            intent.putExtra(EXTRA_ADDITIONAL_INSTRUCTIONS_IMAGE_ID, R.drawable.example_width)
-            startActivityForResult(intent, REQUEST_CODE_MEASURE_DISTANCE)
+        // The ARCore measurement is not accessible for screen reader users, hence the option will
+        // be removed if TalkBack is active.
+        if (checkIfTalkBackIsActive(requireContext())) {
+            measureButton.visibility = View.GONE
+        } else {
+            measureButton.setOnClickListener {
+                val intent = Intent(activity?.application, ARCoreMeasurementActivity::class.java)
+                intent.putExtra(EXTRA_ADDITIONAL_INSTRUCTIONS_ID, R.string.quest_width_measurement_instructions)
+                intent.putExtra(EXTRA_ADDITIONAL_INSTRUCTIONS_IMAGE_ID, R.drawable.example_width)
+                startActivityForResult(intent, REQUEST_CODE_MEASURE_DISTANCE)
+            }
         }
 
         manualInputField.addTextChangedListener(object : TextWatcher {

@@ -57,10 +57,6 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager.POP_BACK_STACK_INCLUSIVE
 import androidx.fragment.app.commit
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
-import de.westnordost.osmapi.map.data.BoundingBox
-import de.westnordost.osmapi.map.data.LatLon
-import de.westnordost.osmapi.map.data.OsmLatLon
-import de.westnordost.osmapi.map.data.Way
 import ch.uzh.ifi.accesscomplete.ApplicationConstants
 import ch.uzh.ifi.accesscomplete.Injector
 import ch.uzh.ifi.accesscomplete.Prefs
@@ -83,6 +79,10 @@ import ch.uzh.ifi.accesscomplete.map.tangram.CameraPosition
 import ch.uzh.ifi.accesscomplete.quests.*
 import ch.uzh.ifi.accesscomplete.quests.AbstractQuestAnswerFragment.Listener.SidewalkSide
 import ch.uzh.ifi.accesscomplete.util.*
+import de.westnordost.osmapi.map.data.BoundingBox
+import de.westnordost.osmapi.map.data.LatLon
+import de.westnordost.osmapi.map.data.OsmLatLon
+import de.westnordost.osmapi.map.data.Way
 import kotlinx.android.synthetic.main.fragment_main.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -577,6 +577,14 @@ class MainFragment : Fragment(R.layout.fragment_main),
         val isPositionKnown = mapFragment.displayedLocation != null
         gpsTrackingButton?.visibility = if (isPositionKnown && follow) View.INVISIBLE else View.VISIBLE
         if (!follow) setIsCompassMode(false)
+    }
+
+    fun enableImportantForAccessibility() {
+        this.view?.importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_AUTO
+    }
+
+    fun disableImportantForAccessibility() {
+        this.view?.importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_NO_HIDE_DESCENDANTS
     }
 
     /* -------------------------------------- Context Menu -------------------------------------- */

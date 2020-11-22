@@ -397,6 +397,7 @@ Partially means that a wheelchair can enter and use the restroom, but no handrai
     <string name="quest_surface_detailed_answer_impossible_title">Describe surface</string>
     <string name="open_url">Open URL</string>
 
+    <string name="total_quests_solved">Total quests solved: %d</string>
     <string name="notifications">Notifications</string>
     <string name="jump_to_current_location">Jump to current location</string>
     <string name="email">Email</string>
@@ -406,6 +407,7 @@ Partially means that a wheelchair can enter and use the restroom, but no handrai
     <string name="attached_image">Attached image</string>
     <string name="delete">Delete</string>
     <string name="back">Back</string>
+    <string name="skip">Skip</string>
     <string name="hide">Hide</string>
     <string name="expand">Expand</string>
     <string name="left_side">Left side</string>
@@ -414,6 +416,7 @@ Partially means that a wheelchair can enter and use the restroom, but no handrai
     <string name="use_device_to_measure">Use device to measure</string>
     <string name="enter_manually">Enter manually</string>
     <string name="unit_cm">cm</string>
+    <string name="unit_centimeters">centimeters</string>
     <string name="value">Value</string>
 
     <string name="camera_permission_warning">"You need to grant this app the camera permission in order to take a picture."</string>
@@ -430,6 +433,10 @@ Partially means that a wheelchair can enter and use the restroom, but no handrai
     <string name="quest_leave_not">Leave a note</string>
 
     <string name="answer_sidewalk_is_mapped_separately">Sidewalk is displayed separately on map</string>
+
+    <string name="incline_view_content_description">"Current incline according to the device's sensors: %s %%. Tap to lock the measurement."</string>
+    <string name="incline_view_measurement_locked_announcement">"Measurement locked to %s %%."</string>
+    <string name="incline_view_measurement_unlocked_announcement">"Measurement unlocked. Current value is %s %%."</string>
 
     <string name="quest_incline_path_title">"What's the maximum incline of this path?"</string>
     <string name="quest_incline_street_title">"What's the maximum incline of this piece of road?"</string>
@@ -453,6 +460,8 @@ Partially means that a wheelchair can enter and use the restroom, but no handrai
     <string name="quest_kerb_lowered_description">The curb is lowered or only slightly raised.</string>
     <string name="quest_kerb_flush_description">There is no difference in height between the curb and the street.</string>
     <string name="quest_kerb_type_no_kerb">No curb here</string>
+    <string name="quest_kerb_select_previous_kerb_type">Select previous kerb type</string>
+    <string name="quest_kerb_select_next_kerb_type">Select next kerb type</string>
 
     <string name="quest_smoothness_path_title">"How is the smoothness of the path best described in this segment?"</string>
     <string name="quest_smoothness_footway_part_title">"How is the smoothness of the footway best described in this segment?"</string>

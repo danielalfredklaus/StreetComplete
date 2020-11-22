@@ -168,6 +168,7 @@ public class MainActivity extends AppCompatActivity implements
 			boolean hasShownTutorial = prefs.getBoolean(Prefs.HAS_SHOWN_TUTORIAL, false);
 			hasShownTutorial = false;
 			if (!hasShownTutorial && !userController.isLoggedIn()) {
+				mainFragment.disableImportantForAccessibility();
 				getSupportFragmentManager().beginTransaction()
 						.setCustomAnimations(R.anim.fade_in_from_bottom, R.anim.fade_out_to_bottom)
 						.add(R.id.fragment_container, new TutorialFragment())
@@ -436,6 +437,7 @@ public class MainActivity extends AppCompatActivity implements
 	public void onFinishedTutorial() {
 		prefs.edit().putBoolean(Prefs.HAS_SHOWN_TUTORIAL, true).apply();
 		Fragment tutorialFragment = getSupportFragmentManager().findFragmentById(R.id.fragment_container);
+		mainFragment.enableImportantForAccessibility();
 		if (tutorialFragment != null) {
 			getSupportFragmentManager().beginTransaction()
 					.setCustomAnimations(R.anim.fade_in_from_bottom, R.anim.fade_out_to_bottom)

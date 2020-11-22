@@ -19,6 +19,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package ch.uzh.ifi.accesscomplete.measurement
+package ch.uzh.ifi.accesscomplete.util
 
-data class ARCoreMeasurementHint(val titleId: Int, val instructionId: Int, val imageId:Int?)
+import android.content.Context
+import android.content.Context.ACCESSIBILITY_SERVICE
+import android.view.accessibility.AccessibilityManager
+
+fun checkIfTalkBackIsActive(context: Context): Boolean {
+    val accessibilityManager = context.getSystemService(ACCESSIBILITY_SERVICE) as AccessibilityManager
+    return accessibilityManager.isEnabled && accessibilityManager.isTouchExplorationEnabled
+}

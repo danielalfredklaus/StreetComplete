@@ -178,6 +178,9 @@ abstract class AbstractBottomSheetFragment : Fragment(), IsCloseableBottomSheet 
     }
 
     private fun updateCloseButtonVisibility() {
+        if (closeButton == null) {
+            return
+        }
         // this is called asynchronously. It may happen that the activity is already gone when this
         // method is finally called
         closeButton.isGone = bottomSheet.top > 0

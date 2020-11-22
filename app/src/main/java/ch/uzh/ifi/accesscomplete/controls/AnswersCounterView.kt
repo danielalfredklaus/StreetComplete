@@ -35,7 +35,7 @@ class AnswersCounterView @JvmOverloads constructor(
     context: Context,
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0
-) : RelativeLayout(context, attrs, defStyleAttr)  {
+) : RelativeLayout(context, attrs, defStyleAttr) {
 
     var uploadedCount: Int = 0
         set(value) {
@@ -58,7 +58,7 @@ class AnswersCounterView @JvmOverloads constructor(
             animateChange()
         }
         this.uploadedCount = uploadedCount
-
+        contentDescription = context.getString(R.string.total_quests_solved, uploadedCount)
     }
 
     private fun animateChange() {

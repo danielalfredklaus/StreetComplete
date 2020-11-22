@@ -79,13 +79,10 @@ class CircularFlagView @JvmOverloads constructor(
         clipPath.addOval(RectF(0f, 0f, w.toFloat(), w.toFloat()), Path.Direction.CW)
     }
 
-    override fun setRotation(rotation: Float) {
-        /* this view can't handle rotation properly */
-    }
-
     override fun onDraw(canvas: Canvas) {
         // clip it round
         canvas.clipPath(clipPath)
+        canvas.rotate(rotation, width.toFloat(), height.toFloat())
         val d = drawable
         if (d != null) {
             d.setBounds(

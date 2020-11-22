@@ -83,12 +83,6 @@ class StatisticsUpdater @Inject constructor(
 
     fun updateFromBackend(userId: Long) {
         try {
-            // TODO sst: The SC statistics server checks the provided user agent (the app name).
-            //           Remove this condition once an adjusted statistics server is up and running
-            //           that can handle OSM changesets tagged with the new app name.
-            if (true) {
-                throw Exception("Do not download statistics until own statistics server is up and running.")
-            }
             val statistics = statisticsDownloader.download(userId)
             val backendIsStillAnalyzing = statistics.isAnalyzing
             userStore.isSynchronizingStatistics = backendIsStillAnalyzing
@@ -100,7 +94,7 @@ class StatisticsUpdater @Inject constructor(
             val backendDataIsUpToDate = statistics.lastUpdate / 1000 >= userStore.lastStatisticsUpdate / 1000
             if (!backendDataIsUpToDate) {
                 Log.i(TAG, "Backend data is not up-to-date")
-                return
+                //return
             }
 
             val newQuestTypeStatistics = statistics.questTypes.toMutableMap()

@@ -33,12 +33,12 @@ import javax.inject.Named
 
 @Module
 object UserModule {
-    // TODO sst: change values...
-    private const val STATISTICS_BACKEND_URL = "https://www.westnordost.de/streetcomplete/statistics/"
+    // TODO sst: Adapt statistics server backend URL...
+    private const val STATISTICS_BACKEND_URL = "http://10.0.2.2:8100/get_statistics.php"
     private const val BASE_OAUTH_URL = "https://www.openstreetmap.org/oauth/"
-    private const val CONSUMER_KEY = "L3JyJMjVk6g5atwACVySRWgmnrkBAH7u0U18ALO7"
-    private const val CONSUMER_SECRET = "uNjPaXZw15CPHdCSeMzttRm20tyFGaBPO7jHt52c"
-    private const val CALLBACK_SCHEME = "streetcomplete"
+    private const val CONSUMER_KEY = "E3x6bMOG2IXq2s6QRVy6LvnGZk39hQ3e9XOqVXNf"
+    private const val CONSUMER_SECRET = "x5zCowXIjav7nB2d0nAXFPdOJM7DfpdO5fz4mF5d"
+    private const val CALLBACK_SCHEME = "accesscomplete"
     private const val CALLBACK_HOST = "oauth"
 
 	@Provides fun statisticsDownloader(): StatisticsDownloader =

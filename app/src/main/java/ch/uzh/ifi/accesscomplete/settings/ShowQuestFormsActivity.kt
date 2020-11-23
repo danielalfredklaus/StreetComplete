@@ -42,6 +42,7 @@ import ch.uzh.ifi.accesscomplete.R
 import ch.uzh.ifi.accesscomplete.data.osm.changes.StringMapChangesBuilder
 import ch.uzh.ifi.accesscomplete.data.osm.elementgeometry.ElementPolylinesGeometry
 import ch.uzh.ifi.accesscomplete.data.osm.osmquest.OsmElementQuestType
+import ch.uzh.ifi.accesscomplete.data.osmnotes.notequests.OsmNoteQuestType
 import ch.uzh.ifi.accesscomplete.data.quest.*
 import ch.uzh.ifi.accesscomplete.quests.AbstractQuestAnswerFragment
 import ch.uzh.ifi.accesscomplete.view.ListAdapter
@@ -63,7 +64,11 @@ class ShowQuestFormsActivity : AppCompatActivity(), AbstractQuestAnswerFragment.
 
     init {
         Injector.applicationComponent.inject(this)
-        showQuestFormAdapter.list = questTypeRegistry.all.toMutableList()
+
+        val questTypes = questTypeRegistry.all.toMutableList()
+
+        // Filter out note quest (relies on notes in the DB and will crash here...)
+        showQuestFormAdapter.list = questTypes.filter { it !is OsmNoteQuestType }.toMutableList()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {

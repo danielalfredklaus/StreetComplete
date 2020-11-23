@@ -94,7 +94,7 @@ class StatisticsUpdater @Inject constructor(
             val backendDataIsUpToDate = statistics.lastUpdate / 1000 >= userStore.lastStatisticsUpdate / 1000
             if (!backendDataIsUpToDate) {
                 Log.i(TAG, "Backend data is not up-to-date")
-                //return
+                return
             }
 
             val newQuestTypeStatistics = statistics.questTypes.toMutableMap()

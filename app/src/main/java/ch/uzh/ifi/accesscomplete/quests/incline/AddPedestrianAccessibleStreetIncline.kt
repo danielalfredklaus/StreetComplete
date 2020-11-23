@@ -28,6 +28,7 @@ import ch.uzh.ifi.accesscomplete.data.osm.osmquest.OsmFilterQuestType
 
 class AddPedestrianAccessibleStreetIncline : OsmFilterQuestType<String>() {
 
+    // TODO sst: Remove the last condition after usability testing
     override val elementFilter = """
         ways with (
             (highway ~ ${ASSUMED_PEDESTRIAN_INACCESSIBLE_STREETS.joinToString("|")} and sidewalk ~ left|right|both)
@@ -39,6 +40,7 @@ class AddPedestrianAccessibleStreetIncline : OsmFilterQuestType<String>() {
         and foot !~ private|no|use_sidepath
         and (!area or area = no)
         and (!incline or incline older today -8 years)
+        and !highway
     """
 
     override val commitMessage = "Add incline info"

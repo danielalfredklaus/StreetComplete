@@ -104,15 +104,22 @@ class AddKerbType : OsmElementQuestType<String> {
         applicableNodes.filter { filterNotAlreadyTaggedOrOlderThanCheckDate.matches(it) }
 
         // TODO sst: remove after usability tests
+        applicableNodes.clear()
         applicableNodes.addAll(addNodesForTesting(mapData))
         return applicableNodes
     }
 
     private fun addNodesForTesting(mapData: MapDataWithGeometry): List<Node> {
-        return mapData.nodes.filter {  it.id == 3513203095L ||
+        return mapData.nodes.filter {
+                // Rafz
+                it.id == 3513203095L ||
+                // Oberglatt
                 it.id == 1185766268L ||
+                // Nürensdorf
                 it.id == 3970049719L ||
-                it.id == 3513203095L }
+                // Winterthur
+                it.id == 4108963864L || it.id == 6631151721L || it.id == 3212658207L
+        }
     }
 
     private fun isCrossing(tags: Map<String, String>): Boolean {

@@ -25,6 +25,9 @@ import ch.uzh.ifi.accesscomplete.R
 import ch.uzh.ifi.accesscomplete.data.meta.updateWithCheckDate
 import ch.uzh.ifi.accesscomplete.data.osm.changes.StringMapChangesBuilder
 import ch.uzh.ifi.accesscomplete.data.osm.osmquest.OsmFilterQuestType
+import ch.uzh.ifi.accesscomplete.util.MultiIterable
+import ch.uzh.ifi.osmapi.map.MapDataWithGeometry
+import de.westnordost.osmapi.map.data.Element
 
 class AddPathIncline : OsmFilterQuestType<String>() {
 
@@ -42,6 +45,14 @@ class AddPathIncline : OsmFilterQuestType<String>() {
         and (!area or area = no)
         and (!incline or incline older today -8 years)
     """
+
+    // TODO sst: Remove after usability testing
+    override fun getApplicableElements(mapData: MapDataWithGeometry): Iterable<Element> {
+        return mapData.ways.filter { it.id == 4249706L }
+    }
+
+    // TODO sst: Remove after usability testing
+    override fun isApplicableTo(element: Element) = element.id == 4249706L
 
     override val commitMessage = "Add incline info"
     override val wikiLink = "Key:incline"

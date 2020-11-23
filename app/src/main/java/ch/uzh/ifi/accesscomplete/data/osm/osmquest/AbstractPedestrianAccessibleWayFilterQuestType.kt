@@ -26,6 +26,9 @@ import de.westnordost.osmapi.map.data.Element
 import de.westnordost.osmapi.map.data.Way
 import ch.uzh.ifi.accesscomplete.data.elementfilter.ElementFilterExpression
 import ch.uzh.ifi.accesscomplete.data.elementfilter.toElementFilterExpression
+import ch.uzh.ifi.accesscomplete.quests.smoothness.AddPathSmoothness
+import ch.uzh.ifi.accesscomplete.quests.surface.AddPathSurface
+import ch.uzh.ifi.accesscomplete.quests.width.AddPathWidth
 
 /**
  * This abstract quest type can be used if quests should only appear on ways that are accessible to
@@ -52,6 +55,7 @@ abstract class AbstractPedestrianAccessibleWayFilterQuestType<T> : OsmElementQue
             and access !~ private|no
             and foot !~ private|no|use_sidepath
             and sidewalk !~ separate|use_sidepath|yes
+            and (id ~ 4249706|720488100)
         """.toElementFilterExpression()
     }
 
@@ -104,9 +108,19 @@ abstract class AbstractPedestrianAccessibleWayFilterQuestType<T> : OsmElementQue
     protected fun getResurveyCondition(): String = "older today -8 years"
 
     override fun getApplicableElements(mapData: MapDataWithGeometry): Iterable<Element> {
+        // TODO sst: Remove after usability testing
+        if (this is AddPathSurface || this is AddPathSmoothness || this is AddPathWidth) {
+            return mapData.ways
+                .filter { it.id == 720488100L }
+        }
+
         val candidates = mapData.ways
             .filter { getBaseFilterExpression().matches(it) }
             .filter { pedestrianAccessibleWayFilter.matches(it) }
+            .toMutableSet()
+
+        // TODO sst: Remove after usability testing
+        candidates.clear()
 
         if (!supportTaggingBySidewalkSide()) {
             return candidates

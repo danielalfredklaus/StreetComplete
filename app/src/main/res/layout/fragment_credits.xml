@@ -138,13 +138,6 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical" />
 
-            <org.sufficientlysecure.htmltextview.HtmlTextView
-                android:id="@+id/contributorMore"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="@style/TextAppearance.Body"
-                android:textIsSelectable="true" />
-
         </LinearLayout>
 
         <LinearLayout
@@ -165,13 +158,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical" />
-
-            <org.sufficientlysecure.htmltextview.HtmlTextView
-                android:id="@+id/translationCreditsMore"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="@style/TextAppearance.Body"
-                android:textIsSelectable="true" />
 
         </LinearLayout>
 

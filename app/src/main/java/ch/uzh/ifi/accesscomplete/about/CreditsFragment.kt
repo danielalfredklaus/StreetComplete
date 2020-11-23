@@ -53,11 +53,6 @@ class CreditsFragment : Fragment(R.layout.fragment_credits) {
             (item.findViewById<View>(R.id.contributors) as TextView).text = translators
             translationCredits.addView(item)
         }
-
-        val translationCreditsMore = view.findViewById<HtmlTextView>(R.id.translationCreditsMore)
-        translationCreditsMore.setHtml(getString(R.string.credits_translations))
-        val contributorMore = view.findViewById<HtmlTextView>(R.id.contributorMore)
-        contributorMore.setHtml(getString(R.string.credits_contributors))
     }
 
     override fun onStart() {

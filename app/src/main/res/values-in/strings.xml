@@ -413,15 +413,6 @@ Pisah sekarang?"</string>
     <string name="osm_profile">"Profil OSM"</string>
     <string name="next">"Lanjut"</string>
     <string name="letsgo">"Ayo!"</string>
-    <string name="tutorial_welcome_to_osm">"Selamat datang di OpenStreetMap"</string>
-    <string name="tutorial_welcome_to_osm_subtitle">"wiki peta dunia bebas"</string>
-    <string name="tutorial_intro">"StreetComplete membuat kontribusi ke OpenStreetMap menjadi mudah. Aplikasi ini secara otomatis mencari detail data yang kurang di daerah sekitar: lajur sepeda, nomor rumah, jam buka dan banyak lagi…"</string>
-    <string name="tutorial_solving_quests">"Setelah ditemukan, detail yang kurang akan muncul di petamu sebagai pencarian (quests).
-
-Kamu dapat menyelesaikannya langsung dan login nanti untuk mengunggah jawabanmu. "</string>
-    <string name="tutorial_stay_safe">"Setiap kamu tidak yakin, kamu bisa membalas \"Tidak Bisa Bilang\" dan tinggalkan catatan.
-
-Jangan lupa hati-hati: Sadar terhadap lingkungan sekitar dan jangan masuk properti pribadi sembarangan"</string>
     <string name="tutorial_happy_mapping">"Selamat Memetakan!"</string>
     <string name="achievements_empty">"Kamu belum ada pencapaian"</string>
     <string name="links_empty">"Kamu belum ada link"</string>

@@ -555,8 +555,6 @@ OpenStreetMap を匿名で編集することはできないため、変更は OS
     <string name="user_login">"ログイン"</string>
     <string name="user_logout">"ログアウト"</string>
     <string name="osm_profile">"OSM プロフィール"</string>
-    <string name="tutorial_intro">"StreetComplete で簡単に OpenStreetMap に貢献できます。
-このアプリはあなたの周りで不足している情報(自転車レーン、住居表示、営業時間など…)を自動で探します。"</string>
     <string name="achievement_first_edit_description">"OpenStreetMap コミュニティへようこそ! プロフィール画面では解決した探索タイプについての詳しい情報を確認することが出来ます。"</string>
     <string name="achievement_blind_solved_X">"視覚障害者のための探索を %d 件解決しました。"</string>
     <string name="achievement_pedestrian_solved_X">"歩行者のための探索を %d 件解決しました!"</string>

@@ -431,18 +431,8 @@ Razdvojiti put sada?"</string>
 
     <!-- Fuzzy -->
     <string name="letsgo">"Krenimo!"</string>
-    <string name="tutorial_welcome_to_osm">"Dobrodošli u OpenStreetMap"</string>
-    <string name="tutorial_welcome_to_osm_subtitle">"slobodna wiki karta svijeta"</string>
-    <string name="tutorial_intro">"StreetComplete olakšava doprinos OpenStreetMapu.
-Automatski traži nedostajuće detalje u vašoj blizini: biciklističke staze, kućne brojeve, radno vrijeme i još mnogo toga …"</string>
-    <string name="tutorial_solving_quests">"Jednom pronađeni, nedostajući detalji pojaviti će se na vašoj karti kao zadaci.
-
-Možete ih početi rješavati odmah, a kasnije se prijaviti da biste objavili svoje odgovore."</string>
 
     <!-- Fuzzy -->
-    <string name="tutorial_stay_safe">"Kad god niste sigurni, uvijek možete odgovoriti \"Ne mogu reći\" i ostaviti bilješku.
-
-Konačno, ne zaboravite paziti na sigurnost: budite svjesni svoje okoline i ne ulazite na privatno vlasništvo."</string>
     <string name="tutorial_happy_mapping">"Sretno kartiranje!"</string>
     <string name="achievements_empty">"Još nemate postignuća"</string>
     <string name="links_empty">"Još nemate poveznica"</string>

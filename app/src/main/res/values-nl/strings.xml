@@ -692,25 +692,6 @@ Voor het uploaden van jouw wijzigingen zal de app een &lt;a href=\"https://www.w
     <string name="letsgo">"Aan de slag!"</string>
 
     <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm">"Welkom bij OpenStreetMap"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm_subtitle">"de vrije wiki wereldkaart"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_intro">"StreetComplete maakt het makkelijk om bij te dragen aan OpenSreetMap. Het zoekt automatisch ontbrekende details op in jou omgeving: fietspaden, huisnummers, openingstijden en veel meer......"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_solving_quests">"Als de ontbrekende details gevonden zijn, verschijnen ze op je kaart als vragen.
-
-Je kan meteen beginnen met het beantwoorden van de vragen en later inloggen om je antwoorden te publiceren."</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_stay_safe">"Wanneer je niet zeker bent, kan je altijd het antwoord \"Weet ik niet\" aanklikken en een opmerking achterlaten.
-
-Tenslotte, zorg altijd voor je eigen veiligheid. Wees bewust van je omgeving en betreed geen privé terreinen. "</string>
-
-    <!-- Fuzzy -->
     <string name="tutorial_happy_mapping">"Veel plezier met Kaartmaken!"</string>
 
     <!-- Fuzzy -->

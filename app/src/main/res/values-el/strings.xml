@@ -676,12 +676,6 @@
 "</string>
     <string name="next">"Επόμενο"</string>
     <string name="letsgo">"Πάμε!"</string>
-    <string name="tutorial_welcome_to_osm">"Καλώς ήρθατε στο OpenStreetMap"</string>
-    <string name="tutorial_welcome_to_osm_subtitle">"ο δωρεάν παγκόσμιος χάρτης wiki"</string>
-    <string name="tutorial_intro">"Το StreetComplete διευκολύνει τη συνεισφορά στο OpenStreetMap.
-Αναζητά αυτόματα στοιχεία που λείπουν στην περιοχή σας: λωρίδες ποδηλάτων, αριθμοί σπιτιών, ώρες λειτουργίας και πολλά άλλα…"</string>
-    <string name="tutorial_solving_quests">"Μόλις βρεθούν, τα στοιχεία που λείπουν θα εμφανίζονται στον χάρτη σας ως αποστολές. Μπορείτε να αρχίσετε να τα επιλύετε αμέσως και αργότερα να συνδεθείτε για να δημοσιεύσετε τις απαντήσεις σας."</string>
-    <string name="tutorial_stay_safe">"Όποτε είστε αβέβαιοι, μπορείτε πάντα να απαντήσετε \"Δεν μπορώ να πω\" και να αφήσετε μια σημείωση. Τέλος, θυμηθείτε να παραμείνετε ασφαλείς: Να γνωρίζετε το περιβάλλον σας και να μην εισέρχεστε σε ιδιωτική περιουσία."</string>
     <string name="tutorial_happy_mapping">"Καλή Χαρτογράφηση!"</string>
     <string name="achievements_empty">"Δεν έχετε ακόμη επιτεύγματα"</string>
     <string name="links_empty">"Δεν έχετε ακόμη συνδέσμους"</string>

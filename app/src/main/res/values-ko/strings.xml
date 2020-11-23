@@ -668,16 +668,6 @@ StreetComplete는 GPS 위치 정보를 다른 사람과 공유하지 않습니�
     <string name="osm_profile">"OSM 프로필"</string>
     <string name="next">"다음"</string>
     <string name="letsgo">"시작합시다!"</string>
-    <string name="tutorial_welcome_to_osm">"오픈스트리트맵에 오신 것을 환영합니다"</string>
-    <string name="tutorial_welcome_to_osm_subtitle">"자유로운 위키형 세계 지도"</string>
-    <string name="tutorial_intro">"StreetComplete를 이용하면 손쉽게 오픈스트리트맵에 기여할 수 있습니다.
-StreetComplete는 여러분 주변의 지도에 없는 데이터가 있는지 찾습니다. 자전거 도로, 건물 번호, 개점 시간 등등…"</string>
-    <string name="tutorial_solving_quests">"탐색이 끝나면, 지도에 채워넣어야 할 데이터가 퀘스트의 형태로 지도에 표시됩니다.
-
-여기서 바로 퀘스트를 해결할 수도 있고, 먼저 로그인한 다음에 퀘스트를 해결할 수도 있습니다."</string>
-    <string name="tutorial_stay_safe">"확신이 들지 않으면, 언제든지 \"답할 수 없음\"을 선택해 참고를 남기세요.
-
-마지막으로, 안전하게 활동하세요. 주변에 낯선 사람이 있는지 항상 확인하고, 사유지에 들어가지 마세요."</string>
     <string name="tutorial_happy_mapping">"즐거운 지도 제작 시간 보내세요!"</string>
     <string name="achievements_empty">"아직 달성한 업적이 없습니다"</string>
     <string name="links_empty">"아직 링크가 없습니다"</string>

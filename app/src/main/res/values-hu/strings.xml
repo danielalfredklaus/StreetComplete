@@ -676,25 +676,6 @@ A „részben” azt jelenti, hogy kerekesszékkel ugyan be lehet menni és lehe
     <string name="letsgo">"Gyerünk!"</string>
 
     <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm">"Üdvözlünk az OpenStreetMap-en"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm_subtitle">"a szabad, szerkeszthető világtérképen"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_intro">"A StreetComplete-tel könnyedén közreműködhetsz az OpenStreetMap-hez. Automatikusan hiányzó részleteket keres a környékeden: kerékpársávokat, házszámokat, nyitvatartási időket és még sok mást…"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_solving_quests">"Amint talál, a hiányzó részletek kérdésként fognak megjelenni a térképeden.
-
-Egyből elkezdheted megoldani őket és majd később bejelentkezhetsz, hogy fel tudd tölteni a válaszaidat."</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_stay_safe">"Amennyiben bizonytalan vagy, mindig válaszolhatod azt, hogy \"Nem tudom\" és hagyhatsz egy megjegyzést.
-
-Végül, légy óvatos: figyelj a környezetedre és ne lépj magánterületre."</string>
-
-    <!-- Fuzzy -->
     <string name="tutorial_happy_mapping">"Jó térképezést!"</string>
 
     <!-- Fuzzy -->

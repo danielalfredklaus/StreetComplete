@@ -143,8 +143,6 @@
     <string name="about_title_authors">"Yazarlar"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="about_title_repository">"Kaynak Deposu"</string>
 
     <!-- Fuzzy -->
@@ -610,8 +608,6 @@ Bahsedildiği gibi, uygulama OSM altyapısıyla doğrudan iletişim kuruyor. Bun
     <string name="user_logout">"Çıkış Yap"</string>
     <string name="osm_profile">"OSM Profili"</string>
     <string name="next">"İleri"</string>
-    <string name="tutorial_welcome_to_osm">"OpenStreetMap'e hoşgeldin"</string>
-    <string name="tutorial_welcome_to_osm_subtitle">"özgür dünya haritası wikisi."</string>
     <string name="at_housename">"Ev ismi %s:"</string>
     <string name="at_conscription_and_street_number">"Kapı numarası %1$s, Oryantasyon numarası %2$s:"</string>
 

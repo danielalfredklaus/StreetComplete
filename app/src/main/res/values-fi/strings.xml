@@ -623,26 +623,6 @@ Jaetaanko nyt?"</string>
     <string name="letsgo">"Anna mennä!"</string>
 
     <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm">"Tervetuloa OpenStreetMap:iin"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm_subtitle">"Vapaa wiki karttojen maailmaan"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_intro">"StreetComplete on helppo tapa täydentää OpenStreetMap:iä.
-Se etsii automaattisesti puuttuvia yksityiskohtia alueeltasi: pyöräkaistoja, talonumeroita, aukioloaikoja ja paljon muuta.."</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_solving_quests">"Puuttuva tieto tulee näkyviin kartalle kysymyksenä.
-
-Voit aloittaa heti niiden ratkaisemisen ja myöhemmin kirjautua julkaistaksesi vastaukset."</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_stay_safe">"Milloin tahansa olet epävarma, voit aina vastata \"En osaa sanoa\" ja jättää huomautuksen.
-
-Lopulta, muista turvallisuus: huomio ympäristösi ja elä mene yksityisalueille."</string>
-
-    <!-- Fuzzy -->
     <string name="tutorial_happy_mapping">"Hyvää Kartoittamista!"</string>
 
     <!-- Fuzzy -->

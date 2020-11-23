@@ -674,9 +674,6 @@ Del det nu?"</string>
     <string name="user_logout">"Logout"</string>
     <string name="osm_profile">"OSM Profil"</string>
     <string name="next">"Næste"</string>
-    <string name="tutorial_welcome_to_osm">"Velkommen til OpenStreetMap"</string>
-    <string name="tutorial_welcome_to_osm_subtitle">"Det gratis wiki verdenskort"</string>
-    <string name="tutorial_intro">"StreetComplete gør det nemt at bidrage til OpenStreetMap. Den leder automatisk efter detajer i dit område: cykelstier, åbningstider, gadebelysning og meget mere…"</string>
     <string name="achievements_empty">"Du har ingen medaljer endnu"</string>
     <string name="quests_empty">"Du har ikke indsendt nogle svar endnu"</string>
     <string name="unsynced_quests_description">"plus %d ændringer der endnu ikke er indsendt."</string>

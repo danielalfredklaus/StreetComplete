@@ -143,8 +143,6 @@
     <string name="about_title_authors">"Tack till"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="about_title_repository">"Källkodsarkiv"</string>
 
     <!-- Fuzzy -->
@@ -689,25 +687,8 @@ Dela den nu?"</string>
     <string name="letsgo">"Nu kör vi!"</string>
 
     <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm">"Välkommen till OpenStreetMap"</string>
 
     <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm_subtitle">"den fria wiki-världskartan"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_intro">"StreetComplete gör det enkelt att bidra till OpenStreetMap.
-Den söker automatiskt efter saknade detaljer i din närhet: cykelbanor, husnummer, öppettider och mycket mer…"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_solving_quests">"När du hittat, kommer de saknade detaljerna att visas på din karta som uppdrag.
-
-Du kan börja lösa dem direkt och senare logga in för att publicera dina svar."</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_stay_safe">"När du är osäker kan du alltid svara \"Kan inte säga\" och lämna en anteckning.
-
-Slutligen, kom ihåg att vara säker: var medveten om din omgivning och gå inte in på privat egendom.
-"</string>
 
     <!-- Fuzzy -->
     <string name="tutorial_happy_mapping">"Glad kartläggning!"</string>

@@ -188,9 +188,6 @@
     <!-- Fuzzy -->
     <string name="quest_roofShape_show_more">"Mostra'n més…"</string>
 
-    <!-- it is used in generic list, not only for roof shape but rename would break translations -->
-    <!-- Fuzzy -->
-
     <!-- Fuzzy -->
     <string name="map_btn_zoom_out">"Allunya't"</string>
 
@@ -679,8 +676,6 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
     <string name="osm_profile">"Perfil OSM"</string>
     <string name="next">"Endavant"</string>
     <string name="letsgo">"Som-hi!"</string>
-    <string name="tutorial_welcome_to_osm">"Us donem la benvinguda a l'OpenStreetMap"</string>
-    <string name="tutorial_welcome_to_osm_subtitle">"el mapa mundial wiki"</string>
     <string name="links_empty">"Encara no teniu cap enllaç"</string>
     <string name="quests_empty">"Encara no heu publicat cap resposta"</string>
 

@@ -684,26 +684,6 @@ Vil du dela opp vegen no?"</string>
     <string name="letsgo">"Kom igjen!"</string>
 
     <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm">"Velkommen til OpenStreetMap"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm_subtitle">"det frie dugnadskartet"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_intro">"StreetComplete gjer det svært enkelt å bidra til OpenStreetMap.
-Appen ser automatisk etter ting i nærleiken som ikkje er registrert på kartet – sykkelvegar, husnummer, opnings­tider og mykje anna …"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_solving_quests">"Dette vert så vist på kartet som oppdrag til deg.
-
-Du kan løysa nokre oppdrag med ein gong, for seinare å logga inn og senda inn informasjonen du registrerer."</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_stay_safe">"Viss du er usikker, kan du alltid svar «Vanskeleg å seia» og leggja att ein merknad til andre.
-
-Og hugs å halda deg trygg: Pass på kor du set foten, og gå aldri inn på privat eigedom."</string>
-
-    <!-- Fuzzy -->
     <string name="tutorial_happy_mapping">"Kos deg med kartlegging!"</string>
 
     <!-- Fuzzy -->

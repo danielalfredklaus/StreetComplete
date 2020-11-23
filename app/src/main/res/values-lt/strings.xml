@@ -678,25 +678,6 @@ Dalinai reiškia, kad vežimėlis gali įvažiuoti ir naudotis tualetu, bet nėr
     <string name="letsgo">"Pradėkim!"</string>
 
     <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm">"Jus sveikina OpenStreetMap"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm_subtitle">"nemokamas pasaulio žemėlapio wiki"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_intro">"StreetComplete leidžia lengvai prisidėti prie OpenStreetMap. Jis automatiškai ieško trūkstamos informacijos aplink jus: darbo laiko, pavadinimų, dangų ir t.t."</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_solving_quests">"Radus informacijos trūkumus, jie rodomi žemėlapyje kaip užduotys.
-
-Jūs galite pradėti juos spręsti iš karto ir prisijungti vėliau, kad nusiųstumėte savo atsakymus."</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_stay_safe">"Jei nesate įsitikinę, visada galite parinkti „Negaliu atsakyti“ ir palikti pastabą.
-
-Galų gale visada būkite atidūs: stebėkite aplinką ir neikite į privačias valdas."</string>
-
-    <!-- Fuzzy -->
     <string name="tutorial_happy_mapping">"Laimingo žymėjimo!"</string>
 
     <!-- Fuzzy -->

@@ -607,8 +607,6 @@ Nicméně před nahráním vašich změn aplikace zkontroluje pomocí &lt;a href
     <string name="theme_system_default">"Výchozí vzhled systému"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="action_open_location">"Otevřít lokaci v jiné aplikaci"</string>
 
     <!-- Fuzzy -->
@@ -689,25 +687,6 @@ Chcete cestu rozdělit?"</string>
 
     <!-- Fuzzy -->
     <string name="letsgo">"Pojďme na to!"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm">"Vítejte v OpenStreetMap"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm_subtitle">"svobodné wiki mapy světa"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_intro">"StreetComplete umožňuje jednoduché přispívání do OpenStreetMap tak, že automaticky vyhledává chybějící údaje ve vašem okolí: cyklostezky, popisná čísla domů, otevírací hodiny a další…"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_solving_quests">"Jakmile je nalezne, budou tyto chybějící údaje na vaší mapě zobrazeny jako úkoly.
-
-Můžete je hned začít řešit a později se přihlásit a publikovat vaše odpovědi."</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_stay_safe">"Když si nejste jistí, můžete odpovědět „Nedá se to určit“ a nechat poznámku.
-
-A nakonec, nezapomeňte na bezpečnost - všímejte si vašeho okolí a nevstupujte na soukromé pozemky."</string>
 
     <!-- Fuzzy -->
     <string name="tutorial_happy_mapping">"Užijte si mapování!"</string>

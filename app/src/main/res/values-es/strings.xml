@@ -687,25 +687,6 @@ Continuando con lo de antes, la aplicación se comunica directamente con la infr
     <string name="letsgo">"¡Vamos!"</string>
 
     <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm">"Bienvenido/a a OpenStreetMap"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm_subtitle">"El mapa del mundo wiki libre"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_intro">"SteetComplete hace más fácil contribuir a OpenStreetMap. Automáticamente buscar detalles faltantes en tu vecindario: carriles bici, números de portal, horarios de apertura y mucho más"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_solving_quests">"Una vez encontrado, los detalles faltantes aparecerán en tu mapa como objetivos.
-
-Puedes empezar resolviéndolos inmediatamente e iniciar sesión más tarde para publicar tus respuestas."</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_stay_safe">"Cuando estés inseguro, puedes responder siempre \"No puedo decirlo\" y dejar una nota.
-
-Finalmente, recuerda permanecer seguro: Sé consciente de tu alrededor y no entres en propiedad privada."</string>
-
-    <!-- Fuzzy -->
     <string name="tutorial_happy_mapping">"Feliz mapeo!"</string>
 
     <!-- Fuzzy -->

@@ -269,15 +269,15 @@ Jetzt aufspalten?"</string>
     <string name="osm_profile">"OSM-Profil"</string>
     <string name="next">"Weiter"</string>
     <string name="letsgo">"Auf geht's!"</string>
-    <string name="tutorial_welcome_to_osm">"Willkommen bei OpenStreetMap"</string>
-    <string name="tutorial_welcome_to_osm_subtitle">"der freien Wiki-Weltkarte"</string>
-    <string name="tutorial_intro">"Mit StreetComplete kannst Du einfach einen Beitrag zur OpenStreetmap leisten. Die App sucht automatisch nach fehlenden Details in deiner Nähe: Fahrradstreifen, Hausnummern, Öffnungszeiten und mehr…"</string>
-    <string name="tutorial_solving_quests">"Sobald sie gefunden wurden, tauchen die fehlenden Details als Aufgaben auf deiner Karte auf.
+    <string name="tutorial_welcome_to_accesscomplete">Willkommen zu AccessComplete</string>
+    <string name="tutorial_intro">"Diese App macht es einfach, Informationen zur Barrierefreiheit eines Ortes in OpenStreetMap, der Wiki-Weltkarte, beizutragen.
 
-Du kannst dann sofort anfangen, diese zu lösen. Später kannst du dich einloggen, um deine Antworten zu veröffentlichen."</string>
-    <string name="tutorial_stay_safe">"Immer wenn du dir unsicher bist, kannst du mit „Nicht beantwortbar“ antworten und stattdessen eine Notiz hinterlassen.
+Dank deiner Hilfe kann damit zum Beispiel das Erstellen barrierefreierer Routen für Rollstuhlfahrer verbessert werden."</string>
+    <string name="tutorial_quests">"AccessComplete sucht automatisch nach fehlenden Daten und erstellt kleine Aufgaben, die Du lösen kannst, wenn du gerade in der Nähe bist."</string>
+    <string name="tutorial_solving_quests">"Jede verfügbare Aufgabe wird mit einem Symbol auf deiner Karte angezeigt. Diese Symbole sehen genauso aus wie die obigen.
 
-Zu guter Letzt, vergiss nicht, dich nicht in Gefahr zu begeben: Achte auf deine Umgebung und betritt kein Privatgelände."</string>
+Um eine Aufgabe zu lösen, tippe einfach eines der Symbol an und versuche die Frage zu beantworten."</string>
+    <string name="tutorial_stay_safe">"Zu guter Letzt, vergiss nicht, dich nicht in Gefahr zu begeben: Achte auf deine Umgebung und betritt kein Privatgelände."</string>
     <string name="tutorial_happy_mapping">"Viel Spaß beim Kartieren!"</string>
     <string name="achievements_empty">"Du hast bisher noch keine Erfolge"</string>
     <string name="links_empty">"Du hast noch keine Links"</string>
@@ -395,8 +395,8 @@ Zu guter Letzt, vergiss nicht, dich nicht in Gefahr zu begeben: Achte auf deine 
     <string name="quest_smoothness_very_bad">Sehr schlecht</string>
     <string name="quest_smoothness_horrible">Schrecklich</string>
     <string name="quest_smoothness_very_horrible">Sehr schrecklich</string>
-    <string name="quest_kerb_raised">Erhöht (> 3cm)</string>
-    <string name="quest_kerb_lowered">Abgesenkt / leicht erhöht (~ 3cm)</string>
+    <string name="quest_kerb_raised">Erhöht (> 3 cm)</string>
+    <string name="quest_kerb_lowered">Leicht erhöht (~ 3 cm)</string>
     <string name="quest_kerb_type_title">Welche Art von Bordstein existiert an diesem Fussgängerübergang?</string>
     <string name="notifications">Benachrichtigungen</string>
     <string name="jump_to_current_location">Zum aktuellen Standort springen</string>
@@ -412,7 +412,9 @@ Zu guter Letzt, vergiss nicht, dich nicht in Gefahr zu begeben: Achte auf deine 
     <string name="upward_slope">Steigung aufwärts</string>
     <string name="downward_slope">Steigung abwärts</string>
     <string name="quest_leave_not">Eine Notiz hinterlassen</string>
-    <string name="arcore_initial_instructions">Bewege die Kamera langsam, um Oberflächen und Objekte um dich herum zu entdecken. Sobald ein Bereich erfolgreich gescannt wurde, erscheint kurzzeitig eine Punktwolke auf den Oberflächen. Fixiere anschließend zwei Punkte mit einem einfachen Tippen auf den Bildschirm, um eine Entfernung zu messen.</string>
+    <string name="arcore_initial_instructions">"Bewege die Kamera langsam, um Oberflächen und Objekte um dich herum zu entdecken. Sobald ein Bereich erfolgreich gescannt wurde, erscheint kurzzeitig eine Punktwolke auf den Oberflächen.
+
+Fixiere anschließend zwei Punkte mit einem einfachen Tippen auf den Bildschirm, um eine Entfernung zu messen."</string>
     <string name="quest_kerb_flush">Eben (~ 0cm)</string>
     <string name="quest_kerb_raised_description">Hohe Bordsteinkante, die Fahrräder und Rollstuhlfahrer beim Überqueren behindert.</string>
     <string name="quest_kerb_lowered_description">Die Bordsteinkante ist abgesenkt oder nur wenig erhöht.</string>
@@ -435,13 +437,13 @@ Zu guter Letzt, vergiss nicht, dich nicht in Gefahr zu begeben: Achte auf deine 
     <string name="quest_incline_path_title">Was ist die maximale Steigung dieses Wegs?</string>
     <string name="quest_incline_street_title">Was ist die maximale Steigung dieses Straßenabschnitts?</string>
     <string name="quest_incline_street_name_title">Was ist die maximale Steigung der Straße %s in diesem Abschnitt?</string>
-    <string name="quest_incline_device_instructions_step_1">Finde den steilsten Abschnitt.</string>
-    <string name="quest_incline_device_instructions_step_2">Orientiere dich in die gleiche Richtung wie die Pfeile auf der Karte.</string>
-    <string name="quest_incline_device_instructions_step_3">Lege dein Smartphone flach auf den Boden mit dem Bildschirm nach oben zeigend.</string>
-    <string name="quest_incline_device_instructions_step_4">Sperre/entsperre die Messung mit einer einfachen Berührung</string>
-    <string name="quest_incline_manual_instructions_step_1">Finde den steilsten Abschnitt.</string>
-    <string name="quest_incline_manual_instructions_step_2">Orientiere dich in die gleiche Richtung wie die Pfeile auf der Karte.</string>
-    <string name="quest_incline_manual_instructions_step_3">Miss den Anstieg mit einer (digitalen) Waage und gib den unten Wert ein.</string>
+    <string name="quest_incline_device_instructions_step_1">Finde den steilsten Abschnitt.\n</string>
+    <string name="quest_incline_device_instructions_step_2">Orientiere dich in die gleiche Richtung wie die Pfeile auf der Karte.\n</string>
+    <string name="quest_incline_device_instructions_step_3">Lege dein Smartphone flach auf den Boden mit dem Bildschirm nach oben zeigend.\n</string>
+    <string name="quest_incline_device_instructions_step_4">Sperre/entsperre die Messung mit einer einfachen Berührung.</string>
+    <string name="quest_incline_manual_instructions_step_1">Finde den steilsten Abschnitt.\n</string>
+    <string name="quest_incline_manual_instructions_step_2">Orientiere dich in die gleiche Richtung wie die Pfeile auf der Karte.\n</string>
+    <string name="quest_incline_manual_instructions_step_3">Miss den Anstieg mit einer (digitalen) Waage und gib den unten Wert ein.\n</string>
     <string name="quest_width_measurement_instructions">Bitte miss die Breite an der schmalsten Stelle. Ziehe dabei auch unbewegliche Objekte wie Abfalleimer oder Strassenlaternen in Betracht.</string>
     <string name="quest_width_path_title">Was ist die minimale Breite dieses Wege?</string>
     <string name="quest_width_street_name_title">Was ist die minimale Breite der Straße %s in diesem Abschnitt?</string>
@@ -471,4 +473,12 @@ Zu guter Letzt, vergiss nicht, dich nicht in Gefahr zu begeben: Achte auf deine 
     <string name="right_side">Rechte Seite</string>
     <string name="note_marker">Markiert, wo die Notiz erstellt wird</string>
     <string name="quest_smoothness_value_relates_to_wheeled_vehicles">"Die Antwort bezieht sich darauf, ob die Oberfläche das Benutzen bestimmter Arten von Radfahrzeugen zulässt (unabhängig von der verfügbaren Breite). "</string>
+    <string name="unit_centimeters">Centimeter</string>
+    <string name="skip">Überspringen</string>
+    <string name="total_quests_solved">Anzahl gelöster Aufgaben: %d</string>
+    <string name="incline_view_content_description">Aktuelle Steigung gemäss den Sensoren des Gerätes: %s %%. Antippen um die Messung zu fixieren.</string>
+    <string name="incline_view_measurement_locked_announcement">Messung fixiert auf %s %%.</string>
+    <string name="incline_view_measurement_unlocked_announcement">Messung gelöst. Der aktuelle Wert beträgt %s %%.</string>
+    <string name="quest_kerb_select_previous_kerb_type">Vorherigen Bordsteintyp auswählen</string>
+    <string name="quest_kerb_select_next_kerb_type">Nächsten Bordsteintyp auswählen</string>
 </resources>

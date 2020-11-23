@@ -649,26 +649,6 @@
     <string name="letsgo">"بزن بریم!"</string>
 
     <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm">"به نقشه متن باز خوش‌آمدید."</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm_subtitle">"نقشه جهانی ویکی رایگان"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_intro">"StreetComplete همکاری در OpenStreetMap را آسان می کند.
-به طور خودکار به دنبال جزئیات گمشده در پیرامون شما می باشد: خطوط دوچرخه، شماره خانه، ساعات کار و موارد دیگر …"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_solving_quests">"پس از کاوش جزئیات گمشده به عنوان جُستار در نقشه شما ظاهر می شود.
-
-می توانید بلافاصله پاسخگویی به آنها را شروع کرده و بعداً وارد نمایه خود شوید تا پاسخ های خود را منتشر کنید."</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_stay_safe">"هر زمان که اطمینان ندارید، می توانید گزینه \"نمی توان بیان کرد\" را انتخاب نماید و یادداشت بگذارید.
-
-در آخر، به یاد داشته باشید که مطمئن باشید: از محیط پیرامون خود مطلع باشید و به مکان‌های خصوصی وارد نشوید."</string>
-
-    <!-- Fuzzy -->
     <string name="tutorial_happy_mapping">"نقشه‌کشی مبارک!"</string>
 
     <!-- Fuzzy -->

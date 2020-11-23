@@ -641,18 +641,6 @@ Men før appen laster opp endringen dine sjekker den via &lt;a href=\"https://ww
     <string name="osm_profile">"OSM-profil"</string>
     <string name="next">"Neste"</string>
     <string name="letsgo">"Kom igjen!"</string>
-    <string name="tutorial_welcome_to_osm">"Velkommen til OpenStreetMap"</string>
-    <string name="tutorial_welcome_to_osm_subtitle">"det frie dugnadskartet"</string>
-    <string name="tutorial_intro">"StreetComplete gjør det svært enkelt å bidra til OpenStreetMap.
-Appen ser automatisk etter ting i nærheten som ikke er registrert
-på kartet - sykkelveier, husnummer, åpningstider og mye annet…"</string>
-    <string name="tutorial_solving_quests">"Dette blir vist på kartet som oppdrag til deg.
-
-Du kan løse noen oppdrag med en gang, for senere og logge inn og sende inn informasjonen du registerer."</string>
-    <string name="tutorial_stay_safe">"Hvis du er usikker kan du alltid svare \"Vanseklig å si\" og legge igjen
-en merknad til andre.
-
-Og husk å ta vare på egen sikkerhet: Pass på hvor du setter foten, og gå aldri inn på privat eigendom."</string>
     <string name="tutorial_happy_mapping">"Kos deg med kartlegging!"</string>
     <string name="achievements_empty">"Du har inne noen bradger enda"</string>
     <string name="links_empty">"Du har ikke noen lenker enda"</string>

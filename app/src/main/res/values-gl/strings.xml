@@ -688,26 +688,6 @@ Dividila agora?"</string>
     <string name="letsgo">"Imos aló!"</string>
 
     <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm">"Benvido ó OpenStreetMap"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm_subtitle">"a wikipedia dos mapas"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_intro">"O StreetComplete fai máis doada a contribución ó OpenStreetMap.
-Procura de xeito automático os detalles que fallan na túa veciñanza: carrís bici, enderezos, horarios de apertura e moito máis…"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_solving_quests">"Unha vez atopados, os detalles que fallan aparecerán no teu mapa coma tarefas.
-
-Podes comezar a resolvelas de inmediato e despois iniciar sesión para publicar as túas respostas."</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_stay_safe">"Sempre que non esteas seguro, podes respostar \"Non o sei\" e deixar unha nota.
-
-Finalmente, lembra estar seguro: atento á túa contorna e non entres a unha propiedade privada."</string>
-
-    <!-- Fuzzy -->
     <string name="tutorial_happy_mapping">"Que teñas un bo cartografado!"</string>
 
     <!-- Fuzzy -->

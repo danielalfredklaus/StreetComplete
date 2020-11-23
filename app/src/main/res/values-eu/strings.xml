@@ -688,25 +688,6 @@ Hala ere, zure aldaketak igo aurretik, aplikazioak nire zerbitzariko &lt;a href=
     <string name="letsgo">"Goazen!"</string>
 
     <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm">"Ongi etorri OpenStreetMap-era"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm_subtitle">"munduko wiki mapa librea"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_intro">"StreetComplete-k erraz jartzen dizu OpenStreetMap hobetzea. Automatikoki bilatzen ditu zure inguruan falta diren xehetasunak: bidegorriak, etxeen zenbakiak, irekiera orduak eta askoz gehiago…"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_solving_quests">"Behin aurkituta, falta diren xehetasunak zure mapan agertuko dira erronka gisa.
-
-Berehala hasi zaitezke hauek ebazten eta geroago saioa hasi zure erantzunak argitaratzeko."</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_stay_safe">"Ziur ez zaudenean, \"Ez dakit\" erantzutea duzu eta ohar bat ere utzi dezakezu.
-
-Bukatzeko, tentuz ibili: Adi zure inguruneari eta ez sartu jabetza pribatuko eremuetan."</string>
-
-    <!-- Fuzzy -->
     <string name="tutorial_happy_mapping">"Ondo mapeatu!"</string>
 
     <!-- Fuzzy -->

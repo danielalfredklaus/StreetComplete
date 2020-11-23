@@ -143,8 +143,6 @@
     <string name="about_title_authors">"Участники"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="about_title_repository">"Исходный код"</string>
 
     <!-- Fuzzy -->
@@ -688,23 +686,8 @@
     <string name="letsgo">"Поехали!"</string>
 
     <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm">"Добро пожаловать в OpenStreetMap"</string>
 
     <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm_subtitle">"бесплатные карты всего мира на wiki-принципе"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_intro">"StreetComplete позволяет дополнять карты OpenStreetMap. Приложение  ищет пропуски в данных объектов рядом с вами: неотмеченные велосипедные дорожки, дома без номера, неуказанные часы работы и т.д."</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_solving_quests">"Найденные пропуски в данных отображаются на карте в виде квестов.
-
-Вы можете начать выполнять квесты сразу, а позже залогиниться и опубликовать свои дополнения."</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_stay_safe">"Если вы не уверены, то отвечайте \"Не знаю\" и оставьте комментарий.
-
-И наконец, всегда будьте осторожны на улице: смотрите по сторонам и не заходите на запрещённые территории."</string>
 
     <!-- Fuzzy -->
     <string name="tutorial_happy_mapping">"Удачи в картах!"</string>

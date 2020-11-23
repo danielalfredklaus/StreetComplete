@@ -117,8 +117,6 @@
     <string name="about_summary_privacy_statement">"et sur l'utilisation des données"</string>
 
     <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
     <string name="quest_roofShape_select_one">"Sélectionner un :"</string>
 
     <!-- Fuzzy -->
@@ -597,23 +595,8 @@ Découper maintenant ?"</string>
     <string name="letsgo">"Allons-y !"</string>
 
     <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm">"Bienvenue sur OpenStreetMap"</string>
 
     <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm_subtitle">"la carte mondiale gratuite et collaborative"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_intro">"StreetComplete permet de contribuer facilement à OpenStreetMap. L'application recherche automatiquement les détails manquants autour de vous : pistes cyclables, numéros de rue, horaires d'ouverture et plus encore…"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_solving_quests">"Une fois trouvés, ces détails manquants apparaîtront sur la carte comme des quêtes.
-
-Vous pouvez d'ores et déjà commencer à les résoudre, mais vous devrez vous connecter pour que vos réponses soient publiées."</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_stay_safe">"En cas d'incertitude, vous pouvez toujours répondre \"Ne sais pas\" et laisser une note.
-
-Enfin, n'oubliez pas de rester prudent : soyez attentifs à votre environnement et n'entrez pas dans les propriétés privées."</string>
 
     <!-- Fuzzy -->
     <string name="tutorial_happy_mapping">"Bonne cartographie !"</string>

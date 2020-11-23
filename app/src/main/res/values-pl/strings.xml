@@ -669,25 +669,6 @@ Podzielić?"</string>
     <string name="letsgo">"Ruszajmy!"</string>
 
     <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm">"Witaj w OpenStreetMap"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_welcome_to_osm_subtitle">"wolnej wiki-mapie świata"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_intro">"StreetComplete to prosty sposób na współtworzenie OpenStreetMap. Automatycznie wyświetla braki szczegółów w Twej okolicy, dotyczące m.in.: ścieżek rowerowych, numerów domów, godzin otwarcia…"</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_solving_quests">"Wykryte braki pojawią się na Twojej mapie jako zadania.
-
-Możesz zacząć je rozwiązywać od razu, a później zalogować się by je opublikować."</string>
-
-    <!-- Fuzzy -->
-    <string name="tutorial_stay_safe">"Gdy nie masz pewności, możesz zaznaczyć \"Odpowiedź niemożliwa…\" i dodać notkę.
-
-Na koniec: pamiętaj o bezpieczeństwie! Uważaj na otoczenie i nie wchodź na teren prywatny."</string>
-
-    <!-- Fuzzy -->
     <string name="tutorial_happy_mapping">"Powodzenia!"</string>
 
     <!-- Fuzzy -->

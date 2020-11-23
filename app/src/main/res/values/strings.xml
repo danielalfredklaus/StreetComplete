@@ -33,11 +33,15 @@
     <string name="osm_profile">OSM Profile</string>
     <string name="next">Next</string>
     <string name="letsgo">Let\'s go!</string>
-    <string name="tutorial_welcome_to_osm">Welcome to OpenStreetMap</string>
-    <string name="tutorial_welcome_to_osm_subtitle">the free wiki world map</string>
-    <string name="tutorial_intro">StreetComplete makes it easy to contribute to OpenStreetMap.\nIt automatically looks for missing details in your vicinity: bicycle lanes, house numbers, opening hours and much more…</string>
-    <string name="tutorial_solving_quests">Once found, the missing details will appear on your map as quests.\n\nYou can start solving them right away and later login to publish your answers.</string>
-    <string name="tutorial_stay_safe">Whenever you are uncertain, you can always reply \"Can\'t Say\" and leave a note.\n\nFinally, remember to stay safe: Be aware of your surroundings and don\'t enter private property.</string>
+    <string name="tutorial_welcome_to_accesscomplete">Welcome to AccessComplete</string>
+    <string name="tutorial_intro">"This app makes it easy to contribute accessibility information to OpenStreetMap, the free wiki world map.
+
+Thanks to your help, the creation of barrier-free routes for wheelchair users can be improved for example."</string>
+    <string name="tutorial_quests">"AccessComplete automatically looks for missing information in your vicinity and creates small quests that you can solve whenever you are nearby."</string>
+    <string name="tutorial_solving_quests">"For every available quest, a pin will be displayed on your map. They will look just like the ones above.
+
+To solve a quest, just tap on the pin and try to answer the question."</string>
+    <string name="tutorial_stay_safe">"Finally, remember to stay safe: Be aware of your surroundings and don't enter private property."</string>
     <string name="tutorial_happy_mapping">Happy Mapping!</string>
     <string name="retry">"Retry"</string>
     <string name="oauth_failed_permissions">"Authorization failed: All listed permissions need to be granted"</string>
@@ -423,7 +427,9 @@ Partially means that a wheelchair can enter and use the restroom, but no handrai
     <string name="instructions_image_content_description">"An image that illustrates the measurement process visually."</string>
 
     <string name="arcore_initial_instructions_title">"How to measure?"</string>
-    <string name="arcore_initial_instructions">Slowly move the camera to discover the surfaces and objects around you. Once an area was scanned successfully, you will see a cloud of points on the surfaces.   Afterwards, fixate two points in the environment with a simple tap on the screen to measure a distance.</string>
+    <string name="arcore_initial_instructions">"Slowly move the camera to discover the surfaces and objects around you. Once an area was scanned successfully, you will see a cloud of points on the surfaces.
+
+Afterwards, fixate two points in the environment with a simple tap on the screen to measure a distance."</string>
     <string name="arcore_additional_instructions_title">"What to measure?"</string>
 
     <string name="upward_slope">Upward slope</string>
@@ -444,7 +450,7 @@ Partially means that a wheelchair can enter and use the restroom, but no handrai
     <string name="quest_incline_device_instructions_step_1">Find the steepest section.\n</string>
     <string name="quest_incline_device_instructions_step_2">Orient yourself on the street according to the arrows displayed on the map.\n</string>
     <string name="quest_incline_device_instructions_step_3">Place your phone flat on the floor with the screen facing upwards.\n</string>
-    <string name="quest_incline_device_instructions_step_4">Lock/unlock the measurement by taping on it</string>
+    <string name="quest_incline_device_instructions_step_4">Lock/unlock the measurement by taping on it.</string>
     <string name="quest_incline_manual_instructions_step_1">Find the steepest section.\n</string>
     <string name="quest_incline_manual_instructions_step_2">Orient yourself on the street according to the arrows displayed on the map.\n</string>
     <string name="quest_incline_manual_instructions_step_3">Measure the slope with a (digital) level and enter the value below.</string>

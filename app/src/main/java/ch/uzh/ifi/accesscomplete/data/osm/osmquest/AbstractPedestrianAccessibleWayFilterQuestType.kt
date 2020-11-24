@@ -55,7 +55,6 @@ abstract class AbstractPedestrianAccessibleWayFilterQuestType<T> : OsmElementQue
             and access !~ private|no
             and foot !~ private|no|use_sidepath
             and sidewalk !~ separate|use_sidepath|yes
-            and (id ~ 4249706|720488100)
         """.toElementFilterExpression()
     }
 
@@ -157,7 +156,7 @@ abstract class AbstractPedestrianAccessibleWayFilterQuestType<T> : OsmElementQue
         }
 
         if (!supportTaggingBySidewalkSide()) {
-            return osmKeyAbsenceFilter.matches(element)
+            return osmKeyAbsenceFilter.matches(element) && element.id == 720488100L // TODO sst: Remove later condition after usability testing
         }
 
         return when {

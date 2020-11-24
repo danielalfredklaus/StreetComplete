@@ -53,9 +53,13 @@ class OpenQuestChangesetsManager @Inject constructor(
         }
     }
 
+    fun createDeterministicFakeChangesetId(questType: OsmElementQuestType<*>): Long {
+        return questType.javaClass.name.hashCode().toLong()
+    }
+
     fun createChangeset(questType: OsmElementQuestType<*>, source: String): Long {
         // TODO sst: Prevent real uploads during tests. Use API again...
-        val changesetId = Random().nextLong()
+        val changesetId = createDeterministicFakeChangesetId(questType)
         // mapDataApi.openChangeset(createChangesetTags(questType, source))
         openChangesetsDB.put(OpenChangeset(questType.name, source, changesetId))
         changesetAutoCloser.enqueue(CLOSE_CHANGESETS_AFTER_INACTIVITY_OF)

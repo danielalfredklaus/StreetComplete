@@ -68,7 +68,7 @@ class SingleOsmElementTagChangesUploader @Inject constructor(private val mapData
                 continue
             }
             // TODO sst: Prevent real uploads during tests. Use correct return statement again...
-            return element
+            return elementWithChangesApplied
             //return handler.getElementUpdates(listOf(elementWithChangesApplied)).updated.single()
         }
     }
@@ -139,7 +139,8 @@ private fun Element.changesApplied(changes: StringMapChanges): Element {
         if (copy.tags == null) throw ElementConflictException("The element has no tags")
         changes.applyTo(copy.tags)
     } catch (e: IllegalStateException) {
-        throw ElementConflictException("Conflict while applying the changes")
+        // TODO sst: remove for testing
+        //throw ElementConflictException("Conflict while applying the changes")
     } catch (e: IllegalArgumentException) {
         /* There is a max key/value length limit of 255 characters in OSM. If we reach this
            point, it means the UI did permit an input of more than that. So, we have to catch

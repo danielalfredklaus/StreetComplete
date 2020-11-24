@@ -29,6 +29,7 @@ import de.westnordost.osmapi.common.errors.OsmNotFoundException
 import de.westnordost.osmapi.map.data.LatLon
 import de.westnordost.osmapi.notes.Note
 import ch.uzh.ifi.accesscomplete.data.osm.upload.ConflictException
+import java.util.*
 import javax.inject.Inject
 
 /** Uploads a new note or a note comment to OSM, with the option to attach a number of photos */
@@ -42,11 +43,18 @@ class OsmNoteWithPhotosUploader @Inject constructor(
      * @throws ImageUploadException if any attached photo could not be uploaded
      */
     fun create(pos: LatLon, text: String, imagePaths: List<String>?): Note {
-        val attachedPhotosText = uploadAndGetAttachedPhotosText(imagePaths)
-        val note = notesApi.create(pos, text + attachedPhotosText)
-        if (!imagePaths.isNullOrEmpty()) {
-            activateImages(note.id)
-        }
+        // TODO sst: Use API again after tests...
+        //val attachedPhotosText = uploadAndGetAttachedPhotosText(imagePaths)
+        //val note = notesApi.create(pos, text + attachedPhotosText)
+        //if (!imagePaths.isNullOrEmpty()) {
+        //    activateImages(note.id)
+        //}
+
+        val note = Note()
+        note.dateCreated = Date()
+        note.id = System.currentTimeMillis()
+        note.status = Note.Status.OPEN
+        note.position = pos
         return note
     }
 

@@ -75,13 +75,17 @@ class SplitSingleWayUploader @Inject constructor(private val mapDataApi: MapData
 
         uploadElements.addAll(splitWayAtIndices(updatedWay, splitAtIndices))
         val handler = UpdateElementsHandler()
-        try {
-            mapDataApi.uploadChanges(changesetId, uploadElements, handler)
-        } catch (e: OsmConflictException) {
-            throw ChangesetConflictException(e.message, e)
-        }
+        // TODO sst: Use API again after tests
+//        try {
+//            mapDataApi.uploadChanges(changesetId, uploadElements, handler)
+//        } catch (e: OsmConflictException) {
+//            throw ChangesetConflictException(e.message, e)
+//        }
         // the added nodes and updated relations are not relevant for quest creation, only the way are
-        return handler.getElementUpdates(uploadElements).updated.filterIsInstance<Way>()
+        //return handler.getElementUpdates(uploadElements).updated.filterIsInstance<Way>()
+        val result = mutableListOf<Way>()
+        uploadElements.forEach { if (it is Way) result.add(it) }
+        return result
     }
 
     private fun checkForConflicts(old: Way, new: Way) {

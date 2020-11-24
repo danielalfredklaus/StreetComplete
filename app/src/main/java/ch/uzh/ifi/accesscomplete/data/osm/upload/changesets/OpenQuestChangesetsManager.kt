@@ -54,9 +54,7 @@ class OpenQuestChangesetsManager @Inject constructor(
     }
 
     fun createChangeset(questType: OsmElementQuestType<*>, source: String): Long {
-        // TODO sst: Prevent real uploads during tests. Use API again...
-        val changesetId = Random().nextLong()
-        // mapDataApi.openChangeset(createChangesetTags(questType, source))
+        val changesetId = mapDataApi.openChangeset(createChangesetTags(questType, source))
         openChangesetsDB.put(OpenChangeset(questType.name, source, changesetId))
         changesetAutoCloser.enqueue(CLOSE_CHANGESETS_AFTER_INACTIVITY_OF)
         Log.i(TAG, "Created changeset #$changesetId")
@@ -69,7 +67,7 @@ class OpenQuestChangesetsManager @Inject constructor(
 
         for (info in openChangesetsDB.getAll()) {
             try {
-                //mapDataApi.closeChangeset(info.changesetId)
+                mapDataApi.closeChangeset(info.changesetId)
                 Log.i(TAG, "Closed changeset #${info.changesetId}")
             } catch (e: OsmConflictException) {
                 Log.w(TAG, "Couldn't close changeset #${info.changesetId} because it has already been closed")

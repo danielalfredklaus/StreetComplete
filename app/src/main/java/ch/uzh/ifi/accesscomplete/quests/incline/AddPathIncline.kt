@@ -48,11 +48,11 @@ class AddPathIncline : OsmFilterQuestType<String>() {
 
     // TODO sst: Remove after usability testing
     override fun getApplicableElements(mapData: MapDataWithGeometry): Iterable<Element> {
-        return mapData.ways.filter { it.id == 4249706L }
+        return mapData.ways.filter { it.id == 170265731L }
     }
 
     // TODO sst: Remove after usability testing
-    override fun isApplicableTo(element: Element) = element.id == 4249706L
+    override fun isApplicableTo(element: Element) = element.id == 170265731L
 
     override val commitMessage = "Add incline info"
     override val wikiLink = "Key:incline"

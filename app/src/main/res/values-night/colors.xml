@@ -34,5 +34,5 @@
     <color name="background_transparent">#00000000</color>
     <color name="text">#fff</color>
 
-    <color name="quest_selection_frame">#bbff5722</color>
+    <color name="quest_selection_frame">#ff983f</color>
 </resources>

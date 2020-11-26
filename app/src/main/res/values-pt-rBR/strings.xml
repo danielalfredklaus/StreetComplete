@@ -165,9 +165,6 @@
     <string name="confirmation_authorize_now">"Você precisa autorizar com sua conta OSM para publicar suas respostas. Autorizar agora?"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"Esta versão do StreetComplete é muito antiga. Por favor atualize!"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"Para escanear por missões em torno de você automaticamente, ative a localização"</string>
 
     <!-- Fuzzy -->
@@ -284,9 +281,6 @@ Como mencionado, o aplicativo se comunica diretamente com a infraestrutura do OS
     <string name="crash_message">"Você gostaria de enviar um relatório de erro para o desenvolvedor?"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"Ah não, o StreetComplete travou da última vez!"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"Escrever e-mail"</string>
 
     <!-- Fuzzy -->
@@ -366,12 +360,6 @@ Como mencionado, o aplicativo se comunica diretamente com a infraestrutura do OS
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Parcial significa que não mais que uma etapa a necessária para acessar."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"Veja a lista completa &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;no GitHub&lt;/a&gt;. "</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"Para a lista completa veja o &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;projeto no POEditor&lt;/a&gt;. "</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"Traduções"</string>

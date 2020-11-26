@@ -165,9 +165,6 @@
     <string name="confirmation_authorize_now">"Yanıtlarınızı yayınlamak için OSM kullanıcı hesabınızda yetki vermeniz gerekir.  Şimdi yetkilendirilsin mi?"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"StreetComplete’in bu sürümü çok eski. Lütfen güncelle!"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"Çevrenizdeki görevleri otomatik olarak taramak için, konumu açın"</string>
 
     <!-- Fuzzy -->
@@ -282,9 +279,6 @@ Bahsedildiği gibi, uygulama OSM altyapısıyla doğrudan iletişim kuruyor. Bun
     <string name="crash_message">"Hata raporunu geliştiriciye gönderir misin?"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"Oh hayır, StreetComplete son kez çöktü!"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"E-posta oluştur"</string>
 
     <!-- Fuzzy -->
@@ -362,12 +356,6 @@ Bahsedildiği gibi, uygulama OSM altyapısıyla doğrudan iletişim kuruyor. Bun
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Kısmen, erişmek için tek bir adımdan daha fazlası olmadığı anlamına gelir."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"Tüm listeyi &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;GitHub'da görebilirsin&lt;/a&gt;. "</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"Tüm liste için &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;POEditor'de projeye bak&lt;/a&gt;."</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"Çeviriler"</string>

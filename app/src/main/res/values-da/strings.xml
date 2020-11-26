@@ -165,9 +165,6 @@
     <string name="confirmation_authorize_now">"Du er nød til at autentificere med din OSM konto for at publicere dine svar. Autentificer nu?"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"Denne version af StreetComplete er for gammel! Opdater venligst!"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"For at skanne efter opgaver tæt på dig skal du tænde Lokation."</string>
 
     <!-- Fuzzy -->
@@ -285,9 +282,6 @@ Før ændringer sendes tjekker appen dog en &lt;a href=\"https://www.westnordost
     <string name="crash_message">"Vil du sende en fejlrapport til udvikleren?"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"Åh nej, StreetComplete crashede sidste gang!"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"Skriv email"</string>
 
     <!-- Fuzzy -->
@@ -374,12 +368,6 @@ Før ændringer sendes tjekker appen dog en &lt;a href=\"https://www.westnordost
     <!-- Fuzzy -->
 
     <!-- Is this litterally used for open stores (versus closed?) or is it something special? -->
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"Se &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;den fulde liste på GitHub&lt;/a&gt;."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"Se &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;projekt på POEditor&lt;/a&gt; for en komplet liste."</string>
-
     <!-- Fuzzy -->
     <string name="credits_translations_title">"Oversættelser"</string>
 

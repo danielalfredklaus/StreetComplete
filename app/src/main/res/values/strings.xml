@@ -108,7 +108,6 @@ To solve a quest, just tap on the pin and try to answer the question."</string>
     <string name="about_summary_license">"GNU General Public License"</string>
     <string name="offline">"You are offline"</string>
     <string name="confirmation_authorize_now">"You need to authorize with your OSM user account to publish your answers. Authorize now?"</string>
-    <string name="version_banned_message">"This version of StreetComplete is too old. Please update!"</string>
     <string name="no_gps_no_quests">"To scan for quests around you automatically, turn on location"</string>
     <string name="nothing_more_to_download">"No further quests available"</string>
     <string name="later">"Later"</string>
@@ -174,8 +173,8 @@ However, before uploading your changes, the app checks with a &lt;a href=\"https
     <string name="quest_sidewalk_title">"Does this street have a sidewalk?"</string>
     <string name="quest_streetLanes_title">"How many lanes does this road have?"</string>
     <string name="quest_address_title">"What is the house number of this building?"</string>
+    <string name="crash_title">"Oh no, AccessComplete crashed last time!"</string>
     <string name="crash_message">"Would you please send the error report to the developer?"</string>
-    <string name="crash_title">"Oh no, StreetComplete crashed last time!"</string>
     <string name="crash_compose_email">"Compose email"</string>
     <string name="no_email_client">"You have no email client installed."</string>
     <string name="pref_title_keep_screen_on">"Keep screen on"</string>
@@ -211,8 +210,6 @@ However, before uploading your changes, the app checks with a &lt;a href=\"https
     <string name="quest_wheelchairAccess_limited_description_public_transport">Partially means that there is no more than a single step to access it.</string>
     <string name="quest_wheelchairAccess_description_toilets">"A wheelchair sign like this might be visible if the restroom is accessible.
 Partially means that a wheelchair can enter and use the restroom, but no handrail or adapted hand basin is present."</string>
-    <string name="credits_contributors">"See the &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;complete list on GitHub&lt;/a&gt;."</string>
-    <string name="credits_translations">"See the &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;project on POEditor&lt;/a&gt; for a complete list."</string>
     <string name="credits_translations_title">Translations</string>
     <string name="credits_contributors_title">Code contributors</string>
     <string name="credits_art_contributors_title">Art contributors</string>
@@ -422,6 +419,7 @@ Partially means that a wheelchair can enter and use the restroom, but no handrai
     <string name="unit_cm">cm</string>
     <string name="unit_centimeters">centimeters</string>
     <string name="value">Value</string>
+    <string name="version_banned_message">"This version of AccessComplete is too old. Please update!"</string>
 
     <string name="camera_permission_warning">"You need to grant this app the camera permission in order to take a picture."</string>
     <string name="instructions_image_content_description">"An image that illustrates the measurement process visually."</string>

@@ -74,7 +74,6 @@
     <string name="about_summary_license">"GNU General Public License"</string>
     <string name="offline">"Du bist offline"</string>
     <string name="confirmation_authorize_now">"Du musst dich mit deinem OSM-Konto autorisieren, um deine Antworten zu veröffentlichen. Jetzt autorisieren?"</string>
-    <string name="version_banned_message">"Diese Version von StreetComplete ist zu alt. Bitte aktualisiere deine Version!"</string>
     <string name="no_gps_no_quests">"Um automatisch nach Aufgaben in deiner Nähe zu suchen, schalte Standort an"</string>
     <string name="nothing_more_to_download">"Keine weiteren Aufgaben verfügbar"</string>
     <string name="later">"Später"</string>
@@ -126,8 +125,8 @@ Wie schon gesagt, die App kommuniziert direkt mit der OSM-Infrastruktur. Bevor d
     <string name="quest_sidewalk_title">"Hat diese Straße einen Bürgersteig?"</string>
     <string name="quest_streetLanes_title">"Wie viele Fahrspuren hat diese Straße?"</string>
     <string name="quest_address_title">"Welche Hausnummer hat dieses Gebäude?"</string>
+    <string name="crash_title">"Oh nein, AccessComplete ist letztes Mal abgestürzt!"</string>
     <string name="crash_message">"Würdest du dem Entwickler bitte den Fehlerbericht senden?"</string>
-    <string name="crash_title">"Oh nein, StreetComplete ist letztes Mal abgestürzt!"</string>
     <string name="crash_compose_email">"E-Mail verfassen"</string>
     <string name="no_email_client">"Du hast keine E-Mail-App installiert."</string>
     <string name="pref_title_keep_screen_on">"Bildschirm immer an"</string>
@@ -135,6 +134,7 @@ Wie schon gesagt, die App kommuniziert direkt mit der OSM-Infrastruktur. Bevor d
     <string name="upload_server_error">"Fehler beim Hochladen der Antworten. Versuche es später noch einmal."</string>
     <string name="quest_generic_hasFeature_yes">"Ja"</string>
     <string name="quest_generic_hasFeature_no">"Nein"</string>
+    <string name="version_banned_message">"Diese Version von AccessComplete ist zu alt. Bitte aktualisiere deine Version!"</string>
     <string name="quest_select_hint">"Wähle:"</string>
     <string name="quest_tactilePaving_title_bus">"Hat diese Bushaltestelle eine spezielle Pflasterung für Blinde?"</string>
     <string name="quest_tactilePaving_title_crosswalk">"Hat dieser Überweg eine spezielle Pflasterung für Blinde auf beiden Seiten?"</string>
@@ -155,8 +155,6 @@ Wie schon gesagt, die App kommuniziert direkt mit der OSM-Infrastruktur. Bevor d
     <string name="quest_wheelchairAccess_location_name_title">"Ist der Ort %s zugänglich für Rollstühle?"</string>
     <string name="quest_wheelchairAccess_limited_description_business">"Teilweise bedeutet, dass es nicht mehr als eine Stufe zu überwinden gilt, um das Gebäude zu betreten und die meisten Räume darin zugänglich für Rollstühle sind."</string>
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Teilweise bedeutet, dass es nicht mehr als eine Stufe zu überwinden gilt."</string>
-    <string name="credits_contributors">"Siehe die &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;komplette Liste auf GitHub&lt;/a&gt;."</string>
-    <string name="credits_translations">"Für eine vollständige Liste, siehe das &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;Projekt auf POEditor&lt;/a&gt;."</string>
     <string name="credits_translations_title">"Übersetzungen"</string>
     <string name="credits_contributors_title">"Programmierbeiträge"</string>
     <string name="credits_author_title">"Hauptentwickler"</string>

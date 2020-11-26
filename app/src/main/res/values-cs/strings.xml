@@ -165,9 +165,6 @@
     <string name="confirmation_authorize_now">"Pro odeslání odpovědí je nutné udělit přístup aplikaci StreetComplete k Vašemu účtu na OpenStreetMap. Chcete udělit přístup nyní?"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"Tato verze StreetComplete je příliš stará.  Prosím aktualizujte ji!"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"Pro automatické vyhledávání úkolů ve vašem okolí zapněte určování polohy"</string>
 
     <!-- Fuzzy -->
@@ -284,9 +281,6 @@ Nicméně před nahráním vašich změn aplikace zkontroluje pomocí &lt;a href
     <string name="crash_message">"Mohli byste, prosím, zaslat vývojáři hlášení o chybě?"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"Ale ne, aplikace StreetComplete minule spadla!"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"Napsat email"</string>
 
     <!-- Fuzzy -->
@@ -366,12 +360,6 @@ Nicméně před nahráním vašich změn aplikace zkontroluje pomocí &lt;a href
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Částečně znamená, že tu není víc než jeden schod bránící v přístupu."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"Přečtěte si &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;úplný seznam na GitHubu&lt;/a&gt;."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"Úplný seznam najdete v &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;projektu na POEditor.com&lt;/a&gt;."</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"Překladatelé"</string>

@@ -165,9 +165,6 @@
     <string name="confirmation_authorize_now">"Precisas iniciar sesión ca túa conta do usuario do OSM para envia-las túas respostas. Desexas facelo agora?"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"Esta versión do StreetComplete é moi vella. Por favor actualizaa!"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"Para procurar tarefas ó teu arredor de xeito automático activa a ubicación"</string>
 
     <!-- Fuzzy -->
@@ -285,9 +282,6 @@ Porén, antes de subir calquera mudanza á aplicación pescuda se a versión act
     <string name="crash_message">"Desexas informar do problema ó desenvolvedor?"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"Vaites! O StreetComplete pechouse de xeito imprevisíbel!"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"Escribir un correo electrónico"</string>
 
     <!-- Fuzzy -->
@@ -367,12 +361,6 @@ Porén, antes de subir calquera mudanza á aplicación pescuda se a versión act
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Significa de xeito parcial que non hai máis dun chanzo en todo o percorrido."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"Bótalle unha ollada á &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;listaxe enteira dos contribuíntes no GitHub&lt;/a&gt;."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"Bótalle unha ollada ó &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;proxecto no POEditor&lt;/a&gt; para obte-la listaxe completa."</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"Traducións"</string>

@@ -165,9 +165,6 @@
     <string name="confirmation_authorize_now">"Jūs turite autorizuoti savo OSM naudotojo paskyrą, kad galėtumėte pateikti savo atsakymus. Autorizuoti dabar?"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"Ši StreetComplete versija yra per sena. Prašome atnaujinti!"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"Kad automatiškai ieškotumėte užduočių apie jus - įjunkite vietos nustatymą"</string>
 
     <!-- Fuzzy -->
@@ -285,9 +282,6 @@ Kaip minėta anksčiau, aplikacija tiesiogiai bendrauja su OSM infrastruktūra. 
     <string name="crash_message">"Ar norėtumėte nusiųsti klaidos pranešimą programuotojui?"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"O ne, StreetComplete nulūžo!"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"Sukurti laišką"</string>
 
     <!-- Fuzzy -->
@@ -367,12 +361,6 @@ Kaip minėta anksčiau, aplikacija tiesiogiai bendrauja su OSM infrastruktūra. 
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Dalinai reiškia, kad yra ne daugiau vieno laiptelio įeinant."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"&lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;Pilnas sąrašas GitHub'e&lt;/a&gt;."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"&lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;POEditor projekte&lt;/a&gt; rasite pilną sąrašą."</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"Vertimai"</string>

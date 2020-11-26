@@ -165,9 +165,6 @@
     <string name="confirmation_authorize_now">"Du måste ge programmet tillåtelse att använda ditt OpenStreetMap-konto för att publicera dina svar. Vill du ge tillåtelse nu?"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"Denna version av StreetComplete är för gammal. Vänligen uppdatera!"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"För att söka efter uppdrag runt omkring dig automatiskt, slå på plats"</string>
 
     <!-- Fuzzy -->
@@ -284,9 +281,6 @@ Som nämnts kommunicerar appen direkt med OSM-Infrastruktur. Men innan du skicka
     <string name="crash_message">"Vill du skicka felrapporten till utvecklaren?"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"Åh nej, StreetComplete kraschade förra gången!"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"Skriv e-post"</string>
 
     <!-- Fuzzy -->
@@ -366,12 +360,6 @@ Som nämnts kommunicerar appen direkt med OSM-Infrastruktur. Men innan du skicka
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Delvis innebär att det inte finns mer än ett enda steg för att komma åt det."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"Se &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;hela listan på GitHub&lt;/a&gt;."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"Se &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;projekt på POEditor&lt;/a&gt; för en fullständig lista."</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"Översättningar"</string>
@@ -685,10 +673,6 @@ Dela den nu?"</string>
 
     <!-- Fuzzy -->
     <string name="letsgo">"Nu kör vi!"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="tutorial_happy_mapping">"Glad kartläggning!"</string>

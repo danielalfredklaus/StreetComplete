@@ -103,7 +103,6 @@
 
     <!-- Fuzzy -->
     <string name="confirmation_authorize_now">"Vous devez autoriser la publication de vos réponses avec votre compte d'utilisateur OSM. Autoriser maintenant ?"</string>
-    <string name="version_banned_message">"Cette version de StreetComplete est trop vielle. Veuillez la mettre à jour !"</string>
     <string name="no_gps_no_quests">"Pour rechercher automatiquement des quêtes autour de vous, activer la localisation"</string>
     <string name="nothing_more_to_download">"Pas d'autres quêtes disponibles"</string>
 
@@ -206,7 +205,6 @@ en:cement = fr:ciment = de:Zement -->
 
     <!-- Fuzzy -->
     <string name="crash_message">"Pourriez-vous envoyer le rapport d'erreur au développeur ?"</string>
-    <string name="crash_title">"Oh non, StreetComplete a planté la dernière fois !"</string>
     <string name="crash_compose_email">"Rédiger un courriel"</string>
     <string name="no_email_client">"Vous n'avez pas de client de messagerie installé."</string>
     <string name="pref_title_keep_screen_on">"Conserver l’écran allumé"</string>
@@ -274,12 +272,6 @@ en:cement = fr:ciment = de:Zement -->
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"\"En partie\" signifie qu'il n'y a qu'une seule marche pour y accéder."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"Voir la &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;liste complète sur GitHub&lt;/a&gt;."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"Voir le &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;projet sur POEditor&lt;/a&gt; pour la liste complète."</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"Traductions"</string>
@@ -593,10 +585,6 @@ Découper maintenant ?"</string>
 
     <!-- Fuzzy -->
     <string name="letsgo">"Allons-y !"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="tutorial_happy_mapping">"Bonne cartographie !"</string>

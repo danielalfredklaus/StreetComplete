@@ -165,9 +165,6 @@
     <string name="confirmation_authorize_now">"답변을 올리려면 OSM 계정으로 인증해야 합니다. 지금 인증하시겠습니까?"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"StreetComplete의 버전이 너무 오래되었습니다. 업데이트해 주세요!"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"주변에 있는 퀘스트를 자동으로 찾도록 하려면 위치 탐색을 켜세요"</string>
 
     <!-- Fuzzy -->
@@ -282,9 +279,6 @@ StreetComplete는 GPS 위치 정보를 다른 사람과 공유하지 않습니�
     <string name="crash_message">"오류 보고서를 개발자에게 보내 주실 수 있으신가요?"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"마지막에 StreetComplete에서 오류가 발생했습니다!"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"이메일 보내기"</string>
 
     <!-- Fuzzy -->
@@ -364,12 +358,6 @@ StreetComplete는 GPS 위치 정보를 다른 사람과 공유하지 않습니�
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"이곳에 접근할 때 계단 하나만 있다는 것을 (부분적으로) 의미합니다."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"Github에서 &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;전체 목록&lt;/a&gt;을 확인하세요."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"&lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;POEditor 프로젝트&lt;/a&gt;에 들어가서 전체 목록을 확인하세요."</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"번역"</string>

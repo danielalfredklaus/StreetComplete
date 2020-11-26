@@ -165,9 +165,6 @@
     <string name="confirmation_authorize_now">"需要验证您的 OpenStreetMap 用户帐号以便发布回答。现在要验证吗？"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"您正使用的 StreetComplete 版本过旧。请更新！"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"如果要自动寻找你附近的任务，请启用定位"</string>
 
     <!-- Fuzzy -->
@@ -284,9 +281,6 @@ OpenStreetMap 不接受匿名编辑，您需要登录您的 OpenStreetMap 帐号
     <string name="crash_message">"能否请您将错误报告发送给开发者？"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"糟糕，刚才 StreetComplete 程序崩溃了！"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"撰写电子邮件进行反馈"</string>
 
     <!-- Fuzzy -->
@@ -366,12 +360,6 @@ OpenStreetMap 不接受匿名编辑，您需要登录您的 OpenStreetMap 帐号
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"部分可通行，意味着可以在一个步骤内进入场所。"</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"在 &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;GitHub&lt;/a&gt; 上浏览完整列表。"</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"在 &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;POEditor 项目页&lt;/a&gt; 上浏览完整列表。"</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"翻译"</string>

@@ -395,7 +395,7 @@ Um eine Aufgabe zu lösen, tippe einfach eines der Symbol an und versuche die Fr
     <string name="quest_smoothness_very_horrible">Sehr schrecklich</string>
     <string name="quest_kerb_raised">Erhöht (> 3 cm)</string>
     <string name="quest_kerb_lowered">Leicht erhöht (~ 3 cm)</string>
-    <string name="quest_kerb_type_title">Welche Art von Bordstein existiert an diesem Fussgängerübergang?</string>
+    <string name="quest_kerb_type_title">Welche Art von Bordsteinen existiert an diesem Fussgängerübergang?</string>
     <string name="notifications">Benachrichtigungen</string>
     <string name="jump_to_current_location">Zum aktuellen Standort springen</string>
     <string name="back">Zurück</string>

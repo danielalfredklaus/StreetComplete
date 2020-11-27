@@ -27,8 +27,11 @@ import de.westnordost.osmapi.map.data.Way
 import ch.uzh.ifi.accesscomplete.data.elementfilter.ElementFilterExpression
 import ch.uzh.ifi.accesscomplete.data.elementfilter.toElementFilterExpression
 import ch.uzh.ifi.accesscomplete.quests.smoothness.AddPathSmoothness
+import ch.uzh.ifi.accesscomplete.quests.smoothness.AddPedestrianAccessibleStreetSmoothness
 import ch.uzh.ifi.accesscomplete.quests.surface.AddPathSurface
+import ch.uzh.ifi.accesscomplete.quests.surface.AddPedestrianAccessibleStreetSurface
 import ch.uzh.ifi.accesscomplete.quests.width.AddPathWidth
+import ch.uzh.ifi.accesscomplete.quests.width.AddPedestrianAccessibleStreetWidth
 
 /**
  * This abstract quest type can be used if quests should only appear on ways that are accessible to
@@ -110,7 +113,12 @@ abstract class AbstractPedestrianAccessibleWayFilterQuestType<T> : OsmElementQue
         // TODO sst: Remove after usability testing
         if (this is AddPathSurface || this is AddPathSmoothness || this is AddPathWidth) {
             return mapData.ways
-                .filter { it.id == 170265731L }
+                .filter { it.id == 39984121L }
+        } else if (this is AddPedestrianAccessibleStreetSmoothness
+            || this is AddPedestrianAccessibleStreetSurface
+            || this is AddPedestrianAccessibleStreetWidth) {
+            return mapData.ways
+                .filter { it.id == 12541930L }
         }
 
         val candidates = mapData.ways
@@ -156,7 +164,7 @@ abstract class AbstractPedestrianAccessibleWayFilterQuestType<T> : OsmElementQue
         }
 
         if (!supportTaggingBySidewalkSide()) {
-            return osmKeyAbsenceFilter.matches(element) && element.id == 170265731L // TODO sst: Remove later condition after usability testing
+            return osmKeyAbsenceFilter.matches(element) && (element.id == 39984121L || element.id == 12541930L)// TODO sst: Remove later condition after usability testing
         }
 
         return when {

@@ -25,6 +25,8 @@ import ch.uzh.ifi.accesscomplete.R
 import ch.uzh.ifi.accesscomplete.data.meta.updateWithCheckDate
 import ch.uzh.ifi.accesscomplete.data.osm.changes.StringMapChangesBuilder
 import ch.uzh.ifi.accesscomplete.data.osm.osmquest.OsmFilterQuestType
+import ch.uzh.ifi.osmapi.map.MapDataWithGeometry
+import de.westnordost.osmapi.map.data.Element
 
 class AddPedestrianAccessibleStreetIncline : OsmFilterQuestType<String>() {
 
@@ -42,6 +44,15 @@ class AddPedestrianAccessibleStreetIncline : OsmFilterQuestType<String>() {
         and (!incline or incline older today -8 years)
         and !highway
     """
+
+    // TODO sst: Remove after usability testing
+    override fun getApplicableElements(mapData: MapDataWithGeometry): Iterable<Element> {
+        return mapData.ways.filter { it.id == 12541930L }
+    }
+
+    // TODO sst: Remove after usability testing
+    override fun isApplicableTo(element: Element) = element.id == 12541930L
+
 
     override val commitMessage = "Add incline info"
     override val wikiLink = "Key:incline"

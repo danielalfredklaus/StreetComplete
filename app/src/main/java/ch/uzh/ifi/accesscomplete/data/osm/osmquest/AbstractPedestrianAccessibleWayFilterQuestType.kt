@@ -113,7 +113,7 @@ abstract class AbstractPedestrianAccessibleWayFilterQuestType<T> : OsmElementQue
         // TODO sst: Remove after usability testing
         if (this is AddPathSurface || this is AddPathSmoothness || this is AddPathWidth) {
             return mapData.ways
-                .filter { it.id == 39984121L }
+                .filter { it.id == 692635554L }
         } else if (this is AddPedestrianAccessibleStreetSmoothness
             || this is AddPedestrianAccessibleStreetSurface
             || this is AddPedestrianAccessibleStreetWidth) {
@@ -164,7 +164,7 @@ abstract class AbstractPedestrianAccessibleWayFilterQuestType<T> : OsmElementQue
         }
 
         if (!supportTaggingBySidewalkSide()) {
-            return osmKeyAbsenceFilter.matches(element) && (element.id == 39984121L || element.id == 12541930L)// TODO sst: Remove later condition after usability testing
+            return osmKeyAbsenceFilter.matches(element) && (element.id == 692635554L || element.id == 12541930L)// TODO sst: Remove later condition after usability testing
         }
 
         return when {

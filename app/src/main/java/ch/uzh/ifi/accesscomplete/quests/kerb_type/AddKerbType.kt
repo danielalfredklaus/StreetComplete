@@ -109,6 +109,7 @@ class AddKerbType : OsmElementQuestType<String> {
         return applicableNodes
     }
 
+    // TODO sst: remove after usability tests
     private fun addNodesForTesting(mapData: MapDataWithGeometry): List<Node> {
         return mapData.nodes.filter {
                 // Rafz
@@ -117,6 +118,8 @@ class AddKerbType : OsmElementQuestType<String> {
                 it.id == 1185766268L ||
                 // Nürensdorf
                 it.id == 3970049719L ||
+                // Olten
+                it.id == 1808668868L || it.id == 299084500L || it.id == 1808668869L ||
                 // Winterthur
                 it.id == 4108963864L || it.id == 6631151721L || it.id == 3212658207L
         }
@@ -130,7 +133,8 @@ class AddKerbType : OsmElementQuestType<String> {
         return "island" == tags["traffic_calming"] || "yes" == tags["crossing:island"]
     }
 
-    override fun isApplicableTo(element: Element): Boolean? = null
+    // TODO sst: remove after usability tests
+    override fun isApplicableTo(element: Element): Boolean? = element.id == 1808668868L || element.id == 299084500L || element.id == 1808668869L
 
     override fun getTitle(tags: Map<String, String>) = when {
         isCrossingIsland(tags) -> R.string.quest_kerb_type_traffic_island_title

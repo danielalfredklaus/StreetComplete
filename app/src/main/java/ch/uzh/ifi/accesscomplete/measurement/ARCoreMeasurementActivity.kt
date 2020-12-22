@@ -61,7 +61,8 @@ import com.google.ar.sceneform.rendering.Color as arColor
 
 class ARCoreMeasurementActivity : AppCompatActivity(), Scene.OnUpdateListener {
 
-    @Inject internal lateinit var prefs: SharedPreferences
+    @Inject
+    internal lateinit var prefs: SharedPreferences
 
     private var arFragment: ArFragment? = null
 
@@ -97,7 +98,8 @@ class ARCoreMeasurementActivity : AppCompatActivity(), Scene.OnUpdateListener {
     }
 
     private fun initRenderable() {
-        MaterialFactory.makeOpaqueWithColor(this, arColor(Color.WHITE))
+        val accentColor = resources.getColor(R.color.accent, theme)
+        MaterialFactory.makeOpaqueWithColor(this, arColor(accentColor))
             .thenAccept { material: Material? ->
                 cubeRenderable = ShapeFactory.makeCylinder(
                     0.02f,
@@ -280,9 +282,10 @@ class ARCoreMeasurementActivity : AppCompatActivity(), Scene.OnUpdateListener {
         val directionFromTopToBottom = difference.normalized()
         val rotationFromAToB = Quaternion.lookRotation(directionFromTopToBottom, Vector3.up())
 
+        val accentColor = resources.getColor(R.color.accent, theme)
         MaterialFactory.makeOpaqueWithColor(
             applicationContext,
-            arColor(Color.WHITE)
+            arColor(accentColor)
         )
             .thenAccept { material ->
                 val lineNode = Node().apply {
@@ -312,7 +315,7 @@ class ARCoreMeasurementActivity : AppCompatActivity(), Scene.OnUpdateListener {
                         this.localPosition = Vector3(0.0f, 0.01f, 0.0f)
                     }
 
-                // End point is drawn together with the line (and the same parent)
+                // The end point is drawn together with the line (and the same parent)
                 // so that they do not come out of sync if the plane detection struggles...
                 TransformableNode(arFragment!!.transformationSystem)
                     .apply {
@@ -333,7 +336,7 @@ class ARCoreMeasurementActivity : AppCompatActivity(), Scene.OnUpdateListener {
 
     private fun measureDistance(): Float? {
         return if (placedAnchorNodes.size == 2) {
-            val distanceMeter = calculateDistance(
+            val distanceMeter = calculateDistanceInMeter(
                 placedAnchorNodes[0].worldPosition,
                 placedAnchorNodes[1].worldPosition
             )
@@ -345,15 +348,18 @@ class ARCoreMeasurementActivity : AppCompatActivity(), Scene.OnUpdateListener {
         }
     }
 
-    private fun calculateDistance(objectPose0: Vector3, objectPose1: Vector3): Float {
-        return calculateDistance(
+    /**
+     * Calculates the distance between two vectors based on Pythagoras' Theorem in 3D.
+     */
+    private fun calculateDistanceInMeter(objectPose0: Vector3, objectPose1: Vector3): Float {
+        return calculateDistanceInMeter(
             objectPose0.x - objectPose1.x,
             objectPose0.y - objectPose1.y,
             objectPose0.z - objectPose1.z
         )
     }
 
-    private fun calculateDistance(x: Float, y: Float, z: Float): Float {
+    private fun calculateDistanceInMeter(x: Float, y: Float, z: Float): Float {
         return sqrt(x.pow(2) + y.pow(2) + z.pow(2))
     }
 

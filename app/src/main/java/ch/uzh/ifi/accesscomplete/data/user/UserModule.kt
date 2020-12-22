@@ -36,8 +36,10 @@ object UserModule {
     // TODO sst: URL must be changed to the adapted statistics backend if AccessComplete will
     //           ever be released.
     private const val STATISTICS_BACKEND_URL = "http://10.0.2.2:8100/get_statistics.php"
-    private const val BASE_OAUTH_URL = "https://www.openstreetmap.org/oauth/"
+
     private const val CONSUMER_KEY = "E3x6bMOG2IXq2s6QRVy6LvnGZk39hQ3e9XOqVXNf"
+    // TODO sst: Adjust OAuth registration details if AccessComplete will ever be released.
+    private const val BASE_OAUTH_URL = "https://www.openstreetmap.org/oauth/"
     private const val CONSUMER_SECRET = "x5zCowXIjav7nB2d0nAXFPdOJM7DfpdO5fz4mF5d"
     private const val CALLBACK_SCHEME = "accesscomplete"
     private const val CALLBACK_HOST = "oauth"

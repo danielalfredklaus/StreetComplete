@@ -47,7 +47,7 @@
             app:iconSrc="@drawable/location_dot_small" />
 
         <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/answers_counter_fragment"
+            android:id="@+id/answersCounterFragment"
             android:name="ch.uzh.ifi.accesscomplete.controls.AnswersCounterFragment"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

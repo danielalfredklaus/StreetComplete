@@ -165,9 +165,6 @@
     <string name="confirmation_authorize_now">"Zure OSM erabiltzaile-kontua baimendu behar duzu zure erantzunak argitaratzeko. Baimendu orain?"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"StreetComplete aplikazioaren bertsio hau zaharkitua dago. Eguneratu, mesedez!"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"Inguruko erronkak automatikoki bilatzeko, gaitu kokapena"</string>
 
     <!-- Fuzzy -->
@@ -284,9 +281,6 @@ Hala ere, zure aldaketak igo aurretik, aplikazioak nire zerbitzariko &lt;a href=
     <string name="crash_message">"Errore-txostena bidali nahi diozu garatzaileari?"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"StreetComplete aurrekoan kraskatu da!"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"Idatzi e-maila"</string>
 
     <!-- Fuzzy -->
@@ -366,12 +360,6 @@ Hala ere, zure aldaketak igo aurretik, aplikazioak nire zerbitzariko &lt;a href=
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Partzialak esan nahi du ez dagoela eskailera-urrats bat baino gehiago sartzeko."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"Ikusi &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;zerrenda osoa GitHub-en&lt;/a&gt;"</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"Ikusi &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;proiektua POEditor-en&lt;/a&gt; zerrenda osorako."</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"Itzulpenak"</string>

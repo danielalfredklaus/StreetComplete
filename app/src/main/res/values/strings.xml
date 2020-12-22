@@ -36,7 +36,7 @@
     <string name="tutorial_welcome_to_accesscomplete">Welcome to AccessComplete</string>
     <string name="tutorial_intro">"This app makes it easy to contribute accessibility information to OpenStreetMap, the free wiki world map.
 
-Thanks to your help, the creation of barrier-free routes for wheelchair users can be improved for example."</string>
+Among other things, the data you collect will help navigation apps to suggest accessible routes for wheelchair users."</string>
     <string name="tutorial_quests">"AccessComplete automatically looks for missing information in your vicinity and creates small quests that you can solve whenever you are nearby."</string>
     <string name="tutorial_solving_quests">"For every available quest, a pin will be displayed on your map. They will look just like the ones above.
 
@@ -108,7 +108,6 @@ To solve a quest, just tap on the pin and try to answer the question."</string>
     <string name="about_summary_license">"GNU General Public License"</string>
     <string name="offline">"You are offline"</string>
     <string name="confirmation_authorize_now">"You need to authorize with your OSM user account to publish your answers. Authorize now?"</string>
-    <string name="version_banned_message">"This version of StreetComplete is too old. Please update!"</string>
     <string name="no_gps_no_quests">"To scan for quests around you automatically, turn on location"</string>
     <string name="nothing_more_to_download">"No further quests available"</string>
     <string name="later">"Later"</string>
@@ -174,8 +173,8 @@ However, before uploading your changes, the app checks with a &lt;a href=\"https
     <string name="quest_sidewalk_title">"Does this street have a sidewalk?"</string>
     <string name="quest_streetLanes_title">"How many lanes does this road have?"</string>
     <string name="quest_address_title">"What is the house number of this building?"</string>
+    <string name="crash_title">"Oh no, AccessComplete crashed last time!"</string>
     <string name="crash_message">"Would you please send the error report to the developer?"</string>
-    <string name="crash_title">"Oh no, StreetComplete crashed last time!"</string>
     <string name="crash_compose_email">"Compose email"</string>
     <string name="no_email_client">"You have no email client installed."</string>
     <string name="pref_title_keep_screen_on">"Keep screen on"</string>
@@ -211,8 +210,6 @@ However, before uploading your changes, the app checks with a &lt;a href=\"https
     <string name="quest_wheelchairAccess_limited_description_public_transport">Partially means that there is no more than a single step to access it.</string>
     <string name="quest_wheelchairAccess_description_toilets">"A wheelchair sign like this might be visible if the restroom is accessible.
 Partially means that a wheelchair can enter and use the restroom, but no handrail or adapted hand basin is present."</string>
-    <string name="credits_contributors">"See the &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;complete list on GitHub&lt;/a&gt;."</string>
-    <string name="credits_translations">"See the &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;project on POEditor&lt;/a&gt; for a complete list."</string>
     <string name="credits_translations_title">Translations</string>
     <string name="credits_contributors_title">Code contributors</string>
     <string name="credits_art_contributors_title">Art contributors</string>
@@ -422,12 +419,13 @@ Partially means that a wheelchair can enter and use the restroom, but no handrai
     <string name="unit_cm">cm</string>
     <string name="unit_centimeters">centimeters</string>
     <string name="value">Value</string>
+    <string name="version_banned_message">"This version of AccessComplete is too old. Please update!"</string>
 
     <string name="camera_permission_warning">"You need to grant this app the camera permission in order to take a picture."</string>
     <string name="instructions_image_content_description">"An image that illustrates the measurement process visually."</string>
 
     <string name="arcore_initial_instructions_title">"How to measure?"</string>
-    <string name="arcore_initial_instructions">"Slowly move the camera to discover the surfaces and objects around you. Once an area was scanned successfully, you will see a cloud of points on the surfaces.
+    <string name="arcore_initial_instructions">"Slowly move the camera or yourself to discover the surfaces and objects around you. Once a surface was scanned successfully, a point cloud will briefly appear on it.
 
 Afterwards, fixate two points in the environment with a simple tap on the screen to measure a distance."</string>
     <string name="arcore_additional_instructions_title">"What to measure?"</string>
@@ -440,22 +438,23 @@ Afterwards, fixate two points in the environment with a simple tap on the screen
 
     <string name="answer_sidewalk_is_mapped_separately">Sidewalk is displayed separately on map</string>
 
-    <string name="incline_view_content_description">"Current incline according to the device's sensors: %s %%. Tap to lock the measurement."</string>
+    <string name="incline_view_content_description">"Current slope according to the device's sensors: %s %%. Tap to lock the measurement."</string>
     <string name="incline_view_measurement_locked_announcement">"Measurement locked to %s %%."</string>
     <string name="incline_view_measurement_unlocked_announcement">"Measurement unlocked. Current value is %s %%."</string>
 
-    <string name="quest_incline_path_title">"What's the maximum incline of this path?"</string>
-    <string name="quest_incline_street_title">"What's the maximum incline of this piece of road?"</string>
-    <string name="quest_incline_street_name_title">What\'s the maximum incline of the road %s in this segment?</string>
+    <string name="quest_incline_path_title">"What's the maximum slope of this path?"</string>
+    <string name="quest_incline_street_title">"What's the maximum slope of this piece of road?"</string>
+    <string name="quest_incline_street_name_title">What\'s the maximum slope of the road %s in this segment?</string>
     <string name="quest_incline_device_instructions_step_1">Find the steepest section.\n</string>
     <string name="quest_incline_device_instructions_step_2">Orient yourself on the street according to the arrows displayed on the map.\n</string>
     <string name="quest_incline_device_instructions_step_3">Place your phone flat on the floor with the screen facing upwards.\n</string>
-    <string name="quest_incline_device_instructions_step_4">Lock/unlock the measurement by taping on it.</string>
+    <string name="quest_incline_device_instructions_step_4">Lock/unlock the measurement tool by tapping on it.</string>
     <string name="quest_incline_manual_instructions_step_1">Find the steepest section.\n</string>
     <string name="quest_incline_manual_instructions_step_2">Orient yourself on the street according to the arrows displayed on the map.\n</string>
     <string name="quest_incline_manual_instructions_step_3">Measure the slope with a (digital) level and enter the value below.</string>
-    <string name="quest_incline_no_incline_here">No noticeable incline</string>
-    <string name="quest_incline_implausible_value_message">An incline of %1$d %% seems very implausible for a street. Please try to measure again or leave a note instead.</string>
+    <string name="quest_incline_no_incline_here">No noticeable slope</string>
+    <string name="quest_incline_implausible_value_message">A slope of %1$d %% seems very implausible for a street. Please try to measure again or leave a note instead.</string>
+    <string name="quest_incline_confirm_direction_message">Are you sure that you measured the slope in the correct direction?</string>
 
     <string name="quest_kerb_type_title">"What kind of curb exists at this point of the pedestrian crossing?"</string>
     <string name="quest_kerb_type_traffic_island_title">"What kind of curb does this traffic island have?"</string>
@@ -477,14 +476,15 @@ Afterwards, fixate two points in the environment with a simple tap on the screen
     <string name="quest_smoothness_street_name_sidewalk_title">"How is the smoothness of the highlighted sidewalk of the road %s best described (dotted line)?"</string>
     <string name="quest_smoothness_area_title">"How is the smoothness of this square best described?"</string>
     <string name="quest_smoothness_area_name_title">"How is the smoothness on the square %s best described?"</string>
-    <string name="quest_smoothness_impassable">Impassable</string>
-    <string name="quest_smoothness_very_horrible">Very horrible</string>
-    <string name="quest_smoothness_horrible">Horrible</string>
-    <string name="quest_smoothness_very_bad">Very bad</string>
-    <string name="quest_smoothness_bad">Bad</string>
-    <string name="quest_smoothness_intermediate">Intermediate</string>
-    <string name="quest_smoothness_good">Good</string>
-    <string name="quest_smoothness_excellent">Excellent</string>
+    <string name="quest_smoothness_value_relates_to_wheeled_vehicles">The answer refers to the fact whether the surface allows the usage of certain types of wheeled vehicles (without considering the available width).</string>
+    <string name="quest_smoothness_impassable">No wheeled vehicles</string>
+    <string name="quest_smoothness_very_horrible">Specialized Off Road Wheels</string>
+    <string name="quest_smoothness_horrible">Off Road Wheels</string>
+    <string name="quest_smoothness_very_bad">High Clearance</string>
+    <string name="quest_smoothness_bad">Robust Wheels</string>
+    <string name="quest_smoothness_intermediate">Wheels</string>
+    <string name="quest_smoothness_good">Thin Wheels</string>
+    <string name="quest_smoothness_excellent">Thin Rollers</string>
     <string name="quest_smoothness_impassable_description">Not suitable for any wheeled vehicle</string>
     <string name="quest_smoothness_very_horrible_description">Suitable for tractors, ATVs, mountain bikes and all kind of off-highway vehicles</string>
     <string name="quest_smoothness_horrible_description">Suitable for heavy-duty off-road vehicles and all below</string>
@@ -501,9 +501,8 @@ Afterwards, fixate two points in the environment with a simple tap on the screen
     <string name="quest_width_street_sidewalk_title">"What's the minimum width of the highlighted sidewalk (dotted line)?"</string>
     <string name="quest_width_street_name_title">"What's the minimum width of the road %s in this segment?"</string>
     <string name="quest_width_street_name_sidewalk_title">"What's the minimum width of the highlighted sidewalk of the road %s (dotted line)?"</string>
-    <string name="quest_width_measurement_instructions">Please measure the width of the sidewalk at its narrowest section. Also consider permanent objects such as trash cans or street lights when you determine the narrowest point.</string>
+    <string name="quest_width_measurement_instructions">Please measure the width at the narrowest section (incl. curbs). Also consider permanent objects such as trash cans or street lights when you determine the narrowest point.</string>
     <string name="quest_width_implausible_value_sidewalk_message">A width of %1$s cm seems very implausible for a sidewalk. Please try to measure again or leave a note instead.</string>
     <string name="quest_width_implausible_value_street_message">A width of %1$s cm is very implausible for a street like this. Please try to measure again or leave a note instead.</string>
-    <string name="quest_smoothness_value_relates_to_wheeled_vehicles">The answer refers to the fact whether the surface allows the usage of certain types of wheeled vehicles (without considering the available width).</string>
 
 </resources>

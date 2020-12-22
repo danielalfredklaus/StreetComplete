@@ -149,9 +149,6 @@
     <string name="confirmation_authorize_now">"Musisz się zalogować do swojego konta w OSM, aby wysyłać odpowiedzi. Zalogować się teraz?"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"Ta wersja StreetComplete nie może już wysyłać odpowiedzi! Zaktualizuj wersję aplikacji."</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"Aby automatycznie szukać zadań wokół ciebie, włącz lokalizacje."</string>
 
     <!-- Fuzzy -->
@@ -270,9 +267,6 @@ Niemniej przed każdym wysłaniem zmian aplikacja sprawdza &lt;a href=\"https://
     <string name="crash_message">"Wysłać raport błędu do programistów?"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"O nie, ostatnie użycie StreetComplete zakończyło się błędem!"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"Napisz maila"</string>
 
     <!-- Fuzzy -->
@@ -354,10 +348,6 @@ Niemniej przed każdym wysłaniem zmian aplikacja sprawdza &lt;a href=\"https://
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Częściowo oznacza, że trzeba pokonać co najwyżej jeden stopień, aby wejść."</string>
 
     <!-- Fuzzy -->
-    <string name="credits_contributors">"Zobacz &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;pełną listę na GitHubie&lt;/a&gt;."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"Zobacz pełną listę w &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;projekcie na POEditor&lt;/a&gt;"</string>
     <string name="credits_translations_title">"Tłumaczenia"</string>
 
     <!-- Fuzzy -->

@@ -149,9 +149,6 @@
     <string name="confirmation_authorize_now">"Du må gi programmet tillatelse til å bruke OpenStreetMap-kontoen din for å kunne sende inn endringene dine. Vil du gi tillatelse nå?"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"Denne versjonen av StreetComplete er utdatert. Vennligst oppdater!"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"Skru på posisjonsdeling for å automatisk lete etter oppdrag i nærheten av deg"</string>
 
     <!-- Fuzzy -->
@@ -272,9 +269,6 @@ Men før appen laster opp endringen dine sjekker den via &lt;a href=\"https://ww
     <string name="crash_message">"Kan du vennligst sende feilrapporten til utvikleren?"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"Å nei, StreetComplete krasjet sist gang!"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"Skriv e-post"</string>
 
     <!-- Fuzzy -->
@@ -354,12 +348,6 @@ Men før appen laster opp endringen dine sjekker den via &lt;a href=\"https://ww
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Delvis betyr at det ikke er mer enn ett trappetrinn inn til stedet."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"Se &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;fullstendig oversikt på GitHub&lt;/a&gt;."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"Se på  &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;prosjektet på POEditor&lt;/a&gt; for en komplett liste."</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"Oversettelser"</string>

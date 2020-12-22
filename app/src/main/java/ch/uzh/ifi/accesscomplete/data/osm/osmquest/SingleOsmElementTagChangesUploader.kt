@@ -55,8 +55,7 @@ class SingleOsmElementTagChangesUploader @Inject constructor(private val mapData
                 if (element.version < 0)
                     throw OsmConflictException(HTTP_CONFLICT, "Conflict", "Invalid element version")
 
-                // TODO sst: Prevent real uploads during tests. Uncomment again...
-                // mapDataApi.uploadChanges(changesetId, setOf(elementWithChangesApplied), handler)
+                mapDataApi.uploadChanges(changesetId, setOf(elementWithChangesApplied), handler)
 
             } catch (e: OsmConflictException) {
                 if (handlingConflict) {
@@ -67,9 +66,7 @@ class SingleOsmElementTagChangesUploader @Inject constructor(private val mapData
                 // try again (go back to beginning of loop)
                 continue
             }
-            // TODO sst: Prevent real uploads during tests. Use correct return statement again...
-            return element
-            //return handler.getElementUpdates(listOf(elementWithChangesApplied)).updated.single()
+            return handler.getElementUpdates(listOf(elementWithChangesApplied)).updated.single()
         }
     }
 

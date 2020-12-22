@@ -74,7 +74,6 @@
     <string name="about_summary_license">"GNU General Public License"</string>
     <string name="offline">"Du bist offline"</string>
     <string name="confirmation_authorize_now">"Du musst dich mit deinem OSM-Konto autorisieren, um deine Antworten zu veröffentlichen. Jetzt autorisieren?"</string>
-    <string name="version_banned_message">"Diese Version von StreetComplete ist zu alt. Bitte aktualisiere deine Version!"</string>
     <string name="no_gps_no_quests">"Um automatisch nach Aufgaben in deiner Nähe zu suchen, schalte Standort an"</string>
     <string name="nothing_more_to_download">"Keine weiteren Aufgaben verfügbar"</string>
     <string name="later">"Später"</string>
@@ -126,8 +125,8 @@ Wie schon gesagt, die App kommuniziert direkt mit der OSM-Infrastruktur. Bevor d
     <string name="quest_sidewalk_title">"Hat diese Straße einen Bürgersteig?"</string>
     <string name="quest_streetLanes_title">"Wie viele Fahrspuren hat diese Straße?"</string>
     <string name="quest_address_title">"Welche Hausnummer hat dieses Gebäude?"</string>
+    <string name="crash_title">"Oh nein, AccessComplete ist letztes Mal abgestürzt!"</string>
     <string name="crash_message">"Würdest du dem Entwickler bitte den Fehlerbericht senden?"</string>
-    <string name="crash_title">"Oh nein, StreetComplete ist letztes Mal abgestürzt!"</string>
     <string name="crash_compose_email">"E-Mail verfassen"</string>
     <string name="no_email_client">"Du hast keine E-Mail-App installiert."</string>
     <string name="pref_title_keep_screen_on">"Bildschirm immer an"</string>
@@ -135,6 +134,7 @@ Wie schon gesagt, die App kommuniziert direkt mit der OSM-Infrastruktur. Bevor d
     <string name="upload_server_error">"Fehler beim Hochladen der Antworten. Versuche es später noch einmal."</string>
     <string name="quest_generic_hasFeature_yes">"Ja"</string>
     <string name="quest_generic_hasFeature_no">"Nein"</string>
+    <string name="version_banned_message">"Diese Version von AccessComplete ist zu alt. Bitte aktualisiere deine Version!"</string>
     <string name="quest_select_hint">"Wähle:"</string>
     <string name="quest_tactilePaving_title_bus">"Hat diese Bushaltestelle eine spezielle Pflasterung für Blinde?"</string>
     <string name="quest_tactilePaving_title_crosswalk">"Hat dieser Überweg eine spezielle Pflasterung für Blinde auf beiden Seiten?"</string>
@@ -155,8 +155,6 @@ Wie schon gesagt, die App kommuniziert direkt mit der OSM-Infrastruktur. Bevor d
     <string name="quest_wheelchairAccess_location_name_title">"Ist der Ort %s zugänglich für Rollstühle?"</string>
     <string name="quest_wheelchairAccess_limited_description_business">"Teilweise bedeutet, dass es nicht mehr als eine Stufe zu überwinden gilt, um das Gebäude zu betreten und die meisten Räume darin zugänglich für Rollstühle sind."</string>
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Teilweise bedeutet, dass es nicht mehr als eine Stufe zu überwinden gilt."</string>
-    <string name="credits_contributors">"Siehe die &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;komplette Liste auf GitHub&lt;/a&gt;."</string>
-    <string name="credits_translations">"Für eine vollständige Liste, siehe das &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;Projekt auf POEditor&lt;/a&gt;."</string>
     <string name="credits_translations_title">"Übersetzungen"</string>
     <string name="credits_contributors_title">"Programmierbeiträge"</string>
     <string name="credits_author_title">"Hauptentwickler"</string>
@@ -270,9 +268,9 @@ Jetzt aufspalten?"</string>
     <string name="next">"Weiter"</string>
     <string name="letsgo">"Auf geht's!"</string>
     <string name="tutorial_welcome_to_accesscomplete">Willkommen zu AccessComplete</string>
-    <string name="tutorial_intro">"Diese App macht es einfach, Informationen zur Barrierefreiheit eines Ortes in OpenStreetMap, der Wiki-Weltkarte, beizutragen.
+    <string name="tutorial_intro">"Diese App macht es einfach, Informationen zur Barrierefreiheit von Fussgängerwegen in der frei verfügbaren Wiki-Weltkarte OpenStreetMap beizutragen.
 
-Dank deiner Hilfe kann damit zum Beispiel das Erstellen barrierefreierer Routen für Rollstuhlfahrer verbessert werden."</string>
+Die Daten, die du mit dieser App sammelst, können unter anderem dabei helfen, das Navigations-Apps hindernisfreie Routen für Rollstuhlfahrer erstellen können."</string>
     <string name="tutorial_quests">"AccessComplete sucht automatisch nach fehlenden Daten und erstellt kleine Aufgaben, die Du lösen kannst, wenn du gerade in der Nähe bist."</string>
     <string name="tutorial_solving_quests">"Jede verfügbare Aufgabe wird mit einem Symbol auf deiner Karte angezeigt. Diese Symbole sehen genauso aus wie die obigen.
 
@@ -388,16 +386,16 @@ Um eine Aufgabe zu lösen, tippe einfach eines der Symbol an und versuche die Fr
     <string name="unit_cm">cm</string>
     <string name="value">Wert</string>
     <string name="quest_smoothness_impassable">Unpassierbar</string>
-    <string name="quest_smoothness_intermediate">Mittel</string>
-    <string name="quest_smoothness_good">Gut</string>
-    <string name="quest_smoothness_excellent">Exzellent</string>
-    <string name="quest_smoothness_bad">Schlecht</string>
-    <string name="quest_smoothness_very_bad">Sehr schlecht</string>
-    <string name="quest_smoothness_horrible">Schrecklich</string>
-    <string name="quest_smoothness_very_horrible">Sehr schrecklich</string>
+    <string name="quest_smoothness_intermediate">Räder</string>
+    <string name="quest_smoothness_good">Dünne Räder</string>
+    <string name="quest_smoothness_excellent">Dünne Rollen</string>
+    <string name="quest_smoothness_bad">Robuste Räder</string>
+    <string name="quest_smoothness_very_bad">Hohe Bodenfreiheit</string>
+    <string name="quest_smoothness_horrible">Off-Road-Räder</string>
+    <string name="quest_smoothness_very_horrible">Spezielle Offroad-Räder</string>
     <string name="quest_kerb_raised">Erhöht (> 3 cm)</string>
     <string name="quest_kerb_lowered">Leicht erhöht (~ 3 cm)</string>
-    <string name="quest_kerb_type_title">Welche Art von Bordstein existiert an diesem Fussgängerübergang?</string>
+    <string name="quest_kerb_type_title">Welche Art von Bordsteinkanten existiert an diesem Punkt des Fussgängerübergangs?</string>
     <string name="notifications">Benachrichtigungen</string>
     <string name="jump_to_current_location">Zum aktuellen Standort springen</string>
     <string name="back">Zurück</string>
@@ -409,22 +407,22 @@ Um eine Aufgabe zu lösen, tippe einfach eines der Symbol an und versuche die Fr
     <string name="instructions_image_content_description">Ein Bild, welches den Messvorgang visualisiert.</string>
     <string name="arcore_initial_instructions_title">Wie messen?</string>
     <string name="arcore_additional_instructions_title">Was messen?</string>
-    <string name="upward_slope">Steigung aufwärts</string>
-    <string name="downward_slope">Steigung abwärts</string>
+    <string name="upward_slope">Aufwärts</string>
+    <string name="downward_slope">Abwärts</string>
     <string name="quest_leave_not">Eine Notiz hinterlassen</string>
-    <string name="arcore_initial_instructions">"Bewege die Kamera langsam, um Oberflächen und Objekte um dich herum zu entdecken. Sobald ein Bereich erfolgreich gescannt wurde, erscheint kurzzeitig eine Punktwolke auf den Oberflächen.
+    <string name="arcore_initial_instructions">"Bewege die Kamera oder dich selber langsam, um Oberflächen und Objekte um dich herum zu entdecken. Sobald eine Oberfläche erfolgreich gescannt wurde, erscheint auf dieser kurzzeitig eine Punktwolke.
 
 Fixiere anschließend zwei Punkte mit einem einfachen Tippen auf den Bildschirm, um eine Entfernung zu messen."</string>
     <string name="quest_kerb_flush">Eben (~ 0cm)</string>
     <string name="quest_kerb_raised_description">Hohe Bordsteinkante, die Fahrräder und Rollstuhlfahrer beim Überqueren behindert.</string>
     <string name="quest_kerb_lowered_description">Die Bordsteinkante ist abgesenkt oder nur wenig erhöht.</string>
-    <string name="quest_smoothness_impassable_description">Für kein Fahrzeug mit Rädern geeignet</string>
+    <string name="quest_smoothness_impassable_description">Keine Fahrzeug mit Rädern geeignet</string>
     <string name="quest_width_implausible_value_sidewalk_message">Eine Breite von %1$s cm erscheint sehr unplausibel für einen Bürgersteig. Bitte wiederhole die Messung oder hinterlasse eine Notiz.</string>
     <string name="quest_width_implausible_value_street_message">Eine Breite von %1$s cm erscheint sehr unplausibel für eine solche Straße. Bitte wiederhole die Messung oder hinterlasse eine Notiz.</string>
     <string name="quest_kerb_type_no_kerb">Kein Bordstein vorhanden</string>
     <string name="quest_kerb_type_traffic_island_title">Welche Art von Bordsteinkanten gibt es an dieser Fussgängerinsel?</string>
-    <string name="quest_incline_implausible_value_message">Ein Anstieg von %1$d %% erschein sehr unplausibel für eine Straße. Bitte wiederhole die Messung oder hinterlasse eine Notiz.</string>
-    <string name="quest_incline_no_incline_here">Kein bemerkbarer Anstieg vorhanden</string>
+    <string name="quest_incline_implausible_value_message">Eine Neigung von %1$d %% erscheint sehr unplausibel für eine Straße. Bitte wiederhole die Messung oder hinterlasse eine Notiz.</string>
+    <string name="quest_incline_no_incline_here">Keine Neigung vorhanden</string>
     <string name="quest_smoothness_path_title">Wie lässt sich die Oberflächenbeschaffenheit dieses Wegs am besten beschreiben?</string>
     <string name="quest_smoothness_footway_part_title">Wie lässt sich die Oberflächenbeschaffenheit des Fussgängerwegs am besten beschreiben?</string>
     <string name="quest_smoothness_street_title">Wie lässt sich die Oberflächenbeschaffenheit dieses Straßenabschnitt am besten beschreiben?</string>
@@ -434,17 +432,17 @@ Fixiere anschließend zwei Punkte mit einem einfachen Tippen auf den Bildschirm,
     <string name="quest_smoothness_area_title">Wie lässt sich die Oberflächenbeschaffenheit dieses Platzes am besten beschreiben?</string>
     <string name="quest_smoothness_area_name_title">Wie lässt sich die Oberflächenbeschaffenheit des Platzes %s am besten beschreiben?</string>
     <string name="answer_sidewalk_is_mapped_separately">Bürgersteig ist auf Karte separat abgebildet</string>
-    <string name="quest_incline_path_title">Was ist die maximale Steigung dieses Wegs?</string>
-    <string name="quest_incline_street_title">Was ist die maximale Steigung dieses Straßenabschnitts?</string>
-    <string name="quest_incline_street_name_title">Was ist die maximale Steigung der Straße %s in diesem Abschnitt?</string>
+    <string name="quest_incline_path_title">Was ist die maximale Neigung dieses Wegs?</string>
+    <string name="quest_incline_street_title">Was ist die maximale Neigung dieses Straßenabschnitts?</string>
+    <string name="quest_incline_street_name_title">Was ist die maximale Neigung der Straße %s in diesem Abschnitt?</string>
     <string name="quest_incline_device_instructions_step_1">Finde den steilsten Abschnitt.\n</string>
     <string name="quest_incline_device_instructions_step_2">Orientiere dich in die gleiche Richtung wie die Pfeile auf der Karte.\n</string>
     <string name="quest_incline_device_instructions_step_3">Lege dein Smartphone flach auf den Boden mit dem Bildschirm nach oben zeigend.\n</string>
-    <string name="quest_incline_device_instructions_step_4">Sperre/entsperre die Messung mit einer einfachen Berührung.</string>
+    <string name="quest_incline_device_instructions_step_4">Sperre/entsperre das Messinstrument mit einer einfachen Berührung.</string>
     <string name="quest_incline_manual_instructions_step_1">Finde den steilsten Abschnitt.\n</string>
     <string name="quest_incline_manual_instructions_step_2">Orientiere dich in die gleiche Richtung wie die Pfeile auf der Karte.\n</string>
     <string name="quest_incline_manual_instructions_step_3">Miss den Anstieg mit einer (digitalen) Waage und gib den unten Wert ein.\n</string>
-    <string name="quest_width_measurement_instructions">Bitte miss die Breite an der schmalsten Stelle. Ziehe dabei auch unbewegliche Objekte wie Abfalleimer oder Strassenlaternen in Betracht.</string>
+    <string name="quest_width_measurement_instructions">Bitte miss die Breite an der schmalsten Stelle (inkl. Bordstein). Ziehe dabei auch unbewegliche Objekte wie Abfalleimer oder Strassenlaternen in Betracht.</string>
     <string name="quest_width_path_title">Was ist die minimale Breite dieses Wege?</string>
     <string name="quest_width_street_name_title">Was ist die minimale Breite der Straße %s in diesem Abschnitt?</string>
     <string name="quest_width_cycleway_part_title">Was ist die minimale Breite dieses Fahrradwegs?</string>
@@ -476,7 +474,7 @@ Fixiere anschließend zwei Punkte mit einem einfachen Tippen auf den Bildschirm,
     <string name="unit_centimeters">Centimeter</string>
     <string name="skip">Überspringen</string>
     <string name="total_quests_solved">Anzahl gelöster Aufgaben: %d</string>
-    <string name="incline_view_content_description">Aktuelle Steigung gemäss den Sensoren des Gerätes: %s %%. Antippen um die Messung zu fixieren.</string>
+    <string name="incline_view_content_description">Aktuelle Neigung gemäss den Sensoren des Gerätes: %s %%. Antippen um die Messung zu fixieren.</string>
     <string name="incline_view_measurement_locked_announcement">Messung fixiert auf %s %%.</string>
     <string name="incline_view_measurement_unlocked_announcement">Messung gelöst. Der aktuelle Wert beträgt %s %%.</string>
     <string name="quest_kerb_select_previous_kerb_type">Vorherigen Bordsteintyp auswählen</string>

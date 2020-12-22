@@ -141,9 +141,6 @@
     <string name="confirmation_authorize_now">"Kirjautuminen OSM-käyttäjätiliin vaaditaan jotta voit lisätä vastauksiasi. Kirjaudutaanko nyt?"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"StreetComplete-versio on vanhentunut. Päivitä sovellus!"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"Kohteiden automaattiseen hakuun vaaditaan sijaintipalvelut"</string>
 
     <!-- Fuzzy -->
@@ -234,7 +231,6 @@ Kuten mainittu, sovellus on suoraan yhteydessä OSM järjestelmään. Joka tapau
     <string name="crash_message">"Lähettäisitkö virheraportin kehittäjälle?"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"Oho, StreetComplete kaatui viime kerralla!"</string>
     <string name="crash_compose_email">"Kirjoita sähköposti"</string>
 
     <!-- Fuzzy -->
@@ -308,10 +304,6 @@ Kuten mainittu, sovellus on suoraan yhteydessä OSM järjestelmään. Joka tapau
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Osittain tarkoittaa että paikassa on vain yksi askelma päästäksesi sisälle."</string>
 
     <!-- Fuzzy -->
-    <string name="credits_contributors">"Katso &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;täydellinen lista GitHub:issa&lt;/a&gt;."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"Katso &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;projekti POEditorissa&lt;/a&gt; nähdäksesi listan kokonaisuudessaan."</string>
     <string name="credits_translations_title">"Käännökset"</string>
 
     <!-- Fuzzy -->

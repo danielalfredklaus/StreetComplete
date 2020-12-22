@@ -165,9 +165,6 @@
     <string name="confirmation_authorize_now">"Pa espublizar les rempuestes has d'aniciar sesión cola to cuenta d'usuariu d'OSM. ¿Quies facelo agora?"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"Esta versión de StreetComplete ye bien antigua. ¡Anuévala!"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"Pa buscar xeres cercanes de manera automática, activa l'allugamientu"</string>
 
     <!-- Fuzzy -->
@@ -284,9 +281,6 @@ Sicasí, primero de facer cualesquier cambéu l'aplicación comprueba si la vers
     <string name="crash_message">"¿Quedríes unviar l'informe d'error al desendolcador?"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"¡Meca, StreetComplete colgóse la última vez!"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"Escribir un corréu electrónicu"</string>
 
     <!-- Fuzzy -->
@@ -366,12 +360,6 @@ Sicasí, primero de facer cualesquier cambéu l'aplicación comprueba si la vers
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Parcialmente significa que nun hai más d'un pasu en tol percorríu."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"Ver la &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;llista completa en GitHub&lt;/a&gt;."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"Ver el &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;proyeutu en POEditor&lt;/a&gt; pa la llista completa."</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"Traducciones"</string>

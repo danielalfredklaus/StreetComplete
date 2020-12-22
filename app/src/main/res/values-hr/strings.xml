@@ -97,7 +97,6 @@
 
     <!-- Fuzzy -->
     <string name="confirmation_authorize_now">"Morate se prijaviti sa svojim OSM korisničkim računom kako bi objavili svoje odgovor. Autorizirati sada?"</string>
-    <string name="version_banned_message">"Ova verzija StreetCompletea je prestara. Molimo ažurirajte je!"</string>
 
     <!-- Fuzzy -->
     <string name="no_gps_no_quests">"Da biste automatski tražili zadatke oko sebe, uključite lokaciju"</string>
@@ -177,7 +176,6 @@ Međutim, prije slanja promjena, aplikacija provjerava &lt;a href=\"https://www.
 
     <!-- Fuzzy -->
     <string name="crash_message">"Molim, pošaljite izvješće o pogrešci programerima"</string>
-    <string name="crash_title">"O ne, StreetComplete se srušio prošli put!"</string>
 
     <!-- Fuzzy -->
     <string name="crash_compose_email">"Napišite e-poštu"</string>
@@ -223,8 +221,6 @@ Međutim, prije slanja promjena, aplikacija provjerava &lt;a href=\"https://www.
     <string name="quest_wheelchairAccess_limited_description_public_transport">"\"Djelomično\" znači da nema više od jedne stepenice za pristup."</string>
 
     <!-- Fuzzy -->
-    <string name="credits_contributors">"Pogledajte &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;cjelovit popis na GitHubu&lt;/a&gt;."</string>
-    <string name="credits_translations">"Cjelovit popis potražite u &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt; projektu na POEditoru&lt;/a&gt;."</string>
     <string name="credits_translations_title">"Prijevodi"</string>
     <string name="credits_contributors_title">"Suradnici koda"</string>
     <string name="credits_author_title">"Autor i održavatelj"</string>

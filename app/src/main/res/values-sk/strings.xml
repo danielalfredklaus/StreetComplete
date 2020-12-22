@@ -165,9 +165,6 @@
     <string name="confirmation_authorize_now">"Aby sa aplikovali vaše odpovede, je treba autorizovať sa OSM účtom. Autorizovať teraz?"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"Táto verzia StreetComplete je príliš stará. Prosím aktualizujte aplikáciu!"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"Zapnite lokalizáciu, ak chcete hľadať úlohy okolo vás"</string>
 
     <!-- Fuzzy -->
@@ -284,9 +281,6 @@ Ako už bolo spomenuté, aplikácia priamo komunikuje s OSM infraštruktúrou. P
     <string name="crash_message">"Mohli byste, prosím, zaslať vývojárovi hlásenie o chybe?"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"Ó nie, StreetComplete naposledy spadla!"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"Napísať email"</string>
 
     <!-- Fuzzy -->
@@ -366,12 +360,6 @@ Ako už bolo spomenuté, aplikácia priamo komunikuje s OSM infraštruktúrou. P
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Čiastočne znamená, že tu nie je viac ako jeden schod brániaci prístupu."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"Prečítajte si &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;úplný zoznam na GitHube&lt;/a&gt;. "</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"Úplný zoznam nájdete v &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;projekte na POEditor.com&lt;/a&gt;."</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"Preklady"</string>

@@ -167,9 +167,6 @@
     <string name="confirmation_authorize_now">"You need to authorise with your OSM user account to publish your answers. Authorise now?"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"This version of StreetComplete is too old. Please update!"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"To scan for quests around you automatically, turn on location"</string>
 
     <!-- Fuzzy -->
@@ -267,9 +264,6 @@
     <string name="crash_message">"Would you please send the error report to the developer?"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"Oh no, StreetComplete crashed last time!"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"Compose email"</string>
 
     <!-- Fuzzy -->
@@ -349,12 +343,6 @@
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Partially means that there is no more than a single step to access it."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"See the &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;complete list on GitHub&lt;/a&gt;."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"See the &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;project on POEditor&lt;/a&gt; for a complete list."</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"Translations"</string>

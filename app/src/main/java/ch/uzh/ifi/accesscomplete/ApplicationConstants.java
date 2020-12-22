@@ -51,6 +51,7 @@ public class ApplicationConstants {
 
 	public static final String AVATARS_CACHE_DIRECTORY = "osm_user_avatars";
 
+	// TODO sst: URL must be changed to an independent photo service if AccessComplete will ever be released.
 	public static final String SC_PHOTO_SERVICE_URL = "https://westnordost.de/streetcomplete/photo-upload/"; // must have trailing /
 
 	public static final int ATTACH_PHOTO_QUALITY = 80;

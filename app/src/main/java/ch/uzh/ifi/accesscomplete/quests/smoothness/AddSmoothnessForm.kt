@@ -43,7 +43,7 @@ class AddSmoothnessForm : AbstractQuestFormAnswerWithSidewalkSupportFragment<Abs
         Item("intermediate", R.drawable.smoothness_intermediate, R.string.quest_smoothness_intermediate, R.string.quest_smoothness_intermediate_description, null),
         Item("good", R.drawable.smoothness_good, R.string.quest_smoothness_good, R.string.quest_smoothness_good_description, null),
         Item("excellent", R.drawable.smoothness_excellent, R.string.quest_smoothness_excellent, R.string.quest_smoothness_excellent_description, null))
-    private val initialValueIndex = 5
+    private val initialValueIndex = 6
 
     private var answer: AbstractSmoothnessAnswer? = null
 

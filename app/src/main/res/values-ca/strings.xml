@@ -165,9 +165,6 @@
     <string name="confirmation_authorize_now">"Cal que doneu autorització amb el vostre compte d'usuari OSM per a poder publicar qualsevol de les respostes. Voleu autoritzar-lo ara?"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"Aquesta versió de l'StreetComplet és massa antiga. Actualitzeu-la!"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"Per a cercar automàticament missions prop teu, activa la geolocalització"</string>
 
     <!-- Fuzzy -->
@@ -285,9 +282,6 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
     <string name="crash_message">"Voleu enviar l'informe d'error al desenvolupador?"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"oh no, l'StreetComplete va fallar l'última vegada!"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"Redacció del correu electrònic"</string>
 
     <!-- Fuzzy -->
@@ -367,12 +361,6 @@ No obstant això, abans de pujar els canvis, l'aplicació comprova amb un &lt;a 
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Parcialment significa que no hi ha més d'un esglaó per accedir-hi."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"Vegeu la &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;llista completa de col·laboradors a GitHub&lt;/a&gt;."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"Vegeu el &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;projecte a POEditor&lt;/a&gt; per la llista completa."</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"Traduccions"</string>

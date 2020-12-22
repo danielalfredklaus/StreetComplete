@@ -165,9 +165,6 @@
     <string name="confirmation_authorize_now">"Для того, чтобы ваши ответы были переданы в базу данных OSM, необходимо войти в свою учетную запись в OSM. Сделаем это сейчас?"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"Эта версия StreetComplete устарела. Пожалуйста, обновите ее!"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"Для автоматического сканирования заданий поблизости включите определение местоположения"</string>
 
     <!-- Fuzzy -->
@@ -284,9 +281,6 @@
     <string name="crash_message">"Хотите отправить отчёт об ошибке разработчику?"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"О нет, в прошлый раз произошел сбой StreetComplete"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"Отправить письмо"</string>
 
     <!-- Fuzzy -->
@@ -366,12 +360,6 @@
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"«Частично» значит, что нужно преодолеть не более одной ступеньки."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"Смотрите &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;полный список на GitHub&lt;/a&gt;"</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"Смотрите &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;проект на POEditor&lt;/a&gt;, где есть полный список."</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"Переводы"</string>
@@ -684,10 +672,6 @@
 
     <!-- Fuzzy -->
     <string name="letsgo">"Поехали!"</string>
-
-    <!-- Fuzzy -->
-
-    <!-- Fuzzy -->
 
     <!-- Fuzzy -->
     <string name="tutorial_happy_mapping">"Удачи в картах!"</string>

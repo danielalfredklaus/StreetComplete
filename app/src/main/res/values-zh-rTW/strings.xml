@@ -165,9 +165,6 @@
     <string name="confirmation_authorize_now">"你需要驗證你的開放街圖使用者帳號來套用你的回答。現在驗證嗎？"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"此版本的 StreetComplete 已經被禁止上傳任何回答！ 請更新版本！"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"要自動搜尋你附近的任務的話，開啟定位"</string>
 
     <!-- Fuzzy -->
@@ -284,9 +281,6 @@
     <string name="crash_message">"能否請你寄錯誤報告給開發者嗎？"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"天啊，上次 StreetComplete 出錯了！"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"撰寫 Email"</string>
 
     <!-- Fuzzy -->
@@ -366,12 +360,6 @@
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"部分可通行意味沒有多過一個步驟，就可以進到場所裡。"</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"&lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;在GitHub上瀏覽完整列表&lt;/a&gt;。"</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"在 &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;POEditor 專案&lt;/a&gt;上瀏覽完整列表。"</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"翻譯"</string>

@@ -1,6 +1,6 @@
 # About
 
-AccessComplete is an **unreleased** fork of [StreetComplete](https://github.com/streetcomplete/StreetComplete) which is an easy-to-use Android editor for OpenStreetMap (OSM). Both projects make use of a quest system that does not require any previous OSM knowledge in order make a contribution. Quests are automatically generated for OSM elements in the user's vicinity where some kind of survey is necessary. All available quests are displayed as markers on a map. To complete a quest, a user only needs to provide an answer to a simple question. Based on this answer, the app will then generate a meaningful OSM contribution using the user's OSM account.
+AccessComplete is an **unreleased** fork of [StreetComplete](https://github.com/streetcomplete/StreetComplete) which is an easy-to-use Android editor for [OpenStreetMap (OSM)](https://www.openstreetmap.org). Both projects make use of a quest system that does not require any previous OSM knowledge in order make a contribution. Quests are automatically generated for OSM elements in the user's vicinity where some kind of survey is necessary. All available quests are displayed as markers on a map. To complete a quest, a user only needs to provide an answer to a simple question. Based on this answer, the app will then generate a meaningful OSM contribution using the user's OSM account.
 
 Contrary to the original project, AccessComplete focuses on collecting (wheelchair related) accessibility data. Although it would have been possible to contribute quests that are related to such data directly to StreetComplete, certain things like barriers or construction sites cannot be covered by a quest-based system. This is due to the fact that it is unknown where information about them is still missing. In order to combine different data collection approaches in the future, the decision was made to create a forked version of StreetComplete.
 
@@ -65,13 +65,19 @@ AccessComplete inherits a few external services from StreetComplete that need to
 [Jawg Maps](https://www.jawg.io) is a vector tile service that provides the data for the map renderer. Non-commercial products are provided with 50'000 map views per month for free. However, an API Key must be obtained by [creating an account](https://www.jawg.io/en/pricing). The key must then be provided in the following Kotlin object: `ch.uzh.ifi.accesscomplete.map.MapModule`
 
 ### OSM API
-To upload data in the name of a user via the OSM API, the app must be registered as an OAuth consumer. For more information, see the [OSM Wiki](https://wiki.openstreetmap.org/wiki/OAuth). The registration details that result from this process must then be added to the Kotlin object: `ch.uzh.ifi.accesscomplete.data.user.UserModule`
+To upload data in the name of a user via the [OSM API](https://wiki.openstreetmap.org/wiki/API_v0.6), the app must be registered as an OAuth consumer. For more information, see the [OSM Wiki](https://wiki.openstreetmap.org/wiki/OAuth). The registration details that result from this process must then be added to the Kotlin object: `ch.uzh.ifi.accesscomplete.data.user.UserModule`
 
 ### sc-statistics-service
-As mentioned above, this service is needed for the user statistics and must be deployed independently with some minor adjustments. The URL to this service is defined in the Kotlin object `ch.uzh.ifi.accesscomplete.data.user.UserModule`.
+As mentioned above, the [sc-statistics-service](https://github.com/westnordost/sc-statistics-service) is needed for the user statistics and must be deployed independently with some minor adjustments. The URL to this service is defined in the Kotlin object `ch.uzh.ifi.accesscomplete.data.user.UserModule`.
+
+The following adjustments must be made before its deployment:
+* In the file `get_statistics.php`, change the access restriction check for the HTTP user agent string from `'StreetComplete'` to `'AccessComplete'`.
+* In the PHP class `ChangesetsParser`, exchange the string `'StreetComplete:quest_type'` with `'AccessComplete:quest_type'`.
+
+Afterwards, the service can be deployed as described in the README of its source code.
 
 ### sc-photo-service
-The photo service does not need to be adjusted because the version that StreetComplete uses still works for AccessComplete. However, if AccessComplete is ever released, an independent version of this service should be deployed. The URL can be adjusted in the class `ch.uzh.ifi.accesscomplete.ApplicationConstants`.
+The [sc-photo-service](https://github.com/exploide/sc-photo-service) does not need to be adjusted because the version that StreetComplete uses still works for AccessComplete. However, if AccessComplete is ever released, an independent version of this service should be deployed. The URL can be adjusted in the class `ch.uzh.ifi.accesscomplete.ApplicationConstants`. The deployment process is described in the README of the service's source code.
 
 ### Banned Version Checker
-AccessComplete inherits a mechanism from StreetComplete that can prevent banned verions of the app from contributing data to OSM (e.g, a version with a critical bug). This is simply done by checking a hosted text file that contains a list of banned versions of the app. Because the version history was reset and development from StreetComplete diverged, an URL of such a file should be provided if AccessComplete will ever be released. The URL can be specified in the Kotlin object `ch.uzh.ifi.accesscomplete.data.upload.UploadModule`.
+AccessComplete inherits a mechanism from StreetComplete that can prevent banned versions of the app from contributing data to OSM (e.g, a version with a critical bug). This is simply done by checking a hosted text file that contains a list of banned versions of the app. Because the version history was reset and development from StreetComplete diverged, an URL of such a file should be provided if AccessComplete will ever be released. The URL can be specified in the Kotlin object `ch.uzh.ifi.accesscomplete.data.upload.UploadModule`.

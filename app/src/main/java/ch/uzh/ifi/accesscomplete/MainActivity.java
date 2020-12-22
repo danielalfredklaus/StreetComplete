@@ -166,10 +166,7 @@ public class MainActivity extends AppCompatActivity implements
 
 		if (savedInstanceState == null) {
 			boolean hasShownTutorial = prefs.getBoolean(Prefs.HAS_SHOWN_TUTORIAL, false);
-			// TODO sst: Always show tutorial during usability tests. Remove again later...
-			hasShownTutorial = false;
-			//if (!hasShownTutorial && !userController.isLoggedIn()) {
-			if (!hasShownTutorial) {
+			if (!hasShownTutorial && !userController.isLoggedIn()) {
 				mainFragment.disableImportantForAccessibility();
 				getSupportFragmentManager().beginTransaction()
 						.setCustomAnimations(R.anim.fade_in_from_bottom, R.anim.fade_out_to_bottom)
@@ -287,7 +284,6 @@ public class MainActivity extends AppCompatActivity implements
 			if (!userController.isLoggedIn()) {
 				// new users should not be immediately pestered to login after each change (#1446)
 				if (unsyncedChangesCountSource.getCount() >= 3 && !dontShowRequestAuthorizationAgain) {
-					// TODO sst: dont' show during usability testing.
 					new RequestLoginDialog(this).show();
 					dontShowRequestAuthorizationAgain = true;
 				}

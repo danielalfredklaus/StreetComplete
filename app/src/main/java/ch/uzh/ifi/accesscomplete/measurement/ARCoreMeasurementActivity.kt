@@ -141,8 +141,7 @@ class ARCoreMeasurementActivity : AppCompatActivity(), Scene.OnUpdateListener {
     }
 
     private fun initHints() {
-        var hasCompletedMeasurementAlready = prefs.getBoolean(Prefs.HAS_COMPLETED_ARCORE_MEASUREMENT, false)
-        hasCompletedMeasurementAlready = false // TODO sst: remove after testing
+        val hasCompletedMeasurementAlready = prefs.getBoolean(Prefs.HAS_COMPLETED_ARCORE_MEASUREMENT, false)
         if (!hasCompletedMeasurementAlready) {
             hints.add(ARCoreMeasurementHint(
                 R.string.arcore_initial_instructions_title,

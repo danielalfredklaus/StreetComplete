@@ -165,9 +165,6 @@
     <string name="confirmation_authorize_now">"Je moet inloggen met je OSM gebruikers account om je antwoorden te kunnnen verwerken, nu inloggen?"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"Deze versie van StreetComplete is te oud. Update alstublieft naar een nieuwere versie."</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"Om automatisch te kunnnen scannen voor vragen moet je \"locatie\" aanstaan."</string>
 
     <!-- Fuzzy -->
@@ -285,9 +282,6 @@ Voor het uploaden van jouw wijzigingen zal de app een &lt;a href=\"https://www.w
     <string name="crash_message">"Zou je het foutenrapport naar de ontwikkelaar willen verzenden?"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"Oeps, StreetComplete is de vorige keer gecrasht!"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"Email opstellen"</string>
 
     <!-- Fuzzy -->
@@ -368,12 +362,6 @@ Voor het uploaden van jouw wijzigingen zal de app een &lt;a href=\"https://www.w
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"\"Gedeeltelijk\" betekent dat er hoogstens één opstap is om naar binnen te gaan."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"Zie de &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt; complete lijst op GitHub&lt;/a&gt;."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"Zie het &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;project op POEditor&lt;/a&gt; voor een complete lijst."</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"Vertalingen"</string>

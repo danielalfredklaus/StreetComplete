@@ -161,9 +161,6 @@
     <string name="confirmation_authorize_now">"Válaszaid közzétételéhez azonosítanod kell magad az OSM-fiókoddal. Hitelesíted most?"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"A StreetComplete ezen verziója túl régi. Kérlek, frissítsd az alkalmazást!"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"A környék kérdéseinek automatikus lekéréséhez kapcsold be a helymeghatározást"</string>
 
     <!-- Fuzzy -->
@@ -280,9 +277,6 @@ A módosításaid feltöltése előtt azonban az alkalmazás először leellenő
     <string name="crash_message">"El tudnád küldeni a hibajelentést a fejlesztőnek?"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"Jaj ne, a StreetComplete legutóbb összeomlott!"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"E-mail küldése"</string>
     <string name="no_email_client">"Nincs telepített e-mail alkalmazásod."</string>
 
@@ -360,12 +354,6 @@ A módosításaid feltöltése előtt azonban az alkalmazás először leellenő
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"A „részben” azt jelenti, hogy legfeljebb egy lépcsőfokot kell megtenni."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"&lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;A teljes lista a GitHubon&lt;/a&gt; található."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"A teljes lista a &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;POEditor oldalán lévő projektnél&lt;/a&gt; található."</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"Fordítás"</string>

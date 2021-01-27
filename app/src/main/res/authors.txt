@@ -5,6 +5,10 @@ crossing_type_signals.jpg      CC0               https://pixabay.com/en/little-g
 crossing_type_unmarked.jpg     CC0               own work by Mateusz Konieczny
 crossing_type_zebra.jpg        CC-BY-SA 1.0      https://commons.wikimedia.org/wiki/File%3AZebra_crossing.jpg
 
+kerb_raised.jpg                CC0               own work by Sven Stoll
+kerb_lowered.jpg               CC0               own work by Sven Stoll
+kerb_flush.jpg                 CC0               own work by Sven Stoll
+
 sliding_envelope.wav           CC0               https://freesound.org/people/MTJohnson/sounds/444431/
 
 smoothness_excellent.jpg       CC-BY-SA 2.0      https://commons.wikimedia.org/wiki/File:65_Asfaltado_de_calles_(12523687353).jpg

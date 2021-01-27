@@ -165,9 +165,6 @@
     <string name="confirmation_authorize_now">"あなたの回答を公開するには OSM ユーザーアカウントで認証する必要があります。 今すぐ認証しますか?"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"このバージョンの StreetComplete は古すぎます。 更新してください!"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"周囲の探索を自動的にスキャンするには、位置情報をオンにしてください"</string>
 
     <!-- Fuzzy -->
@@ -286,9 +283,6 @@ OpenStreetMap を匿名で編集することはできないため、変更は OS
     <string name="crash_message">"開発者にエラーレポートを送信していただけますか?"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"StreetComplete がクラッシュしました!"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"メールを編集"</string>
 
     <!-- Fuzzy -->
@@ -368,12 +362,6 @@ OpenStreetMap を匿名で編集することはできないため、変更は OS
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"部分的とは、アクセスするためにの 2 つ以上の階段がないことを意味します。"</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"すべてのリストは &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;GitHub&lt;/a&gt; を参照してください。"</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"すべてのリストは &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;POEditor のプロジェクト&lt;/a&gt; を参照してください。"</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"翻訳"</string>

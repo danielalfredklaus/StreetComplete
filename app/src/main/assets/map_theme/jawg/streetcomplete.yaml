@@ -1,6 +1,6 @@
 global:
-    geometry_color: '#44D14000' # alpha + accent color (AARRGGBB)
-    quest_highlighting_color: '#88536DFE'
+    geometry_color: '#d14000' # accent color
+    additional_quest_highlighting_color: '#88536DFE'
 
 textures:
     quests:
@@ -144,7 +144,7 @@ layers:
             filter: { type: line }
             draw:
                 geometry-lines-dashed:
-                    color: global.quest_highlighting_color
+                    color: global.additional_quest_highlighting_color
                     width: 8px
                     collide: false
                     order: 1000
@@ -154,7 +154,7 @@ layers:
             filter: { type: point }
             draw:
                 geometry-points:
-                    color: global.quest_highlighting_color
+                    color: global.additional_quest_highlighting_color
                     size: 8px
                     collide: false
                     order: 1000

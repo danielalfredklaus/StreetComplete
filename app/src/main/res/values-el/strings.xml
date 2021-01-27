@@ -165,9 +165,6 @@
     <string name="confirmation_authorize_now">"Πρέπει να εξουσιοδοτήσετε με τον λογαριασμό σας στο OSM για να εκδόσετε τις απαντήσεις σας. Εξουσιοδότηση τώρα;"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"Αυτή η έκδοση του StreetComplete είναι πολύ παλιά. Παρακαλώ ενημερώστε! "</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"Για να σαρώσετε για αναζητήσεις τριγύρω σας αυτόματα, ανοίξτε την τοποθεσία"</string>
 
     <!-- Fuzzy -->
@@ -285,9 +282,6 @@
     <string name="crash_message">"Θα μπορούσατε να στείλετε την αναφορά σφάλματος στον προγραμματιστή;"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"Ωχι όχι, το StreetComplete κατέρρευσε την τελευταία φορά!"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"Σύνταξη email"</string>
 
     <!-- Fuzzy -->
@@ -368,11 +362,7 @@
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Εν μέρει σημαίνει ότι δεν υπάρχει παρά ένα μόνο βήμα για την πρόσβαση εκεί."</string>
 
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"Δείτε την &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;πλήρη λίστα στο GitHub&lt;/a&gt;."</string>
 
-    <!-- Fuzzy -->
-    <string name="credits_translations">"Δείτε την &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;εργασία στο POEditor&lt;/a&gt; για μια πλήρη λίστα."</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"Μεταφράσεις"</string>

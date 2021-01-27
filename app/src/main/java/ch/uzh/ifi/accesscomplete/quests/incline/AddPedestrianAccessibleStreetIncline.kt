@@ -50,9 +50,9 @@ class AddPedestrianAccessibleStreetIncline : OsmFilterQuestType<String>() {
     override fun getTitle(tags: Map<String, String>): Int {
         val hasName = tags.containsKey("name")
         return if (hasName)
-                R.string.quest_incline_street_name_title
-            else
-                R.string.quest_incline_street_title
+            R.string.quest_incline_street_name_title
+        else
+            R.string.quest_incline_street_title
     }
 
     override fun createForm(): AddInclineForm = AddInclineForm()

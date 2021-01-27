@@ -125,9 +125,6 @@
     <string name="confirmation_authorize_now">"برای اعمال تغییرات، نیاز به ورود با حساب کاربری خود در OSM دارید. آیا اکنون اجازه می‌دهید؟"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"این نسخه از برنامه اجازه بارگذاری پاسخ‌ها را ندارد! لطفا این نسخه را به روز کنید!"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"برای مرور خودکار جستارهای اطراف، مکان نما را روشن کنید"</string>
 
     <!-- Fuzzy -->
@@ -245,9 +242,6 @@
     <string name="crash_message">"لطفا گزارش خطا را به سازنده ارسال کنید؟"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"برنامه در آخرین تلاش دچار خطا شد!"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"ارسال ایمیل"</string>
 
     <!-- Fuzzy -->
@@ -327,12 +321,6 @@
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"معمولاً این بدان معنی است که برای دسترسی به اینجا بیشتر از یک مسیر وجود دارد."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"این را بنگرید &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;سیاهه کامل روی GitHub&lt;/a&gt;."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"این را بنگرید &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;project on POEditor&lt;/a&gt; برای سیاهه کامل"</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"ترجمه‌ها"</string>

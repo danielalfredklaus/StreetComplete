@@ -21,7 +21,6 @@ achievements graphics/
 	wheelchair                  Judith Gastell, License: CC-BY-SA 4.0
 
 app icon/
-    feature_graphic.xcf         parts taken from https://commons.wikimedia.org/wiki/File:M%C3%BCnchen_-_Westend.JPG
     launcher_foreground.svg     modified by Sven Stoll from "quest icons/wheelchair.svg" by Tobias Zwick: CC-BY-SA 4.0
 
 examples/

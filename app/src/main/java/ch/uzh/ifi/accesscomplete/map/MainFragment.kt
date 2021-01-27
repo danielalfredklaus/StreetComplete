@@ -78,6 +78,7 @@ import ch.uzh.ifi.accesscomplete.location.LocationUtil
 import ch.uzh.ifi.accesscomplete.map.tangram.CameraPosition
 import ch.uzh.ifi.accesscomplete.quests.*
 import ch.uzh.ifi.accesscomplete.quests.AbstractQuestAnswerFragment.Listener.SidewalkSide
+import ch.uzh.ifi.accesscomplete.user.UserActivity
 import ch.uzh.ifi.accesscomplete.util.*
 import de.westnordost.osmapi.map.data.BoundingBox
 import de.westnordost.osmapi.map.data.LatLon
@@ -179,6 +180,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
         zoomInButton.setOnClickListener { onClickZoomIn() }
         zoomOutButton.setOnClickListener { onClickZoomOut() }
         mainMenuButton.setOnClickListener { onClickMainMenu() }
+        answersCounterFragment.setOnClickListener { onClickAnswersCounter() }
 
         updateMapQuestOffsets()
     }
@@ -587,6 +589,11 @@ class MainFragment : Fragment(R.layout.fragment_main),
         this.view?.importantForAccessibility = View.IMPORTANT_FOR_ACCESSIBILITY_NO_HIDE_DESCENDANTS
     }
 
+    private fun onClickAnswersCounter() {
+        val intent = Intent(context, UserActivity::class.java)
+        context?.startActivity(intent)
+    }
+
     /* -------------------------------------- Context Menu -------------------------------------- */
 
     private fun showMapContextMenu(position: LatLon) {
@@ -870,7 +877,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
         root.addView(img)
 
         val answerTarget = view.findViewById<View>(
-            if (isAutosync) R.id.answers_counter_fragment else R.id.upload_button_fragment)
+            if (isAutosync) R.id.answersCounterFragment else R.id.upload_button_fragment)
         flingQuestMarkerTo(img, answerTarget) { root.removeView(img) }
     }
 

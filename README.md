@@ -1,69 +1,83 @@
-![StreetComplete](http://www.westnordost.de/streetcomplete/featureGraphic.png)
+# About
 
-StreetComplete is an easy to use editor of OpenStreetMap data available for Android. It can be used without any OpenStreetMap-specific knowledge. It asks simple questions, with answers directly used to edit and improve OpenStreetMap data. The app is aimed at users who do not know anything about OSM tagging schemes but still want to contribute to OpenStreetMap.
+AccessComplete is an **unreleased** fork of [StreetComplete](https://github.com/streetcomplete/StreetComplete) which is an easy-to-use Android editor for [OpenStreetMap (OSM)](https://www.openstreetmap.org). Both projects make use of a quest system that does not require any previous OSM knowledge in order make a contribution. Quests are automatically generated for OSM elements in the user's vicinity where some kind of survey is necessary. All available quests are displayed as markers on a map. To complete a quest, a user only needs to provide an answer to a simple question. Based on this answer, the app will then generate a meaningful OSM contribution using the user's OSM account.
 
-StreetComplete automatically looks for nearby places where a survey is needed and shows them as quest markers on its map. Each of these quests can then be solved on site by answering a simple question. For example, tapping on a marker may show the question "What is the name of this road?", with a text field to answer it.
-More examples are shown in the screenshots below.
+Contrary to the original project, AccessComplete focuses on collecting (wheelchair related) accessibility data. Although it would have been possible to contribute quests that are related to such data directly to StreetComplete, certain things like barriers or construction sites cannot be covered by a quest-based system. This is due to the fact that it is unknown where information about them is still missing. In order to combine different data collection approaches in the future, the decision was made to create a forked version of StreetComplete.
 
-The user's answer is automatically processed and uploaded directly into the OSM database. Edits are done in meaningful changesets using the user's OSM account.
-Since the app is meant to be used on a survey, it can be used offline and is
-economic with data usage.
+In its current version, AccessComplete provides quests to map the surface material, smoothness quality, maximum incline, and minimum width of ways that are relevant for wheelchair routing. Furthermore, the app can be used to collect information about curb types on pedestrian crossings. Details about modifications to the original project can be found [below](#Modifications).
 
-To make the app easy to use, quests are limited to those answerable by asking simple questions.
+A big thank you belongs to [Tobias Zwick](https://github.com/westnordost/) and all the other contributors of StreetComplete for creating such an awesome and well-maintained open-source application.
 
-## Screenshots
-<img src="http://www.westnordost.de/streetcomplete/phoneScreenshots/screenshot01.png" width="170"/> <img src="http://www.westnordost.de/streetcomplete/phoneScreenshots/screenshot02.png" width="170"/> <img src="http://www.westnordost.de/streetcomplete/phoneScreenshots/screenshot03.png" width="170"/> <img src="http://www.westnordost.de/streetcomplete/phoneScreenshots/screenshot04.png" width="170"/> <img src="http://www.westnordost.de/streetcomplete/phoneScreenshots/screenshot05.png" width="170"/>
-<img src="http://www.westnordost.de/streetcomplete/phoneScreenshots/screenshot06.png" width="170"/> <img src="http://www.westnordost.de/streetcomplete/phoneScreenshots/screenshot07.png" width="170"/> <img src="http://www.westnordost.de/streetcomplete/phoneScreenshots/screenshot08.png" width="170"/> <img src="http://www.westnordost.de/streetcomplete/phoneScreenshots/screenshot09.png" width="170"/> <img src="http://www.westnordost.de/streetcomplete/phoneScreenshots/screenshot10.png" width="170"/>
-<img src="http://www.westnordost.de/streetcomplete/phoneScreenshots/screenshot11.png" width="170"/> <img src="http://www.westnordost.de/streetcomplete/phoneScreenshots/screenshot12.png" width="170"/> <img src="http://www.westnordost.de/streetcomplete/phoneScreenshots/screenshot13.png" width="170"/> <a href="http://www.youtube.com/watch?v=lcPuL7nj7e0"><img src="http://img.youtube.com/vi/lcPuL7nj7e0/0.jpg" width="340"/></a>
 
-## Download
+# Modifications
 
-[<img src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" alt="Get it on Google Play" height="80">](https://play.google.com/store/apps/details?id=de.westnordost.streetcomplete)[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/packages/de.westnordost.streetcomplete/)[<img src="https://user-images.githubusercontent.com/663460/26973090-f8fdc986-4d14-11e7-995a-e7c5e79ed925.png" alt="Download APK from GitHub" height="80">](https://github.com/westnordost/StreetComplete/releases/latest)
+AccessComplete is a fork of [StreetComplete v26.2](https://github.com/streetcomplete/StreetComplete/tree/v26.2). Although the architecture of the original project remains unchanged, a multitude of different modifications to its source code have been made:
 
-## Quests
+* Rebranding of the project including its name, logo, and source code (e.g., changing the package names)
+* Version reset to 1.0
+* New tutorial
+* Removal of all quests and achievements that were not directly related to accessibility topics.
+* New quests to collect information about the smoothness quality, maximum incline, and minimum width of ways that are relevant for wheelchair routing.
+* New quest for the collection of curb type information on pedestrian crossings
+* Adaptation of the original surface quests to the new data collection goals
+* Quest support for sidewalks that are mapped as a refinement of a street.
+* Multi quest markers were added that show how many quests are available for a single OSM element and allow a user to pick a specific one.
+* Implementation of an augmented reality (AR) measurement tool based on [Google's ARCore](https://developers.google.com/ar) and [Sceneform](https://developers.google.com/sceneform/develop) in order to measure the width of a way.
+* Adjustments for external service dependencies such as the [OSM API](https://wiki.openstreetmap.org/wiki/API_v0.6) and [Jawg Maps](https://www.jawg.io) (see also [below](#Development))
+* Support for Android API level < 24 was dropped due to adding ARCore as a dependency.
+* GPLv3 license headers were added to all source code files in order to clarify the copyright.
+* Reformatting of some parts of the source code.
 
-There are quite a few different quest types now and more will be added over time.
-You can see a community-managed [list of all quests in the OSM wiki](https://wiki.openstreetmap.org/wiki/StreetComplete/Quests).
 
-## FAQ
-
-You can find a list of [frequently asked questions in the wiki](https://wiki.openstreetmap.org/wiki/StreetComplete/FAQ).
-
-## Contributing
-
-This is an active open-source project, so you can get involved in it easily!
-You can do so **without any programming or OpenStreetMap knowledge**! Just choose a task that you like.
-
-Here are a few things you can do:
-* 🐛 [Test and report issues](CONTRIBUTING.md#testing-and-reporting-issues)
-* 📃 [Translate the app into your language](CONTRIBUTING.md#translating-the-app)
-* 🕵️ [Solve notes left by StreetComplete users](CONTRIBUTING.md#solving-notes)
-* 💡 [Suggest new quests](CONTRIBUTING.md#suggesting-new-quests), or, even better, [implement them](CONTRIBUTING.md#developing-new-quests).
-* ➕ [and more…](CONTRIBUTING.md)
-
-Also, if you like StreetComplete, **spread the word**! ❤️
-
-## License
+# License
 
 This software is released under the terms of the [GNU General Public License](http://www.gnu.org/licenses/gpl-3.0.html).
 
-## Sponsors
 
-<a href="https://bmbf.de/"><img src=".github/images/logo_bmbf.png" height="220"/></a><br/>
-The <a href="https://bmbf.de/">German Federal Ministry of Education and Research</a> sponsors this project (grant code 01IS20S35) within the frame of the <a href="https://prototypefund.de/en/project/streetcomplete/">Prototype Fund</a> over a period of six months. This enables Tobias Zwick to work on making this app a more powerful and efficient tool to easily contribute to OpenStreetMap.
+# Important Dependencies
 
-
-<a href="https://nlnet.nl/discovery/"><img src=".github/images/logo_nlnet.svg" height="60"/> <img src=".github/images/logo_ngi0.svg" height="60"/></a><br/>
-The <a href="https://nlnet.nl/discovery/">NGI Zero Discovery</a> is a grant program organized by the NLnet foundation. The grant enabled <a href="https://www.openstreetmap.org/user/Mateusz%20Konieczny/diary/368849">Mateusz Konieczny to work on StreetComplete</a> for about three months in 2019.
-
-
-<a href="https://osmfoundation.org/"><img src=".github/images/logo_osmf.png" height="60"/></a><br/>
-The <a href="https://osmfoundation.org/">OpenStreetMap foundation</a> was funding the development of doing <a href="https://wiki.openstreetmap.org/wiki/Microgrants/Microgrants_2020/Proposal/Map_Maintenance_with_StreetComplete">map maintenance with StreetComplete</a> in their <a href="https://blog.openstreetmap.org/2020/07/01/osmf-microgrants-program-congratulations-to-selected-projects/">first round</a> of the <a href="https://wiki.osmfoundation.org/wiki/Microgrants">microgrant program</a> in 2020.
+* [Tangram-ES](https://github.com/tangrams/tangram-es/) for rendering the map
+* [countryboundaries](https://github.com/westnordost/countryboundaries) for detecting, in which country a quest is (affects quest display, etc.)
+* [osmapi](https://github.com/westnordost/osmapi) for communication with the OSM API
+* [osmfeatures](https://github.com/westnordost/osmfeatures) to correctly refer to a feature by name
+* [ARCore](https://developers.google.com/ar) for the AR measurement tool
+* [Sceneform](https://developers.google.com/sceneform/develop) for the AR measurement tool
 
 
-<a href="https://www.jawg.io"><img src=".github/images/logo_jawgmaps.png" width="320"/></a><br>
-<a href="https://www.jawg.io">JawgMaps</a> is a provider of online custom maps, geocoding and routing based on OpenStreetMap data. They are providing their vector map tiles service to StreetComplete for free.</td>
+# Created for StreetComplete and Used By AccessComplete
+
+* [NotesReview](https://github.com/ENT8R/NotesReview) by [@ENT8R](https://github.com/ENT8R) for reviewing notes with a specific keyword (here: `AccessComplete`)
+* [streetcomplete-mapstyle](https://github.com/ENT8R/streetcomplete-mapstyle) by [@ENT8R](https://github.com/ENT8R) maintaining the mapstyle of StreetComplete
+* [sc-photo-service](https://github.com/exploide/sc-photo-service) by [@exploide](https://github.com/exploide) allows AccessComplete to upload photos associated with OSM Notes
+    * **Note**: An independent version of this service should be deployed if AccessComplete will ever be released.
+* [sc-statistics-service](https://github.com/westnordost/sc-statistics-service) by [@westnordost](https://github.com/westnordost) aggregates and provides AccessComplete-related statistics about users.
+    * **Note**: Minor adjustments to this service and an independent deployment are needed if AccessComplete will ever be released.
 
 
-<a href="https://github.com/sponsors/westnordost"><img src=".github/images/logo_github.png" width="60"/></a> <a href="https://liberapay.com/westnordost"><img src=".github/images/logo_liberapay.svg" width="60"/></a> <a href="https://www.patreon.com/westnordost"><img src=".github/images/logo_patreon.png" width="60"/></a><br/>
-Many people are currently supporting this app through <a href="https://github.com/sponsors/westnordost">GitHub sponsors</a>, <a href="https://liberapay.com/westnordost">Liberapay</a> and <a href="https://www.patreon.com/westnordost">Patreon</a>. If you like the app, you can join them ☺️
+# Development
+
+To build and test AccessComplete [download and install Android Studio](https://developer.android.com/studio/) which comes bundled with all the tools that are needed. Afterwards, checkout this repository, open it in Android Studio, and press the "play" button. Done!
+
+## Configuration of External Services
+AccessComplete inherits a few external services from StreetComplete that need to be configured correctly. This is described in the following.
+
+### Jawg Maps
+[Jawg Maps](https://www.jawg.io) is a vector tile service that provides the data for the map renderer. Non-commercial products are provided with 50'000 map views per month for free. However, an API Key must be obtained by [creating an account](https://www.jawg.io/en/pricing). The key must then be provided in the following Kotlin object: `ch.uzh.ifi.accesscomplete.map.MapModule`
+
+### OSM API
+To upload data in the name of a user via the [OSM API](https://wiki.openstreetmap.org/wiki/API_v0.6), the app must be registered as an OAuth consumer. For more information, see the [OSM Wiki](https://wiki.openstreetmap.org/wiki/OAuth). The registration details that result from this process must then be added to the Kotlin object: `ch.uzh.ifi.accesscomplete.data.user.UserModule`
+
+### sc-statistics-service
+As mentioned above, the [sc-statistics-service](https://github.com/westnordost/sc-statistics-service) is needed for the user statistics and must be deployed independently with some minor adjustments. The URL to this service is defined in the Kotlin object `ch.uzh.ifi.accesscomplete.data.user.UserModule`.
+
+The following adjustments must be made before its deployment:
+* In the file `get_statistics.php`, change the access restriction check for the HTTP user agent string from `'StreetComplete'` to `'AccessComplete'`.
+* In the PHP class `ChangesetsParser`, exchange the string `'StreetComplete:quest_type'` with `'AccessComplete:quest_type'`.
+
+Afterwards, the service can be deployed as described in the README of its source code.
+
+### sc-photo-service
+The [sc-photo-service](https://github.com/exploide/sc-photo-service) does not need to be adjusted because the version that StreetComplete uses still works for AccessComplete. However, if AccessComplete is ever released, an independent version of this service should be deployed. The URL can be adjusted in the class `ch.uzh.ifi.accesscomplete.ApplicationConstants`. The deployment process is described in the README of the service's source code.
+
+### Banned Version Checker
+AccessComplete inherits a mechanism from StreetComplete that can prevent banned versions of the app from contributing data to OSM (e.g, a version with a critical bug). This is simply done by checking a hosted text file that contains a list of banned versions of the app. Because the version history was reset and development from StreetComplete diverged, an URL of such a file should be provided if AccessComplete will ever be released. The URL can be specified in the Kotlin object `ch.uzh.ifi.accesscomplete.data.upload.UploadModule`.

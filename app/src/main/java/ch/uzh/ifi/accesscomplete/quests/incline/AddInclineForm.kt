@@ -42,6 +42,7 @@ import ch.uzh.ifi.accesscomplete.quests.OtherAnswer
 import ch.uzh.ifi.accesscomplete.util.fromDegreesToPercentage
 import kotlinx.android.synthetic.main.quest_incline.*
 import java.lang.NumberFormatException
+import kotlin.math.absoluteValue
 import kotlin.math.atan2
 import kotlin.math.roundToInt
 import kotlin.math.sqrt
@@ -101,7 +102,6 @@ class AddInclineForm : AbstractQuestFormAnswerFragment<String>() {
             }
 
             override fun onSensorChanged(event: SensorEvent?) {
-                // TODO sst: refactor
                 val g = convertFloatsToDoubles(event!!.values.clone())
                 val norm = sqrt(g!![0] * g[0] + g[1] * g[1] + g[2] * g[2] + g[3] * g[3])
                 g[0] /= norm
@@ -200,6 +200,7 @@ class AddInclineForm : AbstractQuestFormAnswerFragment<String>() {
             val input = manualInputField.text.toString()
             try {
                 inclineValue = Integer.parseInt(input)
+                inclineValue = if (radioDownwardSlope.isSelected) inclineValue * -1 else inclineValue
             } catch (e: NumberFormatException) {
                 manualInputField.text = null
                 manualInputField.numberOrNull
@@ -209,7 +210,7 @@ class AddInclineForm : AbstractQuestFormAnswerFragment<String>() {
         if (inclineValue == null) {
             isFormComplete()
             return
-        } else if (inclineValue > 50) {
+        } else if (inclineValue.absoluteValue > 35) {
             AlertDialog.Builder(requireContext())
                 .setTitle(R.string.quest_generic_confirmation_title)
                 .setMessage(requireContext().getString(R.string.quest_incline_implausible_value_message, inclineValue))
@@ -219,7 +220,17 @@ class AddInclineForm : AbstractQuestFormAnswerFragment<String>() {
                 .show()
             return
         }
-        val answer = if (radioDownwardSlope.isSelected) "-$inclineValue%" else "$inclineValue%"
-        applyAnswer(answer)
+        val answer = if (inclineValue < 0) "-${inclineValue.absoluteValue}%" else "$inclineValue%"
+        confirmDirectionBeforeCompletion(answer)
+    }
+
+    private fun confirmDirectionBeforeCompletion(answer : String) {
+        AlertDialog.Builder(requireContext())
+            .setTitle(R.string.quest_generic_confirmation_title)
+            .setMessage(requireContext().getString(R.string.quest_incline_confirm_direction_message))
+            .setPositiveButton(R.string.quest_generic_confirmation_yes) { _, _ -> applyAnswer(answer) }
+            .setNegativeButton(R.string.quest_generic_confirmation_no, null)
+            .setCancelable(true)
+            .show()
     }
 }

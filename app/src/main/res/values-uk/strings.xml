@@ -165,9 +165,6 @@
     <string name="confirmation_authorize_now">"Вам потрібно авторизуватися за допомогою вашого облікового запису OSM, щоб надсилати ваші відповіді. Авторизуватись?"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"У цій версії StreetComplete була заблокована можливість надсилати відповіді. Оновіть версію!"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"Для автоматичного пошуку завдань поруч із вами увімкніть позиціювання"</string>
 
     <!-- Fuzzy -->
@@ -285,9 +282,6 @@
     <string name="crash_message">"Не могли б ви, будь ласка, повідомити розробнику про помилку?"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"О ні, StreetComplete «крашнувся» останнього разу!"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"Написати email"</string>
 
     <!-- Fuzzy -->
@@ -367,12 +361,6 @@
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"«Частково» значить, що для доступу треба зробити не більше кроку."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"Дивіться &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;повний список на GitHub&lt;/a&gt;. "</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"Дивіться повний список &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;у проекті на POEditor&lt;/a&gt;. "</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"Перекладачі"</string>

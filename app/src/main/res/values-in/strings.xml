@@ -137,9 +137,6 @@
     <string name="confirmation_authorize_now">"Kamu perlu memberi otorisasi akun OSMmu untuk mengunggah jawaban. Otorisasi sekarang?"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"Versi StreetComplete terlalu tua. Silahkan perbarui!"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"Untuk memindai pencarian disekitarmu secara otomatis, aktifkan lokasi"</string>
 
     <!-- Fuzzy -->
@@ -219,9 +216,6 @@ Tetapi, sebelum mengunggah perubahan, aplikasi mengecek &lt;a href=\"https://www
     <string name="crash_message">"Maukah kamu mengirim laporan galat ke pengembang?"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"Oh tidak, tadi StreetComplete mogok!"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"Buat surel"</string>
 
     <!-- Fuzzy -->
@@ -259,12 +253,6 @@ Tetapi, sebelum mengunggah perubahan, aplikasi mengecek &lt;a href=\"https://www
     <string name="quest_wheelchairAccess_location_name_title">"Apa tempat %s ramah kursi roda?"</string>
     <string name="quest_wheelchairAccess_limited_description_business">"Sebagian berarti tidak ada lebih dari satu anak tangga untuk mengakses tempat dan kebanyakan ruangan di dalam ramah kursi roda."</string>
     <string name="quest_wheelchairAccess_limited_description_public_transport">"Sebagian berarti tidak ada lebih dari satu anak tangga untuk mengakses"</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"Lihat &lt;a href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;daftar lengkap di Github&lt;/a&gt;."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"Lihat &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;di POEditor&lt;/a&gt; untuk daftar lengkapnya."</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"Terjemahan"</string>

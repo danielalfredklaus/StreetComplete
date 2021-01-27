@@ -165,9 +165,6 @@
     <string name="confirmation_authorize_now">"നിങ്ങളുടെ ഉത്തരങ്ങൾ ഏതെങ്കിലും നന്മയ്ക്കായി പ്രയോഗിക്കുന്നതിന് നിങ്ങളുടെ OSM ഉപയോക്തൃ അക്കൗണ്ടുമായി നിങ്ങൾ അംഗീകരിക്കേണ്ടതുണ്ട്. ഇപ്പോൾ അംഗീകൃതമോ?"</string>
 
     <!-- Fuzzy -->
-    <string name="version_banned_message">"സ്ട്രീറ്റ് കോംപ്ലെറ്റിന്റെ ഈ പതിപ്പ് ഏതെങ്കിലും ഉത്തരങ്ങൾ അപ്ലോഡ് ചെയ്യുന്നതിൽ നിന്നും വിലക്കിയിരിക്കുന്നു! ദയവായി നിങ്ങളുടെ പതിപ്പ് അപ്ഡേറ്റുചെയ്യുക!"</string>
-
-    <!-- Fuzzy -->
     <string name="no_gps_no_quests">"നിങ്ങളുടെ ചുറ്റുമുള്ള ക്വസ്റ്റുകൾക്കായി സ്വയം സ്കാൻ ചെയ്യുന്നതിന്, ലൊക്കേഷൻ ഓണാക്കുക"</string>
 
     <!-- Fuzzy -->
@@ -285,9 +282,6 @@
     <string name="crash_message">"പിശക് റിപ്പോർട്ട് ഡവലപ്പർക്ക് അയയ്ക്കാമോ?"</string>
 
     <!-- Fuzzy -->
-    <string name="crash_title">"StreetComplete കഴിഞ്ഞ തവണ തകർന്നു!"</string>
-
-    <!-- Fuzzy -->
     <string name="crash_compose_email">"ഇമെയിൽ രചിക്കുക"</string>
 
     <!-- Fuzzy -->
@@ -361,12 +355,6 @@
 
     <!-- Fuzzy -->
     <string name="quest_wheelchairAccess_limited_description_public_transport">"ഭാഗികമായി അർത്ഥമാക്കുന്നത് ഇവിടെ ഒന്നിൽ കൂടുതൽ ചവിട്ടുപടികൾ ഇല്ല എന്നാണ്."</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_contributors">"മുഴുവൻ ലിസ്റ്റ് കാണാനായി ഗിത്ത്ഹബ്ബ് &lt; a href href=\"https://github.com/westnordost/StreetComplete/graphs/contributors\"&gt;കാണുക&lt;/a&gt;"</string>
-
-    <!-- Fuzzy -->
-    <string name="credits_translations">"മുഴുവൻ ലിസ്റ്റ് കാണാനായി &lt;a href=\"https://poeditor.com/join/project/IE4GC127Ki\"&gt;പ്രോജെക്ട് POEditor&lt;/a&gt; കാണുക"</string>
 
     <!-- Fuzzy -->
     <string name="credits_translations_title">"വിവർത്തനങ്ങൾ"</string>

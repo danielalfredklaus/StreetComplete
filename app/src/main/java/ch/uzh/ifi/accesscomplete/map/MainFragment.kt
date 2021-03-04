@@ -95,6 +95,8 @@ import kotlin.math.PI
 import kotlin.math.cos
 import kotlin.math.sin
 import kotlin.math.sqrt
+import ch.uzh.ifi.accesscomplete.reports.ReportDialog //my import
+
 
 /** Contains the quests map and the controls for it. */
 class MainFragment : Fragment(R.layout.fragment_main),
@@ -181,6 +183,9 @@ class MainFragment : Fragment(R.layout.fragment_main),
         zoomOutButton.setOnClickListener { onClickZoomOut() }
         mainMenuButton.setOnClickListener { onClickMainMenu() }
         answersCounterFragment.setOnClickListener { onClickAnswersCounter() }
+        //My addition
+        report_button.setOnClickListener{onClickReportButton()}
+        //end my addition
 
         updateMapQuestOffsets()
     }
@@ -252,6 +257,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
 
     override fun onStop() {
         super.onStop()
+        //Basic Kotlin Syntax Elvis Operator: If the left side returns null, you take the default value instead
         wasFollowingPosition = mapFragment?.isFollowingPosition ?: true
         wasCompassMode = mapFragment?.isCompassMode ?: false
         visibleQuestsSource.removeListener(this)
@@ -477,6 +483,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
         }
     }
 
+    // Basic Kotlin Syntax: A !! will throw a nullpointerexception if the thingie actually dares to be null
     @SuppressLint("MissingPermission")
     private fun onLocationIsEnabled() {
         gpsTrackingButton.visibility = View.VISIBLE
@@ -512,6 +519,12 @@ class MainFragment : Fragment(R.layout.fragment_main),
     }
 
     //endregion
+
+    //Daniels addition: Report button on click function
+    private fun onClickReportButton(){
+        //BIG TO DO
+        context?.let { ReportDialog(it).show() }
+    }
 
     //region Buttons - Functionality for the buttons in the main view
 

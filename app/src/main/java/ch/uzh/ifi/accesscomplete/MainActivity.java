@@ -152,6 +152,7 @@ public class MainActivity extends AppCompatActivity implements
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 
+		//Flag the current window to keep the screen on
 		if (prefs.getBoolean(Prefs.KEEP_SCREEN_ON, false)) {
 			getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 		}
@@ -164,6 +165,7 @@ public class MainActivity extends AppCompatActivity implements
 
 		mainFragment = (MainFragment) getSupportFragmentManager().findFragmentById(R.id.map_fragment);
 
+		//starts the tutorial if tutorial hasnt been shown and user is not logged in
 		if (savedInstanceState == null) {
 			boolean hasShownTutorial = prefs.getBoolean(Prefs.HAS_SHOWN_TUTORIAL, false);
 			if (!hasShownTutorial && !userController.isLoggedIn()) {
@@ -181,6 +183,7 @@ public class MainActivity extends AppCompatActivity implements
 		handleGeoUri();
 	}
 
+	//Sets the camera on the map to the position of the user if possible with geoLocation
 	private void handleGeoUri() {
 		Intent intent = getIntent();
 		if (!Intent.ACTION_VIEW.equals(intent.getAction())) return;
@@ -217,6 +220,7 @@ public class MainActivity extends AppCompatActivity implements
 		uploadController.addUploadProgressListener(uploadProgressListener);
 		questDownloadController.addDownloadProgressListener(downloadProgressListener);
 
+		//If not yet asked for location and it hasnt been denied before, start the location request fragment, else call updateLocationAvailability
 		if (!hasAskedForLocation && !prefs.getBoolean(Prefs.LAST_LOCATION_REQUEST_DENIED, false)) {
 			locationRequestFragment.startRequest();
 		} else {
@@ -243,6 +247,7 @@ public class MainActivity extends AppCompatActivity implements
 		return super.dispatchKeyEvent(event);
 	}
 
+	//Gotta save those coordinates so the map knows where to jump to once the app is going again
 	@Override
 	public void onPause() {
 		super.onPause();

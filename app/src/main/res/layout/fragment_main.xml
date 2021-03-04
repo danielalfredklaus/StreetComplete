@@ -154,6 +154,17 @@
                 android:src="@drawable/ic_location_24dp"
                 app:tint="@color/activated_tint" />
 
+            <ImageButton
+                android:id="@+id/report_button"
+                style="@style/RoundWhiteButton"
+                android:layout_width="@dimen/map_button_size"
+                android:layout_height="@dimen/map_button_size"
+                android:contentDescription="TO DO"
+                android:scaleType="center"
+                android:foreground="@drawable/ic_wheelchair_clipart_foreground"
+                android:backgroundTint="@color/traffic_red"
+                />
+
         </LinearLayout>
 
         <LinearLayout

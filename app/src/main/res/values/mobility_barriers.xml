@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="mobility_barriers_array">
+        <item>chain</item>
+        <item>block</item>
+        <item>cycle barrier</item>
+        <item>turnstile</item>
+        <item>bollard</item>
+        <item>hole</item>
+    </string-array>
+</resources>

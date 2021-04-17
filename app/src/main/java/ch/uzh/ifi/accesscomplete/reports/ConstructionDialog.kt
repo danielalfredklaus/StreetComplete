@@ -28,24 +28,17 @@ class ConstructionDialog (context: Context) : AlertDialog(context, R.style.Theme
     init {
         var chairAnswer = ""
         val view = LayoutInflater.from(context).inflate(R.layout.dialog_construction, null)
-        view.construction_dialog_yes.setOnClickListener(){
-            view.construction_dialog_yes.isChecked = true
-            view.construction_dialog_no.isChecked = false
-            view.construction_dialog_unsure.isChecked = false
+        view.construction_dialog_passage_yes.setOnClickListener(){
+            view.construction_dialog_passage_yes.isChecked = true
+            view.construction_dialog_passage_no.isChecked = false
             chairAnswer = "yes"
         }
-        view.construction_dialog_no.setOnClickListener(){
-            view.construction_dialog_yes.isChecked = false
-            view.construction_dialog_no.isChecked = true
-            view.construction_dialog_unsure.isChecked = false
+        view.construction_dialog_passage_no.setOnClickListener(){
+            view.construction_dialog_passage_yes.isChecked = false
+            view.construction_dialog_passage_no.isChecked = true
             chairAnswer = "no"
         }
-        view.construction_dialog_unsure.setOnClickListener(){
-            view.construction_dialog_yes.isChecked = false
-            view.construction_dialog_no.isChecked = false
-            view.construction_dialog_unsure.isChecked = true
-            chairAnswer = "unsure"
-        }
+        /*
         view.construction_dialog_ok.setOnClickListener(){
             val constructionDate = view.construction_dialog_date_input.text
             val comment = view.construction_dialog_comment.text
@@ -59,7 +52,7 @@ class ConstructionDialog (context: Context) : AlertDialog(context, R.style.Theme
         }
         view.construction_dialog_cancel.setOnClickListener(){
             this.dismiss()
-        }
+        } */
         setView(view)
 
     }

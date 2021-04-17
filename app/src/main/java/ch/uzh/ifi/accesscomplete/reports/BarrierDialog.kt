@@ -24,7 +24,7 @@ import kotlinx.android.synthetic.main.fragment_main.*
 
 
 class BarrierDialog (context: Context) : AlertDialog(context, R.style.Theme_Bubble_Dialog){
-
+    /*
     init {
         var chairAnswer = ""
         val view = LayoutInflater.from(context).inflate(R.layout.dialog_barrier, null)
@@ -63,5 +63,5 @@ class BarrierDialog (context: Context) : AlertDialog(context, R.style.Theme_Bubb
         setView(view)
 
     }
-
+    */
 }

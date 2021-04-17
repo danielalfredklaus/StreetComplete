@@ -23,6 +23,7 @@
 package ch.uzh.ifi.accesscomplete.map
 
 import android.annotation.SuppressLint
+import android.app.Dialog
 import android.content.*
 import android.content.res.Configuration
 import android.graphics.Point
@@ -41,6 +42,7 @@ import android.view.animation.AccelerateInterpolator
 import android.view.animation.OvershootInterpolator
 import android.view.inputmethod.InputMethodManager
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.annotation.AnyThread
 import androidx.annotation.DrawableRes
@@ -78,6 +80,9 @@ import ch.uzh.ifi.accesscomplete.location.LocationUtil
 import ch.uzh.ifi.accesscomplete.map.tangram.CameraPosition
 import ch.uzh.ifi.accesscomplete.quests.*
 import ch.uzh.ifi.accesscomplete.quests.AbstractQuestAnswerFragment.Listener.SidewalkSide
+import ch.uzh.ifi.accesscomplete.reports.BarrierDialog
+import ch.uzh.ifi.accesscomplete.reports.BarrierMobilityFragment
+import ch.uzh.ifi.accesscomplete.reports.ConstructionFragment
 import ch.uzh.ifi.accesscomplete.user.UserActivity
 import ch.uzh.ifi.accesscomplete.util.*
 import de.westnordost.osmapi.map.data.BoundingBox
@@ -96,6 +101,7 @@ import kotlin.math.cos
 import kotlin.math.sin
 import kotlin.math.sqrt
 import ch.uzh.ifi.accesscomplete.reports.ReportDialog //my import
+import kotlinx.android.synthetic.main.dialog_report_button.view.*
 
 
 /** Contains the quests map and the controls for it. */
@@ -523,8 +529,31 @@ class MainFragment : Fragment(R.layout.fragment_main),
     //Daniels addition: Report button on click function
     private fun onClickReportButton(){
         //BIG TO DO
-        context?.let { ReportDialog(it).show() }
+        //context?.let { ReportDialog(it).show() }
+        val dialog = Dialog(requireContext())
+        dialog.setContentView(R.layout.dialog_report_button)
+        dialog.setTitle("Report Menu TO DO")
+
+        var barrier: LinearLayout = dialog.findViewById(R.id.layout_barrier)
+        var construction: LinearLayout = dialog.findViewById(R.id.layout_construction)
+        var other_changeToVisionImpaired: LinearLayout = dialog.findViewById(R.id.layout_other_issue)
+        barrier.setOnClickListener{
+            //context?.let { BarrierDialog(it).show() }
+            showInBottomSheet(BarrierMobilityFragment())
+            dialog.dismiss()
+        }
+        construction.setOnClickListener {
+            showInBottomSheet(ConstructionFragment())
+            dialog.dismiss()
+        }
+        other_changeToVisionImpaired.setOnClickListener{
+            val toast = Toast.makeText(context, "Clicked a button", Toast.LENGTH_SHORT)
+            toast.show()
+            dialog.dismiss()
+        }
+        dialog.show()
     }
+
 
     //region Buttons - Functionality for the buttons in the main view
 

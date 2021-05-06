@@ -11,6 +11,7 @@ import androidx.fragment.app.add
 import androidx.fragment.app.commit
 import ch.uzh.ifi.accesscomplete.R
 import ch.uzh.ifi.accesscomplete.quests.AbstractBottomSheetFragment
+import ch.uzh.ifi.accesscomplete.quests.note_discussion.AttachPhotoFragment
 import ch.uzh.ifi.accesscomplete.quests.width.AddWidthModular
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import kotlinx.android.synthetic.main.dialog_barrier.view.*
@@ -22,6 +23,8 @@ class BarrierMobilityFragment : AbstractBottomSheetFragment() {
 
     private val measureWidthForm: AddWidthModular
         get() = childFragmentManager.findFragmentById(R.id.barrier_mobility_AR_measurement) as AddWidthModular
+    private val attachPhotoFragment: AttachPhotoFragment
+        get() = childFragmentManager.findFragmentById(R.id.frame_fragment_attach_photo) as AttachPhotoFragment
 
     val layoutResId = R.layout.fragment_create_note
     private lateinit var imagePaths: List<String>
@@ -80,6 +83,7 @@ class BarrierMobilityFragment : AbstractBottomSheetFragment() {
 
         if (savedInstanceState == null) {
             childFragmentManager.commit { add<AddWidthModular>(R.id.barrier_mobility_AR_measurement) }
+            childFragmentManager.commit { add<AttachPhotoFragment>(R.id.frame_fragment_attach_photo) }
         }
 
 

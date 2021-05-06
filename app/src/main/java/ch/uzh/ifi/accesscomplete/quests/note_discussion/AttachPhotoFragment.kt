@@ -113,7 +113,7 @@ class AttachPhotoFragment : Fragment() {
         outState.putString(CURRENT_PHOTO_PATH, currentImagePath)
     }
 
-    private fun takePhoto() {
+    fun takePhoto() {
         if (!requestCameraPermission()) {
             AlertDialog.Builder(requireContext())
                 .setMessage(R.string.camera_permission_warning)
@@ -191,6 +191,7 @@ class AttachPhotoFragment : Fragment() {
             }
             currentImagePath = null
         }
+
     }
 
     private fun removeCurrentImage() {
@@ -223,4 +224,5 @@ class AttachPhotoFragment : Fragment() {
         private const val PHOTO_PATHS = "photo_paths"
         private const val CURRENT_PHOTO_PATH = "current_photo_path"
     }
+
 }

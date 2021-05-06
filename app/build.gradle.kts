@@ -188,6 +188,10 @@ dependencies {
 
     // config files
     implementation("com.esotericsoftware.yamlbeans:yamlbeans:1.15")
+
+    //API Calls
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
 }
 
 /** Localizations that should be pulled from POEditor etc. */

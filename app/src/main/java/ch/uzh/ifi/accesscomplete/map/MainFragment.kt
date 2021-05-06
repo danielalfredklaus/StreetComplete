@@ -43,6 +43,7 @@ import android.view.animation.OvershootInterpolator
 import android.view.inputmethod.InputMethodManager
 import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.TableRow
 import android.widget.Toast
 import androidx.annotation.AnyThread
 import androidx.annotation.DrawableRes
@@ -55,7 +56,9 @@ import androidx.core.graphics.toPointF
 import androidx.core.graphics.toRectF
 import androidx.core.view.isGone
 import androidx.core.view.updateLayoutParams
+import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentManager.POP_BACK_STACK_INCLUSIVE
 import androidx.fragment.app.commit
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
@@ -80,8 +83,8 @@ import ch.uzh.ifi.accesscomplete.location.LocationUtil
 import ch.uzh.ifi.accesscomplete.map.tangram.CameraPosition
 import ch.uzh.ifi.accesscomplete.quests.*
 import ch.uzh.ifi.accesscomplete.quests.AbstractQuestAnswerFragment.Listener.SidewalkSide
-import ch.uzh.ifi.accesscomplete.reports.BarrierDialog
 import ch.uzh.ifi.accesscomplete.reports.BarrierMobilityFragment
+import ch.uzh.ifi.accesscomplete.reports.BarrierVisualFragment
 import ch.uzh.ifi.accesscomplete.reports.ConstructionFragment
 import ch.uzh.ifi.accesscomplete.user.UserActivity
 import ch.uzh.ifi.accesscomplete.util.*
@@ -100,8 +103,6 @@ import kotlin.math.PI
 import kotlin.math.cos
 import kotlin.math.sin
 import kotlin.math.sqrt
-import ch.uzh.ifi.accesscomplete.reports.ReportDialog //my import
-import kotlinx.android.synthetic.main.dialog_report_button.view.*
 
 
 /** Contains the quests map and the controls for it. */
@@ -189,9 +190,9 @@ class MainFragment : Fragment(R.layout.fragment_main),
         zoomOutButton.setOnClickListener { onClickZoomOut() }
         mainMenuButton.setOnClickListener { onClickMainMenu() }
         answersCounterFragment.setOnClickListener { onClickAnswersCounter() }
-        //My addition
+        //------------Daniels addition
         report_button.setOnClickListener{onClickReportButton()}
-        //end my addition
+        //------------end Daniels addition
 
         updateMapQuestOffsets()
     }
@@ -529,14 +530,25 @@ class MainFragment : Fragment(R.layout.fragment_main),
     //Daniels addition: Report button on click function
     private fun onClickReportButton(){
         //BIG TO DO
-        //context?.let { ReportDialog(it).show() }
-        val dialog = Dialog(requireContext())
-        dialog.setContentView(R.layout.dialog_report_button)
-        dialog.setTitle("Report Menu TO DO")
+        val inflater = requireActivity().layoutInflater
+        val inflatedView = inflater.inflate(R.layout.dialog_report_button, null)
 
-        var barrier: LinearLayout = dialog.findViewById(R.id.layout_barrier)
-        var construction: LinearLayout = dialog.findViewById(R.id.layout_construction)
-        var other_changeToVisionImpaired: LinearLayout = dialog.findViewById(R.id.layout_other_issue)
+        class ChooseReportDialogFragment : DialogFragment() {
+            override fun onCreateDialog(savedInstanceState: Bundle?): Dialog =
+                AlertDialog.Builder(requireContext())
+                    .setTitle("TO DO Choose the type of barrier you'd like to report")
+                    .setView(inflatedView)
+                    .create()
+
+        }
+
+        val dialog = ChooseReportDialogFragment()
+        dialog.show(childFragmentManager, "ChooseReportDialogFragment")
+
+
+        var barrier: LinearLayout = inflatedView.findViewById(R.id.layout_barrier)
+        var construction: LinearLayout = inflatedView.findViewById(R.id.layout_construction)
+        var barrierVisual: LinearLayout = inflatedView.findViewById(R.id.layout_other_issue)
         barrier.setOnClickListener{
             //context?.let { BarrierDialog(it).show() }
             showInBottomSheet(BarrierMobilityFragment())
@@ -545,13 +557,49 @@ class MainFragment : Fragment(R.layout.fragment_main),
         construction.setOnClickListener {
             showInBottomSheet(ConstructionFragment())
             dialog.dismiss()
+
         }
-        other_changeToVisionImpaired.setOnClickListener{
-            val toast = Toast.makeText(context, "Clicked a button", Toast.LENGTH_SHORT)
-            toast.show()
+        barrierVisual.setOnClickListener{
+            //showInBottomSheet(BarrierVisualFragment())
+            setPositionDialog(BarrierVisualFragment())
             dialog.dismiss()
+
         }
-        dialog.show()
+
+    }
+
+    private fun setPositionDialog(nextFragment: Fragment){
+        val inflater = requireActivity().layoutInflater
+        val inflatedView = inflater.inflate(R.layout.dialog_set_position, null)
+
+        class SetPositionDialogFragment : DialogFragment() {
+            override fun onCreateDialog(savedInstanceState: Bundle?): Dialog =
+                AlertDialog.Builder(requireContext())
+                    .setTitle("How would you like to set the location of the report?")
+                    .setView(inflatedView)
+                    .create()
+
+        }
+
+        val dialog = SetPositionDialogFragment()
+        dialog.show(childFragmentManager, "SetPositionDialogFragment")
+        val photo: TableRow = inflatedView.findViewById(R.id.dialog_set_position_photo_row)
+        val manual: TableRow = inflatedView.findViewById(R.id.dialog_set_position_manual_row)
+
+        val bundle = Bundle()
+        manual.setOnClickListener {
+            bundle.putString("mode", "manual")
+        }
+        photo.setOnClickListener{
+            val currentLocation = mapFragment!!.displayedLocation
+            bundle.putParcelable("location", currentLocation)
+            bundle.putString("mode", "photo")
+            nextFragment.arguments = bundle
+            showInBottomSheet(nextFragment)
+            dialog.dismiss()
+
+        }
+
     }
 
 
@@ -965,5 +1013,25 @@ class MainFragment : Fragment(R.layout.fragment_main),
 
     companion object {
         private const val BOTTOM_SHEET = "bottom_sheet"
+    }
+
+    /* end Interface */
+
+    /* Daniels additions (mainly copied from Sven) */
+
+    /**
+     *  Self standing function to retrieve the position of a given Point
+     * @param screenPosition: Point on the map
+     * @return LatLon position: Osm geo position without height
+     */
+    fun getLatLonFromPoint(screenPosition: Point): LatLon {
+        val mapFragment = mapFragment!!
+        val mapView = mapFragment.requireView()
+
+        val mapPosition = mapView.getLocationInWindow().toPointF()
+        val notePosition = PointF(screenPosition)
+        notePosition.offset(-mapPosition.x, -mapPosition.y)
+        val position = mapFragment.getPositionAt(notePosition) ?: throw NullPointerException()
+        return position
     }
 }

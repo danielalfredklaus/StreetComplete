@@ -1,6 +1,8 @@
 package ch.uzh.ifi.accesscomplete.reports
 
 import android.content.res.Configuration
+import android.graphics.Point
+import android.location.Location
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -29,10 +31,17 @@ class BarrierMobilityFragment : AbstractBottomSheetFragment() {
     val layoutResId = R.layout.fragment_create_note
     private lateinit var imagePaths: List<String>
     private lateinit var barrierContent: View
+    private var wheelchairQuestion: String = "not answered"
+    private var changesMade: Boolean = false
+
     //var textArray = arrayOf("ya mom", "ya da")
     //var imageArray = arrayOf(R.drawable.ic_add_photo_black_24dp,R.drawable.quest_pin)
 
-
+    interface Listener {
+        fun onReportFinished(position: Point, stringList: ArrayList<String>)
+    }
+    private val listener: Listener? get() = parentFragment as? Listener
+        ?: activity as? Listener
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(layoutResId, container, false)
@@ -48,8 +57,8 @@ class BarrierMobilityFragment : AbstractBottomSheetFragment() {
 
         val buttonPanel = view.findViewById<ViewGroup>(R.id.buttonPanel)
         buttonPanel.removeAllViews()
-        inflater.inflate(R.layout.quest_buttonpanel_done_cancel, buttonPanel)
-
+        val newPanel = inflater.inflate(R.layout.quest_buttonpanel_done_cancel, buttonPanel)
+        newPanel.findViewById<Button>(R.id.cancelButton).setOnClickListener { cancelButtonPressed() }
 
         var spinner = barrierContent.findViewById<Spinner>(R.id.barrier_mobility_spinner)
         ArrayAdapter.createFromResource(
@@ -74,9 +83,37 @@ class BarrierMobilityFragment : AbstractBottomSheetFragment() {
                 }
             }
 
+            val wheelchairYes: RadioButton= view.findViewById(R.id.barrier_dialog_yes)
+            val wheelchairNo: RadioButton= view.findViewById(R.id.barrier_dialog_no)
+            val wheelchairUnsure: RadioButton= view.findViewById(R.id.barrier_dialog_unsure)
+
+            //Sure you could do this in a better way...but is it worth the time?  Also Radiogroups don't work with Constraintlayouts
+            wheelchairYes.setOnClickListener {
+                    wheelchairYes.isChecked = true
+                    wheelchairNo.isChecked = false
+                    wheelchairUnsure.isChecked = false
+                    wheelchairQuestion = "yes"
+                    changesMade = true
+            }
+            wheelchairNo.setOnClickListener {
+                wheelchairYes.isChecked = false
+                wheelchairNo.isChecked = true
+                wheelchairUnsure.isChecked = false
+                wheelchairQuestion = "no"
+                changesMade = true
+            }
+            wheelchairUnsure.setOnClickListener {
+                wheelchairYes.isChecked = false
+                wheelchairNo.isChecked = false
+                wheelchairUnsure.isChecked = true
+                wheelchairQuestion = "unsure"
+                changesMade = true
+            }
+
             return view
         }
     }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -94,13 +131,47 @@ class BarrierMobilityFragment : AbstractBottomSheetFragment() {
 
     }
 
+    var bundle : Bundle ? = null
+    var location: Location? = null
+    var mode: String? = ""
+
+    override fun onStart() {
+        super.onStart()
+        bundle = this.arguments
+        //If i dont clear out arguments then there will be an infinite cycle
+        this.arguments = null
+        if (bundle != null){
+            mode = bundle?.getString("mode")
+            location = bundle?.getParcelable<Location>("location")
+            if(mode == "photo") {
+                attachPhotoFragment.takePhoto()
+                mode = "wasPhoto"
+                //var fm = parentFragmentManager
+                //fm.beginTransaction().show(this).commit()
+            }
+        }
+    }
+
 
     private fun onClickOk(){
+        val toast = Toast.makeText(context, "Location is ${location?.latitude},${location?.longitude}", Toast.LENGTH_LONG)
+        toast.show()
+        // I need barrier type, barrier width & barrier height, and the wheelchair info
+        var pos: Point = Point(0,0)
+        var list: ArrayList<String> = arrayListOf("hi","jo")
+        listener?.onReportFinished(pos, list)
+    }
 
+    private fun cancelButtonPressed() {
+        TODO("Not yet implemented")
     }
 
     private fun ViewChangeOnItemSelected(itemAtPos: Any){
+        changesMade = true
         when (itemAtPos) {
+            "Choose a barrier"-> {
+                changesMade = false
+            }
             "chain" -> {barrierContent.findViewById<FrameLayout>(R.id.barrier_mobility_AR_measurement).visibility = View.VISIBLE
                 measureWidthForm.instructionsText.text = "Measure the height"
             }

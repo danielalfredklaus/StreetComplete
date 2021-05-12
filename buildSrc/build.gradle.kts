@@ -20,13 +20,15 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
+import java.net.URI
+
 repositories {
     google()
-    jcenter()
+    mavenCentral()
 }
 
 dependencies {
-    implementation("com.beust:klaxon:5.0.1")
+    implementation("com.beust:klaxon:5.5")
     implementation("de.westnordost:countryboundaries:1.5")
     implementation("com.esotericsoftware.yamlbeans:yamlbeans:1.15")
 }

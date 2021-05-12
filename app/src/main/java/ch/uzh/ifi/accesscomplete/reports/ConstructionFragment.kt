@@ -2,6 +2,8 @@ package ch.uzh.ifi.accesscomplete.reports
 
 import android.content.res.Configuration
 import android.graphics.Color
+import android.graphics.Point
+import android.location.Location
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -48,6 +50,12 @@ class ConstructionFragment: AbstractBottomSheetFragment() {
     private var slopeValue: Int = 0
     private var slopeValue2: Int = 0
     private lateinit var imagePaths: List<String>
+
+    interface Listener {
+        fun onReportFinished(position: Point, stringList: ArrayList<String>)
+    }
+    private val listener: Listener? get() = parentFragment as? Listener
+        ?: activity as? Listener
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(layoutResId, container, false)
@@ -118,6 +126,27 @@ class ConstructionFragment: AbstractBottomSheetFragment() {
 
          //updateDoneButtonEnablement()
      }
+
+    var bundle : Bundle ? = null
+    var location: Location? = null
+    var mode: String? = ""
+
+    override fun onStart() {
+        super.onStart()
+        bundle = this.arguments
+        //If i dont clear out arguments then there will be an infinite cycle
+        this.arguments = null
+        if (bundle != null){
+            mode = bundle?.getString("mode")
+            location = bundle?.getParcelable<Location>("location")
+            if(mode == "photo") {
+                attachPhotoFragment.takePhoto()
+                mode = "wasPhoto"
+                //var fm = parentFragmentManager
+                //fm.beginTransaction().show(this).commit()
+            }
+        }
+    }
 
     private fun onClickOk() {
         //onComposedNote(noteText, attachPhotoFragment?.imagePaths)

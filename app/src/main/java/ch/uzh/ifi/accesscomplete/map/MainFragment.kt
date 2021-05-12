@@ -36,6 +36,7 @@ import android.net.NetworkCapabilities
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AccelerateInterpolator
@@ -86,6 +87,7 @@ import ch.uzh.ifi.accesscomplete.quests.AbstractQuestAnswerFragment.Listener.Sid
 import ch.uzh.ifi.accesscomplete.reports.BarrierMobilityFragment
 import ch.uzh.ifi.accesscomplete.reports.BarrierVisualFragment
 import ch.uzh.ifi.accesscomplete.reports.ConstructionFragment
+import ch.uzh.ifi.accesscomplete.reports.ManualPositionFragment
 import ch.uzh.ifi.accesscomplete.user.UserActivity
 import ch.uzh.ifi.accesscomplete.util.*
 import de.westnordost.osmapi.map.data.BoundingBox
@@ -99,6 +101,7 @@ import kotlinx.coroutines.cancel
 import kotlinx.coroutines.launch
 import java.util.*
 import javax.inject.Inject
+import kotlin.collections.ArrayList
 import kotlin.math.PI
 import kotlin.math.cos
 import kotlin.math.sin
@@ -111,6 +114,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
     AbstractQuestAnswerFragment.Listener,
     SplitWayFragment.Listener, LeaveNoteInsteadFragment.Listener, CreateNoteFragment.Listener,
     VisibleQuestListener,
+    ManualPositionFragment.Listener, BarrierMobilityFragment.Listener, BarrierVisualFragment.Listener,ConstructionFragment.Listener,
     CoroutineScope by CoroutineScope(Dispatchers.Main) {
 
     @Inject
@@ -527,6 +531,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
 
     //endregion
 
+    //--------------------------------------------------------
     //Daniels addition: Report button on click function
     private fun onClickReportButton(){
         //BIG TO DO
@@ -551,11 +556,11 @@ class MainFragment : Fragment(R.layout.fragment_main),
         var barrierVisual: LinearLayout = inflatedView.findViewById(R.id.layout_other_issue)
         barrier.setOnClickListener{
             //context?.let { BarrierDialog(it).show() }
-            showInBottomSheet(BarrierMobilityFragment())
+            setPositionDialog(BarrierMobilityFragment())
             dialog.dismiss()
         }
         construction.setOnClickListener {
-            showInBottomSheet(ConstructionFragment())
+            setPositionDialog(ConstructionFragment())
             dialog.dismiss()
 
         }
@@ -588,7 +593,16 @@ class MainFragment : Fragment(R.layout.fragment_main),
 
         val bundle = Bundle()
         manual.setOnClickListener {
-            bundle.putString("mode", "manual")
+            bundle.putString("nextFragment", nextFragment.toString().substringBefore("{"))
+            Log.i("MainFragment","nextFragment = " + nextFragment.toString().substringBefore("{"))
+            val posFrag = ManualPositionFragment()
+            posFrag.arguments = bundle
+            freezeMap()
+            showInBottomSheet(posFrag)
+            dialog.dismiss()
+
+            val toast = Toast.makeText(context, "${nextFragment.toString().substringBefore("{")} saved in key nextFragment", Toast.LENGTH_LONG)
+            toast.show()
         }
         photo.setOnClickListener{
             val currentLocation = mapFragment!!.displayedLocation
@@ -602,6 +616,46 @@ class MainFragment : Fragment(R.layout.fragment_main),
 
     }
 
+    override fun openInBottomSheet (nextFragment: String, toPassBundle: Bundle, pos: Point){
+        /*if(mapFragment != null){
+            val mapFragment = mapFragment!!
+            mapFragment.show3DBuildings = false
+            val mapView = mapFragment.requireView()
+
+            val mapPosition = mapView.getLocationInWindow().toPointF()
+            val notePosition = PointF(pos)
+            notePosition.offset(-mapPosition.x, -mapPosition.y)
+            val newPos = mapFragment.getPositionAt(notePosition) ?: throw NullPointerException()
+
+
+            val offsetPos = mapFragment.getPositionThatCentersPosition(newPos, mapOffsetWithOpenBottomSheet)
+            mapFragment.updateCameraPosition { position = offsetPos }
+            freezeMap()
+        } */
+        var f : Fragment = ConstructionFragment()
+        closeBottomSheet()
+        when (nextFragment){
+            "ConstructionFragment"->{
+                //f = ConstructionFragment()
+            }
+            "BarrierVisualFragment"->{
+                f = BarrierVisualFragment()
+            }
+            "BarrierMobilityFragment"->{
+                f = BarrierMobilityFragment()
+            }
+        }
+        f.arguments = toPassBundle
+        showInBottomSheet(f)
+        freezeMap()
+    }
+
+    override fun onReportFinished(position: Point, stringList: ArrayList<String>) {
+        TODO("Not yet implemented")
+
+        closeBottomSheet()
+    }
+//-------------------------------End daniels section
 
     //region Buttons - Functionality for the buttons in the main view
 

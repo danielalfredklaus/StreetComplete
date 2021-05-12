@@ -98,8 +98,14 @@ if (keystorePropertiesFile.exists()) {
 
 repositories {
     mavenLocal()
-    jcenter()
+    mavenCentral()
     maven { url = URI("https://jitpack.io") }
+    maven { url = URI("https://dl.bintray.com/google/flexbox-layout/")}
+    jcenter() {
+        content {
+            includeModule("org.sufficientlysecure", "html-textview") //this thing is no longer updated and stuck on jcenter.
+        }
+    }
 }
 
 configurations {
@@ -156,7 +162,7 @@ dependencies {
     // finding in which country we are for country-specific logic
     implementation("de.westnordost:countryboundaries:1.5")
     // finding a name for a feature without a name tag
-    implementation("de.westnordost:osmfeatures-android:1.1")
+    implementation("de.westnordost:osmfeatures-android:2.1")
     // talking with the OSM API
     implementation("de.westnordost:osmapi-map:1.3")
     implementation("de.westnordost:osmapi-changesets:1.3")
@@ -167,7 +173,7 @@ dependencies {
     implementation("androidx.viewpager2:viewpager2:1.0.0")
     implementation("me.grantland:autofittextview:0.2.1")
     implementation("org.sufficientlysecure:html-textview:3.9")
-    implementation("com.duolingo.open:rtl-viewpager:2.0.0")
+    //implementation("com.duolingo.open:rtl-viewpager:2.0.0") deprecated on jcenter
     implementation("com.google.android:flexbox:2.0.1")
     implementation("androidx.cardview:cardview:1.0.0")
 
@@ -184,14 +190,22 @@ dependencies {
     implementation("org.objenesis:objenesis:2.6")
 
     // map and location
-    implementation("com.mapzen.tangram:tangram:0.13.0")
+    implementation("com.mapzen.tangram:tangram:0.16.1")
 
     // config files
     implementation("com.esotericsoftware.yamlbeans:yamlbeans:1.15")
 
-    //API Calls
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
+    //API Calls and Database (used by Daniels stuff)
+    //implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    //implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
+    val room_version = "2.3.0"
+    implementation("androidx.room:room-runtime:$room_version")
+    kapt("androidx.room:room-compiler:$room_version")
+    // optional - Kotlin Extensions and Coroutines support for Room
+    implementation("androidx.room:room-ktx:$room_version")
+    // optional - Test helpers
+    testImplementation("androidx.room:room-testing:$room_version")
+
 }
 
 /** Localizations that should be pulled from POEditor etc. */

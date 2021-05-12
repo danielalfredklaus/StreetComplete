@@ -33,7 +33,8 @@
         app:tabMode="fixed"
         app:tabGravity="fill" />
 
-    <com.duolingo.open.rtlviewpager.RtlViewPager
+<!--this used to be a duolingo rtl viewpager. Daniel changed it but this file seems to not be in use anymore anyway -->
+    <androidx.viewpager2.widget.ViewPager2
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"

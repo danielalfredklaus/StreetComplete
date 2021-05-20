@@ -25,6 +25,7 @@ package ch.uzh.ifi.accesscomplete.quests
 import android.content.res.Configuration
 import android.graphics.Point
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.animation.AccelerateInterpolator
 import android.view.animation.AlphaAnimation
@@ -52,6 +53,8 @@ class CreateNoteFragment : AbstractCreateNoteFragment() {
             ?: activity as? Listener
 
     override val layoutResId = R.layout.fragment_create_note
+
+    private val TAG = "CreateNoteFragment"
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -101,7 +104,7 @@ class CreateNoteFragment : AbstractCreateNoteFragment() {
 
         val screenPos = createNoteMarker.getLocationInWindow()
         screenPos.offset(createNoteMarker.width / 2, createNoteMarker.height / 2)
-
+        Log.i(TAG,"${screenPos.x}, ${screenPos.y}")
         markerLayoutContainer?.visibility = View.INVISIBLE
 
         listener?.onCreatedNote(text, imagePaths, screenPos)

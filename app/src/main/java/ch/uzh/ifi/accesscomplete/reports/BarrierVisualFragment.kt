@@ -4,6 +4,7 @@ import android.content.res.Configuration
 import android.graphics.Point
 import android.location.Location
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,7 +17,10 @@ import ch.uzh.ifi.accesscomplete.R
 import ch.uzh.ifi.accesscomplete.quests.AbstractBottomSheetFragment
 import ch.uzh.ifi.accesscomplete.quests.note_discussion.AttachPhotoFragment
 import com.google.android.material.bottomsheet.BottomSheetBehavior
+import kotlinx.android.synthetic.main.dialog_barrier_visual.*
+import kotlinx.android.synthetic.main.form_leave_note.*
 import kotlinx.android.synthetic.main.fragment_quest_answer.*
+import kotlinx.android.synthetic.main.marker_create_note.*
 import kotlinx.android.synthetic.main.quest_buttonpanel_done_cancel.*
 
 class BarrierVisualFragment: AbstractBottomSheetFragment()  {
@@ -25,9 +29,12 @@ class BarrierVisualFragment: AbstractBottomSheetFragment()  {
         get() = childFragmentManager.findFragmentById(R.id.frame_fragment_attach_photo) as AttachPhotoFragment
 
     val layoutResId = R.layout.fragment_create_note
+    private var changeMade = false
+
+    private val noteText get() = barrier_visual_comment_edit_text?.text?.toString().orEmpty().trim()
 
     interface Listener {
-        fun onReportFinished(position: Point, stringList: ArrayList<String>)
+        fun onReportFinished(location: Location, stringList: ArrayList<String>)
     }
     private val listener: Listener? get() = parentFragment as? Listener
         ?: activity as? Listener
@@ -84,6 +91,17 @@ class BarrierVisualFragment: AbstractBottomSheetFragment()  {
             }
         }
     }
+
+    private val TAG = "BarrierVisualFragment"
+    override fun onDiscard() {
+        super.onDiscard()
+        Log.i(TAG, "Fragment discarded")
+        markerLayoutContainer?.visibility = View.INVISIBLE
+        attachPhotoFragment?.deleteImages()
+    }
+
+    override fun isRejectingClose() =
+        noteText.isNotEmpty() || attachPhotoFragment?.imagePaths?.isNotEmpty()
 
     private fun onClickOk(){
         val toast = Toast.makeText(context, "Location is ${location?.latitude},${location?.longitude}", Toast.LENGTH_LONG)

@@ -26,6 +26,7 @@ import android.content.res.Configuration
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowInsets
@@ -59,6 +60,8 @@ abstract class AbstractBottomSheetFragment : Fragment(), IsCloseableBottomSheet 
 
     private var bottomSheetBottom: Int? = null
 
+    private val TAG = "AbstractBottomSheetFragment"
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -77,7 +80,9 @@ abstract class AbstractBottomSheetFragment : Fragment(), IsCloseableBottomSheet 
             bottomSheetBottom = bottom
         }
 
-        closeButton.setOnClickListener { activity?.onBackPressed() }
+        closeButton.setOnClickListener {
+            Log.i(TAG, "closeButton.setOnClickListener")
+            activity?.onBackPressed() }
 
         setupFittingToSystemWindowInsets()
 
@@ -193,6 +198,7 @@ abstract class AbstractBottomSheetFragment : Fragment(), IsCloseableBottomSheet 
     /** Request to close the form through user interaction (back button, clicked other quest,..),
      * requires user confirmation if any changes have been made  */
     @UiThread override fun onClickClose(onConfirmed: () -> Unit) {
+        Log.i(TAG, "onClickClose")
         if (!isRejectingClose()) {
             onDiscard()
             onConfirmed()

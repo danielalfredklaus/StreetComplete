@@ -116,9 +116,9 @@ configurations {
 }
 
 dependencies {
-    val kotlinVersion = "1.4.10"
+    val kotlinVersion = "1.4.32"
     val mockitoVersion = "2.28.2"
-    val kotlinxVersion = "1.3.8"
+    val kotlinxVersion = "1.4.3"
     val daggerVersion = "2.14.1"
 
     // tests
@@ -131,6 +131,7 @@ dependencies {
     androidTestImplementation("androidx.test:rules:1.3.0")
     androidTestImplementation("org.mockito:mockito-android:$mockitoVersion")
     androidTestImplementation("org.assertj:assertj-core:2.8.0")
+    androidTestImplementation("androidx.test:core:1.3.0")
 
     // dependency injection
     implementation("com.google.dagger:dagger:$daggerVersion")
@@ -152,6 +153,7 @@ dependencies {
     implementation("androidx.exifinterface:exifinterface:1.3.1")
 
     // Kotlin
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$kotlinxVersion")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$kotlinxVersion")
@@ -172,8 +174,8 @@ dependencies {
     // widgets
     implementation("androidx.viewpager2:viewpager2:1.0.0")
     implementation("me.grantland:autofittextview:0.2.1")
-    implementation("org.sufficientlysecure:html-textview:3.9")
-    //implementation("com.duolingo.open:rtl-viewpager:2.0.0") deprecated on jcenter
+    implementation("org.sufficientlysecure:html-textview:3.9") //needs to be removed until 2022 if it stays stuck on jcenter
+    //implementation("com.duolingo.open:rtl-viewpager:2.0.0") deprecated on jcenter, no longer in use anyway
     implementation("com.google.android:flexbox:2.0.1")
     implementation("androidx.cardview:cardview:1.0.0")
 
@@ -196,15 +198,18 @@ dependencies {
     implementation("com.esotericsoftware.yamlbeans:yamlbeans:1.15")
 
     //API Calls and Database (used by Daniels stuff)
-    //implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    //implementation("com.squareup.retrofit2:converter-moshi:2.9.0")
-    val room_version = "2.3.0"
-    implementation("androidx.room:room-runtime:$room_version")
-    kapt("androidx.room:room-compiler:$room_version")
-    // optional - Kotlin Extensions and Coroutines support for Room
-    implementation("androidx.room:room-ktx:$room_version")
-    // optional - Test helpers
-    testImplementation("androidx.room:room-testing:$room_version")
+    val retrofitVersion = "2.9.0"
+    val roomVersion = "2.3.0"
+    val moshiVersion = "1.12.0"
+    implementation("com.squareup.retrofit2:retrofit:$retrofitVersion")
+    implementation("com.squareup.retrofit2:converter-moshi:$retrofitVersion")
+    implementation ("com.squareup.moshi:moshi:$moshiVersion")
+    kapt ("com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion")
+    implementation ("com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2")
+    implementation("androidx.room:room-runtime:$roomVersion")
+    kapt("androidx.room:room-compiler:$roomVersion")
+    implementation("androidx.room:room-ktx:$roomVersion") // optional - Kotlin Extensions and Coroutines support for Room
+    testImplementation("androidx.room:room-testing:$roomVersion") // optional - Test helpers
 
 }
 

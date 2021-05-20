@@ -31,6 +31,7 @@ import android.graphics.PointF
 import android.graphics.Rect
 import android.graphics.RectF
 import android.location.Location
+import android.location.LocationManager
 import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Bundle
@@ -260,6 +261,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
      *  Returns true if the event should be consumed. */
     fun onBackPressed(): Boolean {
         val f = bottomSheetFragment
+        Log.i(TAG,"onBackPressed, isCloseableBottomSheet: " + (f is IsCloseableBottomSheet).toString() )
         if (f !is IsCloseableBottomSheet) return false
 
         f.onClickClose { closeBottomSheet() }
@@ -325,6 +327,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
     override fun onLongPress(x: Float, y: Float) {
         val point = PointF(x, y)
         val position = mapFragment?.getPositionAt(point) ?: return
+        Log.i(TAG, "longpress position values: ${position.latitude},${position.longitude}" )
         if (bottomSheetFragment != null) return
 
         contextMenuView.translationX = x
@@ -448,10 +451,13 @@ class MainFragment : Fragment(R.layout.fragment_main),
         val mapView = mapFragment.view ?: return
 
         val mapPosition = mapView.getLocationInWindow().toPointF()
+        Log.i(TAG, "mapPosition values: ${mapPosition.x},${mapPosition.y}" )
         val notePosition = PointF(screenPosition)
+        Log.i(TAG, "notePosition values: ${notePosition.x},${notePosition.y}" )
         notePosition.offset(-mapPosition.x, -mapPosition.y)
+        Log.i(TAG, "notePosition values after offset: ${notePosition.x},${notePosition.y}" )
         val position = mapFragment.getPositionAt(notePosition) ?: throw NullPointerException()
-
+        Log.i(TAG, "calculated position values: ${position.latitude},${position.longitude}" )
         questController.createNote(note, imagePaths, position)
 
         listener?.onCreatedNote(screenPosition)
@@ -556,24 +562,26 @@ class MainFragment : Fragment(R.layout.fragment_main),
         var barrierVisual: LinearLayout = inflatedView.findViewById(R.id.layout_other_issue)
         barrier.setOnClickListener{
             //context?.let { BarrierDialog(it).show() }
-            setPositionDialog(BarrierMobilityFragment())
+            setPositionDialog("BarrierMobilityFragment")
             dialog.dismiss()
         }
         construction.setOnClickListener {
-            setPositionDialog(ConstructionFragment())
+            setPositionDialog("ConstructionFragment")
             dialog.dismiss()
 
         }
         barrierVisual.setOnClickListener{
             //showInBottomSheet(BarrierVisualFragment())
-            setPositionDialog(BarrierVisualFragment())
+            setPositionDialog("BarrierVisualFragment")
             dialog.dismiss()
 
         }
 
     }
 
-    private fun setPositionDialog(nextFragment: Fragment){
+    private val TAG = "MainFragment"
+
+    fun setPositionDialog(nextFragment: String){
         val inflater = requireActivity().layoutInflater
         val inflatedView = inflater.inflate(R.layout.dialog_set_position, null)
 
@@ -593,47 +601,52 @@ class MainFragment : Fragment(R.layout.fragment_main),
 
         val bundle = Bundle()
         manual.setOnClickListener {
-            bundle.putString("nextFragment", nextFragment.toString().substringBefore("{"))
-            Log.i("MainFragment","nextFragment = " + nextFragment.toString().substringBefore("{"))
+            bundle.putString("nextFragment", nextFragment)
+            Log.i(TAG, "nextFragment = $nextFragment")
             val posFrag = ManualPositionFragment()
             posFrag.arguments = bundle
             freezeMap()
             showInBottomSheet(posFrag)
             dialog.dismiss()
-
-            val toast = Toast.makeText(context, "${nextFragment.toString().substringBefore("{")} saved in key nextFragment", Toast.LENGTH_LONG)
-            toast.show()
         }
         photo.setOnClickListener{
             val currentLocation = mapFragment!!.displayedLocation
             bundle.putParcelable("location", currentLocation)
             bundle.putString("mode", "photo")
-            nextFragment.arguments = bundle
-            showInBottomSheet(nextFragment)
+            openInBottomSheet(nextFragment,bundle)
             dialog.dismiss()
 
         }
 
     }
 
-    override fun openInBottomSheet (nextFragment: String, toPassBundle: Bundle, pos: Point){
-        /*if(mapFragment != null){
+    override fun openInBottomSheet (nextFragment: String, toPassBundle: Bundle){
+
+        closeBottomSheet()
+        if(toPassBundle.getParcelable<Point>("screenPos")!=null) {
             val mapFragment = mapFragment!!
-            mapFragment.show3DBuildings = false
-            val mapView = mapFragment.requireView()
-
+            val mapView = mapFragment!!.requireView()
             val mapPosition = mapView.getLocationInWindow().toPointF()
-            val notePosition = PointF(pos)
+            Log.i(TAG, "mapPosition values: ${mapPosition.x},${mapPosition.y}" )
+            val notePosition = PointF(toPassBundle.getParcelable("screenPos")!!)
+            Log.i(TAG, "notePosition values: ${notePosition.x},${notePosition.y}" )
             notePosition.offset(-mapPosition.x, -mapPosition.y)
+            Log.i(TAG, "notePosition after offset: ${notePosition.x},${notePosition.y}" )
             val newPos = mapFragment.getPositionAt(notePosition) ?: throw NullPointerException()
-
-
+            var newPosAsLocation: Location = Location(LocationManager.GPS_PROVIDER).apply { //Timestamp and height arent important anyway
+            latitude = newPos.latitude
+            longitude = newPos.longitude }
+            toPassBundle.putParcelable("location",newPosAsLocation)
+            var actualLoc = mapFragment.displayedLocation!!
+            Log.i(TAG, "LatLon of newPosAsLocation: ${newPosAsLocation.latitude} ${newPosAsLocation.longitude}, compared to actual GPS: " +
+                "${actualLoc.latitude}, ${actualLoc.longitude}" )
+        }
+            /*
             val offsetPos = mapFragment.getPositionThatCentersPosition(newPos, mapOffsetWithOpenBottomSheet)
             mapFragment.updateCameraPosition { position = offsetPos }
             freezeMap()
         } */
         var f : Fragment = ConstructionFragment()
-        closeBottomSheet()
         when (nextFragment){
             "ConstructionFragment"->{
                 //f = ConstructionFragment()
@@ -650,7 +663,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
         freezeMap()
     }
 
-    override fun onReportFinished(position: Point, stringList: ArrayList<String>) {
+    override fun onReportFinished(location: Location, stringList: ArrayList<String>) {
         TODO("Not yet implemented")
 
         closeBottomSheet()
@@ -968,6 +981,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
         wasCompassMode = mapFragment.isCompassMode
         mapFragment.isFollowingPosition = false
         mapFragment.isCompassMode = false
+        Log.i(TAG, "Map frozen")
     }
 
     private fun resetFreezeMap() {
@@ -976,6 +990,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
         mapFragment.clearFocusQuest()
         mapFragment.show3DBuildings = true
         mapFragment.isShowingQuestPins = true
+        Log.i(TAG, "Map freeze reset")
     }
 
     private fun unfreezeMap() {
@@ -986,6 +1001,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
         mapFragment.endFocusQuest()
         mapFragment.show3DBuildings = true
         mapFragment.isShowingQuestPins = true
+        Log.i(TAG, "Map not frozen anymore")
     }
 
     //endregion

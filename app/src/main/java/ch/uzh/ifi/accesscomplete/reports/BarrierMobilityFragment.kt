@@ -4,6 +4,7 @@ import android.content.res.Configuration
 import android.graphics.Point
 import android.location.Location
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,8 +17,11 @@ import ch.uzh.ifi.accesscomplete.quests.AbstractBottomSheetFragment
 import ch.uzh.ifi.accesscomplete.quests.note_discussion.AttachPhotoFragment
 import ch.uzh.ifi.accesscomplete.quests.width.AddWidthModular
 import com.google.android.material.bottomsheet.BottomSheetBehavior
+import kotlinx.android.synthetic.main.dialog_barrier.*
 import kotlinx.android.synthetic.main.dialog_barrier.view.*
+import kotlinx.android.synthetic.main.dialog_barrier_visual.*
 import kotlinx.android.synthetic.main.fragment_quest_answer.*
+import kotlinx.android.synthetic.main.marker_create_note.*
 import kotlinx.android.synthetic.main.quest_buttonpanel_done_cancel.*
 
 
@@ -33,12 +37,15 @@ class BarrierMobilityFragment : AbstractBottomSheetFragment() {
     private lateinit var barrierContent: View
     private var wheelchairQuestion: String = "not answered"
     private var changesMade: Boolean = false
+    private val noteText get() = barrier_dialog_comment?.text?.toString().orEmpty().trim()
+    private val widthInput get() = measureWidthForm.manualInputField?.text?.toString().orEmpty().trim()
+
 
     //var textArray = arrayOf("ya mom", "ya da")
     //var imageArray = arrayOf(R.drawable.ic_add_photo_black_24dp,R.drawable.quest_pin)
 
     interface Listener {
-        fun onReportFinished(position: Point, stringList: ArrayList<String>)
+        fun onReportFinished(location: Location, stringList: ArrayList<String>)
     }
     private val listener: Listener? get() = parentFragment as? Listener
         ?: activity as? Listener
@@ -58,7 +65,6 @@ class BarrierMobilityFragment : AbstractBottomSheetFragment() {
         val buttonPanel = view.findViewById<ViewGroup>(R.id.buttonPanel)
         buttonPanel.removeAllViews()
         val newPanel = inflater.inflate(R.layout.quest_buttonpanel_done_cancel, buttonPanel)
-        newPanel.findViewById<Button>(R.id.cancelButton).setOnClickListener { cancelButtonPressed() }
 
         var spinner = barrierContent.findViewById<Spinner>(R.id.barrier_mobility_spinner)
         ArrayAdapter.createFromResource(
@@ -157,38 +163,36 @@ class BarrierMobilityFragment : AbstractBottomSheetFragment() {
         val toast = Toast.makeText(context, "Location is ${location?.latitude},${location?.longitude}", Toast.LENGTH_LONG)
         toast.show()
         // I need barrier type, barrier width & barrier height, and the wheelchair info
-        var pos: Point = Point(0,0)
-        var list: ArrayList<String> = arrayListOf("hi","jo")
-        listener?.onReportFinished(pos, list)
     }
 
-    private fun cancelButtonPressed() {
-        TODO("Not yet implemented")
-    }
-
+    val arList = arrayOf("Chain", "Block", "Hole","Cycle barrier", "Bollard")
+    var barrierType = ""
     private fun ViewChangeOnItemSelected(itemAtPos: Any){
-        changesMade = true
+        barrierType = itemAtPos as String
+        val arView = barrierContent.findViewById<FrameLayout>(R.id.barrier_mobility_AR_measurement)
+        val chairQ = barrierContent.findViewById<ConstraintLayout>(R.id.barrier_mobility_constraintlayout_wheelchair)
+        if(itemAtPos in arList) { arView.visibility = View.VISIBLE } else { arView.visibility = View.GONE }
+        if (itemAtPos != "Turnstile"){ chairQ.visibility = View.GONE } else { chairQ.visibility = View.VISIBLE }
         when (itemAtPos) {
-            "Choose a barrier"-> {
-                changesMade = false
-            }
-            "chain" -> {barrierContent.findViewById<FrameLayout>(R.id.barrier_mobility_AR_measurement).visibility = View.VISIBLE
-                measureWidthForm.instructionsText.text = "Measure the height"
-            }
-            "block", "hole" -> { barrierContent.findViewById<FrameLayout>(R.id.barrier_mobility_AR_measurement).visibility = View.VISIBLE
-                measureWidthForm.instructionsText.text = "Measure the width" }
-            "cycle barrier", "bollard" -> { barrierContent.findViewById<FrameLayout>(R.id.barrier_mobility_AR_measurement).visibility = View.VISIBLE
-                measureWidthForm.instructionsText.text = "Measure the width between barriers"}
-            "turnstile" -> { barrierContent.findViewById<ConstraintLayout>(R.id.barrier_mobility_constraintlayout_wheelchair).visibility = View.VISIBLE
-            barrierContent.findViewById<FrameLayout>(R.id.barrier_mobility_AR_measurement).visibility = View.GONE }
+            "Choose a barrier"-> { changesMade = false }
+            "Chain" -> { measureWidthForm.instructionsText.text = "Measure the height" }
+            "Block", "Hole" -> { measureWidthForm.instructionsText.text = "Measure the width" }
+            "Cycle barrier", "Bollard" -> { measureWidthForm.instructionsText.text = "Measure the width between barriers" }
             else -> {
-
             }
         }
-        if (itemAtPos != "turnstile"){
-            barrierContent.findViewById<ConstraintLayout>(R.id.barrier_mobility_constraintlayout_wheelchair).visibility = View.GONE
-        }
-
     }
+
+    private val TAG = "BarrierMobilityFragment"
+    override fun onDiscard() {
+        super.onDiscard()
+        Log.i(TAG, "Fragment discarded")
+        markerLayoutContainer?.visibility = View.INVISIBLE
+        attachPhotoFragment?.deleteImages()
+        Log.i(TAG, " "+ noteText.isNotEmpty() +" "+ ( barrierType in arList && widthInput.isNotEmpty() )+" "+ changesMade+" "+ attachPhotoFragment?.imagePaths?.isNotEmpty() )
+    }
+
+    override fun isRejectingClose() =
+        noteText.isNotEmpty() || ( barrierType in arList && widthInput.isNotEmpty() )|| changesMade || attachPhotoFragment?.imagePaths?.isNotEmpty()
 
 }

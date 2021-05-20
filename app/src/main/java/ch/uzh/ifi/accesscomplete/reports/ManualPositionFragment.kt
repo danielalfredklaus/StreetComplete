@@ -4,19 +4,17 @@ import android.content.res.Configuration
 import android.graphics.Point
 import android.location.Location
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.Toast
-import androidx.fragment.app.FragmentManager
-import androidx.fragment.app.add
-import androidx.fragment.app.commit
 import ch.uzh.ifi.accesscomplete.R
 import ch.uzh.ifi.accesscomplete.ktx.getLocationInWindow
+import ch.uzh.ifi.accesscomplete.map.MainFragment
 import ch.uzh.ifi.accesscomplete.quests.AbstractBottomSheetFragment
-import ch.uzh.ifi.accesscomplete.quests.note_discussion.AttachPhotoFragment
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import kotlinx.android.synthetic.main.fragment_quest_answer.*
 import kotlinx.android.synthetic.main.marker_create_note.*
@@ -25,12 +23,14 @@ import kotlinx.android.synthetic.main.quest_buttonpanel_done_cancel.*
 class ManualPositionFragment: AbstractBottomSheetFragment()  {
 
     interface Listener {
-        fun openInBottomSheet(nextFragment: String, bundle: Bundle, position: Point)
+        fun openInBottomSheet(nextFragment: String, bundle: Bundle)
     }
     private val listener: Listener? get() = parentFragment as? Listener
         ?: activity as? Listener
 
     val layoutResId = R.layout.fragment_create_note
+
+    private val TAG = "ManualPositionFragment"
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(layoutResId, container, false)
@@ -49,8 +49,6 @@ class ManualPositionFragment: AbstractBottomSheetFragment()  {
         val newButtonPanel = inflater.inflate(R.layout.quest_buttonpanel_done_cancel, buttonPanel)
         val doneButton: Button = newButtonPanel.findViewById(R.id.doneButton)
         doneButton.text = "TO DO Use this location"
-        val cancelButton: Button = newButtonPanel.findViewById(R.id.cancelButton)
-        cancelButton.text = getString(R.string.back)
 
         val titleBubble = view.findViewById<LinearLayout>(R.id.speechBubbleTitleContainer)
         titleBubble.visibility = View.GONE
@@ -64,7 +62,12 @@ class ManualPositionFragment: AbstractBottomSheetFragment()  {
         if (savedInstanceState == null) {
         }
 
-        cancelButton.setOnClickListener { activity?.onBackPressed() }
+        cancelButton.setOnClickListener {
+            activity?.onBackPressed()
+            Log.i("ManualPositionFragment", arguments?.getString("nextFragment")!!)
+            val mf = this.parentFragment as MainFragment //This is one way to recall the previous dialog
+            mf.setPositionDialog(arguments?.getString("nextFragment")!!)
+        }
         doneButton.setOnClickListener { onClickOk() }
 
 
@@ -86,8 +89,9 @@ class ManualPositionFragment: AbstractBottomSheetFragment()  {
         val newBundle = Bundle()
         val screenPos = createNoteMarker.getLocationInWindow()
         screenPos.offset(createNoteMarker.width / 2, createNoteMarker.height / 2)
-        newBundle.putParcelable("pos",screenPos)
+        Log.i(TAG, "${screenPos.x}, ${screenPos.y}")
+        newBundle.putParcelable("screenPos",screenPos)
         newBundle.putString("mode", "manual")
-        if(nextFragment != null) listener?.openInBottomSheet(nextFragment, newBundle, screenPos)
+        if(nextFragment != null) listener?.openInBottomSheet(nextFragment, newBundle)
     }
 }

@@ -5,6 +5,7 @@ import android.graphics.Color
 import android.graphics.Point
 import android.location.Location
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -23,9 +24,11 @@ import ch.uzh.ifi.accesscomplete.quests.note_discussion.AttachPhotoFragment
 import ch.uzh.ifi.accesscomplete.quests.width.AddWidthModular
 import ch.uzh.ifi.accesscomplete.util.TextChangedWatcher
 import com.google.android.material.bottomsheet.BottomSheetBehavior
+import kotlinx.android.synthetic.main.dialog_barrier_visual.*
 import kotlinx.android.synthetic.main.dialog_construction.*
 import kotlinx.android.synthetic.main.form_leave_note.*
 import kotlinx.android.synthetic.main.fragment_quest_answer.*
+import kotlinx.android.synthetic.main.marker_create_note.*
 import kotlinx.android.synthetic.main.quest_buttonpanel_done_cancel.*
 import kotlinx.android.synthetic.main.quest_incline.*
 
@@ -50,9 +53,11 @@ class ConstructionFragment: AbstractBottomSheetFragment() {
     private var slopeValue: Int = 0
     private var slopeValue2: Int = 0
     private lateinit var imagePaths: List<String>
+    private var changeMade = false
+    private val noteText get() = construction_dialog_comment?.text?.toString().orEmpty().trim()
 
     interface Listener {
-        fun onReportFinished(position: Point, stringList: ArrayList<String>)
+        fun onReportFinished(location: Location, stringList: ArrayList<String>)
     }
     private val listener: Listener? get() = parentFragment as? Listener
         ?: activity as? Listener
@@ -103,23 +108,26 @@ class ConstructionFragment: AbstractBottomSheetFragment() {
              construction_dialog_passage_yes.isChecked = true
              construction_dialog_passage_no.isChecked = false
              construction_dialog_linearlayout_passage_yes.visibility = View.VISIBLE
+             changeMade = true
          }
          construction_dialog_passage_no.setOnClickListener(){
              construction_dialog_passage_yes.isChecked = false
              construction_dialog_passage_no.isChecked = true
              construction_dialog_linearlayout_passage_yes.visibility = View.GONE
+             changeMade = true
          }
 
          construction_dialog_bypass_yes.setOnClickListener(){
              construction_dialog_bypass_yes.isChecked = true
              construction_dialog_bypass_no.isChecked = false
              construction_dialog_linearlayout_bypass_yes.visibility = View.VISIBLE
-
+             changeMade = true
          }
          construction_dialog_bypass_no.setOnClickListener(){
              construction_dialog_bypass_yes.isChecked = false
              construction_dialog_bypass_no.isChecked = true
              construction_dialog_linearlayout_bypass_yes.visibility = View.GONE
+             changeMade = true
          }
 
 
@@ -144,6 +152,8 @@ class ConstructionFragment: AbstractBottomSheetFragment() {
                 mode = "wasPhoto"
                 //var fm = parentFragmentManager
                 //fm.beginTransaction().show(this).commit()
+            } else {
+
             }
         }
     }
@@ -154,19 +164,32 @@ class ConstructionFragment: AbstractBottomSheetFragment() {
         //var widthValue = manualInputField?.text.toString()
         imagePaths = attachPhotoFragment.imagePaths
         //From the width form, i get the textfield which contains text which I need as Int :)
-        var widthValue = measureWidthForm.manualInputField!!.text.toString()
-        var widthValue2 = measureWidthForm2.manualInputField!!.text.toString()
+        val widthValue = if(construction_dialog_passage_yes.isChecked) measureWidthForm.manualInputField!!.text.toString() else ""
+        val widthValue2 = if(construction_dialog_bypass_yes.isChecked) measureWidthForm2.manualInputField!!.text.toString() else ""
         measureSlopeForm.onClickOk()
         measureSlopeForm2.onClickOk()
-        val answer = if(measureSlopeForm.inclineView.locked) measureSlopeForm.answer else ""
-        val answer2 = if(measureSlopeForm2.inclineView.locked) measureSlopeForm.answer else ""
+        val answer = if(construction_dialog_passage_yes.isChecked && measureSlopeForm.inclineView.locked) measureSlopeForm.answer else ""
+        val answer2 = if(construction_dialog_bypass_yes.isChecked && measureSlopeForm2.inclineView.locked) measureSlopeForm.answer else ""
         val toast = Toast.makeText(context, "Clicked OK, width measured was ( $widthValue & $widthValue2 ), slope measured was ( $answer & $answer2 ), and image paths are $imagePaths", Toast.LENGTH_LONG)
         toast.show()
+        val toast2 = Toast.makeText(context, "Location is ${location?.latitude},${location?.longitude}", Toast.LENGTH_LONG)
+        toast2.show()
     }
+
+    override fun isRejectingClose() =
+        noteText.isNotEmpty() || changeMade || attachPhotoFragment?.imagePaths?.isNotEmpty()
 
     private fun updateDoneButtonEnablement() {
         //doneButton.isEnabled = noteText.isNotEmpty()
         //
+    }
+
+    private val TAG = "ConstructionFragment"
+    override fun onDiscard() {
+        super.onDiscard()
+        Log.i(TAG, "Fragment discarded")
+        markerLayoutContainer?.visibility = View.INVISIBLE
+        attachPhotoFragment?.deleteImages()
     }
 
     //What both classes need: Title text, Location, Camera,Comment

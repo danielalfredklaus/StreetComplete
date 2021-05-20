@@ -35,18 +35,22 @@ class MarkerRepoTest {
         markerDAO = db.markersDAO()
         sessionManager = SessionManager(context)
         webAccess = WebserverAccess()
+        markerRepo = MarkerRepo(markerDAO, webAccess)
+        Log.d(TAG, "Finished @Before")
     }
 
     @Test
     fun test(){
         runBlocking {
             val loginData = LoginRequest("asdf@asdf.com","asdfasdf")
-            val response = webAccess.mastersAPI.loginAsync(loginData).await()
+            //val response = webAccess.mastersAPI.loginAsync(loginData).await()
+            val response = markerRepo.login(loginData)
             if (response.isSuccessful){
                 Log.d(TAG, "response seems successful")
                 val body = response.body()
-                assertEquals("true",body!!.success)
-                Log.d(TAG, body.token)
+                assertTrue(body!!.success!!)
+                assertEquals("asdf@asdf.com",body.email)
+                Log.d(TAG, body.token!!)
             } else {
                 fail(response.errorBody().toString())
             }

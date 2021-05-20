@@ -8,26 +8,26 @@ import retrofit2.http.*
 //This is supposed to be the interface mapping the api from the webserver
 interface uzhMastersAPI {
 
-    @POST("/login")
+    @POST("login")
     fun loginAsync(@Body loginRequest: LoginRequest): Deferred<Response<ServerResponse>>
-    /*
-    @POST("/register")
+
+    @POST("register")
     fun registerAsync(@Body newUser: User):  Deferred<Response<ServerResponse>>
 
-    @GET("/list")
+    @GET("list")
     fun getMarkersAsync(@Header("Authorization") token: String): Deferred<Response<List<Marker>>>
 
-    @POST("/marker")
+    @POST("marker")
     fun addMarkerAsync(@Header("Authorization") token: String, @Body newMarker : Marker): Deferred<Response<Void>>
 
-    @PUT("/marker")
+    @PUT("marker")
     fun updateMarkerAsync(@Header("Authorization") token: String, @Body newMarker: Marker) : Deferred<Response<Void>>
 
-    @GET("/marker/{id}")
+    @GET("marker/{id}")
     fun getMarkerAsync(@Header("Authorization") token: String, @Path("id") markerID: Int) : Deferred<Response<Marker>>
 
-    @DELETE("/marker/{id}")
+    @DELETE("marker/{id}")
     fun deleteMarkerAsync(@Header("Authorization") token: String, @Path("id") markerID: Int) : Deferred<Response<Void>>
-     */
+
 
 }

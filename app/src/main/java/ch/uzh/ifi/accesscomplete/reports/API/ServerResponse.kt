@@ -5,7 +5,7 @@ import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
 data class ServerResponse(
-    var success: String? = "",
+    var success: Boolean? = false,
     var email: String? = "",
     var role: String? = "",
     var token: String? = "",

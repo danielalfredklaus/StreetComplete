@@ -26,6 +26,7 @@ class MarkerRepoTest {
     private lateinit var webAccess: WebserverAccess
     private lateinit var sessionManager: SessionManager
     val testUser: User = User("test@test.com", "test", "test", "test", "test")
+    val erc = ErrorResponseConverter()
 
     @Before
     fun createDb() {
@@ -40,22 +41,57 @@ class MarkerRepoTest {
     }
 
     @Test
-    fun test(){
+    fun testLogin(){
         runBlocking {
             val loginData = LoginRequest("asdf@asdf.com","asdfasdf")
-            //val response = webAccess.mastersAPI.loginAsync(loginData).await()
-            val response = markerRepo.login(loginData)
+            val response: Response<ServerResponse> = markerRepo.login(loginData)
             if (response.isSuccessful){
                 Log.d(TAG, "response seems successful")
                 val body = response.body()
                 assertTrue(body!!.success!!)
                 assertEquals("asdf@asdf.com",body.email)
                 Log.d(TAG, body.token!!)
+                sessionManager.saveAuthToken(body.token!!)
             } else {
-                fail(response.errorBody().toString())
+                val failedResponse = erc.ErrorBodyToServerResponse(response.errorBody())
+                fail("Response was not as expected, message was ${failedResponse?.message}")
             }
         }
     }
+
+    @Test
+    fun failedLogin(){
+        runBlocking {
+            val loginData = LoginRequest("failed@login.com","purposelyFailingALoginForTesting")
+            val response: Response<ServerResponse> = markerRepo.login(loginData)
+            if(!response.isSuccessful){
+                Log.d(TAG, "Login designed to fail has failed :SurprisedPikachuFace: ")
+                Log.d(TAG,response.errorBody()!!.string())
+                val failedR = erc.ErrorBodyToServerResponse(response.errorBody())
+                assertFalse(failedR!!.success!!)
+                Log.d(TAG, "Message received was: " + failedR.message!!)
+            } else {
+                fail("For some Reason the Login designed to fail was successful, wtf. There must be an account with this data...")
+            }
+        }
+    }
+
+    @Test
+    fun fetchAllMarkers(){
+        runBlocking {
+            val response = markerRepo.getAllMarkersFromServer(sessionManager.fetchAuthToken()!!) //Make sure to run the login beforehand
+            if(response.isSuccessful){
+                Log.d(TAG, "Downloaded ${response.body()!!.size} number of markers")
+            } else {
+                val failR = erc.ErrorBodyToServerResponse(response.errorBody())
+                fail("Test failed because " + failR!!.message)
+            }
+        }
+    }
+
+
+
+
     /*
     @Test
     @Throws(IOException::class)

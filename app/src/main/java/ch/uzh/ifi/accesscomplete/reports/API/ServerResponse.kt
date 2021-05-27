@@ -10,6 +10,6 @@ data class ServerResponse(
     var role: String? = "",
     var token: String? = "",
     var expiresIn: String? = "",
-    //val message: String?,
-    //val user: String?
+    val message: String? = "",
+    val user: String? = ""
 )

@@ -144,6 +144,7 @@ class QuestPinLayerManager @Inject constructor(
         synchronized(retrievedTiles) { retrievedTiles.addAll(tiles) }
     }
 
+    //TODO: This is probably a manual way to add a quest to the questpinlayer. but how do I create a quest and get its questgroup?
     private fun add(quest: Quest, group: QuestGroup) {
         synchronized(quests) {
             if (quests[group] == null) quests[group] = LongSparseArray(256)

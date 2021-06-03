@@ -22,6 +22,10 @@
 
 package ch.uzh.ifi.accesscomplete.data.quest
 
+/**
+ * Any Quest from OSM is either a normal Quest or a Note from OSM
+ * TODO: Make your own QuestGroup and go through all usages of QuestGroup to implement your extra solution
+ */
 enum class QuestGroup {
     OSM, OSM_NOTE
 }

@@ -1,12 +1,14 @@
-package ch.uzh.ifi.accesscomplete.reports
+package ch.uzh.ifi.accesscomplete.reports.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import ch.uzh.ifi.accesscomplete.reports.API.Marker
+import androidx.room.TypeConverters
+import ch.uzh.ifi.accesscomplete.reports.ReportConverters
 
-@Database(entities = [Marker::class], version = 1, exportSchema = false)
+@Database(entities = [MapMarker::class], version = 1, exportSchema = false)
+@TypeConverters(ReportConverters::class)
 abstract class MarkerDatabase: RoomDatabase() {
     abstract fun markersDAO(): MarkerDAO
 

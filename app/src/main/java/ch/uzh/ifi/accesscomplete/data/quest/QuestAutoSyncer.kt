@@ -168,6 +168,8 @@ import javax.inject.Singleton
             if (downloadBoundingBox != null) {
                 try {
                     questDownloadController.download(downloadBoundingBox)
+                    /*TODO: This could also be a good place to inject a change. Using the pos I could filter the quests
+                    I got from the API by a latlon. Probably use my own downloader and my own db. */
                 } catch (e: IllegalStateException) {
                     // The Android 9 bug described here should not result in a hard crash of the app
                     // https://stackoverflow.com/questions/52013545/android-9-0-not-allowed-to-start-service-app-is-in-background-after-onresume

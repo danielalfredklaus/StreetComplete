@@ -82,6 +82,7 @@ import javax.inject.Singleton
     fun download(bbox: BoundingBox, isPriority: Boolean = false) {
         val tilesRect = bbox.enclosingTilesRect(ApplicationConstants.QUEST_TILE_ZOOM)
         context.startService(QuestDownloadService.createIntent(context, tilesRect, isPriority))
+        //TODO: Is this where I put in the additional download source in? The api stuff? Since this is probably the function that gets triggered to download quests
     }
 
     private fun bindServices() {

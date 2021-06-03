@@ -133,6 +133,7 @@ dependencies {
     androidTestImplementation("org.assertj:assertj-core:2.8.0")
     androidTestImplementation("androidx.test:core:1.3.0")
 
+
     // dependency injection
     implementation("com.google.dagger:dagger:$daggerVersion")
     kapt("com.google.dagger:dagger-compiler:$daggerVersion")
@@ -150,7 +151,7 @@ dependencies {
     implementation("androidx.localbroadcastmanager:localbroadcastmanager:1.0.0")
 
     // photos
-    implementation("androidx.exifinterface:exifinterface:1.3.1")
+    implementation("androidx.exifinterface:exifinterface:1.3.2")
 
     // Kotlin
     implementation("org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion")
@@ -182,7 +183,7 @@ dependencies {
     // ARCore
     implementation("com.google.ar.sceneform.ux:sceneform-ux:1.17.1")
     implementation("com.google.ar.sceneform:core:1.17.1")
-    implementation("com.google.ar:core:1.21.0")
+    implementation("com.google.ar:core:1.24.0")
 
     // box2d view
     implementation("org.jbox2d:jbox2d-library:2.2.1.1")
@@ -201,15 +202,17 @@ dependencies {
     val retrofitVersion = "2.9.0"
     val roomVersion = "2.3.0"
     val moshiVersion = "1.12.0"
+    val lifecycle_version = "2.3.1"
     implementation("com.squareup.retrofit2:retrofit:$retrofitVersion")
     implementation("com.squareup.retrofit2:converter-moshi:$retrofitVersion")
     implementation ("com.squareup.moshi:moshi:$moshiVersion")
     kapt ("com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion")
-    implementation ("com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2")
+    //implementation ("com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2") not needed anymore, you can just use suspend, which is supported by retrofit 2.6 and higher
     implementation("androidx.room:room-runtime:$roomVersion")
     kapt("androidx.room:room-compiler:$roomVersion")
     implementation("androidx.room:room-ktx:$roomVersion") // optional - Kotlin Extensions and Coroutines support for Room
     testImplementation("androidx.room:room-testing:$roomVersion") // optional - Test helpers
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
 
 }
 

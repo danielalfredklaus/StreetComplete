@@ -35,7 +35,7 @@ import java.net.HttpURLConnection.HTTP_CONFLICT
 
 /** Uploads the changes made for one quest
  *  Returns the element that has been updated or throws a ConflictException */
-class SingleOsmElementTagChangesUploader @Inject constructor(private val mapDataApi: MapDataApi) {
+class SingleOsmElementTagChangesUploader_Original @Inject constructor(private val mapDataApi: MapDataApi) {
 
     fun upload(changesetId: Long, quest: HasElementTagChanges, dbElement: Element): Element {
         var element = dbElement
@@ -55,7 +55,7 @@ class SingleOsmElementTagChangesUploader @Inject constructor(private val mapData
                 if (element.version < 0)
                     throw OsmConflictException(HTTP_CONFLICT, "Conflict", "Invalid element version")
 
-                mapDataApi.uploadChanges(changesetId, setOf(elementWithChangesApplied), handler) //TODO: Upload to own API, should probably mimick this, or not
+                mapDataApi.uploadChanges(changesetId, setOf(elementWithChangesApplied), handler)
 
             } catch (e: OsmConflictException) {
                 if (handlingConflict) {

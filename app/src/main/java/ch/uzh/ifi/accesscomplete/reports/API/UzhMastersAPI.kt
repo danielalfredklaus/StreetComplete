@@ -1,6 +1,7 @@
 package ch.uzh.ifi.accesscomplete.reports.API
 
-import kotlinx.coroutines.Deferred
+import ch.uzh.ifi.accesscomplete.reports.database.MapMarker
+import kotlinx.coroutines.flow.Flow
 import retrofit2.Response
 import retrofit2.http.*
 
@@ -9,25 +10,25 @@ import retrofit2.http.*
 interface uzhMastersAPI {
 
     @POST("login")
-    fun loginAsync(@Body loginRequest: LoginRequest): Deferred<Response<ServerResponse>>
+    suspend fun loginAsync(@Body loginRequest: LoginRequest): Response<ServerResponse>
 
     @POST("register")
-    fun registerAsync(@Body newUser: User):  Deferred<Response<ServerResponse>>
+    suspend fun registerAsync(@Body newUser: User):  Response<ServerResponse>
 
     @GET("list")
-    fun getMarkersAsync(@Header("Authorization") token: String): Deferred<Response<List<Marker>>>
+    suspend fun getMarkersAsync(@Header("Authorization") token: String): Response<List<MapMarker>>
 
     @POST("marker")
-    fun addMarkerAsync(@Header("Authorization") token: String, @Body newMarker : Marker): Deferred<Response<Void>>
+    suspend fun addMarkerAsync(@Header("Authorization") token: String, @Body newMapMarker : MapMarker): Response<MarkerResponse>
 
     @PUT("marker")
-    fun updateMarkerAsync(@Header("Authorization") token: String, @Body newMarker: Marker) : Deferred<Response<Void>>
+    suspend fun updateMarkerAsync(@Header("Authorization") token: String, @Body newMapMarker: MapMarker) : Response<MarkerResponse>
 
     @GET("marker/{id}")
-    fun getMarkerAsync(@Header("Authorization") token: String, @Path("id") markerID: Int) : Deferred<Response<Marker>>
+    suspend fun getMarkerAsync(@Header("Authorization") token: String, @Path("id") markerID: String) : Response<MapMarker>
 
     @DELETE("marker/{id}")
-    fun deleteMarkerAsync(@Header("Authorization") token: String, @Path("id") markerID: Int) : Deferred<Response<Void>>
+    suspend fun deleteMarkerAsync(@Header("Authorization") token: String, @Path("id") markerID: String) : Response<Void>
 
 
 }

@@ -37,6 +37,7 @@ import ch.uzh.ifi.accesscomplete.data.osm.elementgeometry.ElementPolylinesGeomet
 import ch.uzh.ifi.accesscomplete.data.osm.osmquest.OsmQuestController
 import ch.uzh.ifi.accesscomplete.data.osmnotes.notequests.OsmNoteQuestController
 import ch.uzh.ifi.accesscomplete.data.quest.QuestGroup
+import ch.uzh.ifi.accesscomplete.reports.UzhQuestController
 import ch.uzh.ifi.accesscomplete.util.distanceToArcs
 import javax.inject.Inject
 
@@ -88,7 +89,8 @@ class QuestSourceIsSurveyChecker @Inject constructor(
         when (group) {
             QuestGroup.OSM -> osmQuestController.get(questId)?.geometry
             QuestGroup.OSM_NOTE -> osmNoteQuestController.get(questId)?.geometry
-        }
+            QuestGroup.UZH -> osmQuestController.get(questId)?.geometry
+        } //TODO: Implement UZH solution, though I am too tired to find out what geometry is
 
     companion object {
         /*

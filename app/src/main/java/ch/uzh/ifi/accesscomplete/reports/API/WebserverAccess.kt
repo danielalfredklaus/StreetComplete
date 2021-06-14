@@ -1,6 +1,7 @@
 package ch.uzh.ifi.accesscomplete.reports.API
 
 import android.util.Log
+import com.squareup.moshi.Moshi
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 
@@ -10,9 +11,14 @@ class WebserverAccess {
     private val url = "https://uzhmp-api-gateway-77xdzfzvua-ew.a.run.app/api/v1/"
     val mastersAPI: uzhMastersAPI by lazy {
         Log.d(TAG, "Creating retrofit client")
+
+        val moshi = Moshi.Builder()
+            .add(MoshiDateAdapter())
+            .build()
+
         val retrofit = Retrofit.Builder()
             .baseUrl(url)
-            .addConverterFactory(MoshiConverterFactory.create().asLenient())
+            .addConverterFactory(MoshiConverterFactory.create(moshi).asLenient())
             //.addCallAdapterFactory(CoroutineCallAdapterFactory()) not needed, just make everything a friggin suspend function, no adapter required anymore
             .build()
 

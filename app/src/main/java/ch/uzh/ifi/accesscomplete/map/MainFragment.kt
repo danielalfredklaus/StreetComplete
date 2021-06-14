@@ -371,7 +371,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
         val checkLocations = listOfNotNull(mapFragment?.displayedLocation, locationWhenOpenedQuest)
 
         isSurveyChecker.assureIsSurvey(ctx, questId, group, checkLocations) {
-            val quest = questController.get(questId, group)
+            val quest = questController.get(questId, group) //TODO: Make sure the controller can handle uzhgroup
             closeQuestDetailsFor(questId, group)
             if (questController.solve(questId, group, answer, "survey")) {
                 listener?.onQuestSolved(quest, "survey")
@@ -420,7 +420,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
                 quest?.let { showQuestSolvedAnimation(it) }
             }
         }
-    }
+    } //TODO: Probably can ignore this
 
     override fun onAddSplit(point: LatLon) {
         mapFragment?.putMarkerForCurrentQuest(point)

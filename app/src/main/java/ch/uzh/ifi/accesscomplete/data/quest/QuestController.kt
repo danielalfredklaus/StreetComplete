@@ -22,6 +22,7 @@
 
 package ch.uzh.ifi.accesscomplete.data.quest
 
+import android.annotation.SuppressLint
 import android.content.SharedPreferences
 import android.util.Log
 import de.westnordost.osmapi.map.data.Element
@@ -110,7 +111,8 @@ import javax.inject.Singleton
         return when(group) {
             QuestGroup.OSM -> solveOsmQuest(questId, answer, source)
             QuestGroup.OSM_NOTE -> solveOsmNoteQuest(questId, answer as NoteAnswer)
-        }
+            QuestGroup.UZH -> solveUZHQuest(questId, answer, source)
+        } //TODO: Add extra solve function for UZH
     }
 
     fun getOsmElement(quest: OsmQuest): OsmElement? =
@@ -170,6 +172,13 @@ import javax.inject.Singleton
         }
     }
 
+    @SuppressLint
+    private fun solveUZHQuest(questId: Long, answer: Any, source: String): Boolean {
+        //TODO: Finish this implementation
+        return false
+
+    }
+
     private fun createOsmQuestChanges(quest: OsmQuest, element: Element, answer: Any) : StringMapChanges? {
         return try {
             val changesBuilder = StringMapChangesBuilder(element.tags.orEmpty())
@@ -194,6 +203,9 @@ import javax.inject.Singleton
                 if (q?.status != QuestStatus.NEW) return
                 osmNoteQuestController.hide(q)
             }
+            QuestGroup.UZH -> {
+                //TODO: Add implementation for UZH
+            }
         }
     }
 
@@ -201,6 +213,7 @@ import javax.inject.Singleton
     fun get(questId: Long, group: QuestGroup): Quest? = when (group) {
         QuestGroup.OSM -> osmQuestController.get(questId)
         QuestGroup.OSM_NOTE -> osmNoteQuestController.get(questId)
+        QuestGroup.UZH -> null //TODO: Add get for QuestGroup.UZH
     }
 
     companion object {

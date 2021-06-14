@@ -27,5 +27,5 @@ package ch.uzh.ifi.accesscomplete.data.quest
  * TODO: Make your own QuestGroup and go through all usages of QuestGroup to implement your extra solution
  */
 enum class QuestGroup {
-    OSM, OSM_NOTE
+    OSM, OSM_NOTE, UZH
 }

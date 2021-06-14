@@ -137,6 +137,25 @@ class MapMarkerRepoTest {
     }
 */
 
+    @Test
+    fun fetchMarker(){
+        runBlocking{
+            val currentToken = sessionManager.fetchAuthToken()!!
+            val response = markerRepo.getMarker(currentToken, "NaLAdtvVT3K2fFh_XXDDK")
+            if (response.isSuccessful) {
+                Log.d(TAG, "Successful GET was made")
+                Log.d(TAG, "Body is: " + response.body().toString())
+                val fetchedQuest = response.body()
+                assertEquals("updates", fetchedQuest?.title)
+                assertEquals(listOf("123456", "66999"), fetchedQuest?.location?.coordinates)
+                assertEquals("point", fetchedQuest?.location?.geoType)
+            } else {
+                Log.d(TAG, response.errorBody()!!.string())
+                fail("GET has failed")
+            }
+        }
+    }
+
 
 
     /*

@@ -69,7 +69,8 @@ class ShowQuestFormsActivity : AppCompatActivity(), AbstractQuestAnswerFragment.
 
         // Filter out note quest (relies on notes in the DB and will crash here...)
         showQuestFormAdapter.list = questTypes.filter { it !is OsmNoteQuestType }.toMutableList()
-    }
+    } //TODO: Either change filter to make sure it is neither notes or UZH or use this class to help
+        // me implement the uzh quests properly.
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

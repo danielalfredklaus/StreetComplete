@@ -354,7 +354,7 @@ abstract class AbstractQuestAnswerFragment<T> : AbstractBottomSheetFragment(), I
             .setNegativeButton(android.R.string.cancel, null)
             .setPositiveButton(android.R.string.ok) { _, _ ->
                 if (questGroup != QuestGroup.OSM) throw IllegalStateException()
-                listener?.onSplitWay(questId)
+                listener?.onSplitWay(questId) //TODO: Should be ok, UZH Quests wont split any ways (probably)
             }
             .show()
         }

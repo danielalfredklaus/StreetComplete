@@ -25,7 +25,7 @@ interface uzhMastersAPI {
     suspend fun updateMarkerAsync(@Header("Authorization") token: String, @Body newMapMarker: MapMarker) : Response<MarkerResponse>
 
     @GET("marker/{id}")
-    suspend fun getMarkerAsync(@Header("Authorization") token: String, @Path("id") markerID: String) : Response<MapMarker>
+    suspend fun getMarkerAsync(@Header("Authorization") token: String, @Path("id") markerID: String) : Response<UzhQuest>
 
     @DELETE("marker/{id}")
     suspend fun deleteMarkerAsync(@Header("Authorization") token: String, @Path("id") markerID: String) : Response<Void>

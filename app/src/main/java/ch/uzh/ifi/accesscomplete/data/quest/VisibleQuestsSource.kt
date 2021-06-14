@@ -105,13 +105,14 @@ import javax.inject.Singleton
 
     /** Retrieve all visible (=new) quests in the given bounding box from local database */
     fun getAllVisible(bbox: BoundingBox, questTypes: Collection<String>): List<QuestAndGroup> {
-        if (questTypes.isEmpty()) return listOf()
+        if (questTypes.isEmpty()) return listOf() //TODO: Might require the addition of an UZH QuestController
         val osmQuests = osmQuestController.getAllVisibleInBBox(bbox, questTypes)
         val osmNoteQuests = osmNoteQuestController.getAllVisibleInBBox(bbox)
-
+        //TODO: Probably add val UZHQuests = uzhQuestController.getAllVisibleInBBox(bbox)
+        //TODO: https://github.com/westnordost/osmapi/blob/master/libs/core/src/main/java/de/westnordost/osmapi/map/data/BoundingBox.java
         return osmQuests.map { QuestAndGroup(it, QuestGroup.OSM) } +
                 osmNoteQuests.map { QuestAndGroup(it, QuestGroup.OSM_NOTE) }
-    }
+    } //TODO: Do I need an uzhQuestStatusListener too? The other two types have one each
 
     fun addListener(listener: VisibleQuestListener) {
         listeners.add(listener)

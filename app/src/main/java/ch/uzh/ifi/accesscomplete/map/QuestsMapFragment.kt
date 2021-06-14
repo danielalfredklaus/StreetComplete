@@ -147,7 +147,7 @@ class QuestsMapFragment : LocationAwareMapFragment() {
                 val pickedElementId = pickResult?.properties?.get(MARKER_ELEMENT_ID)?.toLong()
                 val pickedQuestGroup = pickResult?.properties?.get(MARKER_QUEST_GROUP)?.let { QuestGroup.valueOf(it) }
 
-                if (pickedQuestId != null && pickedQuestGroup != null) {
+                if (pickedQuestId != null && pickedQuestGroup != null) { //TODO: Make sure the listener is able to handle UZH Quests
                     listener?.onClickedQuest(pickedQuestGroup, pickedQuestId)
                 } else if (pickedElementId != null && pickedQuestGroup != null) {
                     openMultiQuestSelectionDialog(pickedElementId, pickedQuestGroup)

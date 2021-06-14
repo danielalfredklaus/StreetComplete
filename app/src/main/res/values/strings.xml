@@ -504,5 +504,6 @@ Afterwards, fixate two points in the environment with a simple tap on the screen
     <string name="quest_width_measurement_instructions">Please measure the width at the narrowest section (incl. curbs). Also consider permanent objects such as trash cans or street lights when you determine the narrowest point.</string>
     <string name="quest_width_implausible_value_sidewalk_message">A width of %1$s cm seems very implausible for a sidewalk. Please try to measure again or leave a note instead.</string>
     <string name="quest_width_implausible_value_street_message">A width of %1$s cm is very implausible for a street like this. Please try to measure again or leave a note instead.</string>
+    <string name="quest_verify_report_title">Verify a report from another user</string>
 
 </resources>

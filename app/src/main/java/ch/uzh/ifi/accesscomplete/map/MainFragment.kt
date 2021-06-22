@@ -58,11 +58,8 @@ import androidx.core.graphics.toPointF
 import androidx.core.graphics.toRectF
 import androidx.core.view.isGone
 import androidx.core.view.updateLayoutParams
-import androidx.fragment.app.DialogFragment
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.*
 import androidx.fragment.app.FragmentManager.POP_BACK_STACK_INCLUSIVE
-import androidx.fragment.app.commit
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import ch.uzh.ifi.accesscomplete.ApplicationConstants
 import ch.uzh.ifi.accesscomplete.Injector
@@ -85,10 +82,15 @@ import ch.uzh.ifi.accesscomplete.location.LocationUtil
 import ch.uzh.ifi.accesscomplete.map.tangram.CameraPosition
 import ch.uzh.ifi.accesscomplete.quests.*
 import ch.uzh.ifi.accesscomplete.quests.AbstractQuestAnswerFragment.Listener.SidewalkSide
+import ch.uzh.ifi.accesscomplete.reports.API.LoginRequest
 import ch.uzh.ifi.accesscomplete.reports.BarrierMobilityFragment
 import ch.uzh.ifi.accesscomplete.reports.BarrierVisualFragment
 import ch.uzh.ifi.accesscomplete.reports.ConstructionFragment
 import ch.uzh.ifi.accesscomplete.reports.ManualPositionFragment
+import ch.uzh.ifi.accesscomplete.reports.database.MapMarker
+import ch.uzh.ifi.accesscomplete.reports.database.MapMarkerViewModel
+import ch.uzh.ifi.accesscomplete.reports.database.MapMarkerViewModelFactory
+import ch.uzh.ifi.accesscomplete.reports.database.MarkerServiceLocator
 import ch.uzh.ifi.accesscomplete.user.UserActivity
 import ch.uzh.ifi.accesscomplete.util.*
 import de.westnordost.osmapi.map.data.BoundingBox
@@ -102,7 +104,6 @@ import kotlinx.coroutines.cancel
 import kotlinx.coroutines.launch
 import java.util.*
 import javax.inject.Inject
-import kotlin.collections.ArrayList
 import kotlin.math.PI
 import kotlin.math.cos
 import kotlin.math.sin
@@ -148,6 +149,8 @@ class MainFragment : Fragment(R.layout.fragment_main),
 
     private var mapOffsetWithOpenBottomSheet: RectF = RectF(0f, 0f, 0f, 0f)
 
+    private lateinit var markerViewModel: MapMarkerViewModel
+
     interface Listener {
         fun onQuestSolved(quest: Quest?, source: String?)
         fun onCreatedNote(screenPosition: Point)
@@ -180,6 +183,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
         super.onAttach(context)
 
         locationManager = FineLocationManager(context.getSystemService()!!, this::onLocationChanged)
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -200,6 +204,26 @@ class MainFragment : Fragment(R.layout.fragment_main),
         //------------end Daniels addition
 
         updateMapQuestOffsets()
+
+        //Temporary
+        //Daniels Stuff
+        val newMarkerViewModel: MapMarkerViewModel by viewModels {
+            MapMarkerViewModelFactory(MarkerServiceLocator.getRepo(requireContext()))
+        }
+        markerViewModel = newMarkerViewModel
+
+        markerViewModel.isloggedIn.observe(viewLifecycleOwner, {
+            status ->
+                if(!status){
+                    markerViewModel.loginRequest = LoginRequest("asdf@asdf.com","asdfasdf")
+                    markerViewModel.isloggedIn
+                    //TODO: Annoy the user with Login/Register Screen (first check prefs, then the screen)
+                } else {
+                    //Do nothing?
+                }
+                // react to either logged in or not
+        })
+
     }
 
     private fun setupFittingToSystemWindowInsets() {
@@ -625,7 +649,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
         closeBottomSheet()
         if(toPassBundle.getParcelable<Point>("screenPos")!=null) {
             val mapFragment = mapFragment!!
-            val mapView = mapFragment!!.requireView()
+            val mapView = mapFragment.requireView()
             val mapPosition = mapView.getLocationInWindow().toPointF()
             Log.i(TAG, "mapPosition values: ${mapPosition.x},${mapPosition.y}" )
             val notePosition = PointF(toPassBundle.getParcelable("screenPos")!!)
@@ -663,10 +687,12 @@ class MainFragment : Fragment(R.layout.fragment_main),
         freezeMap()
     }
 
-    override fun onReportFinished(location: Location, stringList: ArrayList<String>) {
-        TODO("Not yet implemented")
-
+    override fun onReportFinished(newMarker: MapMarker) {
+        //TODO: Implement
         closeBottomSheet()
+        markerViewModel.insertMarker(newMarker)
+
+
     }
 //-------------------------------End daniels section
 

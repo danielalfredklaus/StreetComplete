@@ -213,6 +213,7 @@ dependencies {
     implementation("androidx.room:room-ktx:$roomVersion") // optional - Kotlin Extensions and Coroutines support for Room
     testImplementation("androidx.room:room-testing:$roomVersion") // optional - Test helpers
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
+    implementation("com.squareup.okhttp3:logging-interceptor:3.5.0")
 
 }
 

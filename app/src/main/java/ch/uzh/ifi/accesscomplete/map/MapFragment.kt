@@ -40,6 +40,7 @@ import androidx.core.content.edit
 import androidx.core.net.toUri
 import androidx.core.view.updateLayoutParams
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.preference.PreferenceManager
 import com.mapzen.tangram.MapView
 import com.mapzen.tangram.SceneUpdate
@@ -57,6 +58,9 @@ import ch.uzh.ifi.accesscomplete.ktx.awaitLayout
 import ch.uzh.ifi.accesscomplete.ktx.containsAll
 import ch.uzh.ifi.accesscomplete.ktx.tryStartActivity
 import ch.uzh.ifi.accesscomplete.map.tangram.*
+import ch.uzh.ifi.accesscomplete.reports.database.MapMarkerViewModel
+import ch.uzh.ifi.accesscomplete.reports.database.MapMarkerViewModelFactory
+import ch.uzh.ifi.accesscomplete.reports.database.MarkerServiceLocator
 import kotlinx.android.synthetic.main.fragment_map.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -90,6 +94,8 @@ open class MapFragment : Fragment(),
     private var isMapInitialized: Boolean = false
 
     @Inject internal lateinit var vectorTileProvider: VectorTileProvider
+
+
 
     interface Listener {
         /** Called when the map has been completely initialized */
@@ -127,6 +133,11 @@ open class MapFragment : Fragment(),
         setupFittingToSystemWindowInsets()
 
         launch { initMap() }
+
+        //Daniels Stuff
+        val markerViewModel: MapMarkerViewModel by viewModels {
+            MapMarkerViewModelFactory(MarkerServiceLocator.getRepo(requireContext()))
+        }
     }
 
     private fun showOpenUrlDialog(url: String) {

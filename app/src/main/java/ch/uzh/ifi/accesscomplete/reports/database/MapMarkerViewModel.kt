@@ -1,21 +1,17 @@
 package ch.uzh.ifi.accesscomplete.reports.database
 
-import android.app.Application
-import android.os.Build
 import android.util.Log
 import androidx.lifecycle.*
 import ch.uzh.ifi.accesscomplete.reports.API.LoginRequest
 import kotlinx.coroutines.launch
-import java.time.Instant
-import java.time.LocalTime
-import java.util.*
 
-class MapMarkerViewModel(private val repo: MarkerRepo, private val loginRequest: LoginRequest): ViewModel() {
+class MapMarkerViewModel(private val repo: MarkerRepo): ViewModel() {
 
     /*TODO: User registers during an activity, email and password are saved in sharedprefs (private mode is important here) and handed in as LoginRequest
     maybe
      */
 
+    var loginRequest: LoginRequest = LoginRequest("","")
     val TAG = "MapMarkerViewModel"
     private var currentKey = ""
     val isloggedIn: LiveData<Boolean> = liveData{
@@ -25,8 +21,13 @@ class MapMarkerViewModel(private val repo: MarkerRepo, private val loginRequest:
     }
 
     val allMapMarkers: LiveData<List<MapMarker>> = liveData{
-        val data = repo.getAllFromDB()
+        val data = repo.getAllMarkersFromDB()
         emit(data)
+    }
+
+    fun insertMarker(marker: MapMarker) = viewModelScope.launch{
+        repo.insertMarker(marker)
+        repo.postMarkerToServer(currentKey, marker)
     }
 
 
@@ -45,11 +46,11 @@ class MapMarkerViewModel(private val repo: MarkerRepo, private val loginRequest:
 
 }
 
-class MapMarkerViewModelFactory(private val repo: MarkerRepo, private val loginRequest: LoginRequest) : ViewModelProvider.Factory {
+class MapMarkerViewModelFactory(private val repo: MarkerRepo) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(MapMarkerViewModel::class.java)) {
             @Suppress("UNCHECKED_CAST")
-            return MapMarkerViewModel(repo, loginRequest) as T
+            return MapMarkerViewModel(repo) as T
         }
         throw IllegalArgumentException("Unknown ViewModel class")
     }

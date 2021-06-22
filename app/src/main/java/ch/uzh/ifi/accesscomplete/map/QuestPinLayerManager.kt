@@ -25,6 +25,7 @@ package ch.uzh.ifi.accesscomplete.map
 import android.content.res.Resources
 import androidx.collection.LongSparseArray
 import androidx.collection.forEach
+import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
@@ -36,6 +37,10 @@ import ch.uzh.ifi.accesscomplete.data.quest.*
 import ch.uzh.ifi.accesscomplete.data.visiblequests.OrderedVisibleQuestTypesProvider
 import ch.uzh.ifi.accesscomplete.ktx.values
 import ch.uzh.ifi.accesscomplete.map.tangram.toLngLat
+import ch.uzh.ifi.accesscomplete.reports.API.LoginRequest
+import ch.uzh.ifi.accesscomplete.reports.database.MapMarkerViewModel
+import ch.uzh.ifi.accesscomplete.reports.database.MapMarkerViewModelFactory
+import ch.uzh.ifi.accesscomplete.reports.database.MarkerServiceLocator
 import ch.uzh.ifi.accesscomplete.util.Tile
 import ch.uzh.ifi.accesscomplete.util.TilesRect
 import ch.uzh.ifi.accesscomplete.util.enclosingTilesRect
@@ -139,12 +144,16 @@ class QuestPinLayerManager @Inject constructor(
             visibleQuestsSource.getAllVisible(bbox, questTypeNames).forEach {
                 add(it.quest, it.group)
             }
+            //Daniels Addition
+
+            //Addition end
             updateLayer()
         }
         synchronized(retrievedTiles) { retrievedTiles.addAll(tiles) }
     }
 
     //TODO: This is probably a manual way to add a quest to the questpinlayer. but how do I create a quest and get its questgroup?
+    //Note that this is private and is only called in other functions
     private fun add(quest: Quest, group: QuestGroup) {
         synchronized(quests) {
             if (quests[group] == null) quests[group] = LongSparseArray(256)

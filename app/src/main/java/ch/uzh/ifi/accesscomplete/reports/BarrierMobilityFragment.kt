@@ -16,10 +16,15 @@ import ch.uzh.ifi.accesscomplete.R
 import ch.uzh.ifi.accesscomplete.quests.AbstractBottomSheetFragment
 import ch.uzh.ifi.accesscomplete.quests.note_discussion.AttachPhotoFragment
 import ch.uzh.ifi.accesscomplete.quests.width.AddWidthModular
+import ch.uzh.ifi.accesscomplete.reports.API.Tag
+import ch.uzh.ifi.accesscomplete.reports.API.Tags
+import ch.uzh.ifi.accesscomplete.reports.database.MapMarker
+import ch.uzh.ifi.accesscomplete.reports.database.NoIdTag
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import kotlinx.android.synthetic.main.dialog_barrier.*
 import kotlinx.android.synthetic.main.dialog_barrier.view.*
 import kotlinx.android.synthetic.main.dialog_barrier_visual.*
+import kotlinx.android.synthetic.main.dialog_construction.*
 import kotlinx.android.synthetic.main.fragment_quest_answer.*
 import kotlinx.android.synthetic.main.marker_create_note.*
 import kotlinx.android.synthetic.main.quest_buttonpanel_done_cancel.*
@@ -39,13 +44,13 @@ class BarrierMobilityFragment : AbstractBottomSheetFragment() {
     private var changesMade: Boolean = false
     private val noteText get() = barrier_dialog_comment?.text?.toString().orEmpty().trim()
     private val widthInput get() = measureWidthForm.manualInputField?.text?.toString().orEmpty().trim()
-
+    private lateinit var spinner: Spinner
 
     //var textArray = arrayOf("ya mom", "ya da")
     //var imageArray = arrayOf(R.drawable.ic_add_photo_black_24dp,R.drawable.quest_pin)
 
     interface Listener {
-        fun onReportFinished(location: Location, stringList: ArrayList<String>)
+        fun onReportFinished(newMarker: MapMarker)
     }
     private val listener: Listener? get() = parentFragment as? Listener
         ?: activity as? Listener
@@ -66,7 +71,7 @@ class BarrierMobilityFragment : AbstractBottomSheetFragment() {
         buttonPanel.removeAllViews()
         val newPanel = inflater.inflate(R.layout.quest_buttonpanel_done_cancel, buttonPanel)
 
-        var spinner = barrierContent.findViewById<Spinner>(R.id.barrier_mobility_spinner)
+        spinner = barrierContent.findViewById<Spinner>(R.id.barrier_mobility_spinner)
         ArrayAdapter.createFromResource(
             requireContext(),
             R.array.mobility_barriers_array,
@@ -160,9 +165,34 @@ class BarrierMobilityFragment : AbstractBottomSheetFragment() {
 
 
     private fun onClickOk(){
+        val selectedBarrier = spinner.selectedItem.toString()
         val toast = Toast.makeText(context, "Location is ${location?.latitude},${location?.longitude}", Toast.LENGTH_LONG)
         toast.show()
+        val newMarker: MapMarker = MapMarker()
+        var tagList = mutableListOf<NoIdTag>()
         // I need barrier type, barrier width & barrier height, and the wheelchair info
+        val widthValue = if(selectedBarrier in arList) measureWidthForm.manualInputField!!.text.toString() else ""
+        newMarker.geo_type = "point"
+        newMarker.latitude = location?.latitude
+        newMarker.longitude = location?.longitude
+        newMarker.comments = noteText
+        newMarker.title = "Mobility Barrier Report"
+        newMarker.subtitle = selectedBarrier
+        newMarker.description="User-made report of a new barrier ($selectedBarrier) for mobility impaired"
+        when(selectedBarrier){
+            "Choose a barrier"-> {
+                val toasty = Toast.makeText(context, "Cannot send report without a barrier selected", Toast.LENGTH_LONG); toasty.show() }
+            "Chain" -> { }//Height of barrier
+            "Block", "Hole" -> {  }//Width of barrier
+            "Cycle barrier", "Bollard" -> {
+                val widthTag = NoIdTag("width_between_barriers", widthValue)
+                tagList.add(widthTag)
+                newMarker.tagsWithoutID?.tagListWithoutID = tagList
+                listener?.onReportFinished(newMarker)
+            }//width between barrier
+            "Turnstile"->{ } //Wheelchair question
+        }
+
     }
 
     val arList = arrayOf("Chain", "Block", "Hole","Cycle barrier", "Bollard")
@@ -188,11 +218,11 @@ class BarrierMobilityFragment : AbstractBottomSheetFragment() {
         super.onDiscard()
         Log.i(TAG, "Fragment discarded")
         markerLayoutContainer?.visibility = View.INVISIBLE
-        attachPhotoFragment?.deleteImages()
-        Log.i(TAG, " "+ noteText.isNotEmpty() +" "+ ( barrierType in arList && widthInput.isNotEmpty() )+" "+ changesMade+" "+ attachPhotoFragment?.imagePaths?.isNotEmpty() )
+        attachPhotoFragment.deleteImages()
+        Log.i(TAG, " "+ noteText.isNotEmpty() +" "+ ( barrierType in arList && widthInput.isNotEmpty() )+" "+ changesMade+" "+ attachPhotoFragment.imagePaths.isNotEmpty() )
     }
 
     override fun isRejectingClose() =
-        noteText.isNotEmpty() || ( barrierType in arList && widthInput.isNotEmpty() )|| changesMade || attachPhotoFragment?.imagePaths?.isNotEmpty()
+        noteText.isNotEmpty() || ( barrierType in arList && widthInput.isNotEmpty() )|| changesMade || attachPhotoFragment.imagePaths.isNotEmpty()
 
 }

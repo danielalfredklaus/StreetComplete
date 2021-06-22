@@ -6,11 +6,10 @@ import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.runner.AndroidJUnit4
 import ch.uzh.ifi.accesscomplete.reports.API.*
-import ch.uzh.ifi.accesscomplete.reports.database.MarkerDAO
-import ch.uzh.ifi.accesscomplete.reports.database.MarkerDatabase
-import ch.uzh.ifi.accesscomplete.reports.database.MarkerRepo
+import ch.uzh.ifi.accesscomplete.reports.database.*
+import kotlinx.coroutines.awaitAll
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
-import okhttp3.ResponseBody
 import org.junit.*
 import org.junit.Assert.*
 import org.junit.runner.RunWith
@@ -23,21 +22,27 @@ class MapMarkerRepoTest {
     private val TAG = "MarkerRepoTest"
     private lateinit var markerRepo: MarkerRepo
     private lateinit var markerDAO: MarkerDAO
+    private lateinit var questDAO: UzhQuestDAO
+    private lateinit var quest2DB: UzhQuest2DB
     private lateinit var db: MarkerDatabase
     private lateinit var webAccess: WebserverAccess
     private lateinit var sessionManager: SessionManager
-    val testUser: User = User("test@test.com", "test", "test", "test", "test")
+    //val testUser: User = User("test@test.com", "test", "test", "test", "test")
     private val erc = ErrorResponseConverter()
+    private var questMID = ""
 
     @Before
     fun createDb() {
         val context = ApplicationProvider.getApplicationContext<Context>()
         db = Room.inMemoryDatabaseBuilder(
             context, MarkerDatabase::class.java).build()
+        quest2DB = Room.inMemoryDatabaseBuilder(
+            context, UzhQuest2DB::class.java).build()
         markerDAO = db.markersDAO()
         sessionManager = SessionManager(context)
         webAccess = WebserverAccess()
-        markerRepo = MarkerRepo(markerDAO, webAccess)
+        questDAO = quest2DB.uzhQuest2Dao()
+        markerRepo = MarkerRepo(markerDAO, webAccess, questDAO)
         Log.d(TAG, "Finished @Before")
     }
 
@@ -49,6 +54,7 @@ class MapMarkerRepoTest {
             if (response.isSuccessful){
                 Log.d(TAG, "response seems successful")
                 val body = response.body()
+                Log.d(TAG, body.toString())
                 assertTrue(body!!.success!!)
                 assertEquals("asdf@asdf.com",body.email)
                 Log.d(TAG, body.token!!)
@@ -136,22 +142,60 @@ class MapMarkerRepoTest {
         }
     }
 */
+    @Test
+    fun postMarker(){
+        runBlocking {
+            delay(200L)
+            val currentToken = sessionManager.fetchAuthToken()!!
+            val newMarker = MapMarker("point",16.0,6.0,"I don't like sand","It's coarse and rough and irritating", "and it gets everywhere", "I'm pickle riiick", "", 0, TagsWithoutID(
+                emptyList()),"thisisribrary" )
+            val response = markerRepo.postMarkerToServer(currentToken,newMarker)
+            if(response.isSuccessful){
+                Log.d(TAG, response.body().toString())
+                val newQuest: UzhQuest? = response.body()
+                Log.d(TAG,"New Quest MID is" + newQuest?.mid)
+                markerRepo.insertQuest(UzhQuestConverter().convertQuest(newQuest!!))
+                assertEquals("point", newQuest.location?.geoType)
+                assertEquals("I don't like sand", newQuest.title)
+                questMID = newQuest.mid
+            }
+
+        }
+    }
 
     @Test
     fun fetchMarker(){
         runBlocking{
+            delay(2000L)
             val currentToken = sessionManager.fetchAuthToken()!!
-            val response = markerRepo.getMarker(currentToken, "NaLAdtvVT3K2fFh_XXDDK")
+            val response = markerRepo.getQuestFromServer(currentToken, questMID) //REPLACE mID FOR TESTING IF NEEDED
             if (response.isSuccessful) {
                 Log.d(TAG, "Successful GET was made")
-                Log.d(TAG, "Body is: " + response.body().toString())
+                Log.d(TAG, "FetchMarker Body is: " + response.body().toString())
                 val fetchedQuest = response.body()
-                assertEquals("updates", fetchedQuest?.title)
-                assertEquals(listOf("123456", "66999"), fetchedQuest?.location?.coordinates)
+                assertEquals("string", fetchedQuest?.title)
+                assertEquals(listOf(0.0, 0.0), listOf(fetchedQuest?.location?.coordinates?.latitude,fetchedQuest?.location?.coordinates?.longitude))
                 assertEquals("point", fetchedQuest?.location?.geoType)
             } else {
                 Log.d(TAG, response.errorBody()!!.string())
                 fail("GET has failed")
+            }
+        }
+    }
+
+    @Test
+    fun deleteMarker(){
+        runBlocking {
+            delay(3000L)
+            val currentToken = sessionManager.fetchAuthToken()!!
+            val toRemoveQuest = markerRepo.findQuestByID(questMID)
+            val response = markerRepo.removeQuestFromServer(currentToken,questMID)
+            if(response.isSuccessful){
+                assertEquals("Successfully Deleted Marker", response.body()?.message)
+                markerRepo.removeQuest(toRemoveQuest)
+                Log.d(TAG, "Delete Marker Body: " + response.body().toString())
+            } else {
+                fail("Deletion failed")
             }
         }
     }

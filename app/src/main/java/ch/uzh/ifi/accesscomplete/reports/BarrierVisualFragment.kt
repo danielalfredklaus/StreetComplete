@@ -16,6 +16,7 @@ import androidx.fragment.app.commit
 import ch.uzh.ifi.accesscomplete.R
 import ch.uzh.ifi.accesscomplete.quests.AbstractBottomSheetFragment
 import ch.uzh.ifi.accesscomplete.quests.note_discussion.AttachPhotoFragment
+import ch.uzh.ifi.accesscomplete.reports.database.MapMarker
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import kotlinx.android.synthetic.main.dialog_barrier_visual.*
 import kotlinx.android.synthetic.main.form_leave_note.*
@@ -34,7 +35,7 @@ class BarrierVisualFragment: AbstractBottomSheetFragment()  {
     private val noteText get() = barrier_visual_comment_edit_text?.text?.toString().orEmpty().trim()
 
     interface Listener {
-        fun onReportFinished(location: Location, stringList: ArrayList<String>)
+        fun onReportFinished(newMarker: MapMarker)
     }
     private val listener: Listener? get() = parentFragment as? Listener
         ?: activity as? Listener

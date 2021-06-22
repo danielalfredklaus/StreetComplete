@@ -2,6 +2,7 @@ package ch.uzh.ifi.accesscomplete.reports.API
 
 import ch.uzh.ifi.accesscomplete.reports.database.MapMarker
 import kotlinx.coroutines.flow.Flow
+import okhttp3.ResponseBody
 import retrofit2.Response
 import retrofit2.http.*
 
@@ -19,16 +20,16 @@ interface uzhMastersAPI {
     suspend fun getMarkersAsync(@Header("Authorization") token: String): Response<List<MapMarker>>
 
     @POST("marker")
-    suspend fun addMarkerAsync(@Header("Authorization") token: String, @Body newMapMarker : MapMarker): Response<MarkerResponse>
+    suspend fun addMarkerAsync(@Header("Authorization") token: String, @Body newMapMarker : MapMarker): Response<UzhQuest>
 
     @PUT("marker")
-    suspend fun updateMarkerAsync(@Header("Authorization") token: String, @Body newMapMarker: MapMarker) : Response<MarkerResponse>
+    suspend fun updateMarkerAsync(@Header("Authorization") token: String, @Body newMapMarker: MapMarker) : Response<UzhQuest>
 
     @GET("marker/{id}")
     suspend fun getMarkerAsync(@Header("Authorization") token: String, @Path("id") markerID: String) : Response<UzhQuest>
 
     @DELETE("marker/{id}")
-    suspend fun deleteMarkerAsync(@Header("Authorization") token: String, @Path("id") markerID: String) : Response<Void>
+    suspend fun deleteMarkerAsync(@Header("Authorization") token: String, @Path("id") markerID: String) : Response<ServerResponse>
 
 
 }

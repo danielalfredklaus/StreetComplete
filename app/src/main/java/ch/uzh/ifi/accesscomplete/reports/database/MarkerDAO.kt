@@ -9,10 +9,10 @@ interface MarkerDAO {
     @Query("SELECT * FROM MapMarker")
     suspend fun getAll(): List<MapMarker>
 
-    @Query("SELECT * FROM MapMarker WHERE aid IN (:markerIDs)")
+    @Query("SELECT * FROM MapMarker WHERE nodeid IN (:markerIDs)")
     suspend fun loadAllByIds(markerIDs: IntArray): List<MapMarker>
 
-    @Query("SELECT * FROM MapMarker WHERE aid LIKE :ID")
+    @Query("SELECT * FROM MapMarker WHERE nodeid LIKE :ID")
     suspend fun findByID(ID: Int): MapMarker
 
     @Query("SELECT * FROM MapMarker WHERE title LIKE :markerTitle")

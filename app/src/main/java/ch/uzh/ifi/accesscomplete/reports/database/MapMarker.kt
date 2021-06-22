@@ -1,5 +1,6 @@
 package ch.uzh.ifi.accesscomplete.reports.database
 
+import androidx.room.Embedded
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.squareup.moshi.Json
@@ -10,18 +11,26 @@ import com.squareup.moshi.JsonClass
 @Entity
 data class MapMarker(
     var geo_type: String?, //either point or polygon
-    @Json(name = "lat") var latitude: Int?,
-    @Json(name = "long") var longitude: Int?, //Kotlin allows long for a variable name, but Java doesn't, so when converting to a java class for JSON, it throws a stupid error
+    @Json(name = "lat") var latitude: Double?,
+    @Json(name = "long") var longitude: Double?, //Kotlin allows long for a variable name, but Java doesn't, so when converting to a java class for JSON, it throws a stupid error
     var title: String?, // Quest title
     var subtitle: String?,  //Quest subtitle
     var description: String?,   //Quest description
-    var image_url: String?, //String that is a link to the uploaded image of the user
-
+    var comments: String?,
+    var image_url: String?,//String that is a link to the uploaded image of the user
+    var version: Int = 0,
+    @Embedded
+    @Json(name =  "tags") val tagsWithoutID: TagsWithoutID?,
+    @PrimaryKey(autoGenerate = false) var nodeid: String = ""
     ){
-    @PrimaryKey(autoGenerate = false) var aid: String = "" //User ID from JWT
-    var tags: MutableMap<String, String> = mutableMapOf<String, String>()
-    constructor() : this("",0,0,"","","","") //float 0.0f
+    constructor() : this("",0.0,0.0,"","","","","",0,TagsWithoutID(mutableListOf<NoIdTag>())) //float 0.0f
 }
+
+data class TagsWithoutID(var tagListWithoutID: List<NoIdTag>)
+data class NoIdTag(
+    val k: String,
+    var v: String
+)
 
 /*
 aid	string

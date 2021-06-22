@@ -22,6 +22,7 @@ import ch.uzh.ifi.accesscomplete.quests.incline.AddInclineForm
 import ch.uzh.ifi.accesscomplete.quests.incline.AddInclineFormModular
 import ch.uzh.ifi.accesscomplete.quests.note_discussion.AttachPhotoFragment
 import ch.uzh.ifi.accesscomplete.quests.width.AddWidthModular
+import ch.uzh.ifi.accesscomplete.reports.database.MapMarker
 import ch.uzh.ifi.accesscomplete.util.TextChangedWatcher
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import kotlinx.android.synthetic.main.dialog_barrier_visual.*
@@ -57,7 +58,7 @@ class ConstructionFragment: AbstractBottomSheetFragment() {
     private val noteText get() = construction_dialog_comment?.text?.toString().orEmpty().trim()
 
     interface Listener {
-        fun onReportFinished(location: Location, stringList: ArrayList<String>)
+        fun onReportFinished(newMarker: MapMarker)
     }
     private val listener: Listener? get() = parentFragment as? Listener
         ?: activity as? Listener
@@ -174,6 +175,7 @@ class ConstructionFragment: AbstractBottomSheetFragment() {
         toast.show()
         val toast2 = Toast.makeText(context, "Location is ${location?.latitude},${location?.longitude}", Toast.LENGTH_LONG)
         toast2.show()
+
     }
 
     override fun isRejectingClose() =

@@ -24,8 +24,7 @@ class MapMarkerViewModel(private val repo: MarkerRepo): ViewModel() {
     }
 
     val allMapMarkers: LiveData<List<UzhQuest2>> = liveData{
-        val data : LiveData<List<UzhQuest2>> = liveData {emit(repo.getAllQuestsFromDB())}
-        emitSource(data)
+
         val response = repo.getAllQuestsFromServer(currentKey)
         if(response.isSuccessful){
             val retrievedQuests: List<UzhQuest> = response.body() ?: return@liveData
@@ -35,6 +34,8 @@ class MapMarkerViewModel(private val repo: MarkerRepo): ViewModel() {
                 else repo.insertQuest(q2)
             }
         }
+        val data : List<UzhQuest2> = repo.getAllQuestsFromDB()
+        emit(data)
     }
 
     fun insertMarker(marker: MapMarker) = viewModelScope.launch{

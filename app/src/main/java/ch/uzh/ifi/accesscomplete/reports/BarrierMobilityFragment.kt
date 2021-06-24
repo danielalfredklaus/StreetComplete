@@ -181,17 +181,22 @@ class BarrierMobilityFragment : AbstractBottomSheetFragment() {
         newMarker.description="User-made report of a new barrier ($selectedBarrier) for mobility impaired"
         when(selectedBarrier){
             "Choose a barrier"-> {
-                val toasty = Toast.makeText(context, "Cannot send report without a barrier selected", Toast.LENGTH_LONG); toasty.show() }
+                val toasty = Toast.makeText(context, "Cannot send report without a barrier selected", Toast.LENGTH_LONG); toasty.show()
+            return }
             "Chain" -> { }//Height of barrier
-            "Block", "Hole" -> {  }//Width of barrier
+            "Block", "Hole" -> {
+                tagList.add(NoIdTag("width", widthValue))
+                newMarker.tagsWithoutID = tagList
+            }//Width of barrier
             "Cycle barrier", "Bollard" -> {
-                val widthTag = NoIdTag("width_between_barriers", widthValue)
-                tagList.add(widthTag)
-                newMarker.tagsWithoutID?.tagListWithoutID = tagList
-                listener?.onReportFinished(newMarker)
+                tagList.add(NoIdTag("width_between_barriers", widthValue))
+                newMarker.tagsWithoutID = tagList
+
             }//width between barrier
             "Turnstile"->{ } //Wheelchair question
         }
+        listener?.onReportFinished(newMarker)
+
 
     }
 

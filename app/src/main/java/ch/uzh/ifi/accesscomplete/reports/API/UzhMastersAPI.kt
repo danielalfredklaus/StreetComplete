@@ -16,19 +16,19 @@ interface uzhMastersAPI {
     @POST("register")
     suspend fun registerAsync(@Body newUser: User):  Response<ServerResponse>
 
-    @GET("list")
-    suspend fun getMarkersAsync(@Header("Authorization") token: String): Response<List<MapMarker>>
+    @GET("apg/msrv/list")
+    suspend fun getMarkersAsync(@Header("Authorization") token: String): Response<List<UzhQuest>>
 
-    @POST("marker")
+    @POST("apg/msrv/marker")
     suspend fun addMarkerAsync(@Header("Authorization") token: String, @Body newMapMarker : MapMarker): Response<UzhQuest>
 
-    @PUT("marker")
+    @PUT("apg/msrv/marker")
     suspend fun updateMarkerAsync(@Header("Authorization") token: String, @Body newMapMarker: MapMarker) : Response<UzhQuest>
 
-    @GET("marker/{id}")
+    @GET("apg/msrv/marker/{id}")
     suspend fun getMarkerAsync(@Header("Authorization") token: String, @Path("id") markerID: String) : Response<UzhQuest>
 
-    @DELETE("marker/{id}")
+    @DELETE("apg/msrv/marker/{id}")
     suspend fun deleteMarkerAsync(@Header("Authorization") token: String, @Path("id") markerID: String) : Response<ServerResponse>
 
 

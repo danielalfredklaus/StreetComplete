@@ -95,6 +95,7 @@ open class MapFragment : Fragment(),
 
     @Inject internal lateinit var vectorTileProvider: VectorTileProvider
 
+    lateinit var markerViewModel: MapMarkerViewModel //Daniel
 
 
     interface Listener {
@@ -135,9 +136,11 @@ open class MapFragment : Fragment(),
         launch { initMap() }
 
         //Daniels Stuff
-        val markerViewModel: MapMarkerViewModel by viewModels {
-            MapMarkerViewModelFactory(MarkerServiceLocator.getRepo(requireContext()))
+        val newMarkerViewModel: MapMarkerViewModel by viewModels {
+            MapMarkerViewModelFactory(MarkerServiceLocator.getRepo(activity!!.applicationContext))
         }
+        markerViewModel = newMarkerViewModel
+
     }
 
     private fun showOpenUrlDialog(url: String) {

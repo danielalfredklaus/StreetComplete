@@ -73,6 +73,7 @@ class QuestPinLayerManager @Inject constructor(
 
     lateinit var mapFragment: MapFragment
 
+
     var questsLayer: MapData? = null
         set(value) {
             if (field === value) return
@@ -98,6 +99,12 @@ class QuestPinLayerManager @Inject constructor(
         initializeQuestTypeOrders()
         clear()
         onNewScreenPosition()
+        /*mapFragment.markerViewModel.allMapMarkers.observe(mapFragment.viewLifecycleOwner, { qList ->
+             qList.forEach {
+                 add(it,QuestGroup.UZH)
+             }
+            updateLayer()
+        }) */
     }
 
     @OnLifecycleEvent(Lifecycle.Event.ON_STOP) fun onStop() {

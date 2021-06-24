@@ -28,7 +28,7 @@ class MarkerRepo (private val markerDAO: MarkerDAO, private val webserverAccess:
         return markerDAO.getAll()
     }
 
-    suspend fun getAllMarkersFromServer(token: String): Response<List<MapMarker>> {
+    suspend fun getAllQuestsFromServer(token: String): Response<List<UzhQuest>> {
         return webserverAccess.mastersAPI.getMarkersAsync(token)
     }
 
@@ -36,8 +36,12 @@ class MarkerRepo (private val markerDAO: MarkerDAO, private val webserverAccess:
         return webserverAccess.mastersAPI.getMarkerAsync(token, mID)
     }
 
-    suspend fun insertQuest(q: UzhQuest2){
-        uzhQuestDAO.insertAll(q)
+    suspend fun insertQuest(vararg q: UzhQuest2){
+        uzhQuestDAO.insertAll(*q)
+    }
+
+    suspend fun insertOrReplaceQuest(vararg q: UzhQuest2){
+        uzhQuestDAO.insertAllOrReplace(*q)
     }
 
     suspend fun findQuestByID(id: String): UzhQuest2{
@@ -50,6 +54,18 @@ class MarkerRepo (private val markerDAO: MarkerDAO, private val webserverAccess:
 
     suspend fun removeQuestFromServer(token: String, mID: String): Response<ServerResponse>{
         return webserverAccess.mastersAPI.deleteMarkerAsync(token, mID)
+    }
+
+    suspend fun checkIfQuestExists(mID: String): Boolean{
+        return uzhQuestDAO.doesQuestExist(mID)
+    }
+
+    suspend fun updateQuests(vararg q: UzhQuest2){
+        uzhQuestDAO.updateMarkers(*q)
+    }
+
+    suspend fun getAllQuestsFromDB(): List<UzhQuest2>{
+        return uzhQuestDAO.getAll()
     }
 
 

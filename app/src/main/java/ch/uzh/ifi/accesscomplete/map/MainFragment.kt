@@ -208,7 +208,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
         //Temporary
         //Daniels Stuff
         val newMarkerViewModel: MapMarkerViewModel by viewModels {
-            MapMarkerViewModelFactory(MarkerServiceLocator.getRepo(requireContext()))
+            MapMarkerViewModelFactory(MarkerServiceLocator.getRepo(activity!!.applicationContext))
         }
         markerViewModel = newMarkerViewModel
 
@@ -691,7 +691,9 @@ class MainFragment : Fragment(R.layout.fragment_main),
         //TODO: Implement
         closeBottomSheet()
         markerViewModel.insertMarker(newMarker)
-
+        //TODO: Create Marker on Map for new Marker
+        //TODO: Save Marker online, update DB with Response
+        //TODO:
 
     }
 //-------------------------------End daniels section

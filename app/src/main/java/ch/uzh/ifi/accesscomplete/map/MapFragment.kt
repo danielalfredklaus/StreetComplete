@@ -97,7 +97,6 @@ open class MapFragment : Fragment(),
 
     lateinit var markerViewModel: MapMarkerViewModel //Daniel
 
-
     interface Listener {
         /** Called when the map has been completely initialized */
         fun onMapInitialized()
@@ -119,6 +118,12 @@ open class MapFragment : Fragment(),
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        //Daniels Stuff
+
+        val newMarkerViewModel: MapMarkerViewModel by viewModels {
+            MapMarkerViewModelFactory(MarkerServiceLocator.getRepo(activity?.applicationContext ?: requireContext()))
+        }
+        markerViewModel = newMarkerViewModel
         return inflater.inflate(R.layout.fragment_map, container, false)
     }
 
@@ -134,12 +139,6 @@ open class MapFragment : Fragment(),
         setupFittingToSystemWindowInsets()
 
         launch { initMap() }
-
-        //Daniels Stuff
-        val newMarkerViewModel: MapMarkerViewModel by viewModels {
-            MapMarkerViewModelFactory(MarkerServiceLocator.getRepo(activity!!.applicationContext))
-        }
-        markerViewModel = newMarkerViewModel
 
     }
 

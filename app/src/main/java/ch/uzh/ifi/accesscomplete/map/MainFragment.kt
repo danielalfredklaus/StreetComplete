@@ -87,10 +87,7 @@ import ch.uzh.ifi.accesscomplete.reports.BarrierMobilityFragment
 import ch.uzh.ifi.accesscomplete.reports.BarrierVisualFragment
 import ch.uzh.ifi.accesscomplete.reports.ConstructionFragment
 import ch.uzh.ifi.accesscomplete.reports.ManualPositionFragment
-import ch.uzh.ifi.accesscomplete.reports.database.MapMarker
-import ch.uzh.ifi.accesscomplete.reports.database.MapMarkerViewModel
-import ch.uzh.ifi.accesscomplete.reports.database.MapMarkerViewModelFactory
-import ch.uzh.ifi.accesscomplete.reports.database.MarkerServiceLocator
+import ch.uzh.ifi.accesscomplete.reports.database.*
 import ch.uzh.ifi.accesscomplete.user.UserActivity
 import ch.uzh.ifi.accesscomplete.util.*
 import de.westnordost.osmapi.map.data.BoundingBox
@@ -207,22 +204,39 @@ class MainFragment : Fragment(R.layout.fragment_main),
 
         //Temporary
         //Daniels Stuff
+
         val newMarkerViewModel: MapMarkerViewModel by viewModels {
-            MapMarkerViewModelFactory(MarkerServiceLocator.getRepo(activity!!.applicationContext))
+            MapMarkerViewModelFactory(MarkerServiceLocator.getRepo(activity?.applicationContext ?: requireContext()))
         }
         markerViewModel = newMarkerViewModel
+    /*
+        markerViewModel.loginResult.observe(viewLifecycleOwner, {
+            state ->
+                when(state){
+                    LoginState.NOTINITIATED -> {
+                        markerViewModel.loginRequest = LoginRequest(prefs.getString("uzhEmail", "")!!, prefs.getString("uzhPassword", "")!!)
+                        Log.d(TAG, "Set Login Credentials from prefs since Login has not been initiated yet")
+                    }
+                    LoginState.NOEMAIL, LoginState.NOPASSWORD -> {
+                        markerViewModel.loginRequest = LoginRequest("asdf@asdf.com","asdfasdf")
+                        Log.d(TAG, "DEBUG set LoginRequest")
+                        //TODO: Open Login/Registration
+                    }
+                    LoginState.FAILED -> {
+                        markerViewModel.doTheFuckingLogin()
+                        Log.d(TAG, "Observed LoginState.Failed, called login function")
+                    }
+                    LoginState.SUCCESS -> {
+                        Log.d(TAG, "Observed LoginState.Success")
+                    }
 
-        markerViewModel.isloggedIn.observe(viewLifecycleOwner, {
-            status ->
-                if(!status){
-                    markerViewModel.loginRequest = LoginRequest("asdf@asdf.com","asdfasdf")
-                    markerViewModel.isloggedIn
+
                     //TODO: Annoy the user with Login/Register Screen (first check prefs, then the screen)
-                } else {
-                    //Do nothing?
                 }
                 // react to either logged in or not
         })
+
+     */
 
     }
 

@@ -36,6 +36,7 @@ import android.widget.ArrayAdapter
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.viewModels
 import com.mapzen.tangram.MapData
 import com.mapzen.tangram.SceneUpdate
 import com.mapzen.tangram.geometry.Point
@@ -56,6 +57,9 @@ import ch.uzh.ifi.accesscomplete.map.QuestPinLayerManager.Companion.MARKER_QUEST
 import ch.uzh.ifi.accesscomplete.map.QuestPinLayerManager.Companion.MARKER_QUEST_ID
 import ch.uzh.ifi.accesscomplete.map.tangram.*
 import ch.uzh.ifi.accesscomplete.quests.AbstractQuestAnswerFragment
+import ch.uzh.ifi.accesscomplete.reports.database.MapMarkerViewModel
+import ch.uzh.ifi.accesscomplete.reports.database.MapMarkerViewModelFactory
+import ch.uzh.ifi.accesscomplete.reports.database.MarkerServiceLocator
 import ch.uzh.ifi.accesscomplete.util.centerPointOfPolygon
 import ch.uzh.ifi.accesscomplete.util.distanceTo
 import ch.uzh.ifi.accesscomplete.util.initialBearingTo

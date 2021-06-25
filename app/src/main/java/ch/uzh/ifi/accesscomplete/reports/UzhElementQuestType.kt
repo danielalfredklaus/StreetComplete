@@ -27,13 +27,13 @@ interface UzhElementQuestType<T> : QuestType<T> {
     val enabledInCountries: Countries get() = AllCountries
 
     /** returns whether the markers should be at the ends instead of the center */
-    //val hasMarkersAtEnds: Boolean get() = false
+    val hasMarkersAtEnds: Boolean get() = false
 
     /** returns whether the direction of ways should be indicated on the map when drawing the quest geometry */
-    //val indicateDirection: Boolean get() = false
+    val indicateDirection: Boolean get() = false
 
     /** returns whether the user should be able to split the way instead */
-    //val isSplitWayEnabled: Boolean get() = false
+    val isSplitWayEnabled: Boolean get() = false
 
     /** returns title resource for when the element has the specified [tags]. The tags are unmodifiable */
     fun getTitle(tags: Map<String, String>): Int

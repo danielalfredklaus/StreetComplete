@@ -27,7 +27,7 @@ class UzhQuestController {
     /* ---------------------------------- Modify single quests ---------------------------------- */
 
     /** Return the previously answered quest to the initial unanswered state */
-    fun undo(quest: OsmQuest) {
+    fun undo(quest: UzhQuest2) {
         val status = quest.status
         quest.status = QuestStatus.NEW
         quest.changes = null

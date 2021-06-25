@@ -23,9 +23,10 @@
 package ch.uzh.ifi.accesscomplete.map
 
 import android.content.res.Resources
+import android.util.Log
 import androidx.collection.LongSparseArray
+import androidx.collection.contains
 import androidx.collection.forEach
-import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
 import androidx.lifecycle.OnLifecycleEvent
@@ -37,10 +38,6 @@ import ch.uzh.ifi.accesscomplete.data.quest.*
 import ch.uzh.ifi.accesscomplete.data.visiblequests.OrderedVisibleQuestTypesProvider
 import ch.uzh.ifi.accesscomplete.ktx.values
 import ch.uzh.ifi.accesscomplete.map.tangram.toLngLat
-import ch.uzh.ifi.accesscomplete.reports.API.LoginRequest
-import ch.uzh.ifi.accesscomplete.reports.database.MapMarkerViewModel
-import ch.uzh.ifi.accesscomplete.reports.database.MapMarkerViewModelFactory
-import ch.uzh.ifi.accesscomplete.reports.database.MarkerServiceLocator
 import ch.uzh.ifi.accesscomplete.util.Tile
 import ch.uzh.ifi.accesscomplete.util.TilesRect
 import ch.uzh.ifi.accesscomplete.util.enclosingTilesRect
@@ -71,7 +68,9 @@ class QuestPinLayerManager @Inject constructor(
     // quest group -> ( quest Id -> [point, ...] )
     private val quests: EnumMap<QuestGroup, LongSparseArray<Quest>> = EnumMap(QuestGroup::class.java)
 
-    lateinit var mapFragment: MapFragment
+    lateinit var mapFragment: MapFragment //Is a QuestsMapFragment
+
+    val TAG = "QuestPinLayerManager"
 
 
     var questsLayer: MapData? = null
@@ -99,12 +98,18 @@ class QuestPinLayerManager @Inject constructor(
         initializeQuestTypeOrders()
         clear()
         onNewScreenPosition()
-        /*mapFragment.markerViewModel.allMapMarkers.observe(mapFragment.viewLifecycleOwner, { qList ->
+    /*
+        mapFragment.markerViewModel.allMapMarkers.observe(mapFragment.viewLifecycleOwner, { qList ->
              qList.forEach {
-                 add(it,QuestGroup.UZH)
+                 //if(quests[QuestGroup.UZH]?.contains(it.id!!) == true)
+                 //add(it,QuestGroup.UZH)
+                Log.d(TAG, "Added Quest ${it.mid} to QuestPinLayer")
              }
+            Log.d(TAG, "Observer allMapMarkers End")
             updateLayer()
-        }) */
+        })
+
+     */
     }
 
     @OnLifecycleEvent(Lifecycle.Event.ON_STOP) fun onStop() {
@@ -159,8 +164,11 @@ class QuestPinLayerManager @Inject constructor(
         synchronized(retrievedTiles) { retrievedTiles.addAll(tiles) }
     }
 
-    //TODO: This is probably a manual way to add a quest to the questpinlayer. but how do I create a quest and get its questgroup?
+    //TODO: This is probably a manual way to add a quest to the Questpinlayer. but how do I create a quest and get its Questgroup?
     //Note that this is private and is only called in other functions
+    /**
+     * Adds a quest mapped to it's Questgroup to the quests.
+     */
     private fun add(quest: Quest, group: QuestGroup) {
         synchronized(quests) {
             if (quests[group] == null) quests[group] = LongSparseArray(256)
@@ -193,6 +201,7 @@ class QuestPinLayerManager @Inject constructor(
         } else {
             questsLayer?.clear()
         }
+        Log.d(TAG, "Layer updated")
     }
 
     private fun getPoints(): List<Point> {
@@ -268,7 +277,7 @@ class QuestPinLayerManager @Inject constructor(
             for ((_, questById) in quests) {
                 result.addAll(
                     questById.values
-                        .filterIsInstance<OsmQuest>()
+                        .filterIsInstance<OsmQuest>() //TODO: Add UZH
                         .filter { quest -> quest.elementId == osmElementId })
             }
         }

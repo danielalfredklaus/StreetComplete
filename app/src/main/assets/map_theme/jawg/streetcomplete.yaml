@@ -158,3 +158,17 @@ layers:
                     size: 8px
                     collide: false
                     order: 1000
+    uzh_quests:
+      data: { source: uzh_quests }
+      pins:
+        filter: { $zoom: { min: 14 } }
+        draw:
+          quest-icons:
+            interactive: true
+            priority: function() { return 1.0 - feature.importance / 100000.0 }
+            order: function() { return 100000 + feature.importance }
+            repeat_group: quest_pin
+            size: 66px
+            sprite: function() { return feature.kind }
+            sprite_default: quest
+            offset: [ -17px, -66px ]

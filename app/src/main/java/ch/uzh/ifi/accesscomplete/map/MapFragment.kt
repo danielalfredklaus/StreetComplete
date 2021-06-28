@@ -40,6 +40,7 @@ import androidx.core.content.edit
 import androidx.core.net.toUri
 import androidx.core.view.updateLayoutParams
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.preference.PreferenceManager
 import com.mapzen.tangram.MapView
@@ -58,6 +59,7 @@ import ch.uzh.ifi.accesscomplete.ktx.awaitLayout
 import ch.uzh.ifi.accesscomplete.ktx.containsAll
 import ch.uzh.ifi.accesscomplete.ktx.tryStartActivity
 import ch.uzh.ifi.accesscomplete.map.tangram.*
+import ch.uzh.ifi.accesscomplete.reports.database.LoginState
 import ch.uzh.ifi.accesscomplete.reports.database.MapMarkerViewModel
 import ch.uzh.ifi.accesscomplete.reports.database.MapMarkerViewModelFactory
 import ch.uzh.ifi.accesscomplete.reports.database.MarkerServiceLocator
@@ -85,7 +87,7 @@ open class MapFragment : Fragment(),
     protected lateinit var mapView: MapView
     private set
 
-    protected var controller: KtMapController? = null
+    var controller: KtMapController? = null
 
     private val defaultCameraInterpolator = AccelerateDecelerateInterpolator()
 
@@ -95,7 +97,7 @@ open class MapFragment : Fragment(),
 
     @Inject internal lateinit var vectorTileProvider: VectorTileProvider
 
-    lateinit var markerViewModel: MapMarkerViewModel //Daniel
+    lateinit var markerViewModel: MapMarkerViewModel
 
     interface Listener {
         /** Called when the map has been completely initialized */
@@ -118,12 +120,12 @@ open class MapFragment : Fragment(),
     }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        //Daniels Stuff
-
-        val newMarkerViewModel: MapMarkerViewModel by viewModels {
-            MapMarkerViewModelFactory(MarkerServiceLocator.getRepo(activity?.applicationContext ?: requireContext()))
+        val newMarkerViewModel: MapMarkerViewModel by activityViewModels {
+            MapMarkerViewModelFactory(MarkerServiceLocator.getRepo(requireActivity()))
         }
         markerViewModel = newMarkerViewModel
+        Log.d(TAG, "Has $markerViewModel")
+
         return inflater.inflate(R.layout.fragment_map, container, false)
     }
 

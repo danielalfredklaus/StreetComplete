@@ -28,6 +28,7 @@ import android.graphics.PointF
 import android.graphics.RectF
 import android.graphics.drawable.BitmapDrawable
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AccelerateDecelerateInterpolator
@@ -57,6 +58,7 @@ import ch.uzh.ifi.accesscomplete.map.QuestPinLayerManager.Companion.MARKER_QUEST
 import ch.uzh.ifi.accesscomplete.map.QuestPinLayerManager.Companion.MARKER_QUEST_ID
 import ch.uzh.ifi.accesscomplete.map.tangram.*
 import ch.uzh.ifi.accesscomplete.quests.AbstractQuestAnswerFragment
+import ch.uzh.ifi.accesscomplete.reports.API.MyLittleMapMarkers
 import ch.uzh.ifi.accesscomplete.reports.database.MapMarkerViewModel
 import ch.uzh.ifi.accesscomplete.reports.database.MapMarkerViewModelFactory
 import ch.uzh.ifi.accesscomplete.reports.database.MarkerServiceLocator
@@ -92,12 +94,15 @@ class QuestsMapFragment : LocationAwareMapFragment() {
     // for restoring position
     private var cameraPositionBeforeShowingQuest: CameraPosition? = null
 
+    //Daniels stuff
+    //lateinit var mlmm: MyLittleMapMarkers
+
     interface Listener {
         fun onClickedQuest(questGroup: QuestGroup, questId: Long)
         fun onClickedMapAt(position: LatLon, clickAreaSizeInMeters: Double)
     }
 
-    private val listener: Listener? get() = parentFragment as? Listener ?: activity as? Listener
+    private val listener: Listener? get() = parentFragment as? Listener ?: activity as? Listener //MainFragment
 
     /* ------------------------------------ Lifecycle ------------------------------------------- */
 
@@ -118,6 +123,10 @@ class QuestsMapFragment : LocationAwareMapFragment() {
         questsLayer = controller?.addDataLayer(QUESTS_LAYER)
         selectedQuestPinsLayer = controller?.addDataLayer(SELECTED_QUESTS_LAYER)
         questPinLayerManager.questsLayer = questsLayer
+        //Daniels addition
+        //mlmm = MyLittleMapMarkers(this, controller!!)
+        //this.lifecycle.addObserver(mlmm)
+        questPinLayerManager.dansLayer = controller?.addDataLayer(UZH_LAYER)
         super.onMapReady()
     }
 
@@ -142,11 +151,12 @@ class QuestsMapFragment : LocationAwareMapFragment() {
     }
 
     /* -------------------------------- Picking quest pins -------------------------------------- */
-
+    val TAG = "QuestsMapFragment"
     override fun onSingleTapConfirmed(x: Float, y: Float): Boolean {
             launch {
                 val pickResult = controller?.pickLabel(x, y)
-
+                Log.d(TAG, "Pick Label Result ${pickResult?.properties}" )
+                Log.d(TAG, "Pick Feature is ${controller?.pickFeature(x,y).toString()}")
                 val pickedQuestId = pickResult?.properties?.get(MARKER_QUEST_ID)?.toLong()
                 val pickedElementId = pickResult?.properties?.get(MARKER_ELEMENT_ID)?.toLong()
                 val pickedQuestGroup = pickResult?.properties?.get(MARKER_QUEST_GROUP)?.let { QuestGroup.valueOf(it) }
@@ -157,6 +167,7 @@ class QuestsMapFragment : LocationAwareMapFragment() {
                     openMultiQuestSelectionDialog(pickedElementId, pickedQuestGroup)
                 } else {
                     val pickMarkerResult = controller?.pickMarker(x,y)
+                    Log.d(TAG, "Pick Marker Result ${pickMarkerResult?.marker?.markerId}")
                     if (pickMarkerResult == null) {
                         onClickedMap(x, y)
                     }
@@ -465,5 +476,6 @@ class QuestsMapFragment : LocationAwareMapFragment() {
         private const val QUESTS_LAYER = "streetcomplete_quests"
         private const val SELECTED_QUESTS_LAYER = "streetcomplete_selected_quests"
         private const val CLICK_AREA_SIZE_IN_DP = 48
+        private const val UZH_LAYER = "uzh_quests"
     }
 }

@@ -25,7 +25,6 @@ package ch.uzh.ifi.accesscomplete.map
 import android.content.res.Resources
 import android.util.Log
 import androidx.collection.LongSparseArray
-import androidx.collection.contains
 import androidx.collection.forEach
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleObserver
@@ -36,8 +35,13 @@ import ch.uzh.ifi.accesscomplete.R
 import ch.uzh.ifi.accesscomplete.data.osm.osmquest.OsmQuest
 import ch.uzh.ifi.accesscomplete.data.quest.*
 import ch.uzh.ifi.accesscomplete.data.visiblequests.OrderedVisibleQuestTypesProvider
+import ch.uzh.ifi.accesscomplete.ktx.getBitmapDrawable
+import ch.uzh.ifi.accesscomplete.ktx.toDp
 import ch.uzh.ifi.accesscomplete.ktx.values
+import ch.uzh.ifi.accesscomplete.map.tangram.Marker
 import ch.uzh.ifi.accesscomplete.map.tangram.toLngLat
+import ch.uzh.ifi.accesscomplete.reports.API.UzhQuest2
+import ch.uzh.ifi.accesscomplete.reports.database.LoginState
 import ch.uzh.ifi.accesscomplete.util.Tile
 import ch.uzh.ifi.accesscomplete.util.TilesRect
 import ch.uzh.ifi.accesscomplete.util.enclosingTilesRect
@@ -72,6 +76,15 @@ class QuestPinLayerManager @Inject constructor(
 
     val TAG = "QuestPinLayerManager"
 
+    var dansLayer: MapData? = null
+    set(value) {
+        if(field === value) return
+        field = value
+        updateDansLayer()
+    }
+    var uzhQuestList: MutableList<UzhQuest2> = mutableListOf()
+    var uzhMarkerList: MutableList<Marker> = mutableListOf()
+
 
     var questsLayer: MapData? = null
         set(value) {
@@ -98,18 +111,22 @@ class QuestPinLayerManager @Inject constructor(
         initializeQuestTypeOrders()
         clear()
         onNewScreenPosition()
-    /*
-        mapFragment.markerViewModel.allMapMarkers.observe(mapFragment.viewLifecycleOwner, { qList ->
-             qList.forEach {
-                 //if(quests[QuestGroup.UZH]?.contains(it.id!!) == true)
-                 //add(it,QuestGroup.UZH)
-                Log.d(TAG, "Added Quest ${it.mid} to QuestPinLayer")
-             }
-            Log.d(TAG, "Observer allMapMarkers End")
-            updateLayer()
-        })
 
-     */
+        mapFragment.markerViewModel.allMapMarkers.observe(mapFragment.viewLifecycleOwner,){
+            clearDansStuff()
+            updateDansLayer()
+            Log.d(TAG, "Observed allMapMarkers")
+        }
+
+        mapFragment.markerViewModel.loginResult.observe(mapFragment.viewLifecycleOwner,){ state->
+            when(state){
+                LoginState.SUCCESS-> {
+                    updateDansLayer()
+                    Log.d(TAG, "Updating Daniels Layer")
+                }
+                else -> {Log.d(TAG, "Observed $state")}//donothing
+            }
+        }
     }
 
     @OnLifecycleEvent(Lifecycle.Event.ON_STOP) fun onStop() {
@@ -118,6 +135,7 @@ class QuestPinLayerManager @Inject constructor(
 
     @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY) fun onDestroy() {
         questsLayer = null
+        dansLayer = null
         visibleQuestsSource.removeListener(this)
         coroutineContext.cancel()
     }
@@ -156,16 +174,11 @@ class QuestPinLayerManager @Inject constructor(
             visibleQuestsSource.getAllVisible(bbox, questTypeNames).forEach {
                 add(it.quest, it.group)
             }
-            //Daniels Addition
-
-            //Addition end
             updateLayer()
         }
         synchronized(retrievedTiles) { retrievedTiles.addAll(tiles) }
     }
 
-    //TODO: This is probably a manual way to add a quest to the Questpinlayer. but how do I create a quest and get its Questgroup?
-    //Note that this is private and is only called in other functions
     /**
      * Adds a quest mapped to it's Questgroup to the quests.
      */
@@ -193,15 +206,41 @@ class QuestPinLayerManager @Inject constructor(
         }
         questsLayer?.clear()
         lastDisplayedRect = null
+
+        clearDansStuff()
     }
 
+    private fun clearDansStuff(){
+        dansLayer?.clear()
+        uzhQuestList = mutableListOf()
+        uzhMarkerList.forEach {
+            mapFragment.controller?.removeMarker(it)
+        }
+        uzhMarkerList = mutableListOf()
+
+    }
+
+    /**
+     * If visible, adds quest markers to the quest layer,
+     * else it removes all markers
+     */
     private fun updateLayer() {
         if (isVisible) {
             questsLayer?.setFeatures(getPoints())
+            dansLayer?.setFeatures(getUzhPoints())
         } else {
             questsLayer?.clear()
         }
         Log.d(TAG, "Layer updated")
+    }
+
+    private fun updateDansLayer() {
+        if (isVisible) {
+            dansLayer?.setFeatures(getUzhPoints())
+        } else {
+            dansLayer?.clear()
+        }
+        Log.d(TAG, "Daniels Layer updated")
     }
 
     private fun getPoints(): List<Point> {
@@ -254,6 +293,45 @@ class QuestPinLayerManager @Inject constructor(
                 }
             }
         }
+        return result
+    }
+
+    private fun getUzhPoints(): List<Point>{
+        val newList = mapFragment.markerViewModel.allMapMarkers.value ?: mutableListOf<UzhQuest2>()
+        val result = mutableListOf<Point>()
+        var counter = 7000
+        newList.forEach{ quest ->
+            //First we need to add markers, dont know where the map markers are added initially
+
+            val marker = mapFragment.controller!!.addMarker()
+            Log.d(TAG, "Added Marker ${marker.markerId}")
+            marker.setPoint(quest.center)
+            marker.setDrawOrder(counter++)
+            //marker.setDrawable(R.drawable.ic_quest_road_construction)
+            marker.setDrawable(mapFragment.resources.getBitmapDrawable(R.drawable.ic_quest_road_construction))
+            //val dotWidth = dot.intrinsicWidth.toFloat().toDp(mapFragment.requireContext())
+            //val dotHeight = dot.intrinsicHeight.toFloat().toDp(mapFragment.requireContext())
+            marker.setStylingFromString(
+                "{ style: 'quest-icons', color: 'white', size: [50px, 50px], collide: false, order: $counter }"
+            )   // { style: 'points', color: 'white', size: [50px, 50px], order: 2000, collide: false } style: quest-selection
+            uzhMarkerList.add(marker)
+
+            val questIconName = resources.getResourceEntryName(quest.type.icon)
+            Log.d(TAG, "Icon Name of Quest is $questIconName")
+            val position = quest.markerLocations.first()
+            val properties = mutableMapOf(
+                "type" to "point",
+                "kind" to questIconName,
+                "importance" to getQuestImportance(quest).toString(),
+                MARKER_QUEST_GROUP to "UZH",
+                "MARKER_QUEST_ID" to quest.id.toString()
+            )
+            properties[MARKER_ELEMENT_ID] = "0"
+            val point = Point(position.toLngLat(), properties)
+            result.add(point)
+        }
+        uzhQuestList = newList
+        Log.d(TAG, "Added $uzhQuestList to Map")
         return result
     }
 

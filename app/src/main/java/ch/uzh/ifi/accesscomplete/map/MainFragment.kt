@@ -180,7 +180,6 @@ class MainFragment : Fragment(R.layout.fragment_main),
         super.onAttach(context)
 
         locationManager = FineLocationManager(context.getSystemService()!!, this::onLocationChanged)
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -205,21 +204,24 @@ class MainFragment : Fragment(R.layout.fragment_main),
         //Temporary
         //Daniels Stuff
 
-        val newMarkerViewModel: MapMarkerViewModel by viewModels {
-            MapMarkerViewModelFactory(MarkerServiceLocator.getRepo(activity?.applicationContext ?: requireContext()))
+        val newMarkerViewModel: MapMarkerViewModel by activityViewModels {
+            MapMarkerViewModelFactory(MarkerServiceLocator.getRepo(requireActivity()))
         }
         markerViewModel = newMarkerViewModel
-    /*
+        Log.d(TAG, "Has $markerViewModel")
+
         markerViewModel.loginResult.observe(viewLifecycleOwner, {
             state ->
                 when(state){
                     LoginState.NOTINITIATED -> {
                         markerViewModel.loginRequest = LoginRequest(prefs.getString("uzhEmail", "")!!, prefs.getString("uzhPassword", "")!!)
                         Log.d(TAG, "Set Login Credentials from prefs since Login has not been initiated yet")
+                        markerViewModel.doTheFuckingLogin()
                     }
                     LoginState.NOEMAIL, LoginState.NOPASSWORD -> {
                         markerViewModel.loginRequest = LoginRequest("asdf@asdf.com","asdfasdf")
                         Log.d(TAG, "DEBUG set LoginRequest")
+                        markerViewModel.doTheFuckingLogin()
                         //TODO: Open Login/Registration
                     }
                     LoginState.FAILED -> {
@@ -236,7 +238,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
                 // react to either logged in or not
         })
 
-     */
+
 
     }
 

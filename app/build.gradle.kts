@@ -71,8 +71,8 @@ android {
             signingConfig = signingConfigs.getByName("release")
         }
         getByName("debug") {
-            isMinifyEnabled = false
-            isShrinkResources = false
+            isMinifyEnabled = true
+            isShrinkResources = true
             proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
             applicationIdSuffix = ".debug"
         }
@@ -133,7 +133,6 @@ dependencies {
     androidTestImplementation("org.assertj:assertj-core:2.8.0")
     androidTestImplementation("androidx.test:core:1.3.0")
 
-
     // dependency injection
     implementation("com.google.dagger:dagger:$daggerVersion")
     kapt("com.google.dagger:dagger-compiler:$daggerVersion")
@@ -183,7 +182,7 @@ dependencies {
     // ARCore
     implementation("com.google.ar.sceneform.ux:sceneform-ux:1.17.1")
     implementation("com.google.ar.sceneform:core:1.17.1")
-    implementation("com.google.ar:core:1.24.0")
+    implementation("com.google.ar:core:1.21.0")
 
     // box2d view
     implementation("org.jbox2d:jbox2d-library:2.2.1.1")
@@ -213,7 +212,7 @@ dependencies {
     implementation("androidx.room:room-ktx:$roomVersion") // optional - Kotlin Extensions and Coroutines support for Room
     testImplementation("androidx.room:room-testing:$roomVersion") // optional - Test helpers
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
-    implementation("com.squareup.okhttp3:logging-interceptor:3.5.0")
+    //implementation("com.squareup.okhttp3:logging-interceptor:3.5.0") //Only needed if you want to check what Retrofit is receiving
 
 }
 

@@ -19,25 +19,25 @@ data class UzhQuest(
     val location: Location?,
 
     @Json(name = "verifier_count")
-    val verifierCount: Int?,
+    var verifierCount: Int?,
 
-    val isActive: Boolean?,
+    var isActive: Boolean?,
     val mid: String,
     val title: String?,
     val subtitle: String?,
 
     @Json(name = "image_url")
-    val imageURL: List<String>?,
+    var imageURL: List<String>?,
 
-    val tags: List<Tag>? = emptyList(),
+    var tags: List<Tag>? = emptyList(),
     val description: String?,
-    val updatedby: String?,
-    val verifiers: List<Verifier>? = emptyList(),
-    val history: List<History>? = emptyList(),
+    var updatedby: String?,
+    var verifiers: List<Verifier>? = emptyList(),
+    var history: List<History>? = emptyList(),
     val createdon: String?,
-    val updatedon: String?,
-    val changeset: String?,
-    val version: String?,
+    var updatedon: String?,
+    var changeset: String?,
+    var version: String?,
     @Json(name = "nodeid")
     val nodeID: String?,
     @Json(name = "marker_location")

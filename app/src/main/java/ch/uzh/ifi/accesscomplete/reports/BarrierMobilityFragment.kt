@@ -166,8 +166,8 @@ class BarrierMobilityFragment : AbstractBottomSheetFragment() {
 
     private fun onClickOk(){
         val selectedBarrier = spinner.selectedItem.toString()
-        val toast = Toast.makeText(context, "Location is ${location?.latitude},${location?.longitude}", Toast.LENGTH_LONG)
-        toast.show()
+        //val toast = Toast.makeText(context, "Location is ${location?.latitude},${location?.longitude}", Toast.LENGTH_LONG)
+        //toast.show()
         val newMarker: MapMarker = MapMarker()
         var tagList = mutableListOf<NoIdTag>()
         // I need barrier type, barrier width & barrier height, and the wheelchair info

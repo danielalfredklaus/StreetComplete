@@ -112,10 +112,17 @@ class QuestPinLayerManager @Inject constructor(
         clear()
         onNewScreenPosition()
 
-        mapFragment.markerViewModel.allMapMarkers.observe(mapFragment.viewLifecycleOwner,){
-            clearDansStuff()
-            updateDansLayer()
-            Log.d(TAG, "Observed allMapMarkers")
+        mapFragment.markerViewModel.allMapMarkers.observe(mapFragment.viewLifecycleOwner,){ list ->
+            if(list.isEmpty()){
+                Log.d(TAG, "Observed Map Markers are emtpy, filling up")
+                mapFragment.markerViewModel.fillMarkerListFromServer()
+            } else {
+                Log.d(TAG, "Received Marker List of size ${list.size}")
+                clearDansStuff()
+                updateDansLayer()
+                updateLayer()
+                Log.d(TAG, "Observed allMapMarkers not empty end")
+            }
         }
 
         mapFragment.markerViewModel.loginResult.observe(mapFragment.viewLifecycleOwner,){ state->
@@ -245,7 +252,7 @@ class QuestPinLayerManager @Inject constructor(
 
     private fun getPoints(): List<Point> {
         val result = mutableListOf<Point>()
-
+        val tempResult = mutableListOf<Point>()
         synchronized(quests) {
             for ((group, questById) in quests) {
                 val elementIdCount = mutableMapOf<Long, Int?>()
@@ -288,11 +295,14 @@ class QuestPinLayerManager @Inject constructor(
                         val points = positions.map { position ->
                             Point(position.toLngLat(), properties)
                         }
-                        result.addAll(points)
+                        tempResult.addAll(points)
                     }
                 }
             }
         }
+        //val tempResult2 = getUzhPoints()
+        result.addAll(tempResult)
+        //result.addAll(tempResult2)
         return result
     }
 
@@ -326,7 +336,7 @@ class QuestPinLayerManager @Inject constructor(
                 MARKER_QUEST_GROUP to "UZH",
                 "MARKER_QUEST_ID" to quest.id.toString()
             )
-            properties[MARKER_ELEMENT_ID] = "0"
+            //properties[MARKER_ELEMENT_ID] = "0"
             val point = Point(position.toLngLat(), properties)
             result.add(point)
         }

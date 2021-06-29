@@ -68,6 +68,10 @@ class MarkerRepo (private val markerDAO: MarkerDAO, private val webserverAccess:
         return uzhQuestDAO.getAll()
     }
 
+    suspend fun updateMarkerOnServer(token: String, update: VerifyingQuestEntity): Response<UzhQuest>{
+        return webserverAccess.mastersAPI.updateMarkerAsync(token, update)
+    }
+
 
 
 

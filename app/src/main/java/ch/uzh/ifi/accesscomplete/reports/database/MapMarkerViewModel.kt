@@ -83,13 +83,15 @@ class MapMarkerViewModel(private val repo: MarkerRepo): ViewModel() {
     }
 
 
-    val allMapMarkers: MutableLiveData<MutableList<UzhQuest2>> = liveData{
+    val allMapMarkers: MutableLiveData<MutableList<UzhQuest2>> = MutableLiveData(mutableListOf())
+
+    fun fillMarkerListFromServer() = viewModelScope.launch{
     while(loginResult.value != LoginState.SUCCESS){
         delay(5000)
     }
         val response = repo.getAllQuestsFromServer(currentKey)
         if(response.isSuccessful){
-            val retrievedQuests: List<UzhQuest> = response.body() ?: return@liveData
+            val retrievedQuests: List<UzhQuest> = response.body() ?: return@launch
             for(q in retrievedQuests){
                 val q2 = conv.convertToQuest2(q)
                 if(repo.checkIfQuestExists(q.mid)) repo.updateQuests(q2)
@@ -97,17 +99,19 @@ class MapMarkerViewModel(private val repo: MarkerRepo): ViewModel() {
             }
         }
         val data : MutableList<UzhQuest2> = repo.getAllQuestsFromDB() as MutableList
-        emit(data)
+        allMapMarkers.postValue(data)
         Log.d(TAG, "Emitted Map Marker Data")
-    } as MutableLiveData
+    }
+
 
     fun insertMarker(marker: MapMarker) = viewModelScope.launch{
         repo.insertMarker(marker)
         val response = repo.postMarkerToServer(currentKey, marker)
         if(response.isSuccessful){
             val newQuest: UzhQuest = response.body() ?: return@launch
-            repo.insertQuest(conv.convertToQuest2(newQuest))
-            allMapMarkers.value!!.add(conv.convertToQuest2(newQuest))
+            val newQuest2: UzhQuest2 = conv.convertToQuest2(newQuest)
+            repo.insertQuest(newQuest2)
+            fillMarkerListFromServer()
             Log.d(TAG, "Upload and insert successful")
         } else {
             Log.e(TAG, "Post has failed with reason ${response.errorBody()?.string()}")

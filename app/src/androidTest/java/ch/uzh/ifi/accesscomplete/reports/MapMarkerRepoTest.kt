@@ -16,6 +16,7 @@ import org.junit.runner.RunWith
 import org.junit.runners.MethodSorters
 import retrofit2.Response
 import java.io.IOException
+import java.time.LocalDateTime
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 @RunWith(AndroidJUnit4::class)
@@ -85,15 +86,17 @@ class MapMarkerRepoTest {
             }
         }
     } */
-    /*
+
     @Test
     fun fetchAllMarkers(){
         runBlocking {
             try{
             val currentToken = sessionManager.fetchAuthToken()
-            val response = markerRepo.getAllMarkersFromServer(currentToken!!) //Make sure to run the login beforehand at least once
+            val response = markerRepo.getAllQuestsFromServer(currentToken!!) //Make sure to run the login beforehand at least once
             if(response.isSuccessful){
-                Log.d(TAG, "Downloaded ${response.body()!!.size} number of markers")
+                Log.d(TAG, "Test Download complete")
+                val list = response.body()!!
+                list.forEach { Log.d(TAG, it.toString()) }
             } else {
                 val failR = erc.ErrorBodyToServerResponse(response.errorBody())
                 fail("Test failed because " + failR!!.message)
@@ -104,7 +107,7 @@ class MapMarkerRepoTest {
                 Log.e(TAG, e.toString())
             }
         }
-    } */
+    }
 /*
     @Test
     fun postThenFetchMarker() {
@@ -143,6 +146,7 @@ class MapMarkerRepoTest {
         }
     }
 */
+    /*
     @Test
     fun bpostMarker(){
         runBlocking {
@@ -193,6 +197,35 @@ class MapMarkerRepoTest {
                 fail("Deletion failed")
             }
         }
+    }
+
+     */
+
+    @Test
+    fun eEditMarker(){
+        runBlocking {
+            val currentToken = sessionManager.fetchAuthToken()!!
+            val response = markerRepo.getQuestFromServer(currentToken, "H66OUSr7CTkum7K7kKBiB") //
+            if (response.isSuccessful) {
+                Log.d(TAG, "GET successful")
+                Log.d(TAG, "FetchMarker Body is: " + response.body().toString())
+                val fetchedQuest = response.body()!!
+                //fetchedQuest.verifierCount?.plus(1)
+                //fetchedQuest.updatedon = LocalDateTime.now().toString()
+                val response2 = markerRepo.updateMarkerOnServer(currentToken, VerifyingQuestEntity("notanaid",fetchedQuest.mid,"Tested the PUT function", ""))
+                if(response2.isSuccessful){
+                    Log.d(TAG, "Put success, Response was ${response2.body().toString()}")
+                } else {
+                    fail(response2.errorBody().toString())
+                }
+
+
+            } else {
+                //Log.d(TAG, response.errorBody()!!.string())
+                fail("GET has failed with message ${response.message()}")
+            }
+        }
+
     }
 
 

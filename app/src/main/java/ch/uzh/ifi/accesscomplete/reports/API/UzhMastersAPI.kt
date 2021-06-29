@@ -22,8 +22,8 @@ interface uzhMastersAPI {
     @POST("apg/msrv/marker")
     suspend fun addMarkerAsync(@Header("Authorization") token: String, @Body newMapMarker : MapMarker): Response<UzhQuest>
 
-    @PUT("apg/msrv/marker")
-    suspend fun updateMarkerAsync(@Header("Authorization") token: String, @Body newMapMarker: MapMarker) : Response<UzhQuest>
+    @PUT("apg/msrv/marker/quest")
+    suspend fun updateMarkerAsync(@Header("Authorization") token: String, @Body markerUpdate: VerifyingQuestEntity) : Response<UzhQuest>
 
     @GET("apg/msrv/marker/{id}")
     suspend fun getMarkerAsync(@Header("Authorization") token: String, @Path("id") markerID: String) : Response<UzhQuest>

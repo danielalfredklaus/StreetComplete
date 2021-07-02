@@ -45,6 +45,7 @@ import ch.uzh.ifi.accesscomplete.data.osm.osmquest.OsmElementQuestType
 import ch.uzh.ifi.accesscomplete.data.osmnotes.notequests.OsmNoteQuestType
 import ch.uzh.ifi.accesscomplete.data.quest.*
 import ch.uzh.ifi.accesscomplete.quests.AbstractQuestAnswerFragment
+import ch.uzh.ifi.accesscomplete.reports.UzhElementQuestType
 import ch.uzh.ifi.accesscomplete.view.ListAdapter
 import kotlinx.android.synthetic.main.fragment_show_quest_forms.*
 import kotlinx.android.synthetic.main.row_quest_display.view.*
@@ -68,8 +69,8 @@ class ShowQuestFormsActivity : AppCompatActivity(), AbstractQuestAnswerFragment.
         val questTypes = questTypeRegistry.all.toMutableList()
 
         // Filter out note quest (relies on notes in the DB and will crash here...)
-        showQuestFormAdapter.list = questTypes.filter { it !is OsmNoteQuestType }.toMutableList()
-    } //TODO: Either change filter to make sure it is neither notes or UZH or use this class to help
+        showQuestFormAdapter.list = questTypes.filter { it !is OsmNoteQuestType && it !is UzhElementQuestType }.toMutableList()
+    } //TODO: Either change filter to make sure it is neither notes or UZH use this class to help
         // me implement the uzh quests properly.
 
     override fun onCreate(savedInstanceState: Bundle?) {

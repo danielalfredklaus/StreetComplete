@@ -6,8 +6,10 @@ import ch.uzh.ifi.accesscomplete.reports.API.LoginRequest
 import ch.uzh.ifi.accesscomplete.reports.API.UzhQuest
 import ch.uzh.ifi.accesscomplete.reports.API.UzhQuest2
 import ch.uzh.ifi.accesscomplete.reports.API.UzhQuestConverter
+import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
 
 class MapMarkerViewModel(private val repo: MarkerRepo): ViewModel() {
 
@@ -118,6 +120,9 @@ class MapMarkerViewModel(private val repo: MarkerRepo): ViewModel() {
         }
     }
 
+    fun getQuestLocal(id: Long): UzhQuest2? {
+        return allMapMarkers.value?.find{ id == it.id }
+    }
 
 
     /*

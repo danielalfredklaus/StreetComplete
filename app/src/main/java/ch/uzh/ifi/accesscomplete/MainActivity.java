@@ -152,7 +152,6 @@ public class MainActivity extends AppCompatActivity implements
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
 		getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
 
-		//Flag the current window to keep the screen on
 		if (prefs.getBoolean(Prefs.KEEP_SCREEN_ON, false)) {
 			getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 		}

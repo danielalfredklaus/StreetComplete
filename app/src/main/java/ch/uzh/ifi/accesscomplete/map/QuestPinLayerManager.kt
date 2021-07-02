@@ -36,7 +36,6 @@ import ch.uzh.ifi.accesscomplete.data.osm.osmquest.OsmQuest
 import ch.uzh.ifi.accesscomplete.data.quest.*
 import ch.uzh.ifi.accesscomplete.data.visiblequests.OrderedVisibleQuestTypesProvider
 import ch.uzh.ifi.accesscomplete.ktx.getBitmapDrawable
-import ch.uzh.ifi.accesscomplete.ktx.toDp
 import ch.uzh.ifi.accesscomplete.ktx.values
 import ch.uzh.ifi.accesscomplete.map.tangram.Marker
 import ch.uzh.ifi.accesscomplete.map.tangram.toLngLat
@@ -120,7 +119,6 @@ class QuestPinLayerManager @Inject constructor(
                 Log.d(TAG, "Received Marker List of size ${list.size}")
                 clearDansStuff()
                 updateDansLayer()
-                updateLayer()
                 Log.d(TAG, "Observed allMapMarkers not empty end")
             }
         }
@@ -128,8 +126,7 @@ class QuestPinLayerManager @Inject constructor(
         mapFragment.markerViewModel.loginResult.observe(mapFragment.viewLifecycleOwner,){ state->
             when(state){
                 LoginState.SUCCESS-> {
-                    updateDansLayer()
-                    Log.d(TAG, "Updating Daniels Layer")
+                    Log.d(TAG, "Observed LoginState Success")
                 }
                 else -> {Log.d(TAG, "Observed $state")}//donothing
             }
@@ -220,10 +217,6 @@ class QuestPinLayerManager @Inject constructor(
     private fun clearDansStuff(){
         dansLayer?.clear()
         uzhQuestList = mutableListOf()
-        uzhMarkerList.forEach {
-            mapFragment.controller?.removeMarker(it)
-        }
-        uzhMarkerList = mutableListOf()
 
     }
 
@@ -234,7 +227,6 @@ class QuestPinLayerManager @Inject constructor(
     private fun updateLayer() {
         if (isVisible) {
             questsLayer?.setFeatures(getPoints())
-            dansLayer?.setFeatures(getUzhPoints())
         } else {
             questsLayer?.clear()
         }
@@ -300,9 +292,7 @@ class QuestPinLayerManager @Inject constructor(
                 }
             }
         }
-        //val tempResult2 = getUzhPoints()
         result.addAll(tempResult)
-        //result.addAll(tempResult2)
         return result
     }
 
@@ -311,8 +301,9 @@ class QuestPinLayerManager @Inject constructor(
         val result = mutableListOf<Point>()
         var counter = 7000
         newList.forEach{ quest ->
-            //First we need to add markers, dont know where the map markers are added initially
 
+            //First we need to add markers, dont know where the map markers are added initially
+            /*
             val marker = mapFragment.controller!!.addMarker()
             Log.d(TAG, "Added Marker ${marker.markerId}")
             marker.setPoint(quest.center)
@@ -322,9 +313,9 @@ class QuestPinLayerManager @Inject constructor(
             //val dotWidth = dot.intrinsicWidth.toFloat().toDp(mapFragment.requireContext())
             //val dotHeight = dot.intrinsicHeight.toFloat().toDp(mapFragment.requireContext())
             marker.setStylingFromString(
-                "{ style: 'quest-icons', color: 'white', size: [50px, 50px], collide: false, order: $counter }"
+                "{ style: 'points', color: 'white', size: [30px, 30px], collide: false, order: $counter }"
             )   // { style: 'points', color: 'white', size: [50px, 50px], order: 2000, collide: false } style: quest-selection
-            uzhMarkerList.add(marker)
+            uzhMarkerList.add(marker) */
 
             val questIconName = resources.getResourceEntryName(quest.type.icon)
             Log.d(TAG, "Icon Name of Quest is $questIconName")
@@ -334,10 +325,11 @@ class QuestPinLayerManager @Inject constructor(
                 "kind" to questIconName,
                 "importance" to getQuestImportance(quest).toString(),
                 MARKER_QUEST_GROUP to "UZH",
-                "MARKER_QUEST_ID" to quest.id.toString()
+                MARKER_QUEST_ID to quest.id.toString()
             )
             //properties[MARKER_ELEMENT_ID] = "0"
             val point = Point(position.toLngLat(), properties)
+            Log.d(TAG, "Adding Point $position with importance ${point.propertyArray?.get(5)} and id ${point.propertyArray?.get(9)}" )
             result.add(point)
         }
         uzhQuestList = newList

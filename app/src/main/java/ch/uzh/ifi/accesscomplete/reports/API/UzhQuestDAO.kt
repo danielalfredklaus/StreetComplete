@@ -13,7 +13,10 @@ interface UzhQuestDAO {
     suspend fun loadAllByIds(markerIDs: Array<String>): List<UzhQuest2>
 
     @Query("SELECT * FROM UzhQuest2 WHERE mid LIKE :mID")
-    suspend fun findByID(mID: String): UzhQuest2
+    suspend fun findByMID(mID: String): UzhQuest2
+
+    @Query("SELECT * FROM UzhQuest2 WHERE id LIKE :id")
+    suspend fun findByID(id: Long): UzhQuest2
 
     @Query("SELECT * FROM UzhQuest2 WHERE title LIKE :markerTitle")
     suspend fun findByTitle(markerTitle: String): List<UzhQuest2>

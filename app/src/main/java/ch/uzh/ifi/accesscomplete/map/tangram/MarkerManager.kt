@@ -23,6 +23,7 @@
 package ch.uzh.ifi.accesscomplete.map.tangram
 
 import android.graphics.drawable.BitmapDrawable
+import android.util.Log
 import com.mapzen.tangram.LngLat
 import com.mapzen.tangram.MapController
 import com.mapzen.tangram.geometry.Polygon
@@ -51,6 +52,9 @@ class MarkerManager(private val c: MapController) {
     init {
         c.setMarkerPickListener { tangramMarkerPickResult: com.mapzen.tangram.MarkerPickResult? ->
             val tangramMarkerId = tangramMarkerPickResult?.marker?.markerId
+            Log.d("MarkerManager", "MarkerPickResult is: " + tangramMarkerPickResult?.marker.toString())
+            //Log.d("MarkerManager", "Showing current Markers saved")
+            //markers.forEach{ Log.d("MarkerManager", it.value.markerId.toString() + it.value.isVisible) }
             var markerPickResult: MarkerPickResult? = null
             if (tangramMarkerId != null) {
                 val marker = markers.values.find { it.tangramMarker?.markerId == tangramMarkerId }

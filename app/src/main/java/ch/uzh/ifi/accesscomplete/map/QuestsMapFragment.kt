@@ -58,10 +58,6 @@ import ch.uzh.ifi.accesscomplete.map.QuestPinLayerManager.Companion.MARKER_QUEST
 import ch.uzh.ifi.accesscomplete.map.QuestPinLayerManager.Companion.MARKER_QUEST_ID
 import ch.uzh.ifi.accesscomplete.map.tangram.*
 import ch.uzh.ifi.accesscomplete.quests.AbstractQuestAnswerFragment
-import ch.uzh.ifi.accesscomplete.reports.API.MyLittleMapMarkers
-import ch.uzh.ifi.accesscomplete.reports.database.MapMarkerViewModel
-import ch.uzh.ifi.accesscomplete.reports.database.MapMarkerViewModelFactory
-import ch.uzh.ifi.accesscomplete.reports.database.MarkerServiceLocator
 import ch.uzh.ifi.accesscomplete.util.centerPointOfPolygon
 import ch.uzh.ifi.accesscomplete.util.distanceTo
 import ch.uzh.ifi.accesscomplete.util.initialBearingTo
@@ -96,6 +92,7 @@ class QuestsMapFragment : LocationAwareMapFragment() {
 
     //Daniels stuff
     //lateinit var mlmm: MyLittleMapMarkers
+    private var dansLayer: MapData? = null
 
     interface Listener {
         fun onClickedQuest(questGroup: QuestGroup, questId: Long)
@@ -126,7 +123,8 @@ class QuestsMapFragment : LocationAwareMapFragment() {
         //Daniels addition
         //mlmm = MyLittleMapMarkers(this, controller!!)
         //this.lifecycle.addObserver(mlmm)
-        questPinLayerManager.dansLayer = controller?.addDataLayer(UZH_LAYER)
+        dansLayer = controller?.addDataLayer(UZH_LAYER)
+        questPinLayerManager.dansLayer = dansLayer
         super.onMapReady()
     }
 
@@ -141,6 +139,7 @@ class QuestsMapFragment : LocationAwareMapFragment() {
         additionalQuestHighlightingLayer = null
         questsLayer = null
         selectedQuestPinsLayer = null
+        dansLayer = null
         questSelectionMarkers.clear()
     }
 
@@ -155,19 +154,19 @@ class QuestsMapFragment : LocationAwareMapFragment() {
     override fun onSingleTapConfirmed(x: Float, y: Float): Boolean {
             launch {
                 val pickResult = controller?.pickLabel(x, y)
-                Log.d(TAG, "Pick Label Result ${pickResult?.properties}" )
-                Log.d(TAG, "Pick Feature is ${controller?.pickFeature(x,y).toString()}")
+                Log.d(TAG, "Pick Label Result $pickResult" )
                 val pickedQuestId = pickResult?.properties?.get(MARKER_QUEST_ID)?.toLong()
                 val pickedElementId = pickResult?.properties?.get(MARKER_ELEMENT_ID)?.toLong()
                 val pickedQuestGroup = pickResult?.properties?.get(MARKER_QUEST_GROUP)?.let { QuestGroup.valueOf(it) }
-
                 if (pickedQuestId != null && pickedQuestGroup != null) { //TODO: Make sure the listener is able to handle UZH Quests
                     listener?.onClickedQuest(pickedQuestGroup, pickedQuestId)
+                    Log.d(TAG, "Called Listener with $pickedQuestGroup and $pickedQuestId")
                 } else if (pickedElementId != null && pickedQuestGroup != null) {
                     openMultiQuestSelectionDialog(pickedElementId, pickedQuestGroup)
+                } else if(pickedQuestId!= null && pickedQuestGroup == QuestGroup.UZH ) {
+                    Log.d(TAG, "Reached this part of code")
                 } else {
                     val pickMarkerResult = controller?.pickMarker(x,y)
-                    Log.d(TAG, "Pick Marker Result ${pickMarkerResult?.marker?.markerId}")
                     if (pickMarkerResult == null) {
                         onClickedMap(x, y)
                     }

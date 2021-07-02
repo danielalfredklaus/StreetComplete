@@ -106,7 +106,6 @@ import kotlin.math.cos
 import kotlin.math.sin
 import kotlin.math.sqrt
 
-
 /** Contains the quests map and the controls for it. */
 class MainFragment : Fragment(R.layout.fragment_main),
     MapFragment.Listener, LocationAwareMapFragment.Listener, QuestsMapFragment.Listener,
@@ -199,8 +198,6 @@ class MainFragment : Fragment(R.layout.fragment_main),
         report_button.setOnClickListener{onClickReportButton()}
         //------------end Daniels addition
 
-        updateMapQuestOffsets()
-
         //Temporary
         //Daniels Stuff
 
@@ -239,7 +236,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
         })
 
 
-
+        updateMapQuestOffsets()
     }
 
     private fun setupFittingToSystemWindowInsets() {
@@ -460,7 +457,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
                 quest?.let { showQuestSolvedAnimation(it) }
             }
         }
-    } //TODO: Probably can ignore this
+    }
 
     override fun onAddSplit(point: LatLon) {
         mapFragment?.putMarkerForCurrentQuest(point)
@@ -491,13 +488,10 @@ class MainFragment : Fragment(R.layout.fragment_main),
         val mapView = mapFragment.view ?: return
 
         val mapPosition = mapView.getLocationInWindow().toPointF()
-        Log.i(TAG, "mapPosition values: ${mapPosition.x},${mapPosition.y}" )
         val notePosition = PointF(screenPosition)
-        Log.i(TAG, "notePosition values: ${notePosition.x},${notePosition.y}" )
         notePosition.offset(-mapPosition.x, -mapPosition.y)
-        Log.i(TAG, "notePosition values after offset: ${notePosition.x},${notePosition.y}" )
         val position = mapFragment.getPositionAt(notePosition) ?: throw NullPointerException()
-        Log.i(TAG, "calculated position values: ${position.latitude},${position.longitude}" )
+
         questController.createNote(note, imagePaths, position)
 
         listener?.onCreatedNote(screenPosition)
@@ -540,7 +534,6 @@ class MainFragment : Fragment(R.layout.fragment_main),
         }
     }
 
-    // Basic Kotlin Syntax: A !! will throw a nullpointerexception if the thingie actually dares to be null
     @SuppressLint("MissingPermission")
     private fun onLocationIsEnabled() {
         gpsTrackingButton.visibility = View.VISIBLE
@@ -967,9 +960,15 @@ class MainFragment : Fragment(R.layout.fragment_main),
     }
 
     private fun showQuestDetails(questId: Long, group: QuestGroup) {
-        val quest = questController.get(questId, group)
-        if (quest != null) {
+        if(group == QuestGroup.UZH){
+            val quest = markerViewModel.getQuestLocal(questId) ?: return
+            Log.d(TAG, "Got Quest ${quest.title}")
             showQuestDetails(quest, group)
+        } else {
+            val quest = questController.get(questId, group)
+            if (quest != null) {
+                showQuestDetails(quest, group)
+            }
         }
     }
 

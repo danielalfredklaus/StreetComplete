@@ -22,7 +22,6 @@
 
 package ch.uzh.ifi.accesscomplete.data.quest
 
-import android.annotation.SuppressLint
 import android.content.SharedPreferences
 import android.util.Log
 import de.westnordost.osmapi.map.data.Element
@@ -172,7 +171,6 @@ import javax.inject.Singleton
         }
     }
 
-    @SuppressLint
     private fun solveUZHQuest(questId: Long, answer: Any, source: String): Boolean {
         //TODO: Finish this implementation
         return false

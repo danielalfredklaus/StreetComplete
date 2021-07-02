@@ -59,7 +59,6 @@ import ch.uzh.ifi.accesscomplete.ktx.awaitLayout
 import ch.uzh.ifi.accesscomplete.ktx.containsAll
 import ch.uzh.ifi.accesscomplete.ktx.tryStartActivity
 import ch.uzh.ifi.accesscomplete.map.tangram.*
-import ch.uzh.ifi.accesscomplete.reports.database.LoginState
 import ch.uzh.ifi.accesscomplete.reports.database.MapMarkerViewModel
 import ch.uzh.ifi.accesscomplete.reports.database.MapMarkerViewModelFactory
 import ch.uzh.ifi.accesscomplete.reports.database.MarkerServiceLocator
@@ -95,9 +94,9 @@ open class MapFragment : Fragment(),
 
     private var isMapInitialized: Boolean = false
 
-    @Inject internal lateinit var vectorTileProvider: VectorTileProvider
-
     lateinit var markerViewModel: MapMarkerViewModel
+
+    @Inject internal lateinit var vectorTileProvider: VectorTileProvider
 
     interface Listener {
         /** Called when the map has been completely initialized */
@@ -141,7 +140,6 @@ open class MapFragment : Fragment(),
         setupFittingToSystemWindowInsets()
 
         launch { initMap() }
-
     }
 
     private fun showOpenUrlDialog(url: String) {

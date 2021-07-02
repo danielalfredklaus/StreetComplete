@@ -42,7 +42,7 @@ import ch.uzh.ifi.accesscomplete.util.pointOnPolylineFromStart
 data class OsmQuest(
     override var id: Long?,
     override val osmElementQuestType: OsmElementQuestType<*>, // underlying OSM data
-    override val elementType: Element.Type, //Probably Node, Way, or Relation
+    override val elementType: Element.Type,
     override val elementId: Long,
     override var status: QuestStatus,
     override var changes: StringMapChanges?,

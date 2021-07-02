@@ -44,8 +44,12 @@ class MarkerRepo (private val markerDAO: MarkerDAO, private val webserverAccess:
         uzhQuestDAO.insertAllOrReplace(*q)
     }
 
-    suspend fun findQuestByID(id: String): UzhQuest2{
+    suspend fun findQuestByID(id: Long): UzhQuest2{
         return uzhQuestDAO.findByID(id)
+    }
+
+    suspend fun findQuestByMID(mid: String): UzhQuest2{
+        return uzhQuestDAO.findByMID(mid)
     }
 
     suspend fun removeQuest(q: UzhQuest2){

@@ -104,6 +104,11 @@ repositories {
     jcenter() {
         content {
             includeModule("org.sufficientlysecure", "html-textview") //this thing is no longer updated and stuck on jcenter.
+            includeModule("com.mapzen.tangram", "tangram")
+            /*
+            A newer version of Tangram is available on Maven, but that means possibly getting a new API Key and redoing any offsets on quest markers, pins
+            and highlightings. Especially the offsets broke when I last tried to update.
+             */
         }
     }
 }
@@ -127,11 +132,11 @@ dependencies {
     testImplementation("org.mockito:mockito-inline:$mockitoVersion")
     testImplementation("org.assertj:assertj-core:2.8.0")
 
-    androidTestImplementation("androidx.test:runner:1.3.0")
-    androidTestImplementation("androidx.test:rules:1.3.0")
+    androidTestImplementation("androidx.test:core:1.4.0")
+    androidTestImplementation("androidx.test:runner:1.4.0")
+    androidTestImplementation("androidx.test:rules:1.4.0")
     androidTestImplementation("org.mockito:mockito-android:$mockitoVersion")
     androidTestImplementation("org.assertj:assertj-core:2.8.0")
-    androidTestImplementation("androidx.test:core:1.3.0")
 
     // dependency injection
     implementation("com.google.dagger:dagger:$daggerVersion")
@@ -192,7 +197,7 @@ dependencies {
     implementation("org.objenesis:objenesis:2.6")
 
     // map and location
-    implementation("com.mapzen.tangram:tangram:0.16.1")
+    implementation("com.mapzen.tangram:tangram:0.13.0")
 
     // config files
     implementation("com.esotericsoftware.yamlbeans:yamlbeans:1.15")

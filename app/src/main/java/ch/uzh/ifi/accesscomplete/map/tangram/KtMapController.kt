@@ -87,6 +87,7 @@ class KtMapController(private val c: MapController, contentResolver: ContentReso
             }
         }
 
+
         c.setLabelPickListener { labelPickResult: LabelPickResult? ->
             pickLabelContinuations.poll()?.resume(labelPickResult)
         }

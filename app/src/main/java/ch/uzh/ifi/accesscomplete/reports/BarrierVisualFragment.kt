@@ -107,5 +107,6 @@ class BarrierVisualFragment: AbstractBottomSheetFragment()  {
     private fun onClickOk(){
         val toast = Toast.makeText(context, "Location is ${location?.latitude},${location?.longitude}", Toast.LENGTH_LONG)
         toast.show()
+        //TODO: listener?.onReportFinished(newMarker)
     }
 }

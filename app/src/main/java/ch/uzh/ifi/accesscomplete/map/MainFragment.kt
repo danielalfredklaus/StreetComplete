@@ -43,10 +43,7 @@ import android.view.ViewGroup
 import android.view.animation.AccelerateInterpolator
 import android.view.animation.OvershootInterpolator
 import android.view.inputmethod.InputMethodManager
-import android.widget.ImageView
-import android.widget.LinearLayout
-import android.widget.TableRow
-import android.widget.Toast
+import android.widget.*
 import androidx.annotation.AnyThread
 import androidx.annotation.DrawableRes
 import androidx.annotation.UiThread
@@ -61,6 +58,8 @@ import androidx.core.view.updateLayoutParams
 import androidx.fragment.app.*
 import androidx.fragment.app.FragmentManager.POP_BACK_STACK_INCLUSIVE
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import ch.uzh.ifi.accesscomplete.ApplicationConstants
 import ch.uzh.ifi.accesscomplete.Injector
 import ch.uzh.ifi.accesscomplete.Prefs
@@ -82,11 +81,10 @@ import ch.uzh.ifi.accesscomplete.location.LocationUtil
 import ch.uzh.ifi.accesscomplete.map.tangram.CameraPosition
 import ch.uzh.ifi.accesscomplete.quests.*
 import ch.uzh.ifi.accesscomplete.quests.AbstractQuestAnswerFragment.Listener.SidewalkSide
+import ch.uzh.ifi.accesscomplete.reports.*
 import ch.uzh.ifi.accesscomplete.reports.API.LoginRequest
-import ch.uzh.ifi.accesscomplete.reports.BarrierMobilityFragment
-import ch.uzh.ifi.accesscomplete.reports.BarrierVisualFragment
-import ch.uzh.ifi.accesscomplete.reports.ConstructionFragment
-import ch.uzh.ifi.accesscomplete.reports.ManualPositionFragment
+import ch.uzh.ifi.accesscomplete.reports.API.UzhQuest
+import ch.uzh.ifi.accesscomplete.reports.API.UzhQuest2
 import ch.uzh.ifi.accesscomplete.reports.database.*
 import ch.uzh.ifi.accesscomplete.user.UserActivity
 import ch.uzh.ifi.accesscomplete.util.*
@@ -145,7 +143,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
 
     private var mapOffsetWithOpenBottomSheet: RectF = RectF(0f, 0f, 0f, 0f)
 
-    private lateinit var markerViewModel: MapMarkerViewModel
+    lateinit var markerViewModel: MapMarkerViewModel
 
     interface Listener {
         fun onQuestSolved(quest: Quest?, source: String?)
@@ -590,31 +588,64 @@ class MainFragment : Fragment(R.layout.fragment_main),
         dialog.show(childFragmentManager, "ChooseReportDialogFragment")
 
 
-        var barrier: LinearLayout = inflatedView.findViewById(R.id.layout_barrier)
-        var construction: LinearLayout = inflatedView.findViewById(R.id.layout_construction)
-        var barrierVisual: LinearLayout = inflatedView.findViewById(R.id.layout_other_issue)
+        val barrier: LinearLayout = inflatedView.findViewById(R.id.layout_barrier)
+        val construction: LinearLayout = inflatedView.findViewById(R.id.layout_construction)
+        val barrierVisual: LinearLayout = inflatedView.findViewById(R.id.layout_other_issue)
         barrier.setOnClickListener{
             //context?.let { BarrierDialog(it).show() }
-            setPositionDialog("BarrierMobilityFragment")
+            OpenPositionDialog("BarrierMobilityFragment")
             dialog.dismiss()
         }
         construction.setOnClickListener {
-            setPositionDialog("ConstructionFragment")
+            OpenPositionDialog("ConstructionFragment")
             dialog.dismiss()
 
         }
         barrierVisual.setOnClickListener{
             //showInBottomSheet(BarrierVisualFragment())
-            setPositionDialog("BarrierVisualFragment")
+            OpenPositionDialog("BarrierVisualFragment")
             dialog.dismiss()
 
         }
 
+        //temporary solution
+        val verifyButton: LinearLayout = inflatedView.findViewById(R.id.layout_temp_solution_verify)
+
+
+        verifyButton.setOnClickListener {
+
+            val arrayAdapter = ArrayAdapter<String>(requireContext(), R.layout.just_a_textview)
+            val currentQuests = markerViewModel.allMapMarkers.value ?: listOf()
+            currentQuests.forEach{
+                arrayAdapter.add(it.mid + " " + it.subtitle)
+            }
+            var selectedItem: UzhQuest2
+            class RecyclerDialog : DialogFragment() {
+                override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
+                    val builder = AlertDialog.Builder(requireContext())
+                    builder.setAdapter(arrayAdapter) { dialogInt, selected ->
+                        selectedItem = currentQuests[selected]
+                        dialogInt.dismiss()
+                        dialog.dismiss()
+                        Log.d(TAG, "Selected Quest ${selectedItem.mid}")
+                        val passingBundle = Bundle()
+                        passingBundle.putString("questMID", selectedItem.mid)
+                        openInBottomSheet("Verification", passingBundle)
+                    }
+                    return builder.create()
+                }
+            }
+
+            val recyclerDialog = RecyclerDialog()
+            recyclerDialog.show(childFragmentManager, "ChooseReportDialogFragment")
+
+        }
     }
+
 
     private val TAG = "MainFragment"
 
-    fun setPositionDialog(nextFragment: String){
+    fun OpenPositionDialog(nextFragment: String){
         val inflater = requireActivity().layoutInflater
         val inflatedView = inflater.inflate(R.layout.dialog_set_position, null)
 
@@ -689,6 +720,12 @@ class MainFragment : Fragment(R.layout.fragment_main),
             }
             "BarrierMobilityFragment"->{
                 f = BarrierMobilityFragment()
+            }
+            "Verification"->{
+                f= VerifyReportAnswerFragment2()
+                val str = toPassBundle.getString("questMID")
+                val q: UzhQuest2 = markerViewModel.allMapMarkers.value?.find { it.mid == str } ?: return
+                mapFragment?.zoomAndMoveToContain(q.geometry, mapOffsetWithOpenBottomSheet)
             }
         }
         f.arguments = toPassBundle

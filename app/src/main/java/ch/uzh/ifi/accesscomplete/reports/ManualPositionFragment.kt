@@ -1,7 +1,6 @@
 package ch.uzh.ifi.accesscomplete.reports
 
 import android.content.res.Configuration
-import android.graphics.Point
 import android.location.Location
 import android.os.Bundle
 import android.util.Log
@@ -10,13 +9,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.LinearLayout
-import android.widget.Toast
 import ch.uzh.ifi.accesscomplete.R
 import ch.uzh.ifi.accesscomplete.ktx.getLocationInWindow
 import ch.uzh.ifi.accesscomplete.map.MainFragment
 import ch.uzh.ifi.accesscomplete.quests.AbstractBottomSheetFragment
 import com.google.android.material.bottomsheet.BottomSheetBehavior
-import kotlinx.android.synthetic.main.fragment_quest_answer.*
 import kotlinx.android.synthetic.main.marker_create_note.*
 import kotlinx.android.synthetic.main.quest_buttonpanel_done_cancel.*
 
@@ -66,7 +63,7 @@ class ManualPositionFragment: AbstractBottomSheetFragment()  {
             activity?.onBackPressed()
             Log.i("ManualPositionFragment", arguments?.getString("nextFragment")!!)
             val mf = this.parentFragment as MainFragment //This is one way to recall the previous dialog
-            mf.setPositionDialog(arguments?.getString("nextFragment")!!)
+            mf.OpenPositionDialog(arguments?.getString("nextFragment")!!)
         }
         doneButton.setOnClickListener { onClickOk() }
 

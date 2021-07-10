@@ -91,7 +91,7 @@ class MapMarkerViewModel(private val repo: MarkerRepo): ViewModel() {
     while(loginResult.value != LoginState.SUCCESS){
         delay(5000)
     }
-        val response = repo.getAllQuestsFromServer(currentKey)
+        val response = repo.getAllOpenQuestsFromServer(currentKey)
         if(response.isSuccessful){
             val retrievedQuests: List<UzhQuest> = response.body() ?: return@launch
             for(q in retrievedQuests){

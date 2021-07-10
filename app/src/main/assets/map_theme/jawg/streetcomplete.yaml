@@ -167,11 +167,11 @@ layers:
                     collide: false
                     order: 1000
     uzh_quests:
-      data: { source: uzh_quests }
-      filter: { $zoom: { min: 14 } }
-      draw:
-        uzh-construction:
-          interactive: true
-          priority: function() { return 1.0 - feature.importance / 100000.0 }
-          order: function() { return 100000 + feature.importance }
-          size: 44px
+        data: { source: uzh_quests }
+        filter: { $zoom: { min: 14 } }
+        draw:
+            uzh-construction:
+              interactive: true
+              priority: function() { return 1.0 - feature.importance / 100000.0 }
+              order: function() { return 100000 + feature.importance }
+              size: 44px

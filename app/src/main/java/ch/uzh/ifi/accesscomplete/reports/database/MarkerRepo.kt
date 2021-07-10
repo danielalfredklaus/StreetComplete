@@ -32,6 +32,10 @@ class MarkerRepo (private val markerDAO: MarkerDAO, private val webserverAccess:
         return webserverAccess.mastersAPI.getMarkersAsync(token)
     }
 
+    suspend fun getAllOpenQuestsFromServer(token: String): Response<List<UzhQuest>>{
+        return webserverAccess.mastersAPI.getOpenMarkersAsync(token)
+    }
+
     suspend fun getQuestFromServer(token: String, mID: String): Response<UzhQuest>{
         return webserverAccess.mastersAPI.getMarkerAsync(token, mID)
     }

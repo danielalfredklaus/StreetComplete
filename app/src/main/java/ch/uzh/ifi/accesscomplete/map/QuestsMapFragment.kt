@@ -249,7 +249,7 @@ class QuestsMapFragment : LocationAwareMapFragment() {
         centerCurrentPositionIfFollowing()
     }
 
-    private fun zoomAndMoveToContain(g: ElementGeometry, offset: RectF) {
+    fun zoomAndMoveToContain(g: ElementGeometry, offset: RectF) {
         val controller = controller ?: return
         val pos = controller.getEnclosingCameraPosition(g.getBounds(), offset) ?: return
         val currentPos = controller.cameraPosition

@@ -72,6 +72,7 @@ class MapMarkerViewModel(private val repo: MarkerRepo): ViewModel() {
                     loginResult.postValue(LoginState.SUCCESS)
                     Log.d(TAG, "Successful login, key is: $currentKey")
                     triggerLogin.value = false
+                    fillMarkerListFromServer()
                 } else {
                     loginResult.postValue(LoginState.FAILED)
                     Log.e(TAG, "Login failed with reason: ${response.errorBody()?.string()}")
@@ -87,22 +88,32 @@ class MapMarkerViewModel(private val repo: MarkerRepo): ViewModel() {
 
     val allMapMarkers: MutableLiveData<MutableList<UzhQuest2>> = MutableLiveData(mutableListOf())
 
+
     fun fillMarkerListFromServer() = viewModelScope.launch{
-    while(loginResult.value != LoginState.SUCCESS){
-        delay(5000)
-    }
-        val response = repo.getAllOpenQuestsFromServer(currentKey)
-        if(response.isSuccessful){
-            val retrievedQuests: List<UzhQuest> = response.body() ?: return@launch
-            for(q in retrievedQuests){
-                val q2 = conv.convertToQuest2(q)
-                if(repo.checkIfQuestExists(q.mid)) repo.updateQuests(q2)
-                else repo.insertQuest(q2)
-            }
+
+        Log.d(TAG, "Starting to fetch Quests from the Server")
+        while (loginResult.value != LoginState.SUCCESS) {
+            delay(5000)
         }
-        val data : MutableList<UzhQuest2> = repo.getAllQuestsFromDB() as MutableList
-        allMapMarkers.postValue(data)
-        Log.d(TAG, "Emitted Map Marker Data")
+        while (loginResult.value == LoginState.SUCCESS) {
+            val response = repo.getAllOpenQuestsFromServer(currentKey)
+            if (response.isSuccessful) {
+                Log.d(TAG, "Successful response during quest fetching")
+                val retrievedQuests: List<UzhQuest> = response.body() ?: return@launch
+                for (q in retrievedQuests) {
+                    val q2 = conv.convertToQuest2(q)
+                    if (repo.checkIfQuestExists(q.mid)) repo.updateQuests(q2)
+                    else repo.insertQuest(q2)
+                }
+            } else {
+                Log.d(TAG, "Fetching Quests Failed, Reason: " + response.errorBody()?.string())
+                if(response.message().contains("401")) loginResult.postValue(LoginState.FAILED)
+            }
+            val data: MutableList<UzhQuest2> = repo.getAllQuestsFromDB() as MutableList
+            allMapMarkers.postValue(data)
+            Log.d(TAG, "Finished fetching Quests from Server")
+            delay(120000)
+        }
     }
 
 

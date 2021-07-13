@@ -329,11 +329,11 @@ class QuestPinLayerManager @Inject constructor(
             )
             //properties[MARKER_ELEMENT_ID] = "0"
             val point = Point(position.toLngLat(), properties)
-            Log.d(TAG, "Adding Point $position with importance ${point.propertyArray?.get(5)} and id ${point.propertyArray?.get(9)}" )
+            //Log.d(TAG, "Adding Point $position with importance ${point.propertyArray?.get(5)} and id ${point.propertyArray?.get(9)}" )
             result.add(point)
         }
         uzhQuestList = newList
-        Log.d(TAG, "Added $uzhQuestList to Map")
+        //Log.d(TAG, "Added $uzhQuestList to Map")
         return result
     }
 

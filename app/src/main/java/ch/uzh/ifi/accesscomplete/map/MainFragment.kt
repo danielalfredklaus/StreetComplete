@@ -110,7 +110,7 @@ class MainFragment : Fragment(R.layout.fragment_main),
     AbstractQuestAnswerFragment.Listener,
     SplitWayFragment.Listener, LeaveNoteInsteadFragment.Listener, CreateNoteFragment.Listener,
     VisibleQuestListener,
-    ManualPositionFragment.Listener, BarrierMobilityFragment.Listener, BarrierVisualFragment.Listener,ConstructionFragment.Listener,
+    ManualPositionFragment.Listener, BarrierMobilityFragment.Listener, BarrierVisualFragment.Listener,ConstructionFragment.Listener, VerifyReportAnswerFragment2.Listener,
     CoroutineScope by CoroutineScope(Dispatchers.Main) {
 
     @Inject
@@ -1000,7 +1000,9 @@ class MainFragment : Fragment(R.layout.fragment_main),
         if(group == QuestGroup.UZH){
             val quest = markerViewModel.getQuestLocal(questId) ?: return
             Log.d(TAG, "Got Quest ${quest.title}")
-            showQuestDetails(quest, group)
+            val bundle = Bundle()
+            bundle.putString("questMID", quest.mid)
+            openInBottomSheet("Verification", bundle)
         } else {
             val quest = questController.get(questId, group)
             if (quest != null) {

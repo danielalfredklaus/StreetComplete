@@ -12,41 +12,45 @@ import retrofit2.http.*
 interface uzhMastersAPI {
 
     //User Authorization
-    @POST("login")
-    suspend fun loginAsync(@Body loginRequest: LoginRequest): Response<ServerResponse>
+    @POST
+    suspend fun loginAsync(@Url fullUrl: String, @Body loginRequest: LoginRequest): Response<ServerResponse>
 
-    @POST("register")
-    suspend fun registerAsync(@Body newUser: User):  Response<ServerResponse>
+    @POST
+    suspend fun registerAsync(@Url fullUrl: String, @Body newUser: User):  Response<ServerResponse>
 
     //Marker and Quest Calls
-    @GET("apg/msrv/list")
+    @GET("msrv/list")
     suspend fun getMarkersAsync(@Header("Authorization") token: String): Response<List<UzhQuest>>
 
-    @POST("apg/msrv/marker")
+    @POST("msrv/marker")
     suspend fun addMarkerAsync(@Header("Authorization") token: String, @Body newMapMarker : MapMarker): Response<UzhQuest>
 
-    @PUT("apg/msrv/marker/quest")
+    @PUT("msrv/marker/quest")
     suspend fun updateMarkerAsync(@Header("Authorization") token: String, @Body markerUpdate: VerifyingQuestEntity) : Response<UzhQuest>
 
-    @GET("apg/msrv/marker/{id}")
+    @GET("msrv/marker/{id}")
     suspend fun getMarkerAsync(@Header("Authorization") token: String, @Path("id") markerID: String) : Response<UzhQuest>
 
-    @DELETE("apg/msrv/marker/{id}")
+    @DELETE("msrv/marker/{id}")
     suspend fun deleteMarkerAsync(@Header("Authorization") token: String, @Path("id") markerID: String) : Response<ServerResponse>
 
-    @GET("apg/msrv/open/markers")
+    @GET("msrv/open/markers")
     suspend fun getOpenMarkersAsync(@Header("Authorization") token: String): Response<List<UzhQuest>>
 
     //Image uploading and downloading
-    @GET("apg/msrv/imsrv")
+    @GET("imsrv")
     suspend fun getAllImagesAsync(@Header("Authorization") token: String): Response<List<ImageFile>>
 
-    @GET("apg/msrv/imsrv/res/{id}")
+    @GET("imsrv/res/{id}")
     suspend fun getImageAsync(@Header("Authorization") token: String, @Path("id") imageID: String): Response<ImageFile>
 
     @Multipart
-    @POST("apg/msrv/imsrv/s")
+    @POST("imsrv/s")
     suspend fun uploadSingleImage(@Header("Authorization") token: String, @Part part: MultipartBody.Part): Response<ImageFile>
+
+    @Multipart
+    @POST("imsrv/m")
+    suspend fun uploadArrayOfImages(@Header("Authorization") token: String, @Part part: MultipartBody.Part): Response<ImageFile>
 
 
 

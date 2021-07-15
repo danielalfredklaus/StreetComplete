@@ -15,12 +15,15 @@ import ch.uzh.ifi.accesscomplete.map.MainFragment
 import ch.uzh.ifi.accesscomplete.quests.AbstractBottomSheetFragment
 import ch.uzh.ifi.accesscomplete.quests.note_discussion.AttachPhotoFragment
 import ch.uzh.ifi.accesscomplete.reports.API.UzhQuest2
+import ch.uzh.ifi.accesscomplete.reports.API.VerifyingQuestEntity
 import ch.uzh.ifi.accesscomplete.reports.database.MapMarker
 import ch.uzh.ifi.accesscomplete.view.image_select.setImage
 import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.squareup.picasso.Picasso
 import de.westnordost.osmapi.map.data.LatLon
 import kotlinx.android.synthetic.main.fragment_quest_answer.*
 import kotlinx.android.synthetic.main.quest_buttonpanel_done_cancel.*
+import kotlinx.android.synthetic.main.quest_generic_list.*
 import java.util.*
 
 /**
@@ -37,7 +40,7 @@ class VerifyReportAnswerFragment2: AbstractBottomSheetFragment() {
     var counter = 0 //This one is for providing the View ID's
 
     interface Listener {
-        fun onReportFinished(newMarker: MapMarker)
+        fun onReportVerified(verification: VerifyingQuestEntity, imgList: List<String>)
     }
     private val listener: Listener? get() = parentFragment as? Listener
         ?: activity as? Listener
@@ -75,9 +78,13 @@ class VerifyReportAnswerFragment2: AbstractBottomSheetFragment() {
         //mutMap[counter++] = imgView.id
         if(!quest.imageURL?.filterNot { it.length < 5 }.isNullOrEmpty()){
             Log.d(TAG, "Image is visible")
+            Picasso.get()
+                .load(quest.imageURL!!.last())
+                .error(R.drawable.ic_quest_road_construction)
+                .into(imgView)
             imgView.visibility = View.VISIBLE
             //TODO Show picture
-            imgView.setImageResource(R.drawable.ic_achievement_surveyor)
+            //imgView.setImageResource(R.drawable.ic_achievement_surveyor)
         }
         //TODO Create Elements based on tags
         Log.d(TAG, quest.tags?.tags.toString())
@@ -132,7 +139,7 @@ class VerifyReportAnswerFragment2: AbstractBottomSheetFragment() {
         noteText.hint = " Comment about any values amiss, add your own or what you think is important to mention."
         val llp69 = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.WRAP_CONTENT)
         noteText.layoutParams = llp69
-        noteText.id = counter++
+        noteText.id = counter //Remember no increase in value here
         linearLayout.addView(noteText)
 
         val photoFragment = FrameLayout(ctx)
@@ -178,21 +185,23 @@ class VerifyReportAnswerFragment2: AbstractBottomSheetFragment() {
     fun onClickOk(){
         var cunt = 1
         var fullDescription = "" //Will be set for verification.description, containing user comments and their answers to the values
-        if (counter >= 2){
-            while(cunt < counter -2){
-                fullDescription += finalView.findViewById<TextView>(cunt++).text.toString() + ": "   //Now that I think of it, I couldve done the view finding with TAGS instead of a simple counter for id :3
-                fullDescription += finalView.findViewById<TextView>(cunt++).text.toString() + " marked "     //Probably wouldve been easier to understand than of working with a counter
-                val tempRG = finalView.findViewById<RadioGroup>(cunt)
+        if (counter >= 1){
+            while(cunt < counter -1){
+                fullDescription += finalView.findViewById<TextView>(cunt).text.toString() + ": "   //Now that I think of it, I couldve done the view finding with TAGS instead of a simple counter for id :3
+                fullDescription += finalView.findViewById<TextView>(cunt + 1).text.toString() + " marked "     //Probably wouldve been easier to understand than working with a counter
+                val tempRG = finalView.findViewById<RadioGroup>(cunt+2)
                 fullDescription += finalView.findViewById<RadioButton>(tempRG.checkedRadioButtonId).text.toString() + " - "
-                cunt += 3
+                cunt += 6
 
             }
 
 
         }
-        fullDescription += "User comment: " + finalView.findViewById<EditText>(counter - 1).text.toString()
+        fullDescription += "User comment: " + finalView.findViewById<EditText>(counter).text.toString()
         //attachPhotoFragment.imagePaths
         Log.d(TAG, "Description created: $fullDescription")
+        val verif = VerifyingQuestEntity("",quest.mid,fullDescription, "")
+        listener?.onReportVerified(verif, attachPhotoFragment.imagePaths)
 
 
     }

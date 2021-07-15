@@ -318,7 +318,7 @@ class QuestPinLayerManager @Inject constructor(
             uzhMarkerList.add(marker) */
 
             val questIconName = resources.getResourceEntryName(quest.type.icon)
-            Log.d(TAG, "Icon Name of Quest is $questIconName")
+            //Log.d(TAG, "Icon Name of Quest is $questIconName")
             val position = quest.markerLocations.first()
             val properties = mutableMapOf(
                 "type" to "point",

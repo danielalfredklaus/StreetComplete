@@ -2,26 +2,28 @@ package ch.uzh.ifi.accesscomplete.reports.database
 
 import android.util.Log
 import androidx.lifecycle.*
-import ch.uzh.ifi.accesscomplete.reports.API.LoginRequest
-import ch.uzh.ifi.accesscomplete.reports.API.UzhQuest
-import ch.uzh.ifi.accesscomplete.reports.API.UzhQuest2
-import ch.uzh.ifi.accesscomplete.reports.API.UzhQuestConverter
-import kotlinx.coroutines.async
+import ch.uzh.ifi.accesscomplete.reports.API.*
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
+import okhttp3.MediaType
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
+import java.io.File
+
 
 class MapMarkerViewModel(private val repo: MarkerRepo): ViewModel() {
 
     /*TODO: User registers during an activity, email and password are saved in sharedprefs (private mode is important here) and handed in as LoginRequest
     maybe
      */
+    val registerUrl = "https://uzhmp-api-gateway-77xdzfzvua-ew.a.run.app/api/v2/register"
+    val loginUrl = "https://uzhmp-api-gateway-77xdzfzvua-ew.a.run.app/api/v2/login"
     val conv = UzhQuestConverter()
     var loginRequest: LoginRequest = LoginRequest("", "")
     val TAG = "MapMarkerViewModel"
     private var currentKey = ""
     val triggerLogin: MutableLiveData<Boolean> =
-        MutableLiveData(true) //True while user is not logged in
+        MutableLiveData(true) //True while user is not logged in, but actually not using this anyomre for anything
 /*
     val isLoggedIn: LiveData<Boolean> = triggerLogin.switchMap { state ->
         liveData {
@@ -61,11 +63,8 @@ class MapMarkerViewModel(private val repo: MarkerRepo): ViewModel() {
             triggerLogin.value = true
             Log.d(TAG, "Password empty")
             loginResult.postValue(LoginState.NOPASSWORD)
-
-        } else if(loginResult.value == LoginState.FAILED){
-            Log.d(TAG, "Login has failed")
         } else if (loginResult.value != LoginState.SUCCESS) {
-                val response = repo.login(loginRequest)
+                val response = repo.login(loginUrl, loginRequest)
                 if (response.isSuccessful) {
                     currentKey = response.body()!!.token!!
                     Log.d(TAG, "Login Token saved with length of ${currentKey.length}")
@@ -87,7 +86,6 @@ class MapMarkerViewModel(private val repo: MarkerRepo): ViewModel() {
 
 
     val allMapMarkers: MutableLiveData<MutableList<UzhQuest2>> = MutableLiveData(mutableListOf())
-
 
     fun fillMarkerListFromServer() = viewModelScope.launch{
 
@@ -118,16 +116,22 @@ class MapMarkerViewModel(private val repo: MarkerRepo): ViewModel() {
 
 
     fun insertMarker(marker: MapMarker) = viewModelScope.launch{
+        if(imageList.value!!.isNotEmpty()){
+            marker.image_url = imageList.value!!.first().imageURL
+            imageList.value = mutableListOf()
+        }
         repo.insertMarker(marker)
         val response = repo.postMarkerToServer(currentKey, marker)
         if(response.isSuccessful){
             val newQuest: UzhQuest = response.body() ?: return@launch
             val newQuest2: UzhQuest2 = conv.convertToQuest2(newQuest)
             repo.insertQuest(newQuest2)
-            fillMarkerListFromServer()
+            val tempList = allMapMarkers.value
+            tempList?.add(newQuest2)
+            allMapMarkers.postValue(tempList)
             Log.d(TAG, "Upload and insert successful")
         } else {
-            Log.e(TAG, "Post has failed with reason ${response.errorBody()?.string()}")
+            runCatching { Log.e(TAG, "Post has failed with reason ${response.errorBody()?.string()}") }
         }
     }
 
@@ -135,18 +139,31 @@ class MapMarkerViewModel(private val repo: MarkerRepo): ViewModel() {
         return allMapMarkers.value?.find{ id == it.id }
     }
 
+    //Image Stuff
 
-    /*
-    val allWords: LiveData<List<Word>> = repository.allWords.asLiveData()
+    var imageList: MutableLiveData<MutableList<ImageFile>> = MutableLiveData(mutableListOf())
 
-    /**
-     * Launching a new coroutine to insert the data in a non-blocking way
-     */
-    fun insert(word: Word) = viewModelScope.launch {
-        repository.insert(word)
+    fun uploadImage(imgPath: String) = viewModelScope.launch {
+        val file: File = File(imgPath)
+        if(file.exists()){
+            val requestBody = RequestBody.create(MediaType.parse("image/*"), file)
+            val body = MultipartBody.Part.createFormData("image", file.name, requestBody)
+            val response = repo.uploadOneImageToServer(currentKey, body)
+            if(response.isSuccessful){
+                val imageFile: ImageFile = response.body()!!
+                Log.d(TAG, "Image ID: "+ imageFile.imageID)
+                val tempList = imageList.value
+                tempList?.add(imageFile)
+                imageList.postValue(tempList)
+            } else {
+                runCatching { Log.e(TAG, "Image upload failed, Reason: ${response.errorBody()?.string()}") }
+            }
+        }
     }
-     */
 
+    fun verifyMarker(verif: VerifyingQuestEntity) = viewModelScope.launch {
+
+    }
 
 }
 

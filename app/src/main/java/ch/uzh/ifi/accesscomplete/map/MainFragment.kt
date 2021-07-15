@@ -85,6 +85,7 @@ import ch.uzh.ifi.accesscomplete.reports.*
 import ch.uzh.ifi.accesscomplete.reports.API.LoginRequest
 import ch.uzh.ifi.accesscomplete.reports.API.UzhQuest
 import ch.uzh.ifi.accesscomplete.reports.API.UzhQuest2
+import ch.uzh.ifi.accesscomplete.reports.API.VerifyingQuestEntity
 import ch.uzh.ifi.accesscomplete.reports.database.*
 import ch.uzh.ifi.accesscomplete.user.UserActivity
 import ch.uzh.ifi.accesscomplete.util.*
@@ -741,6 +742,17 @@ class MainFragment : Fragment(R.layout.fragment_main),
         //TODO: Save Marker online, update DB with Response
         //TODO:
 
+    }
+
+    override fun onReportVerified(verification: VerifyingQuestEntity, imgList: List<String>) {
+        //TODO("Not yet implemented")
+        closeBottomSheet()
+        if(!imgList.isNullOrEmpty()){
+            if(imgList.filterNot { it.length < 5 }.isNotEmpty()){
+                Log.d(TAG, "Attempting to upload image")
+                markerViewModel.uploadImage(imgList.first())
+            }
+        }
     }
 //-------------------------------End daniels section
 

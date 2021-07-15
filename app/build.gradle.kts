@@ -217,6 +217,7 @@ dependencies {
     implementation("androidx.room:room-ktx:$roomVersion") // optional - Kotlin Extensions and Coroutines support for Room
     testImplementation("androidx.room:room-testing:$roomVersion") // optional - Test helpers
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
+    implementation ("com.squareup.picasso:picasso:2.71828") //downloads images from the net for me
     //implementation("com.squareup.okhttp3:logging-interceptor:3.5.0") //Only needed if you want to check what Retrofit is receiving
 
 }

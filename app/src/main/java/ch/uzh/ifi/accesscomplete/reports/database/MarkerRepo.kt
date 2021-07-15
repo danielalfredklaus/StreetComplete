@@ -1,6 +1,7 @@
 package ch.uzh.ifi.accesscomplete.reports.database
 
 import ch.uzh.ifi.accesscomplete.reports.API.*
+import okhttp3.MultipartBody
 import retrofit2.Response
 
 //Supposed to communicate with our local DB and the Webserver and be able to know which one to call when
@@ -8,12 +9,12 @@ import retrofit2.Response
 class MarkerRepo (private val markerDAO: MarkerDAO, private val webserverAccess: WebserverAccess, private val uzhQuestDAO: UzhQuestDAO) {
 
 
-    suspend fun registerUser(user: User): Response<ServerResponse> {
-        return webserverAccess.mastersAPI.registerAsync(user)
+    suspend fun registerUser(url: String, user: User): Response<ServerResponse> {
+        return webserverAccess.mastersAPI.registerAsync(url, user)
     }
 
-    suspend fun login(loginRequest: LoginRequest): Response<ServerResponse> {
-        return webserverAccess.mastersAPI.loginAsync(loginRequest)
+    suspend fun login(url: String, loginRequest: LoginRequest): Response<ServerResponse> {
+        return webserverAccess.mastersAPI.loginAsync(url, loginRequest)
     }
 
     suspend fun insertMarker(mapMarker: MapMarker){
@@ -78,6 +79,14 @@ class MarkerRepo (private val markerDAO: MarkerDAO, private val webserverAccess:
 
     suspend fun updateMarkerOnServer(token: String, update: VerifyingQuestEntity): Response<UzhQuest>{
         return webserverAccess.mastersAPI.updateMarkerAsync(token, update)
+    }
+
+    suspend fun getAllImageFilesFromServer(token: String): Response<List<ImageFile>>{
+        return webserverAccess.mastersAPI.getAllImagesAsync(token)
+    }
+
+    suspend fun uploadOneImageToServer(token: String, part: MultipartBody.Part): Response<ImageFile>{
+        return webserverAccess.mastersAPI.uploadSingleImage(token, part)
     }
 
 

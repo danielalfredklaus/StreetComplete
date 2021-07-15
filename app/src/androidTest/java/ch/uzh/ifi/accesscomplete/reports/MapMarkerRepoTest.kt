@@ -1,22 +1,28 @@
 package ch.uzh.ifi.accesscomplete.reports
 
 import android.content.Context
+import android.net.Uri
 import android.util.Log
+import androidx.core.net.toFile
 import androidx.room.Room
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.runner.AndroidJUnit4
+import ch.uzh.ifi.accesscomplete.R
 import ch.uzh.ifi.accesscomplete.reports.API.*
 import ch.uzh.ifi.accesscomplete.reports.database.*
-import kotlinx.coroutines.awaitAll
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.runBlocking
+import okhttp3.MediaType
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
 import org.junit.*
 import org.junit.Assert.*
 import org.junit.runner.RunWith
 import org.junit.runners.MethodSorters
 import retrofit2.Response
+import java.io.File
 import java.io.IOException
-import java.time.LocalDateTime
+import java.net.URI
+
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 @RunWith(AndroidJUnit4::class)
@@ -32,6 +38,8 @@ class MapMarkerRepoTest {
     //val testUser: User = User("test@test.com", "test", "test", "test", "test")
     private val erc = ErrorResponseConverter()
     private var questMID = ""
+    val registerUrl = "https://uzhmp-api-gateway-77xdzfzvua-ew.a.run.app/api/v2/register"
+    val loginUrl = "https://uzhmp-api-gateway-77xdzfzvua-ew.a.run.app/api/v2/login"
 
     @Before
     fun createDb() {
@@ -52,7 +60,7 @@ class MapMarkerRepoTest {
     fun atestLogin(){
         runBlocking {
             val loginData = LoginRequest("asdf@asdf.com","asdfasdf")
-            val response: Response<ServerResponse> = markerRepo.login(loginData)
+            val response: Response<ServerResponse> = markerRepo.login(loginUrl,loginData)
             if (response.isSuccessful){
                 Log.d(TAG, "response seems successful")
                 val body = response.body()
@@ -148,35 +156,63 @@ class MapMarkerRepoTest {
 */
     /*
     @Test
+    fun bbUploadImage(){
+        runBlocking {
+            //val string = "C:\\Users\\danie\\AndroidStudioProjects\\StreetComplete\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_barrier.png"
+            val path = this@MapMarkerRepoTest.javaClass.classLoader!!.getResource("resources/mandalay_market.jpg").toURI()
+            val file = File(path)
+            //val file = File(path)
+            if(file.exists()){
+                val requestFile = RequestBody.create(MediaType.parse("multipart/form-data"), file)
+                val body = MultipartBody.Part.createFormData("Image", file.name, requestFile)
+                val response = markerRepo.uploadOneImageToServer(sessionManager.fetchAuthToken()!!, body)
+                if(response.isSuccessful){
+                    val imageFile: ImageFile = response.body()!!
+                    Log.d(TAG,"Image Upload Test Success, URL: ${imageFile.imageURL}")
+                    Log.d(TAG,"Delete Image with the following ID: ${imageFile.imageID}")
+                } else {
+                    fail("Upload of an Image has failed")
+                    runCatching { Log.e(TAG, "Image upload failed, Reason: ${response.errorBody()?.string()}") }
+                }
+            } else {
+                fail("File specified for Image Upload does not exist")
+            }
+        }
+    }
+
+     */
+    /*
+    @Test
     fun bpostMarker(){
         runBlocking {
             val currentToken = sessionManager.fetchAuthToken()!!
-            val newMarker = MapMarker("point",16.0,6.0,"I don't like sand","It's coarse and rough and irritating", "and it gets everywhere", "I'm pickle riiick", "", 0,
-                listOf(NoIdTag("width","55cm")) )
+            val newMarker = MapMarker("point",16.0,6.0,"Marker created for API Testing","Delete pls :3", "Why are we still here?", "Just to suffer?", "", 0,
+                listOf(NoIdTag("she_thicc","120cm")) )
             val response = markerRepo.postMarkerToServer(currentToken,newMarker)
             if(response.isSuccessful){
                 Log.d(TAG, response.body().toString())
                 val newQuest: UzhQuest? = response.body()
                 Log.d(TAG,"New Quest MID is" + newQuest?.mid)
                 assertEquals("point", newQuest?.location?.geoType)
-                assertEquals("I don't like sand", newQuest?.title)
+                assertEquals("Marker created for API Testing", newQuest?.title)
                 questMID = newQuest!!.mid
+            } else {
+                fail("Failed with reason: ${response.errorBody()?.string()}")
             }
 
         }
     }
 
     @Test
-    fun cfetchMarker(){
+    fun cFetchMarker(){
         runBlocking{
             val currentToken = sessionManager.fetchAuthToken()!!
             val response = markerRepo.getQuestFromServer(currentToken, questMID) //REPLACE mID FOR TESTING IF NEEDED isy-SnnO-pRlEHFTSVr0uqp
             if (response.isSuccessful) {
                 Log.d(TAG, "Successful GET was made")
-                Log.d(TAG, "FetchMarker Body is: " + response.body().toString())
+                Log.d(TAG, "Fetched Marker Body is: " + response.body().toString())
                 val fetchedQuest = response.body()
-                assertEquals("string", fetchedQuest?.title)
-                assertEquals(listOf(0.0, 0.0), listOf(fetchedQuest?.location?.coordinates?.latitude,fetchedQuest?.location?.coordinates?.longitude))
+                assertEquals("Marker created for API Testing", fetchedQuest?.title)
                 assertEquals("point", fetchedQuest?.location?.geoType)
             } else {
                 Log.d(TAG, response.errorBody()!!.string())
@@ -201,6 +237,7 @@ class MapMarkerRepoTest {
 
      */
 
+    /*
     @Test
     fun eEditMarker(){
         runBlocking {
@@ -227,7 +264,7 @@ class MapMarkerRepoTest {
         }
 
     }
-
+    */
 
 
     /*

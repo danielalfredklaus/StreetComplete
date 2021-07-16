@@ -147,7 +147,7 @@ class MapMarkerViewModel(private val repo: MarkerRepo): ViewModel() {
         val file: File = File(imgPath)
         if(file.exists()){
             val requestBody = RequestBody.create(MediaType.parse("image/*"), file)
-            val body = MultipartBody.Part.createFormData("image", file.name, requestBody)
+            val body = MultipartBody.Part.createFormData("file", file.name, requestBody)
             val response = repo.uploadOneImageToServer(currentKey, body)
             if(response.isSuccessful){
                 val imageFile: ImageFile = response.body()!!
